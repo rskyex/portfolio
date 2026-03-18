@@ -23,7 +23,6 @@ export default function SpeakingCard({ title, context, type, description, image 
             fill
             className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#f7f2e4]/60 to-transparent" />
         </div>
       )}
 
