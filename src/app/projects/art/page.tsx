@@ -13,7 +13,7 @@ export default function ArtProjectPage() {
 
       <div className="mt-8 space-y-8">
         <PhotoFrame
-          src="/images/art.jpg"
+          src="/images/art.JPG"
           alt="Art practice"
           width={800}
           height={500}

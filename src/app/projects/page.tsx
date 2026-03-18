@@ -40,7 +40,7 @@ export default function ProjectsPage() {
           href="/projects/peace"
           title="Peacebuilding Laboratory"
           description="Research community and discussion platform within Sophia University's Professor Sakuo Tojo Peacebuilding and International Cooperation Laboratory. Dialogue-based seminars on Ukraine, Afghanistan, Iraq, and Sudan."
-          image="/images/peacebuilding.jpg"
+          image="/images/mofa-korea.jpg"
           imageAlt="Peacebuilding seminar"
           role="President"
         />
@@ -49,7 +49,7 @@ export default function ProjectsPage() {
           href="/projects/art"
           title="Art Practice"
           description="Interdisciplinary art practice spanning visual thinking, international exhibition, and conceptual work that intersects with broader research on governance, identity, and technology."
-          image="/images/art.jpg"
+          image="/images/art.JPG"
           imageAlt="Art practice"
         />
       </div>
