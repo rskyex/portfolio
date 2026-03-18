@@ -136,6 +136,26 @@ export default function AboutPage() {
 
         <SectionDivider />
 
+        {/* Awards */}
+        <div>
+          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Awards</h3>
+          <div className="space-y-3">
+            {[
+              { title: '2nd Prize, Tokyo Natural Disaster Policy Proposal', detail: '2-Day Policy Hackathon, GEIL' },
+            ].map((award, i) => (
+              <div key={i} className="card-washi card-washi-about p-5 relative overflow-hidden">
+                <div className="glow-bar absolute left-0 top-0 bottom-0" />
+                <div className="pl-4">
+                  <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">{award.title}</h4>
+                  <p className="font-noto-sans text-xs text-kuro-soft/60 mt-1">{award.detail}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <SectionDivider />
+
         {/* Contact */}
         <div>
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Contact</h3>
