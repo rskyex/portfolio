@@ -15,7 +15,7 @@ export default function PeaceProjectPage() {
 
       <div className="mt-8 space-y-8">
         <PhotoFrame
-          src="/images/mofa-korea.jpg"
+          src="/images/peacebuilding.jpg"
           alt="Peacebuilding seminar"
           width={800}
           height={400}

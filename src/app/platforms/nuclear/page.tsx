@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SectionHeader from '@/components/SectionHeader';
+import PhotoFrame from '@/components/PhotoFrame';
 import Gallery from '@/components/Gallery';
 import Tag from '@/components/Tag';
 
@@ -27,6 +28,14 @@ export default function NuclearPlatformPage() {
           </a>
         </div>
 
+        <PhotoFrame
+          src="/images/nuclear-platform.jpg"
+          alt="Global Nuclear Infrastructure Atlas — interactive map showing commercial plants, accident sites, and historical events worldwide"
+          width={800}
+          height={450}
+          className="w-full h-64 md:h-80"
+        />
+
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
           <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
@@ -47,7 +56,7 @@ export default function NuclearPlatformPage() {
           <Gallery
             title="Platform Preview"
             images={[
-              { src: '/images/fukushima.jpg', alt: 'Nuclear infrastructure context', caption: 'Field research informing the platform' },
+              { src: '/images/nuclear-platform.jpg', alt: 'Global Nuclear Infrastructure Atlas overview', caption: 'Interactive map of global nuclear infrastructure' },
             ]}
           />
         </div>

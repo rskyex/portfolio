@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SectionHeader from '@/components/SectionHeader';
+import PhotoFrame from '@/components/PhotoFrame';
 import Gallery from '@/components/Gallery';
 import Tag from '@/components/Tag';
 
@@ -27,6 +28,14 @@ export default function OrbitalPlatformPage() {
           </a>
         </div>
 
+        <PhotoFrame
+          src="/images/orbital-platform.jpg"
+          alt="Orbital Risk Tracker — visualisation of ASAT events and proximity operations"
+          width={800}
+          height={450}
+          className="w-full h-64 md:h-80"
+        />
+
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
           <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
@@ -47,7 +56,7 @@ export default function OrbitalPlatformPage() {
           <Gallery
             title="Platform Preview"
             images={[
-              { src: '/images/profile.jpg', alt: 'Research context', caption: 'Security research and analysis' },
+              { src: '/images/orbital-platform.jpg', alt: 'Orbital Risk Tracker overview', caption: 'ASAT events and orbital risk visualisation' },
             ]}
           />
         </div>

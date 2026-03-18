@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SectionHeader from '@/components/SectionHeader';
+import PhotoFrame from '@/components/PhotoFrame';
 import Gallery from '@/components/Gallery';
 import Tag from '@/components/Tag';
 
@@ -18,6 +19,14 @@ export default function CyberPlatformPage() {
             In Production
           </span>
         </div>
+
+        <PhotoFrame
+          src="/images/cyber-platform.jpg"
+          alt="Cyber Escalation Atlas — mapping cyber incidents as strategic behaviour"
+          width={800}
+          height={450}
+          className="w-full h-64 md:h-80"
+        />
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
@@ -42,7 +51,7 @@ export default function CyberPlatformPage() {
           <Gallery
             title="Platform Preview"
             images={[
-              { src: '/images/peacebuilding.jpg', alt: 'Security research', caption: 'Strategic and governance research' },
+              { src: '/images/cyber-platform.jpg', alt: 'Cyber Escalation Atlas overview', caption: 'Cyber incident mapping and escalation analysis' },
             ]}
           />
         </div>
