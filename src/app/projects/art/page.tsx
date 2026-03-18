@@ -31,6 +31,15 @@ export default function ArtProjectPage() {
         </div>
 
         <div className="panel rounded-sm p-8">
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Exhibition History</h3>
+          <div className="flex flex-wrap gap-3">
+            {['Tokyo', 'New York', 'San Francisco', 'Athens', 'Barcelona', 'London'].map((city, i) => (
+              <span key={i} className="font-noto-sans text-sm text-shiro/60 py-1.5 px-3 border border-shiro/[0.08] rounded-sm">{city}</span>
+            ))}
+          </div>
+        </div>
+
+        <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Themes</h3>
           <ul className="space-y-2">
             {[
