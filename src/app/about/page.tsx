@@ -118,7 +118,6 @@ export default function AboutPage() {
             {[
               { institution: 'Sophia University', detail: 'Professor Daisaku Higashi Peacebuilding and International Cooperation Laboratory', role: 'Former President; current Alumni Representative' },
               { institution: 'University of Tokyo', detail: 'Professor Makoto Iokibe Yotsuya Reimeikai' },
-              { institution: 'University of Tokyo', detail: 'Security Study Group Barracuda' },
               { institution: 'Waseda University', detail: 'Professor Nobuhiko Utsumi Laboratory', role: 'Professor Utsumi is also Honorary Professor at the National School of Fine Arts of Peru' },
               { institution: 'Meiji Gakuin University', detail: 'Professor Hiroshi Aoyagi Laboratory' },
             ].map((aff, i) => (
