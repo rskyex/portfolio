@@ -49,7 +49,7 @@ export default function AboutPage() {
               { institution: 'Hughes Hall, University of Cambridge', degree: '', period: '2026–' },
               { institution: 'University of London / Forward College', degree: 'Academic Direction: London School of Economics', period: '2025–2026', detail: 'Lisbon' },
               { institution: 'Saïd Business School, University of Oxford', degree: 'AI & Digital Transformation in Government', period: 'Nov 2025 – Jan 2026' },
-              { institution: 'University of Cambridge', degree: 'International Summer Programme: Space Weaponisation & British Politics', period: 'Jul – Aug 2025' },
+              { institution: 'Selwyn College, University of Cambridge', degree: 'International Summer Programme: Space Weaponisation & British Politics', period: 'Jul – Aug 2025' },
               { institution: 'SOAS University of London', degree: 'BSc Social Sciences (Foundation Year)', period: '2024–2025', detail: 'GPA 3.92' },
               { institution: 'Sophia University', degree: 'BA Philosophy (first year completed)', period: '2023–2024' },
             ].map((edu, i) => (
