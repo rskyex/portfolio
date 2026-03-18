@@ -8,6 +8,7 @@ import PlatformCard from '@/components/PlatformCard';
 import ResearchListItem from '@/components/ResearchListItem';
 import ProjectCard from '@/components/ProjectCard';
 import SpeakingCard from '@/components/SpeakingCard';
+import Tsubaki3D from '@/components/Tsubaki3D';
 
 const tags = [
   'International Security',
@@ -30,83 +31,88 @@ const stats = [
 export default function Home() {
   return (
     <div>
-      {/* ═══════════════════════════════════════
-          HERO — Sculptural Japanese-Futurist
-          ═══════════════════════════════════════ */}
-      <section className="relative overflow-hidden min-h-[90vh] flex items-center">
-        {/* Deep lacquer base */}
-        <div className="absolute inset-0 bg-gradient-to-b from-indigo-950 via-lacquer-deep to-indigo-950" />
+      {/* ═══════════════════════════════════════════════════
+          HERO — KINKAKU-JI × NEON FUTURE × 3D TSUBAKI
+          ═══════════════════════════════════════════════════ */}
+      <section className="relative overflow-hidden min-h-screen flex items-center">
+        {/* Deep black base */}
+        <div className="absolute inset-0 bg-kuro" />
 
-        {/* Sculptural tsubaki form — hero background */}
-        <div className="absolute inset-0 tsubaki-hero opacity-80" />
-
-        {/* Orbital systems linework */}
-        <div className="absolute inset-0 orbital-lines" />
+        {/* Radial gold ambient — Kinkaku-ji reflection */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_100%,rgba(212,160,23,0.06)_0%,transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_20%_50%,rgba(233,30,99,0.03)_0%,transparent_60%)]" />
 
         {/* Seigaiha undercurrent */}
-        <div className="absolute inset-0 seigaiha-bg opacity-40" />
+        <div className="absolute inset-0 seigaiha-bg opacity-50" />
 
-        {/* Tsubaki field — scattered subtle petals */}
-        <div className="absolute inset-0 tsubaki-field opacity-50" />
+        {/* Large sculptural 3D tsubaki — hero centerpiece (right side) */}
+        <div className="absolute right-[-5%] top-1/2 -translate-y-1/2 opacity-40 md:opacity-60 pointer-events-none">
+          <Tsubaki3D size="hero" animate />
+        </div>
 
-        {/* Lacquer sheen overlay */}
-        <div className="absolute inset-0 bg-lacquer-sheen" />
+        {/* Secondary floating tsubaki */}
+        <div className="absolute left-[8%] top-[15%] opacity-20 pointer-events-none hidden lg:block">
+          <Tsubaki3D size="lg" />
+        </div>
+        <div className="absolute right-[15%] bottom-[10%] opacity-15 pointer-events-none hidden lg:block">
+          <Tsubaki3D size="md" />
+        </div>
 
-        {/* Vermillion accent lines */}
-        <div className="absolute top-20 left-0 w-[2px] h-48 bg-gradient-to-b from-vermillion/40 via-tsubaki-blush/20 to-transparent" />
-        <div className="absolute bottom-0 right-0 w-[2px] h-36 bg-gradient-to-t from-gold/25 via-tsubaki-petal/10 to-transparent" />
-        <div className="absolute top-0 left-20 right-20 h-px bg-gradient-to-r from-transparent via-gold/[0.06] to-transparent" />
+        {/* Orbital neon linework */}
+        <div className="absolute inset-0 pointer-events-none">
+          <svg className="w-full h-full" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+            <ellipse cx="600" cy="400" rx="500" ry="180" fill="none" stroke="rgba(212,160,23,0.04)" strokeWidth="0.5" transform="rotate(-15 600 400)" />
+            <ellipse cx="600" cy="400" rx="380" ry="130" fill="none" stroke="rgba(233,30,99,0.03)" strokeWidth="0.5" transform="rotate(10 600 400)" />
+            <ellipse cx="600" cy="400" rx="260" ry="80" fill="none" stroke="rgba(212,160,23,0.03)" strokeWidth="0.3" transform="rotate(-30 600 400)" />
+          </svg>
+        </div>
+
+        {/* Neon accent lines */}
+        <div className="absolute top-24 left-0 w-[2px] h-56 bg-gradient-to-b from-tsubaki-rose/40 via-tsubaki-blush/15 to-transparent shadow-[0_0_12px_rgba(233,30,99,0.2)]" />
+        <div className="absolute bottom-0 right-0 w-[2px] h-40 bg-gradient-to-t from-kin-glow/25 via-kin/10 to-transparent shadow-[0_0_12px_rgba(255,215,0,0.15)]" />
+        <div className="absolute top-16 left-12 right-12 h-px bg-gradient-to-r from-transparent via-kin/[0.04] to-transparent" />
+        <div className="absolute bottom-20 left-20 right-20 h-px bg-gradient-to-r from-transparent via-tsubaki-rose/[0.03] to-transparent" />
 
         {/* Main content */}
-        <div className="relative max-w-6xl mx-auto px-6 py-20 md:py-28 w-full">
+        <div className="relative max-w-6xl mx-auto px-6 py-24 md:py-32 w-full">
           <div className="grid md:grid-cols-[1fr,auto] gap-16 items-center">
             <div>
-              {/* Identity composition */}
-              <div className="mb-10">
-                {/* Tsubaki crest seal — signature mark */}
-                <div className="mb-6 opacity-30">
-                  <svg width="36" height="36" viewBox="0 0 36 36">
-                    <ellipse cx="18" cy="9" rx="5" ry="10" fill="none" stroke="#c53d2f" strokeWidth="0.7" transform="rotate(0 18 18)" />
-                    <ellipse cx="18" cy="9" rx="5" ry="10" fill="none" stroke="#c53d2f" strokeWidth="0.7" transform="rotate(72 18 18)" />
-                    <ellipse cx="18" cy="9" rx="5" ry="10" fill="none" stroke="#c53d2f" strokeWidth="0.7" transform="rotate(144 18 18)" />
-                    <ellipse cx="18" cy="9" rx="5" ry="10" fill="none" stroke="#d4918a" strokeWidth="0.5" transform="rotate(216 18 18)" />
-                    <ellipse cx="18" cy="9" rx="5" ry="10" fill="none" stroke="#d4918a" strokeWidth="0.5" transform="rotate(288 18 18)" />
-                    <circle cx="18" cy="18" r="3" fill="#d4af37" opacity="0.3" />
-                    <circle cx="18" cy="18" r="5" fill="none" stroke="#d4af37" strokeWidth="0.3" opacity="0.2" />
-                  </svg>
-                </div>
+              {/* Tsubaki crest mark */}
+              <div className="mb-8">
+                <Tsubaki3D size="md" />
+              </div>
 
-                {/* Japanese name — large */}
-                <span className="font-kaisei text-6xl md:text-8xl lg:text-9xl text-gold-light/80 leading-none block">
+              {/* Japanese name — large with gold neon glow */}
+              <div className="mb-10">
+                <span className="font-kaisei text-7xl md:text-8xl lg:text-9xl text-kin/90 leading-none block drop-shadow-[0_0_30px_rgba(212,160,23,0.2)]">
                   小柳璃紗
                 </span>
 
-                {/* English name + furigana */}
-                <div className="mt-4 flex items-baseline gap-4">
-                  <h1 className="font-kaisei text-2xl md:text-3xl text-washi/90 tracking-wide">
+                <div className="mt-5 flex items-baseline gap-4">
+                  <h1 className="font-kaisei text-2xl md:text-3xl text-shiro/90 tracking-wider">
                     Risa Koyanagi
                   </h1>
-                  <span className="font-noto-serif text-xs text-washi/20 tracking-[0.3em]">
+                  <span className="font-noto-serif text-xs text-shiro/15 tracking-[0.3em]">
                     こやなぎ りさ
                   </span>
                 </div>
 
-                {/* Thin petal-gradient rule under name */}
-                <div className="mt-4 w-32 h-px bg-gradient-to-r from-vermillion/30 via-tsubaki-blush/20 to-transparent" />
+                {/* Neon petal-gradient rule */}
+                <div className="mt-5 w-40 glow-line-tsubaki" />
               </div>
 
               {/* Eyebrow */}
-              <p className="font-noto-sans text-xs text-gold/50 tracking-[0.25em] uppercase mb-5">
+              <p className="font-noto-sans text-xs text-kin/50 tracking-[0.3em] uppercase mb-5">
                 International Security · Space · Nuclear · Cyber · Emerging Technology Governance
               </p>
 
               {/* Title */}
-              <p className="font-noto-sans text-lg md:text-xl text-washi/80 font-light tracking-wider mb-7">
+              <p className="font-noto-sans text-lg md:text-xl text-shiro/70 font-light tracking-widest mb-8">
                 Researcher
               </p>
 
               {/* Description */}
-              <p className="font-noto-sans text-sm text-washi/45 leading-[1.8] max-w-xl mb-10">
+              <p className="font-noto-sans text-sm text-shiro/40 leading-[1.9] max-w-xl mb-10">
                 Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of space governance, nuclear governance, cyber governance, strategic risk, and emerging technology governance. Her research is especially concerned with legitimation theory, dual-use governance, authority architecture, responsible behaviour norms, and international security. She is supervised by Prof. Harald Wydra in connection with her Cambridge-based research trajectory, and is building the Strategic Infrastructure Risk Suite: a set of public-facing policy platforms across nuclear, orbital, and cyber domains.
               </p>
 
@@ -121,10 +127,11 @@ export default function Home() {
               <StatList stats={stats} />
             </div>
 
-            {/* Profile photo — lacquer-framed */}
+            {/* Profile photo with tsubaki frame */}
             <div className="hidden md:block relative">
               {/* Ambient tsubaki glow behind portrait */}
-              <div className="absolute -inset-8 bg-tsubaki-gradient rounded-full blur-2xl pointer-events-none" />
+              <div className="absolute -inset-12 bg-[radial-gradient(ellipse_at_center,rgba(233,30,99,0.06)_0%,transparent_70%)] blur-xl pointer-events-none" />
+              <div className="absolute -inset-12 bg-[radial-gradient(ellipse_at_center,rgba(212,160,23,0.04)_0%,transparent_70%)] blur-2xl pointer-events-none" />
               <div className="relative">
                 <PhotoFrame
                   src="/images/profile.jpg"
@@ -134,6 +141,10 @@ export default function Home() {
                   className="w-72 h-96"
                   priority
                 />
+                {/* Decorative tsubaki near portrait */}
+                <div className="absolute -bottom-6 -right-6 opacity-40">
+                  <Tsubaki3D size="sm" />
+                </div>
               </div>
             </div>
           </div>
@@ -142,12 +153,11 @@ export default function Home() {
 
       <SectionDivider />
 
-      {/* ═══════════════════════════════════════
+      {/* ═══════════════════════════════════════════════════
           PLATFORMS
-          ═══════════════════════════════════════ */}
+          ═══════════════════════════════════════════════════ */}
       <section className="max-w-6xl mx-auto px-6 pb-16 relative">
-        {/* Subtle tsubaki field */}
-        <div className="absolute inset-0 tsubaki-field opacity-30 pointer-events-none" />
+        <div className="absolute inset-0 asanoha-bg opacity-30 pointer-events-none" />
         <div className="relative">
           <SectionHeader kanji="台" english="Platforms" subtitle="Strategic Infrastructure Risk Suite" />
           <div className="mt-8 grid md:grid-cols-2 gap-6">
@@ -184,7 +194,7 @@ export default function Home() {
             />
           </div>
           <div className="mt-8 text-right">
-            <Link href="/platforms" className="font-noto-sans text-xs text-gold/40 hover:text-gold/70 transition-colors tracking-widest uppercase">
+            <Link href="/platforms" className="font-noto-sans text-xs text-kin/40 hover:text-kin-glow/70 transition-colors tracking-widest uppercase">
               View all platforms →
             </Link>
           </div>
@@ -193,11 +203,10 @@ export default function Home() {
 
       <SectionDivider />
 
-      {/* ═══════════════════════════════════════
+      {/* ═══════════════════════════════════════════════════
           RESEARCH
-          ═══════════════════════════════════════ */}
+          ═══════════════════════════════════════════════════ */}
       <section className="max-w-6xl mx-auto px-6 pb-16 relative">
-        <div className="absolute inset-0 seigaiha-bg opacity-20 pointer-events-none" />
         <div className="relative">
           <SectionHeader kanji="論" english="Research" subtitle="Selected research across governance domains" />
           <div className="mt-8 space-y-4">
@@ -224,7 +233,7 @@ export default function Home() {
             />
           </div>
           <div className="mt-8 text-right">
-            <Link href="/research" className="font-noto-sans text-xs text-gold/40 hover:text-gold/70 transition-colors tracking-widest uppercase">
+            <Link href="/research" className="font-noto-sans text-xs text-kin/40 hover:text-kin-glow/70 transition-colors tracking-widest uppercase">
               View all research →
             </Link>
           </div>
@@ -233,11 +242,11 @@ export default function Home() {
 
       <SectionDivider />
 
-      {/* ═══════════════════════════════════════
+      {/* ═══════════════════════════════════════════════════
           PROJECTS
-          ═══════════════════════════════════════ */}
+          ═══════════════════════════════════════════════════ */}
       <section className="max-w-6xl mx-auto px-6 pb-16 relative">
-        <div className="absolute inset-0 shippo-bg opacity-20 pointer-events-none" />
+        <div className="absolute inset-0 seigaiha-bg opacity-20 pointer-events-none" />
         <div className="relative">
           <SectionHeader kanji="業" english="Projects" subtitle="Fieldwork, leadership, and interdisciplinary engagement" />
           <div className="mt-8 grid md:grid-cols-2 gap-6">
@@ -260,7 +269,7 @@ export default function Home() {
             />
           </div>
           <div className="mt-8 text-right">
-            <Link href="/projects" className="font-noto-sans text-xs text-gold/40 hover:text-gold/70 transition-colors tracking-widest uppercase">
+            <Link href="/projects" className="font-noto-sans text-xs text-kin/40 hover:text-kin-glow/70 transition-colors tracking-widest uppercase">
               View all projects →
             </Link>
           </div>
@@ -269,11 +278,10 @@ export default function Home() {
 
       <SectionDivider />
 
-      {/* ═══════════════════════════════════════
+      {/* ═══════════════════════════════════════════════════
           SPEAKING
-          ═══════════════════════════════════════ */}
+          ═══════════════════════════════════════════════════ */}
       <section className="max-w-6xl mx-auto px-6 pb-20 relative">
-        <div className="absolute inset-0 asanoha-bg opacity-15 pointer-events-none" />
         <div className="relative">
           <SectionHeader kanji="演" english="Speaking" subtitle="Selected speaking and policy engagement" />
           <div className="mt-8 grid md:grid-cols-2 gap-6">
@@ -289,7 +297,7 @@ export default function Home() {
             />
           </div>
           <div className="mt-8 text-right">
-            <Link href="/speaking" className="font-noto-sans text-xs text-gold/40 hover:text-gold/70 transition-colors tracking-widest uppercase">
+            <Link href="/speaking" className="font-noto-sans text-xs text-kin/40 hover:text-kin-glow/70 transition-colors tracking-widest uppercase">
               View all speaking →
             </Link>
           </div>

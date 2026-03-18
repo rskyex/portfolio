@@ -24,10 +24,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="font-noto-sans antialiased bg-indigo-950">
+      <body className="font-noto-sans antialiased bg-kuro text-shiro">
         <EditProvider>
           <Navbar />
-          <main className="pt-16 min-h-screen">
+          <main className="pt-14 min-h-screen">
             {children}
           </main>
           <Footer />

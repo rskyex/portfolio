@@ -12,7 +12,7 @@ export default function PlatformsPage() {
       />
 
       <div className="mt-6 mb-12">
-        <p className="font-noto-sans text-sm text-washi/60 leading-relaxed max-w-2xl">
+        <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed max-w-2xl">
           A coherent suite of public-facing research and policy tools that translate governance theory into operational platforms across strategic infrastructure domains. Each platform connects conceptual frameworks on legitimacy, authority, and escalation with applied policy questions.
         </p>
       </div>
@@ -57,7 +57,7 @@ export default function PlatformsPage() {
       <SectionDivider />
 
       <div className="text-center">
-        <p className="font-noto-sans text-xs text-washi/30 tracking-wide">
+        <p className="font-noto-sans text-xs text-shiro/20 tracking-wide">
           Each platform is built with Next.js, React, TypeScript, and D3 / Leaflet.
         </p>
       </div>

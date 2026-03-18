@@ -9,46 +9,76 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        indigo: {
-          950: '#070b1e',
-          900: '#0d1233',
-          800: '#151d4a',
-          700: '#1f2a62',
-          600: '#2c3a8a',
+        // Kinkaku-ji night palette
+        kuro: {
+          DEFAULT: '#050508',
+          soft: '#0a0b12',
+          panel: '#0e0f1a',
         },
-        washi: '#f7f3eb',
-        'washi-dark': '#efe9dd',
-        ivory: '#faf8f2',
-        parchment: '#f0ead6',
+        // Rich gold — Kinkaku-ji gold leaf
+        kin: {
+          pale: '#f5e6a3',
+          light: '#e8c84a',
+          DEFAULT: '#d4a017',
+          deep: '#b8860b',
+          dark: '#8b6914',
+          glow: '#ffd700',
+        },
+        // Vermillion — torii / lacquer
+        shu: {
+          light: '#ff6b5a',
+          DEFAULT: '#e03c31',
+          deep: '#c0291e',
+          dark: '#8b1a10',
+        },
+        // Tsubaki petal tones
+        tsubaki: {
+          white: '#fce4ec',
+          blush: '#f48fb1',
+          rose: '#e91e63',
+          deep: '#c2185b',
+        },
+        // Washi / porcelain whites
+        shiro: {
+          DEFAULT: '#f5f0e8',
+          warm: '#ede6d8',
+          cool: '#eceef2',
+        },
+        // Neon accents
+        neon: {
+          gold: 'rgba(255, 215, 0, 0.9)',
+          rose: 'rgba(233, 30, 99, 0.8)',
+          blue: 'rgba(100, 149, 237, 0.6)',
+        },
+        // Legacy compat
+        washi: '#f5f0e8',
+        parchment: '#f5f0e8',
+        ink: '#f5f0e8',
+        'ink-light': '#c0b8a8',
+        'warm-brown': '#b0a898',
+        'warm-gray': '#8a8278',
         gold: {
-          light: '#d4af37',
-          DEFAULT: '#c5a028',
-          dark: '#a88620',
-          pale: '#e8d48b',
+          light: '#e8c84a',
+          DEFAULT: '#d4a017',
+          dark: '#b8860b',
+          pale: '#f5e6a3',
           muted: '#bfa94e',
         },
         vermillion: {
-          DEFAULT: '#c53d2f',
-          dark: '#a02e22',
+          DEFAULT: '#e03c31',
+          dark: '#c0291e',
           muted: '#b84a3e',
         },
-        ink: '#1a1412',
-        'ink-light': '#3d3430',
-        'warm-brown': '#6b5c52',
-        'warm-gray': '#8a7d74',
-        // Tsubaki palette
-        tsubaki: {
-          petal: '#e8c4c0',
-          blush: '#d4918a',
-          core: '#c53d2f',
-          leaf: '#2d4a3e',
-          stamen: '#d4af37',
+        indigo: {
+          950: '#050508',
+          900: '#0a0b12',
+          800: '#0e0f1a',
+          700: '#1a1b2e',
+          600: '#2a2b4a',
         },
-        lacquer: {
-          black: '#0a0a12',
-          deep: '#12101e',
-        },
-        porcelain: '#f0ece5',
+        ivory: '#f5f0e8',
+        'washi-dark': '#ede6d8',
+        'gold-light': '#e8c84a',
       },
       fontFamily: {
         kaisei: ['"Kaisei Decol"', 'serif'],
@@ -56,16 +86,37 @@ const config: Config = {
         'noto-sans': ['"Noto Sans JP"', 'sans-serif'],
       },
       boxShadow: {
-        'lacquer': '0 2px 20px rgba(10, 10, 18, 0.5), inset 0 1px 0 rgba(212, 175, 55, 0.05)',
-        'lacquer-hover': '0 8px 32px rgba(10, 10, 18, 0.6), inset 0 1px 0 rgba(212, 175, 55, 0.08)',
-        'petal': '0 4px 16px rgba(197, 61, 47, 0.08), 0 1px 4px rgba(0,0,0,0.1)',
-        'petal-hover': '0 8px 28px rgba(197, 61, 47, 0.12), 0 2px 8px rgba(0,0,0,0.15)',
-        'porcelain': '0 1px 8px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.8)',
-        'glass': '0 4px 24px rgba(10, 14, 42, 0.3), inset 0 1px 0 rgba(255,255,255,0.04)',
+        'glow-gold': '0 0 20px rgba(212, 160, 23, 0.15), 0 0 60px rgba(212, 160, 23, 0.05)',
+        'glow-gold-lg': '0 0 40px rgba(212, 160, 23, 0.2), 0 0 80px rgba(212, 160, 23, 0.08)',
+        'glow-shu': '0 0 20px rgba(224, 60, 49, 0.12), 0 0 60px rgba(224, 60, 49, 0.04)',
+        'glow-tsubaki': '0 0 30px rgba(233, 30, 99, 0.1), 0 0 80px rgba(233, 30, 99, 0.04)',
+        'panel': '0 4px 24px rgba(0,0,0,0.6), 0 1px 4px rgba(0,0,0,0.4), inset 0 1px 0 rgba(212,160,23,0.04)',
+        'panel-hover': '0 8px 40px rgba(0,0,0,0.7), 0 2px 8px rgba(0,0,0,0.5), inset 0 1px 0 rgba(212,160,23,0.08)',
+        'panel-elevated': '0 12px 48px rgba(0,0,0,0.8), inset 0 1px 0 rgba(212,160,23,0.06), 0 0 30px rgba(212,160,23,0.04)',
       },
-      backgroundImage: {
-        'tsubaki-gradient': 'radial-gradient(ellipse at 30% 50%, rgba(197,61,47,0.06) 0%, transparent 70%)',
-        'lacquer-sheen': 'linear-gradient(135deg, rgba(212,175,55,0.03) 0%, transparent 40%, rgba(197,61,47,0.02) 100%)',
+      animation: {
+        'tsubaki-spin': 'tsubakiSpin 60s linear infinite',
+        'tsubaki-pulse': 'tsubakiPulse 8s ease-in-out infinite',
+        'float': 'float 12s ease-in-out infinite',
+        'glow-pulse': 'glowPulse 4s ease-in-out infinite',
+      },
+      keyframes: {
+        tsubakiSpin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        tsubakiPulse: {
+          '0%, 100%': { opacity: '0.6' },
+          '50%': { opacity: '1' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-8px)' },
+        },
+        glowPulse: {
+          '0%, 100%': { opacity: '0.5' },
+          '50%': { opacity: '1' },
+        },
       },
     },
   },

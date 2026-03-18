@@ -9,38 +9,38 @@ interface ResearchListItemProps {
 }
 
 const statusStyles: Record<string, string> = {
-  'Published': 'bg-vermillion/8 text-vermillion/70 border-vermillion/15',
-  'Forthcoming': 'bg-indigo-700/15 text-indigo-600/50 border-indigo-600/15',
-  'Under Review': 'bg-gold/8 text-gold/60 border-gold/15',
-  'Conference Abstract': 'bg-indigo-700/10 text-washi/40 border-washi/10',
-  'Working Paper': 'bg-vermillion/6 text-tsubaki-blush/70 border-tsubaki-blush/15',
-  'In Progress': 'bg-washi/[0.03] text-washi/35 border-washi/[0.08]',
+  'Published': 'bg-shu/10 text-shu-light/70 border-shu/15 shadow-[0_0_8px_rgba(224,60,49,0.06)]',
+  'Forthcoming': 'bg-neon-blue/10 text-neon-blue/70 border-neon-blue/15',
+  'Under Review': 'bg-kin/8 text-kin-light/60 border-kin/15',
+  'Conference Abstract': 'bg-tsubaki-rose/8 text-tsubaki-blush/60 border-tsubaki-rose/15',
+  'Working Paper': 'bg-tsubaki-rose/6 text-tsubaki-blush/70 border-tsubaki-rose/12 shadow-[0_0_8px_rgba(233,30,99,0.05)]',
+  'In Progress': 'bg-shiro/[0.03] text-shiro/30 border-shiro/[0.06]',
 };
 
 export default function ResearchListItem({ href, title, status, themes, description }: ResearchListItemProps) {
   return (
     <Link href={href} className="block group">
-      <div className="lacquer-panel rounded-sm card-hover relative overflow-hidden p-6 transition-all">
-        {/* Vermillion-tsubaki left accent */}
-        <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-vermillion/30 via-tsubaki-blush/15 to-gold/15 group-hover:from-vermillion/60 group-hover:to-gold/30 transition-all" />
+      <div className="panel card-hover relative overflow-hidden p-6">
+        {/* Neon left glow bar */}
+        <div className="glow-bar absolute left-0 top-0 bottom-0" />
 
-        <div className="relative">
+        <div className="relative pl-4">
           <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 mb-3">
-            <h3 className="font-noto-serif text-base font-medium text-washi/85 group-hover:text-washi transition-colors italic">
+            <h3 className="font-noto-serif text-base font-medium text-shiro/85 group-hover:text-kin-light transition-colors italic">
               {title}
             </h3>
-            <span className={`shrink-0 self-start px-2.5 py-0.5 text-xs font-noto-sans tracking-wide rounded-sm border ${statusStyles[status] || statusStyles['In Progress']}`}>
+            <span className={`shrink-0 self-start px-2.5 py-0.5 text-xs font-noto-sans tracking-wider rounded border ${statusStyles[status] || statusStyles['In Progress']}`}>
               {status}
             </span>
           </div>
 
           {description && (
-            <p className="font-noto-sans text-sm text-washi/40 leading-relaxed mb-3">{description}</p>
+            <p className="font-noto-sans text-sm text-shiro/35 leading-relaxed mb-3">{description}</p>
           )}
 
           <div className="flex flex-wrap gap-1.5">
             {themes.map(theme => (
-              <span key={theme} className="text-xs font-noto-sans text-washi/25 px-1.5 py-0.5">
+              <span key={theme} className="text-xs font-noto-sans text-shiro/20 px-1.5 py-0.5">
                 {theme}
               </span>
             ))}

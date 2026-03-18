@@ -2,15 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ═══════════════════════════════════════════════════════════════
+   金閣寺 × NEON FUTURE — TSUBAKI IDENTITY SYSTEM
+   ═══════════════════════════════════════════════════════════════ */
+
 :root {
-  --indigo-950: #070b1e;
-  --indigo-900: #0d1233;
-  --washi: #f7f3eb;
-  --gold: #c5a028;
-  --vermillion: #c53d2f;
-  --tsubaki-petal: #e8c4c0;
-  --tsubaki-blush: #d4918a;
-  --lacquer-black: #0a0a12;
+  --kuro: #050508;
+  --kin: #d4a017;
+  --kin-glow: #ffd700;
+  --shu: #e03c31;
+  --tsubaki-rose: #e91e63;
+  --tsubaki-blush: #f48fb1;
+  --shiro: #f5f0e8;
 }
 
 html {
@@ -18,159 +21,251 @@ html {
 }
 
 body {
-  background-color: var(--indigo-950);
-  color: #f7f3eb;
+  background-color: var(--kuro);
+  color: var(--shiro);
 }
 
-/* ═══════════════════════════════════════
-   TSUBAKI (椿) SVG ELEMENTS
-   ═══════════════════════════════════════ */
+/* ═══════════════════════════════════════════════════════════════
+   3D TSUBAKI — CSS SCULPTURAL CAMELLIA
+   ═══════════════════════════════════════════════════════════════ */
 
-/* Abstract sculptural camellia — hero background element */
-.tsubaki-hero {
-  background-image:
-    /* Central sculptural camellia form — layered petals with gold stamen */
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cdefs%3E%3CradialGradient id='pg' cx='50%25' cy='50%25' r='50%25'%3E%3Cstop offset='0%25' stop-color='%23c53d2f' stop-opacity='0.04'/%3E%3Cstop offset='100%25' stop-color='%23c53d2f' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='sg' cx='50%25' cy='40%25' r='35%25'%3E%3Cstop offset='0%25' stop-color='%23d4af37' stop-opacity='0.06'/%3E%3Cstop offset='100%25' stop-color='%23d4af37' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='200' cy='200' r='180' fill='url(%23pg)'/%3E%3Ccircle cx='200' cy='200' r='100' fill='url(%23sg)'/%3E%3C!-- Five petals with depth layering --%3E%3Cellipse cx='200' cy='120' rx='45' ry='65' fill='none' stroke='%23c53d2f' stroke-width='0.6' opacity='0.08' transform='rotate(0 200 200)'/%3E%3Cellipse cx='200' cy='120' rx='45' ry='65' fill='none' stroke='%23c53d2f' stroke-width='0.6' opacity='0.07' transform='rotate(72 200 200)'/%3E%3Cellipse cx='200' cy='120' rx='45' ry='65' fill='none' stroke='%23c53d2f' stroke-width='0.6' opacity='0.06' transform='rotate(144 200 200)'/%3E%3Cellipse cx='200' cy='120' rx='45' ry='65' fill='none' stroke='%23d4918a' stroke-width='0.5' opacity='0.06' transform='rotate(216 200 200)'/%3E%3Cellipse cx='200' cy='120' rx='45' ry='65' fill='none' stroke='%23d4918a' stroke-width='0.5' opacity='0.05' transform='rotate(288 200 200)'/%3E%3C!-- Inner petal ring --%3E%3Cellipse cx='200' cy='145' rx='28' ry='42' fill='none' stroke='%23e8c4c0' stroke-width='0.4' opacity='0.07' transform='rotate(36 200 200)'/%3E%3Cellipse cx='200' cy='145' rx='28' ry='42' fill='none' stroke='%23e8c4c0' stroke-width='0.4' opacity='0.06' transform='rotate(108 200 200)'/%3E%3Cellipse cx='200' cy='145' rx='28' ry='42' fill='none' stroke='%23e8c4c0' stroke-width='0.4' opacity='0.06' transform='rotate(180 200 200)'/%3E%3Cellipse cx='200' cy='145' rx='28' ry='42' fill='none' stroke='%23e8c4c0' stroke-width='0.4' opacity='0.05' transform='rotate(252 200 200)'/%3E%3Cellipse cx='200' cy='145' rx='28' ry='42' fill='none' stroke='%23e8c4c0' stroke-width='0.4' opacity='0.05' transform='rotate(324 200 200)'/%3E%3C!-- Gold stamen cluster --%3E%3Ccircle cx='200' cy='200' r='18' fill='none' stroke='%23d4af37' stroke-width='0.5' opacity='0.08'/%3E%3Ccircle cx='200' cy='200' r='8' fill='%23d4af37' opacity='0.04'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-/* Small tsubaki crest / seal motif */
-.tsubaki-crest {
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cellipse cx='30' cy='20' rx='8' ry='13' fill='none' stroke='%23c53d2f' stroke-width='0.5' opacity='0.12' transform='rotate(0 30 30)'/%3E%3Cellipse cx='30' cy='20' rx='8' ry='13' fill='none' stroke='%23c53d2f' stroke-width='0.5' opacity='0.1' transform='rotate(72 30 30)'/%3E%3Cellipse cx='30' cy='20' rx='8' ry='13' fill='none' stroke='%23c53d2f' stroke-width='0.5' opacity='0.1' transform='rotate(144 30 30)'/%3E%3Cellipse cx='30' cy='20' rx='8' ry='13' fill='none' stroke='%23d4918a' stroke-width='0.4' opacity='0.08' transform='rotate(216 30 30)'/%3E%3Cellipse cx='30' cy='20' rx='8' ry='13' fill='none' stroke='%23d4918a' stroke-width='0.4' opacity='0.08' transform='rotate(288 30 30)'/%3E%3Ccircle cx='30' cy='30' r='4' fill='%23d4af37' opacity='0.06'/%3E%3Ccircle cx='30' cy='30' r='6' fill='none' stroke='%23d4af37' stroke-width='0.4' opacity='0.08'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* Repeating tsubaki petal field — for section backgrounds */
-.tsubaki-field {
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cellipse cx='60' cy='40' rx='14' ry='22' fill='none' stroke='%23c53d2f' stroke-width='0.4' opacity='0.04' transform='rotate(0 60 60)'/%3E%3Cellipse cx='60' cy='40' rx='14' ry='22' fill='none' stroke='%23c53d2f' stroke-width='0.4' opacity='0.035' transform='rotate(72 60 60)'/%3E%3Cellipse cx='60' cy='40' rx='14' ry='22' fill='none' stroke='%23c53d2f' stroke-width='0.4' opacity='0.03' transform='rotate(144 60 60)'/%3E%3Cellipse cx='60' cy='40' rx='14' ry='22' fill='none' stroke='%23d4918a' stroke-width='0.3' opacity='0.03' transform='rotate(216 60 60)'/%3E%3Cellipse cx='60' cy='40' rx='14' ry='22' fill='none' stroke='%23d4918a' stroke-width='0.3' opacity='0.025' transform='rotate(288 60 60)'/%3E%3Ccircle cx='60' cy='60' r='5' fill='none' stroke='%23d4af37' stroke-width='0.3' opacity='0.04'/%3E%3C/svg%3E");
-}
-
-/* ═══════════════════════════════════════
-   TRADITIONAL WAGARA (和柄) — refined
-   ═══════════════════════════════════════ */
-
-/* Seigaiha (青海波) */
-.seigaiha-bg {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='28' viewBox='0 0 56 28'%3E%3Cpath d='M0 28C7.73 28 14 21.73 14 14S7.73 0 0 0' fill='none' stroke='%23c53d2f' stroke-width='0.4' opacity='0.06'/%3E%3Cpath d='M0 28C5.52 28 10 23.52 10 18S5.52 8 0 8' fill='none' stroke='%23d4af37' stroke-width='0.3' opacity='0.04'/%3E%3Cpath d='M28 28c7.73 0 14-6.27 14-14S35.73 0 28 0' fill='none' stroke='%23c53d2f' stroke-width='0.4' opacity='0.06'/%3E%3Cpath d='M28 28c5.52 0 10-4.48 10-10s-4.48-10-10-10' fill='none' stroke='%23d4af37' stroke-width='0.3' opacity='0.04'/%3E%3Cpath d='M56 28c7.73 0 14-6.27 14-14S63.73 0 56 0' fill='none' stroke='%23c53d2f' stroke-width='0.4' opacity='0.06'/%3E%3Cpath d='M14 28c7.73 0 14-6.27 14-14S21.73 0 14 0' fill='none' stroke='%23d4918a' stroke-width='0.3' opacity='0.04'/%3E%3Cpath d='M42 28c7.73 0 14-6.27 14-14S49.73 0 42 0' fill='none' stroke='%23d4918a' stroke-width='0.3' opacity='0.04'/%3E%3C/svg%3E");
-}
-
-/* Asanoha (麻の葉) */
-.asanoha-bg {
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='52' viewBox='0 0 60 52'%3E%3Cpath d='M30 0L60 26L30 52L0 26Z' fill='none' stroke='%23c53d2f' stroke-width='0.3' opacity='0.06'/%3E%3Cpath d='M30 0L30 52M0 26L60 26' fill='none' stroke='%23d4af37' stroke-width='0.2' opacity='0.04'/%3E%3C/svg%3E");
-}
-
-/* Shippo (七宝) */
-.shippo-bg {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='12' fill='none' stroke='%23c53d2f' stroke-width='0.3' opacity='0.05'/%3E%3Ccircle cx='0' cy='16' r='12' fill='none' stroke='%23d4af37' stroke-width='0.3' opacity='0.04'/%3E%3Ccircle cx='32' cy='16' r='12' fill='none' stroke='%23d4af37' stroke-width='0.3' opacity='0.04'/%3E%3Ccircle cx='16' cy='0' r='12' fill='none' stroke='%23c53d2f' stroke-width='0.3' opacity='0.04'/%3E%3Ccircle cx='16' cy='32' r='12' fill='none' stroke='%23c53d2f' stroke-width='0.3' opacity='0.04'/%3E%3C/svg%3E");
-}
-
-/* ═══════════════════════════════════════
-   LACQUER & DIMENSIONAL SURFACES
-   ═══════════════════════════════════════ */
-
-/* Deep lacquer panel — primary card surface */
-.lacquer-panel {
-  background: linear-gradient(165deg, #0d1233 0%, #070b1e 60%, #0a0a12 100%);
-  border: 1px solid rgba(212, 175, 55, 0.08);
-  box-shadow:
-    0 2px 20px rgba(10, 10, 18, 0.5),
-    inset 0 1px 0 rgba(212, 175, 55, 0.04);
-}
-
-.lacquer-panel:hover {
-  border-color: rgba(212, 175, 55, 0.15);
-  box-shadow:
-    0 8px 32px rgba(10, 10, 18, 0.6),
-    inset 0 1px 0 rgba(212, 175, 55, 0.06);
-}
-
-/* Smoky glass panel */
-.glass-panel {
-  background: linear-gradient(165deg, rgba(13, 18, 51, 0.8) 0%, rgba(7, 11, 30, 0.9) 100%);
-  border: 1px solid rgba(247, 243, 235, 0.06);
-  backdrop-filter: blur(12px);
-  box-shadow:
-    0 4px 24px rgba(10, 14, 42, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.03);
-}
-
-/* Porcelain surface — light cards */
-.porcelain-panel {
-  background: linear-gradient(175deg, #f7f3eb 0%, #f0ece5 50%, #efe9dd 100%);
-  border: 1px solid rgba(212, 175, 55, 0.12);
-  box-shadow:
-    0 1px 8px rgba(0, 0, 0, 0.06),
-    inset 0 1px 0 rgba(255, 255, 255, 0.8);
-}
-
-.porcelain-panel:hover {
-  border-color: rgba(197, 61, 47, 0.15);
-  box-shadow:
-    0 4px 16px rgba(0, 0, 0, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.9);
-}
-
-/* Washi paper texture */
-.washi-bg {
-  background-color: #f7f3eb;
-  background-image:
-    url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
-}
-
-/* ═══════════════════════════════════════
-   DIVIDERS & ACCENTS
-   ═══════════════════════════════════════ */
-
-/* Gold rule */
-.gold-rule {
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #c5a028, transparent);
-}
-
-/* Vermillion rule */
-.vermillion-rule {
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #c53d2f 30%, #d4af37 70%, transparent);
-}
-
-/* Tsubaki petal divider accent */
-.petal-accent {
-  position: relative;
-}
-
-.petal-accent::before {
-  content: '';
+/* Single petal — glossy porcelain with depth */
+.tsubaki-petal {
   position: absolute;
-  left: -4px;
-  top: 50%;
-  transform: translateY(-50%) rotate(-15deg);
-  width: 8px;
-  height: 14px;
+  width: 44px;
+  height: 68px;
   border-radius: 50% 50% 50% 0;
-  background: linear-gradient(135deg, rgba(197, 61, 47, 0.15), rgba(212, 145, 138, 0.08));
-  pointer-events: none;
+  background: linear-gradient(
+    135deg,
+    rgba(233, 30, 99, 0.25) 0%,
+    rgba(244, 143, 177, 0.15) 40%,
+    rgba(252, 228, 236, 0.08) 70%,
+    rgba(233, 30, 99, 0.05) 100%
+  );
+  border: 1px solid rgba(233, 30, 99, 0.15);
+  box-shadow:
+    inset 0 -8px 16px rgba(233, 30, 99, 0.1),
+    inset 0 2px 8px rgba(252, 228, 236, 0.15),
+    0 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
 }
 
-/* ═══════════════════════════════════════
-   CARD SYSTEM
-   ═══════════════════════════════════════ */
+/* Hero-scale petal */
+.tsubaki-petal-lg {
+  position: absolute;
+  width: 80px;
+  height: 130px;
+  border-radius: 50% 50% 50% 0;
+  background: linear-gradient(
+    135deg,
+    rgba(233, 30, 99, 0.2) 0%,
+    rgba(244, 143, 177, 0.12) 30%,
+    rgba(252, 228, 236, 0.06) 60%,
+    rgba(233, 30, 99, 0.03) 100%
+  );
+  border: 1px solid rgba(233, 30, 99, 0.1);
+  box-shadow:
+    inset 0 -12px 24px rgba(233, 30, 99, 0.08),
+    inset 0 4px 12px rgba(252, 228, 236, 0.1),
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 40px rgba(233, 30, 99, 0.04);
+  backdrop-filter: blur(8px);
+}
 
-/* Premium card hover */
+/* Gold stamen center */
+.tsubaki-stamen {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 215, 0, 0.4) 0%,
+    rgba(212, 160, 23, 0.2) 50%,
+    transparent 100%
+  );
+  box-shadow:
+    0 0 20px rgba(255, 215, 0, 0.15),
+    0 0 60px rgba(212, 160, 23, 0.05);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   PANEL SYSTEM — LACQUER DEPTH
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Primary panel — deep lacquer with gold edge glow */
+.panel {
+  background: linear-gradient(165deg, #0e0f1a 0%, #0a0b12 40%, #050508 100%);
+  border: 1px solid rgba(212, 160, 23, 0.08);
+  border-radius: 4px;
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.6),
+    0 1px 4px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(212, 160, 23, 0.04);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.panel:hover {
+  border-color: rgba(212, 160, 23, 0.18);
+  box-shadow:
+    0 8px 40px rgba(0, 0, 0, 0.7),
+    0 2px 8px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(212, 160, 23, 0.08),
+    0 0 30px rgba(212, 160, 23, 0.04);
+}
+
+/* Glass panel — frosted translucent */
+.glass-panel {
+  background: rgba(14, 15, 26, 0.6);
+  border: 1px solid rgba(212, 160, 23, 0.06);
+  border-radius: 4px;
+  backdrop-filter: blur(16px);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.02);
+}
+
+/* Content panel (for detail pages — replaces bg-parchment) */
+.content-panel {
+  background: linear-gradient(165deg, #0e0f1a 0%, #0a0b12 100%);
+  border: 1px solid rgba(212, 160, 23, 0.06);
+  border-radius: 4px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   NEON GLOW ACCENTS
+   ═══════════════════════════════════════════════════════════════ */
+
+.glow-line-gold {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212, 160, 23, 0.6), transparent);
+  box-shadow: 0 0 8px rgba(212, 160, 23, 0.3), 0 0 24px rgba(212, 160, 23, 0.1);
+}
+
+.glow-line-shu {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(224, 60, 49, 0.5), rgba(233, 30, 99, 0.3), transparent);
+  box-shadow: 0 0 8px rgba(224, 60, 49, 0.2), 0 0 24px rgba(233, 30, 99, 0.08);
+}
+
+.glow-line-tsubaki {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 10%, rgba(233, 30, 99, 0.5) 30%, rgba(212, 160, 23, 0.5) 70%, transparent 90%);
+  box-shadow: 0 0 12px rgba(233, 30, 99, 0.15), 0 0 12px rgba(212, 160, 23, 0.1);
+}
+
+/* Vertical glow accent */
+.glow-bar {
+  width: 2px;
+  background: linear-gradient(180deg, rgba(233, 30, 99, 0.6), rgba(212, 160, 23, 0.4), transparent);
+  box-shadow: 0 0 8px rgba(233, 30, 99, 0.2), 0 0 20px rgba(212, 160, 23, 0.08);
+  transition: all 0.4s ease;
+}
+
+.group:hover .glow-bar,
+*:hover > .glow-bar {
+  background: linear-gradient(180deg, rgba(233, 30, 99, 0.9), rgba(212, 160, 23, 0.7), transparent);
+  box-shadow: 0 0 12px rgba(233, 30, 99, 0.4), 0 0 30px rgba(212, 160, 23, 0.15);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CARD SYSTEM
+   ═══════════════════════════════════════════════════════════════ */
+
 .card-hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease, border-color 0.4s ease;
 }
 
 .card-hover:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
-/* Vermillion left bar — now with tsubaki gradient */
+/* Nav link underline — neon gold */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--tsubaki-rose), var(--kin-glow));
+  box-shadow: 0 0 6px rgba(233, 30, 99, 0.3);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   EDIT MODE
+   ═══════════════════════════════════════════════════════════════ */
+
+.edit-mode [contenteditable="true"] {
+  outline: 1px dashed rgba(212, 160, 23, 0.4);
+  outline-offset: 2px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  background-color: rgba(212, 160, 23, 0.03);
+  transition: all 0.2s ease;
+}
+
+.edit-mode [contenteditable="true"]:focus {
+  outline-color: var(--tsubaki-rose);
+  background-color: rgba(233, 30, 99, 0.03);
+}
+
+@keyframes saveFlash {
+  0% { box-shadow: 0 0 0 0 rgba(233, 30, 99, 0.4); }
+  50% { box-shadow: 0 0 20px 4px rgba(233, 30, 99, 0.15); }
+  100% { box-shadow: 0 0 0 0 rgba(233, 30, 99, 0); }
+}
+
+.save-flash {
+  animation: saveFlash 0.6s ease-out;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SCROLLBAR — KINKAKU-JI GOLD
+   ═══════════════════════════════════════════════════════════════ */
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050508;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 160, 23, 0.2);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 160, 23, 0.4);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   WAGARA — VERY SUBTLE BACKGROUND PATTERNS
+   ═══════════════════════════════════════════════════════════════ */
+
+.seigaiha-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='28' viewBox='0 0 56 28'%3E%3Cpath d='M0 28C7.73 28 14 21.73 14 14S7.73 0 0 0' fill='none' stroke='%23d4a017' stroke-width='0.3' opacity='0.06'/%3E%3Cpath d='M28 28c7.73 0 14-6.27 14-14S35.73 0 28 0' fill='none' stroke='%23d4a017' stroke-width='0.3' opacity='0.06'/%3E%3Cpath d='M56 28c7.73 0 14-6.27 14-14S63.73 0 56 0' fill='none' stroke='%23d4a017' stroke-width='0.3' opacity='0.06'/%3E%3C/svg%3E");
+}
+
+.asanoha-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='52' viewBox='0 0 60 52'%3E%3Cpath d='M30 0L60 26L30 52L0 26Z' fill='none' stroke='%23d4a017' stroke-width='0.25' opacity='0.05'/%3E%3Cpath d='M30 0L30 52M0 26L60 26' fill='none' stroke='%23e91e63' stroke-width='0.15' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   LEGACY COMPATIBILITY CLASSES
+   ═══════════════════════════════════════════════════════════════ */
+
+/* These keep detail pages working with existing class names */
 .vermillion-bar {
   position: relative;
 }
@@ -182,9 +277,10 @@ body {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(180deg, #c53d2f, #d4918a 60%, #d4af37);
+  background: linear-gradient(180deg, rgba(233, 30, 99, 0.6), rgba(212, 160, 23, 0.4), transparent);
+  box-shadow: 0 0 8px rgba(233, 30, 99, 0.15);
   border-radius: 0 2px 2px 0;
-  opacity: 0.5;
+  opacity: 0.7;
   transition: opacity 0.3s ease;
 }
 
@@ -192,109 +288,19 @@ body {
   opacity: 1;
 }
 
-/* Corner tsubaki petal decorations for cards */
-.tsubaki-corner {
-  position: relative;
-  overflow: hidden;
+/* Washi bg — now dark variant */
+.washi-bg {
+  background: linear-gradient(165deg, #0e0f1a 0%, #0a0b12 100%);
 }
 
-.tsubaki-corner::after {
-  content: '';
-  position: absolute;
-  top: -6px;
-  right: -6px;
-  width: 24px;
-  height: 24px;
-  background: radial-gradient(ellipse at center, rgba(197, 61, 47, 0.06), transparent 70%);
-  border-radius: 0 0 0 100%;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-
-.tsubaki-corner:hover::after {
-  background: radial-gradient(ellipse at center, rgba(197, 61, 47, 0.12), transparent 70%);
-}
-
-/* ═══════════════════════════════════════
-   LINK UNDERLINE
-   ═══════════════════════════════════════ */
-
-.nav-link {
-  position: relative;
-}
-
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
+.gold-rule {
   height: 1px;
-  background: linear-gradient(90deg, #c53d2f, #d4af37);
-  transition: width 0.3s ease;
+  background: linear-gradient(90deg, transparent, rgba(212, 160, 23, 0.5), transparent);
+  box-shadow: 0 0 8px rgba(212, 160, 23, 0.2);
 }
 
-.nav-link:hover::after {
-  width: 100%;
-}
-
-/* ═══════════════════════════════════════
-   EDIT MODE
-   ═══════════════════════════════════════ */
-
-.edit-mode [contenteditable="true"] {
-  outline: 1px dashed #c5a028;
-  outline-offset: 2px;
-  padding: 2px 4px;
-  border-radius: 2px;
-  background-color: rgba(197, 160, 40, 0.05);
-  transition: all 0.2s ease;
-}
-
-.edit-mode [contenteditable="true"]:focus {
-  outline-color: #c53d2f;
-  background-color: rgba(197, 160, 40, 0.1);
-}
-
-@keyframes saveFlash {
-  0% { box-shadow: 0 0 0 0 rgba(197, 61, 47, 0.4); }
-  50% { box-shadow: 0 0 12px 4px rgba(197, 61, 47, 0.2); }
-  100% { box-shadow: 0 0 0 0 rgba(197, 61, 47, 0); }
-}
-
-.save-flash {
-  animation: saveFlash 0.6s ease-out;
-}
-
-/* ═══════════════════════════════════════
-   SCROLLBAR
-   ═══════════════════════════════════════ */
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: #070b1e;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #1f2a62;
-  border-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #2c3a8a;
-}
-
-/* ═══════════════════════════════════════
-   ORBITAL / SYSTEMS LINEWORK
-   ═══════════════════════════════════════ */
-
-.orbital-lines {
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600'%3E%3Cellipse cx='300' cy='300' rx='280' ry='120' fill='none' stroke='%23d4af37' stroke-width='0.3' opacity='0.04' transform='rotate(-20 300 300)'/%3E%3Cellipse cx='300' cy='300' rx='220' ry='90' fill='none' stroke='%23c53d2f' stroke-width='0.3' opacity='0.03' transform='rotate(15 300 300)'/%3E%3Cellipse cx='300' cy='300' rx='160' ry='60' fill='none' stroke='%23d4af37' stroke-width='0.2' opacity='0.03' transform='rotate(-40 300 300)'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.vermillion-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(233, 30, 99, 0.5), rgba(212, 160, 23, 0.5), transparent);
+  box-shadow: 0 0 8px rgba(233, 30, 99, 0.1);
 }

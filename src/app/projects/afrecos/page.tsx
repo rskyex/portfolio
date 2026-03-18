@@ -6,7 +6,7 @@ import Tag from '@/components/Tag';
 export default function AfrecosProjectPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-12 md:py-20">
-      <Link href="/projects" className="font-noto-sans text-xs text-gold/50 hover:text-gold transition-colors tracking-wide mb-8 inline-block">
+      <Link href="/projects" className="font-noto-sans text-xs text-kin/50 hover:text-kin-light transition-colors tracking-wide mb-8 inline-block">
         ← Back to Projects
       </Link>
 
@@ -21,12 +21,12 @@ export default function AfrecosProjectPage() {
           className="w-full h-64 md:h-80"
         />
 
-        <div className="bg-parchment/95 rounded-sm p-8">
-          <h3 className="font-noto-sans text-base font-medium text-ink mb-4">Overview</h3>
-          <p className="font-noto-sans text-sm text-warm-brown leading-relaxed mb-4">
+        <div className="panel rounded-sm p-8">
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
+          <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed mb-4">
             AFRECOS is a 10+ country network founded to bridge African and Japanese cultural and policy communities. As Co-Founder and President, Risa Koyanagi built the organisation from the ground up, coordinating cultural exchanges, policy events, and public engagement activities across a diverse international membership.
           </p>
-          <p className="font-noto-sans text-sm text-warm-brown leading-relaxed">
+          <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed">
             Key achievements include organising events with around 70–80 attendees and convening a policy talk at the Japanese House of Councillors with approximately 50 stakeholders from government, civil society, and the diplomatic community.
           </p>
         </div>
@@ -37,8 +37,8 @@ export default function AfrecosProjectPage() {
           ))}
         </div>
 
-        <div className="bg-parchment/95 rounded-sm p-8">
-          <h3 className="font-noto-sans text-base font-medium text-ink mb-4">Key Facts</h3>
+        <div className="panel rounded-sm p-8">
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Key Facts</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {[
               { value: '10+', label: 'Countries represented' },
@@ -46,8 +46,8 @@ export default function AfrecosProjectPage() {
               { value: '~50', label: 'Policy stakeholders' },
             ].map((stat, i) => (
               <div key={i} className="text-center">
-                <div className="font-kaisei text-2xl text-indigo-800/60">{stat.value}</div>
-                <div className="font-noto-sans text-xs text-warm-gray mt-1">{stat.label}</div>
+                <div className="font-kaisei text-2xl text-kin/50">{stat.value}</div>
+                <div className="font-noto-sans text-xs text-shiro/25 mt-1">{stat.label}</div>
               </div>
             ))}
           </div>

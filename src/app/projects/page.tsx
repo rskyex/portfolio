@@ -11,7 +11,7 @@ export default function ProjectsPage() {
       />
 
       <div className="mt-6 mb-12">
-        <p className="font-noto-sans text-sm text-washi/60 leading-relaxed max-w-2xl">
+        <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed max-w-2xl">
           Leadership, fieldwork, institution-building, and interdisciplinary engagement across research, policy, cultural, and artistic domains.
         </p>
       </div>

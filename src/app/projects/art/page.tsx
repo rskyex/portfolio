@@ -5,7 +5,7 @@ import PhotoFrame from '@/components/PhotoFrame';
 export default function ArtProjectPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-12 md:py-20">
-      <Link href="/projects" className="font-noto-sans text-xs text-gold/50 hover:text-gold transition-colors tracking-wide mb-8 inline-block">
+      <Link href="/projects" className="font-noto-sans text-xs text-kin/50 hover:text-kin-light transition-colors tracking-wide mb-8 inline-block">
         ← Back to Projects
       </Link>
 
@@ -20,18 +20,18 @@ export default function ArtProjectPage() {
           className="w-full h-72 md:h-96"
         />
 
-        <div className="bg-parchment/95 rounded-sm p-8">
-          <h3 className="font-noto-sans text-base font-medium text-ink mb-4">Overview</h3>
-          <p className="font-noto-sans text-sm text-warm-brown leading-relaxed mb-4">
+        <div className="panel rounded-sm p-8">
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
+          <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed mb-4">
             An interdisciplinary art practice that connects visual thinking with broader research interests in governance, identity, and technology. The work engages with questions of representation, materiality, and conceptual framing that parallel and inform the research agenda.
           </p>
-          <p className="font-noto-sans text-sm text-warm-brown leading-relaxed">
+          <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed">
             The practice spans visual art, conceptual work, and exhibition, with an international exhibition history that reflects the same cross-cultural and cross-disciplinary orientation as the broader portfolio. Art functions here not as a separate domain, but as an alternative mode of thinking about the same structural questions — authority, legitimacy, representation, and the architecture of meaning.
           </p>
         </div>
 
-        <div className="bg-parchment/95 rounded-sm p-8">
-          <h3 className="font-noto-sans text-base font-medium text-ink mb-4">Themes</h3>
+        <div className="panel rounded-sm p-8">
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Themes</h3>
           <ul className="space-y-2">
             {[
               'Visual thinking as a research methodology',
@@ -40,8 +40,8 @@ export default function ArtProjectPage() {
               'International exhibition and conceptual work',
               'The architecture of meaning and authority',
             ].map((theme, i) => (
-              <li key={i} className="font-noto-sans text-sm text-warm-brown leading-relaxed flex items-start gap-2">
-                <span className="text-gold/40 mt-1">—</span>
+              <li key={i} className="font-noto-sans text-sm text-shiro/40 leading-relaxed flex items-start gap-2">
+                <span className="text-kin/50 mt-1">—</span>
                 {theme}
               </li>
             ))}

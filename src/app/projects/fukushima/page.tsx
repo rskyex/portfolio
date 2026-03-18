@@ -6,7 +6,7 @@ import Tag from '@/components/Tag';
 export default function FukushimaProjectPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-12 md:py-20">
-      <Link href="/projects" className="font-noto-sans text-xs text-gold/50 hover:text-gold transition-colors tracking-wide mb-8 inline-block">
+      <Link href="/projects" className="font-noto-sans text-xs text-kin/50 hover:text-kin-light transition-colors tracking-wide mb-8 inline-block">
         ← Back to Projects
       </Link>
 
@@ -21,12 +21,12 @@ export default function FukushimaProjectPage() {
           className="w-full h-64 md:h-80"
         />
 
-        <div className="bg-parchment/95 rounded-sm p-8">
-          <h3 className="font-noto-sans text-base font-medium text-ink mb-4">Overview</h3>
-          <p className="font-noto-sans text-sm text-warm-brown leading-relaxed mb-4">
+        <div className="panel rounded-sm p-8">
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
+          <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed mb-4">
             Multi-site fieldwork conducted across the Futaba and Namie districts of Fukushima Prefecture between 2019 and 2024. The research examines post-disaster governance, focusing on the persistent gap between official recovery policy and the lived experience of displaced communities.
           </p>
-          <p className="font-noto-sans text-sm text-warm-brown leading-relaxed">
+          <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed">
             Over six years of engagement, the fieldwork has involved interviews with evacuees, municipal mayors, town leaders, officials from the Ministry of Economy, Trade and Industry (METI), and representatives of TEPCO. It traces the evolving dynamics of trust, transparency, and institutional accountability under conditions of prolonged displacement and uncertain information.
           </p>
         </div>
@@ -37,8 +37,8 @@ export default function FukushimaProjectPage() {
           ))}
         </div>
 
-        <div className="bg-parchment/95 rounded-sm p-8">
-          <h3 className="font-noto-sans text-base font-medium text-ink mb-4">Key Activities</h3>
+        <div className="panel rounded-sm p-8">
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Key Activities</h3>
           <div className="space-y-3">
             {[
               'Multi-site field research in Futaba and Namie districts',
@@ -48,8 +48,8 @@ export default function FukushimaProjectPage() {
               'Six years of continuous engagement with affected communities and institutional actors',
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
-                <span className="text-vermillion/40 mt-0.5">—</span>
-                <p className="font-noto-sans text-sm text-warm-brown">{item}</p>
+                <span className="text-shu/30 mt-0.5">—</span>
+                <p className="font-noto-sans text-sm text-shiro/40">{item}</p>
               </div>
             ))}
           </div>
