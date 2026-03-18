@@ -29,8 +29,8 @@ export default function PromisePlatformPage() {
         </div>
 
         <PhotoFrame
-          src="/images/mofa-korea.jpg"
-          alt="Japan Promise Tracker — policy engagement context"
+          src="/images/promise-platform.jpg"
+          alt="Japan Promise Tracker — tracking government policy commitments"
           width={800}
           height={450}
           className="w-full h-64 md:h-80"
@@ -56,7 +56,7 @@ export default function PromisePlatformPage() {
           <Gallery
             title="Platform Preview"
             images={[
-              { src: '/images/mofa-korea.jpg', alt: 'Japan Promise Tracker overview', caption: 'Policy accountability and civic engagement' },
+              { src: '/images/promise-platform.jpg', alt: 'Japan Promise Tracker overview', caption: 'Government commitment tracking interface' },
             ]}
           />
         </div>

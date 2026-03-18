@@ -22,7 +22,7 @@ export default function SpeakingPage() {
           context="Tokyo International Conference on African Development."
           type="Policy Engagement"
           description="Policy engagement and youth representation at the TICAD Ministerial Meeting, contributing to Africa–Japan development dialogue."
-          image="/images/afrecos.jpg"
+          image="/images/speaking-ticad.jpg"
         />
 
         <SpeakingCard
@@ -30,7 +30,7 @@ export default function SpeakingPage() {
           context="Bilateral dialogue and peace exchange between Japanese and Dutch participants."
           type="Dialogue Contribution"
           description="Participation in structured bilateral peace exchange focused on shared policy challenges and cultural understanding."
-          image="/images/peacebuilding.jpg"
+          image="/images/speaking-peace-exchange.jpg"
         />
 
         <SpeakingCard
@@ -54,7 +54,7 @@ export default function SpeakingPage() {
           context="Youth-oriented policy and development forum."
           type="Youth Representation"
           description="Participation in a youth-focused policy forum addressing Africa–Japan co-creation, development cooperation, and future-oriented agenda setting."
-          image="/images/art.JPG"
+          image="/images/speaking-youth-drive.jpg"
         />
 
         <SpeakingCard
@@ -62,7 +62,7 @@ export default function SpeakingPage() {
           context="Hosted by GPE and the World Bank at the Japanese House of Councillors."
           type="Roundtable Participation"
           description="Engagement in a high-level roundtable on education policy hosted by the Global Partnership for Education and the World Bank, convened at the Japanese House of Councillors."
-          image="/images/fukushima.jpg"
+          image="/images/speaking-roundtable.JPG"
         />
       </div>
     </div>
