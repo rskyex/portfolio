@@ -10,13 +10,13 @@ export default function AboutPage() {
       <div className="mt-8 space-y-12">
         {/* Profile */}
         <div className="grid md:grid-cols-[auto,1fr] gap-8 items-start">
-          <div className="hidden md:block">
+          <div className="flex justify-center md:justify-start">
             <PhotoFrame
               src="/images/profile.jpg"
               alt="Risa Koyanagi"
               width={240}
               height={320}
-              className="w-52 h-68"
+              className="w-40 h-52 md:w-52 md:h-68"
             />
           </div>
 
