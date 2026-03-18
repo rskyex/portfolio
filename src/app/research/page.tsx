@@ -12,14 +12,14 @@ export default function ResearchPage() {
       />
 
       <div className="mt-6 mb-12">
-        <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed max-w-2xl">
+        <p className="font-noto-sans text-sm text-shiro/70 leading-relaxed max-w-2xl">
           Research spanning international security, space governance, nuclear governance, cyber governance, and emerging technology governance, with a conceptual focus on legitimation theory, dual-use governance, authority architecture, and responsible behaviour norms.
         </p>
       </div>
 
       {/* Working Paper */}
       <div className="mb-10">
-        <h3 className="font-noto-sans text-xs text-kin/50 tracking-[0.25em] uppercase mb-4">Working Paper</h3>
+        <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-4 font-semibold">Working Paper</h3>
         <ResearchListItem
           href="/research/lunar"
           title="Who Speaks for Humanity on the Moon?"
@@ -33,7 +33,7 @@ export default function ResearchPage() {
 
       {/* In Progress */}
       <div className="mb-10">
-        <h3 className="font-noto-sans text-xs text-kin/50 tracking-[0.25em] uppercase mb-4">In Progress</h3>
+        <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-4 font-semibold">In Progress</h3>
         <div className="space-y-4">
           <ResearchListItem
             href="/research/ai-cyber"
@@ -56,37 +56,37 @@ export default function ResearchPage() {
 
       {/* Conference / Development */}
       <div className="mb-10">
-        <h3 className="font-noto-sans text-xs text-kin/50 tracking-[0.25em] uppercase mb-4">Conference & Development</h3>
+        <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-4 font-semibold">Conference & Development</h3>
         <div className="space-y-4">
-          <div className="panel p-6 relative overflow-hidden">
+          <div className="card-washi card-washi-research p-6 relative overflow-hidden">
             <div className="glow-bar absolute left-0 top-0 bottom-0" />
             <div className="pl-4">
               <div className="flex items-start justify-between gap-2 mb-2">
-                <h4 className="font-noto-serif text-base font-medium text-shiro/85 italic">
+                <h4 className="font-noto-serif text-base font-semibold text-kuro-soft italic">
                   Dual-Use Governance and the Ambiguity Problem
                 </h4>
-                <span className="shrink-0 px-2.5 py-0.5 text-xs font-noto-sans rounded border bg-tsubaki-rose/8 text-tsubaki-blush/60 border-tsubaki-rose/15 tracking-wider">
+                <span className="shrink-0 px-2.5 py-0.5 text-xs font-noto-sans font-medium rounded border bg-tsubaki-rose/10 text-tsubaki-deep border-tsubaki-rose/20 tracking-wider">
                   Conference Abstract
                 </span>
               </div>
-              <p className="font-noto-sans text-sm text-shiro/55 leading-relaxed">
+              <p className="font-noto-sans text-sm text-kuro-soft/65 leading-relaxed">
                 Exploring how dual-use ambiguity shapes governance frameworks across nuclear, space, and cyber domains — examining the structural difficulties of regulating technologies with simultaneous civilian and military applications.
               </p>
             </div>
           </div>
 
-          <div className="panel p-6 relative overflow-hidden">
+          <div className="card-washi card-washi-research p-6 relative overflow-hidden">
             <div className="glow-bar absolute left-0 top-0 bottom-0" />
             <div className="pl-4">
               <div className="flex items-start justify-between gap-2 mb-2">
-                <h4 className="font-noto-serif text-base font-medium text-shiro/85 italic">
+                <h4 className="font-noto-serif text-base font-semibold text-kuro-soft italic">
                   Authority Architecture in Emerging Technology Governance
                 </h4>
-                <span className="shrink-0 px-2.5 py-0.5 text-xs font-noto-sans rounded border bg-shiro/[0.03] text-shiro/45 border-shiro/[0.06] tracking-wider">
+                <span className="shrink-0 px-2.5 py-0.5 text-xs font-noto-sans font-medium rounded border bg-kuro/[0.04] text-kuro-soft/60 border-kuro-soft/10 tracking-wider">
                   In Progress
                 </span>
               </div>
-              <p className="font-noto-sans text-sm text-shiro/55 leading-relaxed">
+              <p className="font-noto-sans text-sm text-kuro-soft/65 leading-relaxed">
                 Developing a framework for understanding how authority is constructed, distributed, and contested across emerging technology governance — with attention to legitimation processes, institutional design, and the role of technical expertise.
               </p>
             </div>
@@ -97,7 +97,7 @@ export default function ResearchPage() {
       <SectionDivider />
 
       <div className="text-center">
-        <p className="font-noto-sans text-xs text-shiro/30 tracking-wider">
+        <p className="font-noto-sans text-xs text-shiro/45 tracking-wider">
           Additional papers and conference work in development.
         </p>
       </div>

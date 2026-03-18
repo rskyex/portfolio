@@ -20,18 +20,18 @@ export default function AboutPage() {
             />
           </div>
 
-          <div className="panel p-8 relative overflow-hidden">
+          <div className="card-washi card-washi-about p-8 relative overflow-hidden">
             <div className="glow-bar absolute left-0 top-0 bottom-0" />
             <div className="pl-4">
-              <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Intellectual Profile</h3>
+              <h3 className="font-noto-sans text-base font-bold text-kuro-soft mb-4">Intellectual Profile</h3>
               <div className="space-y-4">
-                <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
+                <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
                   Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of international security, space governance, nuclear governance, cyber governance, and emerging technology governance. Her research is especially concerned with legitimation theory, dual-use governance, authority architecture, and responsible behaviour norms.
                 </p>
-                <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
+                <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
                   She develops public-facing policy and research platforms that translate governance theory into usable tools across strategic infrastructure domains. Her work connects conceptual research on legitimacy, authority, and governance architecture with applied questions of escalation, responsibility, and institutional design.
                 </p>
-                <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
+                <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
                   Although her work spans multiple domains — from space and nuclear to cyber and AI governance — it is unified by a consistent conceptual focus on how authority is constructed, contested, and legitimated in environments of technological complexity and strategic ambiguity.
                 </p>
               </div>
@@ -43,7 +43,7 @@ export default function AboutPage() {
 
         {/* Education */}
         <div>
-          <h3 className="font-noto-sans text-xs text-kin/50 tracking-[0.25em] uppercase mb-6">Education</h3>
+          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Education</h3>
           <div className="space-y-4">
             {[
               { institution: 'Hughes Hall, University of Cambridge', degree: '', period: '2026–' },
@@ -53,15 +53,15 @@ export default function AboutPage() {
               { institution: 'SOAS University of London', degree: 'BSc Social Sciences (Foundation Year)', period: '2024–2025', detail: 'GPA 3.92' },
               { institution: 'Sophia University', degree: 'BA Philosophy (first year completed)', period: '2023–2024' },
             ].map((edu, i) => (
-              <div key={i} className="panel p-6 relative overflow-hidden">
+              <div key={i} className="card-washi card-washi-about p-6 relative overflow-hidden">
                 <div className="glow-bar absolute left-0 top-0 bottom-0" />
                 <div className="pl-4">
                   <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 mb-1">
-                    <h4 className="font-noto-sans text-sm font-medium text-shiro/85">{edu.institution}</h4>
-                    <span className="font-noto-sans text-xs text-shiro/38 shrink-0">{edu.period}</span>
+                    <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">{edu.institution}</h4>
+                    <span className="font-noto-sans text-xs text-kuro-soft/50 shrink-0 font-medium">{edu.period}</span>
                   </div>
-                  {edu.degree && <p className="font-noto-sans text-sm text-shiro/60">{edu.degree}</p>}
-                  {edu.detail && <p className="font-noto-sans text-xs text-shiro/30 mt-1">{edu.detail}</p>}
+                  {edu.degree && <p className="font-noto-sans text-sm text-kuro-soft/65">{edu.degree}</p>}
+                  {edu.detail && <p className="font-noto-sans text-xs text-kuro-soft/45 mt-1">{edu.detail}</p>}
                 </div>
               </div>
             ))}
@@ -72,20 +72,20 @@ export default function AboutPage() {
 
         {/* Skills */}
         <div>
-          <h3 className="font-noto-sans text-xs text-kin/50 tracking-[0.25em] uppercase mb-6">Skills</h3>
+          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Skills</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { title: 'Research', items: ['Qualitative analysis', 'Codebook design', 'Stakeholder interviewing', 'Primary-source synthesis', 'Briefing memo writing', 'Policy analysis', 'Public speaking'] },
               { title: 'Technical', items: ['Next.js / React / TypeScript', 'D3 / Recharts / Leaflet', 'Tailwind CSS', 'Python / SQL', 'Figma / Adobe XD', 'Excel / PowerPoint', 'Google Docs'] },
               { title: 'Policy / Communication', items: ['Public speaking', 'Moderation', 'Workshop / event design', 'Stakeholder coordination', 'Policy writing'] },
             ].map((group, i) => (
-              <div key={i} className="panel p-6 relative overflow-hidden">
+              <div key={i} className="card-washi card-washi-about p-6 relative overflow-hidden">
                 <div className="glow-bar absolute left-0 top-0 bottom-0" />
                 <div className="pl-4">
-                  <h4 className="font-noto-sans text-sm font-medium text-shiro/85 mb-3">{group.title}</h4>
+                  <h4 className="font-noto-sans text-sm font-bold text-kuro-soft mb-3">{group.title}</h4>
                   <ul className="space-y-1.5">
                     {group.items.map((skill, j) => (
-                      <li key={j} className="font-noto-sans text-xs text-shiro/55">{skill}</li>
+                      <li key={j} className="font-noto-sans text-xs text-kuro-soft/60">{skill}</li>
                     ))}
                   </ul>
                 </div>
@@ -98,12 +98,12 @@ export default function AboutPage() {
 
         {/* Languages */}
         <div>
-          <h3 className="font-noto-sans text-xs text-kin/50 tracking-[0.25em] uppercase mb-6">Languages</h3>
+          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Languages</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {['Japanese', 'English', 'Russian', 'Chinese'].map((lang, i) => (
-              <div key={i} className="panel p-4 text-center relative overflow-hidden">
+              <div key={i} className="card-washi card-washi-about p-4 text-center relative overflow-hidden">
                 <div className="glow-bar absolute left-0 top-0 bottom-0" />
-                <div className="font-noto-sans text-sm font-medium text-shiro/80">{lang}</div>
+                <div className="font-noto-sans text-sm font-semibold text-kuro-soft">{lang}</div>
               </div>
             ))}
           </div>
@@ -113,7 +113,7 @@ export default function AboutPage() {
 
         {/* Affiliations */}
         <div>
-          <h3 className="font-noto-sans text-xs text-kin/50 tracking-[0.25em] uppercase mb-6">Affiliations</h3>
+          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Affiliations</h3>
           <div className="space-y-3">
             {[
               { institution: 'Sophia University', detail: 'Professor Sakuo Tojo Peacebuilding and International Cooperation Laboratory', role: 'Former President; current Alumni Representative' },
@@ -122,12 +122,12 @@ export default function AboutPage() {
               { institution: 'Waseda University', detail: 'Professor Nobuhiko Utsumi Laboratory', role: 'Professor Utsumi is also Honorary Professor at the National School of Fine Arts of Peru' },
               { institution: 'Meiji Gakuin University', detail: 'Professor Hiroshi Aoyagi Laboratory' },
             ].map((aff, i) => (
-              <div key={i} className="panel p-5 relative overflow-hidden">
+              <div key={i} className="card-washi card-washi-about p-5 relative overflow-hidden">
                 <div className="glow-bar absolute left-0 top-0 bottom-0" />
                 <div className="pl-4">
-                  <h4 className="font-noto-sans text-sm font-medium text-shiro/85">{aff.institution}</h4>
-                  <p className="font-noto-sans text-xs text-shiro/55 mt-1">{aff.detail}</p>
-                  {aff.role && <p className="font-noto-sans text-xs text-shiro/30 mt-0.5 italic">{aff.role}</p>}
+                  <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">{aff.institution}</h4>
+                  <p className="font-noto-sans text-xs text-kuro-soft/60 mt-1">{aff.detail}</p>
+                  {aff.role && <p className="font-noto-sans text-xs text-kuro-soft/45 mt-0.5 italic">{aff.role}</p>}
                 </div>
               </div>
             ))}
@@ -138,14 +138,14 @@ export default function AboutPage() {
 
         {/* Contact */}
         <div>
-          <h3 className="font-noto-sans text-xs text-kin/50 tracking-[0.25em] uppercase mb-6">Contact</h3>
-          <div className="panel p-6 relative overflow-hidden">
+          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Contact</h3>
+          <div className="card-washi card-washi-about p-6 relative overflow-hidden">
             <div className="glow-bar absolute left-0 top-0 bottom-0" />
             <div className="pl-4 space-y-2">
-              <a href="mailto:risakyng@gmail.com" className="block font-noto-sans text-sm text-shiro/70 hover:text-kin-light transition-colors">
+              <a href="mailto:risakyng@gmail.com" className="block font-noto-sans text-sm text-kuro-soft/70 hover:text-shu-deep transition-colors font-medium">
                 risakyng@gmail.com
               </a>
-              <a href="https://linkedin.com/in/rskyex" target="_blank" rel="noopener noreferrer" className="block font-noto-sans text-sm text-shiro/70 hover:text-kin-light transition-colors">
+              <a href="https://linkedin.com/in/rskyex" target="_blank" rel="noopener noreferrer" className="block font-noto-sans text-sm text-kuro-soft/70 hover:text-shu-deep transition-colors font-medium">
                 linkedin.com/in/rskyex
               </a>
             </div>

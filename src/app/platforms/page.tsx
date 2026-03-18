@@ -57,7 +57,7 @@ export default function PlatformsPage() {
       <SectionDivider />
 
       <div className="text-center">
-        <p className="font-noto-sans text-xs text-shiro/30 tracking-wide">
+        <p className="font-noto-sans text-xs text-shiro/45 tracking-wide">
           Each platform is built with Next.js, React, TypeScript, and D3 / Leaflet.
         </p>
       </div>

@@ -29,12 +29,12 @@ export default function SectionHeader({ kanji, english, subtitle, id }: SectionH
 
         <div className="flex items-end gap-5">
           {/* Large kanji — with neon glow */}
-          <span className="font-kaisei text-5xl md:text-6xl leading-none select-none text-transparent bg-clip-text bg-gradient-to-b from-kin/20 to-shu/10 drop-shadow-[0_0_20px_rgba(212,160,23,0.1)]">
+          <span className="font-kaisei text-5xl md:text-6xl leading-none select-none text-transparent bg-clip-text bg-gradient-to-b from-kin/30 to-shu/15 drop-shadow-[0_0_24px_rgba(212,160,23,0.15)]">
             {kanji}
           </span>
           <div className="flex-1">
             <h2
-              className="font-noto-sans text-sm md:text-base font-medium text-shiro/90 tracking-[0.25em] uppercase"
+              className="font-noto-sans text-sm md:text-base font-bold text-shiro tracking-[0.25em] uppercase drop-shadow-[0_0_8px_rgba(255,255,255,0.1)]"
               contentEditable={isEditing}
               suppressContentEditableWarning
             >
@@ -42,7 +42,7 @@ export default function SectionHeader({ kanji, english, subtitle, id }: SectionH
             </h2>
             {subtitle && (
               <p
-                className="font-noto-sans text-xs text-shiro/45 mt-1.5 tracking-wider"
+                className="font-noto-sans text-xs text-shiro/55 mt-1.5 tracking-wider"
                 contentEditable={isEditing}
                 suppressContentEditableWarning
               >

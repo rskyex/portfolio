@@ -102,17 +102,17 @@ export default function Home() {
               </div>
 
               {/* Eyebrow */}
-              <p className="font-noto-sans text-xs text-kin/50 tracking-[0.3em] uppercase mb-5">
+              <p className="font-noto-sans text-xs text-kin/70 tracking-[0.3em] uppercase mb-5 font-medium">
                 International Security · Space · Nuclear · Cyber · Emerging Technology Governance
               </p>
 
               {/* Title */}
-              <p className="font-noto-sans text-lg md:text-xl text-shiro/70 font-light tracking-widest mb-8">
+              <p className="font-noto-sans text-lg md:text-xl text-shiro/85 font-light tracking-widest mb-8">
                 Researcher
               </p>
 
               {/* Description */}
-              <p className="font-noto-sans text-sm text-shiro/60 leading-[1.9] max-w-xl mb-10">
+              <p className="font-noto-sans text-sm text-shiro/70 leading-[1.9] max-w-xl mb-10">
                 Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of space governance, nuclear governance, cyber governance, strategic risk, and emerging technology governance. Her research is especially concerned with legitimation theory, dual-use governance, authority architecture, responsible behaviour norms, and international security. She is supervised by Prof. Harald Wydra in connection with her Cambridge-based research trajectory, and is building the Strategic Infrastructure Risk Suite: a set of public-facing policy platforms across nuclear, orbital, and cyber domains.
               </p>
 
@@ -194,7 +194,7 @@ export default function Home() {
             />
           </div>
           <div className="mt-8 text-right">
-            <Link href="/platforms" className="font-noto-sans text-xs text-kin/40 hover:text-kin-glow/70 transition-colors tracking-widest uppercase">
+            <Link href="/platforms" className="font-noto-sans text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
               View all platforms →
             </Link>
           </div>
@@ -233,7 +233,7 @@ export default function Home() {
             />
           </div>
           <div className="mt-8 text-right">
-            <Link href="/research" className="font-noto-sans text-xs text-kin/40 hover:text-kin-glow/70 transition-colors tracking-widest uppercase">
+            <Link href="/research" className="font-noto-sans text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
               View all research →
             </Link>
           </div>
@@ -269,7 +269,7 @@ export default function Home() {
             />
           </div>
           <div className="mt-8 text-right">
-            <Link href="/projects" className="font-noto-sans text-xs text-kin/40 hover:text-kin-glow/70 transition-colors tracking-widest uppercase">
+            <Link href="/projects" className="font-noto-sans text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
               View all projects →
             </Link>
           </div>
@@ -297,7 +297,7 @@ export default function Home() {
             />
           </div>
           <div className="mt-8 text-right">
-            <Link href="/speaking" className="font-noto-sans text-xs text-kin/40 hover:text-kin-glow/70 transition-colors tracking-widest uppercase">
+            <Link href="/speaking" className="font-noto-sans text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
               View all speaking →
             </Link>
           </div>

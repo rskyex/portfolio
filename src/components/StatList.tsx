@@ -15,10 +15,10 @@ export default function StatList({ stats }: StatListProps) {
           {/* Subtle glow on hover */}
           <div className="absolute inset-0 -m-3 rounded opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-b from-kin/[0.02] to-transparent" />
           <div className="relative">
-            <div className="font-kaisei text-3xl md:text-4xl text-kin/80 drop-shadow-[0_0_12px_rgba(212,160,23,0.15)] group-hover:drop-shadow-[0_0_20px_rgba(212,160,23,0.25)] transition-all">
+            <div className="font-kaisei text-3xl md:text-4xl text-kin drop-shadow-[0_0_16px_rgba(212,160,23,0.2)] group-hover:drop-shadow-[0_0_24px_rgba(212,160,23,0.35)] transition-all">
               {stat.value}
             </div>
-            <div className="font-noto-sans text-[11px] text-shiro/45 mt-1.5 tracking-widest uppercase">{stat.label}</div>
+            <div className="font-noto-sans text-[11px] text-shiro/60 mt-1.5 tracking-widest uppercase font-medium">{stat.label}</div>
           </div>
         </div>
       ))}

@@ -15,8 +15,8 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             <Tsubaki3D size="sm" />
             <div>
-              <span className="font-kaisei text-lg text-kin/80 drop-shadow-[0_0_6px_rgba(212,160,23,0.15)]">小柳璃紗</span>
-              <span className="block font-noto-sans text-[10px] text-shiro/30 tracking-[0.3em] uppercase mt-0.5">
+              <span className="font-kaisei text-lg text-kin/90 drop-shadow-[0_0_6px_rgba(212,160,23,0.15)]">小柳璃紗</span>
+              <span className="block font-noto-sans text-[10px] text-shiro/45 tracking-[0.3em] uppercase mt-0.5">
                 Risa Koyanagi
               </span>
             </div>
@@ -27,7 +27,7 @@ export default function Footer() {
               <Link
                 key={item}
                 href={`/${item.toLowerCase()}`}
-                className="font-noto-sans text-xs text-shiro/30 hover:text-kin/60 transition-colors tracking-wider uppercase"
+                className="font-noto-sans text-xs text-shiro/45 hover:text-kin/80 transition-colors tracking-wider uppercase"
               >
                 {item}
               </Link>
@@ -37,7 +37,7 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-end gap-1.5">
             <a
               href="mailto:risakyng@gmail.com"
-              className="font-noto-sans text-xs text-shiro/30 hover:text-tsubaki-blush/60 transition-colors"
+              className="font-noto-sans text-xs text-shiro/45 hover:text-tsubaki-blush/80 transition-colors"
             >
               risakyng@gmail.com
             </a>
@@ -45,7 +45,7 @@ export default function Footer() {
               href="https://linkedin.com/in/rskyex"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-noto-sans text-xs text-shiro/30 hover:text-tsubaki-blush/60 transition-colors"
+              className="font-noto-sans text-xs text-shiro/45 hover:text-tsubaki-blush/80 transition-colors"
             >
               linkedin.com/in/rskyex
             </a>
@@ -54,7 +54,7 @@ export default function Footer() {
 
         <div className="glow-line-gold mt-12 mb-5 max-w-xs mx-auto" />
 
-        <p className="font-noto-sans text-[10px] text-shiro/18 text-center tracking-widest uppercase">
+        <p className="font-noto-sans text-[10px] text-shiro/30 text-center tracking-widest uppercase">
           &copy; {new Date().getFullYear()} Risa Koyanagi
         </p>
       </div>
