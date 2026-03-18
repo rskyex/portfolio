@@ -16,14 +16,14 @@ export default function WhiteCard({ children, className = '', id }: WhiteCardPro
   return (
     <div
       id={id}
-      className={`bg-parchment/95 rounded-sm card-hover ${isFlashing ? 'save-flash' : ''} ${isEditing ? 'edit-mode' : ''} ${className}`}
+      className={`lacquer-panel rounded-sm card-hover ${isFlashing ? 'save-flash' : ''} ${isEditing ? 'edit-mode' : ''} ${className}`}
     >
       {children}
       {isEditing && id && (
         <div className="px-6 pb-3 flex justify-end">
           <button
             onClick={() => saveSection(id)}
-            className="px-2 py-0.5 text-xs font-noto-sans text-gold border border-gold/30 rounded hover:bg-gold/10 transition-colors"
+            className="px-2 py-0.5 text-xs font-noto-sans text-gold/50 border border-gold/20 rounded-sm hover:bg-gold/10 transition-colors"
           >
             Save
           </button>

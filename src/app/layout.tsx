@@ -24,7 +24,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="font-noto-sans antialiased">
+      <body className="font-noto-sans antialiased bg-indigo-950">
         <EditProvider>
           <Navbar />
           <main className="pt-16 min-h-screen">

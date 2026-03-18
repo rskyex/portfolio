@@ -17,49 +17,62 @@ export default function SectionHeader({ kanji, english, subtitle, id }: SectionH
   return (
     <div
       id={sectionId}
-      className={`washi-bg relative overflow-hidden rounded-sm wagara-band ${isFlashing ? 'save-flash' : ''} ${isEditing ? 'edit-mode' : ''}`}
+      className={`relative overflow-hidden ${isFlashing ? 'save-flash' : ''} ${isEditing ? 'edit-mode' : ''}`}
     >
-      {/* Vermillion top accent bar */}
-      <div className="absolute top-0 left-0 w-24 h-[3px] bg-gradient-to-r from-vermillion/80 to-vermillion/0" />
-      {/* Gold corner accent */}
-      <div className="absolute top-0 right-0 w-16 h-[2px] bg-gradient-to-l from-gold/50 to-gold/0" />
-      {/* Vermillion bottom accent */}
-      <div className="absolute bottom-0 left-0 w-12 h-[2px] bg-gradient-to-r from-gold/40 to-gold/0" />
+      {/* Lacquer panel with inset depth */}
+      <div className="lacquer-panel rounded-sm">
+        {/* Vermillion top accent */}
+        <div className="absolute top-0 left-0 w-20 h-[1px] bg-gradient-to-r from-vermillion/50 to-transparent" />
+        {/* Gold accent right */}
+        <div className="absolute top-0 right-0 w-12 h-[1px] bg-gradient-to-l from-gold/30 to-transparent" />
 
-      {/* Bottom gradient rule */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-vermillion/30 via-gold/40 to-vermillion/30" />
+        {/* Corner tsubaki petal */}
+        <div className="absolute bottom-2 right-3 opacity-[0.06]">
+          <svg width="32" height="32" viewBox="0 0 32 32">
+            <ellipse cx="16" cy="8" rx="5" ry="9" fill="none" stroke="#c53d2f" strokeWidth="0.6" transform="rotate(0 16 16)" />
+            <ellipse cx="16" cy="8" rx="5" ry="9" fill="none" stroke="#c53d2f" strokeWidth="0.6" transform="rotate(72 16 16)" />
+            <ellipse cx="16" cy="8" rx="5" ry="9" fill="none" stroke="#c53d2f" strokeWidth="0.6" transform="rotate(144 16 16)" />
+            <ellipse cx="16" cy="8" rx="5" ry="9" fill="none" stroke="#d4918a" strokeWidth="0.5" transform="rotate(216 16 16)" />
+            <ellipse cx="16" cy="8" rx="5" ry="9" fill="none" stroke="#d4918a" strokeWidth="0.5" transform="rotate(288 16 16)" />
+            <circle cx="16" cy="16" r="2.5" fill="#d4af37" opacity="0.3" />
+          </svg>
+        </div>
 
-      <div className="px-8 py-8 md:py-10">
-        <div className="flex items-end gap-4">
-          <span className="font-kaisei text-5xl md:text-6xl text-vermillion/15 leading-none select-none">
-            {kanji}
-          </span>
-          <div className="flex-1">
-            <h2
-              className="font-noto-sans text-lg md:text-xl font-medium text-ink tracking-wider uppercase"
-              contentEditable={isEditing}
-              suppressContentEditableWarning
-            >
-              {english}
-            </h2>
-            {subtitle && (
-              <p
-                className="font-noto-sans text-sm text-warm-brown mt-1"
+        {/* Bottom border gradient */}
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-vermillion/15 via-gold/20 to-vermillion/15" />
+
+        <div className="px-8 py-8 md:py-10">
+          <div className="flex items-end gap-5">
+            <span className="font-kaisei text-5xl md:text-6xl text-vermillion/10 leading-none select-none">
+              {kanji}
+            </span>
+            <div className="flex-1">
+              <h2
+                className="font-noto-sans text-sm md:text-base font-medium text-washi/90 tracking-[0.2em] uppercase"
                 contentEditable={isEditing}
                 suppressContentEditableWarning
               >
-                {subtitle}
-              </p>
+                {english}
+              </h2>
+              {subtitle && (
+                <p
+                  className="font-noto-sans text-xs text-washi/35 mt-1.5 tracking-wide"
+                  contentEditable={isEditing}
+                  suppressContentEditableWarning
+                >
+                  {subtitle}
+                </p>
+              )}
+            </div>
+            {isEditing && (
+              <button
+                onClick={() => saveSection(sectionId)}
+                className="px-3 py-1 text-xs font-noto-sans text-vermillion border border-vermillion/30 rounded-sm hover:bg-vermillion/10 transition-colors"
+              >
+                Save
+              </button>
             )}
           </div>
-          {isEditing && (
-            <button
-              onClick={() => saveSection(sectionId)}
-              className="px-3 py-1 text-xs font-noto-sans text-vermillion border border-vermillion/30 rounded hover:bg-vermillion/10 transition-colors"
-            >
-              Save
-            </button>
-          )}
         </div>
       </div>
     </div>
