@@ -128,7 +128,7 @@ export default function Home() {
             </div>
 
             {/* Profile photo with tsubaki frame */}
-            <div className="hidden md:block relative">
+            <div className="flex justify-center md:justify-end relative">
               {/* Ambient tsubaki glow behind portrait */}
               <div className="absolute -inset-12 bg-[radial-gradient(ellipse_at_center,rgba(233,30,99,0.06)_0%,transparent_70%)] blur-xl pointer-events-none" />
               <div className="absolute -inset-12 bg-[radial-gradient(ellipse_at_center,rgba(212,160,23,0.04)_0%,transparent_70%)] blur-2xl pointer-events-none" />
@@ -138,7 +138,7 @@ export default function Home() {
                   alt="Risa Koyanagi"
                   width={320}
                   height={420}
-                  className="w-72 h-96"
+                  className="w-48 h-64 md:w-72 md:h-96"
                   priority
                 />
                 {/* Decorative tsubaki near portrait */}
