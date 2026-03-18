@@ -5,7 +5,7 @@ import PhotoFrame from '@/components/PhotoFrame';
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-12 md:py-20">
-      <SectionHeader kanji="技" english="About" subtitle="Researcher · Platform Builder" />
+      <SectionHeader kanji="技" english="About" subtitle="Researcher" />
 
       <div className="mt-8 space-y-12">
         {/* Profile */}
@@ -20,11 +20,11 @@ export default function AboutPage() {
             />
           </div>
 
-          <div className="bg-parchment/95 rounded-sm p-8">
+          <div className="bg-parchment/95 rounded-sm p-8 vermillion-bar">
             <h3 className="font-noto-sans text-base font-medium text-ink mb-4">Intellectual Profile</h3>
             <div className="space-y-4">
               <p className="font-noto-sans text-sm text-warm-brown leading-relaxed">
-                Risa Koyanagi is a researcher and platform builder working at the intersection of international security, space governance, nuclear governance, cyber governance, and emerging technology governance. Her research is especially concerned with legitimation theory, dual-use governance, authority architecture, and responsible behaviour norms.
+                Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of international security, space governance, nuclear governance, cyber governance, and emerging technology governance. Her research is especially concerned with legitimation theory, dual-use governance, authority architecture, and responsible behaviour norms.
               </p>
               <p className="font-noto-sans text-sm text-warm-brown leading-relaxed">
                 She develops public-facing policy and research platforms that translate governance theory into usable tools across strategic infrastructure domains. Her work connects conceptual research on legitimacy, authority, and governance architecture with applied questions of escalation, responsibility, and institutional design.
@@ -44,10 +44,15 @@ export default function AboutPage() {
           <div className="space-y-4">
             {[
               {
+                institution: 'Hughes Hall, University of Cambridge',
+                degree: '',
+                period: '2026–',
+              },
+              {
                 institution: 'University of London / Forward College',
-                degree: 'BSc Politics & International Relations + BSc Business & Leadership',
-                period: '2025–2028',
-                detail: 'Lisbon → Paris → Berlin',
+                degree: 'Academic Direction: London School of Economics',
+                period: '2025–2026',
+                detail: 'Lisbon',
               },
               {
                 institution: 'Saïd Business School, University of Oxford',
@@ -71,12 +76,14 @@ export default function AboutPage() {
                 period: '2023–2024',
               },
             ].map((edu, i) => (
-              <div key={i} className="bg-parchment/95 rounded-sm p-6">
+              <div key={i} className="bg-parchment/95 rounded-sm p-6 vermillion-bar">
                 <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 mb-1">
                   <h4 className="font-noto-sans text-sm font-medium text-ink">{edu.institution}</h4>
                   <span className="font-noto-sans text-xs text-warm-gray shrink-0">{edu.period}</span>
                 </div>
-                <p className="font-noto-sans text-sm text-warm-brown">{edu.degree}</p>
+                {edu.degree && (
+                  <p className="font-noto-sans text-sm text-warm-brown">{edu.degree}</p>
+                )}
                 {edu.detail && (
                   <p className="font-noto-sans text-xs text-warm-gray mt-1">{edu.detail}</p>
                 )}
@@ -91,7 +98,7 @@ export default function AboutPage() {
         <div>
           <h3 className="font-noto-sans text-xs text-gold/60 tracking-[0.2em] uppercase mb-6">Skills</h3>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-parchment/95 rounded-sm p-6">
+            <div className="bg-parchment/95 rounded-sm p-6 vermillion-bar">
               <h4 className="font-noto-sans text-sm font-medium text-ink mb-3">Research</h4>
               <ul className="space-y-1.5">
                 {[
@@ -108,7 +115,7 @@ export default function AboutPage() {
               </ul>
             </div>
 
-            <div className="bg-parchment/95 rounded-sm p-6">
+            <div className="bg-parchment/95 rounded-sm p-6 vermillion-bar">
               <h4 className="font-noto-sans text-sm font-medium text-ink mb-3">Technical</h4>
               <ul className="space-y-1.5">
                 {[
@@ -125,7 +132,7 @@ export default function AboutPage() {
               </ul>
             </div>
 
-            <div className="bg-parchment/95 rounded-sm p-6">
+            <div className="bg-parchment/95 rounded-sm p-6 vermillion-bar">
               <h4 className="font-noto-sans text-sm font-medium text-ink mb-3">Policy / Communication</h4>
               <ul className="space-y-1.5">
                 {[
@@ -148,15 +155,9 @@ export default function AboutPage() {
         <div>
           <h3 className="font-noto-sans text-xs text-gold/60 tracking-[0.2em] uppercase mb-6">Languages</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { lang: 'Japanese', level: 'Native' },
-              { lang: 'English', level: 'Professional working proficiency' },
-              { lang: 'Russian', level: 'Intermediate' },
-              { lang: 'Chinese', level: 'Intermediate' },
-            ].map((item, i) => (
-              <div key={i} className="bg-parchment/95 rounded-sm p-4 text-center">
-                <div className="font-noto-sans text-sm font-medium text-ink">{item.lang}</div>
-                <div className="font-noto-sans text-xs text-warm-gray mt-1">{item.level}</div>
+            {['Japanese', 'English', 'Russian', 'Chinese'].map((lang, i) => (
+              <div key={i} className="bg-parchment/95 rounded-sm p-4 text-center vermillion-bar">
+                <div className="font-noto-sans text-sm font-medium text-ink">{lang}</div>
               </div>
             ))}
           </div>
@@ -192,7 +193,7 @@ export default function AboutPage() {
                 detail: 'Professor Hiroshi Aoyagi Laboratory',
               },
             ].map((aff, i) => (
-              <div key={i} className="bg-parchment/95 rounded-sm p-5">
+              <div key={i} className="bg-parchment/95 rounded-sm p-5 vermillion-bar">
                 <h4 className="font-noto-sans text-sm font-medium text-ink">{aff.institution}</h4>
                 <p className="font-noto-sans text-xs text-warm-brown mt-1">{aff.detail}</p>
                 {aff.role && (
@@ -208,11 +209,11 @@ export default function AboutPage() {
         {/* Contact */}
         <div>
           <h3 className="font-noto-sans text-xs text-gold/60 tracking-[0.2em] uppercase mb-6">Contact</h3>
-          <div className="bg-parchment/95 rounded-sm p-6">
+          <div className="bg-parchment/95 rounded-sm p-6 vermillion-bar">
             <div className="space-y-2">
               <a
                 href="mailto:risakyng@gmail.com"
-                className="block font-noto-sans text-sm text-ink hover:text-indigo-800 transition-colors"
+                className="block font-noto-sans text-sm text-ink hover:text-vermillion transition-colors"
               >
                 risakyng@gmail.com
               </a>
@@ -220,7 +221,7 @@ export default function AboutPage() {
                 href="https://linkedin.com/in/rskyex"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block font-noto-sans text-sm text-ink hover:text-indigo-800 transition-colors"
+                className="block font-noto-sans text-sm text-ink hover:text-vermillion transition-colors"
               >
                 linkedin.com/in/rskyex
               </a>

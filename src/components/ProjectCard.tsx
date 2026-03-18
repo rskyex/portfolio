@@ -14,7 +14,7 @@ interface ProjectCardProps {
 export default function ProjectCard({ href, title, description, image, imageAlt, period, role }: ProjectCardProps) {
   return (
     <Link href={href} className="block group">
-      <div className="bg-parchment/95 rounded-sm card-hover overflow-hidden">
+      <div className="bg-parchment/95 rounded-sm card-hover overflow-hidden vermillion-bar">
         {image && (
           <div className="h-48 overflow-hidden">
             <PhotoFrame src={image} alt={imageAlt || title} width={600} height={300} className="h-full" />
@@ -22,7 +22,7 @@ export default function ProjectCard({ href, title, description, image, imageAlt,
         )}
         <div className="p-6">
           <div className="flex items-start justify-between gap-2 mb-2">
-            <h3 className="font-noto-sans text-base font-medium text-ink group-hover:text-indigo-800 transition-colors">
+            <h3 className="font-noto-sans text-base font-medium text-ink group-hover:text-vermillion-dark transition-colors">
               {title}
             </h3>
             {period && (

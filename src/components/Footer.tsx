@@ -2,11 +2,14 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-indigo-950 border-t border-indigo-800/30">
+    <footer className="bg-indigo-950 border-t border-vermillion/15">
       <div className="shippo-bg">
+        {/* Vermillion-gold gradient top line */}
+        <div className="h-[2px] bg-gradient-to-r from-transparent via-vermillion/50 to-transparent" />
         <div className="max-w-6xl mx-auto px-6 py-12">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-3">
+              <span className="hanko font-kaisei text-base text-vermillion/70">小柳</span>
               <span className="font-kaisei text-xl text-gold-light">璃紗</span>
               <span className="font-noto-sans text-sm text-washi/50 tracking-widest">
                 RISA KOYANAGI
@@ -28,7 +31,7 @@ export default function Footer() {
             <div className="flex flex-col items-center md:items-end gap-1">
               <a
                 href="mailto:risakyng@gmail.com"
-                className="font-noto-sans text-xs text-washi/40 hover:text-gold/70 transition-colors"
+                className="font-noto-sans text-xs text-washi/40 hover:text-vermillion/70 transition-colors"
               >
                 risakyng@gmail.com
               </a>
@@ -36,17 +39,17 @@ export default function Footer() {
                 href="https://linkedin.com/in/rskyex"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-noto-sans text-xs text-washi/40 hover:text-gold/70 transition-colors"
+                className="font-noto-sans text-xs text-washi/40 hover:text-vermillion/70 transition-colors"
               >
                 linkedin.com/in/rskyex
               </a>
             </div>
           </div>
 
-          <div className="gold-rule mt-8 mb-4" />
+          <div className="vermillion-rule mt-8 mb-4 max-w-md mx-auto" />
 
           <p className="font-noto-sans text-xs text-washi/25 text-center">
-            © {new Date().getFullYear()} Risa Koyanagi. All rights reserved.
+            &copy; {new Date().getFullYear()} Risa Koyanagi. All rights reserved.
           </p>
         </div>
       </div>

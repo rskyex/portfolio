@@ -21,7 +21,7 @@ const tags = [
 ];
 
 const stats = [
-  { value: '3', label: 'Platforms built' },
+  { value: '4', label: 'Platforms built' },
   { value: '24', label: 'Documents coded' },
   { value: '6', label: 'Years fieldwork' },
   { value: '5+', label: 'Papers in development' },
@@ -33,14 +33,22 @@ export default function Home() {
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 seigaiha-bg opacity-50" />
+        {/* Decorative vermillion accent */}
+        <div className="absolute top-16 left-0 w-1 h-32 bg-gradient-to-b from-vermillion/50 to-transparent" />
+        <div className="absolute bottom-0 right-0 w-1 h-24 bg-gradient-to-t from-gold/30 to-transparent" />
         <div className="relative max-w-6xl mx-auto px-6 py-20 md:py-32">
           <div className="grid md:grid-cols-[1fr,auto] gap-12 items-center">
             <div>
               {/* Name block */}
               <div className="mb-8">
-                <span className="font-kaisei text-6xl md:text-8xl text-gold-light/90 leading-none block">
-                  璃紗
-                </span>
+                <div className="flex items-end gap-3">
+                  <span className="hanko font-kaisei text-2xl md:text-3xl text-vermillion/70 leading-none">
+                    小柳
+                  </span>
+                  <span className="font-kaisei text-6xl md:text-8xl text-gold-light/90 leading-none">
+                    璃紗
+                  </span>
+                </div>
                 <div className="mt-3 flex items-baseline gap-3">
                   <h1 className="font-kaisei text-2xl md:text-3xl text-washi tracking-wide">
                     Risa Koyanagi
@@ -58,18 +66,18 @@ export default function Home() {
 
               {/* Title */}
               <p className="font-noto-sans text-lg md:text-xl text-washi/90 font-light tracking-wide mb-6">
-                Researcher · Platform Builder
+                Researcher
               </p>
 
               {/* Description */}
               <p className="font-noto-sans text-sm text-washi/65 leading-relaxed max-w-xl mb-8">
-                Risa Koyanagi is a Cambridge Future Scholar, undergraduate researcher, and platform builder working at the intersection of space governance, nuclear governance, cyber governance, strategic risk, and emerging technology governance. Her research is especially concerned with legitimation theory, dual-use governance, authority architecture, responsible behaviour norms, and international security. She is supervised by Prof. Harald Wydra in connection with her Cambridge-based research trajectory, and is building the Strategic Infrastructure Risk Suite: a set of public-facing policy platforms across nuclear, orbital, and cyber domains.
+                Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of space governance, nuclear governance, cyber governance, strategic risk, and emerging technology governance. Her research is especially concerned with legitimation theory, dual-use governance, authority architecture, responsible behaviour norms, and international security. She is supervised by Prof. Harald Wydra in connection with her Cambridge-based research trajectory, and is building the Strategic Infrastructure Risk Suite: a set of public-facing policy platforms across nuclear, orbital, and cyber domains.
               </p>
 
               {/* Tags */}
               <div className="flex flex-wrap gap-2 mb-10">
                 {tags.map(tag => (
-                  <Tag key={tag} label={tag} variant="gold" />
+                  <Tag key={tag} label={tag} variant="vermillion" />
                 ))}
               </div>
 
@@ -97,7 +105,7 @@ export default function Home() {
       {/* Platforms Preview */}
       <section className="max-w-6xl mx-auto px-6 pb-16">
         <SectionHeader kanji="台" english="Platforms" subtitle="Strategic Infrastructure Risk Suite" />
-        <div className="mt-8 grid md:grid-cols-3 gap-6">
+        <div className="mt-8 grid md:grid-cols-2 gap-6">
           <PlatformCard
             href="/platforms/nuclear"
             title="Global Nuclear Infrastructure Atlas"
@@ -113,6 +121,14 @@ export default function Home() {
             status="Live"
             liveUrl="https://orbitalrisktracker.vercel.app"
             tags={['ASAT', 'Space Security', 'Escalation']}
+          />
+          <PlatformCard
+            href="/platforms/promise"
+            title="Japan Promise Tracker"
+            description="Tracking Japanese government policy commitments and their fulfilment status across governance domains."
+            status="Live"
+            liveUrl="https://jp-ver-japan-promise-tracker.vercel.app"
+            tags={['Japan', 'Policy', 'Accountability']}
           />
           <PlatformCard
             href="/platforms/cyber"

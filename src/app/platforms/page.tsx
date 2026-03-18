@@ -37,6 +37,15 @@ export default function PlatformsPage() {
         />
 
         <PlatformCard
+          href="/platforms/promise"
+          title="Japan Promise Tracker"
+          description="Tracking Japanese government policy commitments and their fulfilment status across governance domains. Designed to support public accountability, policy analysis, and civic engagement by making government promises transparent and trackable."
+          status="Live"
+          liveUrl="https://jp-ver-japan-promise-tracker.vercel.app"
+          tags={['Japan', 'Policy Accountability', 'Government Commitments', 'Civic Engagement']}
+        />
+
+        <PlatformCard
           href="/platforms/cyber"
           title="Cyber Escalation Atlas"
           description="Mapping cyber incidents as strategic behaviour and governance signals. Engages with Kello's concept of 'unpeace,' attribution frameworks, Schelling's escalation logic, and Tallinn Manual 2.0 to contextualise cyber operations within broader governance and strategic analysis."

@@ -12,15 +12,12 @@ interface PlatformCardProps {
 export default function PlatformCard({ href, title, description, status, liveUrl, tags }: PlatformCardProps) {
   return (
     <Link href={href} className="block">
-      <div className="bg-parchment/95 rounded-sm card-hover p-6 md:p-8 relative overflow-hidden group">
-        {/* Vermillion left accent */}
-        <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-vermillion/40 group-hover:bg-vermillion/70 transition-colors" />
-
+      <div className="bg-parchment/95 rounded-sm card-hover vermillion-bar p-6 md:p-8 overflow-hidden group">
         <div className="flex items-start justify-between mb-3">
           <h3 className="font-noto-sans text-base md:text-lg font-medium text-ink pr-4">{title}</h3>
           <span className={`shrink-0 px-2 py-0.5 text-xs font-noto-sans rounded-sm ${
             status === 'Live'
-              ? 'bg-green-800/10 text-green-800/70 border border-green-800/20'
+              ? 'bg-vermillion/10 text-vermillion/80 border border-vermillion/25'
               : 'bg-gold/10 text-gold-dark border border-gold/20'
           }`}>
             {status}
@@ -40,7 +37,7 @@ export default function PlatformCard({ href, title, description, status, liveUrl
         )}
 
         {liveUrl && (
-          <span className="font-noto-sans text-xs text-gold-dark group-hover:text-gold tracking-wide transition-colors">
+          <span className="font-noto-sans text-xs text-vermillion/70 group-hover:text-vermillion tracking-wide transition-colors">
             View platform →
           </span>
         )}

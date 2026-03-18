@@ -6,7 +6,7 @@ interface TagProps {
 export default function Tag({ label, variant = 'default' }: TagProps) {
   const styles = {
     default: 'border-indigo-700/30 text-indigo-800/70 bg-indigo-900/5',
-    vermillion: 'border-vermillion/20 text-vermillion/80 bg-vermillion/5',
+    vermillion: 'border-vermillion/25 text-vermillion/90 bg-vermillion/5',
     gold: 'border-gold/25 text-gold-dark bg-gold/5',
   };
 

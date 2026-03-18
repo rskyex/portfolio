@@ -18,14 +18,19 @@ export default function Navbar() {
   const { isEditing, toggleEdit } = useEdit();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-indigo-950/95 backdrop-blur-sm border-b border-indigo-800/40">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-indigo-950/95 backdrop-blur-sm border-b border-vermillion/15">
       <div className="asanoha-bg">
+        {/* Thin vermillion top line */}
+        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-vermillion/60 to-transparent" />
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
-            <span className="font-kaisei text-2xl text-gold-light tracking-wide group-hover:text-gold-pale transition-colors">
+            <span className="hanko font-kaisei text-lg text-vermillion/80 group-hover:text-vermillion transition-colors">
+              小柳
+            </span>
+            <span className="font-kaisei text-xl text-gold-light tracking-wide group-hover:text-gold-pale transition-colors">
               璃紗
             </span>
-            <span className="hidden sm:inline font-noto-sans text-sm text-washi/70 tracking-widest uppercase">
+            <span className="hidden sm:inline font-noto-sans text-sm text-washi/60 tracking-widest uppercase">
               Risa Koyanagi
             </span>
           </Link>
@@ -68,7 +73,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-indigo-950/98 border-t border-indigo-800/30">
+        <div className="md:hidden bg-indigo-950/98 border-t border-vermillion/10">
           <div className="px-6 py-4 flex flex-col gap-4">
             {navLinks.map(link => (
               <Link

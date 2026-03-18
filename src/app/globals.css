@@ -26,25 +26,43 @@ body {
     url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
 }
 
-/* Asanoha pattern */
+/* Asanoha pattern - now with vermillion + gold mix */
 .asanoha-bg {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M20 0L40 20L20 40L0 20Z' fill='none' stroke='%23c5a028' stroke-width='0.3' opacity='0.12'/%3E%3Cpath d='M20 0L20 40M0 20L40 20' fill='none' stroke='%23c5a028' stroke-width='0.2' opacity='0.08'/%3E%3C/svg%3E");
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M20 0L40 20L20 40L0 20Z' fill='none' stroke='%23c53d2f' stroke-width='0.3' opacity='0.1'/%3E%3Cpath d='M20 0L20 40M0 20L40 20' fill='none' stroke='%23c5a028' stroke-width='0.2' opacity='0.1'/%3E%3C/svg%3E");
 }
 
-/* Seigaiha pattern */
+/* Seigaiha pattern - vermillion variant */
 .seigaiha-bg {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='20' viewBox='0 0 40 20'%3E%3Cpath d='M0 20c5.523 0 10-4.477 10-10S5.523 0 0 0' fill='none' stroke='%23c5a028' stroke-width='0.4' opacity='0.08'/%3E%3Cpath d='M20 20c5.523 0 10-4.477 10-10S25.523 0 20 0' fill='none' stroke='%23c5a028' stroke-width='0.4' opacity='0.08'/%3E%3Cpath d='M40 20c5.523 0 10-4.477 10-10S45.523 0 40 0' fill='none' stroke='%23c5a028' stroke-width='0.4' opacity='0.08'/%3E%3Cpath d='M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0' fill='none' stroke='%23c5a028' stroke-width='0.4' opacity='0.06'/%3E%3Cpath d='M30 20c5.523 0 10-4.477 10-10S35.523 0 30 0' fill='none' stroke='%23c5a028' stroke-width='0.4' opacity='0.06'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='20' viewBox='0 0 40 20'%3E%3Cpath d='M0 20c5.523 0 10-4.477 10-10S5.523 0 0 0' fill='none' stroke='%23c53d2f' stroke-width='0.4' opacity='0.07'/%3E%3Cpath d='M20 20c5.523 0 10-4.477 10-10S25.523 0 20 0' fill='none' stroke='%23c5a028' stroke-width='0.4' opacity='0.08'/%3E%3Cpath d='M40 20c5.523 0 10-4.477 10-10S45.523 0 40 0' fill='none' stroke='%23c53d2f' stroke-width='0.4' opacity='0.07'/%3E%3Cpath d='M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0' fill='none' stroke='%23c5a028' stroke-width='0.4' opacity='0.06'/%3E%3Cpath d='M30 20c5.523 0 10-4.477 10-10S35.523 0 30 0' fill='none' stroke='%23c53d2f' stroke-width='0.4' opacity='0.06'/%3E%3C/svg%3E");
 }
 
-/* Shippo pattern */
+/* Shippo pattern - vermillion accent */
 .shippo-bg {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'%3E%3Ccircle cx='14' cy='14' r='10' fill='none' stroke='%23c5a028' stroke-width='0.3' opacity='0.1'/%3E%3Ccircle cx='0' cy='14' r='10' fill='none' stroke='%23c5a028' stroke-width='0.3' opacity='0.1'/%3E%3Ccircle cx='28' cy='14' r='10' fill='none' stroke='%23c5a028' stroke-width='0.3' opacity='0.1'/%3E%3Ccircle cx='14' cy='0' r='10' fill='none' stroke='%23c5a028' stroke-width='0.3' opacity='0.1'/%3E%3Ccircle cx='14' cy='28' r='10' fill='none' stroke='%23c5a028' stroke-width='0.3' opacity='0.1'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'%3E%3Ccircle cx='14' cy='14' r='10' fill='none' stroke='%23c53d2f' stroke-width='0.3' opacity='0.1'/%3E%3Ccircle cx='0' cy='14' r='10' fill='none' stroke='%23c5a028' stroke-width='0.3' opacity='0.08'/%3E%3Ccircle cx='28' cy='14' r='10' fill='none' stroke='%23c53d2f' stroke-width='0.3' opacity='0.1'/%3E%3Ccircle cx='14' cy='0' r='10' fill='none' stroke='%23c5a028' stroke-width='0.3' opacity='0.08'/%3E%3Ccircle cx='14' cy='28' r='10' fill='none' stroke='%23c53d2f' stroke-width='0.3' opacity='0.1'/%3E%3C/svg%3E");
 }
 
 /* Gold rule */
 .gold-rule {
   height: 1px;
   background: linear-gradient(90deg, transparent, #c5a028, transparent);
+}
+
+/* Vermillion rule */
+.vermillion-rule {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #c53d2f, #c5a028, transparent);
+}
+
+/* Hanko seal stamp */
+.hanko {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(197, 61, 47, 0.7);
+  border-radius: 2px;
+  padding: 2px 6px;
+  transform: rotate(-3deg);
 }
 
 /* Edit mode styling */
@@ -64,9 +82,9 @@ body {
 
 /* Save confirmation flash */
 @keyframes saveFlash {
-  0% { box-shadow: 0 0 0 0 rgba(197, 160, 40, 0.4); }
-  50% { box-shadow: 0 0 12px 4px rgba(197, 160, 40, 0.2); }
-  100% { box-shadow: 0 0 0 0 rgba(197, 160, 40, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(197, 61, 47, 0.4); }
+  50% { box-shadow: 0 0 12px 4px rgba(197, 61, 47, 0.2); }
+  100% { box-shadow: 0 0 0 0 rgba(197, 61, 47, 0); }
 }
 
 .save-flash {
@@ -75,7 +93,7 @@ body {
 
 /* Card hover */
 .card-hover {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .card-hover:hover {
@@ -83,7 +101,7 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* Subtle link underline */
+/* Subtle link underline - vermillion on hover */
 .nav-link {
   position: relative;
 }
@@ -94,13 +112,35 @@ body {
   bottom: -2px;
   left: 0;
   width: 0;
-  height: 1px;
-  background-color: #c5a028;
+  height: 1.5px;
+  background: linear-gradient(90deg, #c53d2f, #c5a028);
   transition: width 0.3s ease;
 }
 
 .nav-link:hover::after {
   width: 100%;
+}
+
+/* Vermillion left bar accent for cards */
+.vermillion-bar {
+  position: relative;
+}
+
+.vermillion-bar::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #c53d2f, #c5a028);
+  border-radius: 0 2px 2px 0;
+  opacity: 0.6;
+  transition: opacity 0.25s ease;
+}
+
+.vermillion-bar:hover::before {
+  opacity: 1;
 }
 
 /* Scrollbar */
