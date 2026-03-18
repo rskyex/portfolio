@@ -301,12 +301,6 @@ export default function Home() {
               image="/images/speaking-peace-exchange.jpg"
             />
             <SpeakingCard
-              title="MOFA Republic of Korea Youth Representative"
-              context="Youth representative role in a Japan–Republic of Korea exchange programme facilitated by the Ministry of Foreign Affairs."
-              type="Youth Representation"
-              image="/images/mofa-korea.jpg"
-            />
-            <SpeakingCard
               title="Africa–Japan Youth Drive"
               context="Youth-focused policy forum addressing Africa–Japan co-creation and development cooperation."
               type="Youth Representation"

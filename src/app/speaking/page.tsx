@@ -34,14 +34,6 @@ export default function SpeakingPage() {
         />
 
         <SpeakingCard
-          title="MOFA Republic of Korea Youth Representative"
-          context="Ministry of Foreign Affairs, Republic of Korea."
-          type="Youth Representation"
-          description="Youth representative role in a Japan–Republic of Korea exchange programme facilitated by the Ministry of Foreign Affairs, contributing to bilateral dialogue and youth policy engagement."
-          image="/images/mofa-korea.jpg"
-        />
-
-        <SpeakingCard
           title="Africa–Japan Youth Drive: Co-Creation of the Future We Want"
           context="Youth-oriented policy and development forum."
           type="Youth Representation"
