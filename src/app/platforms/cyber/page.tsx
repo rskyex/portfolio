@@ -1,7 +1,5 @@
 import Link from 'next/link';
 import SectionHeader from '@/components/SectionHeader';
-import PhotoFrame from '@/components/PhotoFrame';
-import Gallery from '@/components/Gallery';
 import Tag from '@/components/Tag';
 
 export default function CyberPlatformPage() {
@@ -20,13 +18,9 @@ export default function CyberPlatformPage() {
           </span>
         </div>
 
-        <PhotoFrame
-          src="/images/peacebuilding.jpg"
-          alt="Cyber Escalation Atlas — strategic and governance research"
-          width={800}
-          height={450}
-          className="w-full h-64 md:h-80"
-        />
+        <div className="w-full h-64 md:h-80 border border-shiro/[0.08] rounded-sm flex items-center justify-center bg-kuro/30">
+          <span className="font-noto-sans text-sm text-shiro/40 tracking-wide">[in progress]</span>
+        </div>
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
@@ -48,12 +42,10 @@ export default function CyberPlatformPage() {
         </div>
 
         <div className="panel rounded-sm p-8">
-          <Gallery
-            title="Platform Preview"
-            images={[
-              { src: '/images/peacebuilding.jpg', alt: 'Cyber Escalation Atlas overview', caption: 'Strategic and governance research' },
-            ]}
-          />
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Platform Preview</h3>
+          <div className="w-full h-48 border border-shiro/[0.08] rounded-sm flex items-center justify-center bg-kuro/30">
+            <span className="font-noto-sans text-sm text-shiro/40 tracking-wide">[in progress]</span>
+          </div>
         </div>
 
         <div className="panel rounded-sm p-8">
