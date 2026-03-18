@@ -23,7 +23,7 @@ export default function AboutPage() {
           <div className="card-washi card-washi-about p-8 relative overflow-hidden">
             <div className="glow-bar absolute left-0 top-0 bottom-0" />
             <div className="pl-4">
-              <h3 className="font-noto-sans text-base font-bold text-kuro-soft mb-4">Intellectual Profile</h3>
+              <h3 className="font-noto-sans text-base font-bold text-kuro-soft mb-4">Profile</h3>
               <div className="space-y-4">
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
                   Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of international security, space governance, nuclear governance, cyber governance, and emerging technology governance. Her research is especially concerned with legitimation theory, dual-use governance, authority architecture, and responsible behaviour norms.
