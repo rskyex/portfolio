@@ -38,6 +38,7 @@ export default function SpeakingPage() {
           context="All-Party Parliamentary Group on North Korea."
           type="Parliamentary Engagement"
           description="Contribution to the All-Party Parliamentary Group dialogue on North Korean policy, addressing security, governance, and diplomatic considerations."
+          image="/images/profile.jpg"
         />
 
         <SpeakingCard
@@ -53,6 +54,7 @@ export default function SpeakingPage() {
           context="Youth-oriented policy and development forum."
           type="Youth Representation"
           description="Participation in a youth-focused policy forum addressing Africa–Japan co-creation, development cooperation, and future-oriented agenda setting."
+          image="/images/art.JPG"
         />
 
         <SpeakingCard
@@ -60,7 +62,7 @@ export default function SpeakingPage() {
           context="Hosted by GPE and the World Bank at the Japanese House of Councillors."
           type="Roundtable Participation"
           description="Engagement in a high-level roundtable on education policy hosted by the Global Partnership for Education and the World Bank, convened at the Japanese House of Councillors."
-          image="/images/peacebuilding.jpg"
+          image="/images/fukushima.jpg"
         />
       </div>
     </div>

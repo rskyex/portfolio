@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
+import Gallery from '@/components/Gallery';
 
 export default function ArtProjectPage() {
   return (
@@ -46,6 +47,16 @@ export default function ArtProjectPage() {
               </li>
             ))}
           </ul>
+        </div>
+
+        <div className="panel rounded-sm p-8">
+          <Gallery
+            title="Works"
+            images={[
+              { src: '/images/art.JPG', alt: 'Art practice', caption: 'Visual and conceptual work' },
+              { src: '/images/profile.jpg', alt: 'Studio practice', caption: 'Interdisciplinary practice' },
+            ]}
+          />
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SectionHeader from '@/components/SectionHeader';
+import Gallery from '@/components/Gallery';
 import Tag from '@/components/Tag';
 
 export default function PromisePlatformPage() {
@@ -40,6 +41,15 @@ export default function PromisePlatformPage() {
           {['Policy Accountability', 'Government Commitments', 'Japan', 'Civic Engagement', 'Transparency', 'Governance', 'Public Policy'].map(tag => (
             <Tag key={tag} label={tag} />
           ))}
+        </div>
+
+        <div className="panel rounded-sm p-8">
+          <Gallery
+            title="Platform Preview"
+            images={[
+              { src: '/images/mofa-korea.jpg', alt: 'Policy engagement context', caption: 'Policy accountability and civic engagement' },
+            ]}
+          />
         </div>
 
         <div className="panel rounded-sm p-8">

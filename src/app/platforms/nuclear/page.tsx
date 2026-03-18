@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SectionHeader from '@/components/SectionHeader';
+import Gallery from '@/components/Gallery';
 import Tag from '@/components/Tag';
 
 export default function NuclearPlatformPage() {
@@ -40,6 +41,15 @@ export default function NuclearPlatformPage() {
           {['Civilian Nuclear Power', 'Accident Sites', 'Nuclear Arsenals', 'Radiation & Health', 'IAEA', 'SIPRI', 'WHO', 'Policy Education'].map(tag => (
             <Tag key={tag} label={tag} />
           ))}
+        </div>
+
+        <div className="panel rounded-sm p-8">
+          <Gallery
+            title="Platform Preview"
+            images={[
+              { src: '/images/fukushima.jpg', alt: 'Nuclear infrastructure context', caption: 'Field research informing the platform' },
+            ]}
+          />
         </div>
 
         <div className="panel rounded-sm p-8">

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
+import Gallery from '@/components/Gallery';
 import Tag from '@/components/Tag';
 
 export default function AfrecosProjectPage() {
@@ -51,6 +52,17 @@ export default function AfrecosProjectPage() {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="panel rounded-sm p-8">
+          <Gallery
+            title="Gallery"
+            images={[
+              { src: '/images/afrecos.jpg', alt: 'AFRECOS event', caption: 'AFRECOS cultural exchange event' },
+              { src: '/images/mofa-korea.jpg', alt: 'Policy engagement', caption: 'Policy engagement session' },
+              { src: '/images/peacebuilding.jpg', alt: 'Community dialogue', caption: 'Community dialogue and networking' },
+            ]}
+          />
         </div>
       </div>
     </div>

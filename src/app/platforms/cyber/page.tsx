@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SectionHeader from '@/components/SectionHeader';
+import Gallery from '@/components/Gallery';
 import Tag from '@/components/Tag';
 
 export default function CyberPlatformPage() {
@@ -35,6 +36,15 @@ export default function CyberPlatformPage() {
           {['Cyber Incidents', 'Strategic Behaviour', 'Kello', 'Unpeace', 'Attribution', 'Schelling', 'Tallinn Manual 2.0', 'Escalation', 'Governance Signals'].map(tag => (
             <Tag key={tag} label={tag} />
           ))}
+        </div>
+
+        <div className="panel rounded-sm p-8">
+          <Gallery
+            title="Platform Preview"
+            images={[
+              { src: '/images/peacebuilding.jpg', alt: 'Security research', caption: 'Strategic and governance research' },
+            ]}
+          />
         </div>
 
         <div className="panel rounded-sm p-8">
