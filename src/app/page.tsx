@@ -32,23 +32,20 @@ export default function Home() {
     <div>
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 seigaiha-bg opacity-50" />
-        {/* Decorative vermillion accent */}
-        <div className="absolute top-16 left-0 w-1 h-32 bg-gradient-to-b from-vermillion/50 to-transparent" />
-        <div className="absolute bottom-0 right-0 w-1 h-24 bg-gradient-to-t from-gold/30 to-transparent" />
+        <div className="absolute inset-0 seigaiha-bg opacity-60" />
+        {/* Decorative side wagara bands */}
+        <div className="absolute top-16 left-0 w-16 h-full yagasuri-bg opacity-30" />
+        <div className="absolute top-0 right-0 w-20 h-full kanoko-bg opacity-25" />
+        <div className="absolute top-16 left-0 w-1 h-40 bg-gradient-to-b from-vermillion/60 to-transparent" />
+        <div className="absolute bottom-0 right-0 w-1 h-32 bg-gradient-to-t from-gold/40 to-transparent" />
         <div className="relative max-w-6xl mx-auto px-6 py-20 md:py-32">
           <div className="grid md:grid-cols-[1fr,auto] gap-12 items-center">
             <div>
               {/* Name block */}
               <div className="mb-8">
-                <div className="flex items-end gap-3">
-                  <span className="hanko font-kaisei text-2xl md:text-3xl text-vermillion/70 leading-none">
-                    小柳
-                  </span>
-                  <span className="font-kaisei text-6xl md:text-8xl text-gold-light/90 leading-none">
-                    璃紗
-                  </span>
-                </div>
+                <span className="font-kaisei text-6xl md:text-8xl text-gold-light/90 leading-none block">
+                  小柳璃紗
+                </span>
                 <div className="mt-3 flex items-baseline gap-3">
                   <h1 className="font-kaisei text-2xl md:text-3xl text-washi tracking-wide">
                     Risa Koyanagi
@@ -103,7 +100,8 @@ export default function Home() {
       <SectionDivider />
 
       {/* Platforms Preview */}
-      <section className="max-w-6xl mx-auto px-6 pb-16">
+      <section className="max-w-6xl mx-auto px-6 pb-16 relative">
+        <div className="absolute inset-0 sayagata-bg opacity-20 pointer-events-none" />
         <SectionHeader kanji="台" english="Platforms" subtitle="Strategic Infrastructure Risk Suite" />
         <div className="mt-8 grid md:grid-cols-2 gap-6">
           <PlatformCard
@@ -148,7 +146,8 @@ export default function Home() {
       <SectionDivider />
 
       {/* Research Preview */}
-      <section className="max-w-6xl mx-auto px-6 pb-16">
+      <section className="max-w-6xl mx-auto px-6 pb-16 relative">
+        <div className="absolute inset-0 kanoko-bg opacity-20 pointer-events-none" />
         <SectionHeader kanji="論" english="Research" subtitle="Selected research across governance domains" />
         <div className="mt-8 space-y-4">
           <ResearchListItem
@@ -183,7 +182,8 @@ export default function Home() {
       <SectionDivider />
 
       {/* Projects Preview */}
-      <section className="max-w-6xl mx-auto px-6 pb-16">
+      <section className="max-w-6xl mx-auto px-6 pb-16 relative">
+        <div className="absolute inset-0 yagasuri-bg opacity-15 pointer-events-none" />
         <SectionHeader kanji="業" english="Projects" subtitle="Fieldwork, leadership, and interdisciplinary engagement" />
         <div className="mt-8 grid md:grid-cols-2 gap-6">
           <ProjectCard
@@ -214,7 +214,8 @@ export default function Home() {
       <SectionDivider />
 
       {/* Speaking Preview */}
-      <section className="max-w-6xl mx-auto px-6 pb-20">
+      <section className="max-w-6xl mx-auto px-6 pb-20 relative">
+        <div className="absolute inset-0 shippo-bg opacity-20 pointer-events-none" />
         <SectionHeader kanji="演" english="Speaking" subtitle="Selected speaking and policy engagement" />
         <div className="mt-8 grid md:grid-cols-2 gap-6">
           <SpeakingCard

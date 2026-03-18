@@ -23,14 +23,19 @@ export default function PhotoFrame({
 
   return (
     <div className={`relative overflow-hidden rounded-sm ${className}`}>
-      {/* Gold border accent */}
-      <div className="absolute inset-0 border border-gold/15 rounded-sm z-10 pointer-events-none" />
-      {/* Fallback background */}
-      <div className="absolute inset-0 flex items-center justify-center bg-indigo-900/50 seigaiha-bg">
+      {/* Double border - outer gold, inner vermillion */}
+      <div className="absolute inset-0 border border-gold/20 rounded-sm z-10 pointer-events-none" />
+      <div className="absolute inset-[3px] border border-vermillion/10 rounded-sm z-10 pointer-events-none" />
+      {/* Corner accents */}
+      <div className="absolute top-0 left-0 w-4 h-[2px] bg-vermillion/40 z-10" />
+      <div className="absolute top-0 left-0 w-[2px] h-4 bg-vermillion/40 z-10" />
+      <div className="absolute bottom-0 right-0 w-4 h-[2px] bg-gold/40 z-10" />
+      <div className="absolute bottom-0 right-0 w-[2px] h-4 bg-gold/40 z-10" />
+      {/* Fallback background with wagara */}
+      <div className="absolute inset-0 flex items-center justify-center bg-indigo-900/50 asanoha-bg">
         <span className="font-kaisei text-3xl text-gold/20">紗</span>
       </div>
       {!hasError && (
-        /* eslint-disable-next-line @next/next/no-img-element */
         <img
           src={src}
           alt={alt}

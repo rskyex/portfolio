@@ -17,12 +17,14 @@ export default function SectionHeader({ kanji, english, subtitle, id }: SectionH
   return (
     <div
       id={sectionId}
-      className={`washi-bg relative overflow-hidden rounded-sm ${isFlashing ? 'save-flash' : ''} ${isEditing ? 'edit-mode' : ''}`}
+      className={`washi-bg relative overflow-hidden rounded-sm wagara-band ${isFlashing ? 'save-flash' : ''} ${isEditing ? 'edit-mode' : ''}`}
     >
       {/* Vermillion top accent bar */}
-      <div className="absolute top-0 left-0 w-20 h-[3px] bg-gradient-to-r from-vermillion/80 to-vermillion/0" />
+      <div className="absolute top-0 left-0 w-24 h-[3px] bg-gradient-to-r from-vermillion/80 to-vermillion/0" />
       {/* Gold corner accent */}
-      <div className="absolute top-0 right-0 w-12 h-[2px] bg-gradient-to-l from-gold/50 to-gold/0" />
+      <div className="absolute top-0 right-0 w-16 h-[2px] bg-gradient-to-l from-gold/50 to-gold/0" />
+      {/* Vermillion bottom accent */}
+      <div className="absolute bottom-0 left-0 w-12 h-[2px] bg-gradient-to-r from-gold/40 to-gold/0" />
 
       {/* Bottom gradient rule */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-vermillion/30 via-gold/40 to-vermillion/30" />

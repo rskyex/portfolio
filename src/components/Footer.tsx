@@ -5,14 +5,13 @@ export default function Footer() {
     <footer className="bg-indigo-950 border-t border-vermillion/15">
       <div className="shippo-bg">
         {/* Vermillion-gold gradient top line */}
-        <div className="h-[2px] bg-gradient-to-r from-transparent via-vermillion/50 to-transparent" />
+        <div className="h-[2px] bg-gradient-to-r from-vermillion/40 via-vermillion/60 to-gold/40" />
         <div className="max-w-6xl mx-auto px-6 py-12">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-3">
-              <span className="hanko font-kaisei text-base text-vermillion/70">小柳</span>
-              <span className="font-kaisei text-xl text-gold-light">璃紗</span>
-              <span className="font-noto-sans text-sm text-washi/50 tracking-widest">
-                RISA KOYANAGI
+              <span className="font-kaisei text-xl text-gold-light">小柳璃紗</span>
+              <span className="font-noto-sans text-xs text-washi/40 tracking-widest uppercase">
+                Risa Koyanagi
               </span>
             </div>
 
