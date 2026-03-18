@@ -174,7 +174,11 @@ export default function AboutPage() {
                 detail: 'Professor Sakuo Tojo Peacebuilding and International Cooperation Laboratory',
                 role: 'Former President; current Alumni Representative',
               },
-{
+              {
+                institution: 'University of Tokyo',
+                detail: 'Professor Makoto Iokibe Yotsuya Reimeikai',
+              },
+              {
                 institution: 'University of Tokyo',
                 detail: 'Security Study Group Barracuda',
               },
