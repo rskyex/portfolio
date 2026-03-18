@@ -306,6 +306,12 @@ export default function Home() {
               type="Youth Representation"
               image="/images/speaking-youth-drive.jpg"
             />
+            <SpeakingCard
+              title="Roundtable and Friends of Education"
+              context="Hosted by GPE and the World Bank at the Japanese House of Councillors."
+              type="Roundtable Participation"
+              image="/images/speaking-roundtable.JPG"
+            />
           </div>
           <div className="mt-8 text-right">
             <Link href="/speaking" className="font-noto-sans text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
