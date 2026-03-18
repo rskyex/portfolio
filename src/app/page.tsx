@@ -168,6 +168,7 @@ export default function Home() {
               status="Live"
               liveUrl="https://globalnuclearinfrastructureatlas.vercel.app"
               tags={['IAEA', 'SIPRI', 'Nuclear']}
+              image="/images/nuclear-platform.jpg"
             />
             <PlatformCard
               href="/platforms/orbital"
@@ -176,6 +177,7 @@ export default function Home() {
               status="Live"
               liveUrl="https://orbitalrisktracker.vercel.app"
               tags={['ASAT', 'Space Security', 'Escalation']}
+              image="/images/orbital-platform.jpg"
             />
             <PlatformCard
               href="/platforms/promise"
@@ -184,6 +186,7 @@ export default function Home() {
               status="Live"
               liveUrl="https://jp-ver-japan-promise-tracker.vercel.app"
               tags={['Japan', 'Policy', 'Accountability']}
+              image="/images/promise-platform.jpg"
             />
             <PlatformCard
               href="/platforms/cyber"
@@ -289,11 +292,25 @@ export default function Home() {
               title="TICAD Ministerial Meeting"
               context="Policy engagement and youth representation at the Tokyo International Conference on African Development."
               type="Policy Engagement"
+              image="/images/speaking-ticad.jpg"
             />
             <SpeakingCard
-              title="APPG on North Korea"
-              context="Contribution to the All-Party Parliamentary Group dialogue on North Korean policy issues."
-              type="Parliamentary Engagement"
+              title="Japan–Netherlands Peace Exchange"
+              context="Bilateral dialogue and peace exchange between Japanese and Dutch participants."
+              type="Dialogue Contribution"
+              image="/images/speaking-peace-exchange.jpg"
+            />
+            <SpeakingCard
+              title="MOFA Republic of Korea Youth Representative"
+              context="Youth representative role in a Japan–Republic of Korea exchange programme facilitated by the Ministry of Foreign Affairs."
+              type="Youth Representation"
+              image="/images/mofa-korea.jpg"
+            />
+            <SpeakingCard
+              title="Africa–Japan Youth Drive"
+              context="Youth-focused policy forum addressing Africa–Japan co-creation and development cooperation."
+              type="Youth Representation"
+              image="/images/speaking-youth-drive.jpg"
             />
           </div>
           <div className="mt-8 text-right">

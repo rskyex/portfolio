@@ -34,14 +34,6 @@ export default function SpeakingPage() {
         />
 
         <SpeakingCard
-          title="APPG on North Korea"
-          context="All-Party Parliamentary Group on North Korea."
-          type="Parliamentary Engagement"
-          description="Contribution to the All-Party Parliamentary Group dialogue on North Korean policy, addressing security, governance, and diplomatic considerations."
-          image="/images/profile.jpg"
-        />
-
-        <SpeakingCard
           title="MOFA Republic of Korea Youth Representative"
           context="Ministry of Foreign Affairs, Republic of Korea."
           type="Youth Representation"
