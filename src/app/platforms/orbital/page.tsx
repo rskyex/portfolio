@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
-import Gallery from '@/components/Gallery';
 import Tag from '@/components/Tag';
 
 export default function OrbitalPlatformPage() {
@@ -50,15 +49,6 @@ export default function OrbitalPlatformPage() {
           {['ASAT Events', 'Proximity Operations', 'GNSS Jamming', 'Cyber-Space Entanglement', 'Jervis', 'Weaponised Interdependence', 'Escalation Analysis', 'Space Security'].map(tag => (
             <Tag key={tag} label={tag} />
           ))}
-        </div>
-
-        <div className="panel rounded-sm p-8">
-          <Gallery
-            title="Platform Preview"
-            images={[
-              { src: '/images/orbital-platform.jpg', alt: 'Orbital Risk Tracker overview', caption: 'ASAT events and orbital risk visualisation' },
-            ]}
-          />
         </div>
 
         <div className="panel rounded-sm p-8">

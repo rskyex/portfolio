@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
-import Gallery from '@/components/Gallery';
 import Tag from '@/components/Tag';
 
 export default function FukushimaProjectPage() {
@@ -54,17 +53,6 @@ export default function FukushimaProjectPage() {
               </div>
             ))}
           </div>
-        </div>
-
-        <div className="panel rounded-sm p-8">
-          <Gallery
-            title="Field Research Gallery"
-            images={[
-              { src: '/images/fukushima.jpg', alt: 'Fukushima field research', caption: 'Field research in Fukushima Prefecture' },
-              { src: '/images/fukushima-3.JPG', alt: 'Field visit', caption: 'On-site documentation' },
-              { src: '/images/fukushima-4.JPG', alt: 'Research activity', caption: 'Community engagement in affected areas' },
-            ]}
-          />
         </div>
       </div>
     </div>

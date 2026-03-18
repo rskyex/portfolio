@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
-import Gallery from '@/components/Gallery';
 import Tag from '@/components/Tag';
 
 export default function PeaceProjectPage() {
@@ -53,17 +52,6 @@ export default function PeaceProjectPage() {
               </li>
             ))}
           </ul>
-        </div>
-
-        <div className="panel rounded-sm p-8">
-          <Gallery
-            title="Gallery"
-            images={[
-              { src: '/images/mofa-korea.jpg', alt: 'MOFA Korea exchange', caption: 'Japan–Republic of Korea exchange programme' },
-              { src: '/images/peacebuilding.jpg', alt: 'Peacebuilding seminar', caption: 'Dialogue-based peacebuilding seminar' },
-              { src: '/images/afrecos.jpg', alt: 'International engagement', caption: 'International policy engagement' },
-            ]}
-          />
         </div>
       </div>
     </div>
