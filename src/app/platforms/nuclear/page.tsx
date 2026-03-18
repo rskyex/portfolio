@@ -29,8 +29,8 @@ export default function NuclearPlatformPage() {
         </div>
 
         <PhotoFrame
-          src="/images/nuclear-platform.jpg"
-          alt="Global Nuclear Infrastructure Atlas — interactive map showing commercial plants, accident sites, and historical events worldwide"
+          src="/images/fukushima.jpg"
+          alt="Global Nuclear Infrastructure Atlas — field research informing the platform"
           width={800}
           height={450}
           className="w-full h-64 md:h-80"
@@ -56,7 +56,7 @@ export default function NuclearPlatformPage() {
           <Gallery
             title="Platform Preview"
             images={[
-              { src: '/images/nuclear-platform.jpg', alt: 'Global Nuclear Infrastructure Atlas overview', caption: 'Interactive map of global nuclear infrastructure' },
+              { src: '/images/fukushima.jpg', alt: 'Global Nuclear Infrastructure Atlas overview', caption: 'Field research informing the platform' },
             ]}
           />
         </div>

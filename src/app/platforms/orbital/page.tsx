@@ -29,8 +29,8 @@ export default function OrbitalPlatformPage() {
         </div>
 
         <PhotoFrame
-          src="/images/orbital-platform.jpg"
-          alt="Orbital Risk Tracker — visualisation of ASAT events and proximity operations"
+          src="/images/profile.jpg"
+          alt="Orbital Risk Tracker — security research and analysis"
           width={800}
           height={450}
           className="w-full h-64 md:h-80"
@@ -56,7 +56,7 @@ export default function OrbitalPlatformPage() {
           <Gallery
             title="Platform Preview"
             images={[
-              { src: '/images/orbital-platform.jpg', alt: 'Orbital Risk Tracker overview', caption: 'ASAT events and orbital risk visualisation' },
+              { src: '/images/profile.jpg', alt: 'Orbital Risk Tracker overview', caption: 'Security research and analysis' },
             ]}
           />
         </div>

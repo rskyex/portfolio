@@ -21,8 +21,8 @@ export default function CyberPlatformPage() {
         </div>
 
         <PhotoFrame
-          src="/images/cyber-platform.jpg"
-          alt="Cyber Escalation Atlas — mapping cyber incidents as strategic behaviour"
+          src="/images/peacebuilding.jpg"
+          alt="Cyber Escalation Atlas — strategic and governance research"
           width={800}
           height={450}
           className="w-full h-64 md:h-80"
@@ -51,7 +51,7 @@ export default function CyberPlatformPage() {
           <Gallery
             title="Platform Preview"
             images={[
-              { src: '/images/cyber-platform.jpg', alt: 'Cyber Escalation Atlas overview', caption: 'Cyber incident mapping and escalation analysis' },
+              { src: '/images/peacebuilding.jpg', alt: 'Cyber Escalation Atlas overview', caption: 'Strategic and governance research' },
             ]}
           />
         </div>

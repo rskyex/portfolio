@@ -22,7 +22,7 @@ export default function SpeakingPage() {
           context="Tokyo International Conference on African Development."
           type="Policy Engagement"
           description="Policy engagement and youth representation at the TICAD Ministerial Meeting, contributing to Africa–Japan development dialogue."
-          image="/images/speaking-ticad.jpg"
+          image="/images/afrecos.jpg"
         />
 
         <SpeakingCard
@@ -30,7 +30,7 @@ export default function SpeakingPage() {
           context="Bilateral dialogue and peace exchange between Japanese and Dutch participants."
           type="Dialogue Contribution"
           description="Participation in structured bilateral peace exchange focused on shared policy challenges and cultural understanding."
-          image="/images/speaking-peace-exchange.jpg"
+          image="/images/peacebuilding.jpg"
         />
 
         <SpeakingCard
@@ -38,7 +38,7 @@ export default function SpeakingPage() {
           context="All-Party Parliamentary Group on North Korea."
           type="Parliamentary Engagement"
           description="Contribution to the All-Party Parliamentary Group dialogue on North Korean policy, addressing security, governance, and diplomatic considerations."
-          image="/images/speaking-appg.jpg"
+          image="/images/profile.jpg"
         />
 
         <SpeakingCard
@@ -46,7 +46,7 @@ export default function SpeakingPage() {
           context="Ministry of Foreign Affairs, Republic of Korea."
           type="Youth Representation"
           description="Youth representative role in a Japan–Republic of Korea exchange programme facilitated by the Ministry of Foreign Affairs, contributing to bilateral dialogue and youth policy engagement."
-          image="/images/speaking-mofa-korea.jpg"
+          image="/images/mofa-korea.jpg"
         />
 
         <SpeakingCard
@@ -54,7 +54,7 @@ export default function SpeakingPage() {
           context="Youth-oriented policy and development forum."
           type="Youth Representation"
           description="Participation in a youth-focused policy forum addressing Africa–Japan co-creation, development cooperation, and future-oriented agenda setting."
-          image="/images/speaking-youth-drive.jpg"
+          image="/images/art.JPG"
         />
 
         <SpeakingCard
@@ -62,7 +62,7 @@ export default function SpeakingPage() {
           context="Hosted by GPE and the World Bank at the Japanese House of Councillors."
           type="Roundtable Participation"
           description="Engagement in a high-level roundtable on education policy hosted by the Global Partnership for Education and the World Bank, convened at the Japanese House of Councillors."
-          image="/images/speaking-roundtable.jpg"
+          image="/images/fukushima.jpg"
         />
       </div>
     </div>
