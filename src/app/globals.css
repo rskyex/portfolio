@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --indigo-950: #0a0e2a;
+  --indigo-900: #111642;
+  --washi: #f7f3eb;
+  --gold: #c5a028;
+  --vermillion: #c53d2f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--indigo-950);
+  color: #f7f3eb;
+}
+
+/* Washi paper texture */
+.washi-bg {
+  background-color: #f7f3eb;
+  background-image:
+    url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+/* Asanoha pattern */
+.asanoha-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M20 0L40 20L20 40L0 20Z' fill='none' stroke='%23c5a028' stroke-width='0.3' opacity='0.12'/%3E%3Cpath d='M20 0L20 40M0 20L40 20' fill='none' stroke='%23c5a028' stroke-width='0.2' opacity='0.08'/%3E%3C/svg%3E");
+}
+
+/* Seigaiha pattern */
+.seigaiha-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='20' viewBox='0 0 40 20'%3E%3Cpath d='M0 20c5.523 0 10-4.477 10-10S5.523 0 0 0' fill='none' stroke='%23c5a028' stroke-width='0.4' opacity='0.08'/%3E%3Cpath d='M20 20c5.523 0 10-4.477 10-10S25.523 0 20 0' fill='none' stroke='%23c5a028' stroke-width='0.4' opacity='0.08'/%3E%3Cpath d='M40 20c5.523 0 10-4.477 10-10S45.523 0 40 0' fill='none' stroke='%23c5a028' stroke-width='0.4' opacity='0.08'/%3E%3Cpath d='M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0' fill='none' stroke='%23c5a028' stroke-width='0.4' opacity='0.06'/%3E%3Cpath d='M30 20c5.523 0 10-4.477 10-10S35.523 0 30 0' fill='none' stroke='%23c5a028' stroke-width='0.4' opacity='0.06'/%3E%3C/svg%3E");
+}
+
+/* Shippo pattern */
+.shippo-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'%3E%3Ccircle cx='14' cy='14' r='10' fill='none' stroke='%23c5a028' stroke-width='0.3' opacity='0.1'/%3E%3Ccircle cx='0' cy='14' r='10' fill='none' stroke='%23c5a028' stroke-width='0.3' opacity='0.1'/%3E%3Ccircle cx='28' cy='14' r='10' fill='none' stroke='%23c5a028' stroke-width='0.3' opacity='0.1'/%3E%3Ccircle cx='14' cy='0' r='10' fill='none' stroke='%23c5a028' stroke-width='0.3' opacity='0.1'/%3E%3Ccircle cx='14' cy='28' r='10' fill='none' stroke='%23c5a028' stroke-width='0.3' opacity='0.1'/%3E%3C/svg%3E");
+}
+
+/* Gold rule */
+.gold-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c5a028, transparent);
+}
+
+/* Edit mode styling */
+.edit-mode [contenteditable="true"] {
+  outline: 1px dashed #c5a028;
+  outline-offset: 2px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  background-color: rgba(197, 160, 40, 0.05);
+  transition: all 0.2s ease;
+}
+
+.edit-mode [contenteditable="true"]:focus {
+  outline-color: #c53d2f;
+  background-color: rgba(197, 160, 40, 0.1);
+}
+
+/* Save confirmation flash */
+@keyframes saveFlash {
+  0% { box-shadow: 0 0 0 0 rgba(197, 160, 40, 0.4); }
+  50% { box-shadow: 0 0 12px 4px rgba(197, 160, 40, 0.2); }
+  100% { box-shadow: 0 0 0 0 rgba(197, 160, 40, 0); }
+}
+
+.save-flash {
+  animation: saveFlash 0.6s ease-out;
+}
+
+/* Card hover */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Subtle link underline */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #c5a028;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e2a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #252d6e;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3040a0;
+}
