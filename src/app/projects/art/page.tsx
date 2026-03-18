@@ -54,7 +54,11 @@ export default function ArtProjectPage() {
             title="Works"
             images={[
               { src: '/images/art.JPG', alt: 'Art practice', caption: 'Visual and conceptual work' },
-              { src: '/images/profile.jpg', alt: 'Studio practice', caption: 'Interdisciplinary practice' },
+              { src: '/images/art-1.JPG', alt: 'Artwork', caption: 'Interdisciplinary work' },
+              { src: '/images/art-2.PNG', alt: 'Artwork', caption: 'Conceptual exploration' },
+              { src: '/images/art-3.jpg', alt: 'Artwork', caption: 'Visual research' },
+              { src: '/images/art-4.png', alt: 'Artwork', caption: 'Material and form' },
+              { src: '/images/art-5.PNG', alt: 'Artwork', caption: 'Cross-disciplinary practice' },
             ]}
           />
         </div>

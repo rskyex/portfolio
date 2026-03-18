@@ -59,8 +59,11 @@ export default function AfrecosProjectPage() {
             title="Gallery"
             images={[
               { src: '/images/afrecos.jpg', alt: 'AFRECOS event', caption: 'AFRECOS cultural exchange event' },
-              { src: '/images/mofa-korea.jpg', alt: 'Policy engagement', caption: 'Policy engagement session' },
-              { src: '/images/peacebuilding.jpg', alt: 'Community dialogue', caption: 'Community dialogue and networking' },
+              { src: '/images/afrecos-1.JPG', alt: 'AFRECOS activity', caption: 'Community engagement' },
+              { src: '/images/afrecos-2.JPG', alt: 'AFRECOS event', caption: 'Cross-cultural exchange' },
+              { src: '/images/afrecos-3.JPG', alt: 'AFRECOS gathering', caption: 'International networking' },
+              { src: '/images/afreocs-4.png', alt: 'AFRECOS collaboration', caption: 'Policy collaboration' },
+              { src: '/images/afrecos-5.png', alt: 'AFRECOS outreach', caption: 'Outreach and engagement' },
             ]}
           />
         </div>

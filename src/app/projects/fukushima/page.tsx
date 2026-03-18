@@ -61,7 +61,8 @@ export default function FukushimaProjectPage() {
             title="Field Research Gallery"
             images={[
               { src: '/images/fukushima.jpg', alt: 'Fukushima field research', caption: 'Field research in Fukushima Prefecture' },
-              { src: '/images/profile.jpg', alt: 'Research activity', caption: 'On-site research and documentation' },
+              { src: '/images/fukushima-3.JPG', alt: 'Field visit', caption: 'On-site documentation' },
+              { src: '/images/fukushima-4.JPG', alt: 'Research activity', caption: 'Community engagement in affected areas' },
             ]}
           />
         </div>
