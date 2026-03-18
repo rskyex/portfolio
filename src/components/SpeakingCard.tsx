@@ -1,17 +1,33 @@
+import Image from 'next/image';
+
 interface SpeakingCardProps {
   title: string;
   context: string;
   type: string;
   description?: string;
+  image?: string;
 }
 
-export default function SpeakingCard({ title, context, type, description }: SpeakingCardProps) {
+export default function SpeakingCard({ title, context, type, description, image }: SpeakingCardProps) {
   return (
-    <div className="card-washi card-washi-speaking card-hover relative overflow-hidden p-6 group">
+    <div className="card-washi card-washi-speaking card-hover relative overflow-hidden group">
       {/* Neon left glow bar */}
-      <div className="glow-bar absolute left-0 top-0 bottom-0" />
+      <div className="glow-bar absolute left-0 top-0 bottom-0 z-10" />
 
-      <div className="relative pl-4">
+      {/* Speaking photo */}
+      {image && (
+        <div className="relative w-full h-40 overflow-hidden">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#f7f2e4]/90 via-[#f7f2e4]/30 to-transparent" />
+        </div>
+      )}
+
+      <div className="relative pl-4 p-6">
         <span className="inline-block px-2.5 py-0.5 text-xs font-noto-sans font-medium text-tsubaki-deep border border-tsubaki-rose/20 bg-tsubaki-rose/[0.06] rounded mb-3 tracking-wider">
           {type}
         </span>

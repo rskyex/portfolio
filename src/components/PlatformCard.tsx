@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface PlatformCardProps {
   href: string;
@@ -7,16 +8,30 @@ interface PlatformCardProps {
   status: string;
   liveUrl?: string;
   tags?: string[];
+  image?: string;
 }
 
-export default function PlatformCard({ href, title, description, status, liveUrl, tags }: PlatformCardProps) {
+export default function PlatformCard({ href, title, description, status, liveUrl, tags, image }: PlatformCardProps) {
   return (
     <Link href={href} className="block group">
-      <div className="card-washi card-washi-platform card-hover relative overflow-hidden p-6 md:p-8">
+      <div className="card-washi card-washi-platform card-hover relative overflow-hidden">
         {/* Neon left glow bar */}
-        <div className="glow-bar absolute left-0 top-0 bottom-0" />
+        <div className="glow-bar absolute left-0 top-0 bottom-0 z-10" />
 
-        <div className="relative pl-4">
+        {/* Hero image area */}
+        {image && (
+          <div className="relative w-full h-44 md:h-52 overflow-hidden">
+            <Image
+              src={image}
+              alt={title}
+              fill
+              className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#f8f3eb]/90 via-[#f8f3eb]/30 to-transparent" />
+          </div>
+        )}
+
+        <div className="relative pl-4 p-6 md:p-8">
           <div className="flex items-start justify-between mb-3">
             <h3 className="font-noto-sans text-base md:text-lg font-semibold text-kuro-soft pr-4 group-hover:text-shu-deep transition-colors">{title}</h3>
             <span className={`shrink-0 px-2.5 py-0.5 text-xs font-noto-sans font-medium tracking-wider rounded border ${

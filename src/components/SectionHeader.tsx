@@ -29,7 +29,7 @@ export default function SectionHeader({ kanji, english, subtitle, id }: SectionH
 
         <div className="flex items-end gap-5">
           {/* Large kanji — with neon glow */}
-          <span className="font-kaisei text-5xl md:text-6xl leading-none select-none text-transparent bg-clip-text bg-gradient-to-b from-kin/30 to-shu/15 drop-shadow-[0_0_24px_rgba(212,160,23,0.15)]">
+          <span className="font-kaisei text-5xl md:text-7xl leading-none select-none text-transparent bg-clip-text bg-gradient-to-b from-kin via-kin/70 to-shu/40" style={{ filter: 'drop-shadow(0 0 20px rgba(212,160,23,0.35)) drop-shadow(0 0 40px rgba(212,160,23,0.15))' }}>
             {kanji}
           </span>
           <div className="flex-1">
