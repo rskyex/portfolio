@@ -14,7 +14,7 @@ export default function FukushimaProjectPage() {
 
       <div className="mt-8 space-y-8">
         <PhotoFrame
-          src="https://drive.google.com/uc?export=view&id=1dlIbcK0hz1onSm6uy_ZyXAuuUWG8OvVy"
+          src="/images/fukushima.jpg"
           alt="Fukushima field research"
           width={800}
           height={400}

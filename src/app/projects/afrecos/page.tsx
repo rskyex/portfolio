@@ -14,7 +14,7 @@ export default function AfrecosProjectPage() {
 
       <div className="mt-8 space-y-8">
         <PhotoFrame
-          src="https://drive.google.com/uc?export=view&id=1RjkqlmBUNy_qPGjypRFk7k9OTA0pS5yO"
+          src="/images/afrecos.jpg"
           alt="AFRECOS event"
           width={800}
           height={400}

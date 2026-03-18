@@ -12,7 +12,7 @@ export default function AboutPage() {
         <div className="grid md:grid-cols-[auto,1fr] gap-8 items-start">
           <div className="hidden md:block">
             <PhotoFrame
-              src="https://drive.google.com/uc?export=view&id=1ywWD0OFzGsXbPYoXxM_VlDw7a6lCrAKa"
+              src="/images/profile.jpg"
               alt="Risa Koyanagi"
               width={240}
               height={320}

@@ -21,7 +21,7 @@ export default function ProjectsPage() {
           href="/projects/fukushima"
           title="Fukushima Field Research"
           description="Multi-site fieldwork in Futaba and Namie districts examining post-disaster governance, trust, and the policy-recovery gap. Includes interviews with evacuees, mayors, town leaders, METI, and TEPCO officials."
-          image="https://drive.google.com/uc?export=view&id=1dlIbcK0hz1onSm6uy_ZyXAuuUWG8OvVy"
+          image="/images/fukushima.jpg"
           imageAlt="Fukushima field research"
           period="2019–2024"
         />
@@ -30,7 +30,7 @@ export default function ProjectsPage() {
           href="/projects/afrecos"
           title="AFRECOS"
           description="Co-founded a 10+ country network for cultural and policy events bridging Africa and Japan. Organised events with around 70–80 attendees and a House of Councillors policy talk with approximately 50 stakeholders."
-          image="https://drive.google.com/uc?export=view&id=1RjkqlmBUNy_qPGjypRFk7k9OTA0pS5yO"
+          image="/images/afrecos.jpg"
           imageAlt="AFRECOS event"
           period="2024"
           role="Co-Founder & President"
@@ -40,7 +40,7 @@ export default function ProjectsPage() {
           href="/projects/peace"
           title="Peacebuilding Laboratory"
           description="Research community and discussion platform within Sophia University's Professor Sakuo Tojo Peacebuilding and International Cooperation Laboratory. Dialogue-based seminars on Ukraine, Afghanistan, Iraq, and Sudan."
-          image="https://drive.google.com/uc?export=view&id=1C0kYJN5j0kDSqiUmk5Di-QQHfDwGiCHL"
+          image="/images/peacebuilding.jpg"
           imageAlt="Peacebuilding seminar"
           role="President"
         />
@@ -49,7 +49,7 @@ export default function ProjectsPage() {
           href="/projects/art"
           title="Art Practice"
           description="Interdisciplinary art practice spanning visual thinking, international exhibition, and conceptual work that intersects with broader research on governance, identity, and technology."
-          image="https://drive.google.com/uc?export=view&id=1OHxrP-TwtZ5U7V2m6ObIOhg7yC82gO1Q"
+          image="/images/art.jpg"
           imageAlt="Art practice"
         />
       </div>

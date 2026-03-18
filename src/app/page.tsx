@@ -88,7 +88,7 @@ export default function Home() {
             {/* Profile photo */}
             <div className="hidden md:block">
               <PhotoFrame
-                src="https://drive.google.com/uc?export=view&id=1ywWD0OFzGsXbPYoXxM_VlDw7a6lCrAKa"
+                src="/images/profile.jpg"
                 alt="Risa Koyanagi"
                 width={320}
                 height={420}
@@ -190,7 +190,7 @@ export default function Home() {
             href="/projects/fukushima"
             title="Fukushima Field Research"
             description="Multi-site fieldwork in Futaba and Namie districts examining post-disaster governance, trust, and recovery."
-            image="https://drive.google.com/uc?export=view&id=1dlIbcK0hz1onSm6uy_ZyXAuuUWG8OvVy"
+            image="/images/fukushima.jpg"
             imageAlt="Fukushima fieldwork"
             period="2019–2024"
           />
@@ -198,7 +198,7 @@ export default function Home() {
             href="/projects/afrecos"
             title="AFRECOS"
             description="Co-founded a 10+ country network for cultural and policy events bridging Africa and Japan."
-            image="https://drive.google.com/uc?export=view&id=1RjkqlmBUNy_qPGjypRFk7k9OTA0pS5yO"
+            image="/images/afrecos.jpg"
             imageAlt="AFRECOS"
             period="2024"
             role="Co-Founder & President"
