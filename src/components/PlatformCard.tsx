@@ -28,12 +28,12 @@ export default function PlatformCard({ href, title, description, status, liveUrl
             </span>
           </div>
 
-          <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed mb-4">{description}</p>
+          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">{description}</p>
 
           {tags && (
             <div className="flex flex-wrap gap-2 mb-4">
               {tags.map(tag => (
-                <span key={tag} className="text-xs font-noto-sans text-shiro/25 border border-shiro/[0.05] px-2 py-0.5 rounded">
+                <span key={tag} className="text-xs font-noto-sans text-shiro/38 border border-shiro/[0.05] px-2 py-0.5 rounded">
                   {tag}
                 </span>
               ))}

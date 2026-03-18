@@ -28,10 +28,10 @@ export default function NuclearPlatformPage() {
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
-          <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
             The Global Nuclear Infrastructure Atlas provides an interactive mapping interface for global civilian nuclear power infrastructure, including operational reactors, decommissioned facilities, and major accident sites. It contextualises nuclear infrastructure within estimated arsenal data and radiation and health frameworks.
           </p>
-          <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed">
+          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
             Designed for educational and policy audiences, the platform draws on public data from sources including the International Atomic Energy Agency (IAEA), the Stockholm International Peace Research Institute (SIPRI), and the World Health Organization (WHO). It is intended to support informed public understanding of nuclear infrastructure geography and associated governance challenges.
           </p>
         </div>
@@ -46,7 +46,7 @@ export default function NuclearPlatformPage() {
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Technical Stack</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {['Next.js', 'React', 'TypeScript', 'Leaflet', 'D3.js', 'Tailwind CSS', 'Recharts', 'Vercel'].map(tech => (
-              <span key={tech} className="font-noto-sans text-sm text-shiro/40 text-center py-2 border border-shiro/[0.05] rounded-sm">
+              <span key={tech} className="font-noto-sans text-sm text-shiro/60 text-center py-2 border border-shiro/[0.05] rounded-sm">
                 {tech}
               </span>
             ))}

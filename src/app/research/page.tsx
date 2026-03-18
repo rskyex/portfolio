@@ -12,7 +12,7 @@ export default function ResearchPage() {
       />
 
       <div className="mt-6 mb-12">
-        <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed max-w-2xl">
+        <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed max-w-2xl">
           Research spanning international security, space governance, nuclear governance, cyber governance, and emerging technology governance, with a conceptual focus on legitimation theory, dual-use governance, authority architecture, and responsible behaviour norms.
         </p>
       </div>
@@ -69,7 +69,7 @@ export default function ResearchPage() {
                   Conference Abstract
                 </span>
               </div>
-              <p className="font-noto-sans text-sm text-shiro/35 leading-relaxed">
+              <p className="font-noto-sans text-sm text-shiro/55 leading-relaxed">
                 Exploring how dual-use ambiguity shapes governance frameworks across nuclear, space, and cyber domains — examining the structural difficulties of regulating technologies with simultaneous civilian and military applications.
               </p>
             </div>
@@ -82,11 +82,11 @@ export default function ResearchPage() {
                 <h4 className="font-noto-serif text-base font-medium text-shiro/85 italic">
                   Authority Architecture in Emerging Technology Governance
                 </h4>
-                <span className="shrink-0 px-2.5 py-0.5 text-xs font-noto-sans rounded border bg-shiro/[0.03] text-shiro/30 border-shiro/[0.06] tracking-wider">
+                <span className="shrink-0 px-2.5 py-0.5 text-xs font-noto-sans rounded border bg-shiro/[0.03] text-shiro/45 border-shiro/[0.06] tracking-wider">
                   In Progress
                 </span>
               </div>
-              <p className="font-noto-sans text-sm text-shiro/35 leading-relaxed">
+              <p className="font-noto-sans text-sm text-shiro/55 leading-relaxed">
                 Developing a framework for understanding how authority is constructed, distributed, and contested across emerging technology governance — with attention to legitimation processes, institutional design, and the role of technical expertise.
               </p>
             </div>
@@ -97,7 +97,7 @@ export default function ResearchPage() {
       <SectionDivider />
 
       <div className="text-center">
-        <p className="font-noto-sans text-xs text-shiro/20 tracking-wider">
+        <p className="font-noto-sans text-xs text-shiro/30 tracking-wider">
           Additional papers and conference work in development.
         </p>
       </div>

@@ -36,7 +36,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="nav-link font-noto-sans text-[13px] text-shiro/50 hover:text-shiro/90 transition-colors tracking-wider uppercase"
+              className="nav-link font-noto-sans text-[13px] text-shiro/65 hover:text-shiro/90 transition-colors tracking-wider uppercase"
             >
               {link.label}
             </Link>
@@ -74,7 +74,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="font-noto-sans text-sm text-shiro/50 hover:text-shiro transition-colors tracking-wider uppercase"
+                className="font-noto-sans text-sm text-shiro/65 hover:text-shiro transition-colors tracking-wider uppercase"
               >
                 {link.label}
               </Link>

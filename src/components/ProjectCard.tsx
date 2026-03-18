@@ -29,13 +29,13 @@ export default function ProjectCard({ href, title, description, image, imageAlt,
               {title}
             </h3>
             {period && (
-              <span className="shrink-0 font-noto-sans text-xs text-shiro/20 tracking-wider">{period}</span>
+              <span className="shrink-0 font-noto-sans text-xs text-shiro/30 tracking-wider">{period}</span>
             )}
           </div>
           {role && (
             <p className="font-noto-sans text-xs text-tsubaki-blush/50 mb-2 tracking-wider">{role}</p>
           )}
-          <p className="font-noto-sans text-sm text-shiro/35 leading-relaxed">{description}</p>
+          <p className="font-noto-sans text-sm text-shiro/55 leading-relaxed">{description}</p>
         </div>
       </div>
     </Link>

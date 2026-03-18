@@ -28,10 +28,10 @@ export default function PromisePlatformPage() {
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
-          <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
             The Japan Promise Tracker monitors and tracks Japanese government policy commitments across governance domains. It provides a structured framework for following the lifecycle of government promises — from announcement through implementation to fulfilment or abandonment.
           </p>
-          <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed">
+          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
             Designed to support public accountability, civic engagement, and policy analysis, the platform makes government commitments transparent and trackable. It contributes to a broader understanding of how governance promises function as instruments of legitimation and political communication.
           </p>
         </div>
@@ -46,7 +46,7 @@ export default function PromisePlatformPage() {
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Technical Stack</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Vercel'].map(tech => (
-              <span key={tech} className="font-noto-sans text-sm text-shiro/40 text-center py-2 border border-shiro/[0.05] rounded-sm">
+              <span key={tech} className="font-noto-sans text-sm text-shiro/60 text-center py-2 border border-shiro/[0.05] rounded-sm">
                 {tech}
               </span>
             ))}

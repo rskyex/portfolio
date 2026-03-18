@@ -92,7 +92,7 @@ export default function Home() {
                   <h1 className="font-kaisei text-2xl md:text-3xl text-shiro/90 tracking-wider">
                     Risa Koyanagi
                   </h1>
-                  <span className="font-noto-serif text-xs text-shiro/15 tracking-[0.3em]">
+                  <span className="font-noto-serif text-xs text-shiro/22 tracking-[0.3em]">
                     こやなぎ りさ
                   </span>
                 </div>
@@ -112,7 +112,7 @@ export default function Home() {
               </p>
 
               {/* Description */}
-              <p className="font-noto-sans text-sm text-shiro/40 leading-[1.9] max-w-xl mb-10">
+              <p className="font-noto-sans text-sm text-shiro/60 leading-[1.9] max-w-xl mb-10">
                 Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of space governance, nuclear governance, cyber governance, strategic risk, and emerging technology governance. Her research is especially concerned with legitimation theory, dual-use governance, authority architecture, responsible behaviour norms, and international security. She is supervised by Prof. Harald Wydra in connection with her Cambridge-based research trajectory, and is building the Strategic Infrastructure Risk Suite: a set of public-facing policy platforms across nuclear, orbital, and cyber domains.
               </p>
 

@@ -20,13 +20,13 @@ export default function LunarResearchPage() {
       <div className="space-y-8">
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Abstract</h3>
-          <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
             This paper examines how competing lunar governance frameworks construct their authority and claim legitimacy on behalf of humanity. Through a comparative analysis of the Artemis Accords and the International Lunar Research Station (ILRS) programme, it investigates the legitimation audiences, translation devices, and authority architectures that underpin each framework.
           </p>
-          <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
             Both frameworks deploy universalist language — speaking &ldquo;for humanity,&rdquo; &ldquo;for all humankind,&rdquo; or &ldquo;for peaceful purposes&rdquo; — while establishing divergent participation conditions, governance norms, and boundary-making practices. The paper argues that these universalist claims function as legitimation devices that simultaneously include and exclude, and that the construction of legitimate authority in lunar governance is an ongoing, contested process rather than a settled institutional achievement.
           </p>
-          <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed">
+          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
             Drawing on a 24-document coded corpus and conceptual tools from legitimation theory, the research traces how each framework translates broad principles into specific governance architectures — and how these architectures, in turn, shape the boundaries of permissible action on the Moon.
           </p>
         </div>
@@ -46,15 +46,15 @@ export default function LunarResearchPage() {
           <div className="space-y-3">
             <div className="flex items-start gap-3">
               <span className="font-kaisei text-lg text-kin/50">一</span>
-              <p className="font-noto-sans text-sm text-shiro/40">Qualitative document analysis of 24 primary source documents</p>
+              <p className="font-noto-sans text-sm text-shiro/60">Qualitative document analysis of 24 primary source documents</p>
             </div>
             <div className="flex items-start gap-3">
               <span className="font-kaisei text-lg text-kin/50">二</span>
-              <p className="font-noto-sans text-sm text-shiro/40">Custom codebook design focused on legitimation markers, authority claims, and boundary-making language</p>
+              <p className="font-noto-sans text-sm text-shiro/60">Custom codebook design focused on legitimation markers, authority claims, and boundary-making language</p>
             </div>
             <div className="flex items-start gap-3">
               <span className="font-kaisei text-lg text-kin/50">三</span>
-              <p className="font-noto-sans text-sm text-shiro/40">Comparative framework analysis across Artemis and ILRS governance architectures</p>
+              <p className="font-noto-sans text-sm text-shiro/60">Comparative framework analysis across Artemis and ILRS governance architectures</p>
             </div>
           </div>
         </div>
@@ -69,7 +69,7 @@ export default function LunarResearchPage() {
               'Participation conditions and their implications for inclusivity, access, and sovereignty',
               'Boundary-making practices that define permissible action in the lunar domain',
             ].map((theme, i) => (
-              <li key={i} className="font-noto-sans text-sm text-shiro/40 leading-relaxed flex items-start gap-2">
+              <li key={i} className="font-noto-sans text-sm text-shiro/60 leading-relaxed flex items-start gap-2">
                 <span className="text-shu/30 mt-1">—</span>
                 {theme}
               </li>

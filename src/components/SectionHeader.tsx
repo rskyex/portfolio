@@ -42,7 +42,7 @@ export default function SectionHeader({ kanji, english, subtitle, id }: SectionH
             </h2>
             {subtitle && (
               <p
-                className="font-noto-sans text-xs text-shiro/30 mt-1.5 tracking-wider"
+                className="font-noto-sans text-xs text-shiro/45 mt-1.5 tracking-wider"
                 contentEditable={isEditing}
                 suppressContentEditableWarning
               >

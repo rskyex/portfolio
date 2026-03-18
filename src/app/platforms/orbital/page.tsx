@@ -28,10 +28,10 @@ export default function OrbitalPlatformPage() {
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
-          <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
             The Orbital Risk Tracker monitors and visualises anti-satellite (ASAT) events, proximity operations, GNSS jamming incidents, and emergent cyber-space entanglement across orbital infrastructure. It provides a structured analytical framework for understanding escalation dynamics in the space domain.
           </p>
-          <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed">
+          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
             The platform draws on Robert Jervis&apos;s security dilemma framework and theories of weaponised interdependence to contextualise orbital risk behaviour within broader strategic analysis. It is designed to support researchers, policy analysts, and students working on space security, arms control, and governance architecture.
           </p>
         </div>
@@ -46,7 +46,7 @@ export default function OrbitalPlatformPage() {
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Technical Stack</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {['Next.js', 'React', 'TypeScript', 'D3.js', 'Leaflet', 'Tailwind CSS', 'Recharts', 'Vercel'].map(tech => (
-              <span key={tech} className="font-noto-sans text-sm text-shiro/40 text-center py-2 border border-shiro/[0.05] rounded-sm">
+              <span key={tech} className="font-noto-sans text-sm text-shiro/60 text-center py-2 border border-shiro/[0.05] rounded-sm">
                 {tech}
               </span>
             ))}

@@ -20,13 +20,13 @@ export default function CyberPlatformPage() {
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
-          <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
             The Cyber Escalation Atlas maps cyber incidents as expressions of strategic behaviour and governance signals, rather than treating them purely as technical events. It provides structured analytical context for understanding cyber operations within the broader landscape of international security and escalation dynamics.
           </p>
-          <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
             The platform engages with Lucas Kello&apos;s concept of &ldquo;unpeace&rdquo; — a condition between war and peace characterised by persistent cyber contestation — as well as attribution frameworks, Thomas Schelling&apos;s escalation logic, and the analytical categories established by the Tallinn Manual 2.0.
           </p>
-          <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed">
+          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
             It is designed to support analysis of how cyber incidents function as governance signals and to contextualise them within strategic frameworks of deterrence, escalation, and institutional response.
           </p>
         </div>
@@ -41,7 +41,7 @@ export default function CyberPlatformPage() {
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Planned Technical Stack</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {['Next.js', 'React', 'TypeScript', 'D3.js', 'Tailwind CSS', 'Python', 'Vercel'].map(tech => (
-              <span key={tech} className="font-noto-sans text-sm text-shiro/40 text-center py-2 border border-shiro/[0.05] rounded-sm">
+              <span key={tech} className="font-noto-sans text-sm text-shiro/60 text-center py-2 border border-shiro/[0.05] rounded-sm">
                 {tech}
               </span>
             ))}

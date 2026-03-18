@@ -16,9 +16,9 @@ export default function SpeakingCard({ title, context, type, description }: Spea
           {type}
         </span>
         <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-2 group-hover:text-kin-light transition-colors">{title}</h3>
-        <p className="font-noto-sans text-sm text-shiro/35 mb-2">{context}</p>
+        <p className="font-noto-sans text-sm text-shiro/55 mb-2">{context}</p>
         {description && (
-          <p className="font-noto-sans text-xs text-shiro/20 leading-relaxed">{description}</p>
+          <p className="font-noto-sans text-xs text-shiro/30 leading-relaxed">{description}</p>
         )}
       </div>
     </div>

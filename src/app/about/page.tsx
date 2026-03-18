@@ -25,13 +25,13 @@ export default function AboutPage() {
             <div className="pl-4">
               <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Intellectual Profile</h3>
               <div className="space-y-4">
-                <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed">
+                <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
                   Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of international security, space governance, nuclear governance, cyber governance, and emerging technology governance. Her research is especially concerned with legitimation theory, dual-use governance, authority architecture, and responsible behaviour norms.
                 </p>
-                <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed">
+                <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
                   She develops public-facing policy and research platforms that translate governance theory into usable tools across strategic infrastructure domains. Her work connects conceptual research on legitimacy, authority, and governance architecture with applied questions of escalation, responsibility, and institutional design.
                 </p>
-                <p className="font-noto-sans text-sm text-shiro/40 leading-relaxed">
+                <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
                   Although her work spans multiple domains — from space and nuclear to cyber and AI governance — it is unified by a consistent conceptual focus on how authority is constructed, contested, and legitimated in environments of technological complexity and strategic ambiguity.
                 </p>
               </div>
@@ -58,10 +58,10 @@ export default function AboutPage() {
                 <div className="pl-4">
                   <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 mb-1">
                     <h4 className="font-noto-sans text-sm font-medium text-shiro/85">{edu.institution}</h4>
-                    <span className="font-noto-sans text-xs text-shiro/25 shrink-0">{edu.period}</span>
+                    <span className="font-noto-sans text-xs text-shiro/38 shrink-0">{edu.period}</span>
                   </div>
-                  {edu.degree && <p className="font-noto-sans text-sm text-shiro/40">{edu.degree}</p>}
-                  {edu.detail && <p className="font-noto-sans text-xs text-shiro/20 mt-1">{edu.detail}</p>}
+                  {edu.degree && <p className="font-noto-sans text-sm text-shiro/60">{edu.degree}</p>}
+                  {edu.detail && <p className="font-noto-sans text-xs text-shiro/30 mt-1">{edu.detail}</p>}
                 </div>
               </div>
             ))}
@@ -85,7 +85,7 @@ export default function AboutPage() {
                   <h4 className="font-noto-sans text-sm font-medium text-shiro/85 mb-3">{group.title}</h4>
                   <ul className="space-y-1.5">
                     {group.items.map((skill, j) => (
-                      <li key={j} className="font-noto-sans text-xs text-shiro/35">{skill}</li>
+                      <li key={j} className="font-noto-sans text-xs text-shiro/55">{skill}</li>
                     ))}
                   </ul>
                 </div>
@@ -126,8 +126,8 @@ export default function AboutPage() {
                 <div className="glow-bar absolute left-0 top-0 bottom-0" />
                 <div className="pl-4">
                   <h4 className="font-noto-sans text-sm font-medium text-shiro/85">{aff.institution}</h4>
-                  <p className="font-noto-sans text-xs text-shiro/35 mt-1">{aff.detail}</p>
-                  {aff.role && <p className="font-noto-sans text-xs text-shiro/20 mt-0.5 italic">{aff.role}</p>}
+                  <p className="font-noto-sans text-xs text-shiro/55 mt-1">{aff.detail}</p>
+                  {aff.role && <p className="font-noto-sans text-xs text-shiro/30 mt-0.5 italic">{aff.role}</p>}
                 </div>
               </div>
             ))}

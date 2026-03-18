@@ -14,7 +14,7 @@ const statusStyles: Record<string, string> = {
   'Under Review': 'bg-kin/8 text-kin-light/60 border-kin/15',
   'Conference Abstract': 'bg-tsubaki-rose/8 text-tsubaki-blush/60 border-tsubaki-rose/15',
   'Working Paper': 'bg-tsubaki-rose/6 text-tsubaki-blush/70 border-tsubaki-rose/12 shadow-[0_0_8px_rgba(233,30,99,0.05)]',
-  'In Progress': 'bg-shiro/[0.03] text-shiro/30 border-shiro/[0.06]',
+  'In Progress': 'bg-shiro/[0.03] text-shiro/45 border-shiro/[0.06]',
 };
 
 export default function ResearchListItem({ href, title, status, themes, description }: ResearchListItemProps) {
@@ -35,12 +35,12 @@ export default function ResearchListItem({ href, title, status, themes, descript
           </div>
 
           {description && (
-            <p className="font-noto-sans text-sm text-shiro/35 leading-relaxed mb-3">{description}</p>
+            <p className="font-noto-sans text-sm text-shiro/55 leading-relaxed mb-3">{description}</p>
           )}
 
           <div className="flex flex-wrap gap-1.5">
             {themes.map(theme => (
-              <span key={theme} className="text-xs font-noto-sans text-shiro/20 px-1.5 py-0.5">
+              <span key={theme} className="text-xs font-noto-sans text-shiro/30 px-1.5 py-0.5">
                 {theme}
               </span>
             ))}
