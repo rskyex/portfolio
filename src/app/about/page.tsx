@@ -116,7 +116,7 @@ export default function AboutPage() {
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Affiliations</h3>
           <div className="space-y-3">
             {[
-              { institution: 'Sophia University', detail: 'Professor Sakuo Tojo Peacebuilding and International Cooperation Laboratory', role: 'Former President; current Alumni Representative' },
+              { institution: 'Sophia University', detail: 'Professor Daisaku Higashi Peacebuilding and International Cooperation Laboratory', role: 'Former President; current Alumni Representative' },
               { institution: 'University of Tokyo', detail: 'Professor Makoto Iokibe Yotsuya Reimeikai' },
               { institution: 'University of Tokyo', detail: 'Security Study Group Barracuda' },
               { institution: 'Waseda University', detail: 'Professor Nobuhiko Utsumi Laboratory', role: 'Professor Utsumi is also Honorary Professor at the National School of Fine Arts of Peru' },

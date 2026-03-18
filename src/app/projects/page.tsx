@@ -39,7 +39,7 @@ export default function ProjectsPage() {
         <ProjectCard
           href="/projects/peace"
           title="Peacebuilding Laboratory"
-          description="Research community and discussion platform within Sophia University's Professor Sakuo Tojo Peacebuilding and International Cooperation Laboratory. Dialogue-based seminars on Ukraine, Afghanistan, Iraq, and Sudan."
+          description="Research community and discussion platform within Sophia University's Professor Daisaku Higashi Peacebuilding and International Cooperation Laboratory. Dialogue-based seminars on Ukraine, Afghanistan, Iraq, and South Sudan."
           image="/images/mofa-korea.jpg"
           imageAlt="Peacebuilding seminar"
           role="President"
