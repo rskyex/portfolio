@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SectionHeader from '@/components/SectionHeader';
+import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
 
 export default function FukushimaResearchPage() {
@@ -72,6 +73,49 @@ export default function FukushimaResearchPage() {
               </li>
             ))}
           </ul>
+        </div>
+
+        <div className="panel rounded-sm p-8">
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Research Output</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {[1, 2, 3, 4, 5].map((n) => (
+              <div key={n} className={n === 5 ? 'md:col-span-2' : ''}>
+                <PhotoFrame
+                  src={`/images/fukushima-slide-${n}.jpg`}
+                  alt={`Fukushima research output slide ${n}`}
+                  width={800}
+                  height={600}
+                  className="w-full h-56 md:h-64"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="panel rounded-sm p-8">
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-6">Gallery</h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {[
+              { n: 1, ext: 'jpg' },
+              { n: 2, ext: 'jpg' },
+              { n: 3, ext: 'JPG' },
+              { n: 4, ext: 'jpg' },
+              { n: 5, ext: 'jpg' },
+              { n: 6, ext: 'jpg' },
+              { n: 7, ext: 'jpg' },
+              { n: 8, ext: 'jpg' },
+              { n: 10, ext: 'jpg' },
+            ].map(({ n, ext }) => (
+              <PhotoFrame
+                key={n}
+                src={`/images/fukushima-${n}.${ext}`}
+                alt={`Fukushima fieldwork photo ${n}`}
+                width={400}
+                height={300}
+                className="w-full h-40 md:h-48"
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
