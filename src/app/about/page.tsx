@@ -70,6 +70,37 @@ export default function AboutPage() {
 
         <SectionDivider />
 
+        {/* Experience */}
+        <div>
+          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Experience</h3>
+          <div className="space-y-4">
+            <div className="card-washi card-washi-about p-6 relative overflow-hidden">
+              <div className="glow-bar absolute left-0 top-0 bottom-0" />
+              <div className="pl-4">
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 mb-1">
+                  <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">Design Lead</h4>
+                  <span className="font-noto-sans text-xs text-kuro-soft/50 shrink-0 font-medium">Dec 2023 – Aug 2024</span>
+                </div>
+                <p className="font-noto-sans text-sm text-kuro-soft/65">World Health Institute · Remote</p>
+                <div className="mt-3">
+                  <PhotoFrame
+                    src="/images/art-4.png"
+                    alt="World Health Institute ZeroHunger FoodDrive Initiative"
+                    width={400}
+                    height={500}
+                    className="w-full max-w-sm h-auto"
+                  />
+                </div>
+                <p className="font-noto-sans text-xs text-kuro-soft/60 mt-3 leading-relaxed">
+                  As Design Lead at World Health Institute, a youth organisation for food drives across 40+ countries related to UNESCO-affiliated Learning Planet Alliance, designed the ECL Biosensor Product Cover and related App &ldquo;SafePlates+&rdquo; for eliminating the gap between personal safety and societal standards in detection technologies for harmful substances. Also designed posts for Instagram (10k+ followers) for raising awareness on food safety and health issues.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <SectionDivider />
+
         {/* Skills */}
         <div>
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Skills</h3>

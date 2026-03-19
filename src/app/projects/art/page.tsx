@@ -41,6 +41,13 @@ export default function ArtProjectPage() {
           <div className="space-y-6">
             {/* Monster Exhibition 2021 - Tokyo */}
             <div className="border-l-2 border-kin/30 pl-5">
+              <PhotoFrame
+                src="/images/art-1.JPG"
+                alt="Monster Exhibition 2021 at Shibuya Hikarie"
+                width={800}
+                height={500}
+                className="w-full h-48 md:h-64 mb-4"
+              />
               <h4 className="font-noto-sans text-sm font-medium text-shiro/80 mb-1">Monster Exhibition 2021</h4>
               <p className="font-noto-sans text-xs text-kin/60 mb-2">Tokyo, Shibuya</p>
               <div className="font-noto-sans text-xs text-shiro/50 leading-relaxed space-y-1">
@@ -60,6 +67,13 @@ export default function ArtProjectPage() {
 
             {/* Boomer Gallery - London */}
             <div className="border-l-2 border-kin/30 pl-5">
+              <PhotoFrame
+                src="/images/art-3.jpg"
+                alt="Boomer Gallery exhibition in London"
+                width={800}
+                height={500}
+                className="w-full h-48 md:h-64 mb-4"
+              />
               <h4 className="font-noto-sans text-sm font-medium text-shiro/80 mb-1">Boomer Gallery — &ldquo;Why do you do it?&rdquo;</h4>
               <p className="font-noto-sans text-xs text-kin/60 mb-2">London</p>
               <div className="font-noto-sans text-xs text-shiro/50 leading-relaxed space-y-1">
@@ -97,6 +111,13 @@ export default function ArtProjectPage() {
 
             {/* New York Cinema Screening */}
             <div className="border-l-2 border-kin/30 pl-5">
+              <PhotoFrame
+                src="/images/art-5.PNG"
+                alt="New York Cinema Showcase at Stuart Cinema"
+                width={800}
+                height={500}
+                className="w-full h-48 md:h-64 mb-4"
+              />
               <h4 className="font-noto-sans text-sm font-medium text-shiro/80 mb-1">New York Cinema Screening</h4>
               <p className="font-noto-sans text-xs text-kin/60 mb-2">New York — Presented by Artspace Innovation</p>
               <div className="font-noto-sans text-xs text-shiro/50 leading-relaxed space-y-1">
@@ -107,6 +128,13 @@ export default function ArtProjectPage() {
 
             {/* ART ON LOOP - London & Athens (Sep 2024) */}
             <div className="border-l-2 border-kin/30 pl-5">
+              <PhotoFrame
+                src="/images/art-2.PNG"
+                alt="ART ON LOOP Digital Exhibition"
+                width={800}
+                height={500}
+                className="w-full h-48 md:h-64 mb-4"
+              />
               <h4 className="font-noto-sans text-sm font-medium text-shiro/80 mb-1">ART ON LOOP — Digital Exhibition</h4>
               <p className="font-noto-sans text-xs text-kin/60 mb-2">London &amp; Athens</p>
               <div className="font-noto-sans text-xs text-shiro/50 leading-relaxed space-y-1">
