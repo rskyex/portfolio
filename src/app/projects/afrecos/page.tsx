@@ -52,6 +52,30 @@ export default function AfrecosProjectPage() {
             ))}
           </div>
         </div>
+        <div className="panel rounded-sm p-8">
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-6">Gallery</h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {[
+              { src: '/images/afrecos-1.JPG', alt: 'AFRECOS event 1' },
+              { src: '/images/afrecos-2.JPG', alt: 'AFRECOS event 2' },
+              { src: '/images/afrecos-3.JPG', alt: 'AFRECOS event 3' },
+              { src: '/images/afreocs-4.png', alt: 'AFRECOS event 4' },
+              { src: '/images/afrecos-5.png', alt: 'AFRECOS event 5' },
+              { src: '/images/afrecos%20gallery.JPG', alt: 'AFRECOS gallery' },
+              { src: '/images/afrecos%20talk%20at%20parliament.JPG', alt: 'AFRECOS talk at parliament' },
+              { src: '/images/afrecos.jpg', alt: 'AFRECOS' },
+            ].map((img, i) => (
+              <PhotoFrame
+                key={i}
+                src={img.src}
+                alt={img.alt}
+                width={400}
+                height={300}
+                className="w-full h-40 md:h-48"
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

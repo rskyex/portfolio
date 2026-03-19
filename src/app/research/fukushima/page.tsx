@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SectionHeader from '@/components/SectionHeader';
+import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
 
 export default function FukushimaResearchPage() {
@@ -72,6 +73,55 @@ export default function FukushimaResearchPage() {
               </li>
             ))}
           </ul>
+        </div>
+
+        <div className="panel rounded-sm p-8">
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-6">Research Output</h3>
+          <div className="space-y-5">
+            {[1, 2, 3, 4, 5].map((n) => (
+              <div key={n} className="border border-shiro/[0.06] rounded-sm overflow-hidden">
+                <img
+                  src={`/images/fukushima%20DT%20slide%20(${n}).jpg`}
+                  alt={`Fukushima research output slide ${n}`}
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="panel rounded-sm p-8">
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-6">Gallery</h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {[
+              { n: 1, ext: 'jpg' },
+              { n: 2, ext: 'jpg' },
+              { n: 3, ext: 'JPG' },
+              { n: 4, ext: 'jpg' },
+              { n: 5, ext: 'jpg' },
+              { n: 6, ext: 'jpg' },
+              { n: 7, ext: 'jpg' },
+              { n: 8, ext: 'jpg' },
+              { n: 10, ext: 'jpg' },
+            ].map(({ n, ext }, i) => (
+              <PhotoFrame
+                key={i}
+                src={`/images/fukushima-${n}.${ext}`}
+                alt={`Fukushima fieldwork photo ${n}`}
+                width={400}
+                height={300}
+                className="w-full h-40 md:h-48"
+              />
+            ))}
+            <PhotoFrame
+              src="/images/peace-2.jpg"
+              alt="Fukushima fieldwork photo"
+              width={400}
+              height={300}
+              className="w-full h-40 md:h-48"
+            />
+          </div>
         </div>
       </div>
     </div>
