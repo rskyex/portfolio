@@ -81,7 +81,7 @@ export default function FukushimaResearchPage() {
             {[1, 2, 3, 4, 5].map((n) => (
               <div key={n} className={n === 5 ? 'md:col-span-2' : ''}>
                 <PhotoFrame
-                  src={`/images/fukushima-slide-${n}.jpg`}
+                  src={`/images/fukushima%20DT%20slide%20(${n}).jpg`}
                   alt={`Fukushima research output slide ${n}`}
                   width={800}
                   height={600}
