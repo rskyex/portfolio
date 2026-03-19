@@ -317,7 +317,7 @@ export default function Home() {
               title="European Forum on North Korean Human Rights"
               context="Invited by the former British Ambassador to DPRK. UK Parliament All Parliament Party Group on DPRK."
               type="Youth Representation"
-              image="/images/speaking-roundtable.JPG"
+              image="/images/northkorea.jpg"
             />
             <SpeakingCard
               title="Roundtable and Friends of Education"

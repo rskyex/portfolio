@@ -40,6 +40,18 @@ export default function PeaceProjectPage() {
           ))}
         </div>
 
+        {/* Promotional Poster */}
+        <div className="panel rounded-sm p-8">
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Promotional Poster</h3>
+          <PhotoFrame
+            src="/images/peace-poster.jpg"
+            alt="平和構築/国際協力研究会 promotional poster"
+            width={600}
+            height={850}
+            className="w-full max-w-md mx-auto"
+          />
+        </div>
+
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Activities</h3>
           <ul className="space-y-2">

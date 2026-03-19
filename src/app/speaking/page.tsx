@@ -46,7 +46,7 @@ export default function SpeakingPage() {
           context="Invited by the former British Ambassador to DPRK. UK Parliament All Parliament Party Group on DPRK."
           type="Youth Representation"
           description="As a youth representative from Japan, addressed the issue of Japanese citizens abducted by North Korea, highlighting the human impact, the ongoing suffering of affected families, and the urgent need for global awareness and international cooperation. Emphasised the importance of youth engagement in addressing human rights issues and called for sustained dialogue and multilateral efforts to resolve the abduction problem."
-          image="/images/speaking-roundtable.JPG"
+          image="/images/northkorea.jpg"
         />
 
         <SpeakingCard
