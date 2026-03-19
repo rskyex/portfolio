@@ -24,10 +24,13 @@ export default function PeaceProjectPage() {
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
           <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
-            A research community and discussion platform within Sophia University&apos;s Professor Daisaku Higashi Peacebuilding and International Cooperation Laboratory. As President, Risa Koyanagi led the organisation of dialogue-based seminars focused on contemporary conflict and reconciliation processes.
+            A research community and discussion platform within Sophia University&apos;s Professor Daisaku Higashi Peacebuilding and International Cooperation Laboratory. As President, Risa Koyanagi led discussions on global conflict resolution and diplomacy, facilitating seminars where students analysed peacebuilding strategies with a particular focus on conflict mediation in Ukraine, Afghanistan, Iraq, and South Sudan.
+          </p>
+          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
+            As part of her leadership, she organised a dialogue with Ukrainian students, fostering firsthand perspectives and deeper discussions on the Ukraine war. She also designed promotional materials to enhance engagement and outreach. Through this role, she aimed to deepen understanding of international peace efforts while connecting students with experts in the field.
           </p>
           <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
-            Seminars addressed conflict dynamics in Ukraine, Afghanistan, Iraq, and Sudan, engaging with policy, reconciliation, and the structural dimensions of peacebuilding. The laboratory provided an intellectually serious setting for sustained dialogue between students, researchers, and policy practitioners.
+            The laboratory provided an intellectually serious setting for sustained dialogue between students, researchers, and policy practitioners.
           </p>
         </div>
 
@@ -41,9 +44,11 @@ export default function PeaceProjectPage() {
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Activities</h3>
           <ul className="space-y-2">
             {[
-              'Dialogue-based seminars on contemporary conflict and reconciliation',
-              'Policy and reconciliation engagement across multiple conflict contexts',
-              'Student-led research community with intellectual rigour',
+              'Led discussions on global conflict resolution and diplomacy',
+              'Facilitated seminars analysing peacebuilding strategies across Ukraine, Afghanistan, Iraq, and South Sudan',
+              'Organised dialogue with Ukrainian students for firsthand perspectives on the war',
+              'Designed promotional materials to enhance engagement and outreach',
+              'Connected students with experts in international peace efforts',
               'Engagement with policy practitioners and academic researchers',
             ].map((item, i) => (
               <li key={i} className="font-noto-sans text-sm text-shiro/60 leading-relaxed flex items-start gap-2">

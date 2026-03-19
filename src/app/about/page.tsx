@@ -34,6 +34,9 @@ export default function AboutPage() {
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
                   Although her work spans multiple domains — from space and nuclear to cyber and AI governance — it is unified by a consistent conceptual focus on how authority is constructed, contested, and legitimated in environments of technological complexity and strategic ambiguity.
                 </p>
+                <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
+                  Koyanagi also has a diverse background in the arts. Beginning her formal training in piano with Noriko Amano, she simultaneously honed her skills in Shadow Box with Ineke de Bruijn and oil painting under Yukiko Hamano. Her creative prowess was recognised early with an Excellence Award for poetry in 2011. She graced the stage as a child actor in Maribor National Opera&apos;s &ldquo;Carmen.&rdquo; As a teenager, she secured the Excellence Award in the JYOJI-ROCK U-16 contest. Her avant-garde art studies with Nobuhiko Utsumi culminated in a significant group exhibition, signaling her bold artistic vision. She has been selected for the prestigious Monster Exhibition and featured in Al-Tiba9 Contemporary Art Magazine, marking her as a rising star in the international art scene.
+                </p>
               </div>
             </div>
           </div>
@@ -100,7 +103,7 @@ export default function AboutPage() {
         <div>
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Languages</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {['Japanese', 'English', 'Russian', 'Chinese'].map((lang, i) => (
+            {['Japanese', 'English', 'Dutch', 'Russian', 'Chinese'].map((lang, i) => (
               <div key={i} className="card-washi card-washi-about p-4 text-center relative overflow-hidden">
                 <div className="glow-bar absolute left-0 top-0 bottom-0" />
                 <div className="font-noto-sans text-sm font-semibold text-kuro-soft">{lang}</div>
@@ -140,7 +143,11 @@ export default function AboutPage() {
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Awards</h3>
           <div className="space-y-3">
             {[
-              { title: '2nd Prize, Tokyo Natural Disaster Policy Proposal', detail: '2-Day Policy Hackathon, GEIL' },
+              { title: 'Excellence Award for Poetry', detail: '2011' },
+              { title: 'Excellence Award, JYOJI-ROCK U-16 Contest', detail: 'Music performance' },
+              { title: '2nd Prize, GEIL Policy Contest — Tokyo Earthquake Response', detail: 'Led a team of four in crafting a policy to boost Tokyo\'s earthquake resilience, proposing "Transferable Development Rights Plus" to incentivise redevelopment, reduce wooden structures, and widen streets' },
+              { title: 'Selected for Monster Exhibition', detail: 'Prestigious group exhibition, Shibuya Hikarie, Tokyo' },
+              { title: 'Featured in Al-Tiba9 Contemporary Art Magazine', detail: 'International contemporary art publication' },
             ].map((award, i) => (
               <div key={i} className="card-washi card-washi-about p-5 relative overflow-hidden">
                 <div className="glow-bar absolute left-0 top-0 bottom-0" />
