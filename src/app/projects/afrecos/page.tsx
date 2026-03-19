@@ -63,6 +63,7 @@ export default function AfrecosProjectPage() {
               { src: '/images/afrecos-5.png', alt: 'AFRECOS event 5' },
               { src: '/images/afrecos%20gallery.JPG', alt: 'AFRECOS gallery' },
               { src: '/images/afrecos%20talk%20at%20parliament.JPG', alt: 'AFRECOS talk at parliament' },
+              { src: '/images/afrecos.jpg', alt: 'AFRECOS' },
             ].map((img, i) => (
               <PhotoFrame
                 key={i}
