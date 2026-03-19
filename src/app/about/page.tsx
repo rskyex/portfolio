@@ -165,40 +165,30 @@ export default function AboutPage() {
         {/* Interests */}
         <div>
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Interests</h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="card-washi card-washi-about p-6 relative overflow-hidden">
-              <div className="glow-bar absolute left-0 top-0 bottom-0" />
-              <div className="pl-4">
-                <h4 className="font-noto-sans text-sm font-bold text-kuro-soft mb-3">Music</h4>
-                <ul className="space-y-1.5">
-                  {['Violin', 'Bach', 'Sibelius', 'Puccini', 'Verdi', 'Tchaikovsky', 'Dvo\u0159\u00e1k', 'Stravinsky'].map((item, j) => (
-                    <li key={j} className="font-noto-sans text-xs text-kuro-soft/60">{item}</li>
-                  ))}
-                </ul>
-              </div>
+          <div className="card-washi card-washi-about p-6 relative overflow-hidden">
+            <div className="glow-bar absolute left-0 top-0 bottom-0" />
+            <div className="pl-4">
+              <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
+                {['Violin', 'Johann Sebastian Bach', 'Jean Sibelius', 'Giacomo Puccini', 'Giuseppe Verdi', 'Pyotr Ilyich Tchaikovsky', 'Anton\u00edn Dvo\u0159\u00e1k', 'Igor Stravinsky', 'Fyodor Dostoevsky', 'Kabuki', 'Yukio Mishima', 'Greek Mythology', 'Raymond Radiguet', 'Rainer Maria Rilke'].join(' \u00b7 ')}
+              </p>
             </div>
-            <div className="card-washi card-washi-about p-6 relative overflow-hidden">
-              <div className="glow-bar absolute left-0 top-0 bottom-0" />
-              <div className="pl-4">
-                <h4 className="font-noto-sans text-sm font-bold text-kuro-soft mb-3">Literature</h4>
-                <ul className="space-y-1.5">
-                  {['Mishima Yukio', 'Rilke', 'Radiguet', 'Greek Mythology'].map((item, j) => (
-                    <li key={j} className="font-noto-sans text-xs text-kuro-soft/60">{item}</li>
-                  ))}
-                </ul>
+          </div>
+
+          {/* Gallery — places and moments */}
+          <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-3">
+            {[
+              { src: '/images/interest-1.jpg', alt: 'Visiting a place of inspiration' },
+              { src: '/images/interest-2.jpg', alt: 'At a concert or performance' },
+              { src: '/images/interest-3.jpg', alt: 'Literary pilgrimage' },
+              { src: '/images/interest-4.jpg', alt: 'Cultural exploration' },
+              { src: '/images/interest-5.jpg', alt: 'Music and art' },
+              { src: '/images/interest-6.jpg', alt: 'A moment of reflection' },
+            ].map((img, i) => (
+              <div key={i} className="aspect-[4/3] rounded-sm overflow-hidden border border-kuro-soft/[0.08]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={img.src} alt={img.alt} className="w-full h-full object-cover" />
               </div>
-            </div>
-            <div className="card-washi card-washi-about p-6 relative overflow-hidden">
-              <div className="glow-bar absolute left-0 top-0 bottom-0" />
-              <div className="pl-4">
-                <h4 className="font-noto-sans text-sm font-bold text-kuro-soft mb-3">Performing Arts</h4>
-                <ul className="space-y-1.5">
-                  {['Kabuki'].map((item, j) => (
-                    <li key={j} className="font-noto-sans text-xs text-kuro-soft/60">{item}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
