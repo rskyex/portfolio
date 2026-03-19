@@ -83,7 +83,9 @@ export default function ArtProjectPage() {
 
             {/* Monster Exhibition - San Francisco */}
             <div className="border-l-2 border-kin/30 pl-5">
-              <h4 className="font-noto-sans text-sm font-medium text-shiro/80 mb-1">Monster Exhibition</h4>
+              <h4 className="font-noto-sans text-sm font-medium text-shiro/80 mb-1">
+                <a href="https://monsterex.info/san-francisco/" target="_blank" rel="noopener noreferrer" className="hover:text-kin transition-colors">Monster Exhibition</a>
+              </h4>
               <p className="font-noto-sans text-xs text-kin/60 mb-2">San Francisco</p>
               <div className="font-noto-sans text-xs text-shiro/50 leading-relaxed space-y-1">
                 <p>November 15th – 22nd, 11:00 – 16:00</p>
