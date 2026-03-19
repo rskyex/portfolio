@@ -270,6 +270,13 @@ export default function Home() {
               period="2024"
               role="Co-Founder & President"
             />
+            <ProjectCard
+              href="/projects/art"
+              title="Art Practice"
+              description="Interdisciplinary art practice spanning visual thinking, international exhibition, and conceptual work."
+              image="/images/art.JPG"
+              imageAlt="Art practice"
+            />
           </div>
           <div className="mt-8 text-right">
             <Link href="/projects" className="font-noto-sans text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
