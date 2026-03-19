@@ -31,6 +31,23 @@ export default function FukushimaProjectPage() {
           </p>
         </div>
 
+        <div className="panel rounded-sm p-8">
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Field Documentation</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {[1, 2, 3, 4, 5].map((n) => (
+              <div key={n} className={n === 5 ? 'md:col-span-2' : ''}>
+                <PhotoFrame
+                  src={`/images/fukushima-slide-${n}.jpg`}
+                  alt={`Fukushima field research documentation ${n}`}
+                  width={800}
+                  height={600}
+                  className="w-full h-56 md:h-64"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="flex flex-wrap gap-2">
           {['Futaba', 'Namie', 'Post-Disaster Governance', 'Trust', 'Recovery', 'METI', 'TEPCO', 'Evacuees', 'Policy-Recovery Gap'].map(tag => (
             <Tag key={tag} label={tag} />
