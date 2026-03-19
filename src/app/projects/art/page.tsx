@@ -67,13 +67,18 @@ export default function ArtProjectPage() {
 
             {/* Boomer Gallery - London */}
             <div className="border-l-2 border-kin/30 pl-5">
-              <PhotoFrame
-                src="/images/art-3.jpg"
-                alt="Boomer Gallery exhibition in London"
-                width={800}
-                height={500}
-                className="w-full h-48 md:h-64 mb-4"
-              />
+              <div className="grid grid-cols-2 gap-3 mb-4">
+                {['boomer%20(1).jpg', 'boomer%20(2).jpg', 'boomer%20(3).jpg', 'boomer%20(4).jpg'].map((file, i) => (
+                  <PhotoFrame
+                    key={i}
+                    src={`/images/${file}`}
+                    alt={`Boomer Gallery exhibition ${i + 1}`}
+                    width={400}
+                    height={300}
+                    className="w-full h-36 md:h-44"
+                  />
+                ))}
+              </div>
               <h4 className="font-noto-sans text-sm font-medium text-shiro/80 mb-1">Boomer Gallery — &ldquo;Why do you do it?&rdquo;</h4>
               <p className="font-noto-sans text-xs text-kin/60 mb-2">London</p>
               <div className="font-noto-sans text-xs text-shiro/50 leading-relaxed space-y-1">
@@ -83,6 +88,18 @@ export default function ArtProjectPage() {
 
             {/* Monster Exhibition - San Francisco */}
             <div className="border-l-2 border-kin/30 pl-5">
+              <div className="grid grid-cols-2 gap-3 mb-4">
+                {['monster-sf%20(1).jpg', 'monster-sf%20(2).jpg', 'monster-sf%20(3).jpg', 'monster%20sf.jpg'].map((file, i) => (
+                  <PhotoFrame
+                    key={i}
+                    src={`/images/${file}`}
+                    alt={`Monster Exhibition San Francisco ${i + 1}`}
+                    width={400}
+                    height={300}
+                    className="w-full h-36 md:h-44"
+                  />
+                ))}
+              </div>
               <h4 className="font-noto-sans text-sm font-medium text-shiro/80 mb-1">
                 <a href="https://monsterex.info/san-francisco/" target="_blank" rel="noopener noreferrer" className="hover:text-kin transition-colors">Monster Exhibition</a>
               </h4>
@@ -95,6 +112,13 @@ export default function ArtProjectPage() {
 
             {/* ART ON LOOP - London & Athens (Jan 2024) */}
             <div className="border-l-2 border-kin/30 pl-5">
+              <PhotoFrame
+                src="/images/art%20on%20loop%20jan.jpeg"
+                alt="ART ON LOOP January 2024"
+                width={800}
+                height={500}
+                className="w-full h-48 md:h-64 mb-4"
+              />
               <h4 className="font-noto-sans text-sm font-medium text-shiro/80 mb-1">ART ON LOOP</h4>
               <p className="font-noto-sans text-xs text-kin/60 mb-2">London &amp; Athens</p>
               <div className="font-noto-sans text-xs text-shiro/50 leading-relaxed space-y-1">
@@ -114,7 +138,7 @@ export default function ArtProjectPage() {
             {/* New York Cinema Screening */}
             <div className="border-l-2 border-kin/30 pl-5">
               <PhotoFrame
-                src="/images/art-5.PNG"
+                src="/images/nyshowcase.jpeg"
                 alt="New York Cinema Showcase at Stuart Cinema"
                 width={800}
                 height={500}
@@ -131,8 +155,8 @@ export default function ArtProjectPage() {
             {/* ART ON LOOP - London & Athens (Sep 2024) */}
             <div className="border-l-2 border-kin/30 pl-5">
               <PhotoFrame
-                src="/images/art-2.PNG"
-                alt="ART ON LOOP Digital Exhibition"
+                src="/images/art%20on%20loop%20sep.jpeg"
+                alt="ART ON LOOP Digital Exhibition September 2024"
                 width={800}
                 height={500}
                 className="w-full h-48 md:h-64 mb-4"
