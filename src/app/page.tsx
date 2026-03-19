@@ -314,6 +314,12 @@ export default function Home() {
               image="/images/speaking-youth-drive.jpg"
             />
             <SpeakingCard
+              title="European Forum on North Korean Human Rights"
+              context="Invited by the former British Ambassador to DPRK. UK Parliament All Parliament Party Group on DPRK."
+              type="Youth Representation"
+              image="/images/northkorea.jpg"
+            />
+            <SpeakingCard
               title="Roundtable and Friends of Education"
               context="Hosted by GPE and the World Bank at the Japanese House of Councillors."
               type="Roundtable Participation"

@@ -19,17 +19,17 @@ export default function SpeakingPage() {
       <div className="grid md:grid-cols-2 gap-6">
         <SpeakingCard
           title="TICAD Ministerial Meeting"
-          context="Tokyo International Conference on African Development."
+          context="Speaker as a representative of Japanese students at the Tokyo International Conference on African Development."
           type="Policy Engagement"
-          description="Policy engagement and youth representation at the TICAD Ministerial Meeting, contributing to Africa–Japan development dialogue."
+          description="Spoke about the importance of nuclear disarmament and proposed a study tour for both African and Japanese students to visit Hiroshima and Fukushima to learn firsthand about the impacts of nuclear energy and the ongoing recovery efforts. The proposal aimed at fostering a deeper understanding of nuclear issues through education and cultural exchange."
           image="/images/speaking-ticad.jpg"
         />
 
         <SpeakingCard
           title="Japan–Netherlands Peace Exchange"
-          context="Bilateral dialogue and peace exchange between Japanese and Dutch participants."
+          context="War reconciliation speech for Dutch WW2 survivors from Indonesia, as a representative of Japanese Youth at Ministry of Foreign Affairs of Japan."
           type="Dialogue Contribution"
-          description="Participation in structured bilateral peace exchange focused on shared policy challenges and cultural understanding."
+          description="Delivered a speech in Dutch about living in the Netherlands during the 2011 earthquake and how it led to confronting cultural identity and historical tensions between the two countries. Experiencing both support and suspicion, she began exploring the differing perspectives each country holds regarding its wartime past. Though initially caught between identities, she now sees it as a strength to help build genuine understanding between the two nations."
           image="/images/speaking-peace-exchange.jpg"
         />
 
@@ -39,6 +39,14 @@ export default function SpeakingPage() {
           type="Youth Representation"
           description="Participation in a youth-focused policy forum addressing Africa–Japan co-creation, development cooperation, and future-oriented agenda setting."
           image="/images/speaking-youth-drive.jpg"
+        />
+
+        <SpeakingCard
+          title="European Forum on North Korean Human Rights"
+          context="Invited by the former British Ambassador to DPRK. UK Parliament All Parliament Party Group on DPRK."
+          type="Youth Representation"
+          description="As a youth representative from Japan, addressed the issue of Japanese citizens abducted by North Korea, highlighting the human impact, the ongoing suffering of affected families, and the urgent need for global awareness and international cooperation. Emphasised the importance of youth engagement in addressing human rights issues and called for sustained dialogue and multilateral efforts to resolve the abduction problem."
+          image="/images/northkorea.jpg"
         />
 
         <SpeakingCard
