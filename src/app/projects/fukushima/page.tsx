@@ -32,17 +32,30 @@ export default function FukushimaProjectPage() {
         </div>
 
         <div className="panel rounded-sm p-8">
-          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Field Documentation</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {[1, 2, 3, 4, 5].map((n) => (
-              <div key={n} className={n === 5 ? 'md:col-span-2' : ''}>
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Research Outputs — 成果</h3>
+          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-6">
+            Key findings and analytical frameworks developed through six years of fieldwork, stakeholder engagement, and cross-sector dialogue in Fukushima Prefecture.
+          </p>
+          <div className="space-y-6">
+            {[
+              { n: 1, title: 'The Accident & What It Left Behind', description: 'Timeline of the March 11, 2011 disaster and the lasting consequences — 154,000 evacuated, decades of decontamination, fractured governance, and community stigma.' },
+              { n: 2, title: 'Stakeholder Mapping', description: 'Comprehensive mapping of actors across government, TEPCO & industry, new energy developers, and civil society — each with a different definition of "recovery."' },
+              { n: 3, title: 'Competing Stakes & Conflict Lines', description: 'Analysis of opposing interests: fisheries co-ops split on offshore wind, METI vs. town mayors on scale vs. livelihoods, and the trust gap between government and communities.' },
+              { n: 4, title: 'Research Independence & Access', description: 'Methodological framework for building trusted access across all stakeholder groups — adapting language from mechanical to emotional to policy depending on the audience.' },
+              { n: 5, title: 'From First Visit to Published Research', description: 'Design-thinking process from empathise to test & iterate: field immersion, problem reframing, cross-sector dialogue prototypes, and feedback loops with stakeholders.' },
+            ].map(({ n, title, description }) => (
+              <div key={n} className="space-y-3">
                 <PhotoFrame
                   src={`/images/fukushima-slide-${n}.jpg`}
-                  alt={`Fukushima field research documentation ${n}`}
-                  width={800}
-                  height={600}
-                  className="w-full h-56 md:h-64"
+                  alt={title}
+                  width={960}
+                  height={540}
+                  className="w-full h-auto aspect-video"
                 />
+                <div>
+                  <h4 className="font-noto-sans text-sm font-medium text-kin-light">{title}</h4>
+                  <p className="font-noto-sans text-xs text-shiro/50 leading-relaxed mt-1">{description}</p>
+                </div>
               </div>
             ))}
           </div>
