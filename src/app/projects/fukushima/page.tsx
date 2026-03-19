@@ -32,16 +32,15 @@ export default function FukushimaProjectPage() {
         </div>
 
         <div className="panel rounded-sm p-8">
-          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Research Output</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-6">Research Output</h3>
+          <div className="space-y-5">
             {[1, 2, 3, 4, 5].map((n) => (
-              <div key={n} className={n === 5 ? 'md:col-span-2' : ''}>
-                <PhotoFrame
+              <div key={n} className="border border-shiro/[0.06] rounded-sm overflow-hidden">
+                <img
                   src={`/images/fukushima%20DT%20slide%20(${n}).jpg`}
                   alt={`Fukushima research output slide ${n}`}
-                  width={800}
-                  height={600}
-                  className="w-full h-56 md:h-64"
+                  className="w-full h-auto"
+                  loading="lazy"
                 />
               </div>
             ))}
@@ -52,6 +51,32 @@ export default function FukushimaProjectPage() {
           {['Futaba', 'Namie', 'Post-Disaster Governance', 'Trust', 'Recovery', 'METI', 'TEPCO', 'Evacuees', 'Policy-Recovery Gap'].map(tag => (
             <Tag key={tag} label={tag} />
           ))}
+        </div>
+
+        <div className="panel rounded-sm p-8">
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-6">Gallery</h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {[
+              { n: 1, ext: 'jpg' },
+              { n: 2, ext: 'jpg' },
+              { n: 3, ext: 'JPG' },
+              { n: 4, ext: 'jpg' },
+              { n: 5, ext: 'jpg' },
+              { n: 6, ext: 'jpg' },
+              { n: 7, ext: 'jpg' },
+              { n: 8, ext: 'jpg' },
+              { n: 10, ext: 'jpg' },
+            ].map(({ n, ext }) => (
+              <PhotoFrame
+                key={n}
+                src={`/images/fukushima-${n}.${ext}`}
+                alt={`Fukushima fieldwork photo ${n}`}
+                width={400}
+                height={300}
+                className="w-full h-40 md:h-48"
+              />
+            ))}
+          </div>
         </div>
 
         <div className="panel rounded-sm p-8">
