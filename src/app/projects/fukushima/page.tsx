@@ -76,6 +76,13 @@ export default function FukushimaProjectPage() {
                 className="w-full h-40 md:h-48"
               />
             ))}
+            <PhotoFrame
+              src="/images/peace-2.jpg"
+              alt="Fukushima fieldwork photo"
+              width={400}
+              height={300}
+              className="w-full h-40 md:h-48"
+            />
           </div>
         </div>
 

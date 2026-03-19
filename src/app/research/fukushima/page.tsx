@@ -104,9 +104,9 @@ export default function FukushimaResearchPage() {
               { n: 7, ext: 'jpg' },
               { n: 8, ext: 'jpg' },
               { n: 10, ext: 'jpg' },
-            ].map(({ n, ext }) => (
+            ].map(({ n, ext }, i) => (
               <PhotoFrame
-                key={n}
+                key={i}
                 src={`/images/fukushima-${n}.${ext}`}
                 alt={`Fukushima fieldwork photo ${n}`}
                 width={400}
@@ -114,6 +114,13 @@ export default function FukushimaResearchPage() {
                 className="w-full h-40 md:h-48"
               />
             ))}
+            <PhotoFrame
+              src="/images/peace-2.jpg"
+              alt="Fukushima fieldwork photo"
+              width={400}
+              height={300}
+              className="w-full h-40 md:h-48"
+            />
           </div>
         </div>
       </div>
