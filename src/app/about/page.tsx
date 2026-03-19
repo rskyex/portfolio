@@ -103,7 +103,7 @@ export default function AboutPage() {
         <div>
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Languages</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {['Japanese', 'English', 'Dutch', 'Russian', 'Chinese'].map((lang, i) => (
+            {['Japanese', 'English', 'Russian', 'Chinese'].map((lang, i) => (
               <div key={i} className="card-washi card-washi-about p-4 text-center relative overflow-hidden">
                 <div className="glow-bar absolute left-0 top-0 bottom-0" />
                 <div className="font-noto-sans text-sm font-semibold text-kuro-soft">{lang}</div>
@@ -157,6 +157,48 @@ export default function AboutPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        <SectionDivider />
+
+        {/* Interests */}
+        <div>
+          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Interests</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="card-washi card-washi-about p-6 relative overflow-hidden">
+              <div className="glow-bar absolute left-0 top-0 bottom-0" />
+              <div className="pl-4">
+                <h4 className="font-noto-sans text-sm font-bold text-kuro-soft mb-3">Music</h4>
+                <ul className="space-y-1.5">
+                  {['Violin', 'Bach', 'Sibelius', 'Puccini', 'Verdi', 'Tchaikovsky', 'Dvo\u0159\u00e1k', 'Stravinsky'].map((item, j) => (
+                    <li key={j} className="font-noto-sans text-xs text-kuro-soft/60">{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className="card-washi card-washi-about p-6 relative overflow-hidden">
+              <div className="glow-bar absolute left-0 top-0 bottom-0" />
+              <div className="pl-4">
+                <h4 className="font-noto-sans text-sm font-bold text-kuro-soft mb-3">Literature</h4>
+                <ul className="space-y-1.5">
+                  {['Mishima Yukio', 'Rilke', 'Radiguet', 'Greek Mythology'].map((item, j) => (
+                    <li key={j} className="font-noto-sans text-xs text-kuro-soft/60">{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className="card-washi card-washi-about p-6 relative overflow-hidden">
+              <div className="glow-bar absolute left-0 top-0 bottom-0" />
+              <div className="pl-4">
+                <h4 className="font-noto-sans text-sm font-bold text-kuro-soft mb-3">Performing Arts</h4>
+                <ul className="space-y-1.5">
+                  {['Kabuki'].map((item, j) => (
+                    <li key={j} className="font-noto-sans text-xs text-kuro-soft/60">{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
