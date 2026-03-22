@@ -151,6 +151,23 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ═══════════════════════════════════════════════════
+          REFERENCE
+          ═══════════════════════════════════════════════════ */}
+      <section className="max-w-6xl mx-auto px-6 py-16 relative">
+        <div className="relative">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="font-noto-serif text-sm md:text-base text-shiro/60 leading-relaxed italic">
+              &ldquo;Risa Koyanagi is a brilliant young scholar, an intellectually agile thinker, and an accomplished writer. In twenty-two years of teaching undergraduate and graduate students in Cambridge, I have rarely seen such a thoughtful and highly motivated student with an unconditional commitment to scholarly inquiry.&rdquo;
+            </p>
+            <div className="mt-4">
+              <p className="font-noto-sans text-xs text-shiro/45 font-medium">Prof Harald Wydra</p>
+              <p className="font-noto-sans text-[11px] text-shiro/30">Professor of Politics, St Catharine&apos;s College, University of Cambridge</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <SectionDivider />
 
       {/* ═══════════════════════════════════════════════════
@@ -282,25 +299,6 @@ export default function Home() {
             <Link href="/projects" className="font-noto-sans text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
               View all projects →
             </Link>
-          </div>
-        </div>
-      </section>
-
-      <SectionDivider />
-
-      {/* ═══════════════════════════════════════════════════
-          REFERENCE
-          ═══════════════════════════════════════════════════ */}
-      <section className="max-w-6xl mx-auto px-6 pb-16 relative">
-        <div className="relative">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="font-noto-serif text-sm md:text-base text-shiro/60 leading-relaxed italic">
-              &ldquo;Risa Koyanagi is a brilliant young scholar, an intellectually agile thinker, and an accomplished writer. In twenty-two years of teaching undergraduate and graduate students in Cambridge, I have rarely seen such a thoughtful and highly motivated student with an unconditional commitment to scholarly inquiry.&rdquo;
-            </p>
-            <div className="mt-4">
-              <p className="font-noto-sans text-xs text-shiro/45 font-medium">Prof Harald Wydra</p>
-              <p className="font-noto-sans text-[11px] text-shiro/30">Professor of Politics, St Catharine&apos;s College, University of Cambridge</p>
-            </div>
           </div>
         </div>
       </section>
