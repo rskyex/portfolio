@@ -49,7 +49,6 @@ export default function AboutPage() {
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Education</h3>
           <div className="space-y-4">
             {[
-              { institution: 'Hughes Hall, University of Cambridge', degree: '', period: '2026–' },
               { institution: 'University of London / Forward College', degree: 'Academic Direction: London School of Economics', period: '2025–2026', detail: 'Lisbon' },
               { institution: 'Saïd Business School, University of Oxford', degree: 'AI & Digital Transformation in Government', period: 'Nov 2025 – Jan 2026' },
               { institution: 'Selwyn College, University of Cambridge', degree: 'International Summer Programme: Space Weaponisation & British Politics', period: 'Jul – Aug 2025' },
