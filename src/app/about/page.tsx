@@ -85,7 +85,7 @@ export default function AboutPage() {
                 &ldquo;Risa Koyanagi is a brilliant young scholar, an intellectually agile thinker, and an accomplished writer. In twenty-two years of teaching undergraduate and graduate students in Cambridge, I have rarely seen such a thoughtful and highly motivated student with an unconditional commitment to scholarly inquiry.&rdquo;
               </p>
               <div>
-                <p className="font-noto-sans text-sm font-semibold text-kuro-soft">Dr Harald Wydra</p>
+                <p className="font-noto-sans text-sm font-semibold text-kuro-soft">Prof Harald Wydra</p>
                 <p className="font-noto-sans text-xs text-kuro-soft/55">Professor of Politics, Philpott Fellow, St Catharine&apos;s College, University of Cambridge</p>
                 <p className="font-noto-sans text-xs text-kuro-soft/45 mt-1">Cambridge Centre for International Research (CCIR)</p>
               </div>
