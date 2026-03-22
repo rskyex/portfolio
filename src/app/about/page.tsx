@@ -78,9 +78,6 @@ export default function AboutPage() {
           <div className="card-washi card-washi-about p-8 relative overflow-hidden">
             <div className="glow-bar absolute left-0 top-0 bottom-0" />
             <div className="pl-4">
-              <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed italic mb-4">
-                &ldquo;Risa is by far the best student I have taught in such a format in the past three years. She was extremely responsive in producing summaries of the readings and was also the most active participant in the taught sessions, as she gave excellent comments on the projects of other students. Most importantly, she designed a very ambitious research project in a self-guided and critical manner.&rdquo;
-              </p>
               <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed italic mb-6">
                 &ldquo;Risa Koyanagi is a brilliant young scholar, an intellectually agile thinker, and an accomplished writer. In twenty-two years of teaching undergraduate and graduate students in Cambridge, I have rarely seen such a thoughtful and highly motivated student with an unconditional commitment to scholarly inquiry.&rdquo;
               </p>
