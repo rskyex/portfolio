@@ -141,28 +141,19 @@ export default function Home() {
                   className="w-48 h-64 md:w-72 md:h-96"
                   priority
                 />
+                {/* Reference quote */}
+                <div className="mt-6 max-w-[280px] md:max-w-[288px] text-center">
+                  <p className="font-noto-serif text-[11px] text-shiro/45 leading-relaxed italic">
+                    &ldquo;A brilliant young scholar, an intellectually agile thinker, and an accomplished writer.&rdquo;
+                  </p>
+                  <p className="font-noto-sans text-[10px] text-shiro/30 mt-1.5">Prof Harald Wydra · University of Cambridge</p>
+                </div>
+
                 {/* Decorative tsubaki near portrait */}
                 <div className="absolute -bottom-6 -right-6 opacity-40">
                   <Tsubaki3D size="sm" />
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════
-          REFERENCE
-          ═══════════════════════════════════════════════════ */}
-      <section className="max-w-6xl mx-auto px-6 py-16 relative">
-        <div className="relative">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="font-noto-serif text-sm md:text-base text-shiro/60 leading-relaxed italic">
-              &ldquo;Risa Koyanagi is a brilliant young scholar, an intellectually agile thinker, and an accomplished writer. In twenty-two years of teaching undergraduate and graduate students in Cambridge, I have rarely seen such a thoughtful and highly motivated student with an unconditional commitment to scholarly inquiry.&rdquo;
-            </p>
-            <div className="mt-4">
-              <p className="font-noto-sans text-xs text-shiro/45 font-medium">Prof Harald Wydra</p>
-              <p className="font-noto-sans text-[11px] text-shiro/30">Professor of Politics, St Catharine&apos;s College, University of Cambridge</p>
             </div>
           </div>
         </div>
