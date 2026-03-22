@@ -58,6 +58,14 @@ export default function ResearchPage() {
       <div className="mb-10">
         <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-4 font-semibold">Conference & Development</h3>
         <div className="space-y-4">
+          <ResearchListItem
+            href="/research/ontological-governance"
+            title="Ontological Governance: What AI Does to the Human Subject"
+            status="Conference Abstract"
+            themes={['AI governance', 'Ontological governance', 'Narrative identity', 'Epistemology', 'Democratic deliberation', 'EU AI Act', 'Second-order governance']}
+            description="Introducing ontological governance as a second-order analytical layer that asks not only what AI systems do, but what they do to the knowing, existing, and self-governing human beings whose dignity and agency governance exists to protect."
+          />
+
           <div className="card-washi card-washi-research p-6 relative overflow-hidden">
             <div className="glow-bar absolute left-0 top-0 bottom-0" />
             <div className="pl-4">
