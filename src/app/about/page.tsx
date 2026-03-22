@@ -72,6 +72,29 @@ export default function AboutPage() {
 
         <SectionDivider />
 
+        {/* Reference */}
+        <div>
+          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Reference</h3>
+          <div className="card-washi card-washi-about p-8 relative overflow-hidden">
+            <div className="glow-bar absolute left-0 top-0 bottom-0" />
+            <div className="pl-4">
+              <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed italic mb-4">
+                &ldquo;Risa is by far the best student I have taught in such a format in the past three years. She was extremely responsive in producing summaries of the readings and was also the most active participant in the taught sessions, as she gave excellent comments on the projects of other students. Most importantly, she designed a very ambitious research project in a self-guided and critical manner.&rdquo;
+              </p>
+              <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed italic mb-6">
+                &ldquo;Risa Koyanagi is a brilliant young scholar, an intellectually agile thinker, and an accomplished writer. In twenty-two years of teaching undergraduate and graduate students in Cambridge, I have rarely seen such a thoughtful and highly motivated student with an unconditional commitment to scholarly inquiry.&rdquo;
+              </p>
+              <div>
+                <p className="font-noto-sans text-sm font-semibold text-kuro-soft">Prof Harald Wydra</p>
+                <p className="font-noto-sans text-xs text-kuro-soft/55">Professor of Politics, Philpott Fellow, St Catharine&apos;s College, University of Cambridge</p>
+                <p className="font-noto-sans text-xs text-kuro-soft/45 mt-1">Cambridge Centre for International Research (CCIR)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <SectionDivider />
+
         {/* Skills */}
         <div>
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Skills</h3>
