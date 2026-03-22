@@ -125,6 +125,15 @@ export default function Home() {
 
               {/* Stats */}
               <StatList stats={stats} />
+
+              {/* Reference — PC only (below stats) */}
+              <div className="hidden md:block mt-10 max-w-xl">
+                <p className="font-noto-serif text-sm text-shiro/50 leading-relaxed italic">
+                  &ldquo;Risa Koyanagi is a brilliant young scholar, an intellectually agile thinker, and an accomplished writer. In twenty-two years of teaching undergraduate and graduate students in Cambridge, I have rarely seen such a thoughtful and highly motivated student with an unconditional commitment to scholarly inquiry.&rdquo;
+                </p>
+                <p className="font-noto-sans text-xs text-shiro/35 mt-3">Prof Harald Wydra</p>
+                <p className="font-noto-sans text-[11px] text-shiro/25">Professor of Politics, St Catharine&apos;s College, University of Cambridge</p>
+              </div>
             </div>
 
             {/* Profile photo with tsubaki frame */}
@@ -141,12 +150,13 @@ export default function Home() {
                   className="w-48 h-64 md:w-72 md:h-96"
                   priority
                 />
-                {/* Reference quote */}
-                <div className="mt-6 max-w-[280px] md:max-w-[288px] text-center">
-                  <p className="font-noto-serif text-[11px] text-shiro/45 leading-relaxed italic">
-                    &ldquo;A brilliant young scholar, an intellectually agile thinker, and an accomplished writer.&rdquo;
+                {/* Reference — Mobile only (below photo) */}
+                <div className="md:hidden mt-6 text-center">
+                  <p className="font-noto-serif text-xs text-shiro/50 leading-relaxed italic">
+                    &ldquo;Risa Koyanagi is a brilliant young scholar, an intellectually agile thinker, and an accomplished writer. In twenty-two years of teaching undergraduate and graduate students in Cambridge, I have rarely seen such a thoughtful and highly motivated student with an unconditional commitment to scholarly inquiry.&rdquo;
                   </p>
-                  <p className="font-noto-sans text-[10px] text-shiro/30 mt-1.5">Prof Harald Wydra · University of Cambridge</p>
+                  <p className="font-noto-sans text-[11px] text-shiro/35 mt-2">Prof Harald Wydra</p>
+                  <p className="font-noto-sans text-[10px] text-shiro/25">Professor of Politics, St Catharine&apos;s College, University of Cambridge</p>
                 </div>
 
                 {/* Decorative tsubaki near portrait */}
