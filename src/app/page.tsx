@@ -113,7 +113,7 @@ export default function Home() {
 
               {/* Description */}
               <p className="font-noto-sans text-sm text-shiro/70 leading-[1.9] max-w-xl mb-10">
-                Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of space governance, nuclear governance, cyber governance, strategic risk, and emerging technology governance. Her research is especially concerned with legitimation theory, dual-use governance, authority architecture, responsible behaviour norms, and international security. She is supervised by Prof. Harald Wydra in connection with her Cambridge-based research trajectory, and is building the Strategic Infrastructure Risk Suite: a set of public-facing policy platforms across nuclear, orbital, and cyber domains.
+                Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of space governance, nuclear governance, cyber governance, strategic risk, and emerging technology governance. Her research is especially concerned with legitimation theory, dual-use governance, authority architecture, responsible behaviour norms, and international security. She is building the Strategic Infrastructure Risk Suite: a set of public-facing policy platforms across nuclear, orbital, and cyber domains.
               </p>
 
               {/* Tags */}
@@ -125,6 +125,15 @@ export default function Home() {
 
               {/* Stats */}
               <StatList stats={stats} />
+
+              {/* Reference — PC only (below stats) */}
+              <div className="hidden md:block mt-10 max-w-xl">
+                <p className="font-noto-serif text-sm text-shiro/50 leading-relaxed italic">
+                  &ldquo;Risa Koyanagi is a brilliant young scholar, an intellectually agile thinker, and an accomplished writer. In twenty-two years of teaching undergraduate and graduate students in Cambridge, I have rarely seen such a thoughtful and highly motivated student with an unconditional commitment to scholarly inquiry.&rdquo;
+                </p>
+                <p className="font-noto-sans text-xs text-shiro/35 mt-3">Prof Harald Wydra</p>
+                <p className="font-noto-sans text-[11px] text-shiro/25">Professor of Politics, St Catharine&apos;s College, University of Cambridge</p>
+              </div>
             </div>
 
             {/* Profile photo with tsubaki frame */}
@@ -141,6 +150,15 @@ export default function Home() {
                   className="w-48 h-64 md:w-72 md:h-96"
                   priority
                 />
+                {/* Reference — Mobile only (below photo) */}
+                <div className="md:hidden mt-6 text-center">
+                  <p className="font-noto-serif text-xs text-shiro/50 leading-relaxed italic">
+                    &ldquo;Risa Koyanagi is a brilliant young scholar, an intellectually agile thinker, and an accomplished writer. In twenty-two years of teaching undergraduate and graduate students in Cambridge, I have rarely seen such a thoughtful and highly motivated student with an unconditional commitment to scholarly inquiry.&rdquo;
+                  </p>
+                  <p className="font-noto-sans text-[11px] text-shiro/35 mt-2">Prof Harald Wydra</p>
+                  <p className="font-noto-sans text-[10px] text-shiro/25">Professor of Politics, St Catharine&apos;s College, University of Cambridge</p>
+                </div>
+
                 {/* Decorative tsubaki near portrait */}
                 <div className="absolute -bottom-6 -right-6 opacity-40">
                   <Tsubaki3D size="sm" />
