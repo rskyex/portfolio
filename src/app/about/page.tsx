@@ -191,12 +191,13 @@ export default function AboutPage() {
 
           {/* Gallery */}
           <div className="mt-6">
-            <div className="aspect-[4/3] rounded-sm overflow-hidden border border-kuro-soft/[0.08]">
+            <div className="rounded-sm overflow-hidden border border-kuro-soft/[0.08]">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/about gallery-1.jpg" alt="Gallery" className="w-full h-full object-cover" />
+              <img src="/images/about gallery-1.jpg" alt="Gallery" className="w-full h-auto" />
             </div>
-            <a href="https://instagram.com/rskyex" target="_blank" rel="noopener noreferrer" className="block mt-3 font-noto-sans text-sm text-kuro-soft/70 hover:text-shu-deep transition-colors font-medium">
-              @rskyex on Instagram
+            <a href="https://www.instagram.com/rskyex/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-sm border border-kuro-soft/[0.08] font-noto-sans text-sm text-kuro-soft/70 hover:text-shu-deep hover:border-shu-deep/30 transition-colors font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              @rskyex
             </a>
           </div>
         </div>
