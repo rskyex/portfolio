@@ -162,8 +162,6 @@ export default function AboutPage() {
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Awards</h3>
           <div className="space-y-3">
             {[
-              { title: 'Excellence Award for Poetry', detail: '2011' },
-              { title: 'Excellence Award, JYOJI-ROCK U-16 Contest', detail: 'Music performance' },
               { title: '2nd Prize, GEIL Policy Contest — Tokyo Earthquake Response', detail: 'Led a team of four in crafting a policy to boost Tokyo\'s earthquake resilience, proposing "Transferable Development Rights Plus" to incentivise redevelopment, reduce wooden structures, and widen streets' },
             ].map((award, i) => (
               <div key={i} className="card-washi card-washi-about p-5 relative overflow-hidden">
