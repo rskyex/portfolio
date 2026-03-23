@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { useEdit } from '@/lib/editContext';
 import Tsubaki3D from './Tsubaki3D';
 
 const navLinks = [
@@ -16,7 +15,6 @@ const navLinks = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const { isEditing, toggleEdit } = useEdit();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-kuro/90 backdrop-blur-xl border-b border-kin/[0.06]">
@@ -41,16 +39,6 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <button
-            onClick={toggleEdit}
-            className={`ml-4 px-3 py-1 text-xs font-noto-sans tracking-wider rounded border transition-all ${
-              isEditing
-                ? 'border-tsubaki-rose/50 text-tsubaki-rose bg-tsubaki-rose/10 shadow-[0_0_12px_rgba(233,30,99,0.15)]'
-                : 'border-kin/15 text-kin/40 hover:text-kin/70 hover:border-kin/30 hover:shadow-[0_0_8px_rgba(212,160,23,0.1)]'
-            }`}
-          >
-            {isEditing ? 'Editing' : 'Edit'}
-          </button>
         </div>
 
         {/* Mobile hamburger */}

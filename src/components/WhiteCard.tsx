@@ -1,7 +1,4 @@
-'use client';
-
 import { ReactNode } from 'react';
-import { useEdit } from '@/lib/editContext';
 
 interface WhiteCardProps {
   children: ReactNode;
@@ -10,25 +7,12 @@ interface WhiteCardProps {
 }
 
 export default function WhiteCard({ children, className = '', id }: WhiteCardProps) {
-  const { isEditing, saveSection, flashingSections } = useEdit();
-  const isFlashing = id ? flashingSections.has(id) : false;
-
   return (
     <div
       id={id}
-      className={`panel card-hover ${isFlashing ? 'save-flash' : ''} ${isEditing ? 'edit-mode' : ''} ${className}`}
+      className={`panel card-hover ${className}`}
     >
       {children}
-      {isEditing && id && (
-        <div className="px-6 pb-3 flex justify-end">
-          <button
-            onClick={() => saveSection(id)}
-            className="px-2 py-0.5 text-xs font-noto-sans text-kin/50 border border-kin/20 rounded hover:bg-kin/10 transition-colors"
-          >
-            Save
-          </button>
-        </div>
-      )}
     </div>
   );
 }

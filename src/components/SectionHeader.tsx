@@ -1,7 +1,3 @@
-'use client';
-
-import { useEdit } from '@/lib/editContext';
-
 interface SectionHeaderProps {
   kanji: string;
   english: string;
@@ -10,14 +6,12 @@ interface SectionHeaderProps {
 }
 
 export default function SectionHeader({ kanji, english, subtitle, id }: SectionHeaderProps) {
-  const { isEditing, saveSection, flashingSections } = useEdit();
   const sectionId = id || `section-${english.toLowerCase().replace(/\s+/g, '-')}`;
-  const isFlashing = flashingSections.has(sectionId);
 
   return (
     <div
       id={sectionId}
-      className={`relative overflow-hidden ${isFlashing ? 'save-flash' : ''} ${isEditing ? 'edit-mode' : ''}`}
+      className="relative overflow-hidden"
     >
       <div className="panel p-8 md:p-10 relative">
         {/* Neon top accent */}
@@ -33,31 +27,15 @@ export default function SectionHeader({ kanji, english, subtitle, id }: SectionH
             {kanji}
           </span>
           <div className="flex-1">
-            <h2
-              className="font-noto-sans text-sm md:text-base font-bold text-shiro tracking-[0.25em] uppercase drop-shadow-[0_0_8px_rgba(255,255,255,0.1)]"
-              contentEditable={isEditing}
-              suppressContentEditableWarning
-            >
+            <h2 className="font-noto-sans text-sm md:text-base font-bold text-shiro tracking-[0.25em] uppercase drop-shadow-[0_0_8px_rgba(255,255,255,0.1)]">
               {english}
             </h2>
             {subtitle && (
-              <p
-                className="font-noto-sans text-xs text-shiro/55 mt-1.5 tracking-wider"
-                contentEditable={isEditing}
-                suppressContentEditableWarning
-              >
+              <p className="font-noto-sans text-xs text-shiro/55 mt-1.5 tracking-wider">
                 {subtitle}
               </p>
             )}
           </div>
-          {isEditing && (
-            <button
-              onClick={() => saveSection(sectionId)}
-              className="px-3 py-1 text-xs font-noto-sans text-tsubaki-rose border border-tsubaki-rose/30 rounded hover:bg-tsubaki-rose/10 transition-colors shadow-[0_0_8px_rgba(233,30,99,0.1)]"
-            >
-              Save
-            </button>
-          )}
         </div>
       </div>
     </div>
