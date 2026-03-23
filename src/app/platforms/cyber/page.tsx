@@ -13,13 +13,25 @@ export default function CyberPlatformPage() {
 
       <div className="mt-8 space-y-8">
         <div className="flex items-center gap-3">
-          <span className="px-2 py-0.5 text-xs font-noto-sans bg-tsubaki-rose/6 text-tsubaki-blush/70 border border-tsubaki-rose/12 rounded-sm">
-            In Production
+          <span className="px-2 py-0.5 text-xs font-noto-sans bg-kin/10 text-kin-light border border-kin/20 rounded-sm">
+            Live
           </span>
+          <a
+            href="https://cyber-escalation-atlas-5yp5.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-noto-sans text-xs text-kin/70 hover:text-kin-glow transition-colors underline underline-offset-2"
+          >
+            Visit Platform →
+          </a>
         </div>
 
-        <div className="w-full h-64 md:h-80 border border-shiro/[0.08] rounded-sm flex items-center justify-center bg-kuro/30">
-          <span className="font-noto-sans text-sm text-shiro/40 tracking-wide">[in progress]</span>
+        <div className="w-full h-64 md:h-80 border border-shiro/[0.08] rounded-sm overflow-hidden">
+          <iframe
+            src="https://cyber-escalation-atlas-5yp5.vercel.app"
+            className="w-full h-full"
+            title="Cyber Escalation Atlas"
+          />
         </div>
 
         <div className="panel rounded-sm p-8">
@@ -42,14 +54,7 @@ export default function CyberPlatformPage() {
         </div>
 
         <div className="panel rounded-sm p-8">
-          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Platform Preview</h3>
-          <div className="w-full h-48 border border-shiro/[0.08] rounded-sm flex items-center justify-center bg-kuro/30">
-            <span className="font-noto-sans text-sm text-shiro/40 tracking-wide">[in progress]</span>
-          </div>
-        </div>
-
-        <div className="panel rounded-sm p-8">
-          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Planned Technical Stack</h3>
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Technical Stack</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {['Next.js', 'React', 'TypeScript', 'D3.js', 'Tailwind CSS', 'Python', 'Vercel'].map(tech => (
               <span key={tech} className="font-noto-sans text-sm text-shiro/60 text-center py-2 border border-shiro/[0.05] rounded-sm">

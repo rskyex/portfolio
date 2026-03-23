@@ -210,7 +210,8 @@ export default function Home() {
               href="/platforms/cyber"
               title="Cyber Escalation Atlas"
               description="Mapping cyber incidents as strategic behaviour, attribution frameworks, and governance signals."
-              status="In Production"
+              status="Live"
+              liveUrl="https://cyber-escalation-atlas-5yp5.vercel.app"
               tags={['Cyber', 'Attribution', 'Escalation']}
             />
           </div>
