@@ -180,6 +180,15 @@ export default function Home() {
           <SectionHeader kanji="台" english="Platforms" subtitle="Strategic Infrastructure Risk Suite" />
           <div className="mt-8 grid md:grid-cols-2 gap-6">
             <PlatformCard
+              href="/platforms/cyber"
+              title="Cyber Escalation Atlas"
+              description="Mapping cyber incidents as strategic behaviour, attribution frameworks, and governance signals."
+              status="Live"
+              liveUrl="https://cyber-escalation-atlas-5yp5.vercel.app"
+              tags={['Cyber', 'Attribution', 'Escalation']}
+              image="/images/cyber-platform.png"
+            />
+            <PlatformCard
               href="/platforms/nuclear"
               title="Global Nuclear Infrastructure Atlas"
               description="Interactive mapping of civilian nuclear power infrastructure, accident sites, and estimated arsenals with policy and health context."
@@ -205,14 +214,6 @@ export default function Home() {
               liveUrl="https://jp-ver-japan-promise-tracker.vercel.app"
               tags={['Japan', 'Policy', 'Accountability']}
               image="/images/promise-platform.jpg"
-            />
-            <PlatformCard
-              href="/platforms/cyber"
-              title="Cyber Escalation Atlas"
-              description="Mapping cyber incidents as strategic behaviour, attribution frameworks, and governance signals."
-              status="Live"
-              liveUrl="https://cyber-escalation-atlas-5yp5.vercel.app"
-              tags={['Cyber', 'Attribution', 'Escalation']}
             />
           </div>
           <div className="mt-8 text-right">
