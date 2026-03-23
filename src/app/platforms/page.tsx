@@ -19,6 +19,16 @@ export default function PlatformsPage() {
 
       <div className="grid md:grid-cols-1 gap-8">
         <PlatformCard
+          href="/platforms/cyber"
+          title="Cyber Escalation Atlas"
+          description="Mapping cyber incidents as strategic behaviour and governance signals. Engages with Kello's concept of 'unpeace,' attribution frameworks, Schelling's escalation logic, and Tallinn Manual 2.0 to contextualise cyber operations within broader governance and strategic analysis."
+          status="Live"
+          liveUrl="https://cyber-escalation-atlas-5yp5.vercel.app"
+          tags={['Kello', 'Schelling', 'Tallinn Manual 2.0', 'Attribution', 'Escalation']}
+          image="/images/cyber-platform.png"
+        />
+
+        <PlatformCard
           href="/platforms/nuclear"
           title="Global Nuclear Infrastructure Atlas"
           description="Interactive mapping of global civilian nuclear power infrastructure, major accident sites, estimated nuclear arsenals, and associated radiation and health context. Designed for educational and policy use, drawing on sources including IAEA, SIPRI, and WHO data."
@@ -43,15 +53,6 @@ export default function PlatformsPage() {
           status="Live"
           liveUrl="https://jp-ver-japan-promise-tracker.vercel.app"
           tags={['Japan', 'Policy Accountability', 'Government Commitments', 'Civic Engagement']}
-        />
-
-        <PlatformCard
-          href="/platforms/cyber"
-          title="Cyber Escalation Atlas"
-          description="Mapping cyber incidents as strategic behaviour and governance signals. Engages with Kello's concept of 'unpeace,' attribution frameworks, Schelling's escalation logic, and Tallinn Manual 2.0 to contextualise cyber operations within broader governance and strategic analysis."
-          status="Live"
-          liveUrl="https://cyber-escalation-atlas-5yp5.vercel.app"
-          tags={['Kello', 'Schelling', 'Tallinn Manual 2.0', 'Attribution', 'Escalation']}
         />
       </div>
 
