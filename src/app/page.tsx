@@ -22,7 +22,7 @@ const tags = [
 ];
 
 const stats = [
-  { value: '4', label: 'Platforms built' },
+  { value: '8', label: 'Platforms' },
   { value: '24', label: 'Documents coded' },
   { value: '6', label: 'Years fieldwork' },
   { value: '5+', label: 'Papers in development' },
@@ -214,6 +214,34 @@ export default function Home() {
               liveUrl="https://jp-ver-japan-promise-tracker.vercel.app"
               tags={['Japan', 'Policy', 'Accountability']}
               image="/images/promise-platform.jpg"
+            />
+            <PlatformCard
+              href="/platforms/scoreless"
+              title="Scoreless"
+              description="Making classical music's structure and meaning visible without score literacy — through timelines, motif displays, and commentary."
+              status="In Progress"
+              tags={['Classical Music', 'Analysis', 'Motif Tracking']}
+            />
+            <PlatformCard
+              href="/platforms/selftrace"
+              title="SelfTrace"
+              description="Revealing how social media algorithms shape what you post, repeat, and gradually experience as your online self."
+              status="In Progress"
+              tags={['Algorithmic Identity', 'Self-Presentation']}
+            />
+            <PlatformCard
+              href="/platforms/narrative-drift"
+              title="Narrative Drift"
+              description="An interactive simulation showing how AI systems can slowly reshape the way you choose, remember, and understand yourself."
+              status="In Progress"
+              tags={['AI Influence', 'Choice Architecture']}
+            />
+            <PlatformCard
+              href="/platforms/ontological-governance-observatory"
+              title="Ontological Governance Observatory"
+              description="Mapping how AI reshapes the human subject itself — across epistemic, ontological, and political layers."
+              status="In Progress"
+              tags={['AI Governance', 'Ontological Risk']}
             />
           </div>
           <div className="mt-8 text-right">
