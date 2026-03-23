@@ -165,8 +165,6 @@ export default function AboutPage() {
               { title: 'Excellence Award for Poetry', detail: '2011' },
               { title: 'Excellence Award, JYOJI-ROCK U-16 Contest', detail: 'Music performance' },
               { title: '2nd Prize, GEIL Policy Contest — Tokyo Earthquake Response', detail: 'Led a team of four in crafting a policy to boost Tokyo\'s earthquake resilience, proposing "Transferable Development Rights Plus" to incentivise redevelopment, reduce wooden structures, and widen streets' },
-              { title: 'Selected for Monster Exhibition', detail: 'Prestigious group exhibition, Shibuya Hikarie, Tokyo' },
-              { title: 'Featured in Al-Tiba9 Contemporary Art Magazine', detail: 'International contemporary art publication' },
             ].map((award, i) => (
               <div key={i} className="card-washi card-washi-about p-5 relative overflow-hidden">
                 <div className="glow-bar absolute left-0 top-0 bottom-0" />
