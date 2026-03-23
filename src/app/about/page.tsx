@@ -189,21 +189,15 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Gallery — places and moments */}
-          <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-3">
-            {[
-              { src: '/images/interest-1.jpg', alt: 'Visiting a place of inspiration' },
-              { src: '/images/interest-2.jpg', alt: 'At a concert or performance' },
-              { src: '/images/interest-3.jpg', alt: 'Literary pilgrimage' },
-              { src: '/images/interest-4.jpg', alt: 'Cultural exploration' },
-              { src: '/images/interest-5.jpg', alt: 'Music and art' },
-              { src: '/images/interest-6.jpg', alt: 'A moment of reflection' },
-            ].map((img, i) => (
-              <div key={i} className="aspect-[4/3] rounded-sm overflow-hidden border border-kuro-soft/[0.08]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={img.src} alt={img.alt} className="w-full h-full object-cover" />
-              </div>
-            ))}
+          {/* Gallery */}
+          <div className="mt-6">
+            <div className="aspect-[4/3] rounded-sm overflow-hidden border border-kuro-soft/[0.08]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/about gallery-1.jpg" alt="Gallery" className="w-full h-full object-cover" />
+            </div>
+            <a href="https://instagram.com/rskyex" target="_blank" rel="noopener noreferrer" className="block mt-3 font-noto-sans text-sm text-kuro-soft/70 hover:text-shu-deep transition-colors font-medium">
+              @rskyex on Instagram
+            </a>
           </div>
         </div>
 
