@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { EditProvider } from '@/lib/editContext';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -25,13 +24,11 @@ export default function RootLayout({
         />
       </head>
       <body className="font-noto-sans antialiased bg-kuro text-shiro">
-        <EditProvider>
-          <Navbar />
-          <main className="pt-14 min-h-screen">
-            {children}
-          </main>
-          <Footer />
-        </EditProvider>
+        <Navbar />
+        <main className="pt-14 min-h-screen">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
