@@ -49,7 +49,8 @@ export default function PlatformsPage() {
           href="/platforms/cyber"
           title="Cyber Escalation Atlas"
           description="Mapping cyber incidents as strategic behaviour and governance signals. Engages with Kello's concept of 'unpeace,' attribution frameworks, Schelling's escalation logic, and Tallinn Manual 2.0 to contextualise cyber operations within broader governance and strategic analysis."
-          status="In Production"
+          status="Live"
+          liveUrl="https://cyber-escalation-atlas-5yp5.vercel.app"
           tags={['Kello', 'Schelling', 'Tallinn Manual 2.0', 'Attribution', 'Escalation']}
         />
       </div>
