@@ -162,11 +162,7 @@ export default function AboutPage() {
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Awards</h3>
           <div className="space-y-3">
             {[
-              { title: 'Excellence Award for Poetry', detail: '2011' },
-              { title: 'Excellence Award, JYOJI-ROCK U-16 Contest', detail: 'Music performance' },
               { title: '2nd Prize, GEIL Policy Contest — Tokyo Earthquake Response', detail: 'Led a team of four in crafting a policy to boost Tokyo\'s earthquake resilience, proposing "Transferable Development Rights Plus" to incentivise redevelopment, reduce wooden structures, and widen streets' },
-              { title: 'Selected for Monster Exhibition', detail: 'Prestigious group exhibition, Shibuya Hikarie, Tokyo' },
-              { title: 'Featured in Al-Tiba9 Contemporary Art Magazine', detail: 'International contemporary art publication' },
             ].map((award, i) => (
               <div key={i} className="card-washi card-washi-about p-5 relative overflow-hidden">
                 <div className="glow-bar absolute left-0 top-0 bottom-0" />
@@ -193,21 +189,15 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Gallery — places and moments */}
-          <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-3">
-            {[
-              { src: '/images/interest-1.jpg', alt: 'Visiting a place of inspiration' },
-              { src: '/images/interest-2.jpg', alt: 'At a concert or performance' },
-              { src: '/images/interest-3.jpg', alt: 'Literary pilgrimage' },
-              { src: '/images/interest-4.jpg', alt: 'Cultural exploration' },
-              { src: '/images/interest-5.jpg', alt: 'Music and art' },
-              { src: '/images/interest-6.jpg', alt: 'A moment of reflection' },
-            ].map((img, i) => (
-              <div key={i} className="aspect-[4/3] rounded-sm overflow-hidden border border-kuro-soft/[0.08]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={img.src} alt={img.alt} className="w-full h-full object-cover" />
-              </div>
-            ))}
+          {/* Gallery */}
+          <div className="mt-6">
+            <div className="aspect-[4/3] rounded-sm overflow-hidden border border-kuro-soft/[0.08]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/about gallery-1.jpg" alt="Gallery" className="w-full h-full object-cover" />
+            </div>
+            <a href="https://instagram.com/rskyex" target="_blank" rel="noopener noreferrer" className="block mt-3 font-noto-sans text-sm text-kuro-soft/70 hover:text-shu-deep transition-colors font-medium">
+              @rskyex on Instagram
+            </a>
           </div>
         </div>
 
