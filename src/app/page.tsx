@@ -319,6 +319,14 @@ export default function Home() {
               role="Co-Founder & President"
             />
             <ProjectCard
+              href="/projects/peace"
+              title="Peacebuilding Laboratory"
+              description="Research community and discussion platform on peacebuilding and international cooperation. Dialogue-based seminars on Ukraine, Afghanistan, Iraq, and South Sudan."
+              image="/images/mofa-korea.jpg"
+              imageAlt="Peacebuilding seminar"
+              role="President"
+            />
+            <ProjectCard
               href="/projects/art"
               title="Art Practice"
               description="Interdisciplinary art practice spanning visual thinking, international exhibition, and conceptual work."
