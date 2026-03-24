@@ -215,34 +215,6 @@ export default function Home() {
               tags={['Japan', 'Policy', 'Accountability']}
               image="/images/promise-platform.jpg"
             />
-            <PlatformCard
-              href="/platforms/scoreless"
-              title="Scoreless"
-              description="Making classical music's structure and meaning visible without score literacy — through timelines, motif displays, and commentary."
-              status="In Progress"
-              tags={['Classical Music', 'Analysis', 'Motif Tracking']}
-            />
-            <PlatformCard
-              href="/platforms/selftrace"
-              title="SelfTrace"
-              description="Revealing how social media algorithms shape what you post, repeat, and gradually experience as your online self."
-              status="In Progress"
-              tags={['Algorithmic Identity', 'Self-Presentation']}
-            />
-            <PlatformCard
-              href="/platforms/narrative-drift"
-              title="Narrative Drift"
-              description="An interactive simulation showing how AI systems can slowly reshape the way you choose, remember, and understand yourself."
-              status="In Progress"
-              tags={['AI Influence', 'Choice Architecture']}
-            />
-            <PlatformCard
-              href="/platforms/ontological-governance-observatory"
-              title="Ontological Governance Observatory"
-              description="Mapping how AI reshapes the human subject itself — across epistemic, ontological, and political layers."
-              status="In Progress"
-              tags={['AI Governance', 'Ontological Risk']}
-            />
           </div>
           <div className="mt-8 text-right">
             <Link href="/platforms" className="font-noto-sans text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
