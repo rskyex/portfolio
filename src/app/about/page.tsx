@@ -2,6 +2,7 @@ import SectionHeader from '@/components/SectionHeader';
 import SectionDivider from '@/components/SectionDivider';
 import PhotoFrame from '@/components/PhotoFrame';
 
+
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-12 md:py-20">
@@ -189,17 +190,6 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Gallery */}
-          <div className="mt-6">
-            <div className="rounded-sm overflow-hidden border border-kuro-soft/[0.08]">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/about gallery-1.jpg" alt="Gallery" className="w-full h-auto" />
-            </div>
-            <a href="https://www.instagram.com/rskyex/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-sm border border-kuro-soft/[0.08] font-noto-sans text-sm text-kuro-soft/70 hover:text-shu-deep hover:border-shu-deep/30 transition-colors font-medium">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-              @rskyex
-            </a>
-          </div>
         </div>
 
         <SectionDivider />
@@ -218,6 +208,24 @@ export default function AboutPage() {
               </a>
             </div>
           </div>
+        </div>
+
+        <SectionDivider />
+
+        {/* Instagram */}
+        <div>
+          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Instagram</h3>
+          <PhotoFrame
+            src="/images/about gallery-1.jpg"
+            alt="Gallery"
+            width={600}
+            height={400}
+            className="w-full max-w-md h-auto mb-5"
+          />
+          <a href="https://www.instagram.com/rskyex/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm bg-kuro-soft/80 border border-kin/40 font-noto-sans text-sm text-kin hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/60 hover:text-tsubaki-blush transition-all font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            @rskyex
+          </a>
         </div>
       </div>
     </div>
