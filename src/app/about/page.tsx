@@ -215,7 +215,14 @@ export default function AboutPage() {
         {/* Instagram */}
         <div>
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Instagram</h3>
-          <a href="https://www.instagram.com/rskyex/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm bg-shiro/10 border border-shiro/20 font-noto-sans text-sm text-shiro hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/40 hover:text-tsubaki-blush transition-all font-medium">
+          <PhotoFrame
+            src="/images/about gallery-1.jpg"
+            alt="Gallery"
+            width={600}
+            height={400}
+            className="w-full max-w-md h-auto mb-5"
+          />
+          <a href="https://www.instagram.com/rskyex/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm bg-kuro-soft/80 border border-kin/40 font-noto-sans text-sm text-kin hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/60 hover:text-tsubaki-blush transition-all font-medium">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             @rskyex
           </a>
