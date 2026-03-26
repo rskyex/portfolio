@@ -113,7 +113,7 @@ export default function Home() {
 
               {/* Description */}
               <p className="font-noto-sans text-sm text-shiro/70 leading-[1.9] max-w-xl mb-10">
-                Born in 2003, Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of space governance, nuclear governance, cyber governance, strategic risk, and emerging technology governance. Her research is especially concerned with legitimation theory, dual-use governance, authority architecture, responsible behaviour norms, and international security. She is building the Strategic Infrastructure Risk Suite: a set of public-facing policy platforms across nuclear, orbital, and cyber domains.
+                Born in 2003, Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of space governance, nuclear governance, cyber governance, strategic risk, and emerging technology governance. Her research is especially concerned with legitimation theory, dual-use governance, authority architecture, responsible behaviour norms, and international security. She independently designs and builds public-facing research platforms spanning AI governance, strategic infrastructure risk, and classical music analysis.
               </p>
 
               {/* Tags */}
@@ -177,7 +177,7 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-6 pb-16 relative">
         <div className="absolute inset-0 asanoha-bg opacity-30 pointer-events-none" />
         <div className="relative">
-          <SectionHeader kanji="台" english="Ongoing Projects" subtitle="Strategic Infrastructure Risk Suite" />
+          <SectionHeader kanji="台" english="Ongoing Projects" subtitle="Independently Designed Research Platforms" />
           <div className="mt-8 grid md:grid-cols-3 gap-6">
             <PlatformCard
               href="/platforms/govern-the-human"
