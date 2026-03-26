@@ -16,6 +16,14 @@ export default function NarrativeDriftPlatformPage() {
           <span className="px-2 py-0.5 text-xs font-noto-sans bg-kin/10 text-kin-light border border-kin/20 rounded-sm">
             In Progress
           </span>
+          <a
+            href="https://narrative-drift.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-noto-sans text-sm text-kin-light hover:text-kin-pale transition-colors"
+          >
+            Visit platform &rarr;
+          </a>
         </div>
 
         <div className="panel rounded-sm p-8">
