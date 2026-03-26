@@ -63,19 +63,12 @@ export default function PlatformsPage() {
         />
 
         <PlatformCard
-          href="/platforms/narrative-drift"
-          title="Narrative Drift"
-          description="An interactive simulation that lets users experience how AI systems can slowly reshape the way they choose, remember, and understand themselves. The user keeps making their own choices, but the conditions of those choices quietly change over time."
+          href="/platforms/govern-the-human"
+          title="Govern the Human"
+          description="A unified platform consolidating Narrative Drift and Ontological Governance Observatory. Explores how AI systems reshape human choice, identity, and self-understanding, and argues that current governance frameworks miss a deeper problem: AI can reshape the human subject itself. Maps these changes across epistemic, ontological, and political layers."
           status="In Progress"
-          tags={['AI Influence', 'Choice Architecture', 'Identity Simulation', 'Epistemic Drift']}
-        />
-
-        <PlatformCard
-          href="/platforms/ontological-governance-observatory"
-          title="Ontological Governance Observatory"
-          description="A research platform that shows how current AI governance frameworks miss a deeper problem: AI does not only create risks and outputs, but can also reshape the human subject itself. Maps these changes across epistemic, ontological, and political layers to argue for a new form of second-order governance."
-          status="In Progress"
-          tags={['AI Governance', 'Ontological Risk', 'Second-Order Governance', 'Epistemic Restructuring']}
+          tags={['AI Governance', 'Ontological Risk', 'Epistemic Drift', 'Choice Architecture', 'Second-Order Governance']}
+          image="/images/govern the human og.png"
         />
       </div>
 
