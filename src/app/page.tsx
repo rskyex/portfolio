@@ -315,22 +315,6 @@ export default function Home() {
               tags={['AI Governance', 'Ontological Risk', 'Second-Order Governance']}
               image="/images/ogo-og.png"
             />
-            <PlatformCard
-              href="/platforms/scoreless"
-              title="Scoreless"
-              description="Making classical music's structure and meaning accessible without score literacy through timelines, motif displays, and commentary."
-              status="In Progress"
-              tags={['Classical Music', 'Structural Analysis', 'Music Theory']}
-            />
-            <PlatformCard
-              href="/platforms/promise"
-              title="Japan Promise Tracker"
-              description="Tracking Japanese government policy commitments and their fulfilment status across governance domains."
-              status="Live"
-              liveUrl="https://jp-ver-japan-promise-tracker.vercel.app"
-              tags={['Japan', 'Policy', 'Accountability']}
-              image="/images/promise-platform.jpg"
-            />
           </div>
         </div>
       </section>
