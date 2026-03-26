@@ -296,6 +296,7 @@ export default function Home() {
               status="In Progress"
               liveUrl="https://selftrace.vercel.app/"
               tags={['Algorithmic Identity', 'Self-Presentation', 'Digital Reflection']}
+              image="/images/selftrace og.png"
             />
             <PlatformCard
               href="/platforms/ontological-governance-observatory"
