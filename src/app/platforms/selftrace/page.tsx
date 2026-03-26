@@ -15,7 +15,7 @@ export default function SelfTracePlatformPage() {
       <div className="mt-8 space-y-8">
         <div className="flex items-center gap-3">
           <span className="px-2 py-0.5 text-xs font-noto-sans bg-kin/10 text-kin-light border border-kin/20 rounded-sm">
-            In Progress
+            Live
           </span>
           <a
             href="https://selftrace.vercel.app/"

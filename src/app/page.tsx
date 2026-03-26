@@ -293,7 +293,7 @@ export default function Home() {
               href="/platforms/narrative-drift"
               title="Narrative Drift"
               description="An interactive simulation exploring how AI systems reshape choice, memory, and self-understanding over time."
-              status="In Progress"
+              status="Live"
               liveUrl="https://narrative-drift.vercel.app/"
               tags={['AI Influence', 'Choice Architecture', 'Epistemic Drift']}
               image="/images/narrative drift-og.png"
@@ -302,7 +302,7 @@ export default function Home() {
               href="/platforms/selftrace"
               title="SelfTrace"
               description="A reflective platform examining how social media algorithms shape identity, self-presentation, and online selfhood."
-              status="In Progress"
+              status="Live"
               liveUrl="https://selftrace.vercel.app/"
               tags={['Algorithmic Identity', 'Self-Presentation', 'Digital Reflection']}
               image="/images/selftrace og.png"
@@ -314,22 +314,6 @@ export default function Home() {
               status="In Progress"
               tags={['AI Governance', 'Ontological Risk', 'Second-Order Governance']}
               image="/images/ogo-og.png"
-            />
-            <PlatformCard
-              href="/platforms/scoreless"
-              title="Scoreless"
-              description="Making classical music's structure and meaning accessible without score literacy through timelines, motif displays, and commentary."
-              status="In Progress"
-              tags={['Classical Music', 'Structural Analysis', 'Music Theory']}
-            />
-            <PlatformCard
-              href="/platforms/promise"
-              title="Japan Promise Tracker"
-              description="Tracking Japanese government policy commitments and their fulfilment status across governance domains."
-              status="Live"
-              liveUrl="https://jp-ver-japan-promise-tracker.vercel.app"
-              tags={['Japan', 'Policy', 'Accountability']}
-              image="/images/promise-platform.jpg"
             />
           </div>
         </div>
