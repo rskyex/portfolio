@@ -293,7 +293,7 @@ export default function Home() {
               href="/platforms/narrative-drift"
               title="Narrative Drift"
               description="An interactive simulation exploring how AI systems reshape choice, memory, and self-understanding over time."
-              status="In Progress"
+              status="Live"
               liveUrl="https://narrative-drift.vercel.app/"
               tags={['AI Influence', 'Choice Architecture', 'Epistemic Drift']}
               image="/images/narrative drift-og.png"
@@ -302,7 +302,7 @@ export default function Home() {
               href="/platforms/selftrace"
               title="SelfTrace"
               description="A reflective platform examining how social media algorithms shape identity, self-presentation, and online selfhood."
-              status="In Progress"
+              status="Live"
               liveUrl="https://selftrace.vercel.app/"
               tags={['Algorithmic Identity', 'Self-Presentation', 'Digital Reflection']}
               image="/images/selftrace og.png"
