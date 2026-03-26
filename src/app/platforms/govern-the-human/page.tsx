@@ -28,7 +28,7 @@ export default function GovernTheHumanPlatformPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-12 md:py-20">
       <Link href="/platforms" className="font-noto-sans text-xs text-kin/50 hover:text-kin-light transition-colors tracking-wide mb-8 inline-block">
-        &larr; Back to Platforms
+        &larr; Back to Ongoing Projects
       </Link>
 
       <SectionHeader kanji="台" english="Govern the Human" subtitle="AI, Identity, and Second-Order Governance" />

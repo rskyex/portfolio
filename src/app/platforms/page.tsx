@@ -7,7 +7,7 @@ export default function PlatformsPage() {
     <div className="max-w-6xl mx-auto px-6 py-12 md:py-20">
       <SectionHeader
         kanji="台"
-        english="Platforms"
+        english="Ongoing Projects"
         subtitle="Strategic Infrastructure Risk Suite"
       />
 

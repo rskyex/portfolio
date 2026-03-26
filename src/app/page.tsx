@@ -22,7 +22,7 @@ const tags = [
 ];
 
 const stats = [
-  { value: '4', label: 'Platforms' },
+  { value: '4', label: 'Ongoing Projects' },
   { value: '24', label: 'Documents coded' },
   { value: '6', label: 'Years fieldwork' },
   { value: '5+', label: 'Papers in development' },
@@ -177,7 +177,7 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-6 pb-16 relative">
         <div className="absolute inset-0 asanoha-bg opacity-30 pointer-events-none" />
         <div className="relative">
-          <SectionHeader kanji="台" english="Platforms" subtitle="Strategic Infrastructure Risk Suite" />
+          <SectionHeader kanji="台" english="Ongoing Projects" subtitle="Strategic Infrastructure Risk Suite" />
           <div className="mt-8 grid md:grid-cols-2 gap-6">
             <PlatformCard
               href="/platforms/faultline"
@@ -200,7 +200,7 @@ export default function Home() {
           </div>
           <div className="mt-8 text-right">
             <Link href="/platforms" className="font-noto-sans text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
-              View all platforms →
+              View all ongoing projects →
             </Link>
           </div>
         </div>
