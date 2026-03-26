@@ -304,6 +304,7 @@ export default function Home() {
               description="Mapping how AI reshapes the human subject across epistemic, ontological, and political layers."
               status="In Progress"
               tags={['AI Governance', 'Ontological Risk', 'Second-Order Governance']}
+              image="/images/ogo-og.png"
             />
             <PlatformCard
               href="/platforms/scoreless"

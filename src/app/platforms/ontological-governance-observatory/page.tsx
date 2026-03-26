@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SectionHeader from '@/components/SectionHeader';
+import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
 
 export default function OntologicalGovernanceObservatoryPage() {
@@ -17,6 +18,14 @@ export default function OntologicalGovernanceObservatoryPage() {
             In Progress
           </span>
         </div>
+
+        <PhotoFrame
+          src="/images/ogo-og.png"
+          alt="Ontological Governance Observatory"
+          width={800}
+          height={450}
+          className="w-full h-64 md:h-80"
+        />
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
