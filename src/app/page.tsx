@@ -22,7 +22,7 @@ const tags = [
 ];
 
 const stats = [
-  { value: '4', label: 'Ongoing Projects' },
+  { value: '3', label: 'Ongoing Projects' },
   { value: '24', label: 'Documents coded' },
   { value: '6', label: 'Years fieldwork' },
   { value: '5+', label: 'Papers in development' },
@@ -178,7 +178,16 @@ export default function Home() {
         <div className="absolute inset-0 asanoha-bg opacity-30 pointer-events-none" />
         <div className="relative">
           <SectionHeader kanji="台" english="Ongoing Projects" subtitle="Strategic Infrastructure Risk Suite" />
-          <div className="mt-8 grid md:grid-cols-2 gap-6">
+          <div className="mt-8 grid md:grid-cols-3 gap-6">
+            <PlatformCard
+              href="/platforms/govern-the-human"
+              title="Govern the Human"
+              description="Exploring how AI systems reshape human choice, identity, and self-understanding across epistemic, ontological, and political layers."
+              status="Live"
+              liveUrl="https://govern-the-human.vercel.app/"
+              tags={['AI Governance', 'Ontological Risk', 'Second-Order Governance']}
+              image="/images/govern the human og.png"
+            />
             <PlatformCard
               href="/platforms/faultline"
               title="Faultline"
@@ -189,13 +198,12 @@ export default function Home() {
               image="/images/faultline og.png"
             />
             <PlatformCard
-              href="/platforms/promise"
-              title="Japan Promise Tracker"
-              description="Tracking Japanese government policy commitments and their fulfilment status across governance domains."
-              status="Live"
-              liveUrl="https://jp-ver-japan-promise-tracker.vercel.app"
-              tags={['Japan', 'Policy', 'Accountability']}
-              image="/images/promise-platform.jpg"
+              href="/platforms/mythera"
+              title="MYTHERA"
+              description="Making classical music's structure and meaning accessible through timelines, motif displays, and commentary."
+              status="In Progress"
+              tags={['Classical Music', 'Structural Analysis', 'Music Theory']}
+              image="/images/mythera og.png"
             />
           </div>
           <div className="mt-8 text-right">
@@ -313,6 +321,15 @@ export default function Home() {
               description="Making classical music's structure and meaning accessible without score literacy through timelines, motif displays, and commentary."
               status="In Progress"
               tags={['Classical Music', 'Structural Analysis', 'Music Theory']}
+            />
+            <PlatformCard
+              href="/platforms/promise"
+              title="Japan Promise Tracker"
+              description="Tracking Japanese government policy commitments and their fulfilment status across governance domains."
+              status="Live"
+              liveUrl="https://jp-ver-japan-promise-tracker.vercel.app"
+              tags={['Japan', 'Policy', 'Accountability']}
+              image="/images/promise-platform.jpg"
             />
           </div>
         </div>

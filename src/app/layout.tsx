@@ -6,6 +6,29 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Risa Koyanagi — Researcher & Platform Builder',
   description: 'Portfolio of Risa Koyanagi — researcher and platform builder working across international security, space governance, nuclear governance, cyber governance, and emerging technology governance.',
+  metadataBase: new URL('https://risakoyanagi.com'),
+  openGraph: {
+    title: 'Risa Koyanagi — Researcher & Platform Builder',
+    description: 'Portfolio of Risa Koyanagi — researcher and platform builder working across international security, space governance, nuclear governance, cyber governance, and emerging technology governance.',
+    url: 'https://risakoyanagi.com',
+    siteName: 'Risa Koyanagi',
+    images: [
+      {
+        url: '/images/risa%20koyanagi%20og.png',
+        width: 1200,
+        height: 630,
+        alt: 'Risa Koyanagi',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Risa Koyanagi — Researcher & Platform Builder',
+    description: 'Portfolio of Risa Koyanagi — researcher and platform builder working across international security, space governance, nuclear governance, cyber governance, and emerging technology governance.',
+    images: ['/images/risa%20koyanagi%20og.png'],
+  },
 };
 
 export default function RootLayout({
