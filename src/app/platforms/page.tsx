@@ -19,31 +19,13 @@ export default function PlatformsPage() {
 
       <div className="grid md:grid-cols-1 gap-8">
         <PlatformCard
-          href="/platforms/cyber"
-          title="Cyber Escalation Atlas"
-          description="Mapping cyber incidents as strategic behaviour and governance signals. Engages with Kello's concept of 'unpeace,' attribution frameworks, Schelling's escalation logic, and Tallinn Manual 2.0 to contextualise cyber operations within broader governance and strategic analysis."
+          href="/platforms/faultline"
+          title="Faultline"
+          description="A unified strategic infrastructure risk platform consolidating Orbital Risk Tracker, Global Nuclear Infrastructure Atlas, and Cyber Escalation Atlas into a single analytical suite. Translates governance theory into operational tools across orbital, nuclear, and cyber domains."
           status="Live"
-          liveUrl="https://cyber-escalation-atlas-5yp5.vercel.app"
-          tags={['Kello', 'Schelling', 'Tallinn Manual 2.0', 'Attribution', 'Escalation']}
-          image="/images/cyber-platform.png"
-        />
-
-        <PlatformCard
-          href="/platforms/nuclear"
-          title="Global Nuclear Infrastructure Atlas"
-          description="Interactive mapping of global civilian nuclear power infrastructure, major accident sites, estimated nuclear arsenals, and associated radiation and health context. Designed for educational and policy use, drawing on sources including IAEA, SIPRI, and WHO data."
-          status="Live"
-          liveUrl="https://globalnuclearinfrastructureatlas.vercel.app"
-          tags={['IAEA', 'SIPRI', 'WHO', 'Nuclear Power', 'Arsenals', 'Radiation']}
-        />
-
-        <PlatformCard
-          href="/platforms/orbital"
-          title="Orbital Risk Tracker"
-          description="Tracking anti-satellite events, proximity operations, GNSS jamming incidents, and cyber-space entanglement. Draws on Jervis's security dilemma framework and weaponised interdependence theory to support escalation analysis across orbital infrastructure."
-          status="Live"
-          liveUrl="https://orbitalrisktracker.vercel.app"
-          tags={['ASAT', 'Proximity Operations', 'GNSS Jamming', 'Jervis', 'Weaponised Interdependence']}
+          liveUrl="https://faultline-nqmm.vercel.app/"
+          tags={['Orbital', 'Nuclear', 'Cyber', 'Strategic Risk', 'Escalation', 'Governance']}
+          image="/images/faultline og.png"
         />
 
         <PlatformCard

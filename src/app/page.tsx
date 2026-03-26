@@ -22,7 +22,7 @@ const tags = [
 ];
 
 const stats = [
-  { value: '8', label: 'Platforms' },
+  { value: '5', label: 'Platforms' },
   { value: '24', label: 'Documents coded' },
   { value: '6', label: 'Years fieldwork' },
   { value: '5+', label: 'Papers in development' },
@@ -180,31 +180,13 @@ export default function Home() {
           <SectionHeader kanji="台" english="Platforms" subtitle="Strategic Infrastructure Risk Suite" />
           <div className="mt-8 grid md:grid-cols-2 gap-6">
             <PlatformCard
-              href="/platforms/cyber"
-              title="Cyber Escalation Atlas"
-              description="Mapping cyber incidents as strategic behaviour, attribution frameworks, and governance signals."
+              href="/platforms/faultline"
+              title="Faultline"
+              description="A unified strategic infrastructure risk platform across orbital, nuclear, and cyber domains."
               status="Live"
-              liveUrl="https://cyber-escalation-atlas-5yp5.vercel.app"
-              tags={['Cyber', 'Attribution', 'Escalation']}
-              image="/images/cyber-platform.png"
-            />
-            <PlatformCard
-              href="/platforms/nuclear"
-              title="Global Nuclear Infrastructure Atlas"
-              description="Interactive mapping of civilian nuclear power infrastructure, accident sites, and estimated arsenals with policy and health context."
-              status="Live"
-              liveUrl="https://globalnuclearinfrastructureatlas.vercel.app"
-              tags={['IAEA', 'SIPRI', 'Nuclear']}
-              image="/images/nuclear-platform.jpg"
-            />
-            <PlatformCard
-              href="/platforms/orbital"
-              title="Orbital Risk Tracker"
-              description="Tracking ASAT events, proximity operations, GNSS jamming, and cyber-space entanglement with escalation analysis."
-              status="Live"
-              liveUrl="https://orbitalrisktracker.vercel.app"
-              tags={['ASAT', 'Space Security', 'Escalation']}
-              image="/images/orbital-platform.jpg"
+              liveUrl="https://faultline-nqmm.vercel.app/"
+              tags={['Orbital', 'Nuclear', 'Cyber', 'Strategic Risk']}
+              image="/images/faultline og.png"
             />
             <PlatformCard
               href="/platforms/promise"
