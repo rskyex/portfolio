@@ -35,8 +35,8 @@ export default function GovernTheHumanPlatformPage() {
 
       <div className="mt-8 space-y-8">
         <div className="flex items-center gap-3">
-          <span className="px-2 py-0.5 text-xs font-noto-sans bg-kin/10 text-kin-light border border-kin/20 rounded-sm">
-            In Progress
+          <span className="px-2 py-0.5 text-xs font-noto-sans bg-shu/10 text-shu-light border border-shu/20 rounded-sm">
+            Live
           </span>
           <a
             href="https://govern-the-human.vercel.app/"
