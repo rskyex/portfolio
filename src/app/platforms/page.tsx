@@ -7,7 +7,7 @@ export default function PlatformsPage() {
     <div className="max-w-6xl mx-auto px-6 py-12 md:py-20">
       <SectionHeader
         kanji="台"
-        english="Platforms"
+        english="Ongoing Projects"
         subtitle="Strategic Infrastructure Risk Suite"
       />
 
@@ -19,31 +19,13 @@ export default function PlatformsPage() {
 
       <div className="grid md:grid-cols-1 gap-8">
         <PlatformCard
-          href="/platforms/cyber"
-          title="Cyber Escalation Atlas"
-          description="Mapping cyber incidents as strategic behaviour and governance signals. Engages with Kello's concept of 'unpeace,' attribution frameworks, Schelling's escalation logic, and Tallinn Manual 2.0 to contextualise cyber operations within broader governance and strategic analysis."
+          href="/platforms/faultline"
+          title="Faultline"
+          description="A unified strategic infrastructure risk platform consolidating Orbital Risk Tracker, Global Nuclear Infrastructure Atlas, and Cyber Escalation Atlas into a single analytical suite. Translates governance theory into operational tools across orbital, nuclear, and cyber domains."
           status="Live"
-          liveUrl="https://cyber-escalation-atlas-5yp5.vercel.app"
-          tags={['Kello', 'Schelling', 'Tallinn Manual 2.0', 'Attribution', 'Escalation']}
-          image="/images/cyber-platform.png"
-        />
-
-        <PlatformCard
-          href="/platforms/nuclear"
-          title="Global Nuclear Infrastructure Atlas"
-          description="Interactive mapping of global civilian nuclear power infrastructure, major accident sites, estimated nuclear arsenals, and associated radiation and health context. Designed for educational and policy use, drawing on sources including IAEA, SIPRI, and WHO data."
-          status="Live"
-          liveUrl="https://globalnuclearinfrastructureatlas.vercel.app"
-          tags={['IAEA', 'SIPRI', 'WHO', 'Nuclear Power', 'Arsenals', 'Radiation']}
-        />
-
-        <PlatformCard
-          href="/platforms/orbital"
-          title="Orbital Risk Tracker"
-          description="Tracking anti-satellite events, proximity operations, GNSS jamming incidents, and cyber-space entanglement. Draws on Jervis's security dilemma framework and weaponised interdependence theory to support escalation analysis across orbital infrastructure."
-          status="Live"
-          liveUrl="https://orbitalrisktracker.vercel.app"
-          tags={['ASAT', 'Proximity Operations', 'GNSS Jamming', 'Jervis', 'Weaponised Interdependence']}
+          liveUrl="https://faultline-nqmm.vercel.app/"
+          tags={['Orbital', 'Nuclear', 'Cyber', 'Strategic Risk', 'Escalation', 'Governance']}
+          image="/images/faultline og.png"
         />
 
         <PlatformCard
@@ -65,35 +47,21 @@ export default function PlatformsPage() {
 
       <div className="grid md:grid-cols-1 gap-8">
         <PlatformCard
-          href="/platforms/scoreless"
-          title="Scoreless"
-          description="A music analysis platform that makes classical music's structure, logic, and meaning accessible without requiring score literacy. Instead of describing works as simply 'beautiful' or 'sad,' it visualises thematic repetition, tension and release, formal development, and the intellectual and aesthetic implications that emerge — through timelines, motif displays, and commentary cards. Focused on public domain classical works, it treats music not as a matter of taste but as structured thought unfolding in time."
+          href="/platforms/mythera"
+          title="MYTHERA"
+          description="A platform exploring music as structured thought unfolding in time. Consolidates Scoreless into a broader framework that makes classical music's structure, logic, and meaning accessible without requiring score literacy — through timelines, motif displays, and commentary cards."
           status="In Progress"
-          tags={['Classical Music', 'Structural Analysis', 'Motif Tracking', 'Music Theory', 'Public Domain']}
+          tags={['Classical Music', 'Structural Analysis', 'Motif Tracking', 'Music Theory']}
+          image="/images/mythera og.png"
         />
 
         <PlatformCard
-          href="/platforms/selftrace"
-          title="SelfTrace"
-          description="A reflective platform that helps users see how social media algorithms may shape what they post, repeat, remember, and gradually experience as their online self. Focuses on identity, self-presentation, and the long-term effects of platform incentives rather than simple engagement metrics."
+          href="/platforms/govern-the-human"
+          title="Govern the Human"
+          description="A unified platform consolidating Narrative Drift, SelfTrace, and Ontological Governance Observatory. Explores how AI systems reshape human choice, identity, and self-understanding, and argues that current governance frameworks miss a deeper problem: AI can reshape the human subject itself. Maps these changes across epistemic, ontological, and political layers."
           status="In Progress"
-          tags={['Algorithmic Identity', 'Self-Presentation', 'Platform Incentives', 'Digital Reflection']}
-        />
-
-        <PlatformCard
-          href="/platforms/narrative-drift"
-          title="Narrative Drift"
-          description="An interactive simulation that lets users experience how AI systems can slowly reshape the way they choose, remember, and understand themselves. The user keeps making their own choices, but the conditions of those choices quietly change over time."
-          status="In Progress"
-          tags={['AI Influence', 'Choice Architecture', 'Identity Simulation', 'Epistemic Drift']}
-        />
-
-        <PlatformCard
-          href="/platforms/ontological-governance-observatory"
-          title="Ontological Governance Observatory"
-          description="A research platform that shows how current AI governance frameworks miss a deeper problem: AI does not only create risks and outputs, but can also reshape the human subject itself. Maps these changes across epistemic, ontological, and political layers to argue for a new form of second-order governance."
-          status="In Progress"
-          tags={['AI Governance', 'Ontological Risk', 'Second-Order Governance', 'Epistemic Restructuring']}
+          tags={['AI Governance', 'Ontological Risk', 'Epistemic Drift', 'Choice Architecture', 'Second-Order Governance']}
+          image="/images/govern the human og.png"
         />
       </div>
 

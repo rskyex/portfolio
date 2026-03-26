@@ -7,7 +7,7 @@ export default function NuclearPlatformPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-12 md:py-20">
       <Link href="/platforms" className="font-noto-sans text-xs text-kin/50 hover:text-kin-light transition-colors tracking-wide mb-8 inline-block">
-        ← Back to Platforms
+        &larr; Back to Platforms
       </Link>
 
       <SectionHeader kanji="台" english="Global Nuclear Infrastructure Atlas" />
@@ -23,7 +23,7 @@ export default function NuclearPlatformPage() {
             rel="noopener noreferrer"
             className="font-noto-sans text-sm text-kin-light hover:text-kin-pale transition-colors"
           >
-            Visit platform →
+            Visit platform &rarr;
           </a>
         </div>
 

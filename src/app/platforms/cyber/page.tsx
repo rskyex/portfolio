@@ -6,23 +6,23 @@ export default function CyberPlatformPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-12 md:py-20">
       <Link href="/platforms" className="font-noto-sans text-xs text-kin/50 hover:text-kin-light transition-colors tracking-wide mb-8 inline-block">
-        ← Back to Platforms
+        &larr; Back to Platforms
       </Link>
 
       <SectionHeader kanji="台" english="Cyber Escalation Atlas" />
 
       <div className="mt-8 space-y-8">
         <div className="flex items-center gap-3">
-          <span className="px-2 py-0.5 text-xs font-noto-sans bg-kin/10 text-kin-light border border-kin/20 rounded-sm">
+          <span className="px-2 py-0.5 text-xs font-noto-sans bg-shu/8 text-shu-light/70 border border-shu/15 shadow-[0_0_8px_rgba(224,60,49,0.06)] rounded-sm">
             Live
           </span>
           <a
             href="https://cyber-escalation-atlas-5yp5.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-noto-sans text-xs text-kin/70 hover:text-kin-glow transition-colors underline underline-offset-2"
+            className="font-noto-sans text-sm text-kin-light hover:text-kin-pale transition-colors"
           >
-            Visit Platform →
+            Visit platform &rarr;
           </a>
         </div>
 
@@ -40,7 +40,7 @@ export default function CyberPlatformPage() {
             The Cyber Escalation Atlas maps cyber incidents as expressions of strategic behaviour and governance signals, rather than treating them purely as technical events. It provides structured analytical context for understanding cyber operations within the broader landscape of international security and escalation dynamics.
           </p>
           <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
-            The platform engages with Lucas Kello&apos;s concept of &ldquo;unpeace&rdquo; — a condition between war and peace characterised by persistent cyber contestation — as well as attribution frameworks, Thomas Schelling&apos;s escalation logic, and the analytical categories established by the Tallinn Manual 2.0.
+            The platform engages with Lucas Kello&apos;s concept of &ldquo;unpeace&rdquo; &mdash; a condition between war and peace characterised by persistent cyber contestation &mdash; as well as attribution frameworks, Thomas Schelling&apos;s escalation logic, and the analytical categories established by the Tallinn Manual 2.0.
           </p>
           <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
             It is designed to support analysis of how cyber incidents function as governance signals and to contextualise them within strategic frameworks of deterrence, escalation, and institutional response.
