@@ -248,12 +248,80 @@ export default function Home() {
       <SectionDivider />
 
       {/* ═══════════════════════════════════════════════════
-          PROJECTS
+          PLATFORMS
+          ═══════════════════════════════════════════════════ */}
+      <section className="max-w-6xl mx-auto px-6 pb-16 relative">
+        <div className="relative">
+          <SectionHeader kanji="台" english="Platforms" subtitle="Individual research and policy tools" />
+          <div className="mt-8 grid md:grid-cols-2 gap-6">
+            <PlatformCard
+              href="/platforms/orbital"
+              title="Orbital Risk Tracker"
+              description="Tracking ASAT events, proximity operations, GNSS jamming, and cyber-space entanglement with escalation analysis."
+              status="Live"
+              liveUrl="https://orbitalrisktracker.vercel.app"
+              tags={['ASAT', 'Space Security', 'Escalation']}
+              image="/images/orbital-platform.jpg"
+            />
+            <PlatformCard
+              href="/platforms/nuclear"
+              title="Global Nuclear Infrastructure Atlas"
+              description="Interactive mapping of civilian nuclear power infrastructure, accident sites, and estimated arsenals with policy and health context."
+              status="Live"
+              liveUrl="https://globalnuclearinfrastructureatlas.vercel.app"
+              tags={['IAEA', 'SIPRI', 'Nuclear']}
+              image="/images/nuclear-platform.jpg"
+            />
+            <PlatformCard
+              href="/platforms/cyber"
+              title="Cyber Escalation Atlas"
+              description="Mapping cyber incidents as strategic behaviour, attribution frameworks, and governance signals."
+              status="Live"
+              liveUrl="https://cyber-escalation-atlas-5yp5.vercel.app"
+              tags={['Cyber', 'Attribution', 'Escalation']}
+              image="/images/cyber-platform.png"
+            />
+            <PlatformCard
+              href="/platforms/narrative-drift"
+              title="Narrative Drift"
+              description="An interactive simulation exploring how AI systems reshape choice, memory, and self-understanding over time."
+              status="In Progress"
+              tags={['AI Influence', 'Choice Architecture', 'Epistemic Drift']}
+            />
+            <PlatformCard
+              href="/platforms/selftrace"
+              title="SelfTrace"
+              description="A reflective platform examining how social media algorithms shape identity, self-presentation, and online selfhood."
+              status="In Progress"
+              tags={['Algorithmic Identity', 'Self-Presentation', 'Digital Reflection']}
+            />
+            <PlatformCard
+              href="/platforms/ontological-governance-observatory"
+              title="Ontological Governance Observatory"
+              description="Mapping how AI reshapes the human subject across epistemic, ontological, and political layers."
+              status="In Progress"
+              tags={['AI Governance', 'Ontological Risk', 'Second-Order Governance']}
+            />
+            <PlatformCard
+              href="/platforms/scoreless"
+              title="Scoreless"
+              description="Making classical music's structure and meaning accessible without score literacy through timelines, motif displays, and commentary."
+              status="In Progress"
+              tags={['Classical Music', 'Structural Analysis', 'Music Theory']}
+            />
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider />
+
+      {/* ═══════════════════════════════════════════════════
+          ARCHIVED PROJECTS
           ═══════════════════════════════════════════════════ */}
       <section className="max-w-6xl mx-auto px-6 pb-16 relative">
         <div className="absolute inset-0 seigaiha-bg opacity-20 pointer-events-none" />
         <div className="relative">
-          <SectionHeader kanji="業" english="Projects" subtitle="Fieldwork, leadership, and interdisciplinary engagement" />
+          <SectionHeader kanji="業" english="Archived Projects" subtitle="Fieldwork, leadership, and interdisciplinary engagement" />
           <div className="mt-8 grid md:grid-cols-2 gap-6">
             <ProjectCard
               href="/projects/fukushima"
@@ -282,7 +350,7 @@ export default function Home() {
           </div>
           <div className="mt-8 text-right">
             <Link href="/projects" className="font-noto-sans text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
-              View all projects →
+              View all archived projects →
             </Link>
           </div>
         </div>

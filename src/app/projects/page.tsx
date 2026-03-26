@@ -6,7 +6,7 @@ export default function ProjectsPage() {
     <div className="max-w-6xl mx-auto px-6 py-12 md:py-20">
       <SectionHeader
         kanji="業"
-        english="Projects"
+        english="Archived Projects"
         subtitle="Fieldwork, leadership, and interdisciplinary engagement"
       />
 
