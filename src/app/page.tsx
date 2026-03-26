@@ -288,6 +288,7 @@ export default function Home() {
               status="In Progress"
               liveUrl="https://narrative-drift.vercel.app/"
               tags={['AI Influence', 'Choice Architecture', 'Epistemic Drift']}
+              image="/images/narrative drift-og.png"
             />
             <PlatformCard
               href="/platforms/selftrace"

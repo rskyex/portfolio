@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SectionHeader from '@/components/SectionHeader';
+import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
 
 export default function NarrativeDriftPlatformPage() {
@@ -25,6 +26,14 @@ export default function NarrativeDriftPlatformPage() {
             Visit platform &rarr;
           </a>
         </div>
+
+        <PhotoFrame
+          src="/images/narrative drift-og.png"
+          alt="Narrative Drift"
+          width={800}
+          height={450}
+          className="w-full h-64 md:h-80"
+        />
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
