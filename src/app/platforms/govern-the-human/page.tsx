@@ -11,6 +11,12 @@ const subProjects = [
     tags: ['AI Influence', 'Choice Architecture', 'Identity Simulation', 'Epistemic Drift'],
   },
   {
+    title: 'SelfTrace',
+    description:
+      'A reflective platform that helps users see how social media algorithms may shape what they post, repeat, remember, and gradually experience as their online self. Focuses on identity, self-presentation, and the long-term effects of platform incentives rather than simple engagement metrics.',
+    tags: ['Algorithmic Identity', 'Self-Presentation', 'Platform Incentives', 'Digital Reflection'],
+  },
+  {
     title: 'Ontological Governance Observatory',
     description:
       'A research platform that shows how current AI governance frameworks miss a deeper problem: AI does not only create risks and outputs, but can also reshape the human subject itself. Maps these changes across epistemic, ontological, and political layers to argue for a new form of second-order governance.',
@@ -53,7 +59,7 @@ export default function GovernTheHumanPlatformPage() {
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
           <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
-            Govern the Human is a unified platform that consolidates Narrative Drift and Ontological Governance Observatory into a single analytical environment. It explores how AI systems reshape human choice, identity, and self-understanding &mdash; and argues that current governance frameworks miss a deeper problem: AI can reshape the human subject itself.
+            Govern the Human is a unified platform that consolidates Narrative Drift, SelfTrace, and Ontological Governance Observatory into a single analytical environment. It explores how AI systems reshape human choice, identity, and self-understanding &mdash; and argues that current governance frameworks miss a deeper problem: AI can reshape the human subject itself.
           </p>
           <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
             The platform maps these changes across epistemic, ontological, and political layers, combining interactive simulation with research-driven analysis to argue for a new form of second-order governance.
@@ -61,12 +67,12 @@ export default function GovernTheHumanPlatformPage() {
         </div>
 
         <div className="flex flex-wrap gap-2">
-          {['AI Governance', 'Ontological Risk', 'Epistemic Drift', 'Choice Architecture', 'Identity Simulation', 'Second-Order Governance'].map(tag => (
+          {['AI Governance', 'Ontological Risk', 'Epistemic Drift', 'Choice Architecture', 'Identity Simulation', 'Algorithmic Identity', 'Second-Order Governance'].map(tag => (
             <Tag key={tag} label={tag} />
           ))}
         </div>
 
-        {/* Sub-projects: Narrative Drift, Ontological Governance Observatory */}
+        {/* Sub-projects: Narrative Drift, SelfTrace, Ontological Governance Observatory */}
         {subProjects.map((project) => (
           <div key={project.title} className="panel rounded-sm p-8 space-y-4">
             <h3 className="font-noto-sans text-base font-medium text-shiro/90">{project.title}</h3>

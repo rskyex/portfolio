@@ -22,7 +22,7 @@ const tags = [
 ];
 
 const stats = [
-  { value: '5', label: 'Platforms' },
+  { value: '4', label: 'Platforms' },
   { value: '24', label: 'Documents coded' },
   { value: '6', label: 'Years fieldwork' },
   { value: '5+', label: 'Papers in development' },

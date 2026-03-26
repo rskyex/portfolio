@@ -47,25 +47,18 @@ export default function PlatformsPage() {
 
       <div className="grid md:grid-cols-1 gap-8">
         <PlatformCard
-          href="/platforms/scoreless"
-          title="Scoreless"
-          description="A music analysis platform that makes classical music's structure, logic, and meaning accessible without requiring score literacy. Instead of describing works as simply 'beautiful' or 'sad,' it visualises thematic repetition, tension and release, formal development, and the intellectual and aesthetic implications that emerge — through timelines, motif displays, and commentary cards. Focused on public domain classical works, it treats music not as a matter of taste but as structured thought unfolding in time."
+          href="/platforms/mythera"
+          title="MYTHERA"
+          description="A platform exploring music as structured thought unfolding in time. Consolidates Scoreless into a broader framework that makes classical music's structure, logic, and meaning accessible without requiring score literacy — through timelines, motif displays, and commentary cards."
           status="In Progress"
-          tags={['Classical Music', 'Structural Analysis', 'Motif Tracking', 'Music Theory', 'Public Domain']}
-        />
-
-        <PlatformCard
-          href="/platforms/selftrace"
-          title="SelfTrace"
-          description="A reflective platform that helps users see how social media algorithms may shape what they post, repeat, remember, and gradually experience as their online self. Focuses on identity, self-presentation, and the long-term effects of platform incentives rather than simple engagement metrics."
-          status="In Progress"
-          tags={['Algorithmic Identity', 'Self-Presentation', 'Platform Incentives', 'Digital Reflection']}
+          tags={['Classical Music', 'Structural Analysis', 'Motif Tracking', 'Music Theory']}
+          image="/images/mythera og.png"
         />
 
         <PlatformCard
           href="/platforms/govern-the-human"
           title="Govern the Human"
-          description="A unified platform consolidating Narrative Drift and Ontological Governance Observatory. Explores how AI systems reshape human choice, identity, and self-understanding, and argues that current governance frameworks miss a deeper problem: AI can reshape the human subject itself. Maps these changes across epistemic, ontological, and political layers."
+          description="A unified platform consolidating Narrative Drift, SelfTrace, and Ontological Governance Observatory. Explores how AI systems reshape human choice, identity, and self-understanding, and argues that current governance frameworks miss a deeper problem: AI can reshape the human subject itself. Maps these changes across epistemic, ontological, and political layers."
           status="In Progress"
           tags={['AI Governance', 'Ontological Risk', 'Epistemic Drift', 'Choice Architecture', 'Second-Order Governance']}
           image="/images/govern the human og.png"
