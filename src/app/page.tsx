@@ -4,6 +4,7 @@ import Tag from '@/components/Tag';
 
 import SectionHeader from '@/components/SectionHeader';
 import SectionDivider from '@/components/SectionDivider';
+import FlagshipCard from '@/components/FlagshipCard';
 import PlatformCard from '@/components/PlatformCard';
 import ResearchListItem from '@/components/ResearchListItem';
 import ProjectCard from '@/components/ProjectCard';
@@ -153,93 +154,44 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-6 pb-16 relative">
         <div className="absolute inset-0 asanoha-bg opacity-30 pointer-events-none" />
         <div className="relative">
-          <SectionHeader kanji="台" english="Platforms & Research Tools" subtitle="Independently designed research platforms spanning two suites: Govern the Human (AI governance) and Faultline / Strategic Infrastructure Risk Suite" />
+          <SectionHeader kanji="台" english="Platforms & Research Tools" subtitle="Independently designed research platforms spanning two flagship systems" />
 
-          {/* Govern the Human suite */}
-          <div className="mt-10 mb-4">
-            <h3 className="font-kaisei text-lg text-kin/80 tracking-wide">Govern the Human</h3>
-            <p className="font-noto-sans text-xs text-shiro/50 tracking-wider mt-1">AI governance and ontological risk</p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            <PlatformCard
+          {/* Govern the Human — Flagship */}
+          <div className="mt-10">
+            <FlagshipCard
               href="/platforms/govern-the-human"
               title="Govern the Human"
-              description="Exploring how AI systems reshape human choice, identity, and self-understanding across epistemic, ontological, and political layers."
-              status="Live"
+              description="A flagship research platform exploring how governance turns back toward the human subject."
+              includes="Includes three linked projects on narrative, selfhood, and interpretive systems."
               liveUrl="https://govern-the-human.vercel.app/"
-              tags={['AI Governance', 'Ontological Risk', 'Second-Order Governance']}
               image="/images/govern the human og.png"
-            />
-            <PlatformCard
-              href="/platforms/narrative-drift"
-              title="Narrative Drift"
-              description="An interactive simulation exploring how AI systems reshape choice, memory, and self-understanding over time."
-              status="Live"
-              liveUrl="https://narrative-drift.vercel.app/"
-              tags={['AI Influence', 'Choice Architecture', 'Epistemic Drift']}
-              image="/images/narrative drift-og.png"
-            />
-            <PlatformCard
-              href="/platforms/selftrace"
-              title="SelfTrace"
-              description="A reflective platform examining how social media algorithms shape identity, self-presentation, and online selfhood."
-              status="Live"
-              liveUrl="https://selftrace.vercel.app/"
-              tags={['Algorithmic Identity', 'Self-Presentation', 'Digital Reflection']}
-              image="/images/selftrace og.png"
-            />
-            <PlatformCard
-              href="/platforms/ontological-governance-observatory"
-              title="Ontological Governance Observatory"
-              description="Mapping how AI reshapes the human subject across epistemic, ontological, and political layers."
-              status="In Progress"
-              tags={['AI Governance', 'Ontological Risk', 'Second-Order Governance']}
-              image="/images/ogo-og.png"
+              subProjects={[
+                { name: 'Narrative Drift', href: '/platforms/narrative-drift' },
+                { name: 'SelfTrace', href: '/platforms/selftrace' },
+                { name: 'Ontological Governance Observatory', href: '/platforms/ontological-governance-observatory' },
+              ]}
             />
           </div>
 
-          {/* Faultline / Strategic Infrastructure Risk Suite */}
-          <div className="mt-12 mb-4">
-            <h3 className="font-kaisei text-lg text-kin/80 tracking-wide">Faultline — Strategic Infrastructure Risk Suite</h3>
-            <p className="font-noto-sans text-xs text-shiro/50 tracking-wider mt-1">Orbital, nuclear, and cyber governance tools</p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            <PlatformCard
+          {/* Faultline — Flagship */}
+          <div className="mt-8">
+            <FlagshipCard
               href="/platforms/faultline"
               title="Faultline"
-              description="A unified strategic infrastructure risk platform across orbital, nuclear, and cyber domains."
-              status="Live"
+              description="A flagship strategic risk suite mapping escalation, infrastructure, and geopolitical fragility across interconnected systems."
+              includes="Includes three linked projects."
               liveUrl="https://faultline-nqmm.vercel.app/"
-              tags={['Orbital', 'Nuclear', 'Cyber', 'Strategic Risk']}
               image="/images/faultline og.png"
+              subProjects={[
+                { name: 'Orbital Risk Tracker', href: '/platforms/orbital' },
+                { name: 'Global Nuclear Infrastructure Atlas', href: '/platforms/nuclear' },
+                { name: 'Cyber Escalation Atlas', href: '/platforms/cyber' },
+              ]}
             />
-            <PlatformCard
-              href="/platforms/orbital"
-              title="Orbital Risk Tracker"
-              description="Tracking ASAT events, proximity operations, GNSS jamming, and cyber-space entanglement with escalation analysis."
-              status="Live"
-              liveUrl="https://orbitalrisktracker.vercel.app"
-              tags={['ASAT', 'Space Security', 'Escalation']}
-              image="/images/orbital-platform.jpg"
-            />
-            <PlatformCard
-              href="/platforms/nuclear"
-              title="Global Nuclear Infrastructure Atlas"
-              description="Interactive mapping of civilian nuclear power infrastructure, accident sites, and estimated arsenals with policy and health context."
-              status="Live"
-              liveUrl="https://globalnuclearinfrastructureatlas.vercel.app"
-              tags={['IAEA', 'SIPRI', 'Nuclear']}
-              image="/images/nuclear-platform.jpg"
-            />
-            <PlatformCard
-              href="/platforms/cyber"
-              title="Cyber Escalation Atlas"
-              description="Mapping cyber incidents as strategic behaviour, attribution frameworks, and governance signals."
-              status="Live"
-              liveUrl="https://cyber-escalation-atlas-5yp5.vercel.app"
-              tags={['Cyber', 'Attribution', 'Escalation']}
-              image="/images/cyber-platform.png"
-            />
+          </div>
+
+          {/* Independent projects */}
+          <div className="mt-8 grid md:grid-cols-2 gap-6">
             <PlatformCard
               href="/platforms/promise"
               title="Japan Promise Tracker"

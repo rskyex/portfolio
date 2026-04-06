@@ -1,4 +1,5 @@
 import SectionHeader from '@/components/SectionHeader';
+import FlagshipCard from '@/components/FlagshipCard';
 import PlatformCard from '@/components/PlatformCard';
 import SectionDivider from '@/components/SectionDivider';
 
@@ -11,30 +12,37 @@ export default function PlatformsPage() {
         subtitle="Independently Designed Research Platforms"
       />
 
-      <div className="mt-6 mb-12">
+      <div className="mt-6 mb-16">
         <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed max-w-2xl">
           A coherent suite of public-facing research and policy tools that translate governance theory into operational platforms across strategic infrastructure domains. Each platform connects conceptual frameworks on legitimacy, authority, and escalation with applied policy questions.
         </p>
       </div>
 
-      {/* Govern the Human suite */}
-      <div className="mb-4">
-        <h2 className="font-kaisei text-xl text-kin/80 tracking-wide">Govern the Human</h2>
-        <p className="font-noto-sans text-sm text-shiro/50 mt-1">AI governance and ontological risk</p>
+      {/* ═══════════════════════════════════════════════════
+          FLAGSHIP PROJECT SYSTEMS
+          ═══════════════════════════════════════════════════ */}
+      <div className="mb-10">
+        <h2 className="font-kaisei text-xl text-kin/80 tracking-wide">Flagship Project Systems</h2>
+        <p className="font-noto-sans text-xs text-shiro/45 tracking-wider mt-1">Parent platforms, each containing linked sub-projects</p>
       </div>
 
-      <div className="grid md:grid-cols-1 gap-8">
-        <PlatformCard
-          href="/platforms/govern-the-human"
-          title="Govern the Human"
-          description="A unified platform consolidating Narrative Drift, SelfTrace, and Ontological Governance Observatory. Explores how AI systems reshape human choice, identity, and self-understanding, and argues that current governance frameworks miss a deeper problem: AI can reshape the human subject itself. Maps these changes across epistemic, ontological, and political layers."
-          status="Live"
-          liveUrl="https://govern-the-human.vercel.app/"
-          tags={['AI Governance', 'Ontological Risk', 'Epistemic Drift', 'Choice Architecture', 'Second-Order Governance']}
-          image="/images/govern the human og.png"
-          coreQuestion="Core question: How do AI systems reshape what it means to know, to be, and to govern oneself?"
-        />
+      {/* ── Govern the Human ── */}
+      <FlagshipCard
+        href="/platforms/govern-the-human"
+        title="Govern the Human"
+        description="A flagship research platform exploring how governance turns back toward the human subject."
+        includes="Includes three linked projects on narrative, selfhood, and interpretive systems."
+        liveUrl="https://govern-the-human.vercel.app/"
+        image="/images/govern the human og.png"
+        subProjects={[
+          { name: 'Narrative Drift', href: '/platforms/narrative-drift' },
+          { name: 'SelfTrace', href: '/platforms/selftrace' },
+          { name: 'Ontological Governance Observatory', href: '/platforms/ontological-governance-observatory' },
+        ]}
+      />
 
+      <div className="ml-4 md:ml-8 mt-6 mb-14 border-l-2 border-kin/10 pl-6 md:pl-8 space-y-6">
+        <p className="font-noto-sans text-[10px] text-shiro/35 tracking-[0.2em] uppercase font-semibold -ml-1">Sub-projects</p>
         <PlatformCard
           href="/platforms/narrative-drift"
           title="Narrative Drift"
@@ -70,23 +78,25 @@ export default function PlatformsPage() {
 
       <SectionDivider />
 
-      {/* Faultline — Strategic Infrastructure Risk Suite */}
-      <div className="mb-4">
-        <h2 className="font-kaisei text-xl text-kin/80 tracking-wide">Faultline — Strategic Infrastructure Risk Suite</h2>
-        <p className="font-noto-sans text-sm text-shiro/50 mt-1">Orbital, nuclear, and cyber governance tools</p>
-      </div>
+      {/* ── Faultline ── */}
+      <div className="mt-10" />
 
-      <div className="grid md:grid-cols-1 gap-8">
-        <PlatformCard
-          href="/platforms/faultline"
-          title="Faultline"
-          description="A unified strategic infrastructure risk platform consolidating Orbital Risk Tracker, Global Nuclear Infrastructure Atlas, and Cyber Escalation Atlas into a single analytical suite. Translates governance theory into operational tools across orbital, nuclear, and cyber domains."
-          status="Live"
-          liveUrl="https://faultline-nqmm.vercel.app/"
-          tags={['Orbital', 'Nuclear', 'Cyber', 'Strategic Risk', 'Escalation', 'Governance']}
-          image="/images/faultline og.png"
-        />
+      <FlagshipCard
+        href="/platforms/faultline"
+        title="Faultline"
+        description="A flagship strategic risk suite mapping escalation, infrastructure, and geopolitical fragility across interconnected systems."
+        includes="Includes three linked projects."
+        liveUrl="https://faultline-nqmm.vercel.app/"
+        image="/images/faultline og.png"
+        subProjects={[
+          { name: 'Orbital Risk Tracker', href: '/platforms/orbital' },
+          { name: 'Global Nuclear Infrastructure Atlas', href: '/platforms/nuclear' },
+          { name: 'Cyber Escalation Atlas', href: '/platforms/cyber' },
+        ]}
+      />
 
+      <div className="ml-4 md:ml-8 mt-6 mb-14 border-l-2 border-kin/10 pl-6 md:pl-8 space-y-6">
+        <p className="font-noto-sans text-[10px] text-shiro/35 tracking-[0.2em] uppercase font-semibold -ml-1">Sub-projects</p>
         <PlatformCard
           href="/platforms/orbital"
           title="Orbital Risk Tracker"
@@ -119,7 +129,19 @@ export default function PlatformsPage() {
           image="/images/cyber-platform.png"
           coreQuestion="Core question: How do cyber operations function as strategic behaviour, and what governance frameworks can account for them?"
         />
+      </div>
 
+      <SectionDivider />
+
+      {/* ═══════════════════════════════════════════════════
+          OTHER PROJECTS
+          ═══════════════════════════════════════════════════ */}
+      <div className="mt-10 mb-6">
+        <h2 className="font-kaisei text-xl text-kin/80 tracking-wide">Selected Independent Projects</h2>
+        <p className="font-noto-sans text-xs text-shiro/45 tracking-wider mt-1">Standalone research and policy tools</p>
+      </div>
+
+      <div className="grid md:grid-cols-1 gap-8 mb-14">
         <PlatformCard
           href="/platforms/promise"
           title="Japan Promise Tracker"
