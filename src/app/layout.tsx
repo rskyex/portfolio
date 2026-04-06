@@ -4,12 +4,12 @@ import Footer from '@/components/Footer';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Risa Koyanagi — Researcher & Platform Builder',
-  description: 'Portfolio of Risa Koyanagi — researcher and platform builder working across international security, space governance, nuclear governance, cyber governance, and emerging technology governance.',
+  title: 'Risa Koyanagi — Cambridge Future Scholar & Researcher',
+  description: 'Portfolio of Risa Koyanagi — Cambridge Future Scholar and researcher working across international security, space governance, nuclear governance, cyber governance, and emerging technology governance.',
   metadataBase: new URL('https://risakoyanagi.com'),
   openGraph: {
-    title: 'Risa Koyanagi — Researcher & Platform Builder',
-    description: 'Portfolio of Risa Koyanagi — researcher and platform builder working across international security, space governance, nuclear governance, cyber governance, and emerging technology governance.',
+    title: 'Risa Koyanagi — Cambridge Future Scholar & Researcher',
+    description: 'Portfolio of Risa Koyanagi — Cambridge Future Scholar and researcher working across international security, space governance, nuclear governance, cyber governance, and emerging technology governance.',
     url: 'https://risakoyanagi.com',
     siteName: 'Risa Koyanagi',
     images: [
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Risa Koyanagi — Researcher & Platform Builder',
-    description: 'Portfolio of Risa Koyanagi — researcher and platform builder working across international security, space governance, nuclear governance, cyber governance, and emerging technology governance.',
+    title: 'Risa Koyanagi — Cambridge Future Scholar & Researcher',
+    description: 'Portfolio of Risa Koyanagi — Cambridge Future Scholar and researcher working across international security, space governance, nuclear governance, cyber governance, and emerging technology governance.',
     images: ['/images/risa%20koyanagi%20og.png'],
   },
 };

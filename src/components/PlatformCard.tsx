@@ -9,9 +9,10 @@ interface PlatformCardProps {
   liveUrl?: string;
   tags?: string[];
   image?: string;
+  coreQuestion?: string;
 }
 
-export default function PlatformCard({ href, title, description, status, liveUrl, tags, image }: PlatformCardProps) {
+export default function PlatformCard({ href, title, description, status, liveUrl, tags, image, coreQuestion }: PlatformCardProps) {
   return (
     <Link href={href} className="block group">
       <div className="card-washi card-washi-platform card-hover relative overflow-hidden">
@@ -43,6 +44,10 @@ export default function PlatformCard({ href, title, description, status, liveUrl
           </div>
 
           <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed mb-4">{description}</p>
+
+          {coreQuestion && (
+            <p className="font-noto-sans text-sm text-kuro-soft/55 leading-relaxed mb-4 italic">{coreQuestion}</p>
+          )}
 
           {tags && (
             <div className="flex flex-wrap gap-2 mb-4">

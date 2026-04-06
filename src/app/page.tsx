@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
-import StatList from '@/components/StatList';
+
 import SectionHeader from '@/components/SectionHeader';
 import SectionDivider from '@/components/SectionDivider';
 import PlatformCard from '@/components/PlatformCard';
@@ -21,12 +21,6 @@ const tags = [
   'Strategic Risk',
 ];
 
-const stats = [
-  { value: '3', label: 'Ongoing Projects' },
-  { value: '24', label: 'Documents coded' },
-  { value: '6', label: 'Years fieldwork' },
-  { value: '5+', label: 'Papers in development' },
-];
 
 export default function Home() {
   return (
@@ -108,7 +102,7 @@ export default function Home() {
 
               {/* Title */}
               <p className="font-noto-sans text-lg md:text-xl text-shiro/85 font-light tracking-widest mb-8">
-                Researcher
+                Cambridge Future Scholar · Researcher · Platform Builder
               </p>
 
               {/* Description */}
@@ -123,8 +117,6 @@ export default function Home() {
                 ))}
               </div>
 
-              {/* Stats */}
-              <StatList stats={stats} />
 
             </div>
 
@@ -156,13 +148,19 @@ export default function Home() {
       <SectionDivider />
 
       {/* ═══════════════════════════════════════════════════
-          PLATFORMS
+          PLATFORMS & RESEARCH TOOLS
           ═══════════════════════════════════════════════════ */}
       <section className="max-w-6xl mx-auto px-6 pb-16 relative">
         <div className="absolute inset-0 asanoha-bg opacity-30 pointer-events-none" />
         <div className="relative">
-          <SectionHeader kanji="台" english="Ongoing Projects" subtitle="Independently Designed Research Platforms" />
-          <div className="mt-8 grid md:grid-cols-3 gap-6">
+          <SectionHeader kanji="台" english="Platforms & Research Tools" subtitle="Independently designed research platforms spanning two suites: Govern the Human (AI governance) and Faultline / Strategic Infrastructure Risk Suite" />
+
+          {/* Govern the Human suite */}
+          <div className="mt-10 mb-4">
+            <h3 className="font-kaisei text-lg text-kin/80 tracking-wide">Govern the Human</h3>
+            <p className="font-noto-sans text-xs text-shiro/50 tracking-wider mt-1">AI governance and ontological risk</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
             <PlatformCard
               href="/platforms/govern-the-human"
               title="Govern the Human"
@@ -173,6 +171,40 @@ export default function Home() {
               image="/images/govern the human og.png"
             />
             <PlatformCard
+              href="/platforms/narrative-drift"
+              title="Narrative Drift"
+              description="An interactive simulation exploring how AI systems reshape choice, memory, and self-understanding over time."
+              status="Live"
+              liveUrl="https://narrative-drift.vercel.app/"
+              tags={['AI Influence', 'Choice Architecture', 'Epistemic Drift']}
+              image="/images/narrative drift-og.png"
+            />
+            <PlatformCard
+              href="/platforms/selftrace"
+              title="SelfTrace"
+              description="A reflective platform examining how social media algorithms shape identity, self-presentation, and online selfhood."
+              status="Live"
+              liveUrl="https://selftrace.vercel.app/"
+              tags={['Algorithmic Identity', 'Self-Presentation', 'Digital Reflection']}
+              image="/images/selftrace og.png"
+            />
+            <PlatformCard
+              href="/platforms/ontological-governance-observatory"
+              title="Ontological Governance Observatory"
+              description="Mapping how AI reshapes the human subject across epistemic, ontological, and political layers."
+              status="In Progress"
+              tags={['AI Governance', 'Ontological Risk', 'Second-Order Governance']}
+              image="/images/ogo-og.png"
+            />
+          </div>
+
+          {/* Faultline / Strategic Infrastructure Risk Suite */}
+          <div className="mt-12 mb-4">
+            <h3 className="font-kaisei text-lg text-kin/80 tracking-wide">Faultline — Strategic Infrastructure Risk Suite</h3>
+            <p className="font-noto-sans text-xs text-shiro/50 tracking-wider mt-1">Orbital, nuclear, and cyber governance tools</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            <PlatformCard
               href="/platforms/faultline"
               title="Faultline"
               description="A unified strategic infrastructure risk platform across orbital, nuclear, and cyber domains."
@@ -180,6 +212,42 @@ export default function Home() {
               liveUrl="https://faultline-nqmm.vercel.app/"
               tags={['Orbital', 'Nuclear', 'Cyber', 'Strategic Risk']}
               image="/images/faultline og.png"
+            />
+            <PlatformCard
+              href="/platforms/orbital"
+              title="Orbital Risk Tracker"
+              description="Tracking ASAT events, proximity operations, GNSS jamming, and cyber-space entanglement with escalation analysis."
+              status="Live"
+              liveUrl="https://orbitalrisktracker.vercel.app"
+              tags={['ASAT', 'Space Security', 'Escalation']}
+              image="/images/orbital-platform.jpg"
+            />
+            <PlatformCard
+              href="/platforms/nuclear"
+              title="Global Nuclear Infrastructure Atlas"
+              description="Interactive mapping of civilian nuclear power infrastructure, accident sites, and estimated arsenals with policy and health context."
+              status="Live"
+              liveUrl="https://globalnuclearinfrastructureatlas.vercel.app"
+              tags={['IAEA', 'SIPRI', 'Nuclear']}
+              image="/images/nuclear-platform.jpg"
+            />
+            <PlatformCard
+              href="/platforms/cyber"
+              title="Cyber Escalation Atlas"
+              description="Mapping cyber incidents as strategic behaviour, attribution frameworks, and governance signals."
+              status="Live"
+              liveUrl="https://cyber-escalation-atlas-5yp5.vercel.app"
+              tags={['Cyber', 'Attribution', 'Escalation']}
+              image="/images/cyber-platform.png"
+            />
+            <PlatformCard
+              href="/platforms/promise"
+              title="Japan Promise Tracker"
+              description="Tracking Japanese government policy commitments and their fulfilment status across governance domains."
+              status="Live"
+              liveUrl="https://jp-ver-japan-promise-tracker.vercel.app"
+              tags={['Japan', 'Policy Accountability', 'Government Commitments']}
+              image="/images/promise-platform.jpg"
             />
             <PlatformCard
               href="/platforms/mythera"
@@ -191,9 +259,10 @@ export default function Home() {
               image="/images/mythera og.png"
             />
           </div>
+
           <div className="mt-8 text-right">
             <Link href="/platforms" className="font-noto-sans text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
-              View all ongoing projects →
+              View all platforms →
             </Link>
           </div>
         </div>
@@ -241,78 +310,12 @@ export default function Home() {
       <SectionDivider />
 
       {/* ═══════════════════════════════════════════════════
-          PLATFORMS
-          ═══════════════════════════════════════════════════ */}
-      <section className="max-w-6xl mx-auto px-6 pb-16 relative">
-        <div className="relative">
-          <SectionHeader kanji="台" english="Platforms" subtitle="Individual research and policy tools" />
-          <div className="mt-8 grid md:grid-cols-2 gap-6">
-            <PlatformCard
-              href="/platforms/orbital"
-              title="Orbital Risk Tracker"
-              description="Tracking ASAT events, proximity operations, GNSS jamming, and cyber-space entanglement with escalation analysis."
-              status="Live"
-              liveUrl="https://orbitalrisktracker.vercel.app"
-              tags={['ASAT', 'Space Security', 'Escalation']}
-              image="/images/orbital-platform.jpg"
-            />
-            <PlatformCard
-              href="/platforms/nuclear"
-              title="Global Nuclear Infrastructure Atlas"
-              description="Interactive mapping of civilian nuclear power infrastructure, accident sites, and estimated arsenals with policy and health context."
-              status="Live"
-              liveUrl="https://globalnuclearinfrastructureatlas.vercel.app"
-              tags={['IAEA', 'SIPRI', 'Nuclear']}
-              image="/images/nuclear-platform.jpg"
-            />
-            <PlatformCard
-              href="/platforms/cyber"
-              title="Cyber Escalation Atlas"
-              description="Mapping cyber incidents as strategic behaviour, attribution frameworks, and governance signals."
-              status="Live"
-              liveUrl="https://cyber-escalation-atlas-5yp5.vercel.app"
-              tags={['Cyber', 'Attribution', 'Escalation']}
-              image="/images/cyber-platform.png"
-            />
-            <PlatformCard
-              href="/platforms/narrative-drift"
-              title="Narrative Drift"
-              description="An interactive simulation exploring how AI systems reshape choice, memory, and self-understanding over time."
-              status="Live"
-              liveUrl="https://narrative-drift.vercel.app/"
-              tags={['AI Influence', 'Choice Architecture', 'Epistemic Drift']}
-              image="/images/narrative drift-og.png"
-            />
-            <PlatformCard
-              href="/platforms/selftrace"
-              title="SelfTrace"
-              description="A reflective platform examining how social media algorithms shape identity, self-presentation, and online selfhood."
-              status="Live"
-              liveUrl="https://selftrace.vercel.app/"
-              tags={['Algorithmic Identity', 'Self-Presentation', 'Digital Reflection']}
-              image="/images/selftrace og.png"
-            />
-            <PlatformCard
-              href="/platforms/ontological-governance-observatory"
-              title="Ontological Governance Observatory"
-              description="Mapping how AI reshapes the human subject across epistemic, ontological, and political layers."
-              status="In Progress"
-              tags={['AI Governance', 'Ontological Risk', 'Second-Order Governance']}
-              image="/images/ogo-og.png"
-            />
-          </div>
-        </div>
-      </section>
-
-      <SectionDivider />
-
-      {/* ═══════════════════════════════════════════════════
-          ARCHIVED PROJECTS
+          BACKGROUND & FIELDWORK
           ═══════════════════════════════════════════════════ */}
       <section className="max-w-6xl mx-auto px-6 pb-16 relative">
         <div className="absolute inset-0 seigaiha-bg opacity-20 pointer-events-none" />
         <div className="relative">
-          <SectionHeader kanji="業" english="Archived Projects" subtitle="Fieldwork, leadership, and interdisciplinary engagement" />
+          <SectionHeader kanji="業" english="Background & Fieldwork" subtitle="Fieldwork, leadership, and interdisciplinary engagement" />
           <div className="mt-8 grid md:grid-cols-2 gap-6">
             <ProjectCard
               href="/projects/fukushima"
@@ -341,7 +344,7 @@ export default function Home() {
           </div>
           <div className="mt-8 text-right">
             <Link href="/projects" className="font-noto-sans text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
-              View all archived projects →
+              View all background & fieldwork →
             </Link>
           </div>
         </div>

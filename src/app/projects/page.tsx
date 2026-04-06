@@ -1,12 +1,17 @@
+import type { Metadata } from 'next';
 import SectionHeader from '@/components/SectionHeader';
 import ProjectCard from '@/components/ProjectCard';
+
+export const metadata: Metadata = {
+  title: 'Background & Fieldwork — Risa Koyanagi',
+};
 
 export default function ProjectsPage() {
   return (
     <div className="max-w-6xl mx-auto px-6 py-12 md:py-20">
       <SectionHeader
         kanji="業"
-        english="Archived Projects"
+        english="Background & Fieldwork"
         subtitle="Fieldwork, leadership, and interdisciplinary engagement"
       />
 
@@ -20,7 +25,8 @@ export default function ProjectsPage() {
         <ProjectCard
           href="/projects/fukushima"
           title="Fukushima Field Research"
-          description="Multi-site fieldwork in Futaba and Namie districts examining post-disaster governance, trust, and the policy-recovery gap. Includes interviews with evacuees, mayors, town leaders, METI, and TEPCO officials."
+          description="Multi-site fieldwork in Futaba and Namie districts examining post-disaster governance, trust, and the policy-recovery gap. Includes interviews with evacuees, mayors, town leaders, METI, and TEPCO officials. This fieldwork forms the empirical foundation for ongoing research on post-disaster governance and the trust gap."
+          badge="Active Research"
           image="/images/fukushima.jpg"
           imageAlt="Fukushima field research"
           period="2019–2024"
