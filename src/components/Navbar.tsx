@@ -6,9 +6,9 @@ import Tsubaki3D from './Tsubaki3D';
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/platforms', label: 'Ongoing Projects' },
+  { href: '/platforms', label: 'Platforms' },
   { href: '/research', label: 'Research' },
-  { href: '/projects', label: 'Archived Projects' },
+  { href: '/projects', label: 'Background & Fieldwork' },
   { href: '/speaking', label: 'Speaking' },
   { href: '/about', label: 'About' },
 ];

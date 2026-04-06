@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import SectionHeader from '@/components/SectionHeader';
 import SectionDivider from '@/components/SectionDivider';
 import PhotoFrame from '@/components/PhotoFrame';
@@ -6,7 +7,7 @@ import PhotoFrame from '@/components/PhotoFrame';
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-12 md:py-20">
-      <SectionHeader kanji="技" english="About" subtitle="Researcher" />
+      <SectionHeader kanji="技" english="About" subtitle="Cambridge Future Scholar & Researcher" />
 
       <div className="mt-8 space-y-12">
         {/* Profile */}
@@ -34,9 +35,6 @@ export default function AboutPage() {
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
                   Although her work spans multiple domains — from space and nuclear to cyber and AI governance — it is unified by a consistent conceptual focus on how authority is constructed, contested, and legitimated in environments of technological complexity and strategic ambiguity.
-                </p>
-                <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                  Koyanagi also has a background in the arts. She trained in piano with Noriko Amano, Shadow Box with Ineke de Bruijn, and oil painting under Yukiko Hamano. She received an Excellence Award for poetry in 2011 and appeared as a child actor in Maribor National Opera&apos;s &ldquo;Carmen.&rdquo; As a teenager, she won the Excellence Award in the JYOJI-ROCK U-16 contest. Her art studies with Nobuhiko Utsumi led to a group exhibition. She has been selected for the Monster Exhibition and featured in Al-Tiba9 Contemporary Art Magazine.
                 </p>
               </div>
             </div>
@@ -171,6 +169,24 @@ export default function AboutPage() {
             </div>
           </div>
 
+        </div>
+
+        <SectionDivider />
+
+        {/* Arts Background */}
+        <div>
+          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Arts Background</h3>
+          <div className="card-washi card-washi-about p-6 relative overflow-hidden">
+            <div className="glow-bar absolute left-0 top-0 bottom-0" />
+            <div className="pl-4 space-y-4">
+              <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
+                Her artistic practice — spanning music performance, visual art, and poetry — is documented through <Link href="/platforms/mythera" className="text-shu-deep hover:text-shu transition-colors font-medium">MYTHERA</Link>, her interpretive research studio.
+              </p>
+              <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
+                Koyanagi trained in piano with Noriko Amano, Shadow Box with Ineke de Bruijn, and oil painting under Yukiko Hamano. She received an Excellence Award for poetry in 2011 and appeared as a child actor in Maribor National Opera&apos;s &ldquo;Carmen.&rdquo; As a teenager, she won the Excellence Award in the JYOJI-ROCK U-16 contest. Her art studies with Nobuhiko Utsumi led to a group exhibition. She has been selected for the Monster Exhibition and featured in Al-Tiba9 Contemporary Art Magazine.
+              </p>
+            </div>
+          </div>
         </div>
 
         <SectionDivider />

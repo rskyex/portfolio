@@ -9,9 +9,10 @@ interface ProjectCardProps {
   imageAlt?: string;
   period?: string;
   role?: string;
+  badge?: string;
 }
 
-export default function ProjectCard({ href, title, description, image, imageAlt, period, role }: ProjectCardProps) {
+export default function ProjectCard({ href, title, description, image, imageAlt, period, role, badge }: ProjectCardProps) {
   return (
     <Link href={href} className="block group">
       <div className="card-washi card-washi-project card-hover overflow-hidden relative">
@@ -36,6 +37,11 @@ export default function ProjectCard({ href, title, description, image, imageAlt,
             <p className="font-noto-sans text-xs text-tsubaki-deep font-medium mb-2 tracking-wider">{role}</p>
           )}
           <p className="font-noto-sans text-sm text-kuro-soft/65 leading-relaxed">{description}</p>
+          {badge && (
+            <span className="inline-block mt-3 px-2.5 py-0.5 text-xs font-noto-sans font-medium tracking-wider rounded border bg-shu/10 text-shu-deep border-shu/25 shadow-[0_0_8px_rgba(224,60,49,0.08)]">
+              {badge}
+            </span>
+          )}
         </div>
       </div>
     </Link>

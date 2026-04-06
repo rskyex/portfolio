@@ -1,4 +1,5 @@
 import SectionHeader from '@/components/SectionHeader';
+import FlagshipCard from '@/components/FlagshipCard';
 import PlatformCard from '@/components/PlatformCard';
 import SectionDivider from '@/components/SectionDivider';
 
@@ -7,56 +8,140 @@ export default function PlatformsPage() {
     <div className="max-w-6xl mx-auto px-6 py-12 md:py-20">
       <SectionHeader
         kanji="台"
-        english="Ongoing Projects"
-        subtitle="Strategic Infrastructure Risk Suite"
+        english="Platforms"
+        subtitle="Independently Designed Research Platforms"
       />
 
-      <div className="mt-6 mb-12">
+      <div className="mt-6 mb-16">
         <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed max-w-2xl">
           A coherent suite of public-facing research and policy tools that translate governance theory into operational platforms across strategic infrastructure domains. Each platform connects conceptual frameworks on legitimacy, authority, and escalation with applied policy questions.
         </p>
       </div>
 
-      <div className="grid md:grid-cols-1 gap-8">
+      {/* ═══════════════════════════════════════════════════
+          FLAGSHIP PROJECT SYSTEMS
+          ═══════════════════════════════════════════════════ */}
+      <div className="mb-10">
+        <h2 className="font-kaisei text-xl text-kin/80 tracking-wide">Flagship Project Systems</h2>
+        <p className="font-noto-sans text-xs text-shiro/45 tracking-wider mt-1">Parent platforms, each containing linked sub-projects</p>
+      </div>
+
+      {/* ── Govern the Human ── */}
+      <FlagshipCard
+        href="/platforms/govern-the-human"
+        title="Govern the Human"
+        description="A flagship research platform exploring how governance turns back toward the human subject."
+        includes="Includes three linked projects on narrative, selfhood, and interpretive systems."
+        liveUrl="https://govern-the-human.vercel.app/"
+        image="/images/govern the human og.png"
+        subProjects={[
+          { name: 'Narrative Drift', href: '/platforms/narrative-drift' },
+          { name: 'SelfTrace', href: '/platforms/selftrace' },
+          { name: 'Ontological Governance Observatory', href: '/platforms/ontological-governance-observatory' },
+        ]}
+      />
+
+      <div className="ml-4 md:ml-8 mt-6 mb-14 border-l-2 border-kin/10 pl-6 md:pl-8 space-y-6">
+        <p className="font-noto-sans text-[10px] text-shiro/35 tracking-[0.2em] uppercase font-semibold -ml-1">Sub-projects</p>
         <PlatformCard
-          href="/platforms/govern-the-human"
-          title="Govern the Human"
-          description="A unified platform consolidating Narrative Drift, SelfTrace, and Ontological Governance Observatory. Explores how AI systems reshape human choice, identity, and self-understanding, and argues that current governance frameworks miss a deeper problem: AI can reshape the human subject itself. Maps these changes across epistemic, ontological, and political layers."
+          href="/platforms/narrative-drift"
+          title="Narrative Drift"
+          description="An interactive simulation exploring how AI systems reshape choice, memory, and self-understanding over time."
           status="Live"
-          liveUrl="https://govern-the-human.vercel.app/"
-          tags={['AI Governance', 'Ontological Risk', 'Epistemic Drift', 'Choice Architecture', 'Second-Order Governance']}
-          image="/images/govern the human og.png"
+          liveUrl="https://narrative-drift.vercel.app/"
+          tags={['AI Influence', 'Choice Architecture', 'Epistemic Drift']}
+          image="/images/narrative drift-og.png"
+          coreQuestion="Core question: How do AI systems erode epistemic autonomy through the accumulation of small nudges over time?"
         />
 
         <PlatformCard
-          href="/platforms/faultline"
-          title="Faultline"
-          description="A unified strategic infrastructure risk platform consolidating Orbital Risk Tracker, Global Nuclear Infrastructure Atlas, and Cyber Escalation Atlas into a single analytical suite. Translates governance theory into operational tools across orbital, nuclear, and cyber domains."
+          href="/platforms/selftrace"
+          title="SelfTrace"
+          description="A reflective platform examining how social media algorithms shape identity, self-presentation, and online selfhood."
           status="Live"
-          liveUrl="https://faultline-nqmm.vercel.app/"
-          tags={['Orbital', 'Nuclear', 'Cyber', 'Strategic Risk', 'Escalation', 'Governance']}
-          image="/images/faultline og.png"
+          liveUrl="https://selftrace.vercel.app/"
+          tags={['Algorithmic Identity', 'Self-Presentation', 'Digital Reflection']}
+          image="/images/selftrace og.png"
+          coreQuestion="Core question: How do social media algorithms shape self-presentation and identity construction?"
         />
 
         <PlatformCard
-          href="/platforms/mythera"
-          title="MYTHERA"
-          description="An interpretive studio building explorable worlds for selfhood, culture, meaning, and invisible structure — across literature, performance, and aesthetic form."
-          status="Live"
-          liveUrl="https://mythera.vercel.app/"
-          tags={['Interpretive Worlds', 'Selfhood', 'Literature & Performance', 'Aesthetic Legibility']}
-          image="/images/mythera og.png"
+          href="/platforms/ontological-governance-observatory"
+          title="Ontological Governance Observatory"
+          description="Mapping how AI reshapes the human subject across epistemic, ontological, and political layers."
+          status="In Progress"
+          tags={['AI Governance', 'Ontological Risk', 'Second-Order Governance']}
+          image="/images/ogo-og.png"
+          coreQuestion="Core question: How must governance frameworks change when AI transforms the human subject itself?"
         />
       </div>
 
-      <div className="mt-16 mb-6">
-        <h2 className="font-kaisei text-xl text-shiro/80 mb-2">Platforms</h2>
-        <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed max-w-2xl">
-          Individual research and policy tools across governance domains.
-        </p>
+      <SectionDivider />
+
+      {/* ── Faultline ── */}
+      <div className="mt-10" />
+
+      <FlagshipCard
+        href="/platforms/faultline"
+        title="Faultline"
+        description="A flagship strategic risk suite mapping escalation, infrastructure, and geopolitical fragility across interconnected systems."
+        includes="Includes three linked projects."
+        liveUrl="https://faultline-nqmm.vercel.app/"
+        image="/images/faultline og.png"
+        subProjects={[
+          { name: 'Orbital Risk Tracker', href: '/platforms/orbital' },
+          { name: 'Global Nuclear Infrastructure Atlas', href: '/platforms/nuclear' },
+          { name: 'Cyber Escalation Atlas', href: '/platforms/cyber' },
+        ]}
+      />
+
+      <div className="ml-4 md:ml-8 mt-6 mb-14 border-l-2 border-kin/10 pl-6 md:pl-8 space-y-6">
+        <p className="font-noto-sans text-[10px] text-shiro/35 tracking-[0.2em] uppercase font-semibold -ml-1">Sub-projects</p>
+        <PlatformCard
+          href="/platforms/orbital"
+          title="Orbital Risk Tracker"
+          description="Tracking ASAT events, proximity operations, GNSS jamming, and cyber-space entanglement with escalation analysis."
+          status="Live"
+          liveUrl="https://orbitalrisktracker.vercel.app"
+          tags={['ASAT', 'Space Security', 'Escalation']}
+          image="/images/orbital-platform.jpg"
+          coreQuestion="Core question: How are ASAT capabilities and proximity operations transforming the escalation calculus in orbital space?"
+        />
+
+        <PlatformCard
+          href="/platforms/nuclear"
+          title="Global Nuclear Infrastructure Atlas"
+          description="Interactive mapping of civilian nuclear power infrastructure, accident sites, and estimated arsenals with policy and health context."
+          status="Live"
+          liveUrl="https://globalnuclearinfrastructureatlas.vercel.app"
+          tags={['IAEA', 'SIPRI', 'Nuclear']}
+          image="/images/nuclear-platform.jpg"
+          coreQuestion="Core question: How is civilian nuclear infrastructure distributed globally, and what governance and health implications follow?"
+        />
+
+        <PlatformCard
+          href="/platforms/cyber"
+          title="Cyber Escalation Atlas"
+          description="Mapping cyber incidents as strategic behaviour, attribution frameworks, and governance signals."
+          status="Live"
+          liveUrl="https://cyber-escalation-atlas-5yp5.vercel.app"
+          tags={['Cyber', 'Attribution', 'Escalation']}
+          image="/images/cyber-platform.png"
+          coreQuestion="Core question: How do cyber operations function as strategic behaviour, and what governance frameworks can account for them?"
+        />
       </div>
 
-      <div className="grid md:grid-cols-1 gap-8">
+      <SectionDivider />
+
+      {/* ═══════════════════════════════════════════════════
+          OTHER PROJECTS
+          ═══════════════════════════════════════════════════ */}
+      <div className="mt-10 mb-6">
+        <h2 className="font-kaisei text-xl text-kin/80 tracking-wide">Selected Independent Projects</h2>
+        <p className="font-noto-sans text-xs text-shiro/45 tracking-wider mt-1">Standalone research and policy tools</p>
+      </div>
+
+      <div className="grid md:grid-cols-1 gap-8 mb-14">
         <PlatformCard
           href="/platforms/promise"
           title="Japan Promise Tracker"
@@ -65,6 +150,7 @@ export default function PlatformsPage() {
           liveUrl="https://jp-ver-japan-promise-tracker.vercel.app"
           tags={['Japan', 'Policy Accountability', 'Government Commitments', 'Civic Engagement']}
           image="/images/promise-platform.jpg"
+          coreQuestion="Core question: How can government commitments be made transparent and accountable to the public?"
         />
       </div>
 
