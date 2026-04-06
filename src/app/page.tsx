@@ -184,9 +184,10 @@ export default function Home() {
             <PlatformCard
               href="/platforms/mythera"
               title="MYTHERA"
-              description="Making classical music's structure and meaning accessible through timelines, motif displays, and commentary."
-              status="In Progress"
-              tags={['Classical Music', 'Structural Analysis', 'Music Theory']}
+              description="A mythic and interpretive studio where selfhood, culture, performance, and aesthetic form become explorable worlds."
+              status="Live"
+              liveUrl="https://mythera.vercel.app/"
+              tags={['Interpretive Worlds', 'Selfhood', 'Literature & Performance']}
               image="/images/mythera og.png"
             />
           </div>
