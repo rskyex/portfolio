@@ -41,9 +41,10 @@ export default function PlatformsPage() {
         <PlatformCard
           href="/platforms/mythera"
           title="MYTHERA"
-          description="A platform exploring music as structured thought unfolding in time. Consolidates Scoreless into a broader framework that makes classical music's structure, logic, and meaning accessible without requiring score literacy — through timelines, motif displays, and commentary cards."
-          status="In Progress"
-          tags={['Classical Music', 'Structural Analysis', 'Motif Tracking', 'Music Theory']}
+          description="An interpretive studio building explorable worlds for selfhood, culture, meaning, and invisible structure — across literature, performance, and aesthetic form."
+          status="Live"
+          liveUrl="https://mythera.vercel.app/"
+          tags={['Interpretive Worlds', 'Selfhood', 'Literature & Performance', 'Aesthetic Legibility']}
           image="/images/mythera og.png"
         />
       </div>
