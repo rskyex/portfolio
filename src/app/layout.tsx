@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import './globals.css';
@@ -39,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/images/fabicon.png" type="image/png" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
@@ -48,6 +49,17 @@ export default function RootLayout({
         />
       </head>
       <body className="font-inter antialiased bg-kuro text-shiro">
+        {/* Global hero background — fixed behind all pages */}
+        <div className="fixed inset-0 -z-10">
+          <div className="absolute inset-0 bg-kuro" />
+          <Image
+            src="/images/hero.jpeg"
+            alt=""
+            fill
+            priority
+            className="object-cover object-center"
+          />
+        </div>
         <Navbar />
         <main className="pt-14 min-h-screen">
           {children}
