@@ -16,7 +16,6 @@ interface ChildPlatform {
   description: string;
   status: 'Live' | 'In Progress';
   image: string;
-  crop?: boolean;
 }
 
 interface ParentPlatform {
@@ -36,7 +35,7 @@ const platforms: ParentPlatform[] = [
     description: 'Exploring how governance turns back toward the human subject — narrative, selfhood, and interpretive systems.',
     image: '/images/govern the human og.png',
     children: [
-      { name: 'Narrative Drift', href: '/platforms/narrative-drift', description: 'AI influence on choice, memory, and self-understanding', status: 'Live', image: '/images/narrative drift-og.png', crop: true },
+      { name: 'Narrative Drift', href: '/platforms/narrative-drift', description: 'AI influence on choice, memory, and self-understanding', status: 'Live', image: '/images/narrative drift-og.png' },
       { name: 'SelfTrace', href: '/platforms/selftrace', description: 'Algorithmic shaping of identity and self-presentation', status: 'Live', image: '/images/selftrace og.png' },
       { name: 'Ontological Governance Observatory', href: '/platforms/ontological-governance-observatory', description: 'AI\'s transformation of the human subject across governance layers', status: 'In Progress', image: '/images/ogo-og.png' },
     ],
@@ -297,19 +296,19 @@ export default function Home() {
                   {platform.children.map((child) => (
                     <Link key={child.name} href={child.href} className="block group/child">
                       <div className="relative overflow-hidden rounded-md border border-shiro/[0.06] bg-gradient-to-br from-[#0e0f1a] to-[#0a0b12] transition-all duration-300 hover:border-kin/20 hover:from-[#111225] hover:to-[#0c0d16]">
-                        <div className="flex flex-col">
+                        <div className="flex items-stretch">
                           {/* Child OG image */}
-                          <div className="relative w-full aspect-[1200/630] overflow-hidden">
+                          <div className="relative w-28 shrink-0 aspect-[1200/630] overflow-hidden">
                             <Image
                               src={child.image}
                               alt={child.name}
                               fill
-                              className={`${child.crop ? 'object-cover' : 'object-contain'} group-hover/child:scale-[1.03] transition-transform duration-500`}
+                              className="object-contain group-hover/child:scale-[1.03] transition-transform duration-500"
                             />
                           </div>
-                          <div className="flex items-start justify-between gap-2 px-3 py-2.5">
+                          <div className="flex items-start justify-between gap-2 px-3 py-2.5 min-w-0 flex-1">
                             <div className="min-w-0">
-                              <h4 className="font-inter text-sm font-medium text-shiro/80 group-hover/child:text-kin-glow transition-colors">
+                              <h4 className="font-inter text-sm font-medium text-shiro/80 group-hover/child:text-kin-glow transition-colors truncate">
                                 {child.name}
                               </h4>
                               <p className="font-inter text-xs text-shiro/70 leading-relaxed mt-0.5 line-clamp-2">
