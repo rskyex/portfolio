@@ -28,7 +28,7 @@ export default function AboutPage() {
               <h3 className="font-noto-sans text-base font-bold text-kuro-soft mb-4">Profile</h3>
               <div className="space-y-4">
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                  Born in 2003, Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of international security, space governance, nuclear governance, cyber governance, and emerging technology governance. Her research is especially concerned with legitimation theory, dual-use governance, authority architecture, and responsible behaviour norms.
+                  Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of international security, space governance, nuclear governance, cyber governance, and emerging technology governance. Her research is especially concerned with legitimation theory, dual-use governance, authority architecture, and responsible behaviour norms.
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
                   She independently designs and builds public-facing research platforms spanning AI governance, strategic infrastructure risk, and classical music analysis. Her work connects conceptual research on legitimacy, authority, and governance architecture with applied questions of escalation, responsibility, and institutional design.
@@ -48,7 +48,7 @@ export default function AboutPage() {
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Education</h3>
           <div className="space-y-4">
             {[
-              { institution: 'University of London / Forward College', degree: 'Academic Direction: London School of Economics', period: '2025–2026', detail: 'Lisbon' },
+              { institution: 'London School of Economics (University of London)', degree: 'BSc Politics and International Relations', period: '2025–2026', detail: 'Lisbon' },
               { institution: 'Saïd Business School, University of Oxford', degree: 'AI & Digital Transformation in Government', period: 'Nov 2025 – Jan 2026' },
               { institution: 'Selwyn College, University of Cambridge', degree: 'International Summer Programme: Space Weaponisation & British Politics', period: 'Jul – Aug 2025' },
               { institution: 'SOAS University of London', degree: 'BSc Social Sciences (Foundation Year)', period: '2024–2025', detail: 'GPA 3.92' },
@@ -180,7 +180,7 @@ export default function AboutPage() {
             <div className="glow-bar absolute left-0 top-0 bottom-0" />
             <div className="pl-4 space-y-4">
               <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                Her artistic practice — spanning music performance, visual art, and poetry — is documented through <Link href="/platforms/mythera" className="text-shu-deep hover:text-shu transition-colors font-medium">MYTHERA</Link>, her interpretive research studio.
+                Her artistic practice — spanning music performance, visual art, and poetry — is documented through <Link href="/platforms/mythera" className="text-shu-deep hover:text-shu transition-colors font-medium">MYTHERA</Link>, her interpretive research studio. See also her <Link href="/projects/art" className="text-shu-deep hover:text-shu transition-colors font-medium">Art Practice</Link> page for exhibitions, awards, and interdisciplinary work.
               </p>
               <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
                 Koyanagi trained in piano with Noriko Amano, Shadow Box with Ineke de Bruijn, and oil painting under Yukiko Hamano. She received an Excellence Award for poetry in 2011 and appeared as a child actor in Maribor National Opera&apos;s &ldquo;Carmen.&rdquo; As a teenager, she won the Excellence Award in the JYOJI-ROCK U-16 contest. Her art studies with Nobuhiko Utsumi led to a group exhibition. She has been selected for the Monster Exhibition and featured in Al-Tiba9 Contemporary Art Magazine.
