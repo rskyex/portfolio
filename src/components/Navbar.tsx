@@ -8,8 +8,7 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/platforms', label: 'Platforms' },
   { href: '/research', label: 'Research' },
-  { href: '/projects', label: 'Background & Fieldwork' },
-  { href: '/speaking', label: 'Speaking' },
+  { href: '/fieldwork', label: 'Fieldwork & Engagement' },
   { href: '/about', label: 'About' },
 ];
 
