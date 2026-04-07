@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
 
@@ -26,6 +27,7 @@ interface ChildPlatform {
   href: string;
   description: string;
   status: 'Live' | 'In Progress';
+  image: string;
 }
 
 interface ParentPlatform {
@@ -33,6 +35,7 @@ interface ParentPlatform {
   href: string;
   liveUrl: string;
   description: string;
+  image: string;
   children: ChildPlatform[];
 }
 
@@ -42,10 +45,11 @@ const platforms: ParentPlatform[] = [
     href: '/platforms/govern-the-human',
     liveUrl: 'https://govern-the-human.vercel.app/',
     description: 'Exploring how governance turns back toward the human subject — narrative, selfhood, and interpretive systems.',
+    image: '/images/govern the human og.png',
     children: [
-      { name: 'Narrative Drift', href: '/platforms/narrative-drift', description: 'AI influence on choice, memory, and self-understanding', status: 'Live' },
-      { name: 'SelfTrace', href: '/platforms/selftrace', description: 'Algorithmic shaping of identity and self-presentation', status: 'Live' },
-      { name: 'Ontological Governance Observatory', href: '/platforms/ontological-governance-observatory', description: 'AI\'s transformation of the human subject across governance layers', status: 'In Progress' },
+      { name: 'Narrative Drift', href: '/platforms/narrative-drift', description: 'AI influence on choice, memory, and self-understanding', status: 'Live', image: '/images/narrative drift-og.png' },
+      { name: 'SelfTrace', href: '/platforms/selftrace', description: 'Algorithmic shaping of identity and self-presentation', status: 'Live', image: '/images/selftrace og.png' },
+      { name: 'Ontological Governance Observatory', href: '/platforms/ontological-governance-observatory', description: 'AI\'s transformation of the human subject across governance layers', status: 'In Progress', image: '/images/ogo-og.png' },
     ],
   },
   {
@@ -53,10 +57,11 @@ const platforms: ParentPlatform[] = [
     href: '/platforms/faultline',
     liveUrl: 'https://faultline-nqmm.vercel.app/',
     description: 'Strategic risk suite mapping escalation, infrastructure, and geopolitical fragility across interconnected systems.',
+    image: '/images/faultline og.png',
     children: [
-      { name: 'Orbital Risk Tracker', href: '/platforms/orbital', description: 'ASAT events, proximity operations, and space escalation', status: 'Live' },
-      { name: 'Global Nuclear Infrastructure Atlas', href: '/platforms/nuclear', description: 'Civilian nuclear infrastructure, arsenals, and policy context', status: 'Live' },
-      { name: 'Cyber Escalation Atlas', href: '/platforms/cyber', description: 'Cyber incidents as strategic behaviour and governance signals', status: 'Live' },
+      { name: 'Orbital Risk Tracker', href: '/platforms/orbital', description: 'ASAT events, proximity operations, and space escalation', status: 'Live', image: '/images/orbital-platform.jpg' },
+      { name: 'Global Nuclear Infrastructure Atlas', href: '/platforms/nuclear', description: 'Civilian nuclear infrastructure, arsenals, and policy context', status: 'Live', image: '/images/nuclear-platform.jpg' },
+      { name: 'Cyber Escalation Atlas', href: '/platforms/cyber', description: 'Cyber incidents as strategic behaviour and governance signals', status: 'Live', image: '/images/cyber-platform.png' },
     ],
   },
   {
@@ -64,8 +69,9 @@ const platforms: ParentPlatform[] = [
     href: '/platforms/mythera',
     liveUrl: 'https://mythera.vercel.app/',
     description: 'An interpretive studio where selfhood, culture, performance, and aesthetic form become explorable worlds.',
+    image: '/images/mythera og.png',
     children: [
-      { name: 'Scoreless', href: '/platforms/scoreless', description: 'Classical music structure and meaning without score literacy', status: 'In Progress' },
+      { name: 'Scoreless', href: '/platforms/scoreless', description: 'Classical music structure and meaning without score literacy', status: 'In Progress', image: '/images/mythera og.png' },
     ],
   },
 ];
@@ -214,15 +220,25 @@ export default function Home() {
                     <div className="glow-bar absolute left-0 top-0 bottom-0 z-10" />
                     <div className="absolute left-[3px] top-0 bottom-0 w-[1px] bg-gradient-to-b from-kin/20 via-kin/10 to-transparent z-10" />
 
-                    <div className="relative pl-4 p-6">
-                      <div className="flex items-start justify-between mb-2">
-                        <h3 className="font-kaisei text-lg font-semibold text-kuro-soft pr-3 group-hover:text-shu-deep transition-colors">
-                          {platform.title}
-                        </h3>
-                        <span className="shrink-0 px-2 py-0.5 text-[10px] font-noto-sans font-bold tracking-[0.15em] uppercase bg-kuro/[0.06] text-kuro-soft/50 border border-kuro-soft/10 rounded-sm">
+                    {/* Parent OG image */}
+                    <div className="relative w-full h-36 overflow-hidden">
+                      <Image
+                        src={platform.image}
+                        alt={platform.title}
+                        fill
+                        className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
+                      />
+                      <div className="absolute top-3 left-3 z-10">
+                        <span className="px-2 py-0.5 text-[9px] font-noto-sans font-bold tracking-[0.2em] uppercase bg-kuro/80 backdrop-blur-sm text-kin border border-kin/30 rounded-sm shadow-[0_0_10px_rgba(212,160,23,0.12)]">
                           Flagship
                         </span>
                       </div>
+                    </div>
+
+                    <div className="relative pl-4 p-5">
+                      <h3 className="font-kaisei text-lg font-semibold text-kuro-soft mb-2 group-hover:text-shu-deep transition-colors">
+                        {platform.title}
+                      </h3>
 
                       <p className="font-noto-sans text-sm text-kuro-soft/65 leading-relaxed mb-4">
                         {platform.description}
@@ -239,21 +255,32 @@ export default function Home() {
                 <div className="mt-3 space-y-2">
                   {platform.children.map((child) => (
                     <Link key={child.name} href={child.href} className="block group/child">
-                      <div className="relative overflow-hidden rounded-md border border-shiro/[0.06] bg-gradient-to-br from-[#0e0f1a] to-[#0a0b12] px-4 py-3 transition-all duration-300 hover:border-kin/20 hover:bg-gradient-to-br hover:from-[#111225] hover:to-[#0c0d16]">
-                        <div className="flex items-start justify-between gap-3">
-                          <div className="min-w-0">
-                            <h4 className="font-noto-sans text-sm font-medium text-shiro/80 group-hover/child:text-kin-glow transition-colors truncate">
-                              {child.name}
-                            </h4>
-                            <p className="font-noto-sans text-xs text-shiro/40 leading-relaxed mt-0.5 line-clamp-1">
-                              {child.description}
-                            </p>
+                      <div className="relative overflow-hidden rounded-md border border-shiro/[0.06] bg-gradient-to-br from-[#0e0f1a] to-[#0a0b12] transition-all duration-300 hover:border-kin/20 hover:from-[#111225] hover:to-[#0c0d16]">
+                        <div className="flex items-stretch">
+                          {/* Child thumbnail */}
+                          <div className="relative w-16 shrink-0 overflow-hidden">
+                            <Image
+                              src={child.image}
+                              alt={child.name}
+                              fill
+                              className="object-cover group-hover/child:scale-[1.05] transition-transform duration-500"
+                            />
                           </div>
-                          {child.status === 'In Progress' && (
-                            <span className="shrink-0 mt-0.5 px-1.5 py-px text-[9px] font-noto-sans font-medium tracking-wider text-kin/60 border border-kin/15 rounded-sm">
-                              WIP
-                            </span>
-                          )}
+                          <div className="flex items-start justify-between gap-2 px-3 py-2.5 min-w-0">
+                            <div className="min-w-0">
+                              <h4 className="font-noto-sans text-sm font-medium text-shiro/80 group-hover/child:text-kin-glow transition-colors truncate">
+                                {child.name}
+                              </h4>
+                              <p className="font-noto-sans text-xs text-shiro/40 leading-relaxed mt-0.5 line-clamp-1">
+                                {child.description}
+                              </p>
+                            </div>
+                            {child.status === 'In Progress' && (
+                              <span className="shrink-0 mt-0.5 px-1.5 py-px text-[9px] font-noto-sans font-medium tracking-wider text-kin/60 border border-kin/15 rounded-sm">
+                                WIP
+                              </span>
+                            )}
+                          </div>
                         </div>
                       </div>
                     </Link>
