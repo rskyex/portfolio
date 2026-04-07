@@ -16,6 +16,7 @@ interface ChildPlatform {
   description: string;
   status: 'Live' | 'In Progress';
   image: string;
+  crop?: boolean;
 }
 
 interface ParentPlatform {
@@ -35,7 +36,7 @@ const platforms: ParentPlatform[] = [
     description: 'Exploring how governance turns back toward the human subject — narrative, selfhood, and interpretive systems.',
     image: '/images/govern the human og.png',
     children: [
-      { name: 'Narrative Drift', href: '/platforms/narrative-drift', description: 'AI influence on choice, memory, and self-understanding', status: 'Live', image: '/images/narrative drift-og.png' },
+      { name: 'Narrative Drift', href: '/platforms/narrative-drift', description: 'AI influence on choice, memory, and self-understanding', status: 'Live', image: '/images/narrative drift-og.png', crop: true },
       { name: 'SelfTrace', href: '/platforms/selftrace', description: 'Algorithmic shaping of identity and self-presentation', status: 'Live', image: '/images/selftrace og.png' },
       { name: 'Ontological Governance Observatory', href: '/platforms/ontological-governance-observatory', description: 'AI\'s transformation of the human subject across governance layers', status: 'In Progress', image: '/images/ogo-og.png' },
     ],
@@ -303,7 +304,7 @@ export default function Home() {
                               src={child.image}
                               alt={child.name}
                               fill
-                              className="object-contain group-hover/child:scale-[1.03] transition-transform duration-500"
+                              className={`${child.crop ? 'object-cover' : 'object-contain'} group-hover/child:scale-[1.03] transition-transform duration-500`}
                             />
                           </div>
                           <div className="flex items-start justify-between gap-2 px-3 py-2.5">

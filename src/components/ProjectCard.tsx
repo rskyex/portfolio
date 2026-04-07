@@ -21,7 +21,7 @@ export default function ProjectCard({ href, title, description, image, imageAlt,
 
         {image && (
           <div className="h-48 overflow-hidden relative">
-            <PhotoFrame src={image} alt={imageAlt || title} width={600} height={300} className="h-full" />
+            <PhotoFrame src={image} alt={imageAlt || title} width={600} height={300} className="h-full" objectFit="cover" />
           </div>
         )}
         <div className="p-6 relative pl-5">

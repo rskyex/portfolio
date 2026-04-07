@@ -10,6 +10,7 @@ interface PhotoFrameProps {
   height?: number;
   className?: string;
   priority?: boolean;
+  objectFit?: 'cover' | 'contain';
 }
 
 export default function PhotoFrame({
@@ -19,6 +20,7 @@ export default function PhotoFrame({
   height = 300,
   className = '',
   priority = false,
+  objectFit = 'contain',
 }: PhotoFrameProps) {
   const [hasError, setHasError] = useState(false);
 
@@ -48,7 +50,7 @@ export default function PhotoFrame({
           alt={alt}
           width={width}
           height={height}
-          className="relative object-contain w-full h-full"
+          className={`relative w-full h-full ${objectFit === 'cover' ? 'object-cover' : 'object-contain'}`}
           loading={priority ? 'eager' : 'lazy'}
           onError={() => setHasError(true)}
         />
