@@ -12,7 +12,7 @@ export default function AboutPage() {
       <div className="mt-8 space-y-12">
         {/* Profile */}
         <div className="grid md:grid-cols-[auto,1fr] gap-8 items-start">
-          <div className="flex justify-center md:justify-start">
+          <div className="flex flex-col items-center md:items-start gap-4">
             <PhotoFrame
               src="/images/profile.jpg"
               alt="Risa Koyanagi"
@@ -20,6 +20,35 @@ export default function AboutPage() {
               height={320}
               className="w-40 h-52 md:w-52 md:h-68"
             />
+
+            {/* Connect buttons under photo */}
+            <div className="flex items-center gap-2">
+              <a
+                href="https://www.instagram.com/rskyex/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-sm bg-kuro-soft/80 border border-kin/40 font-noto-sans text-xs text-kin hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/60 hover:text-tsubaki-blush transition-all font-medium"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                Instagram
+              </a>
+              <a
+                href="https://linkedin.com/in/rskyex"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-sm bg-kuro-soft/80 border border-kin/40 font-noto-sans text-xs text-kin hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/60 hover:text-tsubaki-blush transition-all font-medium"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a>
+              <a
+                href="mailto:risakyng@gmail.com"
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-sm bg-kuro-soft/80 border border-kin/40 font-noto-sans text-xs text-kin hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/60 hover:text-tsubaki-blush transition-all font-medium"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                Contact
+              </a>
+            </div>
           </div>
 
           <div className="card-washi card-washi-about p-8 relative overflow-hidden">
@@ -28,15 +57,27 @@ export default function AboutPage() {
               <h3 className="font-noto-sans text-base font-bold text-kuro-soft mb-4">Profile</h3>
               <div className="space-y-4">
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                  Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of international security, space governance, nuclear governance, cyber governance, and emerging technology governance. Her research is especially concerned with legitimation theory, dual-use governance, authority architecture, and responsible behaviour norms.
-                </p>
-                <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                  She independently designs and builds public-facing research platforms spanning AI governance, strategic infrastructure risk, and classical music analysis. Her work connects conceptual research on legitimacy, authority, and governance architecture with applied questions of escalation, responsibility, and institutional design.
+                  Risa Koyanagi is a <strong className="font-semibold text-kuro-soft/85">Cambridge Future Scholar</strong> and researcher working across <strong className="font-semibold text-kuro-soft/85">space, nuclear, and emerging technology governance</strong> and <strong className="font-semibold text-kuro-soft/85">strategic risk</strong>. Her work focuses on <strong className="font-semibold text-kuro-soft/85">legitimation</strong>, <strong className="font-semibold text-kuro-soft/85">dual-use systems</strong>, and <strong className="font-semibold text-kuro-soft/85">authority architecture</strong>. She also designs <strong className="font-semibold text-kuro-soft/85">public-facing research platforms</strong> on <strong className="font-semibold text-kuro-soft/85">AI governance</strong>, <strong className="font-semibold text-kuro-soft/85">strategic infrastructure risk</strong>, and <strong className="font-semibold text-kuro-soft/85">interpretive systems</strong>.
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
                   Although her work spans multiple domains — from space and nuclear to cyber and AI governance — it is unified by a consistent conceptual focus on how authority is constructed, contested, and legitimated in environments of technological complexity and strategic ambiguity.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <SectionDivider />
+
+        {/* Interests */}
+        <div>
+          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Interests</h3>
+          <div className="card-washi card-washi-about p-6 relative overflow-hidden">
+            <div className="glow-bar absolute left-0 top-0 bottom-0" />
+            <div className="pl-4">
+              <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
+                {['Violin', 'Johann Sebastian Bach', 'Jean Sibelius', 'Giacomo Puccini', 'Giuseppe Verdi', 'Pyotr Ilyich Tchaikovsky', 'Anton\u00edn Dvo\u0159\u00e1k', 'Igor Stravinsky', 'Fyodor Dostoevsky', 'Kabuki', 'Yukio Mishima', 'Greek Mythology', 'Raymond Radiguet', 'Rainer Maria Rilke'].join(' \u00b7 ')}
+              </p>
             </div>
           </div>
         </div>
@@ -157,22 +198,6 @@ export default function AboutPage() {
 
         <SectionDivider />
 
-        {/* Interests */}
-        <div>
-          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Interests</h3>
-          <div className="card-washi card-washi-about p-6 relative overflow-hidden">
-            <div className="glow-bar absolute left-0 top-0 bottom-0" />
-            <div className="pl-4">
-              <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                {['Violin', 'Johann Sebastian Bach', 'Jean Sibelius', 'Giacomo Puccini', 'Giuseppe Verdi', 'Pyotr Ilyich Tchaikovsky', 'Anton\u00edn Dvo\u0159\u00e1k', 'Igor Stravinsky', 'Fyodor Dostoevsky', 'Kabuki', 'Yukio Mishima', 'Greek Mythology', 'Raymond Radiguet', 'Rainer Maria Rilke'].join(' \u00b7 ')}
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-        <SectionDivider />
-
         {/* Arts Background */}
         <div>
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Arts Background</h3>
@@ -191,27 +216,9 @@ export default function AboutPage() {
 
         <SectionDivider />
 
-        {/* Contact */}
+        {/* Connect */}
         <div>
-          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Contact</h3>
-          <div className="card-washi card-washi-about p-6 relative overflow-hidden">
-            <div className="glow-bar absolute left-0 top-0 bottom-0" />
-            <div className="pl-4 space-y-2">
-              <a href="mailto:risakyng@gmail.com" className="block font-noto-sans text-sm text-kuro-soft/70 hover:text-shu-deep transition-colors font-medium">
-                risakyng@gmail.com
-              </a>
-              <a href="https://linkedin.com/in/rskyex" target="_blank" rel="noopener noreferrer" className="block font-noto-sans text-sm text-kuro-soft/70 hover:text-shu-deep transition-colors font-medium">
-                linkedin.com/in/rskyex
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <SectionDivider />
-
-        {/* Instagram */}
-        <div>
-          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Instagram</h3>
+          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Connect</h3>
           <PhotoFrame
             src="/images/about gallery-1.jpg"
             alt="Gallery"
@@ -219,10 +226,20 @@ export default function AboutPage() {
             height={400}
             className="w-full max-w-md h-auto mb-5"
           />
-          <a href="https://www.instagram.com/rskyex/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm bg-kuro-soft/80 border border-kin/40 font-noto-sans text-sm text-kin hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/60 hover:text-tsubaki-blush transition-all font-medium">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            @rskyex
-          </a>
+          <div className="flex items-center gap-2">
+            <a href="https://www.instagram.com/rskyex/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm bg-kuro-soft/80 border border-kin/40 font-noto-sans text-sm text-kin hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/60 hover:text-tsubaki-blush transition-all font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              @rskyex
+            </a>
+            <a href="https://linkedin.com/in/rskyex" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm bg-kuro-soft/80 border border-kin/40 font-noto-sans text-sm text-kin hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/60 hover:text-tsubaki-blush transition-all font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:risakyng@gmail.com" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm bg-kuro-soft/80 border border-kin/40 font-noto-sans text-sm text-kin hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/60 hover:text-tsubaki-blush transition-all font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              Contact
+            </a>
+          </div>
         </div>
       </div>
     </div>

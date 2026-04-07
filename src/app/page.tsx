@@ -91,20 +91,6 @@ export default function Home() {
   return (
     <div className="relative">
       {/* ═══════════════════════════════════════════════════
-          GLOBAL HERO BACKGROUND — fixed behind all sections
-          ═══════════════════════════════════════════════════ */}
-      <div className="fixed inset-0 -z-10">
-        <div className="absolute inset-0 bg-kuro" />
-        <Image
-          src="/images/hero.jpeg"
-          alt=""
-          fill
-          priority
-          className="object-cover object-center"
-        />
-      </div>
-
-      {/* ═══════════════════════════════════════════════════
           HERO — KINKAKU-JI × NEON FUTURE × 3D TSUBAKI
           ═══════════════════════════════════════════════════ */}
       <section className="relative overflow-hidden min-h-screen flex items-center">

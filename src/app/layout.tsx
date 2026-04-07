@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import './globals.css';
@@ -48,6 +49,17 @@ export default function RootLayout({
         />
       </head>
       <body className="font-inter antialiased bg-kuro text-shiro">
+        {/* Global hero background — fixed behind all pages */}
+        <div className="fixed inset-0 -z-10">
+          <div className="absolute inset-0 bg-kuro" />
+          <Image
+            src="/images/hero.jpeg"
+            alt=""
+            fill
+            priority
+            className="object-cover object-center"
+          />
+        </div>
         <Navbar />
         <main className="pt-14 min-h-screen">
           {children}

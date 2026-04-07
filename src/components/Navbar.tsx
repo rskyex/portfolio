@@ -22,8 +22,8 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
           <Tsubaki3D size="sm" />
-          <span className="font-noto-serif text-lg text-kin/90 tracking-wide group-hover:text-kin-glow transition-colors drop-shadow-[0_0_8px_rgba(212,160,23,0.2)]">
-            小柳璃紗
+          <span className="font-cormorant text-lg text-kin/90 tracking-wide group-hover:text-kin-glow transition-colors drop-shadow-[0_0_8px_rgba(212,160,23,0.2)] font-semibold">
+            Risa Koyanagi
           </span>
         </Link>
 
