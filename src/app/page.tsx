@@ -87,6 +87,20 @@ export default function Home() {
         {/* Deep black base */}
         <div className="absolute inset-0 bg-kuro" />
 
+        {/* Hero background image — dark silk texture */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/hero.jpeg"
+            alt=""
+            fill
+            priority
+            className="object-cover object-center"
+          />
+          {/* Soft fade at edges to blend seamlessly into kuro */}
+          <div className="absolute inset-0 bg-gradient-to-t from-kuro via-transparent to-kuro/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-kuro/30 via-transparent to-kuro/30" />
+        </div>
+
         {/* Radial gold ambient — Kinkaku-ji reflection */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_100%,rgba(212,160,23,0.06)_0%,transparent_60%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_20%_50%,rgba(233,30,99,0.03)_0%,transparent_60%)]" />
