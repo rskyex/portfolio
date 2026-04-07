@@ -173,7 +173,7 @@ export default function Home() {
               </p>
 
               {/* Description — with frosted backdrop for legibility */}
-              <div className="max-w-xl mb-10 rounded-lg bg-kuro/50 backdrop-blur-md border border-shiro/[0.04] px-5 py-4">
+              <div className="max-w-xl mb-10 rounded-lg bg-kuro/20 backdrop-blur-[2px] px-5 py-4">
                 <p className="font-noto-sans text-sm text-shiro/75 leading-[1.9]">
                   Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of space governance, nuclear governance, cyber governance, strategic risk, and emerging technology governance. Her research centres on legitimation theory, dual-use governance, authority architecture, responsible behaviour norms, and international security. She independently designs and builds public-facing research platforms spanning AI governance, strategic infrastructure risk, and classical music analysis.
                 </p>
@@ -215,9 +215,6 @@ export default function Home() {
       </section>
 
       <SectionDivider />
-
-      {/* Below-hero content — semi-opaque kuro so hero texture bleeds through subtly */}
-      <div className="relative bg-kuro/90 backdrop-blur-sm">
 
       {/* ═══════════════════════════════════════════════════
           PLATFORM ECOSYSTEM
@@ -396,7 +393,6 @@ export default function Home() {
         </div>
       </section>
 
-      </div>{/* end below-hero content wrapper */}
     </div>
   );
 }
