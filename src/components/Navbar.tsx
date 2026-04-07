@@ -23,7 +23,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
           <Tsubaki3D size="sm" />
-          <span className="font-kaisei text-xl text-kin/90 tracking-wide group-hover:text-kin-glow transition-colors drop-shadow-[0_0_8px_rgba(212,160,23,0.2)]">
+          <span className="font-noto-serif text-lg text-kin/90 tracking-wide group-hover:text-kin-glow transition-colors drop-shadow-[0_0_8px_rgba(212,160,23,0.2)]">
             小柳璃紗
           </span>
         </Link>
@@ -34,7 +34,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="nav-link font-noto-sans text-[13px] text-shiro/65 hover:text-shiro/90 transition-colors tracking-wider uppercase"
+              className="nav-link font-inter text-[13px] text-shiro/65 hover:text-shiro/90 transition-colors tracking-wider uppercase"
             >
               {link.label}
             </Link>
@@ -62,7 +62,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="font-noto-sans text-sm text-shiro/65 hover:text-shiro transition-colors tracking-wider uppercase"
+                className="font-inter text-sm text-shiro/65 hover:text-shiro transition-colors tracking-wider uppercase"
               >
                 {link.label}
               </Link>

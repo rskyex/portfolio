@@ -26,21 +26,21 @@ export default function ResearchListItem({ href, title, status, themes, descript
 
         <div className="relative pl-4">
           <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 mb-3">
-            <h3 className="font-noto-serif text-base font-semibold text-kuro-soft group-hover:text-shu-deep transition-colors italic">
+            <h3 className="font-cormorant text-lg font-semibold text-kuro-soft group-hover:text-shu-deep transition-colors italic">
               {title}
             </h3>
-            <span className={`shrink-0 self-start px-2.5 py-0.5 text-xs font-noto-sans font-medium tracking-wider rounded border ${statusStyles[status] || statusStyles['In Progress']}`}>
+            <span className={`shrink-0 self-start px-2.5 py-0.5 text-xs font-inter font-medium tracking-wider rounded border ${statusStyles[status] || statusStyles['In Progress']}`}>
               {status}
             </span>
           </div>
 
           {description && (
-            <p className="font-noto-sans text-sm text-kuro-soft/65 leading-relaxed mb-3">{description}</p>
+            <p className="font-inter text-sm text-kuro-soft/65 leading-relaxed mb-3">{description}</p>
           )}
 
           <div className="flex flex-wrap gap-1.5">
             {themes.map(theme => (
-              <span key={theme} className="text-xs font-noto-sans text-kuro-soft/45 px-1.5 py-0.5">
+              <span key={theme} className="text-xs font-inter text-kuro-soft/45 px-1.5 py-0.5">
                 {theme}
               </span>
             ))}

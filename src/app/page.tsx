@@ -5,11 +5,13 @@ import Tag from '@/components/Tag';
 
 import SectionHeader from '@/components/SectionHeader';
 import SectionDivider from '@/components/SectionDivider';
+import ProjectCard from '@/components/ProjectCard';
 import SpeakingCard from '@/components/SpeakingCard';
 import Tsubaki3D from '@/components/Tsubaki3D';
 
 const tags = [
   'Space Governance',
+  'Nuclear Governance',
   'Strategic Risk',
   'Legitimacy & Authority',
   'Platform Research',
@@ -166,7 +168,7 @@ export default function Home() {
                 </span>
 
                 <div className="mt-5 flex items-baseline gap-4">
-                  <h1 className="font-kaisei text-2xl md:text-3xl text-shiro/90 tracking-wider">
+                  <h1 className="font-cormorant text-3xl md:text-4xl text-shiro/90 tracking-wide font-semibold">
                     Risa Koyanagi
                   </h1>
                   <span className="font-noto-serif text-xs text-shiro/22 tracking-[0.3em]">
@@ -179,18 +181,18 @@ export default function Home() {
               </div>
 
               {/* Eyebrow */}
-              <p className="font-noto-sans text-xs text-kin/70 tracking-[0.3em] uppercase mb-5 font-medium">
+              <p className="font-inter text-[11px] text-kin/70 tracking-[0.3em] uppercase mb-5 font-medium">
                 International Security · Space · Nuclear · Cyber · Emerging Technology Governance
               </p>
 
               {/* Title */}
-              <p className="font-noto-sans text-lg md:text-xl text-shiro/85 font-light tracking-widest mb-8">
+              <p className="font-cormorant text-xl md:text-2xl text-shiro/85 font-light tracking-wider mb-8 italic">
                 Cambridge Future Scholar · Researcher · Platform Builder
               </p>
 
               {/* Description — with frosted backdrop for legibility */}
               <div className="max-w-xl mb-8 rounded-lg bg-kuro/20 backdrop-blur-[2px] px-5 py-4">
-                <p className="font-noto-sans text-sm text-shiro/75 leading-[1.9]">
+                <p className="font-inter text-sm text-shiro/75 leading-[1.9]">
                   Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of space governance, nuclear governance, cyber governance, strategic risk, and emerging technology governance. Her research centres on legitimation theory, dual-use governance, authority architecture, responsible behaviour norms, and international security. She independently designs and builds public-facing research platforms spanning AI governance, strategic infrastructure risk, and classical music analysis.
                 </p>
               </div>
@@ -201,7 +203,7 @@ export default function Home() {
                   href="https://linkedin.com/in/rskyex"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-shiro/10 bg-shiro/[0.04] font-noto-sans text-xs text-shiro/65 tracking-wider hover:border-kin/30 hover:text-kin transition-all duration-300"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-shiro/10 bg-shiro/[0.04] font-inter text-xs text-shiro/65 tracking-wider hover:border-kin/30 hover:text-kin transition-all duration-300"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                   LinkedIn
@@ -210,14 +212,14 @@ export default function Home() {
                   href="https://www.instagram.com/rskyex/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-shiro/10 bg-shiro/[0.04] font-noto-sans text-xs text-shiro/65 tracking-wider hover:border-tsubaki-rose/30 hover:text-tsubaki-blush transition-all duration-300"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-shiro/10 bg-shiro/[0.04] font-inter text-xs text-shiro/65 tracking-wider hover:border-tsubaki-rose/30 hover:text-tsubaki-blush transition-all duration-300"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                   Instagram
                 </a>
                 <a
                   href="mailto:risakyng@gmail.com"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-shiro/10 bg-shiro/[0.04] font-noto-sans text-xs text-shiro/65 tracking-wider hover:border-kin/30 hover:text-kin transition-all duration-300"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-shiro/10 bg-shiro/[0.04] font-inter text-xs text-shiro/65 tracking-wider hover:border-kin/30 hover:text-kin transition-all duration-300"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                   Contact
@@ -288,22 +290,22 @@ export default function Home() {
                         className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
                       />
                       <div className="absolute top-3 left-3 z-10">
-                        <span className="px-2 py-0.5 text-[9px] font-noto-sans font-bold tracking-[0.2em] uppercase bg-kuro/80 backdrop-blur-sm text-kin border border-kin/30 rounded-sm shadow-[0_0_10px_rgba(212,160,23,0.12)]">
+                        <span className="px-2 py-0.5 text-[9px] font-inter font-bold tracking-[0.2em] uppercase bg-kuro/80 backdrop-blur-sm text-kin border border-kin/30 rounded-sm shadow-[0_0_10px_rgba(212,160,23,0.12)]">
                           Flagship
                         </span>
                       </div>
                     </div>
 
                     <div className="relative pl-4 p-5">
-                      <h3 className="font-kaisei text-lg font-semibold text-kuro-soft mb-2 group-hover:text-shu-deep transition-colors">
+                      <h3 className="font-cormorant text-xl font-semibold text-kuro-soft mb-2 group-hover:text-shu-deep transition-colors">
                         {platform.title}
                       </h3>
 
-                      <p className="font-noto-sans text-sm text-kuro-soft/65 leading-relaxed mb-4">
+                      <p className="font-inter text-sm text-kuro-soft/65 leading-relaxed mb-4">
                         {platform.description}
                       </p>
 
-                      <span className="font-noto-sans text-xs text-kin-deep/70 group-hover:text-shu tracking-widest transition-colors uppercase font-medium">
+                      <span className="font-inter text-xs text-kin-deep/70 group-hover:text-shu tracking-widest transition-colors uppercase font-medium">
                         View platform →
                       </span>
                     </div>
@@ -327,15 +329,15 @@ export default function Home() {
                           </div>
                           <div className="flex items-start justify-between gap-2 px-3 py-2.5 min-w-0">
                             <div className="min-w-0">
-                              <h4 className="font-noto-sans text-sm font-medium text-shiro/80 group-hover/child:text-kin-glow transition-colors truncate">
+                              <h4 className="font-inter text-sm font-medium text-shiro/80 group-hover/child:text-kin-glow transition-colors truncate">
                                 {child.name}
                               </h4>
-                              <p className="font-noto-sans text-xs text-shiro/40 leading-relaxed mt-0.5 line-clamp-1">
+                              <p className="font-inter text-xs text-shiro/40 leading-relaxed mt-0.5 line-clamp-1">
                                 {child.description}
                               </p>
                             </div>
                             {child.status === 'In Progress' && (
-                              <span className="shrink-0 mt-0.5 px-1.5 py-px text-[9px] font-noto-sans font-medium tracking-wider text-kin/60 border border-kin/15 rounded-sm">
+                              <span className="shrink-0 mt-0.5 px-1.5 py-px text-[9px] font-inter font-medium tracking-wider text-kin/60 border border-kin/15 rounded-sm">
                                 WIP
                               </span>
                             )}
@@ -350,7 +352,7 @@ export default function Home() {
           </div>
 
           <div className="mt-8 text-right">
-            <Link href="/platforms" className="font-noto-sans text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
+            <Link href="/platforms" className="font-inter text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
               View all platforms →
             </Link>
           </div>
@@ -371,10 +373,10 @@ export default function Home() {
                 <div className="card-washi card-washi-research card-hover relative overflow-hidden p-6">
                   <div className="glow-bar absolute left-0 top-0 bottom-0" />
                   <div className="relative pl-4">
-                    <h3 className="font-noto-serif text-base font-semibold text-kuro-soft group-hover:text-shu-deep transition-colors italic mb-2">
+                    <h3 className="font-cormorant text-lg font-semibold text-kuro-soft group-hover:text-shu-deep transition-colors italic mb-2">
                       {item.title}
                     </h3>
-                    <p className="font-noto-sans text-sm text-kuro-soft/60 leading-relaxed">
+                    <p className="font-inter text-sm text-kuro-soft/60 leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -383,8 +385,51 @@ export default function Home() {
             ))}
           </div>
           <div className="mt-8 text-right">
-            <Link href="/research" className="font-noto-sans text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
+            <Link href="/research" className="font-inter text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
               View all research →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider />
+
+      {/* ═══════════════════════════════════════════════════
+          BACKGROUND & FIELDWORK
+          ═══════════════════════════════════════════════════ */}
+      <section className="max-w-6xl mx-auto px-6 pb-16 relative">
+        <div className="absolute inset-0 seigaiha-bg opacity-20 pointer-events-none" />
+        <div className="relative">
+          <SectionHeader kanji="業" english="Background & Fieldwork" subtitle="Fieldwork, leadership, and interdisciplinary engagement" />
+          <div className="mt-8 grid md:grid-cols-2 gap-6">
+            <ProjectCard
+              href="/projects/fukushima"
+              title="Fukushima Field Research"
+              description="Multi-site fieldwork in Futaba and Namie districts examining post-disaster governance, trust, and recovery."
+              image="/images/fukushima.jpg"
+              imageAlt="Fukushima fieldwork"
+              period="2019–2024"
+            />
+            <ProjectCard
+              href="/projects/afrecos"
+              title="AFRECOS"
+              description="Co-founded a 10+ country network for cultural and policy events bridging Africa and Japan."
+              image="/images/afrecos.jpg"
+              imageAlt="AFRECOS"
+              period="2024"
+              role="Co-Founder & President"
+            />
+            <ProjectCard
+              href="/projects/art"
+              title="Art Practice"
+              description="Interdisciplinary art practice spanning visual thinking, international exhibition, and conceptual work."
+              image="/images/art.JPG"
+              imageAlt="Art practice"
+            />
+          </div>
+          <div className="mt-8 text-right">
+            <Link href="/projects" className="font-inter text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
+              View all background & fieldwork →
             </Link>
           </div>
         </div>
@@ -425,7 +470,7 @@ export default function Home() {
             />
           </div>
           <div className="mt-8 text-right">
-            <Link href="/speaking" className="font-noto-sans text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
+            <Link href="/speaking" className="font-inter text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
               View all speaking →
             </Link>
           </div>

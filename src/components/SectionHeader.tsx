@@ -27,11 +27,11 @@ export default function SectionHeader({ kanji, english, subtitle, id }: SectionH
             {kanji}
           </span>
           <div className="flex-1">
-            <h2 className="font-noto-sans text-sm md:text-base font-bold text-shiro tracking-[0.25em] uppercase drop-shadow-[0_0_8px_rgba(255,255,255,0.1)]">
+            <h2 className="font-cormorant text-lg md:text-xl font-semibold text-shiro tracking-[0.15em] uppercase drop-shadow-[0_0_8px_rgba(255,255,255,0.1)]">
               {english}
             </h2>
             {subtitle && (
-              <p className="font-noto-sans text-xs text-shiro/55 mt-1.5 tracking-wider">
+              <p className="font-inter text-xs text-shiro/55 mt-1.5 tracking-wider">
                 {subtitle}
               </p>
             )}
