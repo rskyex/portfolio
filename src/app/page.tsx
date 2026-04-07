@@ -79,27 +79,25 @@ const platforms: ParentPlatform[] = [
 
 export default function Home() {
   return (
-    <div>
+    <div className="relative">
+      {/* ═══════════════════════════════════════════════════
+          GLOBAL HERO BACKGROUND — fixed behind all sections
+          ═══════════════════════════════════════════════════ */}
+      <div className="fixed inset-0 -z-10">
+        <div className="absolute inset-0 bg-kuro" />
+        <Image
+          src="/images/hero.jpeg"
+          alt=""
+          fill
+          priority
+          className="object-cover object-center"
+        />
+      </div>
+
       {/* ═══════════════════════════════════════════════════
           HERO — KINKAKU-JI × NEON FUTURE × 3D TSUBAKI
           ═══════════════════════════════════════════════════ */}
       <section className="relative overflow-hidden min-h-screen flex items-center">
-        {/* Deep black base */}
-        <div className="absolute inset-0 bg-kuro" />
-
-        {/* Hero background image — dark silk texture */}
-        <div className="absolute inset-0">
-          <Image
-            src="/images/hero.jpeg"
-            alt=""
-            fill
-            priority
-            className="object-cover object-center"
-          />
-          {/* Soft fade at edges to blend seamlessly into kuro */}
-          <div className="absolute inset-0 bg-gradient-to-t from-kuro via-transparent to-kuro/40" />
-          <div className="absolute inset-0 bg-gradient-to-r from-kuro/30 via-transparent to-kuro/30" />
-        </div>
 
         {/* Radial gold ambient — Kinkaku-ji reflection */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_100%,rgba(212,160,23,0.06)_0%,transparent_60%)]" />
@@ -174,10 +172,12 @@ export default function Home() {
                 Cambridge Future Scholar · Researcher · Platform Builder
               </p>
 
-              {/* Description */}
-              <p className="font-noto-sans text-sm text-shiro/70 leading-[1.9] max-w-xl mb-10">
-                Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of space governance, nuclear governance, cyber governance, strategic risk, and emerging technology governance. Her research centres on legitimation theory, dual-use governance, authority architecture, responsible behaviour norms, and international security. She independently designs and builds public-facing research platforms spanning AI governance, strategic infrastructure risk, and classical music analysis.
-              </p>
+              {/* Description — with frosted backdrop for legibility */}
+              <div className="max-w-xl mb-10 rounded-lg bg-kuro/50 backdrop-blur-md border border-shiro/[0.04] px-5 py-4">
+                <p className="font-noto-sans text-sm text-shiro/75 leading-[1.9]">
+                  Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of space governance, nuclear governance, cyber governance, strategic risk, and emerging technology governance. Her research centres on legitimation theory, dual-use governance, authority architecture, responsible behaviour norms, and international security. She independently designs and builds public-facing research platforms spanning AI governance, strategic infrastructure risk, and classical music analysis.
+                </p>
+              </div>
 
               {/* Tags */}
               <div className="flex flex-wrap gap-2 mb-12">
@@ -215,6 +215,9 @@ export default function Home() {
       </section>
 
       <SectionDivider />
+
+      {/* Below-hero content — semi-opaque kuro so hero texture bleeds through subtly */}
+      <div className="relative bg-kuro/90 backdrop-blur-sm">
 
       {/* ═══════════════════════════════════════════════════
           PLATFORM ECOSYSTEM
@@ -392,6 +395,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      </div>{/* end below-hero content wrapper */}
     </div>
   );
 }
