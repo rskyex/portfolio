@@ -70,6 +70,8 @@ const platforms: ParentPlatform[] = [
     image: '/images/mythera og.png',
     children: [
       { name: 'Scoreless', href: '/platforms/scoreless', description: 'Classical music structure and meaning without score literacy', status: 'In Progress', image: '/images/mythera og.png' },
+      { name: 'Theatre of Authenticity', href: '/platforms/theatre-of-authenticity', description: 'Questioning authenticity through experiential design — performance, gaze, and the limits of the "true self"', status: 'In Progress', image: '/images/Theatre of Authenticity.png' },
+      { name: 'Second Self', href: '/platforms/second-self', description: 'A philosophical card game exploring AI, memory, governance, and the formation of subjectivity', status: 'In Progress', image: '/images/secondself_og.png' },
     ],
   },
 ];

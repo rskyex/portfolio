@@ -133,6 +133,58 @@ export default function PlatformsPage() {
 
       <SectionDivider />
 
+      {/* ── MYTHERA ── */}
+      <div className="mt-10" />
+
+      <FlagshipCard
+        href="/platforms/mythera"
+        title="MYTHERA"
+        description="An interpretive studio where selfhood, culture, performance, and aesthetic form become explorable worlds."
+        includes="Includes linked projects on music analysis, authenticity, and philosophical game design."
+        liveUrl="https://mythera.vercel.app/"
+        image="/images/mythera og.png"
+        subProjects={[
+          { name: 'Scoreless', href: '/platforms/scoreless' },
+          { name: 'Theatre of Authenticity', href: '/platforms/theatre-of-authenticity' },
+          { name: 'Second Self', href: '/platforms/second-self' },
+        ]}
+      />
+
+      <div className="ml-4 md:ml-8 mt-6 mb-14 border-l-2 border-kin/10 pl-6 md:pl-8 space-y-6">
+        <p className="font-noto-sans text-[10px] text-shiro/35 tracking-[0.2em] uppercase font-semibold -ml-1">Sub-projects</p>
+        <PlatformCard
+          href="/platforms/scoreless"
+          title="Scoreless"
+          description="A music analysis platform making classical music's structure, logic, and meaning accessible without score literacy."
+          status="In Progress"
+          tags={['Classical Music', 'Structural Analysis', 'Motif Tracking', 'Music Theory']}
+          image="/images/mythera og.png"
+          coreQuestion="Core question: How can musical structure be made visible and meaningful without requiring score literacy?"
+        />
+
+        <PlatformCard
+          href="/platforms/theatre-of-authenticity"
+          title="Theatre of Authenticity"
+          description="「真正性」そのものを疑う体験型サイト。行為の動機がどれほど外部化されていたかを可視化する。三島、キルケゴール、ニーチェ、サルトル、バタイユをまたぐ。"
+          status="In Progress"
+          tags={['Authenticity', 'Performance', 'Selfhood', 'Existentialism']}
+          image="/images/Theatre of Authenticity.png"
+          coreQuestion="Core question: 本当に内的必然から行為しているのか、それとも他者に見られることを前提に自己を構成しているのか?"
+        />
+
+        <PlatformCard
+          href="/platforms/second-self"
+          title="Second Self"
+          description="AI、記憶、統治、自己形成をテーマにしたオンライン哲学カードゲーム。社会を設計し、その結果として生まれる人間の主体を左右する。"
+          status="In Progress"
+          tags={['Philosophy', 'Card Game', 'AI Governance', 'Subjectivity', 'Social Design']}
+          image="/images/secondself_og.png"
+          coreQuestion="Core question: システムが人間の主体形成に参加し始めたとき、何が起きるのか?"
+        />
+      </div>
+
+      <SectionDivider />
+
       {/* ═══════════════════════════════════════════════════
           OTHER PROJECTS
           ═══════════════════════════════════════════════════ */}
