@@ -11,7 +11,7 @@ export default function Tag({ label, variant = 'default' }: TagProps) {
   };
 
   return (
-    <span className={`inline-block px-3 py-1 text-xs font-noto-sans font-medium tracking-wider rounded border backdrop-blur-sm ${styles[variant]}`}>
+    <span className={`inline-block px-3 py-1 text-xs font-inter font-medium tracking-wider rounded border backdrop-blur-sm ${styles[variant]}`}>
       {label}
     </span>
   );

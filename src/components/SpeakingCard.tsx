@@ -27,13 +27,13 @@ export default function SpeakingCard({ title, context, type, description, image 
       )}
 
       <div className="relative pl-4 p-6">
-        <span className="inline-block px-2.5 py-0.5 text-xs font-noto-sans font-medium text-tsubaki-deep border border-tsubaki-rose/20 bg-tsubaki-rose/[0.06] rounded mb-3 tracking-wider">
+        <span className="inline-block px-2.5 py-0.5 text-xs font-inter font-medium text-tsubaki-deep border border-tsubaki-rose/20 bg-tsubaki-rose/[0.06] rounded mb-3 tracking-wider">
           {type}
         </span>
-        <h3 className="font-noto-sans text-base font-semibold text-kuro-soft mb-2 group-hover:text-shu-deep transition-colors">{title}</h3>
-        <p className="font-noto-sans text-sm text-kuro-soft/65 mb-2">{context}</p>
+        <h3 className="font-cormorant text-lg font-semibold text-kuro-soft mb-2 group-hover:text-shu-deep transition-colors">{title}</h3>
+        <p className="font-inter text-sm text-kuro-soft/65 mb-2">{context}</p>
         {description && (
-          <p className="font-noto-sans text-xs text-kuro-soft/50 leading-relaxed">{description}</p>
+          <p className="font-inter text-xs text-kuro-soft/50 leading-relaxed">{description}</p>
         )}
       </div>
     </div>
