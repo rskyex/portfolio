@@ -145,7 +145,7 @@ export default function Home() {
 
               {/* Japanese name — large with gold neon glow */}
               <div className="mb-10">
-                <span className="font-kaisei text-7xl md:text-8xl lg:text-9xl text-kin/90 leading-none block drop-shadow-[0_0_30px_rgba(212,160,23,0.2)]">
+                <span className="font-noto-serif text-5xl md:text-6xl lg:text-7xl text-kin/90 leading-none block drop-shadow-[0_0_30px_rgba(212,160,23,0.2)]">
                   小柳璃紗
                 </span>
 
