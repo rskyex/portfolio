@@ -87,22 +87,34 @@ export default function AboutPage() {
         <div>
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Skills</h3>
           <div className="grid md:grid-cols-2 gap-6 mb-6">
-            {[
-              { title: 'Research', items: ['Qualitative analysis', 'Codebook design', 'Stakeholder interviewing', 'Primary-source synthesis', 'Briefing memo writing', 'Policy analysis', 'Public speaking'] },
-              { title: 'Policy / Communication', items: ['Public speaking', 'Moderation', 'Workshop / event design', 'Stakeholder coordination', 'Policy writing'] },
-            ].map((group, i) => (
-              <div key={i} className="card-washi card-washi-about p-6 relative overflow-hidden">
-                <div className="glow-bar absolute left-0 top-0 bottom-0" />
-                <div className="pl-4">
-                  <h4 className="font-noto-sans text-sm font-bold text-kuro-soft mb-3">{group.title}</h4>
-                  <ul className="space-y-1.5">
-                    {group.items.map((skill, j) => (
-                      <li key={j} className="font-noto-sans text-xs text-kuro-soft/60">{skill}</li>
-                    ))}
-                  </ul>
+            <div className="card-washi card-washi-about p-6 relative overflow-hidden">
+              <div className="glow-bar absolute left-0 top-0 bottom-0" />
+              <div className="pl-4">
+                <h4 className="font-noto-sans text-sm font-bold text-kuro-soft mb-4">Research</h4>
+                <div className="space-y-3">
+                  <p className="font-noto-sans text-xs text-kuro-soft/60 leading-relaxed">
+                    Legitimation, dual-use systems, authority architecture, strategic risk, space governance, nuclear governance, emerging technology governance, infrastructure politics.
+                  </p>
+                  <p className="font-noto-sans text-xs text-kuro-soft/60 leading-relaxed">
+                    Discourse and narrative analysis, qualitative coding, comparative political research, interpretive methods, policy framing, symbolic and mythic analysis, and research-to-interface translation.
+                  </p>
                 </div>
               </div>
-            ))}
+            </div>
+            <div className="card-washi card-washi-about p-6 relative overflow-hidden">
+              <div className="glow-bar absolute left-0 top-0 bottom-0" />
+              <div className="pl-4">
+                <h4 className="font-noto-sans text-sm font-bold text-kuro-soft mb-4">Policy / Communication</h4>
+                <div className="space-y-3">
+                  <p className="font-noto-sans text-xs text-kuro-soft/60 leading-relaxed">
+                    Policy analysis, strategic writing, briefing development, narrative framing, stakeholder engagement, cross-sector communication.
+                  </p>
+                  <p className="font-noto-sans text-xs text-kuro-soft/60 leading-relaxed">
+                    Public speaking, moderation, workshop and event design, interdisciplinary collaboration, knowledge synthesis, and public-facing translation of complex political and technological issues.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Technical & Computational Methods */}
