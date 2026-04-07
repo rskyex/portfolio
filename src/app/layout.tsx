@@ -38,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <head>
         <link rel="icon" href="/images/fabicon.png" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -48,7 +48,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="font-inter antialiased bg-kuro text-shiro">
+      <body className="font-inter antialiased bg-kuro text-shiro overflow-x-hidden">
         {/* Global hero background — fixed behind all pages */}
         <div className="fixed inset-0 -z-10">
           <div className="absolute inset-0 bg-kuro" />

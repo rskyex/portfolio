@@ -37,10 +37,10 @@ export default function SelfTracePlatformPage() {
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed mb-4">
             A reflective platform that helps users see how social media algorithms may shape what they post, repeat, remember, and gradually experience as their online self. Focuses on identity, self-presentation, and the long-term effects of platform incentives rather than simple engagement metrics.
           </p>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed">
             SelfTrace is part of the Govern the Human project, which explores how AI reshapes human choice, identity, and self-understanding across epistemic, ontological, and political layers.
           </p>
         </div>
@@ -55,7 +55,7 @@ export default function SelfTracePlatformPage() {
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Technical Stack</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Vercel'].map(tech => (
-              <span key={tech} className="font-noto-sans text-sm text-shiro/60 text-center py-2 border border-shiro/[0.05] rounded-sm">
+              <span key={tech} className="font-noto-sans text-sm text-shiro/90 text-center py-2 border border-shiro/[0.05] rounded-sm">
                 {tech}
               </span>
             ))}

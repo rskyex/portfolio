@@ -63,10 +63,10 @@ export default function MytheraPlatformPage() {
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed mb-4">
             MYTHERA is an interpretive studio and conceptual world for exploring invisible structures across selfhood, systems, literature, performance, and aesthetic form. It treats culture not as content to be consumed but as territory to be mapped &mdash; building navigable worlds from the patterns that shape how we read, perform, and become.
           </p>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed">
             Each world within MYTHERA isolates a different axis of meaning &mdash; from the architecture of personal identity to the legibility of aesthetic experience &mdash; and renders it explorable through interpretive frameworks, visual structure, and rigorous inquiry.
           </p>
         </div>
@@ -92,7 +92,7 @@ export default function MytheraPlatformPage() {
                 </div>
               )}
               <h3 className="font-noto-sans text-base font-medium text-shiro/90">{project.title}</h3>
-              <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">{project.description}</p>
+              <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed">{project.description}</p>
               <div className="flex flex-wrap gap-2">
                 {project.tags.map(tag => (
                   <Tag key={tag} label={tag} />
@@ -113,7 +113,7 @@ export default function MytheraPlatformPage() {
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Technical Stack</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {['Next.js', 'React', 'TypeScript', 'D3.js', 'Tailwind CSS', 'Vercel'].map(tech => (
-              <span key={tech} className="font-noto-sans text-sm text-shiro/60 text-center py-2 border border-shiro/[0.05] rounded-sm">
+              <span key={tech} className="font-noto-sans text-sm text-shiro/90 text-center py-2 border border-shiro/[0.05] rounded-sm">
                 {tech}
               </span>
             ))}

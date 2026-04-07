@@ -12,7 +12,7 @@ export default function ResearchPage() {
       />
 
       <div className="mt-6 mb-12">
-        <p className="font-noto-sans text-sm text-shiro/70 leading-relaxed max-w-2xl">
+        <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed max-w-2xl">
           Research spanning international security, space governance, nuclear governance, cyber governance, and emerging technology governance, with a conceptual focus on legitimation theory, dual-use governance, authority architecture, and responsible behaviour norms.
         </p>
       </div>
@@ -105,7 +105,7 @@ export default function ResearchPage() {
       <SectionDivider />
 
       <div className="text-center">
-        <p className="font-noto-sans text-xs text-shiro/45 tracking-wider">
+        <p className="font-noto-sans text-xs text-shiro/70 tracking-wider">
           Additional papers and conference work in development.
         </p>
       </div>

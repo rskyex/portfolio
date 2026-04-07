@@ -22,10 +22,10 @@ export default function ArtProjectPage() {
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed mb-4">
             An interdisciplinary art practice that connects visual thinking with broader research interests in governance, identity, and technology. The work engages with questions of representation, materiality, and conceptual framing that parallel and inform the research agenda.
           </p>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed">
             The practice spans visual art, conceptual work, and exhibition, with an international exhibition history that reflects the same cross-cultural and cross-disciplinary orientation as the broader portfolio. Art functions here not as a separate domain, but as an alternative mode of thinking about the same structural questions — authority, legitimacy, representation, and the architecture of meaning.
           </p>
         </div>
@@ -34,7 +34,7 @@ export default function ArtProjectPage() {
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Exhibition History</h3>
           <div className="flex flex-wrap gap-3 mb-8">
             {['Tokyo', 'New York', 'San Francisco', 'Athens', 'Barcelona', 'London'].map((city, i) => (
-              <span key={i} className="font-noto-sans text-sm text-shiro/60 py-1.5 px-3 border border-shiro/[0.08] rounded-sm">{city}</span>
+              <span key={i} className="font-noto-sans text-sm text-shiro/90 py-1.5 px-3 border border-shiro/[0.08] rounded-sm">{city}</span>
             ))}
           </div>
 
@@ -59,7 +59,7 @@ export default function ArtProjectPage() {
               </div>
               <h4 className="font-noto-sans text-sm font-medium text-shiro/80 mb-1">Monster Exhibition 2021</h4>
               <p className="font-noto-sans text-xs text-kin/60 mb-2">Tokyo, Shibuya</p>
-              <div className="font-noto-sans text-xs text-shiro/50 leading-relaxed space-y-1">
+              <div className="font-noto-sans text-xs text-shiro/80 leading-relaxed space-y-1">
                 <p>2022/2/18 (金) - 2/22 (火) 11:00~20:00</p>
                 <p>開催場所: 渋谷ヒカリエ 8/ COURT</p>
                 <p>主催: 一般社団法人Evolve Art &amp; Design Japan</p>
@@ -90,7 +90,7 @@ export default function ArtProjectPage() {
               </div>
               <h4 className="font-noto-sans text-sm font-medium text-shiro/80 mb-1">Boomer Gallery — &ldquo;Why do you do it?&rdquo;</h4>
               <p className="font-noto-sans text-xs text-kin/60 mb-2">London</p>
-              <div className="font-noto-sans text-xs text-shiro/50 leading-relaxed space-y-1">
+              <div className="font-noto-sans text-xs text-shiro/80 leading-relaxed space-y-1">
                 <p>November 10th – 15th, 2022</p>
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function ArtProjectPage() {
                 <a href="https://monsterex.info/san-francisco/" target="_blank" rel="noopener noreferrer" className="hover:text-kin transition-colors">Monster Exhibition</a>
               </h4>
               <p className="font-noto-sans text-xs text-kin/60 mb-2">San Francisco</p>
-              <div className="font-noto-sans text-xs text-shiro/50 leading-relaxed space-y-1">
+              <div className="font-noto-sans text-xs text-shiro/80 leading-relaxed space-y-1">
                 <p>November 15th – 22nd, 11:00 – 16:00</p>
                 <p>790 Pennsylvania Residence 1F</p>
               </div>
@@ -139,7 +139,7 @@ export default function ArtProjectPage() {
               </div>
               <h4 className="font-noto-sans text-sm font-medium text-shiro/80 mb-1">ART ON LOOP</h4>
               <p className="font-noto-sans text-xs text-kin/60 mb-2">London &amp; Athens</p>
-              <div className="font-noto-sans text-xs text-shiro/50 leading-relaxed space-y-1">
+              <div className="font-noto-sans text-xs text-shiro/80 leading-relaxed space-y-1">
                 <p>January 12th – 28th, 2024</p>
                 <p>The Factory, 21-31 Shacklewell Ln, London, E8 2DA</p>
                 <p>Πραξιτέλους 26, Αθήνα, 105 61</p>
@@ -164,7 +164,7 @@ export default function ArtProjectPage() {
               />
               <h4 className="font-noto-sans text-sm font-medium text-shiro/80 mb-1">New York Cinema Screening</h4>
               <p className="font-noto-sans text-xs text-kin/60 mb-2">New York — Presented by Artspace Innovation</p>
-              <div className="font-noto-sans text-xs text-shiro/50 leading-relaxed space-y-1">
+              <div className="font-noto-sans text-xs text-shiro/80 leading-relaxed space-y-1">
                 <p>19th March 2024, 19:00 – 21:00 (New York time)</p>
                 <p>Stuart Cinema, 79 West Street, Brooklyn NY 11222</p>
               </div>
@@ -181,7 +181,7 @@ export default function ArtProjectPage() {
               />
               <h4 className="font-noto-sans text-sm font-medium text-shiro/80 mb-1">ART ON LOOP — Digital Exhibition</h4>
               <p className="font-noto-sans text-xs text-kin/60 mb-2">London &amp; Athens</p>
-              <div className="font-noto-sans text-xs text-shiro/50 leading-relaxed space-y-1">
+              <div className="font-noto-sans text-xs text-shiro/80 leading-relaxed space-y-1">
                 <p>Private Viewing: Friday, September 20th, 2024, 19:30 – 22:00</p>
                 <p>Open to the public until September 29th, 2024</p>
                 <p>The Factory, 21-31 Shacklewell Ln, London, E8 2DA</p>
@@ -198,7 +198,7 @@ export default function ArtProjectPage() {
           <div className="space-y-4">
             <div className="border-l-2 border-kin/30 pl-5">
               <h4 className="font-noto-sans text-sm font-medium text-shiro/80 mb-1">Podcast — &ldquo;To Where I Belong?&rdquo;</h4>
-              <p className="font-noto-sans text-xs text-shiro/50 leading-relaxed">
+              <p className="font-noto-sans text-xs text-shiro/80 leading-relaxed">
                 &ldquo;Japan: Art and Philosophy&rdquo;
               </p>
               <a href="https://open.spotify.com/episode/78ykawkPnp4QSFnVDRBMJU?si=SJi3UlATQmWv_pkhs4tGog" target="_blank" rel="noopener noreferrer" className="font-noto-sans text-xs text-kin/60 hover:text-kin transition-colors underline">
@@ -232,7 +232,7 @@ export default function ArtProjectPage() {
               'International exhibition and conceptual work',
               'The architecture of meaning and authority',
             ].map((theme, i) => (
-              <li key={i} className="font-noto-sans text-sm text-shiro/60 leading-relaxed flex items-start gap-2">
+              <li key={i} className="font-noto-sans text-sm text-shiro/90 leading-relaxed flex items-start gap-2">
                 <span className="text-kin/50 mt-1">—</span>
                 {theme}
               </li>

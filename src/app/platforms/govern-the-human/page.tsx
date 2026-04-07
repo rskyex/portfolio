@@ -58,10 +58,10 @@ export default function GovernTheHumanPlatformPage() {
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed mb-4">
             Govern the Human is a unified platform that consolidates Narrative Drift, SelfTrace, and Ontological Governance Observatory into a single analytical environment. It explores how AI systems reshape human choice, identity, and self-understanding &mdash; and argues that current governance frameworks miss a deeper problem: AI can reshape the human subject itself.
           </p>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed">
             The platform maps these changes across epistemic, ontological, and political layers, combining interactive simulation with research-driven analysis to argue for a new form of second-order governance.
           </p>
         </div>
@@ -76,7 +76,7 @@ export default function GovernTheHumanPlatformPage() {
         {subProjects.map((project) => (
           <div key={project.title} className="panel rounded-sm p-8 space-y-4">
             <h3 className="font-noto-sans text-base font-medium text-shiro/90">{project.title}</h3>
-            <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">{project.description}</p>
+            <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed">{project.description}</p>
             <div className="flex flex-wrap gap-2">
               {project.tags.map(tag => (
                 <Tag key={tag} label={tag} />
@@ -89,7 +89,7 @@ export default function GovernTheHumanPlatformPage() {
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Technical Stack</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {['Next.js', 'React', 'TypeScript', 'D3.js', 'Tailwind CSS', 'Vercel'].map(tech => (
-              <span key={tech} className="font-noto-sans text-sm text-shiro/60 text-center py-2 border border-shiro/[0.05] rounded-sm">
+              <span key={tech} className="font-noto-sans text-sm text-shiro/90 text-center py-2 border border-shiro/[0.05] rounded-sm">
                 {tech}
               </span>
             ))}

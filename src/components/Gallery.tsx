@@ -44,7 +44,7 @@ export default function Gallery({ images, title = 'Gallery' }: GalleryProps) {
               className="w-full h-40 md:h-48 cursor-pointer"
             />
             {image.caption && (
-              <p className="font-noto-sans text-xs text-shiro/40 mt-1.5 px-1">{image.caption}</p>
+              <p className="font-noto-sans text-xs text-shiro/70 mt-1.5 px-1">{image.caption}</p>
             )}
           </button>
         ))}
@@ -63,7 +63,7 @@ export default function Gallery({ images, title = 'Gallery' }: GalleryProps) {
               className="w-full h-auto max-h-[80vh] object-contain rounded"
             />
             {images[selectedIndex].caption && (
-              <p className="font-noto-sans text-sm text-shiro/60 text-center mt-3">{images[selectedIndex].caption}</p>
+              <p className="font-noto-sans text-sm text-shiro/90 text-center mt-3">{images[selectedIndex].caption}</p>
             )}
 
             {/* Navigation */}
@@ -87,7 +87,7 @@ export default function Gallery({ images, title = 'Gallery' }: GalleryProps) {
             {/* Close */}
             <button
               onClick={() => setSelectedIndex(null)}
-              className="absolute -top-10 right-0 text-shiro/50 hover:text-shiro text-sm font-noto-sans transition-colors"
+              className="absolute -top-10 right-0 text-shiro/80 hover:text-shiro text-sm font-noto-sans transition-colors"
             >
               Close
             </button>

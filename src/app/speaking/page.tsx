@@ -11,7 +11,7 @@ export default function SpeakingPage() {
       />
 
       <div className="mt-6 mb-12">
-        <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed max-w-2xl">
+        <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed max-w-2xl">
           Selected policy engagement, roundtable participation, youth representation, and dialogue contribution across international forums and parliamentary settings.
         </p>
       </div>

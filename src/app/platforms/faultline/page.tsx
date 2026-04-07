@@ -64,10 +64,10 @@ export default function FaultlinePlatformPage() {
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed mb-4">
             Faultline is a unified strategic infrastructure risk platform that consolidates three domain-specific tools &mdash; Orbital Risk Tracker, Global Nuclear Infrastructure Atlas, and Cyber Escalation Atlas &mdash; into a single analytical suite.
           </p>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed">
             Each module translates governance theory into operational platforms across orbital, nuclear, and cyber domains, connecting conceptual frameworks on legitimacy, authority, and escalation with applied policy questions.
           </p>
         </div>
@@ -99,7 +99,7 @@ export default function FaultlinePlatformPage() {
               height={450}
               className="w-full h-48 md:h-64"
             />
-            <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">{project.description}</p>
+            <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed">{project.description}</p>
             <div className="flex flex-wrap gap-2">
               {project.tags.map(tag => (
                 <Tag key={tag} label={tag} />
@@ -112,7 +112,7 @@ export default function FaultlinePlatformPage() {
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Technical Stack</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {['Next.js', 'React', 'TypeScript', 'D3.js', 'Leaflet', 'Tailwind CSS', 'Recharts', 'Vercel'].map(tech => (
-              <span key={tech} className="font-noto-sans text-sm text-shiro/60 text-center py-2 border border-shiro/[0.05] rounded-sm">
+              <span key={tech} className="font-noto-sans text-sm text-shiro/90 text-center py-2 border border-shiro/[0.05] rounded-sm">
                 {tech}
               </span>
             ))}

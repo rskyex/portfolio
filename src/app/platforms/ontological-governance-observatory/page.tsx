@@ -29,10 +29,10 @@ export default function OntologicalGovernanceObservatoryPage() {
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed mb-4">
             A research platform that shows how current AI governance frameworks miss a deeper problem: AI does not only create risks and outputs, but can also reshape the human subject itself. Maps these changes across epistemic, ontological, and political layers to argue for a new form of second-order governance.
           </p>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed">
             The Ontological Governance Observatory is part of the Govern the Human project, which explores how AI reshapes human choice, identity, and self-understanding.
           </p>
         </div>
@@ -47,7 +47,7 @@ export default function OntologicalGovernanceObservatoryPage() {
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Technical Stack</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {['Next.js', 'React', 'TypeScript', 'D3.js', 'Tailwind CSS', 'Vercel'].map(tech => (
-              <span key={tech} className="font-noto-sans text-sm text-shiro/60 text-center py-2 border border-shiro/[0.05] rounded-sm">
+              <span key={tech} className="font-noto-sans text-sm text-shiro/90 text-center py-2 border border-shiro/[0.05] rounded-sm">
                 {tech}
               </span>
             ))}

@@ -18,7 +18,7 @@ export default function StatList({ stats }: StatListProps) {
             <div className="font-kaisei text-3xl md:text-4xl text-kin drop-shadow-[0_0_16px_rgba(212,160,23,0.2)] group-hover:drop-shadow-[0_0_24px_rgba(212,160,23,0.35)] transition-all">
               {stat.value}
             </div>
-            <div className="font-noto-sans text-[11px] text-shiro/60 mt-1.5 tracking-widest uppercase font-medium">{stat.label}</div>
+            <div className="font-noto-sans text-[11px] text-shiro/90 mt-1.5 tracking-widest uppercase font-medium">{stat.label}</div>
           </div>
         </div>
       ))}
