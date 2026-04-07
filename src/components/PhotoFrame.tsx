@@ -48,7 +48,7 @@ export default function PhotoFrame({
           alt={alt}
           width={width}
           height={height}
-          className="relative object-cover w-full h-full"
+          className="relative object-contain w-full h-full"
           loading={priority ? 'eager' : 'lazy'}
           onError={() => setHasError(true)}
         />

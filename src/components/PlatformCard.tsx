@@ -21,12 +21,12 @@ export default function PlatformCard({ href, title, description, status, liveUrl
 
         {/* Hero image area */}
         {image && (
-          <div className="relative w-full h-44 md:h-52 overflow-hidden">
+          <div className="relative w-full aspect-[1200/630] overflow-hidden">
             <Image
               src={image}
               alt={title}
               fill
-              className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
+              className="object-contain group-hover:scale-[1.03] transition-transform duration-700"
             />
           </div>
         )}
