@@ -4,10 +4,7 @@ import Tag from '@/components/Tag';
 
 import SectionHeader from '@/components/SectionHeader';
 import SectionDivider from '@/components/SectionDivider';
-import FlagshipCard from '@/components/FlagshipCard';
-import PlatformCard from '@/components/PlatformCard';
 import ResearchListItem from '@/components/ResearchListItem';
-import ProjectCard from '@/components/ProjectCard';
 import SpeakingCard from '@/components/SpeakingCard';
 import Tsubaki3D from '@/components/Tsubaki3D';
 
@@ -20,6 +17,57 @@ const tags = [
   'Governance Architecture',
   'Legitimacy & Authority',
   'Strategic Risk',
+];
+
+/* ─── Platform Ecosystem Data ─── */
+
+interface ChildPlatform {
+  name: string;
+  href: string;
+  description: string;
+  status: 'Live' | 'In Progress';
+}
+
+interface ParentPlatform {
+  title: string;
+  href: string;
+  liveUrl: string;
+  description: string;
+  children: ChildPlatform[];
+}
+
+const platforms: ParentPlatform[] = [
+  {
+    title: 'Govern the Human',
+    href: '/platforms/govern-the-human',
+    liveUrl: 'https://govern-the-human.vercel.app/',
+    description: 'Exploring how governance turns back toward the human subject — narrative, selfhood, and interpretive systems.',
+    children: [
+      { name: 'Narrative Drift', href: '/platforms/narrative-drift', description: 'AI influence on choice, memory, and self-understanding', status: 'Live' },
+      { name: 'SelfTrace', href: '/platforms/selftrace', description: 'Algorithmic shaping of identity and self-presentation', status: 'Live' },
+      { name: 'Ontological Governance Observatory', href: '/platforms/ontological-governance-observatory', description: 'AI\'s transformation of the human subject across governance layers', status: 'In Progress' },
+    ],
+  },
+  {
+    title: 'Faultline',
+    href: '/platforms/faultline',
+    liveUrl: 'https://faultline-nqmm.vercel.app/',
+    description: 'Strategic risk suite mapping escalation, infrastructure, and geopolitical fragility across interconnected systems.',
+    children: [
+      { name: 'Orbital Risk Tracker', href: '/platforms/orbital', description: 'ASAT events, proximity operations, and space escalation', status: 'Live' },
+      { name: 'Global Nuclear Infrastructure Atlas', href: '/platforms/nuclear', description: 'Civilian nuclear infrastructure, arsenals, and policy context', status: 'Live' },
+      { name: 'Cyber Escalation Atlas', href: '/platforms/cyber', description: 'Cyber incidents as strategic behaviour and governance signals', status: 'Live' },
+    ],
+  },
+  {
+    title: 'MYTHERA',
+    href: '/platforms/mythera',
+    liveUrl: 'https://mythera.vercel.app/',
+    description: 'An interpretive studio where selfhood, culture, performance, and aesthetic form become explorable worlds.',
+    children: [
+      { name: 'Scoreless', href: '/platforms/scoreless', description: 'Classical music structure and meaning without score literacy', status: 'In Progress' },
+    ],
+  },
 ];
 
 
@@ -108,7 +156,7 @@ export default function Home() {
 
               {/* Description */}
               <p className="font-noto-sans text-sm text-shiro/70 leading-[1.9] max-w-xl mb-10">
-                Born in 2003, Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of space governance, nuclear governance, cyber governance, strategic risk, and emerging technology governance. Her research is especially concerned with legitimation theory, dual-use governance, authority architecture, responsible behaviour norms, and international security. She independently designs and builds public-facing research platforms spanning AI governance, strategic infrastructure risk, and classical music analysis.
+                Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of space governance, nuclear governance, cyber governance, strategic risk, and emerging technology governance. Her research centres on legitimation theory, dual-use governance, authority architecture, responsible behaviour norms, and international security. She independently designs and builds public-facing research platforms spanning AI governance, strategic infrastructure risk, and classical music analysis.
               </p>
 
               {/* Tags */}
@@ -149,67 +197,70 @@ export default function Home() {
       <SectionDivider />
 
       {/* ═══════════════════════════════════════════════════
-          PLATFORMS & RESEARCH TOOLS
+          PLATFORM ECOSYSTEM
           ═══════════════════════════════════════════════════ */}
       <section className="max-w-6xl mx-auto px-6 pb-16 relative">
         <div className="absolute inset-0 asanoha-bg opacity-30 pointer-events-none" />
         <div className="relative">
-          <SectionHeader kanji="台" english="Platforms & Research Tools" subtitle="Independently designed research platforms spanning two flagship systems" />
+          <SectionHeader kanji="台" english="Platform Ecosystem" subtitle="Three parent platforms and their linked research tools" />
 
-          {/* Govern the Human — Flagship */}
-          <div className="mt-10">
-            <FlagshipCard
-              href="/platforms/govern-the-human"
-              title="Govern the Human"
-              description="A flagship research platform exploring how governance turns back toward the human subject."
-              includes="Includes three linked projects on narrative, selfhood, and interpretive systems."
-              liveUrl="https://govern-the-human.vercel.app/"
-              image="/images/govern the human og.png"
-              subProjects={[
-                { name: 'Narrative Drift', href: '/platforms/narrative-drift' },
-                { name: 'SelfTrace', href: '/platforms/selftrace' },
-                { name: 'Ontological Governance Observatory', href: '/platforms/ontological-governance-observatory' },
-              ]}
-            />
-          </div>
+          {/* 3-column parent grid on desktop */}
+          <div className="mt-10 grid lg:grid-cols-3 gap-8">
+            {platforms.map((platform) => (
+              <div key={platform.title} className="flex flex-col">
+                {/* Parent card */}
+                <Link href={platform.href} className="block group">
+                  <div className="card-washi card-washi-platform card-hover relative overflow-hidden border border-kin/15">
+                    <div className="glow-bar absolute left-0 top-0 bottom-0 z-10" />
+                    <div className="absolute left-[3px] top-0 bottom-0 w-[1px] bg-gradient-to-b from-kin/20 via-kin/10 to-transparent z-10" />
 
-          {/* Faultline — Flagship */}
-          <div className="mt-8">
-            <FlagshipCard
-              href="/platforms/faultline"
-              title="Faultline"
-              description="A flagship strategic risk suite mapping escalation, infrastructure, and geopolitical fragility across interconnected systems."
-              includes="Includes three linked projects."
-              liveUrl="https://faultline-nqmm.vercel.app/"
-              image="/images/faultline og.png"
-              subProjects={[
-                { name: 'Orbital Risk Tracker', href: '/platforms/orbital' },
-                { name: 'Global Nuclear Infrastructure Atlas', href: '/platforms/nuclear' },
-                { name: 'Cyber Escalation Atlas', href: '/platforms/cyber' },
-              ]}
-            />
-          </div>
+                    <div className="relative pl-4 p-6">
+                      <div className="flex items-start justify-between mb-2">
+                        <h3 className="font-kaisei text-lg font-semibold text-kuro-soft pr-3 group-hover:text-shu-deep transition-colors">
+                          {platform.title}
+                        </h3>
+                        <span className="shrink-0 px-2 py-0.5 text-[10px] font-noto-sans font-bold tracking-[0.15em] uppercase bg-kuro/[0.06] text-kuro-soft/50 border border-kuro-soft/10 rounded-sm">
+                          Flagship
+                        </span>
+                      </div>
 
-          {/* Independent projects */}
-          <div className="mt-8 grid md:grid-cols-2 gap-6">
-            <PlatformCard
-              href="/platforms/promise"
-              title="Japan Promise Tracker"
-              description="Tracking Japanese government policy commitments and their fulfilment status across governance domains."
-              status="Live"
-              liveUrl="https://jp-ver-japan-promise-tracker.vercel.app"
-              tags={['Japan', 'Policy Accountability', 'Government Commitments']}
-              image="/images/promise-platform.jpg"
-            />
-            <PlatformCard
-              href="/platforms/mythera"
-              title="MYTHERA"
-              description="A mythic and interpretive studio where selfhood, culture, performance, and aesthetic form become explorable worlds."
-              status="Live"
-              liveUrl="https://mythera.vercel.app/"
-              tags={['Interpretive Worlds', 'Selfhood', 'Literature & Performance']}
-              image="/images/mythera og.png"
-            />
+                      <p className="font-noto-sans text-sm text-kuro-soft/65 leading-relaxed mb-4">
+                        {platform.description}
+                      </p>
+
+                      <span className="font-noto-sans text-xs text-kin-deep/70 group-hover:text-shu tracking-widest transition-colors uppercase font-medium">
+                        View platform →
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Child cards */}
+                <div className="mt-3 space-y-2">
+                  {platform.children.map((child) => (
+                    <Link key={child.name} href={child.href} className="block group/child">
+                      <div className="relative overflow-hidden rounded-md border border-shiro/[0.06] bg-gradient-to-br from-[#0e0f1a] to-[#0a0b12] px-4 py-3 transition-all duration-300 hover:border-kin/20 hover:bg-gradient-to-br hover:from-[#111225] hover:to-[#0c0d16]">
+                        <div className="flex items-start justify-between gap-3">
+                          <div className="min-w-0">
+                            <h4 className="font-noto-sans text-sm font-medium text-shiro/80 group-hover/child:text-kin-glow transition-colors truncate">
+                              {child.name}
+                            </h4>
+                            <p className="font-noto-sans text-xs text-shiro/40 leading-relaxed mt-0.5 line-clamp-1">
+                              {child.description}
+                            </p>
+                          </div>
+                          {child.status === 'In Progress' && (
+                            <span className="shrink-0 mt-0.5 px-1.5 py-px text-[9px] font-noto-sans font-medium tracking-wider text-kin/60 border border-kin/15 rounded-sm">
+                              WIP
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
 
           <div className="mt-8 text-right">
@@ -254,49 +305,6 @@ export default function Home() {
           <div className="mt-8 text-right">
             <Link href="/research" className="font-noto-sans text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
               View all research →
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <SectionDivider />
-
-      {/* ═══════════════════════════════════════════════════
-          BACKGROUND & FIELDWORK
-          ═══════════════════════════════════════════════════ */}
-      <section className="max-w-6xl mx-auto px-6 pb-16 relative">
-        <div className="absolute inset-0 seigaiha-bg opacity-20 pointer-events-none" />
-        <div className="relative">
-          <SectionHeader kanji="業" english="Background & Fieldwork" subtitle="Fieldwork, leadership, and interdisciplinary engagement" />
-          <div className="mt-8 grid md:grid-cols-2 gap-6">
-            <ProjectCard
-              href="/projects/fukushima"
-              title="Fukushima Field Research"
-              description="Multi-site fieldwork in Futaba and Namie districts examining post-disaster governance, trust, and recovery."
-              image="/images/fukushima.jpg"
-              imageAlt="Fukushima fieldwork"
-              period="2019–2024"
-            />
-            <ProjectCard
-              href="/projects/afrecos"
-              title="AFRECOS"
-              description="Co-founded a 10+ country network for cultural and policy events bridging Africa and Japan."
-              image="/images/afrecos.jpg"
-              imageAlt="AFRECOS"
-              period="2024"
-              role="Co-Founder & President"
-            />
-            <ProjectCard
-              href="/projects/art"
-              title="Art Practice"
-              description="Interdisciplinary art practice spanning visual thinking, international exhibition, and conceptual work."
-              image="/images/art.JPG"
-              imageAlt="Art practice"
-            />
-          </div>
-          <div className="mt-8 text-right">
-            <Link href="/projects" className="font-noto-sans text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
-              View all background & fieldwork →
             </Link>
           </div>
         </div>
