@@ -59,7 +59,7 @@ export default function FaultlinePlatformPage() {
           alt="Faultline — Strategic Infrastructure Risk Suite"
           width={800}
           height={450}
-          className="w-full h-64 md:h-80"
+          className="w-full aspect-[1200/630]"
         />
 
         <div className="panel rounded-sm p-8">
@@ -97,7 +97,7 @@ export default function FaultlinePlatformPage() {
               alt={project.title}
               width={800}
               height={450}
-              className="w-full h-48 md:h-64"
+              className="w-full aspect-[1200/630]"
             />
             <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed">{project.description}</p>
             <div className="flex flex-wrap gap-2">

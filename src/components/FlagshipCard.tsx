@@ -26,12 +26,12 @@ export default function FlagshipCard({ href, title, description, includes, image
 
         {/* Hero image */}
         {image && (
-          <div className="relative w-full h-52 md:h-64 overflow-hidden">
+          <div className="relative w-full aspect-[1200/630] overflow-hidden">
             <Image
               src={image}
               alt={title}
               fill
-              className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
+              className="object-contain group-hover:scale-[1.03] transition-transform duration-700"
             />
             {/* Flagship label overlay */}
             <div className="absolute top-4 left-4 z-10">

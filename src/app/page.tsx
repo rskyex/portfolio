@@ -262,12 +262,12 @@ export default function Home() {
                     <div className="absolute left-[3px] top-0 bottom-0 w-[1px] bg-gradient-to-b from-kin/20 via-kin/10 to-transparent z-10" />
 
                     {/* Parent OG image */}
-                    <div className="relative w-full h-36 overflow-hidden">
+                    <div className="relative w-full aspect-[1200/630] overflow-hidden">
                       <Image
                         src={platform.image}
                         alt={platform.title}
                         fill
-                        className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
+                        className="object-contain group-hover:scale-[1.03] transition-transform duration-700"
                       />
                       <div className="absolute top-3 left-3 z-10">
                         <span className="px-2 py-0.5 text-[9px] font-inter font-bold tracking-[0.2em] uppercase bg-kuro/80 backdrop-blur-sm text-kin border border-kin/30 rounded-sm shadow-[0_0_10px_rgba(212,160,23,0.12)]">
@@ -297,22 +297,22 @@ export default function Home() {
                   {platform.children.map((child) => (
                     <Link key={child.name} href={child.href} className="block group/child">
                       <div className="relative overflow-hidden rounded-md border border-shiro/[0.06] bg-gradient-to-br from-[#0e0f1a] to-[#0a0b12] transition-all duration-300 hover:border-kin/20 hover:from-[#111225] hover:to-[#0c0d16]">
-                        <div className="flex items-stretch">
-                          {/* Child thumbnail */}
-                          <div className="relative w-16 shrink-0 overflow-hidden">
+                        <div className="flex flex-col">
+                          {/* Child OG image */}
+                          <div className="relative w-full aspect-[1200/630] overflow-hidden">
                             <Image
                               src={child.image}
                               alt={child.name}
                               fill
-                              className="object-cover group-hover/child:scale-[1.05] transition-transform duration-500"
+                              className="object-contain group-hover/child:scale-[1.03] transition-transform duration-500"
                             />
                           </div>
-                          <div className="flex items-start justify-between gap-2 px-3 py-2.5 min-w-0">
+                          <div className="flex items-start justify-between gap-2 px-3 py-2.5">
                             <div className="min-w-0">
-                              <h4 className="font-inter text-sm font-medium text-shiro/80 group-hover/child:text-kin-glow transition-colors truncate">
+                              <h4 className="font-inter text-sm font-medium text-shiro/80 group-hover/child:text-kin-glow transition-colors">
                                 {child.name}
                               </h4>
-                              <p className="font-inter text-xs text-shiro/70 leading-relaxed mt-0.5 line-clamp-1">
+                              <p className="font-inter text-xs text-shiro/70 leading-relaxed mt-0.5 line-clamp-2">
                                 {child.description}
                               </p>
                             </div>

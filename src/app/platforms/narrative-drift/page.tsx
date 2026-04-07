@@ -32,7 +32,7 @@ export default function NarrativeDriftPlatformPage() {
           alt="Narrative Drift"
           width={800}
           height={450}
-          className="w-full h-64 md:h-80"
+          className="w-full aspect-[1200/630]"
         />
 
         <div className="panel rounded-sm p-8">
