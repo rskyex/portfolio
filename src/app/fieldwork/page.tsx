@@ -18,7 +18,7 @@ export default function FieldworkPage() {
       />
 
       <div className="mt-6 mb-12">
-        <p className="font-inter text-sm text-shiro/60 leading-relaxed max-w-2xl">
+        <p className="font-inter text-sm text-shiro/90 leading-relaxed max-w-2xl">
           Leadership, fieldwork, institution-building, and interdisciplinary engagement across research, policy, cultural, and artistic domains.
         </p>
       </div>
@@ -68,7 +68,7 @@ export default function FieldworkPage() {
       {/* Speaking & Policy Engagement */}
       <div className="mt-10 mb-8">
         <h3 className="font-inter text-xs text-kin tracking-[0.25em] uppercase font-semibold">Speaking & Policy Engagement</h3>
-        <p className="font-inter text-sm text-shiro/50 leading-relaxed max-w-2xl mt-2">
+        <p className="font-inter text-sm text-shiro/80 leading-relaxed max-w-2xl mt-2">
           Selected policy engagement, roundtable participation, youth representation, and dialogue contribution across international forums and parliamentary settings.
         </p>
       </div>

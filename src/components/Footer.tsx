@@ -16,7 +16,7 @@ export default function Footer() {
             <Tsubaki3D size="sm" />
             <div>
               <span className="font-noto-serif text-lg text-kin/90 drop-shadow-[0_0_6px_rgba(212,160,23,0.15)]">小柳璃紗</span>
-              <span className="block font-inter text-[10px] text-shiro/45 tracking-[0.3em] uppercase mt-0.5">
+              <span className="block font-inter text-[10px] text-shiro/75 tracking-[0.3em] uppercase mt-0.5">
                 Risa Koyanagi
               </span>
             </div>
@@ -32,7 +32,7 @@ export default function Footer() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="font-inter text-xs text-shiro/45 hover:text-kin/80 transition-colors tracking-wider uppercase"
+                className="font-inter text-xs text-shiro/75 hover:text-kin/80 transition-colors tracking-wider uppercase"
               >
                 {item.label}
               </Link>
@@ -42,7 +42,7 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-end gap-1.5">
             <a
               href="mailto:risakyng@gmail.com"
-              className="font-inter text-xs text-shiro/45 hover:text-tsubaki-blush/80 transition-colors"
+              className="font-inter text-xs text-shiro/75 hover:text-tsubaki-blush/80 transition-colors"
             >
               risakyng@gmail.com
             </a>
@@ -50,7 +50,7 @@ export default function Footer() {
               href="https://linkedin.com/in/rskyex"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-inter text-xs text-shiro/45 hover:text-tsubaki-blush/80 transition-colors"
+              className="font-inter text-xs text-shiro/75 hover:text-tsubaki-blush/80 transition-colors"
             >
               linkedin.com/in/rskyex
             </a>
@@ -59,7 +59,7 @@ export default function Footer() {
 
         <div className="glow-line-gold mt-12 mb-5 max-w-xs mx-auto" />
 
-        <p className="font-inter text-[10px] text-shiro/30 text-center tracking-widest uppercase">
+        <p className="font-inter text-[10px] text-shiro/60 text-center tracking-widest uppercase">
           &copy; {new Date().getFullYear()} Risa Koyanagi
         </p>
       </div>

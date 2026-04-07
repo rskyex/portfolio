@@ -26,7 +26,7 @@ export default function SectionHeader({ english, subtitle, id }: SectionHeaderPr
             {english}
           </h2>
           {subtitle && (
-            <p className="font-inter text-xs text-shiro/55 mt-1.5 tracking-wider">
+            <p className="font-inter text-xs text-shiro/80 mt-1.5 tracking-wider">
               {subtitle}
             </p>
           )}

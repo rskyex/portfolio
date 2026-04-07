@@ -20,10 +20,10 @@ export default function ScorelessPlatformPage() {
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed mb-4">
             A music analysis platform that makes classical music&apos;s structure, logic, and meaning accessible without requiring score literacy. Instead of describing works as simply &ldquo;beautiful&rdquo; or &ldquo;sad,&rdquo; it visualises thematic repetition, tension and release, formal development, and the intellectual and aesthetic implications that emerge &mdash; through timelines, motif displays, and commentary cards.
           </p>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed">
             Focused on public domain classical works, it treats music not as a matter of taste but as structured thought unfolding in time. Scoreless is part of the MYTHERA project.
           </p>
         </div>
@@ -38,7 +38,7 @@ export default function ScorelessPlatformPage() {
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Technical Stack</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {['Next.js', 'React', 'TypeScript', 'D3.js', 'Tailwind CSS', 'Vercel'].map(tech => (
-              <span key={tech} className="font-noto-sans text-sm text-shiro/60 text-center py-2 border border-shiro/[0.05] rounded-sm">
+              <span key={tech} className="font-noto-sans text-sm text-shiro/90 text-center py-2 border border-shiro/[0.05] rounded-sm">
                 {tech}
               </span>
             ))}

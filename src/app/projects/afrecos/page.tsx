@@ -23,10 +23,10 @@ export default function AfrecosProjectPage() {
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed mb-4">
             AFRECOS is a 10+ country network founded to bridge African and Japanese cultural and policy communities. As Co-Founder and President, Risa Koyanagi built the organisation from the ground up, coordinating cultural exchanges, policy events, and public engagement activities across a diverse international membership.
           </p>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed">
             Key achievements include organising events with around 70–80 attendees and convening a policy talk at the Japanese House of Councillors with approximately 50 stakeholders from government, civil society, and the diplomatic community.
           </p>
         </div>
@@ -47,7 +47,7 @@ export default function AfrecosProjectPage() {
             ].map((stat, i) => (
               <div key={i} className="text-center">
                 <div className="font-kaisei text-2xl text-kin/50">{stat.value}</div>
-                <div className="font-noto-sans text-xs text-shiro/38 mt-1">{stat.label}</div>
+                <div className="font-noto-sans text-xs text-shiro/70 mt-1">{stat.label}</div>
               </div>
             ))}
           </div>

@@ -23,13 +23,13 @@ export default function PeaceProjectPage() {
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed mb-4">
             A research community and discussion platform within Sophia University&apos;s Professor Daisaku Higashi Peacebuilding and International Cooperation Laboratory. As President, Risa Koyanagi led discussions on global conflict resolution and diplomacy, facilitating seminars where students analysed peacebuilding strategies with a particular focus on conflict mediation in Ukraine, Afghanistan, Iraq, and South Sudan.
           </p>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed mb-4">
             As part of her leadership, she organised a dialogue with Ukrainian students, fostering firsthand perspectives and deeper discussions on the Ukraine war. She also designed promotional materials to enhance engagement and outreach. Through this role, she aimed to deepen understanding of international peace efforts while connecting students with experts in the field.
           </p>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed">
             The laboratory provided an intellectually serious setting for sustained dialogue between students, researchers, and policy practitioners.
           </p>
         </div>
@@ -63,7 +63,7 @@ export default function PeaceProjectPage() {
               'Connected students with experts in international peace efforts',
               'Engagement with policy practitioners and academic researchers',
             ].map((item, i) => (
-              <li key={i} className="font-noto-sans text-sm text-shiro/60 leading-relaxed flex items-start gap-2">
+              <li key={i} className="font-noto-sans text-sm text-shiro/90 leading-relaxed flex items-start gap-2">
                 <span className="text-shu/30 mt-1">—</span>
                 {item}
               </li>

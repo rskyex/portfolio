@@ -22,13 +22,13 @@ export default function OntologicalGovernancePage() {
           <div className="glow-bar absolute left-0 top-0 bottom-0" />
           <div className="pl-4">
             <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
-            <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
+            <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed mb-4">
               Current AI governance frameworks — including the EU AI Act and emerging multilateral instruments — share a common architecture: identify the technology, assess its harms, and build rules accordingly. The human subject at the centre of these calculations is treated as a stable given. This assumption is no longer tenable.
             </p>
-            <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
+            <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed mb-4">
               AI systems now intervene across three cumulative layers of human existence. Epistemologically, they shape what people can know: algorithmic curation constructs information environments in ways that awareness alone cannot undo. Ontologically, they intervene in who people are: recommendation systems and personalised environments reshape the narrative materials through which individuals constitute their own identity and memory over time. Politically, they erode the conditions of genuine self-governance: the subjects who participate in democratic deliberation are increasingly constituted by the systems that governance is supposed to oversee.
             </p>
-            <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
+            <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed">
               Drawing on theories of narrative identity and the technics of memory, this presentation introduces ontological governance: a second-order analytical layer that asks not only what AI systems do, but what they do to the knowing, existing, and self-governing human beings whose dignity and agency governance exists to protect. Without this layer, current frameworks risk protecting a version of the human that the technology is already in the process of reshaping.
             </p>
           </div>
@@ -57,7 +57,7 @@ export default function OntologicalGovernancePage() {
                 'What does a second-order governance framework look like — one that governs not only AI systems but their effects on the subjects of governance itself?',
                 'Why do current frameworks like the EU AI Act fail to account for the ontological dimension of AI intervention?',
               ].map((q, i) => (
-                <li key={i} className="font-noto-sans text-sm text-shiro/60 leading-relaxed flex items-start gap-2">
+                <li key={i} className="font-noto-sans text-sm text-shiro/90 leading-relaxed flex items-start gap-2">
                   <span className="text-shu/30 mt-1">—</span>
                   {q}
                 </li>

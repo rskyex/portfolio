@@ -23,17 +23,17 @@ export default function FukushimaProjectPage() {
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed mb-4">
             Multi-site fieldwork conducted across the Futaba and Namie districts of Fukushima Prefecture between 2019 and 2024. The research examines post-disaster governance, focusing on the persistent gap between official recovery policy and the lived experience of displaced communities.
           </p>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed">
             Over six years of engagement, the fieldwork has involved interviews with evacuees, municipal mayors, town leaders, officials from the Ministry of Economy, Trade and Industry (METI), and representatives of TEPCO. It traces the evolving dynamics of trust, transparency, and institutional accountability under conditions of prolonged displacement and uncertain information.
           </p>
         </div>
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Research Outputs — 成果</h3>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-6">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed mb-6">
             Key findings and analytical frameworks developed through six years of fieldwork, stakeholder engagement, and cross-sector dialogue in Fukushima Prefecture.
           </p>
           <div className="space-y-6">
@@ -54,7 +54,7 @@ export default function FukushimaProjectPage() {
                 />
                 <div>
                   <h4 className="font-noto-sans text-sm font-medium text-kin-light">{title}</h4>
-                  <p className="font-noto-sans text-xs text-shiro/50 leading-relaxed mt-1">{description}</p>
+                  <p className="font-noto-sans text-xs text-shiro/80 leading-relaxed mt-1">{description}</p>
                 </div>
               </div>
             ))}
@@ -112,7 +112,7 @@ export default function FukushimaProjectPage() {
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
                 <span className="text-shu/30 mt-0.5">—</span>
-                <p className="font-noto-sans text-sm text-shiro/60">{item}</p>
+                <p className="font-noto-sans text-sm text-shiro/90">{item}</p>
               </div>
             ))}
           </div>

@@ -13,7 +13,7 @@ export default function PlatformsPage() {
       />
 
       <div className="mt-6 mb-16">
-        <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed max-w-2xl">
+        <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed max-w-2xl">
           A coherent suite of public-facing research and policy tools that translate governance theory into operational platforms across strategic infrastructure domains. Each platform connects conceptual frameworks on legitimacy, authority, and escalation with applied policy questions.
         </p>
       </div>
@@ -23,7 +23,7 @@ export default function PlatformsPage() {
           ═══════════════════════════════════════════════════ */}
       <div className="mb-10">
         <h2 className="font-kaisei text-xl text-kin/80 tracking-wide">Flagship Project Systems</h2>
-        <p className="font-noto-sans text-xs text-shiro/45 tracking-wider mt-1">Parent platforms, each containing linked sub-projects</p>
+        <p className="font-noto-sans text-xs text-shiro/70 tracking-wider mt-1">Parent platforms, each containing linked sub-projects</p>
       </div>
 
       {/* ── Govern the Human ── */}
@@ -42,7 +42,7 @@ export default function PlatformsPage() {
       />
 
       <div className="ml-4 md:ml-8 mt-6 mb-14 border-l-2 border-kin/10 pl-6 md:pl-8 space-y-6">
-        <p className="font-noto-sans text-[10px] text-shiro/35 tracking-[0.2em] uppercase font-semibold -ml-1">Sub-projects</p>
+        <p className="font-noto-sans text-[10px] text-shiro/90 tracking-[0.2em] uppercase font-semibold -ml-1">Sub-projects</p>
         <PlatformCard
           href="/platforms/narrative-drift"
           title="Narrative Drift"
@@ -96,7 +96,7 @@ export default function PlatformsPage() {
       />
 
       <div className="ml-4 md:ml-8 mt-6 mb-14 border-l-2 border-kin/10 pl-6 md:pl-8 space-y-6">
-        <p className="font-noto-sans text-[10px] text-shiro/35 tracking-[0.2em] uppercase font-semibold -ml-1">Sub-projects</p>
+        <p className="font-noto-sans text-[10px] text-shiro/90 tracking-[0.2em] uppercase font-semibold -ml-1">Sub-projects</p>
         <PlatformCard
           href="/platforms/orbital"
           title="Orbital Risk Tracker"
@@ -151,7 +151,7 @@ export default function PlatformsPage() {
       />
 
       <div className="ml-4 md:ml-8 mt-6 mb-14 border-l-2 border-kin/10 pl-6 md:pl-8 space-y-6">
-        <p className="font-noto-sans text-[10px] text-shiro/35 tracking-[0.2em] uppercase font-semibold -ml-1">Sub-projects</p>
+        <p className="font-noto-sans text-[10px] text-shiro/90 tracking-[0.2em] uppercase font-semibold -ml-1">Sub-projects</p>
         <PlatformCard
           href="/platforms/scoreless"
           title="Scoreless"
@@ -190,7 +190,7 @@ export default function PlatformsPage() {
           ═══════════════════════════════════════════════════ */}
       <div className="mt-10 mb-6">
         <h2 className="font-kaisei text-xl text-kin/80 tracking-wide">Selected Independent Projects</h2>
-        <p className="font-noto-sans text-xs text-shiro/45 tracking-wider mt-1">Standalone research and policy tools</p>
+        <p className="font-noto-sans text-xs text-shiro/70 tracking-wider mt-1">Standalone research and policy tools</p>
       </div>
 
       <div className="grid md:grid-cols-1 gap-8 mb-14">
@@ -209,7 +209,7 @@ export default function PlatformsPage() {
       <SectionDivider />
 
       <div className="text-center">
-        <p className="font-noto-sans text-xs text-shiro/45 tracking-wide">
+        <p className="font-noto-sans text-xs text-shiro/75 tracking-wide">
           Each platform is built with Next.js, React, TypeScript, and D3 / Leaflet.
         </p>
       </div>

@@ -45,13 +45,13 @@ export default function TheatreOfAuthenticityPage() {
 
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed mb-4">
             An experiential site that questions the very notion of authenticity. Are you truly acting from inner necessity, or are you constructing your self on the assumption of being observed? How far can the idea of a &ldquo;true self&rdquo; actually hold?
           </p>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed mb-4">
             Users make a series of choices, but partway through, external forces begin to intervene &mdash; the gaze of others, audiences, recording devices, praise, and backlash. Ultimately, the degree to which the motives behind one&rsquo;s actions have been externalised is made visible.
           </p>
-          <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed">
             Spanning Mishima, Kierkegaard, Nietzsche, Sartre, and Bataille, it explores the interplay of authenticity, performance, beauty, death, and transcendence.
           </p>
         </div>
@@ -59,15 +59,15 @@ export default function TheatreOfAuthenticityPage() {
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Core Questions</h3>
           <ul className="space-y-3">
-            <li className="font-noto-sans text-sm text-shiro/60 leading-relaxed flex items-start gap-2">
+            <li className="font-noto-sans text-sm text-shiro/90 leading-relaxed flex items-start gap-2">
               <span className="text-kin/40 mt-1 shrink-0">&mdash;</span>
               Are you truly acting from inner necessity?
             </li>
-            <li className="font-noto-sans text-sm text-shiro/60 leading-relaxed flex items-start gap-2">
+            <li className="font-noto-sans text-sm text-shiro/90 leading-relaxed flex items-start gap-2">
               <span className="text-kin/40 mt-1 shrink-0">&mdash;</span>
               Are you constructing your self on the premise of being watched?
             </li>
-            <li className="font-noto-sans text-sm text-shiro/60 leading-relaxed flex items-start gap-2">
+            <li className="font-noto-sans text-sm text-shiro/90 leading-relaxed flex items-start gap-2">
               <span className="text-kin/40 mt-1 shrink-0">&mdash;</span>
               How far can the idea of an &ldquo;authentic self&rdquo; actually hold?
             </li>
@@ -84,7 +84,7 @@ export default function TheatreOfAuthenticityPage() {
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Technical Stack</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Vercel'].map(tech => (
-              <span key={tech} className="font-noto-sans text-sm text-shiro/60 text-center py-2 border border-shiro/[0.05] rounded-sm">
+              <span key={tech} className="font-noto-sans text-sm text-shiro/90 text-center py-2 border border-shiro/[0.05] rounded-sm">
                 {tech}
               </span>
             ))}
