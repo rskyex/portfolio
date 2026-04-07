@@ -5,19 +5,15 @@ import Tag from '@/components/Tag';
 
 import SectionHeader from '@/components/SectionHeader';
 import SectionDivider from '@/components/SectionDivider';
-import ResearchListItem from '@/components/ResearchListItem';
 import SpeakingCard from '@/components/SpeakingCard';
 import Tsubaki3D from '@/components/Tsubaki3D';
 
 const tags = [
-  'International Security',
   'Space Governance',
-  'Nuclear Governance',
-  'Cyber Governance',
-  'Dual-Use Governance',
-  'Governance Architecture',
-  'Legitimacy & Authority',
   'Strategic Risk',
+  'Legitimacy & Authority',
+  'Platform Research',
+  'Dual-Use Systems',
 ];
 
 /* ─── Platform Ecosystem Data ─── */
@@ -73,6 +69,26 @@ const platforms: ParentPlatform[] = [
     children: [
       { name: 'Scoreless', href: '/platforms/scoreless', description: 'Classical music structure and meaning without score literacy', status: 'In Progress', image: '/images/mythera og.png' },
     ],
+  },
+];
+
+/* ─── Research Data (no status labels on homepage) ─── */
+
+const research = [
+  {
+    href: '/research/lunar',
+    title: 'Who Speaks for Humanity on the Moon?',
+    description: 'Examining legitimation audiences, translation devices, and authority architecture in competing lunar governance frameworks.',
+  },
+  {
+    href: '/research/ai-cyber',
+    title: 'Responsible Behaviour as an Unfinished Norm',
+    description: 'Investigating denial, displacement, and inoculation in AI governance discourse across space, AI, and cyber domains.',
+  },
+  {
+    href: '/research/fukushima',
+    title: 'Post-Disaster Governance and the Trust Gap',
+    description: 'Long-term fieldwork examining policy gaps, trust, and recovery governance in post-disaster Fukushima communities.',
   },
 ];
 
@@ -173,10 +189,39 @@ export default function Home() {
               </p>
 
               {/* Description — with frosted backdrop for legibility */}
-              <div className="max-w-xl mb-10 rounded-lg bg-kuro/20 backdrop-blur-[2px] px-5 py-4">
+              <div className="max-w-xl mb-8 rounded-lg bg-kuro/20 backdrop-blur-[2px] px-5 py-4">
                 <p className="font-noto-sans text-sm text-shiro/75 leading-[1.9]">
                   Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of space governance, nuclear governance, cyber governance, strategic risk, and emerging technology governance. Her research centres on legitimation theory, dual-use governance, authority architecture, responsible behaviour norms, and international security. She independently designs and builds public-facing research platforms spanning AI governance, strategic infrastructure risk, and classical music analysis.
                 </p>
+              </div>
+
+              {/* Social / contact buttons */}
+              <div className="flex items-center gap-4 mb-10">
+                <a
+                  href="https://linkedin.com/in/rskyex"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-shiro/10 bg-shiro/[0.04] font-noto-sans text-xs text-shiro/65 tracking-wider hover:border-kin/30 hover:text-kin transition-all duration-300"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  LinkedIn
+                </a>
+                <a
+                  href="https://www.instagram.com/rskyex/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-shiro/10 bg-shiro/[0.04] font-noto-sans text-xs text-shiro/65 tracking-wider hover:border-tsubaki-rose/30 hover:text-tsubaki-blush transition-all duration-300"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                  Instagram
+                </a>
+                <a
+                  href="mailto:risakyng@gmail.com"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-shiro/10 bg-shiro/[0.04] font-noto-sans text-xs text-shiro/65 tracking-wider hover:border-kin/30 hover:text-kin transition-all duration-300"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  Contact
+                </a>
               </div>
 
               {/* Tags */}
@@ -222,7 +267,7 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-6 pb-16 relative">
         <div className="absolute inset-0 asanoha-bg opacity-30 pointer-events-none" />
         <div className="relative">
-          <SectionHeader kanji="台" english="Platform Ecosystem" subtitle="Three parent platforms and their linked research tools" />
+          <SectionHeader kanji="台" english="Platform Ecosystem" />
 
           {/* 3-column parent grid on desktop */}
           <div className="mt-10 grid lg:grid-cols-3 gap-8">
@@ -321,27 +366,21 @@ export default function Home() {
         <div className="relative">
           <SectionHeader kanji="論" english="Research" subtitle="Selected research across governance domains" />
           <div className="mt-8 space-y-4">
-            <ResearchListItem
-              href="/research/lunar"
-              title="Who Speaks for Humanity on the Moon?"
-              status="Working Paper"
-              themes={['Legitimation', 'Authority architecture', 'Artemis vs ILRS', 'Boundary-making']}
-              description="Examining legitimation audiences, translation devices, and authority architecture in competing lunar governance frameworks."
-            />
-            <ResearchListItem
-              href="/research/ai-cyber"
-              title="Responsible Behaviour as an Unfinished Norm"
-              status="In Progress"
-              themes={['Governance gaps', 'Dual-use ambiguity', 'Norm codification']}
-              description="Investigating denial, displacement, and inoculation in AI governance discourse across space, AI, and cyber domains."
-            />
-            <ResearchListItem
-              href="/research/fukushima"
-              title="Post-Disaster Governance and the Trust Gap"
-              status="In Progress"
-              themes={['Fukushima', 'Trust', 'Recovery', 'State-society relations']}
-              description="Long-term fieldwork examining policy gaps, trust, and recovery governance in post-disaster Fukushima communities."
-            />
+            {research.map((item) => (
+              <Link key={item.href} href={item.href} className="block group">
+                <div className="card-washi card-washi-research card-hover relative overflow-hidden p-6">
+                  <div className="glow-bar absolute left-0 top-0 bottom-0" />
+                  <div className="relative pl-4">
+                    <h3 className="font-noto-serif text-base font-semibold text-kuro-soft group-hover:text-shu-deep transition-colors italic mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="font-noto-sans text-sm text-kuro-soft/60 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
           <div className="mt-8 text-right">
             <Link href="/research" className="font-noto-sans text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
