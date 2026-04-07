@@ -33,6 +33,7 @@ export default function NarrativeDriftPlatformPage() {
           width={800}
           height={450}
           className="w-full aspect-[1200/630]"
+          objectFit="cover"
         />
 
         <div className="panel rounded-sm p-8">

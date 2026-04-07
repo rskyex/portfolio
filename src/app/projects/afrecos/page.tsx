@@ -19,6 +19,7 @@ export default function AfrecosProjectPage() {
           width={800}
           height={400}
           className="w-full h-64 md:h-80"
+          objectFit="cover"
         />
 
         <div className="panel rounded-sm p-8">
