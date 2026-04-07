@@ -171,7 +171,7 @@ export default function Home() {
 
               {/* Eyebrow */}
               <p className="font-inter text-[11px] text-kin/70 tracking-[0.3em] uppercase mb-5 font-medium">
-                International Security · Space · Nuclear · Cyber · Emerging Technology Governance
+                Space · Nuclear · Cyber · Emerging Technology Governance
               </p>
 
               {/* Title */}
