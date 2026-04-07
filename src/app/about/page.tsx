@@ -40,21 +40,14 @@ export default function AboutPage() {
                   Alongside her research at Cambridge, she builds two open research platforms. Faultline operationalises escalation theory and attribution frameworks for researchers and policy professionals, through tools including the Orbital Risk Tracker, Global Nuclear Infrastructure Atlas, and Cyber Escalation Atlas. Govern the Human examines a second-order problem: how sustained AI interaction transforms the human subject meant to govern, consent, and deliberate.
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <SectionDivider />
-
-        {/* Interests */}
-        <div>
-          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Interests</h3>
-          <div className="card-washi card-washi-about p-6 relative overflow-hidden">
-            <div className="glow-bar absolute left-0 top-0 bottom-0" />
-            <div className="pl-4">
-              <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                {['Violin', 'Johann Sebastian Bach', 'Jean Sibelius', 'Giacomo Puccini', 'Giuseppe Verdi', 'Pyotr Ilyich Tchaikovsky', 'Anton\u00edn Dvo\u0159\u00e1k', 'Igor Stravinsky', 'Fyodor Dostoevsky', 'Kabuki', 'Yukio Mishima', 'Greek Mythology', 'Raymond Radiguet', 'Rainer Maria Rilke'].join(' \u00b7 ')}
-              </p>
+              <div className="flex flex-wrap gap-2 mt-6">
+                <Link href="/research" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm bg-kuro-soft/80 border border-kin/40 font-noto-sans text-xs text-kin tracking-widest uppercase font-medium hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/60 hover:text-tsubaki-blush transition-all">
+                  View Research
+                </Link>
+                <Link href="/platforms" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm bg-kuro-soft/80 border border-kin/40 font-noto-sans text-xs text-kin tracking-widest uppercase font-medium hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/60 hover:text-tsubaki-blush transition-all">
+                  View Platforms
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -182,10 +175,33 @@ export default function AboutPage() {
             <div className="glow-bar absolute left-0 top-0 bottom-0" />
             <div className="pl-4 space-y-4">
               <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                Her artistic practice — spanning music performance, visual art, and poetry — is documented through <Link href="/platforms/mythera" className="text-shu-deep hover:text-shu transition-colors font-medium">MYTHERA</Link>, her interpretive research studio. See also her <Link href="/projects/art" className="text-shu-deep hover:text-shu transition-colors font-medium">Art Practice</Link> page for exhibitions, awards, and interdisciplinary work.
+                Her artistic practice — spanning music performance, visual art, and poetry — is documented through MYTHERA, her interpretive research studio.
               </p>
               <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
                 Koyanagi trained in piano with Noriko Amano, Shadow Box with Ineke de Bruijn, and oil painting under Yukiko Hamano. She received an Excellence Award for poetry in 2011 and appeared as a child actor in Maribor National Opera&apos;s &ldquo;Carmen.&rdquo; As a teenager, she won the Excellence Award in the JYOJI-ROCK U-16 contest. Her art studies with Nobuhiko Utsumi led to a group exhibition. She has been selected for the Monster Exhibition and featured in Al-Tiba9 Contemporary Art Magazine.
+              </p>
+              <div className="flex flex-wrap gap-2 mt-2">
+                <Link href="/platforms/mythera" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm bg-kuro-soft/80 border border-kin/40 font-noto-sans text-xs text-kin tracking-widest uppercase font-medium hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/60 hover:text-tsubaki-blush transition-all">
+                  MYTHERA
+                </Link>
+                <Link href="/projects/art" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm bg-kuro-soft/80 border border-kin/40 font-noto-sans text-xs text-kin tracking-widest uppercase font-medium hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/60 hover:text-tsubaki-blush transition-all">
+                  Art Practice
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <SectionDivider />
+
+        {/* Interests */}
+        <div>
+          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Interests</h3>
+          <div className="card-washi card-washi-about p-6 relative overflow-hidden">
+            <div className="glow-bar absolute left-0 top-0 bottom-0" />
+            <div className="pl-4">
+              <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
+                {['Violin', 'Johann Sebastian Bach', 'Jean Sibelius', 'Giacomo Puccini', 'Giuseppe Verdi', 'Pyotr Ilyich Tchaikovsky', 'Anton\u00edn Dvo\u0159\u00e1k', 'Igor Stravinsky', 'Fyodor Dostoevsky', 'Kabuki', 'Yukio Mishima', 'Greek Mythology', 'Raymond Radiguet', 'Rainer Maria Rilke'].join(' \u00b7 ')}
               </p>
             </div>
           </div>
