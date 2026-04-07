@@ -167,13 +167,10 @@ export default function Home() {
                   小柳璃紗
                 </span>
 
-                <div className="mt-5 flex items-baseline gap-4">
+                <div className="mt-5">
                   <h1 className="font-cormorant text-3xl md:text-4xl text-shiro/90 tracking-wide font-semibold">
                     Risa Koyanagi
                   </h1>
-                  <span className="font-noto-serif text-xs text-shiro/22 tracking-[0.3em]">
-                    こやなぎ りさ
-                  </span>
                 </div>
 
                 {/* Neon petal-gradient rule */}
