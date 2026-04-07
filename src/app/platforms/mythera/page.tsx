@@ -14,7 +14,7 @@ const subProjects = [
   {
     title: 'Theatre of Authenticity',
     description:
-      '「真正性」そのものを疑う体験型サイト。ユーザーは一連の選択をするが、途中から「他者の視線」「観客」「記録装置」「賞賛」「反発」が介入してくる。最終的に、行為の動機がどれほど外部化されていたかが可視化される。三島、キルケゴール、ニーチェ、サルトル、バタイユをまたいで、真正性・演技・美・死・超越の相互作用を扱う。',
+      'An experiential site that questions authenticity itself. Users make a series of choices, but partway through, the gaze of others, audiences, recording devices, praise, and backlash begin to intervene. Ultimately, the degree to which the motives behind one\'s actions have been externalised is made visible. Spanning Mishima, Kierkegaard, Nietzsche, Sartre, and Bataille, it explores the interplay of authenticity, performance, beauty, death, and transcendence.',
     tags: ['Authenticity', 'Performance', 'Selfhood', 'Existentialism', 'Mishima', 'Kierkegaard'],
     image: '/images/Theatre of Authenticity.png',
     href: '/platforms/theatre-of-authenticity',
@@ -22,7 +22,7 @@ const subProjects = [
   {
     title: 'Second Self',
     description:
-      'AI、記憶、統治、そして自己形成をテーマにしたオンライン哲学カードゲーム。アルゴリズム的システムが社会の深層に浸透した近未来を舞台に、プレイヤーは社会を設計し、その結果としてどのような人間の主体が生まれるかを左右していく。カードを出すことは社会の条件を書き換え、自己の成立条件そのものを動かす行為である。',
+      'An online philosophical card game exploring AI, memory, governance, and the formation of subjectivity. Set in a near future where algorithmic systems permeate the deep layers of society, players design a society and determine what kind of human subjects emerge. Playing a card rewrites the conditions of society and shifts the very terms on which selfhood is constituted.',
     tags: ['Philosophy', 'Card Game', 'AI Governance', 'Subjectivity', 'Social Design'],
     image: '/images/secondself_og.png',
     href: '/platforms/second-self',

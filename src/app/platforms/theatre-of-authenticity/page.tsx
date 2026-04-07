@@ -5,16 +5,16 @@ import Tag from '@/components/Tag';
 
 export const metadata = {
   title: 'Theatre of Authenticity',
-  description: '"真正性"そのものを疑う体験型サイト — 行為の動機がどれほど外部化されていたかを可視化する',
+  description: 'An experiential site that questions authenticity itself — visualising how far the motives behind our actions have been externalised',
   openGraph: {
     title: 'Theatre of Authenticity',
-    description: '"真正性"そのものを疑う体験型サイト — 行為の動機がどれほど外部化されていたかを可視化する',
+    description: 'An experiential site that questions authenticity itself — visualising how far the motives behind our actions have been externalised',
     images: [{ url: '/images/Theatre%20of%20Authenticity.png', width: 1200, height: 630, alt: 'Theatre of Authenticity' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Theatre of Authenticity',
-    description: '"真正性"そのものを疑う体験型サイト — 行為の動機がどれほど外部化されていたかを可視化する',
+    description: 'An experiential site that questions authenticity itself — visualising how far the motives behind our actions have been externalised',
     images: ['/images/Theatre%20of%20Authenticity.png'],
   },
 };
@@ -46,13 +46,13 @@ export default function TheatreOfAuthenticityPage() {
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
           <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
-            &ldquo;真正性&rdquo;そのものを疑う体験型サイト。本当に内的必然から行為しているのか、それとも他者に見られることを前提に自己を構成しているのか、「本物の自分」という言葉はどこまで可能か &mdash; を問う。
+            An experiential site that questions the very notion of authenticity. Are you truly acting from inner necessity, or are you constructing your self on the assumption of being observed? How far can the idea of a &ldquo;true self&rdquo; actually hold?
           </p>
           <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed mb-4">
-            ユーザーは一連の選択をするが、途中から「他者の視線」「観客」「記録装置」「賞賛」「反発」が介入してくる。最終的に、行為の動機がどれほど外部化されていたかが可視化される。
+            Users make a series of choices, but partway through, external forces begin to intervene &mdash; the gaze of others, audiences, recording devices, praise, and backlash. Ultimately, the degree to which the motives behind one&rsquo;s actions have been externalised is made visible.
           </p>
           <p className="font-noto-sans text-sm text-shiro/60 leading-relaxed">
-            三島、キルケゴール、ニーチェ、サルトル、バタイユをまたいで、真正性・演技・美・死・超越の相互作用を扱う。
+            Spanning Mishima, Kierkegaard, Nietzsche, Sartre, and Bataille, it explores the interplay of authenticity, performance, beauty, death, and transcendence.
           </p>
         </div>
 
@@ -61,15 +61,15 @@ export default function TheatreOfAuthenticityPage() {
           <ul className="space-y-3">
             <li className="font-noto-sans text-sm text-shiro/60 leading-relaxed flex items-start gap-2">
               <span className="text-kin/40 mt-1 shrink-0">&mdash;</span>
-              本当に内的必然から行為しているのか
+              Are you truly acting from inner necessity?
             </li>
             <li className="font-noto-sans text-sm text-shiro/60 leading-relaxed flex items-start gap-2">
               <span className="text-kin/40 mt-1 shrink-0">&mdash;</span>
-              他者に見られることを前提に自己を構成しているのか
+              Are you constructing your self on the premise of being watched?
             </li>
             <li className="font-noto-sans text-sm text-shiro/60 leading-relaxed flex items-start gap-2">
               <span className="text-kin/40 mt-1 shrink-0">&mdash;</span>
-              「本物の自分」という言葉はどこまで可能か
+              How far can the idea of an &ldquo;authentic self&rdquo; actually hold?
             </li>
           </ul>
         </div>

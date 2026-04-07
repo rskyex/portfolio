@@ -165,21 +165,21 @@ export default function PlatformsPage() {
         <PlatformCard
           href="/platforms/theatre-of-authenticity"
           title="Theatre of Authenticity"
-          description="「真正性」そのものを疑う体験型サイト。行為の動機がどれほど外部化されていたかを可視化する。三島、キルケゴール、ニーチェ、サルトル、バタイユをまたぐ。"
+          description="An experiential site that questions authenticity itself — visualising how far the motives behind our actions have been externalised. Spanning Mishima, Kierkegaard, Nietzsche, Sartre, and Bataille."
           status="In Progress"
           tags={['Authenticity', 'Performance', 'Selfhood', 'Existentialism']}
           image="/images/Theatre of Authenticity.png"
-          coreQuestion="Core question: 本当に内的必然から行為しているのか、それとも他者に見られることを前提に自己を構成しているのか?"
+          coreQuestion="Core question: Are you truly acting from inner necessity, or constructing your self on the premise of being watched?"
         />
 
         <PlatformCard
           href="/platforms/second-self"
           title="Second Self"
-          description="AI、記憶、統治、自己形成をテーマにしたオンライン哲学カードゲーム。社会を設計し、その結果として生まれる人間の主体を左右する。"
+          description="An online philosophical card game exploring AI, memory, governance, and the formation of subjectivity. Players design a society and determine what kind of human subjects emerge."
           status="In Progress"
           tags={['Philosophy', 'Card Game', 'AI Governance', 'Subjectivity', 'Social Design']}
           image="/images/secondself_og.png"
-          coreQuestion="Core question: システムが人間の主体形成に参加し始めたとき、何が起きるのか?"
+          coreQuestion="Core question: What happens when systems begin participating in the very process by which humans become selves?"
         />
       </div>
 
