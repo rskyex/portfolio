@@ -194,31 +194,43 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Social / contact buttons */}
-              <div className="flex items-center gap-4 mb-10">
+              {/* CTA buttons */}
+              <div className="flex flex-wrap items-center gap-3 mb-10">
+                <Link
+                  href="/platforms"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm border border-kin/25 bg-kin/[0.06] font-inter text-xs text-kin tracking-widest uppercase font-medium hover:bg-kin/[0.12] hover:border-kin/40 transition-all duration-300"
+                >
+                  View Platforms
+                </Link>
+                <Link
+                  href="/research"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm border border-shiro/12 bg-shiro/[0.04] font-inter text-xs text-shiro/70 tracking-widest uppercase font-medium hover:border-shiro/25 hover:text-shiro/90 transition-all duration-300"
+                >
+                  View Research
+                </Link>
                 <a
                   href="https://linkedin.com/in/rskyex"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-shiro/10 bg-shiro/[0.04] font-inter text-xs text-shiro/65 tracking-wider hover:border-kin/30 hover:text-kin transition-all duration-300"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-sm border border-shiro/10 bg-shiro/[0.03] font-inter text-xs text-shiro/55 tracking-wider hover:border-kin/30 hover:text-kin transition-all duration-300"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                   LinkedIn
                 </a>
                 <a
                   href="https://www.instagram.com/rskyex/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-shiro/10 bg-shiro/[0.04] font-inter text-xs text-shiro/65 tracking-wider hover:border-tsubaki-rose/30 hover:text-tsubaki-blush transition-all duration-300"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-sm border border-shiro/10 bg-shiro/[0.03] font-inter text-xs text-shiro/55 tracking-wider hover:border-tsubaki-rose/30 hover:text-tsubaki-blush transition-all duration-300"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                   Instagram
                 </a>
                 <a
                   href="mailto:risakyng@gmail.com"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-shiro/10 bg-shiro/[0.04] font-inter text-xs text-shiro/65 tracking-wider hover:border-kin/30 hover:text-kin transition-all duration-300"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-sm border border-shiro/10 bg-shiro/[0.03] font-inter text-xs text-shiro/55 tracking-wider hover:border-kin/30 hover:text-kin transition-all duration-300"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                   Contact
                 </a>
               </div>
@@ -392,13 +404,15 @@ export default function Home() {
       <SectionDivider />
 
       {/* ═══════════════════════════════════════════════════
-          BACKGROUND & FIELDWORK
+          FIELDWORK & PUBLIC ENGAGEMENT
           ═══════════════════════════════════════════════════ */}
-      <section className="max-w-6xl mx-auto px-6 pb-16 relative">
+      <section className="max-w-6xl mx-auto px-6 pb-20 relative">
         <div className="absolute inset-0 seigaiha-bg opacity-20 pointer-events-none" />
         <div className="relative">
-          <SectionHeader kanji="業" english="Background & Fieldwork" subtitle="Fieldwork, leadership, and interdisciplinary engagement" />
-          <div className="mt-8 grid md:grid-cols-2 gap-6">
+          <SectionHeader kanji="場" english="Fieldwork & Public Engagement" subtitle="Fieldwork, leadership, dialogue, and public-facing engagement across policy, research, and international exchange" />
+
+          {/* Fieldwork & Leadership */}
+          <div className="mt-10 grid md:grid-cols-2 gap-6">
             <ProjectCard
               href="/projects/fukushima"
               title="Fukushima Field Research"
@@ -424,23 +438,12 @@ export default function Home() {
               imageAlt="Art practice"
             />
           </div>
-          <div className="mt-8 text-right">
-            <Link href="/projects" className="font-inter text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
-              View all background & fieldwork →
-            </Link>
+
+          {/* Speaking & Policy Engagement */}
+          <div className="mt-12 mb-2">
+            <h3 className="font-inter text-[10px] text-shiro/35 tracking-[0.25em] uppercase font-semibold">Speaking & Policy Engagement</h3>
           </div>
-        </div>
-      </section>
-
-      <SectionDivider />
-
-      {/* ═══════════════════════════════════════════════════
-          SPEAKING
-          ═══════════════════════════════════════════════════ */}
-      <section className="max-w-6xl mx-auto px-6 pb-20 relative">
-        <div className="relative">
-          <SectionHeader kanji="演" english="Speaking" subtitle="Selected speaking and policy engagement" />
-          <div className="mt-8 grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             <SpeakingCard
               title="TICAD Ministerial Meeting"
               context="Policy engagement and youth representation at the Tokyo International Conference on African Development."
@@ -466,9 +469,10 @@ export default function Home() {
               image="/images/speaking-roundtable.JPG"
             />
           </div>
+
           <div className="mt-8 text-right">
-            <Link href="/speaking" className="font-inter text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
-              View all speaking →
+            <Link href="/fieldwork" className="font-inter text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
+              View all fieldwork & engagement →
             </Link>
           </div>
         </div>
