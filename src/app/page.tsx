@@ -1,22 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import PhotoFrame from '@/components/PhotoFrame';
-import Tag from '@/components/Tag';
-
 import SectionHeader from '@/components/SectionHeader';
 import SectionDivider from '@/components/SectionDivider';
 import ProjectCard from '@/components/ProjectCard';
 import SpeakingCard from '@/components/SpeakingCard';
 import Tsubaki3D from '@/components/Tsubaki3D';
 
-const tags = [
-  'Space Governance',
-  'Nuclear Governance',
-  'Strategic Risk',
-  'Legitimacy & Authority',
-  'Platform Research',
-  'Dual-Use Systems',
-];
 
 /* ─── Platform Ecosystem Data ─── */
 
@@ -192,12 +182,12 @@ export default function Home() {
               {/* Description — with frosted backdrop for legibility */}
               <div className="max-w-xl mb-8 rounded-lg bg-kuro/20 backdrop-blur-[2px] px-5 py-4">
                 <p className="font-inter text-sm text-shiro/75 leading-[1.9]">
-                  Risa Koyanagi is a Cambridge Future Scholar and researcher working at the intersection of space governance, nuclear governance, cyber governance, strategic risk, and emerging technology governance. Her research centres on legitimation theory, dual-use governance, authority architecture, responsible behaviour norms, and international security. She independently designs and builds public-facing research platforms spanning AI governance, strategic infrastructure risk, and classical music analysis.
+                  Risa Koyanagi is a <strong className="font-semibold text-shiro/90">Cambridge Future Scholar</strong> and researcher working across <strong className="font-semibold text-shiro/90">space, nuclear, and emerging technology governance</strong> and <strong className="font-semibold text-shiro/90">strategic risk</strong>. Her work focuses on <strong className="font-semibold text-shiro/90">legitimation</strong>, <strong className="font-semibold text-shiro/90">dual-use systems</strong>, and <strong className="font-semibold text-shiro/90">authority architecture</strong>. She also designs <strong className="font-semibold text-shiro/90">public-facing research platforms</strong> on <strong className="font-semibold text-shiro/90">AI governance</strong>, <strong className="font-semibold text-shiro/90">strategic infrastructure risk</strong>, and <strong className="font-semibold text-shiro/90">interpretive systems</strong>.
                 </p>
               </div>
 
               {/* CTA buttons */}
-              <div className="flex flex-wrap items-center gap-3 mb-10">
+              <div className="flex flex-wrap items-center gap-3 mb-12">
                 <Link
                   href="/platforms"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm border border-kin/25 bg-kin/[0.06] font-inter text-xs text-kin tracking-widest uppercase font-medium hover:bg-kin/[0.12] hover:border-kin/40 transition-all duration-300"
@@ -235,13 +225,6 @@ export default function Home() {
                   <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                   Contact
                 </a>
-              </div>
-
-              {/* Tags */}
-              <div className="flex flex-wrap gap-2 mb-12">
-                {tags.map(tag => (
-                  <Tag key={tag} label={tag} variant="vermillion" />
-                ))}
               </div>
 
 
