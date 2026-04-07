@@ -86,10 +86,9 @@ export default function AboutPage() {
         {/* Skills */}
         <div>
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Skills</h3>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
             {[
               { title: 'Research', items: ['Qualitative analysis', 'Codebook design', 'Stakeholder interviewing', 'Primary-source synthesis', 'Briefing memo writing', 'Policy analysis', 'Public speaking'] },
-              { title: 'Technical', items: ['Next.js / React / TypeScript', 'D3 / Recharts / Leaflet', 'Tailwind CSS', 'Python / SQL', 'Figma / Adobe XD', 'Excel / PowerPoint', 'Google Docs'] },
               { title: 'Policy / Communication', items: ['Public speaking', 'Moderation', 'Workshop / event design', 'Stakeholder coordination', 'Policy writing'] },
             ].map((group, i) => (
               <div key={i} className="card-washi card-washi-about p-6 relative overflow-hidden">
@@ -104,6 +103,25 @@ export default function AboutPage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Technical & Computational Methods */}
+          <div className="card-washi card-washi-about p-6 relative overflow-hidden">
+            <div className="glow-bar absolute left-0 top-0 bottom-0" />
+            <div className="pl-4">
+              <h4 className="font-noto-sans text-sm font-bold text-kuro-soft mb-4">Technical &amp; Computational Methods</h4>
+              <div className="space-y-3">
+                <p className="font-noto-sans text-xs text-kuro-soft/60 leading-relaxed">
+                  Platform architecture, public-facing research tool prototyping, AI workflow design, prompt engineering, OpenAI API-based feature design, Supabase-based data structuring, SQL, analytics instrumentation, event logging design, dashboard planning.
+                </p>
+                <p className="font-noto-sans text-xs text-kuro-soft/60 leading-relaxed">
+                  Information architecture, user-flow design, UI/UX direction, qualitative coding, discourse and narrative analysis workflows, stakeholder mapping.
+                </p>
+                <p className="font-noto-sans text-xs text-kuro-soft/60 leading-relaxed">
+                  Policy and infrastructure data organisation, behavioural research design, and research-to-interface translation.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
