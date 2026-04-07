@@ -249,7 +249,7 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-6 pb-16 relative">
         <div className="absolute inset-0 asanoha-bg opacity-30 pointer-events-none" />
         <div className="relative">
-          <SectionHeader kanji="台" english="Platform Ecosystem" />
+          <SectionHeader kanji="台" english="Platforms by Risa Koyanagi" />
 
           {/* 3-column parent grid on desktop */}
           <div className="mt-10 grid lg:grid-cols-3 gap-8">
