@@ -204,7 +204,7 @@ export default function Home() {
                 </Link>
                 <Link
                   href="/research"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm border border-shiro/12 bg-shiro/[0.04] font-inter text-xs text-shiro/70 tracking-widest uppercase font-medium hover:border-shiro/25 hover:text-shiro/90 transition-all duration-300"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm border border-kin/25 bg-kin/[0.06] font-inter text-xs text-kin tracking-widest uppercase font-medium hover:bg-kin/[0.12] hover:border-kin/40 transition-all duration-300"
                 >
                   View Research
                 </Link>
