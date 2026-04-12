@@ -14,7 +14,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ href, title, description, image, imageAlt, period, role, badge }: ProjectCardProps) {
   return (
-    <Link href={href} className="block group">
+    <Link href={href} className="block group min-w-0">
       <div className="card-washi card-washi-project card-hover overflow-hidden relative">
         {/* Neon left glow bar */}
         <div className="glow-bar absolute left-0 top-0 bottom-0 z-10" />
