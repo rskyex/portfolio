@@ -85,13 +85,14 @@ export default function PlatformsPage() {
         href="/platforms/faultline"
         title="Faultline"
         description="A flagship strategic risk suite mapping escalation, infrastructure, and geopolitical fragility across interconnected systems."
-        includes="Includes three linked projects."
+        includes="Includes four linked projects."
         liveUrl="https://faultline-nqmm.vercel.app/"
         image="/images/faultline og.png"
         subProjects={[
           { name: 'Orbital Risk Tracker', href: '/platforms/orbital' },
           { name: 'Global Nuclear Infrastructure Atlas', href: '/platforms/nuclear' },
           { name: 'Cyber Escalation Atlas', href: '/platforms/cyber' },
+          { name: 'Lunar Mandate Atlas', href: '/platforms/lunar-mandate-atlas' },
         ]}
       />
 
@@ -128,6 +129,17 @@ export default function PlatformsPage() {
           tags={['Cyber', 'Attribution', 'Escalation']}
           image="/images/cyber-platform.png"
           coreQuestion="Core question: How do cyber operations function as strategic behaviour, and what governance frameworks can account for them?"
+        />
+
+        <PlatformCard
+          href="/platforms/lunar-mandate-atlas"
+          title="Lunar Mandate Atlas"
+          description="Interactive mapping of competing lunar governance frameworks, mandates, and authority architecture across the Artemis Accords and ILRS programme."
+          status="Live"
+          liveUrl="https://lunar-mandate-atlas.vercel.app"
+          tags={['Lunar Governance', 'Artemis Accords', 'ILRS', 'Authority Architecture']}
+          image="/images/LGAT-og.svg"
+          coreQuestion="Core question: How do competing governance frameworks construct authority and claim legitimacy on behalf of humanity on the Moon?"
         />
       </div>
 

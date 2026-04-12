@@ -28,6 +28,14 @@ const subProjects = [
     image: '/images/cyber-platform.png',
     liveUrl: 'https://cyber-escalation-atlas-5yp5.vercel.app',
   },
+  {
+    title: 'Lunar Mandate Atlas',
+    description:
+      'Interactive mapping of competing lunar governance frameworks, mandates, and authority architecture. Compares the Artemis Accords and the International Lunar Research Station (ILRS) programme, tracing how universalist claims function as legitimation devices and how governance architectures shape permissible action on the Moon.',
+    tags: ['Lunar Governance', 'Artemis Accords', 'ILRS', 'Legitimation', 'Authority Architecture', 'Space Governance', 'Mandate Mapping'],
+    image: '/images/LGAT-og.svg',
+    liveUrl: 'https://lunar-mandate-atlas.vercel.app',
+  },
 ];
 
 export default function FaultlinePlatformPage() {
@@ -65,10 +73,10 @@ export default function FaultlinePlatformPage() {
         <div className="panel rounded-sm p-8">
           <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
           <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed mb-4">
-            Faultline is a unified strategic infrastructure risk platform that consolidates three domain-specific tools &mdash; Orbital Risk Tracker, Global Nuclear Infrastructure Atlas, and Cyber Escalation Atlas &mdash; into a single analytical suite.
+            Faultline is a unified strategic infrastructure risk platform that consolidates four domain-specific tools &mdash; Orbital Risk Tracker, Global Nuclear Infrastructure Atlas, Cyber Escalation Atlas, and Lunar Mandate Atlas &mdash; into a single analytical suite.
           </p>
           <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed">
-            Each module translates governance theory into operational platforms across orbital, nuclear, and cyber domains, connecting conceptual frameworks on legitimacy, authority, and escalation with applied policy questions.
+            Each module translates governance theory into operational platforms across orbital, nuclear, cyber, and lunar domains, connecting conceptual frameworks on legitimacy, authority, and escalation with applied policy questions.
           </p>
         </div>
 
