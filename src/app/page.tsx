@@ -50,6 +50,7 @@ const platforms: ParentPlatform[] = [
       { name: 'Orbital Risk Tracker', href: '/platforms/orbital', description: 'ASAT events, proximity operations, and space escalation', status: 'Live', image: '/images/orbital-platform.jpg' },
       { name: 'Global Nuclear Infrastructure Atlas', href: '/platforms/nuclear', description: 'Civilian nuclear infrastructure, arsenals, and policy context', status: 'Live', image: '/images/nuclear-platform.jpg' },
       { name: 'Cyber Escalation Atlas', href: '/platforms/cyber', description: 'Cyber incidents as strategic behaviour and governance signals', status: 'Live', image: '/images/cyber-platform.png' },
+      { name: 'Lunar Mandate Atlas', href: '/platforms/lunar-mandate-atlas', description: 'Competing governance claims, mandates, and authority architecture on the Moon', status: 'Live', image: '/images/LGAT-og.svg' },
     ],
   },
   {
