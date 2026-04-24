@@ -5,6 +5,7 @@ import SectionHeader from '@/components/SectionHeader';
 import SectionDivider from '@/components/SectionDivider';
 import ProjectCard from '@/components/ProjectCard';
 import SpeakingCard from '@/components/SpeakingCard';
+import ConferenceCard from '@/components/ConferenceCard';
 import Tsubaki3D from '@/components/Tsubaki3D';
 
 
@@ -377,6 +378,50 @@ export default function Home() {
             <Link href="/research" className="font-inter text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
               View all research →
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider />
+
+      {/* ═══════════════════════════════════════════════════
+          SELECTED CONFERENCE PRESENTATIONS
+          ═══════════════════════════════════════════════════ */}
+      <section className="max-w-6xl mx-auto px-6 pb-16 relative">
+        <div className="relative">
+          <SectionHeader
+            kanji="壇"
+            english="Selected Conference Presentations"
+            subtitle="Forthcoming papers and panels at international research convenings"
+          />
+
+          <div className="mt-10">
+            <ConferenceCard
+              event="IAC 2026 — 3 Accepted Papers"
+              location="Antalya, Türkiye"
+              organizer="International Astronautical Congress · Organized by the International Astronautical Federation (IAF)"
+              highlight="3 Accepted Papers"
+              tags={['Space Governance', 'Lunar Systems', 'Norms', 'Dual-Use']}
+              papers={[
+                {
+                  title: 'Dual-Use Neutralisation and Responsible Behaviour Norms in Lunar Infrastructure Governance',
+                  type: 'Oral Presentation',
+                  symposium: 'E9 — Space Security, Stability and Sustainability',
+                  date: '8 October 2026',
+                },
+                {
+                  title: 'Conditional Openness: How Universalist Language Produces Boundaries in Future Lunar Exploration Governance',
+                  type: 'Interactive Presentation',
+                  symposium: 'E3 — Space Policy, Regulations and Economics',
+                },
+                {
+                  title: 'Mythic Naming as Soft Infrastructure in Competing Lunar Orders: Artemis and Chang’e',
+                  type: 'Interactive Presentation',
+                  symposium: 'E5 — Space and Society',
+                },
+              ]}
+              focus="lunar governance, dual-use systems, norm formation, and symbolic infrastructure in emerging space orders."
+            />
           </div>
         </div>
       </section>

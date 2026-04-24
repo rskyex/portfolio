@@ -1,6 +1,7 @@
 import SectionHeader from '@/components/SectionHeader';
 import ResearchListItem from '@/components/ResearchListItem';
 import SectionDivider from '@/components/SectionDivider';
+import ConferenceCard from '@/components/ConferenceCard';
 
 export default function ResearchPage() {
   return (
@@ -100,6 +101,39 @@ export default function ResearchPage() {
             </div>
           </div>
         </div>
+      </div>
+
+      <SectionDivider />
+
+      {/* Selected Conference Presentations */}
+      <div className="mb-10">
+        <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-4 font-semibold">Selected Conference Presentations</h3>
+        <ConferenceCard
+          event="IAC 2026 — 3 Accepted Papers"
+          location="Antalya, Türkiye"
+          organizer="International Astronautical Congress · Organized by the International Astronautical Federation (IAF)"
+          highlight="3 Accepted Papers"
+          tags={['Space Governance', 'Lunar Systems', 'Norms', 'Dual-Use']}
+          papers={[
+            {
+              title: 'Dual-Use Neutralisation and Responsible Behaviour Norms in Lunar Infrastructure Governance',
+              type: 'Oral Presentation',
+              symposium: 'E9 — Space Security, Stability and Sustainability',
+              date: '8 October 2026',
+            },
+            {
+              title: 'Conditional Openness: How Universalist Language Produces Boundaries in Future Lunar Exploration Governance',
+              type: 'Interactive Presentation',
+              symposium: 'E3 — Space Policy, Regulations and Economics',
+            },
+            {
+              title: 'Mythic Naming as Soft Infrastructure in Competing Lunar Orders: Artemis and Chang’e',
+              type: 'Interactive Presentation',
+              symposium: 'E5 — Space and Society',
+            },
+          ]}
+          focus="lunar governance, dual-use systems, norm formation, and symbolic infrastructure in emerging space orders."
+        />
       </div>
 
       <SectionDivider />
