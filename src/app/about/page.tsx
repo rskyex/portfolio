@@ -154,6 +154,34 @@ export default function AboutPage() {
 
         <SectionDivider />
 
+        {/* Roles & Leadership */}
+        <div>
+          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Roles &amp; Leadership</h3>
+          <div className="card-washi card-washi-about p-6 relative overflow-hidden">
+            <div className="glow-bar absolute left-0 top-0 bottom-0" />
+            <div className="pl-4">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
+                <div className="min-w-0">
+                  <p className="font-noto-sans text-[10.5px] text-kin-deep tracking-[0.22em] uppercase font-semibold mb-1.5">
+                    Space Generation Advisory Council
+                  </p>
+                  <h4 className="font-noto-serif text-base font-semibold text-kuro-soft italic">
+                    Space Policy Project Team Leader
+                  </h4>
+                </div>
+                <span className="shrink-0 self-start px-2.5 py-0.5 text-[11px] font-noto-sans font-medium tracking-wider rounded border bg-kin/10 text-kin-deep border-kin/25">
+                  Japan
+                </span>
+              </div>
+              <p className="font-noto-sans text-xs text-kuro-soft/55 leading-relaxed">
+                Leading the Japan team within SGAC&apos;s Space Policy project — convening early-career researchers and policy contributors around space governance, dual-use systems, and norm formation in emerging space orders.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <SectionDivider />
+
         {/* Affiliations */}
         <div>
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Affiliations</h3>
