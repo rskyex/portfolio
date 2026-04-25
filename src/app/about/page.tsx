@@ -34,6 +34,9 @@ export default function AboutPage() {
                   As a Cambridge Future Scholar, she conducts supervised research under Prof. Harald Wydra at the University of Cambridge on competing lunar governance frameworks: how universalist language is translated into standards, participation conditions, and interpretive discretion. Her broader research spans dual-use space infrastructure, cross-domain escalation risk, and structural gaps in responsible behaviour norms across AI, space, and cyber governance.
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
+                  Her work is forthcoming at the <strong className="font-semibold text-kuro-soft">International Astronautical Congress 2026</strong> (Antalya, Türkiye), with <strong className="font-semibold text-kuro-soft">three accepted papers</strong> across symposia on space security and sustainability, space policy and economics, and space and society — addressing dual-use neutralisation, conditional openness in lunar governance, and mythic naming as soft infrastructure in competing lunar orders.
+                </p>
+                <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
                   This work is grounded in six years of field research in post-disaster Fukushima, where she examined how governance failures at the state-operator interface erode public trust and policy legitimacy, conducting semi-structured interviews with evacuees, municipal officials, and TEPCO and METI representatives.
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
@@ -149,6 +152,32 @@ export default function AboutPage() {
                 <div className="font-noto-sans text-sm font-semibold text-kuro-soft">{lang}</div>
               </div>
             ))}
+          </div>
+        </div>
+
+        <SectionDivider />
+
+        {/* Roles & Leadership */}
+        <div>
+          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Roles &amp; Leadership</h3>
+          <div className="card-washi card-washi-about p-6 relative overflow-hidden">
+            <div className="glow-bar absolute left-0 top-0 bottom-0" />
+            <div className="pl-4">
+              <p className="font-noto-sans text-[10.5px] text-kin-deep tracking-[0.22em] uppercase font-semibold mb-2">
+                Space Generation Advisory Council
+              </p>
+              <h4 className="font-noto-serif text-lg font-semibold text-kuro-soft italic leading-snug">
+                Space Policy Project Team Leader
+                <span className="ml-2 inline-flex items-baseline gap-0.5 align-baseline font-noto-sans not-italic font-bold tracking-[0.08em] text-shu-deep">
+                  <span className="text-kin-deep/70">[</span>
+                  <span className="text-shu-deep">Japan</span>
+                  <span className="text-kin-deep/70">]</span>
+                </span>
+              </h4>
+              <p className="font-noto-sans text-xs text-kuro-soft/55 leading-relaxed mt-3">
+                Leading the Japan team within SGAC&apos;s Space Policy project — convening early-career researchers and policy contributors around space governance, dual-use systems, and norm formation in emerging space orders.
+              </p>
+            </div>
           </div>
         </div>
 
