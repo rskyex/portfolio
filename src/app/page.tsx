@@ -309,7 +309,7 @@ export default function Home() {
                       <div className="relative overflow-hidden rounded-md border border-shiro/[0.06] bg-gradient-to-br from-[#0e0f1a] to-[#0a0b12] transition-all duration-300 hover:border-kin/20 hover:from-[#111225] hover:to-[#0c0d16]">
                         <div className="flex items-stretch">
                           {/* Child OG image */}
-                          <div className="relative w-28 shrink-0 aspect-[1200/630] overflow-hidden">
+                          <div className="relative w-20 sm:w-28 shrink-0 aspect-[1200/630] overflow-hidden">
                             <Image
                               src={child.image}
                               alt={child.name}
@@ -319,7 +319,7 @@ export default function Home() {
                           </div>
                           <div className="flex items-start justify-between gap-2 px-3 py-2.5 min-w-0 flex-1">
                             <div className="min-w-0">
-                              <h4 className="font-inter text-sm font-medium text-shiro/80 group-hover/child:text-kin-glow transition-colors truncate">
+                              <h4 className="font-inter text-sm font-medium text-shiro/80 group-hover/child:text-kin-glow transition-colors break-words">
                                 {child.name}
                               </h4>
                               <p className="font-inter text-xs text-shiro/70 leading-relaxed mt-0.5 line-clamp-2">
