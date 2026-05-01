@@ -66,7 +66,8 @@ export default function AboutPage() {
           <div className="space-y-4">
             {[
               { institution: 'Hughes Hall, University of Cambridge', degree: 'BA Human, Social, and Political Sciences', period: 'October 2026' },
-              { institution: 'London School of Economics (University of London)', degree: 'BSc Politics and International Relations', period: '2025–2026', detail: 'Lisbon' },
+              { institution: 'London School of Economics (University of London)', degree: 'BSc Politics and International Relations', period: '2025–2026' },
+              { institution: 'Saïd Business School, University of Oxford', degree: 'AI and Digital Transformation in Government', period: 'Nov 2025 – Jan 2026', detail: 'Certificate' },
               { institution: 'SOAS University of London', degree: 'BSc Social Sciences (Foundation Year)', period: '2024–2025', detail: 'GPA 3.92' },
               { institution: 'Sophia University', degree: 'BA Philosophy (first year completed)', period: '2023–2024' },
             ].map((edu, i) => (
