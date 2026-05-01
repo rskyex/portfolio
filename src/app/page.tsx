@@ -171,6 +171,9 @@ export default function Home() {
                 <p className="font-inter text-sm text-shiro/75 leading-[1.9]">
                   Risa Koyanagi is a <strong className="font-semibold text-shiro/90">Cambridge Future Scholar</strong> and researcher working across <strong className="font-semibold text-shiro/90">space, nuclear, and emerging technology governance</strong> and <strong className="font-semibold text-shiro/90">strategic risk</strong>. Her work focuses on <strong className="font-semibold text-shiro/90">legitimation</strong>, <strong className="font-semibold text-shiro/90">dual-use systems</strong>, and <strong className="font-semibold text-shiro/90">authority architecture</strong>. She also designs <strong className="font-semibold text-shiro/90">public-facing research platforms</strong> on <strong className="font-semibold text-shiro/90">AI governance</strong>, <strong className="font-semibold text-shiro/90">strategic infrastructure risk</strong>, and <strong className="font-semibold text-shiro/90">interpretive systems</strong>.
                 </p>
+                <p className="font-inter text-sm text-shiro/75 leading-[1.9] mt-3">
+                  She will read <strong className="font-semibold text-shiro/90">Human, Social, and Political Sciences</strong> at <strong className="font-semibold text-shiro/90">Hughes Hall, University of Cambridge</strong> from <strong className="font-semibold text-shiro/90">October 2026</strong>.
+                </p>
               </div>
 
               {/* CTA buttons */}

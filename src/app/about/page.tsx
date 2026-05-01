@@ -31,6 +31,9 @@ export default function AboutPage() {
                   Koyanagi researches the governance of space, nuclear, and cyber systems, with a particular focus on how authority is constructed, how norms break down, and what it takes to rebuild legitimacy after they do.
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
+                  She will read <strong className="font-semibold text-kuro-soft">Human, Social, and Political Sciences</strong> at <strong className="font-semibold text-kuro-soft">Hughes Hall, University of Cambridge</strong> from <strong className="font-semibold text-kuro-soft">October 2026</strong>.
+                </p>
+                <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
                   As a Cambridge Future Scholar, she conducts supervised research under Prof. Harald Wydra at the University of Cambridge on competing lunar governance frameworks: how universalist language is translated into standards, participation conditions, and interpretive discretion. Her broader research spans dual-use space infrastructure, cross-domain escalation risk, and structural gaps in responsible behaviour norms across AI, space, and cyber governance.
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
@@ -62,6 +65,7 @@ export default function AboutPage() {
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Education</h3>
           <div className="space-y-4">
             {[
+              { institution: 'Hughes Hall, University of Cambridge', degree: 'BA Human, Social, and Political Sciences', period: 'October 2026' },
               { institution: 'London School of Economics (University of London)', degree: 'BSc Politics and International Relations', period: '2025–2026', detail: 'Lisbon' },
               { institution: 'Saïd Business School, University of Oxford', degree: 'AI & Digital Transformation in Government', period: 'Nov 2025 – Jan 2026' },
               { institution: 'Selwyn College, University of Cambridge', degree: 'International Summer Programme: Space Weaponisation & British Politics', period: 'Jul – Aug 2025' },
