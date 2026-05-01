@@ -163,13 +163,13 @@ export default function Home() {
 
               {/* Title */}
               <p className="font-cormorant text-xl md:text-2xl text-shiro/85 font-light tracking-wider mb-8 italic">
-                Cambridge Future Scholar · Researcher · Platform Builder
+                Researcher · Platform Builder
               </p>
 
               {/* Description — with frosted backdrop for legibility */}
               <div className="max-w-xl mb-8 rounded-lg bg-kuro/20 backdrop-blur-[2px] px-5 py-4">
                 <p className="font-inter text-sm text-shiro/75 leading-[1.9]">
-                  Risa Koyanagi is a <strong className="font-semibold text-shiro/90">Cambridge Future Scholar</strong> and researcher working across <strong className="font-semibold text-shiro/90">space, nuclear, and emerging technology governance</strong> and <strong className="font-semibold text-shiro/90">strategic risk</strong>. Her work focuses on <strong className="font-semibold text-shiro/90">legitimation</strong>, <strong className="font-semibold text-shiro/90">dual-use systems</strong>, and <strong className="font-semibold text-shiro/90">authority architecture</strong>. She also designs <strong className="font-semibold text-shiro/90">public-facing research platforms</strong> on <strong className="font-semibold text-shiro/90">AI governance</strong>, <strong className="font-semibold text-shiro/90">strategic infrastructure risk</strong>, and <strong className="font-semibold text-shiro/90">interpretive systems</strong>.
+                  Risa Koyanagi is a <strong className="font-semibold text-shiro/90">youth scholar at University of Cambridge</strong> working across <strong className="font-semibold text-shiro/90">space, nuclear, and emerging technology governance</strong> and <strong className="font-semibold text-shiro/90">strategic risk</strong>. Her work focuses on <strong className="font-semibold text-shiro/90">legitimation</strong>, <strong className="font-semibold text-shiro/90">dual-use systems</strong>, and <strong className="font-semibold text-shiro/90">authority architecture</strong>. She also designs <strong className="font-semibold text-shiro/90">public-facing research platforms</strong> on <strong className="font-semibold text-shiro/90">AI governance</strong>, <strong className="font-semibold text-shiro/90">strategic infrastructure risk</strong>, and <strong className="font-semibold text-shiro/90">interpretive systems</strong>.
                 </p>
                 <p className="font-inter text-sm text-shiro/75 leading-[1.9] mt-3">
                   She will read <strong className="font-semibold text-shiro/90">Human, Social, and Political Sciences</strong> at <strong className="font-semibold text-shiro/90">Hughes Hall, University of Cambridge</strong> from <strong className="font-semibold text-shiro/90">October 2026</strong>.
