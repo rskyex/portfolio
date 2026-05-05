@@ -31,7 +31,7 @@ export default function AboutPage() {
                   Koyanagi researches the governance of space, nuclear, and cyber systems, with a particular focus on how authority is constructed, how norms break down, and what it takes to rebuild legitimacy after they do.
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                  She will read <strong className="font-semibold text-kuro-soft">Human, Social, and Political Sciences</strong> at <strong className="font-semibold text-kuro-soft">Hughes Hall, University of Cambridge</strong> from <strong className="font-semibold text-kuro-soft">October 2026</strong>.
+                  Koyanagi researches at <strong className="font-semibold text-kuro-soft">University of Cambridge</strong>.
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
                   As a Cambridge Future Scholar, she conducts supervised research under Prof. Harald Wydra at the University of Cambridge on competing lunar governance frameworks: how universalist language is translated into standards, participation conditions, and interpretive discretion. Her broader research spans dual-use space infrastructure, cross-domain escalation risk, and structural gaps in responsible behaviour norms across AI, space, and cyber governance.
