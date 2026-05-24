@@ -28,19 +28,16 @@ export default function AboutPage() {
               <h3 className="font-noto-sans text-base font-bold text-kuro-soft mb-4">Profile</h3>
               <div className="space-y-4">
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                  Koyanagi researches the governance of space, nuclear, and cyber systems, with a particular focus on how authority is constructed, how norms break down, and what it takes to rebuild legitimacy after they do.
+                  Koyanagi is a researcher at the <strong className="font-semibold text-kuro-soft">University of Cambridge</strong>, working on the governance of space, nuclear, and cyber systems — with a particular focus on how authority is constructed, how norms break down, and what it takes to rebuild legitimacy after they do.
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                  Koyanagi researches at <strong className="font-semibold text-kuro-soft">University of Cambridge</strong>.
+                  As a Cambridge Future Scholar, she conducts supervised research under Prof. Harald Wydra on competing lunar governance frameworks: how universalist language is translated into standards, participation conditions, and interpretive discretion. Her broader research spans dual-use space infrastructure, cross-domain escalation risk, and structural gaps in responsible behaviour norms across AI, space, and cyber governance.
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                  As a Cambridge Future Scholar, she conducts supervised research under Prof. Harald Wydra at the University of Cambridge on competing lunar governance frameworks: how universalist language is translated into standards, participation conditions, and interpretive discretion. Her broader research spans dual-use space infrastructure, cross-domain escalation risk, and structural gaps in responsible behaviour norms across AI, space, and cyber governance.
+                  This work is grounded in six years of field research in post-disaster Fukushima, where she examined how governance failures at the state–operator interface erode public trust and policy legitimacy, conducting semi-structured interviews with evacuees, municipal officials, and TEPCO and METI representatives.
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
                   Her work is forthcoming at the <strong className="font-semibold text-kuro-soft">International Astronautical Congress 2026</strong> (Antalya, Türkiye), with <strong className="font-semibold text-kuro-soft">three accepted papers</strong> across symposia on space security and sustainability, space policy and economics, and space and society — addressing dual-use neutralisation, conditional openness in lunar governance, and mythic naming as soft infrastructure in competing lunar orders.
-                </p>
-                <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                  This work is grounded in six years of field research in post-disaster Fukushima, where she examined how governance failures at the state-operator interface erode public trust and policy legitimacy, conducting semi-structured interviews with evacuees, municipal officials, and TEPCO and METI representatives.
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
                   Alongside her research at Cambridge, she builds two open research platforms. Faultline operationalises escalation theory and attribution frameworks for researchers and policy professionals, through tools including the Orbital Risk Tracker, Global Nuclear Infrastructure Atlas, and Cyber Escalation Atlas. Govern the Human examines a second-order problem: how sustained AI interaction transforms the human subject meant to govern, consent, and deliberate.
