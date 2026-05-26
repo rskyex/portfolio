@@ -65,7 +65,7 @@ export default function AboutPage() {
               { institution: 'Hughes Hall, University of Cambridge', degree: 'BA Human, Social, and Political Sciences', period: 'October 2026' },
               { institution: 'London School of Economics (University of London)', degree: 'BSc Politics and International Relations', period: '2025–2026' },
               { institution: 'Saïd Business School, University of Oxford', degree: 'AI and Digital Transformation in Government', period: 'Nov 2025 – Jan 2026', detail: 'Certificate' },
-              { institution: 'SOAS University of London', degree: 'BSc Social Sciences (Foundation Year)', period: '2024–2025', detail: 'GPA 3.92' },
+              { institution: 'SOAS University of London', degree: 'BSc Social Sciences (Foundation Year)', period: '2024–2025', detail: 'First Class' },
             ].map((edu, i) => (
               <div key={i} className="card-washi card-washi-about p-6 relative overflow-hidden">
                 <div className="glow-bar absolute left-0 top-0 bottom-0" />
