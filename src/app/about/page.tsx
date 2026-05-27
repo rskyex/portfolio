@@ -162,18 +162,12 @@ export default function AboutPage() {
           <div className="card-washi card-washi-about p-6 relative overflow-hidden">
             <div className="glow-bar absolute left-0 top-0 bottom-0" />
             <div className="pl-4">
-              <p className="font-noto-sans text-[10.5px] text-kin-deep tracking-[0.22em] uppercase font-semibold mb-2">
-                Space Generation Advisory Council
-              </p>
-              <h4 className="font-noto-serif text-lg font-semibold text-kuro-soft italic leading-snug">
-                Space Policy Project Team Leader
-                <span className="ml-2 inline-flex items-baseline gap-0.5 align-baseline font-noto-sans not-italic font-bold tracking-[0.08em] text-shu-deep">
-                  <span className="text-kin-deep/70">[</span>
-                  <span className="text-shu-deep">Japan</span>
-                  <span className="text-kin-deep/70">]</span>
-                </span>
-              </h4>
-              <p className="font-noto-sans text-xs text-kuro-soft/55 leading-relaxed mt-3">
+              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 mb-1">
+                <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">Space Generation Advisory Council</h4>
+                <span className="font-noto-sans text-xs text-kuro-soft/50 shrink-0 font-medium">Japan</span>
+              </div>
+              <p className="font-noto-sans text-sm text-kuro-soft/65">Space Policy Project Team Leader</p>
+              <p className="font-noto-sans text-xs text-kuro-soft/60 mt-1 leading-relaxed">
                 Leading the Japan team within SGAC&apos;s Space Policy project — convening early-career researchers and policy contributors around space governance, dual-use systems, and norm formation in emerging space orders.
               </p>
             </div>
