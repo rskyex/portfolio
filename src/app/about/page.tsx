@@ -65,7 +65,7 @@ export default function AboutPage() {
               { institution: 'Hughes Hall, University of Cambridge', degree: 'BA Human, Social, and Political Sciences', period: 'October 2026' },
               { institution: 'London School of Economics (University of London)', degree: 'BSc Politics and International Relations', period: '2025–2026' },
               { institution: 'Saïd Business School, University of Oxford', degree: 'AI and Digital Transformation in Government', period: 'Nov 2025 – Jan 2026', detail: 'Certificate' },
-              { institution: 'SOAS University of London', degree: 'BSc Social Sciences (Foundation Year)', period: '2024–2025', detail: 'GPA 3.92' },
+              { institution: 'SOAS University of London', degree: 'BSc Social Sciences (Foundation Year)', period: '2024–2025', detail: 'First Class' },
             ].map((edu, i) => (
               <div key={i} className="card-washi card-washi-about p-6 relative overflow-hidden">
                 <div className="glow-bar absolute left-0 top-0 bottom-0" />
@@ -209,6 +209,7 @@ export default function AboutPage() {
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Awards</h3>
           <div className="space-y-3">
             {[
+              { title: 'Selected, JAXA International Space Education Board 2026', detail: 'Chosen to serve on the Japan Aerospace Exploration Agency\'s International Space Education Board for 2026' },
               { title: '2nd Prize, GEIL Policy Contest — Tokyo Earthquake Response', detail: 'Led a team of four in crafting a policy to boost Tokyo\'s earthquake resilience, proposing "Transferable Development Rights Plus" to incentivise redevelopment, reduce wooden structures, and widen streets' },
             ].map((award, i) => (
               <div key={i} className="card-washi card-washi-about p-5 relative overflow-hidden">
