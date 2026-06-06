@@ -12,21 +12,22 @@ Her work is forthcoming at the **International Astronautical Congress 2026** (An
 
 ## Flagship Platform Systems
 
-### Govern the Human
+### [Govern the Human](https://govern-the-human.vercel.app/)
 Exploring how governance turns back toward the human subject — narrative, selfhood, and interpretive systems.
 - [Narrative Drift](https://narrative-drift.vercel.app/) — AI influence on choice, memory, and self-understanding
 - [SelfTrace](https://selftrace.vercel.app/) — Algorithmic shaping of identity and self-presentation
 - Ontological Governance Observatory — AI's transformation of the human subject across governance layers *(in progress)*
 
-### Faultline
+### [Faultline](https://faultline-nqmm.vercel.app/)
 Strategic risk suite mapping escalation, infrastructure, and geopolitical fragility across interconnected systems.
 - [Orbital Risk Tracker](https://orbitalrisktracker.vercel.app) — ASAT events, proximity operations, and space escalation
 - [Global Nuclear Infrastructure Atlas](https://globalnuclearinfrastructureatlas.vercel.app) — Civilian nuclear infrastructure, arsenals, and policy context
 - [Cyber Escalation Atlas](https://cyber-escalation-atlas-5yp5.vercel.app) — Cyber incidents as strategic behaviour and governance signals
-- [Lunar Mandate Atlas](https://lunar-mandate-atlas.vercel.app/) — Competing governance claims, mandates, and authority architecture on the Moon
+- [Lunar Mandate Atlas](https://lunar-mandate-atlas.vercel.app/) — Competing lunar governance frameworks, mandates, and authority architecture across the Artemis Accords and ILRS
 
-### MYTHERA
+### [MYTHERA](https://mythera.vercel.app/)
 An interpretive studio where selfhood, culture, performance, and aesthetic form become explorable worlds.
+- Scoreless — Making classical music's structure, logic, and meaning accessible without score literacy *(in progress)*
 - Theatre of Authenticity — Questioning authenticity through experiential design *(in progress)*
 - Second Self — A philosophical card game exploring AI, memory, governance, and subjectivity *(in progress)*
 
@@ -51,6 +52,7 @@ An interpretive studio where selfhood, culture, performance, and aesthetic form 
 | `/` | Hero, platform ecosystem, research, and speaking overview |
 | `/about` | Profile, education, skills, languages, affiliations, awards |
 | `/platforms` | All platform systems and child tools |
+| `/platforms/[slug]` | Individual platform detail pages (e.g. `narrative-drift`, `orbital`, `scoreless`) |
 | `/research` | Research papers and projects |
 | `/projects` | Background, fieldwork, and interdisciplinary engagement |
 | `/speaking` | Conferences, talks, and forthcoming presentations |
@@ -61,6 +63,7 @@ An interpretive studio where selfhood, culture, performance, and aesthetic form 
 - **Framework:** Next.js 14 (App Router)
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
+- **Data visualisation:** D3 / Leaflet (across platform tools)
 - **Deployment:** Vercel
 
 ## Getting Started
