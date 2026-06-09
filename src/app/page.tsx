@@ -25,34 +25,44 @@ interface ParentPlatform {
   liveUrl: string;
   description: string;
   image: string;
-  children: ChildPlatform[];
+  children?: ChildPlatform[];
 }
 
 const platforms: ParentPlatform[] = [
   {
-    title: 'Govern the Human',
-    href: '/platforms/govern-the-human',
-    liveUrl: 'https://govern-the-human.vercel.app/',
-    description: 'Exploring how governance turns back toward the human subject — narrative, selfhood, and interpretive systems.',
-    image: '/images/govern the human og.png',
-    children: [
-      { name: 'Narrative Drift', href: '/platforms/narrative-drift', description: 'AI influence on choice, memory, and self-understanding', status: 'Live', image: '/images/narrative drift-og.png' },
-      { name: 'SelfTrace', href: '/platforms/selftrace', description: 'Algorithmic shaping of identity and self-presentation', status: 'Live', image: '/images/selftrace og.png' },
-      { name: 'Ontological Governance Observatory', href: '/platforms/ontological-governance-observatory', description: 'AI\'s transformation of the human subject across governance layers', status: 'In Progress', image: '/images/ogo-og.png' },
-    ],
+    title: 'Cyber Escalation Atlas',
+    href: '/platforms/cyber',
+    liveUrl: 'https://cyber-escalation-atlas-5yp5.vercel.app',
+    description: 'Mapping cyber incidents as strategic behaviour, attribution frameworks, and governance signals.',
+    image: '/images/cyber-platform.png',
   },
   {
-    title: 'Faultline',
-    href: '/platforms/faultline',
-    liveUrl: 'https://faultline-nqmm.vercel.app/',
-    description: 'Strategic risk suite mapping escalation, infrastructure, and geopolitical fragility across interconnected systems.',
-    image: '/images/faultline og.png',
-    children: [
-      { name: 'Orbital Risk Tracker', href: '/platforms/orbital', description: 'ASAT events, proximity operations, and space escalation', status: 'Live', image: '/images/orbital-platform.jpg' },
-      { name: 'Global Nuclear Infrastructure Atlas', href: '/platforms/nuclear', description: 'Civilian nuclear infrastructure, arsenals, and policy context', status: 'Live', image: '/images/nuclear-platform.jpg' },
-      { name: 'Cyber Escalation Atlas', href: '/platforms/cyber', description: 'Cyber incidents as strategic behaviour and governance signals', status: 'Live', image: '/images/cyber-platform.png' },
-      { name: 'Lunar Mandate Atlas', href: '/platforms/lunar-mandate-atlas', description: 'Competing governance claims, mandates, and authority architecture on the Moon', status: 'Live', image: '/images/LGAT-og.svg' },
-    ],
+    title: 'Narrative Drift',
+    href: '/platforms/narrative-drift',
+    liveUrl: 'https://narrative-drift.vercel.app/',
+    description: 'AI influence on choice, memory, and self-understanding over time.',
+    image: '/images/narrative drift-og.png',
+  },
+  {
+    title: 'Orbital Risk Tracker',
+    href: '/platforms/orbital',
+    liveUrl: 'https://orbitalrisktracker.vercel.app',
+    description: 'ASAT events, proximity operations, and escalation analysis in orbital space.',
+    image: '/images/orbital-platform.jpg',
+  },
+  {
+    title: 'Global Nuclear Infrastructure Atlas',
+    href: '/platforms/nuclear',
+    liveUrl: 'https://globalnuclearinfrastructureatlas.vercel.app',
+    description: 'Civilian nuclear infrastructure, estimated arsenals, and policy and health context.',
+    image: '/images/nuclear-platform.jpg',
+  },
+  {
+    title: 'Lunar Mandate Atlas',
+    href: '/platforms/lunar-mandate-atlas',
+    liveUrl: 'https://lunar-mandate-atlas.vercel.app',
+    description: 'Competing governance claims, mandates, and authority architecture on the Moon.',
+    image: '/images/LGAT-og.svg',
   },
   {
     title: 'MYTHERA',
@@ -279,11 +289,13 @@ export default function Home() {
                         fill
                         className="object-contain group-hover:scale-[1.03] transition-transform duration-700"
                       />
-                      <div className="absolute top-3 left-3 z-10">
-                        <span className="px-2 py-0.5 text-[9px] font-inter font-bold tracking-[0.2em] uppercase bg-kuro/80 backdrop-blur-sm text-kin border border-kin/30 rounded-sm shadow-[0_0_10px_rgba(212,160,23,0.12)]">
-                          Flagship
-                        </span>
-                      </div>
+                      {platform.children && (
+                        <div className="absolute top-3 left-3 z-10">
+                          <span className="px-2 py-0.5 text-[9px] font-inter font-bold tracking-[0.2em] uppercase bg-kuro/80 backdrop-blur-sm text-kin border border-kin/30 rounded-sm shadow-[0_0_10px_rgba(212,160,23,0.12)]">
+                            Flagship
+                          </span>
+                        </div>
+                      )}
                     </div>
 
                     <div className="relative pl-4 p-5">
@@ -303,6 +315,7 @@ export default function Home() {
                 </Link>
 
                 {/* Child cards */}
+                {platform.children && (
                 <div className="mt-3 space-y-2">
                   {platform.children.map((child) => (
                     <Link key={child.name} href={child.href} className="block group/child">
@@ -337,6 +350,7 @@ export default function Home() {
                     </Link>
                   ))}
                 </div>
+                )}
               </div>
             ))}
           </div>

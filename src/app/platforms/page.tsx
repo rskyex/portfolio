@@ -19,30 +19,25 @@ export default function PlatformsPage() {
       </div>
 
       {/* ═══════════════════════════════════════════════════
-          FLAGSHIP PROJECT SYSTEMS
+          RESEARCH PLATFORMS
           ═══════════════════════════════════════════════════ */}
-      <div className="mb-10">
-        <h2 className="font-kaisei text-xl text-kin/80 tracking-wide">Flagship Project Systems</h2>
-        <p className="font-noto-sans text-xs text-shiro/70 tracking-wider mt-1">Parent platforms, each containing linked sub-projects</p>
+      <div className="mt-10 mb-10">
+        <h2 className="font-kaisei text-xl text-kin/80 tracking-wide">Research Platforms</h2>
+        <p className="font-noto-sans text-xs text-shiro/70 tracking-wider mt-1">Independently designed research, policy, and strategic-risk tools</p>
       </div>
 
-      {/* ── Govern the Human ── */}
-      <FlagshipCard
-        href="/platforms/govern-the-human"
-        title="Govern the Human"
-        description="A flagship research platform exploring how governance turns back toward the human subject."
-        includes="Includes three linked projects on narrative, selfhood, and interpretive systems."
-        liveUrl="https://govern-the-human.vercel.app/"
-        image="/images/govern the human og.png"
-        subProjects={[
-          { name: 'Narrative Drift', href: '/platforms/narrative-drift' },
-          { name: 'SelfTrace', href: '/platforms/selftrace' },
-          { name: 'Ontological Governance Observatory', href: '/platforms/ontological-governance-observatory' },
-        ]}
-      />
+      <div className="space-y-6 mb-14">
+        <PlatformCard
+          href="/platforms/cyber"
+          title="Cyber Escalation Atlas"
+          description="Mapping cyber incidents as strategic behaviour, attribution frameworks, and governance signals."
+          status="Live"
+          liveUrl="https://cyber-escalation-atlas-5yp5.vercel.app"
+          tags={['Cyber', 'Attribution', 'Escalation']}
+          image="/images/cyber-platform.png"
+          coreQuestion="Core question: How do cyber operations function as strategic behaviour, and what governance frameworks can account for them?"
+        />
 
-      <div className="ml-4 md:ml-8 mt-6 mb-14 border-l-2 border-kin/10 pl-6 md:pl-8 space-y-6">
-        <p className="font-noto-sans text-[10px] text-shiro/90 tracking-[0.2em] uppercase font-semibold -ml-1">Sub-projects</p>
         <PlatformCard
           href="/platforms/narrative-drift"
           title="Narrative Drift"
@@ -54,50 +49,6 @@ export default function PlatformsPage() {
           coreQuestion="Core question: How do AI systems erode epistemic autonomy through the accumulation of small nudges over time?"
         />
 
-        <PlatformCard
-          href="/platforms/selftrace"
-          title="SelfTrace"
-          description="A reflective platform examining how social media algorithms shape identity, self-presentation, and online selfhood."
-          status="Live"
-          liveUrl="https://selftrace.vercel.app/"
-          tags={['Algorithmic Identity', 'Self-Presentation', 'Digital Reflection']}
-          image="/images/selftrace og.png"
-          coreQuestion="Core question: How do social media algorithms shape self-presentation and identity construction?"
-        />
-
-        <PlatformCard
-          href="/platforms/ontological-governance-observatory"
-          title="Ontological Governance Observatory"
-          description="Mapping how AI reshapes the human subject across epistemic, ontological, and political layers."
-          status="In Progress"
-          tags={['AI Governance', 'Ontological Risk', 'Second-Order Governance']}
-          image="/images/ogo-og.png"
-          coreQuestion="Core question: How must governance frameworks change when AI transforms the human subject itself?"
-        />
-      </div>
-
-      <SectionDivider />
-
-      {/* ── Faultline ── */}
-      <div className="mt-10" />
-
-      <FlagshipCard
-        href="/platforms/faultline"
-        title="Faultline"
-        description="A flagship strategic risk suite mapping escalation, infrastructure, and geopolitical fragility across interconnected systems."
-        includes="Includes four linked projects."
-        liveUrl="https://faultline-nqmm.vercel.app/"
-        image="/images/faultline og.png"
-        subProjects={[
-          { name: 'Orbital Risk Tracker', href: '/platforms/orbital' },
-          { name: 'Global Nuclear Infrastructure Atlas', href: '/platforms/nuclear' },
-          { name: 'Cyber Escalation Atlas', href: '/platforms/cyber' },
-          { name: 'Lunar Mandate Atlas', href: '/platforms/lunar-mandate-atlas' },
-        ]}
-      />
-
-      <div className="ml-4 md:ml-8 mt-6 mb-14 border-l-2 border-kin/10 pl-6 md:pl-8 space-y-6">
-        <p className="font-noto-sans text-[10px] text-shiro/90 tracking-[0.2em] uppercase font-semibold -ml-1">Sub-projects</p>
         <PlatformCard
           href="/platforms/orbital"
           title="Orbital Risk Tracker"
@@ -121,17 +72,6 @@ export default function PlatformsPage() {
         />
 
         <PlatformCard
-          href="/platforms/cyber"
-          title="Cyber Escalation Atlas"
-          description="Mapping cyber incidents as strategic behaviour, attribution frameworks, and governance signals."
-          status="Live"
-          liveUrl="https://cyber-escalation-atlas-5yp5.vercel.app"
-          tags={['Cyber', 'Attribution', 'Escalation']}
-          image="/images/cyber-platform.png"
-          coreQuestion="Core question: How do cyber operations function as strategic behaviour, and what governance frameworks can account for them?"
-        />
-
-        <PlatformCard
           href="/platforms/lunar-mandate-atlas"
           title="Lunar Mandate Atlas"
           description="Interactive mapping of competing lunar governance frameworks, mandates, and authority architecture across the Artemis Accords and ILRS programme."
@@ -145,8 +85,13 @@ export default function PlatformsPage() {
 
       <SectionDivider />
 
-      {/* ── MYTHERA ── */}
-      <div className="mt-10" />
+      {/* ═══════════════════════════════════════════════════
+          FLAGSHIP PROJECT SYSTEM
+          ═══════════════════════════════════════════════════ */}
+      <div className="mt-10 mb-10">
+        <h2 className="font-kaisei text-xl text-kin/80 tracking-wide">Flagship Project System</h2>
+        <p className="font-noto-sans text-xs text-shiro/70 tracking-wider mt-1">A parent platform containing linked sub-projects</p>
+      </div>
 
       <FlagshipCard
         href="/platforms/mythera"
