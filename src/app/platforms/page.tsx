@@ -50,6 +50,27 @@ export default function PlatformsPage() {
         />
 
         <PlatformCard
+          href="/platforms/selftrace"
+          title="SelfTrace"
+          description="A reflective platform examining how social media algorithms shape identity, self-presentation, and online selfhood."
+          status="Live"
+          liveUrl="https://selftrace.vercel.app/"
+          tags={['Algorithmic Identity', 'Self-Presentation', 'Digital Reflection']}
+          image="/images/selftrace og.png"
+          coreQuestion="Core question: How do social media algorithms shape self-presentation and identity construction?"
+        />
+
+        <PlatformCard
+          href="/platforms/ontological-governance-observatory"
+          title="Ontological Governance Observatory"
+          description="Mapping how AI reshapes the human subject across epistemic, ontological, and political layers."
+          status="In Progress"
+          tags={['AI Governance', 'Ontological Risk', 'Second-Order Governance']}
+          image="/images/ogo-og.png"
+          coreQuestion="Core question: How must governance frameworks change when AI transforms the human subject itself?"
+        />
+
+        <PlatformCard
           href="/platforms/orbital"
           title="Orbital Risk Tracker"
           description="Tracking ASAT events, proximity operations, GNSS jamming, and cyber-space entanglement with escalation analysis."

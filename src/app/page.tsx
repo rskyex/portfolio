@@ -22,7 +22,7 @@ interface ChildPlatform {
 interface ParentPlatform {
   title: string;
   href: string;
-  liveUrl: string;
+  liveUrl?: string;
   description: string;
   image: string;
   children?: ChildPlatform[];
@@ -42,6 +42,19 @@ const platforms: ParentPlatform[] = [
     liveUrl: 'https://narrative-drift.vercel.app/',
     description: 'AI influence on choice, memory, and self-understanding over time.',
     image: '/images/narrative drift-og.png',
+  },
+  {
+    title: 'SelfTrace',
+    href: '/platforms/selftrace',
+    liveUrl: 'https://selftrace.vercel.app/',
+    description: 'Algorithmic shaping of identity, self-presentation, and online selfhood.',
+    image: '/images/selftrace og.png',
+  },
+  {
+    title: 'Ontological Governance Observatory',
+    href: '/platforms/ontological-governance-observatory',
+    description: 'AI\'s transformation of the human subject across epistemic, ontological, and political layers.',
+    image: '/images/ogo-og.png',
   },
   {
     title: 'Orbital Risk Tracker',
