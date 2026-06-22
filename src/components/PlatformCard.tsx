@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 
@@ -6,13 +7,17 @@ interface PlatformCardProps {
   title: string;
   description: string;
   status: string;
+  /** Stable style key (English). Defaults to `status`. */
+  statusVariant?: string;
   liveUrl?: string;
   tags?: string[];
   image?: string;
   coreQuestion?: string;
 }
 
-export default function PlatformCard({ href, title, description, status, liveUrl, tags, image, coreQuestion }: PlatformCardProps) {
+export default function PlatformCard({ href, title, description, status, statusVariant, liveUrl, tags, image, coreQuestion }: PlatformCardProps) {
+  const t = useTranslations('common');
+  const variant = statusVariant ?? status;
   return (
     <Link href={href} className="block group">
       <div className="card-washi card-washi-platform card-hover relative overflow-hidden">
@@ -35,7 +40,7 @@ export default function PlatformCard({ href, title, description, status, liveUrl
           <div className="flex items-start justify-between mb-3">
             <h3 className="font-cormorant text-lg md:text-xl font-semibold text-kuro-soft pr-4 group-hover:text-shu-deep transition-colors">{title}</h3>
             <span className={`shrink-0 px-2.5 py-0.5 text-xs font-inter font-medium tracking-wider rounded border ${
-              status === 'Live'
+              variant === 'Live'
                 ? 'bg-shu/10 text-shu-deep border-shu/25 shadow-[0_0_8px_rgba(224,60,49,0.08)]'
                 : 'bg-kin/10 text-kin-deep border-kin/20 shadow-[0_0_8px_rgba(212,160,23,0.06)]'
             }`}>
@@ -61,7 +66,7 @@ export default function PlatformCard({ href, title, description, status, liveUrl
 
           {liveUrl && (
             <span className="font-inter text-xs text-kin-deep/70 group-hover:text-shu tracking-widest transition-colors uppercase font-medium">
-              View platform →
+              {t('viewPlatform')}
             </span>
           )}
         </div>

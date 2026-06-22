@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 
@@ -17,6 +18,7 @@ interface FlagshipCardProps {
 }
 
 export default function FlagshipCard({ href, title, description, includes, image, subProjects }: FlagshipCardProps) {
+  const t = useTranslations('common');
   return (
     <Link href={href} className="block group">
       <div className="card-washi card-washi-platform card-hover relative overflow-hidden border border-kin/15">
@@ -36,7 +38,7 @@ export default function FlagshipCard({ href, title, description, includes, image
             {/* Flagship label overlay */}
             <div className="absolute top-4 left-4 z-10">
               <span className="px-3 py-1 text-[10px] font-inter font-bold tracking-[0.25em] uppercase bg-kuro/80 backdrop-blur-sm text-kin border border-kin/30 rounded-sm shadow-[0_0_12px_rgba(212,160,23,0.15)]">
-                Flagship System
+                {t('flagshipSystem')}
               </span>
             </div>
           </div>
@@ -48,7 +50,7 @@ export default function FlagshipCard({ href, title, description, includes, image
               {title}
             </h3>
             <span className="shrink-0 px-2.5 py-0.5 text-xs font-inter font-medium tracking-wider rounded border bg-shu/10 text-shu-deep border-shu/25 shadow-[0_0_8px_rgba(224,60,49,0.08)]">
-              Live
+              {t('live')}
             </span>
           </div>
 
@@ -57,7 +59,7 @@ export default function FlagshipCard({ href, title, description, includes, image
 
           {/* Sub-project listing */}
           <div className="border-t border-kuro-soft/8 pt-4 mb-4">
-            <p className="font-inter text-[10px] text-kuro-soft/40 tracking-[0.2em] uppercase mb-3 font-semibold">Includes {subProjects.length} projects</p>
+            <p className="font-inter text-[10px] text-kuro-soft/40 tracking-[0.2em] uppercase mb-3 font-semibold">{t('includesProjects', { count: subProjects.length })}</p>
             <div className="flex flex-wrap gap-2">
               {subProjects.map(sp => (
                 <span key={sp.name} className="text-xs font-inter text-kuro-soft/60 border border-kuro-soft/12 bg-kuro/[0.04] px-2.5 py-1 rounded font-medium">
@@ -68,7 +70,7 @@ export default function FlagshipCard({ href, title, description, includes, image
           </div>
 
           <span className="font-inter text-xs text-kin-deep/70 group-hover:text-shu tracking-widest transition-colors uppercase font-medium">
-            View platform →
+            {t('viewPlatform')}
           </span>
         </div>
       </div>

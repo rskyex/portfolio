@@ -25,6 +25,12 @@
     "collapse": "Collapse",
     "researchFocus": "Research focus"
   },
+  "common": {
+    "viewPlatform": "View platform →",
+    "flagshipSystem": "Flagship System",
+    "live": "Live",
+    "includesProjects": "Includes {count} projects"
+  },
   "siteMeta": {
     "title": "Risa Koyanagi — Cambridge Future Scholar & Researcher",
     "description": "Portfolio of Risa Koyanagi — Cambridge Future Scholar and researcher working across international security, space governance, nuclear governance, cyber governance, and emerging technology governance."
