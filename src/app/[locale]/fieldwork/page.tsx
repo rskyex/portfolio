@@ -61,28 +61,32 @@ export default async function FieldworkPage({
         ))}
       </div>
 
-      <SectionDivider />
+      {/* Speaking & Policy Engagement — only when the locale provides entries */}
+      {c.speaking.length > 0 && (
+        <>
+          <SectionDivider />
 
-      {/* Speaking & Policy Engagement */}
-      <div className="mt-10 mb-8">
-        <h3 className="font-inter text-xs text-kin tracking-[0.25em] uppercase font-semibold">{c.speakingSection.heading}</h3>
-        <p className="font-inter text-sm text-shiro/80 leading-relaxed max-w-2xl mt-2">
-          {c.speakingSection.intro}
-        </p>
-      </div>
+          <div className="mt-10 mb-8">
+            <h3 className="font-inter text-xs text-kin tracking-[0.25em] uppercase font-semibold">{c.speakingSection.heading}</h3>
+            <p className="font-inter text-sm text-shiro/80 leading-relaxed max-w-2xl mt-2">
+              {c.speakingSection.intro}
+            </p>
+          </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
-        {c.speaking.map(item => (
-          <SpeakingCard
-            key={item.title}
-            title={item.title}
-            context={item.context}
-            type={item.type}
-            description={item.description}
-            image={item.image}
-          />
-        ))}
-      </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {c.speaking.map(item => (
+              <SpeakingCard
+                key={item.title}
+                title={item.title}
+                context={item.context}
+                type={item.type}
+                description={item.description}
+                image={item.image}
+              />
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 }
