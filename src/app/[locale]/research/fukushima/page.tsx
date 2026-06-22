@@ -1,72 +1,73 @@
+import type { Metadata } from 'next';
+import { setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
+import { type Locale } from '@/i18n/config';
+import { buildAlternates } from '@/i18n/metadata';
+import { getFukushimaContent } from '@/content/research-fukushima';
 
-export default function FukushimaResearchPage() {
+export function generateMetadata(): Metadata {
+  return { alternates: buildAlternates('/research/fukushima') };
+}
+
+export default async function FukushimaResearchPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const c = getFukushimaContent(locale as Locale);
+
   return (
     <div className="max-w-4xl mx-auto px-6 py-12 md:py-20">
       <Link href="/research" className="font-noto-sans text-xs text-kin/50 hover:text-kin-light transition-colors tracking-wide mb-8 inline-block">
-        ← Back to Research
+        {c.backToResearch}
       </Link>
 
-      <SectionHeader kanji="論" english="Post-Disaster Governance and the Trust Gap" />
+      <SectionHeader kanji={c.header.kanji} english={c.header.english} />
 
       <div className="mt-4 mb-8">
         <span className="px-2 py-0.5 text-xs font-noto-sans rounded-sm border bg-shiro/[0.03] text-shiro/75 border-shiro/[0.06]">
-          In Progress
+          {c.status}
         </span>
       </div>
 
       <div className="space-y-8">
         <div className="panel rounded-sm p-8">
-          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Overview</h3>
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">{c.overview.heading}</h3>
           <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed mb-4">
-            This research draws on six years of fieldwork in the Fukushima region to examine the governance of post-disaster recovery. It focuses on the persistent gap between official policy frameworks and the lived experience of affected communities — particularly around questions of trust, transparency, and long-term institutional accountability.
+            {c.overview.paragraphs[0]}
           </p>
           <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed">
-            Through interviews with evacuees, municipal leaders, and officials from METI and TEPCO, the research traces how state-society relations evolve under the pressure of prolonged displacement, uncertain information, and contested recovery narratives. It contributes to broader debates on disaster governance, institutional legitimacy, and the politics of recovery.
+            {c.overview.paragraphs[1]}
           </p>
         </div>
 
         <div className="flex flex-wrap gap-2">
-          {[
-            'Post-Disaster Governance', 'Trust', 'Recovery', 'Policy Gaps',
-            'State-Society Relations', 'Transparency', 'Institutional Legitimacy',
-            'Fukushima', 'Long-Term Fieldwork'
-          ].map(tag => (
+          {c.tags.map(tag => (
             <Tag key={tag} label={tag} />
           ))}
         </div>
 
         <div className="panel rounded-sm p-8">
-          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Fieldwork</h3>
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">{c.fieldwork.heading}</h3>
           <div className="space-y-3">
-            <div className="flex items-start gap-3">
-              <span className="font-kaisei text-lg text-kin/50">一</span>
-              <p className="font-noto-sans text-sm text-shiro/90">Multi-site fieldwork across Futaba and Namie districts (2019–2024)</p>
-            </div>
-            <div className="flex items-start gap-3">
-              <span className="font-kaisei text-lg text-kin/50">二</span>
-              <p className="font-noto-sans text-sm text-shiro/90">Interviews with evacuees, mayors, town leaders, METI officials, and TEPCO representatives</p>
-            </div>
-            <div className="flex items-start gap-3">
-              <span className="font-kaisei text-lg text-kin/50">三</span>
-              <p className="font-noto-sans text-sm text-shiro/90">Organised 11-person study tour to affected areas</p>
-            </div>
+            {c.fieldwork.steps.map((step, i) => (
+              <div key={i} className="flex items-start gap-3">
+                <span className="font-kaisei text-lg text-kin/50">{step.glyph}</span>
+                <p className="font-noto-sans text-sm text-shiro/90">{step.text}</p>
+              </div>
+            ))}
           </div>
         </div>
 
         <div className="panel rounded-sm p-8">
-          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Key Themes</h3>
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">{c.keyThemes.heading}</h3>
           <ul className="space-y-2">
-            {[
-              'The policy-recovery gap and its consequences for affected communities',
-              'Trust and transparency in post-disaster state-society relations',
-              'Long-term displacement and the politics of return',
-              'Institutional accountability under conditions of uncertainty',
-              'The role of local governance actors in mediating recovery processes',
-            ].map((theme, i) => (
+            {c.keyThemes.items.map((theme, i) => (
               <li key={i} className="font-noto-sans text-sm text-shiro/90 leading-relaxed flex items-start gap-2">
                 <span className="text-shu/30 mt-1">—</span>
                 {theme}
@@ -76,13 +77,13 @@ export default function FukushimaResearchPage() {
         </div>
 
         <div className="panel rounded-sm p-8">
-          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-6">Research Output</h3>
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-6">{c.researchOutput.heading}</h3>
           <div className="space-y-5">
             {[1, 2, 3, 4, 5].map((n) => (
               <div key={n} className="border border-shiro/[0.06] rounded-sm overflow-hidden">
                 <img
                   src={`/images/fukushima%20DT%20slide%20(${n}).jpg`}
-                  alt={`Fukushima research output slide ${n}`}
+                  alt={c.researchOutput.slideAlt(n)}
                   className="w-full h-auto"
                   loading="lazy"
                 />
@@ -92,7 +93,7 @@ export default function FukushimaResearchPage() {
         </div>
 
         <div className="panel rounded-sm p-8">
-          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-6">Gallery</h3>
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-6">{c.gallery.heading}</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {[
               { n: 1, ext: 'jpg' },
@@ -108,7 +109,7 @@ export default function FukushimaResearchPage() {
               <PhotoFrame
                 key={i}
                 src={`/images/fukushima-${n}.${ext}`}
-                alt={`Fukushima fieldwork photo ${n}`}
+                alt={c.gallery.photoAlt(n)}
                 width={400}
                 height={300}
                 className="w-full h-40 md:h-48"
@@ -116,7 +117,7 @@ export default function FukushimaResearchPage() {
             ))}
             <PhotoFrame
               src="/images/peace-2.jpg"
-              alt="Fukushima fieldwork photo"
+              alt={c.gallery.peacePhotoAlt}
               width={400}
               height={300}
               className="w-full h-40 md:h-48"

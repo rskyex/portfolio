@@ -1,63 +1,52 @@
 import type { Metadata } from 'next';
+import { setRequestLocale } from 'next-intl/server';
 import SectionHeader from '@/components/SectionHeader';
 import ProjectCard from '@/components/ProjectCard';
+import { type Locale } from '@/i18n/config';
+import { buildAlternates } from '@/i18n/metadata';
+import { getProjectsContent } from '@/content/projects';
 
-export const metadata: Metadata = {
-  title: 'Background & Fieldwork — Risa Koyanagi',
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const c = getProjectsContent(locale as Locale);
+  return {
+    title: c.meta.title,
+    description: c.meta.description,
+    alternates: buildAlternates('/projects'),
+  };
+}
 
-export default function ProjectsPage() {
+export default async function ProjectsPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const c = getProjectsContent(locale as Locale);
+
   return (
     <div className="max-w-6xl mx-auto px-6 py-12 md:py-20">
       <SectionHeader
-        kanji="業"
-        english="Background & Fieldwork"
-        subtitle="Fieldwork, leadership, and interdisciplinary engagement"
+        kanji={c.header.kanji}
+        english={c.header.english}
+        subtitle={c.header.subtitle}
       />
 
       <div className="mt-6 mb-12">
         <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed max-w-2xl">
-          Leadership, fieldwork, institution-building, and interdisciplinary engagement across research, policy, cultural, and artistic domains.
+          {c.intro}
         </p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-8">
-        <ProjectCard
-          href="/projects/fukushima"
-          title="Fukushima Field Research"
-          description="Multi-site fieldwork in Futaba and Namie districts examining post-disaster governance, trust, and the policy-recovery gap. Includes interviews with evacuees, mayors, town leaders, METI, and TEPCO officials. This fieldwork forms the empirical foundation for ongoing research on post-disaster governance and the trust gap."
-          badge="Active Research"
-          image="/images/fukushima.jpg"
-          imageAlt="Fukushima field research"
-          period="2019–2024"
-        />
-
-        <ProjectCard
-          href="/projects/afrecos"
-          title="AFRECOS"
-          description="Co-founded a 10+ country network for cultural and policy events bridging Africa and Japan. Organised events with around 70–80 attendees and a House of Councillors policy talk with approximately 50 stakeholders."
-          image="/images/afrecos.jpg"
-          imageAlt="AFRECOS event"
-          period="2024"
-          role="Co-Founder & President"
-        />
-
-        <ProjectCard
-          href="/projects/peace"
-          title="Peacebuilding Laboratory"
-          description="Research community and discussion platform within Sophia University's Professor Daisaku Higashi Peacebuilding and International Cooperation Laboratory. Dialogue-based seminars on Ukraine, Afghanistan, Iraq, and South Sudan."
-          image="/images/mofa-korea.jpg"
-          imageAlt="Peacebuilding seminar"
-          role="President"
-        />
-
-        <ProjectCard
-          href="/projects/art"
-          title="Art Practice"
-          description="Interdisciplinary art practice spanning visual thinking, international exhibition, and conceptual work that intersects with broader research on governance, identity, and technology."
-          image="/images/art.JPG"
-          imageAlt="Art practice"
-        />
+        {c.cards.map(card => (
+          <ProjectCard key={card.href} {...card} />
+        ))}
       </div>
     </div>
   );
