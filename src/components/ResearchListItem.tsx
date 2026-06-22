@@ -4,6 +4,9 @@ interface ResearchListItemProps {
   href: string;
   title: string;
   status: string;
+  /** Stable style key (English). Defaults to `status` for backward compat,
+   *  so a localized `status` label can keep the right badge colour. */
+  statusVariant?: string;
   themes: string[];
   description?: string;
 }
@@ -17,7 +20,8 @@ const statusStyles: Record<string, string> = {
   'In Progress': 'bg-kuro/[0.04] text-kuro-soft/60 border-kuro-soft/10',
 };
 
-export default function ResearchListItem({ href, title, status, themes, description }: ResearchListItemProps) {
+export default function ResearchListItem({ href, title, status, statusVariant, themes, description }: ResearchListItemProps) {
+  const variant = statusVariant ?? status;
   return (
     <Link href={href} className="block group">
       <div className="card-washi card-washi-research card-hover relative overflow-hidden p-6">
@@ -29,7 +33,7 @@ export default function ResearchListItem({ href, title, status, themes, descript
             <h3 className="font-cormorant text-lg font-semibold text-kuro-soft group-hover:text-shu-deep transition-colors italic">
               {title}
             </h3>
-            <span className={`shrink-0 self-start px-2.5 py-0.5 text-xs font-inter font-medium tracking-wider rounded border ${statusStyles[status] || statusStyles['In Progress']}`}>
+            <span className={`shrink-0 self-start px-2.5 py-0.5 text-xs font-inter font-medium tracking-wider rounded border ${statusStyles[variant] || statusStyles['In Progress']}`}>
               {status}
             </span>
           </div>

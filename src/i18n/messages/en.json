@@ -18,6 +18,13 @@
     "fieldwork": "Fieldwork & Engagement",
     "about": "About"
   },
+  "conference": {
+    "eyebrow": "Forthcoming · 2026",
+    "acceptedPapers": "{count} accepted papers",
+    "viewPapers": "View papers",
+    "collapse": "Collapse",
+    "researchFocus": "Research focus"
+  },
   "siteMeta": {
     "title": "Risa Koyanagi — Cambridge Future Scholar & Researcher",
     "description": "Portfolio of Risa Koyanagi — Cambridge Future Scholar and researcher working across international security, space governance, nuclear governance, cyber governance, and emerging technology governance."

@@ -1,10 +1,14 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 interface Paper {
   title: string;
+  /** Style key (stable, English). */
   type: 'Oral Presentation' | 'Interactive Presentation';
+  /** Localized label for display; falls back to `type`. */
+  typeLabel?: string;
   symposium: string;
   date?: string;
 }
@@ -29,6 +33,7 @@ export default function ConferenceCard({
   focus,
 }: ConferenceCardProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const t = useTranslations('conference');
 
   return (
     <div className="relative">
@@ -55,7 +60,7 @@ export default function ConferenceCard({
               {/* Eyebrow */}
               <div className="flex items-center gap-3 mb-4">
                 <span className="font-inter text-[10px] tracking-[0.32em] uppercase text-kin/80 font-medium">
-                  Forthcoming · 2026
+                  {t('eyebrow')}
                 </span>
                 <span className="h-px w-8 bg-gradient-to-r from-kin/40 to-transparent" />
               </div>
@@ -98,10 +103,10 @@ export default function ConferenceCard({
           {/* Toggle row */}
           <div className="mt-7 flex items-center justify-between gap-4 pt-5 border-t border-shiro/[0.06]">
             <span className="font-inter text-[11px] tracking-[0.22em] uppercase text-shiro/50">
-              {papers.length} accepted papers
+              {t('acceptedPapers', { count: papers.length })}
             </span>
             <span className="inline-flex items-center gap-2 font-inter text-[11px] tracking-[0.22em] uppercase text-kin/75 group-hover:text-kin-glow transition-colors">
-              {isOpen ? 'Collapse' : 'View papers'}
+              {isOpen ? t('collapse') : t('viewPapers')}
               <svg
                 width="11"
                 height="11"
@@ -151,7 +156,7 @@ export default function ConferenceCard({
                             : 'border-kin/25 bg-kin/[0.06] text-kin/85'
                         }`}
                       >
-                        {paper.type}
+                        {paper.typeLabel ?? paper.type}
                       </span>
                       <span className="font-inter text-[11.5px] text-shiro/60 tracking-wide">
                         {paper.symposium}
@@ -173,7 +178,7 @@ export default function ConferenceCard({
       {/* Research focus descriptor */}
       <p className="mt-5 font-inter text-[12.5px] text-shiro/55 leading-relaxed tracking-wide max-w-3xl">
         <span className="text-kin/75 font-medium tracking-[0.18em] uppercase text-[10.5px] mr-2">
-          Research focus
+          {t('researchFocus')}
         </span>
         {focus}
       </p>
