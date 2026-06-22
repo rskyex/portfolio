@@ -89,15 +89,16 @@ export const artJa: ArtContent = {
         { src: '/images/art%20on%20loop%20jan.jpeg', alt: 'ART ON LOOP 2024年1月' },
         { src: '/images/art-2.PNG', alt: 'ART ON LOOP 2024年1月の作品' },
       ],
-      // 固有名詞のため原語のまま据え置き
+      // 固有名詞のため原語のまま据え置き。住所行は原文どおり。
+      // TODO(i18n-review): 会期・開館時間など案内文の和訳要確認
       title: 'ART ON LOOP',
       city: 'ロンドン・アテネ',
       lines: [
-        'January 12th – 28th, 2024',
+        '2024年1月12日 – 28日',
         'The Factory, 21-31 Shacklewell Ln, London, E8 2DA',
         'Πραξιτέλους 26, Αθήνα, 105 61',
-        'Visiting hours: Mon – Fri 10:00-13:00 & 14:00-17:00, Weekend 11:00 – 17:00',
-        'Private viewing Friday 19:30 – 22:00',
+        '開館時間：月〜金 10:00-13:00 & 14:00-17:00、週末 11:00 – 17:00',
+        'プライベート・ビューイング：金曜 19:30 – 22:00',
       ],
       linkHref: 'https://www.theholyart.com/',
       linkText: 'theholyart.com',
@@ -109,7 +110,7 @@ export const artJa: ArtContent = {
       // TODO(i18n-review): 主催者名 Artspace Innovation は原語のまま据え置き
       city: 'ニューヨーク — Artspace Innovation主催',
       lines: [
-        '19th March 2024, 19:00 – 21:00 (New York time)',
+        '2024年3月19日 19:00 – 21:00（ニューヨーク時間）',
         'Stuart Cinema, 79 West Street, Brooklyn NY 11222',
       ],
     },
@@ -119,12 +120,13 @@ export const artJa: ArtContent = {
       // 固有名詞 + 説明部分のみ和訳
       title: 'ART ON LOOP — デジタル展示',
       city: 'ロンドン・アテネ',
+      // TODO(i18n-review): 会期・開館時間など案内文の和訳要確認。住所行は原文どおり
       lines: [
-        'Private Viewing: Friday, September 20th, 2024, 19:30 – 22:00',
-        'Open to the public until September 29th, 2024',
+        'プライベート・ビューイング：2024年9月20日（金）19:30 – 22:00',
+        '一般公開は2024年9月29日まで',
         'The Factory, 21-31 Shacklewell Ln, London, E8 2DA',
         'Πραξιτέλους 26, Αθήνα, 105 61',
-        'Visiting hours: Mon – Fri 10:00-13:00 & 14:00-17:00, Weekend 11:00 – 17:00',
+        '開館時間：月〜金 10:00-13:00 & 14:00-17:00、週末 11:00 – 17:00',
       ],
     },
   },
