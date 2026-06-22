@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { NextIntlClientProvider } from 'next-intl';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { routing } from '@/i18n/routing';
@@ -67,6 +67,9 @@ export default async function LocaleLayout({
   }
   // Enable static rendering for this locale.
   setRequestLocale(locale);
+  // Pass messages explicitly so client components (e.g. the Navbar language
+  // toggle) reliably receive them during static generation.
+  const messages = await getMessages();
 
   return (
     <html lang={htmlLang[locale as Locale]} className="overflow-x-hidden">
@@ -91,7 +94,7 @@ export default async function LocaleLayout({
             className="object-cover object-center"
           />
         </div>
-        <NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
           <Navbar />
           <main className="pt-14 min-h-screen">{children}</main>
           <Footer />
