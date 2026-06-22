@@ -18,9 +18,9 @@ export const selftraceJa: SelfTraceContent = {
     heading: '概要',
     paragraphs: [
       // TODO(i18n-review): self-presentation / platform incentives / engagement metrics の訳語要確認
-      'ソーシャルメディアのアルゴリズムが、ユーザーが投稿し、反復し、記憶し、やがてオンライン上の自己として経験するものを、いかに形づくりうるかを見えるようにする省察的プラットフォーム。単純なエンゲージメント指標ではなく、アイデンティティ、自己呈示、そしてプラットフォームのインセンティブがもたらす長期的な影響に焦点を当てる。',
+      'ソーシャルメディアのアルゴリズムが、ユーザーの投稿・反復・記憶、そしてやがてオンライン上の自己として経験するものを、いかに形づくりうるかを可視化する省察的プラットフォーム。単純なエンゲージメント指標ではなく、アイデンティティ・自己呈示と、プラットフォームのインセンティブがもたらす長期的な影響を主要な関心とする。',
       // TODO(i18n-review): Govern the Human / self-understanding / epistemic, ontological, political layers の訳語要確認
-      'SelfTrace は Govern the Human プロジェクトの一部であり、同プロジェクトは、AIが人間の選択・アイデンティティ・自己理解を、認識的・存在論的・政治的な各層にわたっていかに作り変えるかを探究する。',
+      'SelfTrace は Govern the Human プロジェクトの一部をなす。同プロジェクトは、AIが人間の選択・アイデンティティ・自己理解を、認識的・存在論的・政治的な各層にわたっていかに作り変えるかを探究する。',
     ],
   },
   // TODO(i18n-review): Algorithmic Identity / Self-Presentation / Platform Incentives / Digital Reflection の訳語要確認

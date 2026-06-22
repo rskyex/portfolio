@@ -27,9 +27,9 @@ export const governTheHumanJa: GovernTheHumanContent = {
     heading: '概要',
     paragraphs: [
       // TODO(i18n-review): human subject / second-order governance の訳語要確認。プロジェクト名（Narrative Drift / SelfTrace / Ontological Governance Observatory）は原語維持
-      'Govern the Human は、Narrative Drift、SelfTrace、Ontological Governance Observatory を単一の分析環境へと統合した統一プラットフォームである。AIシステムが人間の選択・アイデンティティ・自己理解をいかに作り変えるかを探究し、現在のガバナンスの枠組みがより深い問題——AIは人間という主体そのものを作り変えうるということ——を見落としていると論じる。',
+      'Govern the Human は、Narrative Drift、SelfTrace、Ontological Governance Observatory を単一の分析環境にまとめた統一プラットフォームである。AIシステムが人間の選択・アイデンティティ・自己理解をどう作り変えるかを問い、現在のガバナンスの枠組みは、AIが人間という主体そのものを作り変えうるというより深い問題を見落としていると論じる。',
       // TODO(i18n-review): epistemic / ontological / second-order governance の訳語要確認
-      'このプラットフォームは、これらの変化を認識論的・存在論的・政治的な各層にわたってマッピングし、インタラクティブなシミュレーションと研究に基づく分析を組み合わせて、新たな形の二次的ガバナンスの必要性を論じる。',
+      'こうした変化を認識論的・存在論的・政治的な各層にわたってマッピングし、インタラクティブなシミュレーションと研究に基づく分析を組み合わせて、新たな形の二次的ガバナンスの必要を説く。',
     ],
   },
   // TODO(i18n-review): 記述タグの訳語要確認
@@ -46,14 +46,14 @@ export const governTheHumanJa: GovernTheHumanContent = {
     {
       title: 'Narrative Drift',
       description:
-        'AIシステムが、人がいかに選び、記憶し、自己を理解するかを、ゆっくりと作り変えていく様子を体験できるインタラクティブなシミュレーション。利用者は自分自身の選択を続けるが、その選択の条件は時間とともに静かに変化していく。',
+        'AIシステムが、人の選び方、記憶の仕方、自己理解のあり方をゆっくりと作り変えていく様子を体験できるインタラクティブなシミュレーション。利用者は自ら選択を重ねるが、その選択の条件は時間とともに静かに移り変わる。',
       // TODO(i18n-review): 記述タグの訳語要確認
       tags: ['AIの影響', '選択アーキテクチャ', 'アイデンティティ・シミュレーション', '認識論的ドリフト'],
     },
     {
       title: 'SelfTrace',
       description:
-        'ソーシャルメディアのアルゴリズムが、利用者が何を投稿し、繰り返し、記憶し、やがてオンライン上の自己として経験するようになるかを、いかに形づくりうるかを可視化する内省的なプラットフォーム。単純なエンゲージメント指標ではなく、アイデンティティ、自己呈示、そしてプラットフォームのインセンティブがもたらす長期的影響に焦点を当てる。',
+        'ソーシャルメディアのアルゴリズムが、利用者の投稿・反復・記憶を、ひいてはオンライン上の自己として経験されるものを、どう形づくりうるかを可視化する内省的なプラットフォーム。単純なエンゲージメント指標ではなく、アイデンティティ、自己呈示、そしてプラットフォームのインセンティブがもたらす長期的影響を主眼とする。',
       // TODO(i18n-review): self-presentation / platform incentives の訳語要確認
       tags: ['アルゴリズム的アイデンティティ', '自己呈示', 'プラットフォーム・インセンティブ', 'デジタルな内省'],
     },
@@ -61,7 +61,7 @@ export const governTheHumanJa: GovernTheHumanContent = {
       title: 'Ontological Governance Observatory',
       description:
         // TODO(i18n-review): second-order governance / human subject / ontological の訳語要確認
-        '現在のAIガバナンスの枠組みが、より深い問題を見落としていることを示す研究プラットフォーム。AIはリスクや出力を生み出すだけでなく、人間という主体そのものを作り変えうる。これらの変化を認識論的・存在論的・政治的な各層にわたってマッピングし、新たな形の二次的ガバナンスの必要性を論じる。',
+        '現在のAIガバナンスの枠組みが、より深い問題を見落としていることを示す研究プラットフォーム。AIはリスクや出力を生み出すだけでなく、人間という主体そのものを作り変えうる。こうした変化を認識論的・存在論的・政治的な各層にわたってマッピングし、新たな形の二次的ガバナンスの必要を説く。',
       // TODO(i18n-review): 記述タグの訳語要確認
       tags: ['AIガバナンス', '存在論的リスク', '二次的ガバナンス', '認識論的再構成'],
     },

@@ -14,7 +14,7 @@ export const platformsJa: PlatformsContent = {
   },
   // TODO(i18n-review): 正統性/権威/エスカレーション など術語要確認
   intro:
-    '戦略的インフラ領域を横断し、ガバナンス理論を実装可能なプラットフォームへと変換する、一貫した公開型の研究・政策ツール群。各プラットフォームは、正統性・権威・エスカレーションをめぐる概念的枠組みと、応用的な政策課題とを結びつける。',
+    '戦略的インフラ領域を横断し、ガバナンス理論を実装可能なプラットフォームへと落とし込む、一貫した公開型の研究・政策ツール群。いずれのプラットフォームも、正統性・権威・エスカレーションをめぐる概念枠組みを、具体的な政策課題へと結びつける。',
   researchPlatforms: {
     title: '研究プラットフォーム',
     subtitle: '独自に設計した研究・政策・戦略リスクのツール',
@@ -24,7 +24,7 @@ export const platformsJa: PlatformsContent = {
         title: 'Cyber Escalation Atlas',
         // TODO(i18n-review): attribution（帰属）/governance signals の訳語要確認
         description:
-          'サイバー・インシデントを戦略的行動、アトリビューション（帰属）の枠組み、そしてガバナンスのシグナルとしてマッピングする。',
+          'サイバー・インシデントを、戦略的行動・アトリビューション（帰属）の枠組み・ガバナンスのシグナルとして読み解き、地図化する。',
         status: '公開中',
         statusVariant: 'Live',
         liveUrl: 'https://cyber-escalation-atlas-5yp5.vercel.app',
@@ -32,7 +32,7 @@ export const platformsJa: PlatformsContent = {
         image: '/images/cyber-platform.png',
         // TODO(i18n-review): strategic behaviour / governance frameworks の訳語要確認
         coreQuestion:
-          '核心的な問い：サイバー作戦は戦略的行動としていかに機能し、それを捉えうるガバナンスの枠組みとは何か。',
+          '核心的な問い：サイバー作戦は戦略的行動としていかに機能するのか。そして、それを捉えうるガバナンスの枠組みとは何か。',
       },
       {
         href: '/platforms/narrative-drift',
@@ -126,7 +126,7 @@ export const platformsJa: PlatformsContent = {
         image: '/images/LGAT-og.svg',
         // TODO(i18n-review): legitimacy / on behalf of humanity の訳語要確認
         coreQuestion:
-          '核心的な問い：競合するガバナンスの枠組みは、月において人類を代表して、いかに権威を構築し正統性を主張するのか。',
+          '核心的な問い：競合するガバナンスの枠組みは、月において人類を代表すると称しつつ、いかに権威を築き正統性を主張するのか。',
       },
     ],
   },
@@ -141,7 +141,7 @@ export const platformsJa: PlatformsContent = {
         '自己・文化・パフォーマンス・美的形式が、探索可能な世界となる解釈のためのスタジオ。',
       // TODO(i18n-review): philosophical game design の訳語要確認
       includes:
-        '音楽分析、真正性、そして哲学的なゲームデザインに関する連結プロジェクトを含む。',
+        '音楽分析・真正性・哲学的なゲームデザインを扱う連結プロジェクトを内包する。',
       liveUrl: 'https://mythera.vercel.app/',
       image: '/images/mythera og.png',
       subProjects: [
@@ -172,7 +172,7 @@ export const platformsJa: PlatformsContent = {
         title: 'Theatre of Authenticity',
         // TODO(i18n-review): authenticity / externalised の訳語要確認
         description:
-          '真正性そのものを問う体験型サイト——私たちの行動の背後にある動機が、どこまで外部化されてきたのかを可視化する。三島、キルケゴール、ニーチェ、サルトル、バタイユにわたる。',
+          '真正性そのものを問う体験型サイト。私たちの行動を駆り立てる動機が、どこまで外部化されてきたのかを可視化する。三島、キルケゴール、ニーチェ、サルトル、バタイユを横断する。',
         status: '進行中',
         statusVariant: 'In Progress',
         // TODO(i18n-review): Authenticity / Selfhood / Existentialism の訳語要確認
@@ -187,7 +187,7 @@ export const platformsJa: PlatformsContent = {
         title: 'Second Self',
         // TODO(i18n-review): formation of subjectivity / human subjects の訳語要確認
         description:
-          'AI、記憶、ガバナンス、そして主体性の形成を探究するオンラインの哲学カードゲーム。プレイヤーは社会を設計し、いかなる人間主体が立ち現れるかを決定する。',
+          'AI・記憶・ガバナンス・主体性の形成を探究するオンラインの哲学カードゲーム。プレイヤーは社会そのものを設計し、いかなる人間主体が立ち現れるかを決定する。',
         status: '進行中',
         statusVariant: 'In Progress',
         // TODO(i18n-review): Subjectivity / Social Design の訳語要確認
@@ -208,7 +208,7 @@ export const platformsJa: PlatformsContent = {
         title: 'Japan Promise Tracker',
         // TODO(i18n-review): policy commitments / fulfilment / public accountability の訳語要確認
         description:
-          '日本政府の政策コミットメントと、その達成状況をガバナンス領域にわたって追跡する。政府の約束を透明かつ追跡可能にすることで、公的アカウンタビリティ、政策分析、市民参加を支えるよう設計されている。',
+          '日本政府の政策コミットメントと、その達成状況をガバナンス領域にわたって追跡する。政府の約束を透明で追跡可能なものとし、公的アカウンタビリティ・政策分析・市民参加を支えることをねらいとする。',
         status: '公開中',
         statusVariant: 'Live',
         liveUrl: 'https://jp-ver-japan-promise-tracker.vercel.app',

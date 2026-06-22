@@ -10,7 +10,7 @@ export const theatreJa: TheatreContent = {
     title: 'Theatre of Authenticity',
     // TODO(i18n-review): authenticity / externalised の訳語要確認
     description:
-      '真正性そのものを問う体験型サイト——私たちの行動の背後にある動機が、どこまで外部化されてきたのかを可視化する。',
+      '真正性そのものを問う体験型サイト。私たちの行動を駆り立てる動機が、どこまで外部化されてきたのかを可視化する。',
   },
   backLabel: '← MYTHERA に戻る',
   backHref: '/platforms/mythera',
@@ -24,9 +24,9 @@ export const theatreJa: TheatreContent = {
       // TODO(i18n-review): authenticity / inner necessity / true self の訳語要確認
       '真正性という概念そのものを問う体験型サイト。あなたは本当に内なる必然から行動しているのか、それとも観察されていることを前提に自己を構築しているのか。「真の自己」という観念は、いったいどこまで持ちこたえうるのか。',
       // TODO(i18n-review): external forces / the gaze of others / externalised の訳語要確認
-      'ユーザーは一連の選択を行うが、その途中で外的な力が介入しはじめる——他者のまなざし、観客、記録装置、称賛、そして反発。最終的に、その人の行動の背後にある動機がどこまで外部化されているのかが可視化される。',
+      'ユーザーは一連の選択を行うが、その途中で外的な力が介入しはじめる。すなわち、他者のまなざし、観客、記録装置、称賛、そして反発である。最終的に、その人の行動を駆り立てる動機がどこまで外部化されているのかが可視化される。',
       // TODO(i18n-review): performance / transcendence の訳語要確認
-      '三島、キルケゴール、ニーチェ、サルトル、バタイユにわたり、真正性・パフォーマンス・美・死・超越の相互作用を探究する。',
+      '三島、キルケゴール、ニーチェ、サルトル、バタイユを横断しながら、真正性・パフォーマンス・美・死・超越の相互作用を探究する。',
     ],
   },
   coreQuestions: {
