@@ -1,7 +1,9 @@
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import Tsubaki3D from './Tsubaki3D';
 
 export default function Footer() {
+  const t = useTranslations('footer');
   return (
     <footer className="relative bg-kuro border-t border-kin/[0.04]">
       <div className="glow-line-tsubaki" />
@@ -24,17 +26,17 @@ export default function Footer() {
 
           <nav className="flex flex-wrap justify-center gap-6">
             {[
-              { label: 'Platforms', href: '/platforms' },
-              { label: 'Research', href: '/research' },
-              { label: 'Fieldwork & Engagement', href: '/fieldwork' },
-              { label: 'About', href: '/about' },
+              { key: 'platforms', href: '/platforms' },
+              { key: 'research', href: '/research' },
+              { key: 'fieldwork', href: '/fieldwork' },
+              { key: 'about', href: '/about' },
             ].map(item => (
               <Link
                 key={item.href}
                 href={item.href}
                 className="font-inter text-xs text-shiro/75 hover:text-kin/80 transition-colors tracking-wider uppercase"
               >
-                {item.label}
+                {t(item.key)}
               </Link>
             ))}
           </nav>
