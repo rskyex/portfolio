@@ -1,7 +1,21 @@
+'use client';
+
 import Link from 'next/link';
 import Tsubaki3D from './Tsubaki3D';
+import { useLocale } from '@/lib/locale';
+import { getDictionary } from '@/dictionaries';
 
 export default function Footer() {
+  const locale = useLocale();
+  const dict = getDictionary(locale);
+
+  const navItems = [
+    { label: dict.nav.platforms, href: '/platforms' },
+    { label: dict.nav.research, href: '/research' },
+    { label: dict.nav.fieldwork, href: '/fieldwork' },
+    { label: dict.nav.about, href: '/about' },
+  ];
+
   return (
     <footer className="relative bg-kuro border-t border-kin/[0.04]">
       <div className="glow-line-tsubaki" />
@@ -23,12 +37,7 @@ export default function Footer() {
           </div>
 
           <nav className="flex flex-wrap justify-center gap-6">
-            {[
-              { label: 'Platforms', href: '/platforms' },
-              { label: 'Research', href: '/research' },
-              { label: 'Fieldwork & Engagement', href: '/fieldwork' },
-              { label: 'About', href: '/about' },
-            ].map(item => (
+            {navItems.map(item => (
               <Link
                 key={item.href}
                 href={item.href}

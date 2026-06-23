@@ -81,8 +81,11 @@ const config: Config = {
         'gold-light': '#e8c84a',
       },
       fontFamily: {
-        cormorant: ['"Cormorant Garamond"', 'serif'],
-        inter: ['"Inter"', 'sans-serif'],
+        // Japanese fallbacks are appended so CJK glyphs render in Noto JP.
+        // Latin glyphs still resolve to the primary face first, so the English
+        // pages are visually unchanged.
+        cormorant: ['"Cormorant Garamond"', '"Noto Serif JP"', 'serif'],
+        inter: ['"Inter"', '"Noto Sans JP"', 'sans-serif'],
         kaisei: ['"Kaisei Decol"', 'serif'],
         'noto-serif': ['"Noto Serif JP"', 'serif'],
         'noto-sans': ['"Noto Sans JP"', 'sans-serif'],

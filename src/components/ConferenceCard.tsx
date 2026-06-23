@@ -9,6 +9,19 @@ interface Paper {
   date?: string;
 }
 
+interface ConferenceCardLabels {
+  eyebrow: string;
+  papersCountPrefix: string;
+  papersCountSuffix: string;
+  viewPapers: string;
+  collapse: string;
+  researchFocus: string;
+  paperTypes: {
+    oral: string;
+    interactive: string;
+  };
+}
+
 interface ConferenceCardProps {
   event: string;
   location: string;
@@ -17,7 +30,24 @@ interface ConferenceCardProps {
   tags: string[];
   papers: Paper[];
   focus: string;
+  /** Localized internal labels; defaults to English so existing usage is unchanged. */
+  labels?: ConferenceCardLabels;
+  /** When true, the papers list starts expanded. */
+  defaultOpen?: boolean;
 }
+
+const DEFAULT_LABELS: ConferenceCardLabels = {
+  eyebrow: 'Forthcoming · 2026',
+  papersCountPrefix: '',
+  papersCountSuffix: ' accepted papers',
+  viewPapers: 'View papers',
+  collapse: 'Collapse',
+  researchFocus: 'Research focus',
+  paperTypes: {
+    oral: 'Oral Presentation',
+    interactive: 'Interactive Presentation',
+  },
+};
 
 export default function ConferenceCard({
   event,
@@ -27,8 +57,10 @@ export default function ConferenceCard({
   tags,
   papers,
   focus,
+  labels = DEFAULT_LABELS,
+  defaultOpen = false,
 }: ConferenceCardProps) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(defaultOpen);
 
   return (
     <div className="relative">
@@ -55,7 +87,7 @@ export default function ConferenceCard({
               {/* Eyebrow */}
               <div className="flex items-center gap-3 mb-4">
                 <span className="font-inter text-[10px] tracking-[0.32em] uppercase text-kin/80 font-medium">
-                  Forthcoming · 2026
+                  {labels.eyebrow}
                 </span>
                 <span className="h-px w-8 bg-gradient-to-r from-kin/40 to-transparent" />
               </div>
@@ -72,15 +104,17 @@ export default function ConferenceCard({
               </p>
             </div>
 
-            {/* Highlight chip */}
-            <div className="shrink-0">
-              <div className="relative inline-flex items-center gap-2.5 px-4 py-2.5 rounded-md border border-kin/30 bg-kin/[0.06] shadow-[inset_0_0_20px_rgba(212,160,23,0.05),0_0_18px_rgba(212,160,23,0.06)]">
-                <span className="block w-1.5 h-1.5 rounded-full bg-kin-glow shadow-[0_0_10px_rgba(255,215,0,0.7)] animate-glow-pulse" />
-                <span className="font-inter text-[11px] tracking-[0.22em] uppercase text-kin font-semibold">
-                  {highlight}
-                </span>
+            {/* Highlight chip (hidden when highlight is empty) */}
+            {highlight && (
+              <div className="shrink-0">
+                <div className="relative inline-flex items-center gap-2.5 px-4 py-2.5 rounded-md border border-kin/30 bg-kin/[0.06] shadow-[inset_0_0_20px_rgba(212,160,23,0.05),0_0_18px_rgba(212,160,23,0.06)]">
+                  <span className="block w-1.5 h-1.5 rounded-full bg-kin-glow shadow-[0_0_10px_rgba(255,215,0,0.7)] animate-glow-pulse" />
+                  <span className="font-inter text-[11px] tracking-[0.22em] uppercase text-kin font-semibold">
+                    {highlight}
+                  </span>
+                </div>
               </div>
-            </div>
+            )}
           </div>
 
           {/* Tags */}
@@ -97,11 +131,14 @@ export default function ConferenceCard({
 
           {/* Toggle row */}
           <div className="mt-7 flex items-center justify-between gap-4 pt-5 border-t border-shiro/[0.06]">
+            {/* Empty span (kept for layout) when no count label is provided */}
             <span className="font-inter text-[11px] tracking-[0.22em] uppercase text-shiro/50">
-              {papers.length} accepted papers
+              {labels.papersCountPrefix || labels.papersCountSuffix
+                ? `${labels.papersCountPrefix}${papers.length}${labels.papersCountSuffix}`
+                : ''}
             </span>
             <span className="inline-flex items-center gap-2 font-inter text-[11px] tracking-[0.22em] uppercase text-kin/75 group-hover:text-kin-glow transition-colors">
-              {isOpen ? 'Collapse' : 'View papers'}
+              {isOpen ? labels.collapse : labels.viewPapers}
               <svg
                 width="11"
                 height="11"
@@ -151,7 +188,9 @@ export default function ConferenceCard({
                             : 'border-kin/25 bg-kin/[0.06] text-kin/85'
                         }`}
                       >
-                        {paper.type}
+                        {paper.type === 'Oral Presentation'
+                          ? labels.paperTypes.oral
+                          : labels.paperTypes.interactive}
                       </span>
                       <span className="font-inter text-[11.5px] text-shiro/60 tracking-wide">
                         {paper.symposium}
@@ -173,7 +212,7 @@ export default function ConferenceCard({
       {/* Research focus descriptor */}
       <p className="mt-5 font-inter text-[12.5px] text-shiro/55 leading-relaxed tracking-wide max-w-3xl">
         <span className="text-kin/75 font-medium tracking-[0.18em] uppercase text-[10.5px] mr-2">
-          Research focus
+          {labels.researchFocus}
         </span>
         {focus}
       </p>
