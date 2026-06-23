@@ -28,28 +28,12 @@ export const ja: Dictionary = {
   hero: {
     eyebrow: '宇宙・核・サイバー・先端技術ガバナンス',
     // title intentionally omitted on the JA page (per request)
+    // REVIEW: HSPS / 「ケンブリッジ国際研究センター」の正式表記
     description: [
-      { text: '小柳璃紗。' },
-      { text: 'ケンブリッジ大学人文・社会・政治学（HSPS）専攻', bold: true }, // REVIEW: HSPS 表記
-      { text: '、' },
-      { text: 'ケンブリッジ国際研究センター Cambridge Future Scholar', bold: true }, // REVIEW: センター名の正式表記
-      { text: '。' },
-      { text: '正統化', bold: true }, // REVIEW: legitimation
-      { text: '、' },
-      { text: 'デュアルユース・システム', bold: true },
-      { text: '、' },
-      { text: '権威構造', bold: true }, // REVIEW: authority architecture
-      { text: 'を軸に、' },
-      { text: '宇宙・核・先端技術ガバナンス', bold: true },
-      { text: 'を横断的に研究。' },
-      { text: '第77回International Astronautical Congress（国際宇宙会議）に単著論文3本採択', bold: true },
-      { text: '。' },
-      { text: 'JAXA International Space Education Board 2026選抜', bold: true },
-      { text: '。' },
-      { text: 'Next.js, React, TypeScript, D3.js, Leaflet', bold: true },
-      { text: 'などを用い、戦略インフラの公開データを分析・可視化する' },
-      { text: '公開リサーチ・プラットフォーム', bold: true },
-      { text: 'も開発・構築。' },
+      {
+        text:
+          '小柳璃紗。ケンブリッジ大学人文・社会・政治学（HSPS）専攻、ケンブリッジ国際研究センター Cambridge Future Scholar。正統化、デュアルユース・システム、権威構造を軸に、宇宙・核・先端技術ガバナンスを横断的に研究。第77回International Astronautical Congress（国際宇宙会議）に単著論文3本採択。JAXA International Space Education Board 2026選抜。Next.js, React, TypeScript, D3.js, Leafletなどを用い、戦略インフラの公開データを分析・可視化する公開リサーチ・プラットフォームも開発・構築。',
+      },
     ],
     ctaPlatforms: 'プラットフォーム',
     ctaResearch: '研究',
