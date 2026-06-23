@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
 import LandingPage from '@/components/LandingPage';
-import { en } from '@/dictionaries/en';
+import { ja } from '@/dictionaries/ja';
 
 export const metadata: Metadata = {
-  title: en.meta.title,
-  description: en.meta.description,
+  title: ja.meta.title,
+  description: ja.meta.description,
   alternates: {
-    canonical: '/',
+    canonical: '/ja',
     languages: {
       en: '/',
       ja: '/ja',
@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    locale: en.meta.ogLocale,
+    locale: ja.meta.ogLocale,
   },
 };
 
-export default function Home() {
-  return <LandingPage dict={en} />;
+export default function HomeJa() {
+  return <LandingPage dict={ja} />;
 }

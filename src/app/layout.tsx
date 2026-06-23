@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import LocaleHtmlLang from '@/components/LocaleHtmlLang';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -49,6 +50,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-inter antialiased bg-kuro text-shiro overflow-x-hidden">
+        <LocaleHtmlLang />
         {/* Global hero background — fixed behind all pages */}
         <div className="fixed inset-0 -z-10">
           <div className="absolute inset-0 bg-kuro" />

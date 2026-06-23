@@ -9,6 +9,19 @@ interface Paper {
   date?: string;
 }
 
+interface ConferenceCardLabels {
+  eyebrow: string;
+  papersCountPrefix: string;
+  papersCountSuffix: string;
+  viewPapers: string;
+  collapse: string;
+  researchFocus: string;
+  paperTypes: {
+    oral: string;
+    interactive: string;
+  };
+}
+
 interface ConferenceCardProps {
   event: string;
   location: string;
@@ -17,7 +30,22 @@ interface ConferenceCardProps {
   tags: string[];
   papers: Paper[];
   focus: string;
+  /** Localized internal labels; defaults to English so existing usage is unchanged. */
+  labels?: ConferenceCardLabels;
 }
+
+const DEFAULT_LABELS: ConferenceCardLabels = {
+  eyebrow: 'Forthcoming · 2026',
+  papersCountPrefix: '',
+  papersCountSuffix: ' accepted papers',
+  viewPapers: 'View papers',
+  collapse: 'Collapse',
+  researchFocus: 'Research focus',
+  paperTypes: {
+    oral: 'Oral Presentation',
+    interactive: 'Interactive Presentation',
+  },
+};
 
 export default function ConferenceCard({
   event,
@@ -27,6 +55,7 @@ export default function ConferenceCard({
   tags,
   papers,
   focus,
+  labels = DEFAULT_LABELS,
 }: ConferenceCardProps) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -55,7 +84,7 @@ export default function ConferenceCard({
               {/* Eyebrow */}
               <div className="flex items-center gap-3 mb-4">
                 <span className="font-inter text-[10px] tracking-[0.32em] uppercase text-kin/80 font-medium">
-                  Forthcoming · 2026
+                  {labels.eyebrow}
                 </span>
                 <span className="h-px w-8 bg-gradient-to-r from-kin/40 to-transparent" />
               </div>
@@ -98,10 +127,10 @@ export default function ConferenceCard({
           {/* Toggle row */}
           <div className="mt-7 flex items-center justify-between gap-4 pt-5 border-t border-shiro/[0.06]">
             <span className="font-inter text-[11px] tracking-[0.22em] uppercase text-shiro/50">
-              {papers.length} accepted papers
+              {labels.papersCountPrefix}{papers.length}{labels.papersCountSuffix}
             </span>
             <span className="inline-flex items-center gap-2 font-inter text-[11px] tracking-[0.22em] uppercase text-kin/75 group-hover:text-kin-glow transition-colors">
-              {isOpen ? 'Collapse' : 'View papers'}
+              {isOpen ? labels.collapse : labels.viewPapers}
               <svg
                 width="11"
                 height="11"
@@ -151,7 +180,9 @@ export default function ConferenceCard({
                             : 'border-kin/25 bg-kin/[0.06] text-kin/85'
                         }`}
                       >
-                        {paper.type}
+                        {paper.type === 'Oral Presentation'
+                          ? labels.paperTypes.oral
+                          : labels.paperTypes.interactive}
                       </span>
                       <span className="font-inter text-[11.5px] text-shiro/60 tracking-wide">
                         {paper.symposium}
@@ -173,7 +204,7 @@ export default function ConferenceCard({
       {/* Research focus descriptor */}
       <p className="mt-5 font-inter text-[12.5px] text-shiro/55 leading-relaxed tracking-wide max-w-3xl">
         <span className="text-kin/75 font-medium tracking-[0.18em] uppercase text-[10.5px] mr-2">
-          Research focus
+          {labels.researchFocus}
         </span>
         {focus}
       </p>
