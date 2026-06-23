@@ -199,6 +199,13 @@ export const ja: Dictionary = {
         },
       ],
     },
+    certifications: {
+      heading: '資格・認定', // REVIEW
+      items: [
+        { name: 'Microsoft Generative AI for Data Analysis', type: 'Professional Certificate' },
+        { name: 'Google Cybersecurity Specialization', type: 'Certificate' },
+      ],
+    },
     skills: {
       heading: 'スキル',
       groups: [
@@ -217,11 +224,19 @@ export const ja: Dictionary = {
           ],
         },
         {
-          title: '技術・計算手法',
-          paragraphs: [
-            'プラットフォーム設計、公開リサーチツールの試作、AIワークフロー設計、プロンプトエンジニアリング、OpenAI APIを用いた機能設計、Supabaseによるデータ構造化、SQL、アナリティクス計装、イベントログ設計、ダッシュボード設計。',
-            '情報設計、ユーザーフロー設計、UI/UXディレクション、定性的コーディング、言説・ナラティブ分析のワークフロー、ステークホルダー・マッピング。',
-            '政策・インフラデータの整理、行動研究の設計、リサーチからインターフェースへの翻訳。',
+          title: '技術・エンジニアリング・データ', // REVIEW
+          bullets: [
+            'Next.js · React · TypeScript',
+            'D3.js（データ可視化）· Leaflet · GeoJSON（インタラクティブな地理空間マッピング）',
+            'フロントエンドUI・レスポンシブインターフェース開発',
+            'インタラクティブ・ダッシュボード／データプロダクト設計（政策グレードのインターフェース）',
+            'データのクリーニング・構造化・データセット構築（コーパス構築；IAEA / SIPRI の地理空間レイヤー）',
+            '地理空間データパイプライン（IAEA / SIPRI データセット）',
+            'Vercel（デプロイ）· Git / GitHub（rskyex）',
+            'SQL',
+            'Python（基礎；実務での常用はなし）', // 状態の注記はそのまま保持
+            'データ分析ワークフローのための生成AI（プロンプティング、分析タスクの構造化）',
+            'サイバーセキュリティの基礎（デジタルリスク、セキュリティを意識した思考）',
           ],
         },
       ],
