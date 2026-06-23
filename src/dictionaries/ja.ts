@@ -271,7 +271,7 @@ export const ja: Dictionary = {
       ],
     },
     connect: {
-      heading: 'お問い合せ',
+      heading: 'お問い合わせ',
       galleryAlt: 'ギャラリー',
       contactLabel: 'お問い合わせ',
     },
