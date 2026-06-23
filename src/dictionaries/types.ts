@@ -70,7 +70,8 @@ export interface Dictionary {
   };
   hero: {
     eyebrow: string;
-    title: string;
+    /** Optional: omitted in locales that don't show a tagline (e.g. JA). */
+    title?: string;
     description: TextSegment[];
     ctaPlatforms: string;
     ctaResearch: string;
@@ -93,6 +94,8 @@ export interface Dictionary {
   conferenceSection: {
     heading: string;
     subtitle: string;
+    /** When true, the accepted papers are expanded on load (JA layout). */
+    defaultOpenPapers?: boolean;
     card: {
       event: string;
       location: string;
@@ -117,6 +120,10 @@ export interface Dictionary {
   };
   /** Null in a locale that omits this section entirely (e.g. the JA page). */
   fieldworkSection: FieldworkSection | null;
+  /** When true, render the Conference section before Research (JA layout). */
+  conferenceFirst?: boolean;
+  /** Locale-specific extra sections appended after the core content (JA only). */
+  extra?: ExtraSections;
 }
 
 export interface FieldworkSection {
@@ -126,4 +133,31 @@ export interface FieldworkSection {
   viewAll: string;
   projects: ProjectText[];
   speaking: SpeakingText[];
+}
+
+export interface EducationItem {
+  institution: string;
+  period: string;
+  degree?: string;
+  detail?: string;
+}
+
+export interface SkillGroup {
+  title: string;
+  paragraphs: string[];
+}
+
+export interface ArtsLink {
+  label: string;
+  href: string;
+}
+
+/** Profile sections ported from the About page, shown only on the JA landing page. */
+export interface ExtraSections {
+  education: { heading: string; items: EducationItem[] };
+  skills: { heading: string; groups: SkillGroup[] };
+  languages: { heading: string; items: string[] };
+  arts: { heading: string; paragraphs: string[]; links: ArtsLink[] };
+  interests: { heading: string; items: string[] };
+  connect: { heading: string; galleryAlt: string; contactLabel: string };
 }

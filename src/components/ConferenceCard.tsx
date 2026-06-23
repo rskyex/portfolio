@@ -32,6 +32,8 @@ interface ConferenceCardProps {
   focus: string;
   /** Localized internal labels; defaults to English so existing usage is unchanged. */
   labels?: ConferenceCardLabels;
+  /** When true, the papers list starts expanded. */
+  defaultOpen?: boolean;
 }
 
 const DEFAULT_LABELS: ConferenceCardLabels = {
@@ -56,8 +58,9 @@ export default function ConferenceCard({
   papers,
   focus,
   labels = DEFAULT_LABELS,
+  defaultOpen = false,
 }: ConferenceCardProps) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(defaultOpen);
 
   return (
     <div className="relative">

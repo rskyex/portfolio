@@ -7,6 +7,7 @@ import ProjectCard from '@/components/ProjectCard';
 import SpeakingCard from '@/components/SpeakingCard';
 import ConferenceCard from '@/components/ConferenceCard';
 import Tsubaki3D from '@/components/Tsubaki3D';
+import LandingExtraSections from '@/components/LandingExtraSections';
 import type { Dictionary } from '@/dictionaries/types';
 
 /* ─── Locale-independent assets (images, links, structural flags) ───
@@ -51,7 +52,77 @@ const paperTypes: Array<'Oral Presentation' | 'Interactive Presentation'> = [
 ];
 
 export default function LandingPage({ dict }: { dict: Dictionary }) {
-  const { hero, platformsSection, researchSection, conferenceSection, fieldworkSection } = dict;
+  const {
+    hero,
+    platformsSection,
+    researchSection,
+    conferenceSection,
+    fieldworkSection,
+    conferenceFirst,
+    extra,
+  } = dict;
+
+  /* Research and Conference swap order between locales (conferenceFirst). */
+  const researchNode = (
+    <section className="max-w-6xl mx-auto px-6 pb-16 relative">
+      <div className="relative">
+        <SectionHeader kanji="論" english={researchSection.heading} subtitle={researchSection.subtitle} />
+        <div className="mt-8 space-y-4">
+          {researchSection.items.map((item) => (
+            <Link key={item.slug} href={`/research/${item.slug}`} className="block group">
+              <div className="card-washi card-washi-research card-hover relative overflow-hidden p-6">
+                <div className="glow-bar absolute left-0 top-0 bottom-0" />
+                <div className="relative pl-4">
+                  <h3 className="font-cormorant text-lg font-semibold text-kuro-soft group-hover:text-shu-deep transition-colors italic mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="font-inter text-sm text-kuro-soft/60 leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+        <div className="mt-8 text-right">
+          <Link href="/research" className="font-inter text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
+            {researchSection.viewAll}
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+
+  const conferenceNode = (
+    <section className="max-w-6xl mx-auto px-6 pb-16 relative">
+      <div className="relative">
+        <SectionHeader
+          kanji="壇"
+          english={conferenceSection.heading}
+          subtitle={conferenceSection.subtitle}
+        />
+
+        <div className="mt-10">
+          <ConferenceCard
+            event={conferenceSection.card.event}
+            location={conferenceSection.card.location}
+            organizer={conferenceSection.card.organizer}
+            highlight={conferenceSection.card.highlight}
+            tags={conferenceSection.card.tags}
+            papers={conferenceSection.card.papers.map((p, i) => ({
+              title: p.title,
+              type: paperTypes[i],
+              symposium: p.symposium,
+              date: p.date,
+            }))}
+            focus={conferenceSection.card.focus}
+            labels={conferenceSection.card.labels}
+            defaultOpen={conferenceSection.defaultOpenPapers}
+          />
+        </div>
+      </div>
+    </section>
+  );
 
   return (
     <div className="relative">
@@ -125,10 +196,12 @@ export default function LandingPage({ dict }: { dict: Dictionary }) {
                 {hero.eyebrow}
               </p>
 
-              {/* Title */}
-              <p className="font-cormorant text-xl md:text-2xl text-shiro/85 font-light tracking-wider mb-8 italic">
-                {hero.title}
-              </p>
+              {/* Title (omitted when the locale has no tagline) */}
+              {hero.title && (
+                <p className="font-cormorant text-xl md:text-2xl text-shiro/85 font-light tracking-wider mb-8 italic">
+                  {hero.title}
+                </p>
+              )}
 
               {/* Description — with frosted backdrop for legibility */}
               <div className="max-w-xl mb-8 rounded-lg bg-kuro/20 backdrop-blur-[2px] px-5 py-4">
@@ -326,71 +399,24 @@ export default function LandingPage({ dict }: { dict: Dictionary }) {
         </div>
       </section>
 
-      <SectionDivider />
-
       {/* ═══════════════════════════════════════════════════
-          RESEARCH
+          RESEARCH + CONFERENCE — order swaps per locale
           ═══════════════════════════════════════════════════ */}
-      <section className="max-w-6xl mx-auto px-6 pb-16 relative">
-        <div className="relative">
-          <SectionHeader kanji="論" english={researchSection.heading} subtitle={researchSection.subtitle} />
-          <div className="mt-8 space-y-4">
-            {researchSection.items.map((item) => (
-              <Link key={item.slug} href={`/research/${item.slug}`} className="block group">
-                <div className="card-washi card-washi-research card-hover relative overflow-hidden p-6">
-                  <div className="glow-bar absolute left-0 top-0 bottom-0" />
-                  <div className="relative pl-4">
-                    <h3 className="font-cormorant text-lg font-semibold text-kuro-soft group-hover:text-shu-deep transition-colors italic mb-2">
-                      {item.title}
-                    </h3>
-                    <p className="font-inter text-sm text-kuro-soft/60 leading-relaxed">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-          <div className="mt-8 text-right">
-            <Link href="/research" className="font-inter text-xs text-kin/60 hover:text-kin-glow/90 font-medium transition-colors tracking-widest uppercase">
-              {researchSection.viewAll}
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <SectionDivider />
-
-      {/* ═══════════════════════════════════════════════════
-          SELECTED CONFERENCE PRESENTATIONS
-          ═══════════════════════════════════════════════════ */}
-      <section className="max-w-6xl mx-auto px-6 pb-16 relative">
-        <div className="relative">
-          <SectionHeader
-            kanji="壇"
-            english={conferenceSection.heading}
-            subtitle={conferenceSection.subtitle}
-          />
-
-          <div className="mt-10">
-            <ConferenceCard
-              event={conferenceSection.card.event}
-              location={conferenceSection.card.location}
-              organizer={conferenceSection.card.organizer}
-              highlight={conferenceSection.card.highlight}
-              tags={conferenceSection.card.tags}
-              papers={conferenceSection.card.papers.map((p, i) => ({
-                title: p.title,
-                type: paperTypes[i],
-                symposium: p.symposium,
-                date: p.date,
-              }))}
-              focus={conferenceSection.card.focus}
-              labels={conferenceSection.card.labels}
-            />
-          </div>
-        </div>
-      </section>
+      {conferenceFirst ? (
+        <>
+          <SectionDivider />
+          {conferenceNode}
+          <SectionDivider />
+          {researchNode}
+        </>
+      ) : (
+        <>
+          <SectionDivider />
+          {researchNode}
+          <SectionDivider />
+          {conferenceNode}
+        </>
+      )}
 
       {/* ═══════════════════════════════════════════════════
           FIELDWORK & PUBLIC ENGAGEMENT
@@ -449,6 +475,9 @@ export default function LandingPage({ dict }: { dict: Dictionary }) {
       </section>
       </>
       )}
+
+      {/* Locale-specific profile sections (JA only) */}
+      {extra && <LandingExtraSections extra={extra} />}
 
     </div>
   );
