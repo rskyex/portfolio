@@ -152,12 +152,18 @@ export interface ArtsLink {
   href: string;
 }
 
+export interface InterestGroup {
+  label: string;
+  items: string[];
+}
+
 /** Profile sections ported from the About page, shown only on the JA landing page. */
 export interface ExtraSections {
   education: { heading: string; items: EducationItem[] };
   skills: { heading: string; groups: SkillGroup[] };
   languages: { heading: string; items: string[] };
-  arts: { heading: string; paragraphs: string[]; links: ArtsLink[] };
-  interests: { heading: string; items: string[] };
+  /** Optional: omitted where the locale has no Arts section. */
+  arts?: { heading: string; paragraphs: string[]; links: ArtsLink[] };
+  interests: { heading: string; groups: InterestGroup[] };
   connect: { heading: string; galleryAlt: string; contactLabel: string };
 }

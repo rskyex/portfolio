@@ -52,7 +52,7 @@ export const ja: Dictionary = {
       { text: 'も開発・構築。' },
     ],
     ctaPlatforms: 'プラットフォーム',
-    ctaResearch: '研究を見る',
+    ctaResearch: '研究',
     contact: 'お問い合わせ',
   },
   platformsSection: {
@@ -195,7 +195,7 @@ export const ja: Dictionary = {
           degree: 'BA 人文・社会・政治学（HSPS）', // REVIEW
         },
         {
-          institution: 'ロンドン・スクール・オブ・エコノミクス（ロンドン大学）',
+          institution: 'ロンドン大学（ロンドン・スクール・オブ・エコノミクス指導）', // REVIEW
           period: '2025–2026',
           degree: 'BSc 政治学・国際関係論',
         },
@@ -227,7 +227,7 @@ export const ja: Dictionary = {
           title: '政策・コミュニケーション',
           paragraphs: [
             '政策分析、戦略的ライティング、ブリーフィング作成、ナラティブ・フレーミング、ステークホルダー連携、分野横断のコミュニケーション。',
-            '講演、モデレーション、ワークショップ・イベント設計、学際的協働、知識の統合、複雑な政治・技術課題の一般向け翻訳。',
+            '講演、モデレーション、ワークショップ・イベント設計。',
           ],
         },
         {
@@ -244,36 +244,32 @@ export const ja: Dictionary = {
       heading: '言語',
       items: ['日本語', '英語', 'ロシア語（学習中）', '中国語（学習中）'],
     },
-    arts: {
-      heading: 'アート活動', // REVIEW
-      paragraphs: [
-        '音楽演奏・ビジュアルアート・詩にわたる芸術活動は、解釈的リサーチスタジオ MYTHERA に記録されています。',
-        // REVIEW: 人名・固有名詞の日本語表記を要確認
-        'ピアノを Noriko Amano、シャドーボックスを Ineke de Bruijn、油彩を Yukiko Hamano に師事。2011年に詩で優秀賞を受賞し、マリボル国立歌劇場「カルメン」に子役として出演。十代で JYOJI-ROCK U-16 コンテスト優秀賞を受賞。Nobuhiko Utsumi のもとでの研究はグループ展につながり、Monster Exhibition に選出、Al-Tiba9 Contemporary Art Magazine に掲載されました。',
-      ],
-      links: [
-        { label: 'MYTHERA', href: '/platforms/mythera' },
-        { label: 'アート制作', href: '/projects/art' },
-      ],
-    },
+    // Arts Background section intentionally omitted from the JA page (per request).
     interests: {
-      heading: '関心',
-      // REVIEW: カタカナ表記を要確認
-      items: [
-        'ヴァイオリン',
-        'ヨハン・ゼバスティアン・バッハ',
-        'ジャン・シベリウス',
-        'ジャコモ・プッチーニ',
-        'ジュゼッペ・ヴェルディ',
-        'ピョートル・チャイコフスキー',
-        'アントニン・ドヴォルザーク',
-        'イーゴリ・ストラヴィンスキー',
-        'フョードル・ドストエフスキー',
-        '歌舞伎',
-        '三島由紀夫',
-        'ギリシャ神話',
-        'レーモン・ラディゲ',
-        'ライナー・マリア・リルケ',
+      heading: '趣味',
+      // REVIEW: カタカナ表記・分類を要確認
+      groups: [
+        {
+          label: '音楽',
+          items: [
+            'ヴァイオリン',
+            'ヨハン・ゼバスティアン・バッハ',
+            'ジャン・シベリウス',
+            'ジャコモ・プッチーニ',
+            'ジュゼッペ・ヴェルディ',
+            'ピョートル・チャイコフスキー',
+            'アントニン・ドヴォルザーク',
+            'イーゴリ・ストラヴィンスキー',
+          ],
+        },
+        {
+          label: '文学',
+          items: ['フョードル・ドストエフスキー', '三島由紀夫', 'レーモン・ラディゲ', 'ライナー・マリア・リルケ'],
+        },
+        {
+          label: '舞台・神話',
+          items: ['歌舞伎', 'ギリシャ神話'],
+        },
       ],
     },
     connect: {

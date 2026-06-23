@@ -90,44 +90,55 @@ export default function LandingExtraSections({ extra }: { extra: ExtraSections }
         </div>
       </section>
 
-      {/* ─── ARTS BACKGROUND ─── */}
-      <SectionDivider />
-      <section className="max-w-6xl mx-auto px-6 pb-16 relative">
-        <div className="relative">
-          <SectionHeader english={arts.heading} />
-          <div className="mt-8 card-washi card-washi-about p-6 relative overflow-hidden">
-            <div className="glow-bar absolute left-0 top-0 bottom-0" />
-            <div className="pl-4 space-y-4">
-              {arts.paragraphs.map((p, i) => (
-                <p key={i} className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">{p}</p>
-              ))}
-              <div className="flex flex-wrap gap-2 mt-2">
-                {arts.links.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm bg-kuro-soft/80 border border-kin/40 font-noto-sans text-xs text-kin tracking-widest uppercase font-medium hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/60 hover:text-tsubaki-blush transition-all"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
+      {/* ─── ARTS BACKGROUND (optional) ─── */}
+      {arts && (
+        <>
+          <SectionDivider />
+          <section className="max-w-6xl mx-auto px-6 pb-16 relative">
+            <div className="relative">
+              <SectionHeader english={arts.heading} />
+              <div className="mt-8 card-washi card-washi-about p-6 relative overflow-hidden">
+                <div className="glow-bar absolute left-0 top-0 bottom-0" />
+                <div className="pl-4 space-y-4">
+                  {arts.paragraphs.map((p, i) => (
+                    <p key={i} className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">{p}</p>
+                  ))}
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {arts.links.map((link) => (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm bg-kuro-soft/80 border border-kin/40 font-noto-sans text-xs text-kin tracking-widest uppercase font-medium hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/60 hover:text-tsubaki-blush transition-all"
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
+        </>
+      )}
 
-      {/* ─── INTERESTS ─── */}
+      {/* ─── INTERESTS (grouped by field for readability) ─── */}
       <SectionDivider />
       <section className="max-w-6xl mx-auto px-6 pb-16 relative">
         <div className="relative">
           <SectionHeader english={interests.heading} />
           <div className="mt-8 card-washi card-washi-about p-6 relative overflow-hidden">
             <div className="glow-bar absolute left-0 top-0 bottom-0" />
-            <div className="pl-4">
-              <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                {interests.items.join(' · ')}
-              </p>
+            <div className="pl-4 grid sm:grid-cols-2 gap-x-8 gap-y-5">
+              {interests.groups.map((group, i) => (
+                <div key={i}>
+                  <h4 className="font-noto-sans text-[11px] text-kin tracking-[0.2em] uppercase mb-2 font-semibold">
+                    {group.label}
+                  </h4>
+                  <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
+                    {group.items.join(' · ')}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
