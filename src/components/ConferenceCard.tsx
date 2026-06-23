@@ -104,15 +104,17 @@ export default function ConferenceCard({
               </p>
             </div>
 
-            {/* Highlight chip */}
-            <div className="shrink-0">
-              <div className="relative inline-flex items-center gap-2.5 px-4 py-2.5 rounded-md border border-kin/30 bg-kin/[0.06] shadow-[inset_0_0_20px_rgba(212,160,23,0.05),0_0_18px_rgba(212,160,23,0.06)]">
-                <span className="block w-1.5 h-1.5 rounded-full bg-kin-glow shadow-[0_0_10px_rgba(255,215,0,0.7)] animate-glow-pulse" />
-                <span className="font-inter text-[11px] tracking-[0.22em] uppercase text-kin font-semibold">
-                  {highlight}
-                </span>
+            {/* Highlight chip (hidden when highlight is empty) */}
+            {highlight && (
+              <div className="shrink-0">
+                <div className="relative inline-flex items-center gap-2.5 px-4 py-2.5 rounded-md border border-kin/30 bg-kin/[0.06] shadow-[inset_0_0_20px_rgba(212,160,23,0.05),0_0_18px_rgba(212,160,23,0.06)]">
+                  <span className="block w-1.5 h-1.5 rounded-full bg-kin-glow shadow-[0_0_10px_rgba(255,215,0,0.7)] animate-glow-pulse" />
+                  <span className="font-inter text-[11px] tracking-[0.22em] uppercase text-kin font-semibold">
+                    {highlight}
+                  </span>
+                </div>
               </div>
-            </div>
+            )}
           </div>
 
           {/* Tags */}
@@ -129,8 +131,11 @@ export default function ConferenceCard({
 
           {/* Toggle row */}
           <div className="mt-7 flex items-center justify-between gap-4 pt-5 border-t border-shiro/[0.06]">
+            {/* Empty span (kept for layout) when no count label is provided */}
             <span className="font-inter text-[11px] tracking-[0.22em] uppercase text-shiro/50">
-              {labels.papersCountPrefix}{papers.length}{labels.papersCountSuffix}
+              {labels.papersCountPrefix || labels.papersCountSuffix
+                ? `${labels.papersCountPrefix}${papers.length}${labels.papersCountSuffix}`
+                : ''}
             </span>
             <span className="inline-flex items-center gap-2 font-inter text-[11px] tracking-[0.22em] uppercase text-kin/75 group-hover:text-kin-glow transition-colors">
               {isOpen ? labels.collapse : labels.viewPapers}

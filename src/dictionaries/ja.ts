@@ -147,7 +147,9 @@ export const ja: Dictionary = {
       event: 'International Astronautical Congress 2026 — 採択論文3件',
       location: 'トルコ・アンタルヤ',
       organizer: '国際宇宙会議（IAC）／主催：国際宇宙航行連盟（IAF）',
-      highlight: '採択論文3件',
+      // Empty: the "採択論文3件" highlight chip and count row are suppressed on JA
+      // (the count already appears in the event title above) to avoid repetition.
+      highlight: '',
       tags: ['宇宙ガバナンス', '月面システム', '規範', 'デュアルユース'],
       focus: '月面ガバナンス、デュアルユース・システム、規範形成、そして新たな宇宙秩序における象徴的インフラ。',
       papers: [
@@ -167,8 +169,8 @@ export const ja: Dictionary = {
       ],
       labels: {
         eyebrow: '2026年 · 発表予定',
-        papersCountPrefix: '採択論文 ',
-        papersCountSuffix: '件',
+        papersCountPrefix: '',
+        papersCountSuffix: '',
         viewPapers: '論文を見る',
         collapse: '閉じる',
         researchFocus: '研究テーマ',
@@ -252,28 +254,24 @@ export const ja: Dictionary = {
         {
           label: '音楽',
           items: [
-            'ヴァイオリン',
-            'ヨハン・ゼバスティアン・バッハ',
-            'ジャン・シベリウス',
-            'ジャコモ・プッチーニ',
-            'ジュゼッペ・ヴェルディ',
-            'ピョートル・チャイコフスキー',
-            'アントニン・ドヴォルザーク',
-            'イーゴリ・ストラヴィンスキー',
+            'ヴァイオリン演奏',
+            'バッハ',
+            'シベリウス',
+            'プッチーニ',
+            'ヴェルディ',
+            'チャイコフスキー',
+            'ドヴォルザーク',
+            'ストラヴィンスキー',
           ],
         },
         {
           label: '文学',
-          items: ['フョードル・ドストエフスキー', '三島由紀夫', 'レーモン・ラディゲ', 'ライナー・マリア・リルケ'],
-        },
-        {
-          label: '舞台・神話',
-          items: ['歌舞伎', 'ギリシャ神話'],
+          items: ['ドストエフスキー', '三島由紀夫', 'ラディゲ', 'リルケ・ギリシャ神話'], // REVIEW: ギリシャ神話の分類
         },
       ],
     },
     connect: {
-      heading: 'コンタクト',
+      heading: 'お問い合せ',
       galleryAlt: 'ギャラリー',
       contactLabel: 'お問い合わせ',
     },
