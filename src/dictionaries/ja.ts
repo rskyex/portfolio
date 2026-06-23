@@ -29,16 +29,21 @@ export const ja: Dictionary = {
     title: '研究者・プラットフォーム制作', // REVIEW
     description: [
       { text: '小柳璃紗は、' },
-      { text: 'ケンブリッジ大学の学生／研究者', bold: true },
-      { text: 'として、' },
       { text: '宇宙・核・先端技術ガバナンス', bold: true },
-      { text: 'を横断的に研究。' },
+      { text: 'を横断的に研究する研究者。2026年10月より、' },
+      // VERIFY: 進学予定（未入学）。HSPS / Hughes Hall の訳語も要確認
+      { text: 'ケンブリッジ大学ヒューズ・ホールで人文・社会・政治学（HSPS）', bold: true }, // REVIEW
+      { text: 'に進学予定。' },
       { text: '正統化', bold: true }, // REVIEW: legitimation
       { text: '、' },
       { text: 'デュアルユース・システム', bold: true },
       { text: '、' },
       { text: '権威の構造', bold: true }, // REVIEW: authority architecture
-      { text: 'を軸に考察し、' },
+      { text: 'を軸に、' },
+      { text: 'SGAC 2026年宇宙政策プロジェクトチーム（日本）のチームリーダー', bold: true }, // REVIEW: SGAC = Space Generation Advisory Council
+      { text: 'を務め、' },
+      { text: 'JAXA国際宇宙教育委員会（2026年）', bold: true }, // REVIEW: official JA name of "International Space Education Board"
+      { text: 'にも参加。' },
       { text: 'AIガバナンス', bold: true },
       { text: '・' },
       { text: '戦略インフラのリスク', bold: true },
@@ -62,7 +67,8 @@ export const ja: Dictionary = {
       {
         slug: 'cyber',
         title: 'Cyber Escalation Atlas',
-        description: 'サイバー事案を戦略的行動・帰属・ガバナンスの観点から可視化。',
+        // VERIFY: corpus = 36 incidents (provisional single source value — reuse this number everywhere it appears)
+        description: '36件のサイバー事案コーパスを、戦略的行動・帰属・ガバナンスの観点から可視化。',
       },
       {
         slug: 'narrative-drift',

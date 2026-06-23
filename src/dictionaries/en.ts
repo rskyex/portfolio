@@ -23,16 +23,21 @@ export const en: Dictionary = {
     eyebrow: 'Space · Nuclear · Cyber · Emerging Technology Governance',
     title: 'Researcher · Platform Builder',
     description: [
-      { text: 'Risa Koyanagi is a ' },
-      { text: 'student / researcher at University of Cambridge', bold: true },
-      { text: ' working across ' },
+      { text: 'Risa Koyanagi is a researcher working across ' },
       { text: 'space, nuclear, and emerging technology governance', bold: true },
-      { text: '. Her work focuses on ' },
+      { text: ', joining ' },
+      // VERIFY: incoming October 2026 — not yet enrolled; phrased as future ("joining"), do not upgrade to current student
+      { text: 'Human, Social and Political Sciences at Hughes Hall, University of Cambridge', bold: true },
+      { text: ' in October 2026. Her work focuses on ' },
       { text: 'legitimation', bold: true },
       { text: ', ' },
       { text: 'dual-use systems', bold: true },
       { text: ', and ' },
       { text: 'authority architecture', bold: true },
+      { text: '. She is ' },
+      { text: 'Team Leader of SGAC’s 2026 Space Policy Project Team (Japan)', bold: true },
+      { text: ' and sits on the ' },
+      { text: 'JAXA International Space Education Board (2026)', bold: true },
       { text: '. She also designs ' },
       { text: 'public-facing research platforms', bold: true },
       { text: ' on ' },
@@ -57,8 +62,9 @@ export const en: Dictionary = {
       {
         slug: 'cyber',
         title: 'Cyber Escalation Atlas',
+        // VERIFY: corpus = 36 incidents (provisional single source value — reuse this number everywhere it appears)
         description:
-          'Mapping cyber incidents as strategic behaviour, attribution frameworks, and governance signals.',
+          'Mapping a 36-incident corpus of cyber events as strategic behaviour, attribution frameworks, and governance signals.',
       },
       {
         slug: 'narrative-drift',
