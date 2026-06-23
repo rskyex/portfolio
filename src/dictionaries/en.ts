@@ -15,8 +15,9 @@ export const en: Dictionary = {
     about: 'About',
   },
   langToggle: {
-    label: '日本語',
-    ariaLabel: 'View this page in Japanese',
+    groupLabel: 'Language',
+    english: 'View this page in English',
+    japanese: 'View this page in Japanese',
   },
   hero: {
     eyebrow: 'Space · Nuclear · Cyber · Emerging Technology Governance',

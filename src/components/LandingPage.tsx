@@ -392,11 +392,14 @@ export default function LandingPage({ dict }: { dict: Dictionary }) {
         </div>
       </section>
 
-      <SectionDivider />
-
       {/* ═══════════════════════════════════════════════════
           FIELDWORK & PUBLIC ENGAGEMENT
+          (omitted in locales where fieldworkSection is null, e.g. JA)
           ═══════════════════════════════════════════════════ */}
+      {fieldworkSection && (
+      <>
+      <SectionDivider />
+
       <section className="max-w-6xl mx-auto px-6 pb-20 relative">
         <div className="absolute inset-0 seigaiha-bg opacity-20 pointer-events-none" />
         <div className="relative">
@@ -444,6 +447,8 @@ export default function LandingPage({ dict }: { dict: Dictionary }) {
           </div>
         </div>
       </section>
+      </>
+      )}
 
     </div>
   );

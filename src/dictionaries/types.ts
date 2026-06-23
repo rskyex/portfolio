@@ -61,9 +61,12 @@ export interface Dictionary {
     about: string;
   };
   langToggle: {
-    /** Visible label of the button (the OTHER language) */
-    label: string;
-    ariaLabel: string;
+    /** aria-label for the toggle group as a whole */
+    groupLabel: string;
+    /** aria-label for the English segment */
+    english: string;
+    /** aria-label for the Japanese segment */
+    japanese: string;
   };
   hero: {
     eyebrow: string;
@@ -112,12 +115,15 @@ export interface Dictionary {
       };
     };
   };
-  fieldworkSection: {
-    heading: string;
-    subtitle: string;
-    speakingHeading: string;
-    viewAll: string;
-    projects: ProjectText[];
-    speaking: SpeakingText[];
-  };
+  /** Null in a locale that omits this section entirely (e.g. the JA page). */
+  fieldworkSection: FieldworkSection | null;
+}
+
+export interface FieldworkSection {
+  heading: string;
+  subtitle: string;
+  speakingHeading: string;
+  viewAll: string;
+  projects: ProjectText[];
+  speaking: SpeakingText[];
 }

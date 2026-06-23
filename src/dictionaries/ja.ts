@@ -20,8 +20,9 @@ export const ja: Dictionary = {
     about: 'プロフィール',
   },
   langToggle: {
-    label: 'EN',
-    ariaLabel: 'View this page in English',
+    groupLabel: '言語',
+    english: '英語で表示する',
+    japanese: '日本語で表示する',
   },
   hero: {
     eyebrow: '宇宙・核・サイバー・先端技術ガバナンス',
@@ -173,56 +174,9 @@ export const ja: Dictionary = {
       },
     },
   },
-  fieldworkSection: {
-    heading: 'フィールドワークと社会的活動',
-    subtitle: '政策・研究・国際交流にわたる現地調査、対話、そして社会的活動。',
-    speakingHeading: '登壇・政策活動',
-    viewAll: 'すべて見る →',
-    projects: [
-      {
-        slug: 'fukushima',
-        title: '福島フィールド調査',
-        description: '双葉・浪江での現地調査。震災後のガバナンスと信頼、復興を考察。',
-      },
-      {
-        slug: 'afrecos',
-        title: 'AFRECOS',
-        description: 'アフリカと日本をつなぐ10か国以上のネットワークを共同設立。',
-        role: '共同創設者・代表',
-      },
-      {
-        slug: 'art',
-        title: 'アート制作',
-        description: '視覚的思考から国際展示まで、領域横断的なアート制作。',
-      },
-    ],
-    speaking: [
-      {
-        slug: 'ticad',
-        title: 'TICAD閣僚会合',
-        context: 'アフリカ開発会議（TICAD）での政策関与とユース代表。', // REVIEW
-        type: '政策関与',
-      },
-      {
-        slug: 'peace-exchange',
-        title: '日蘭平和交流',
-        context: '日本とオランダの参加者による二国間対話と平和交流。',
-        type: '対話への貢献',
-      },
-      {
-        slug: 'youth-drive',
-        title: 'アフリカ・日本ユースドライブ', // REVIEW
-        context: 'アフリカと日本の共創と開発協力をめぐるユース政策フォーラム。',
-        type: 'ユース代表',
-      },
-      {
-        slug: 'roundtable',
-        title: '円卓会議・Friends of Education', // REVIEW
-        context: 'GPEと世界銀行の主催により、参議院にて開催。',
-        type: '円卓会議への参加',
-      },
-    ],
-  },
+  // Fieldwork & Public Engagement section (フィールドワークと社会的活動 /
+  // 登壇・政策活動) is intentionally omitted from the Japanese page.
+  fieldworkSection: null,
 };
 
 export default ja;

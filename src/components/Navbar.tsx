@@ -44,12 +44,20 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <LangToggle label={dict.langToggle.label} ariaLabel={dict.langToggle.ariaLabel} />
+          <LangToggle
+            groupLabel={dict.langToggle.groupLabel}
+            englishLabel={dict.langToggle.english}
+            japaneseLabel={dict.langToggle.japanese}
+          />
         </div>
 
         {/* Mobile controls */}
         <div className="md:hidden flex items-center gap-3">
-          <LangToggle label={dict.langToggle.label} ariaLabel={dict.langToggle.ariaLabel} />
+          <LangToggle
+            groupLabel={dict.langToggle.groupLabel}
+            englishLabel={dict.langToggle.english}
+            japaneseLabel={dict.langToggle.japanese}
+          />
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="flex flex-col gap-1.5 p-2"
