@@ -28,28 +28,12 @@ export const ja: Dictionary = {
   hero: {
     eyebrow: '宇宙・核・サイバー・先端技術ガバナンス',
     // title intentionally omitted on the JA page (per request)
+    // REVIEW: HSPS / 「ケンブリッジ国際研究センター」の正式表記
     description: [
-      { text: '小柳璃紗。' },
-      { text: 'ケンブリッジ大学人文・社会・政治学（HSPS）専攻', bold: true }, // REVIEW: HSPS 表記
-      { text: '、' },
-      { text: 'ケンブリッジ国際研究センター Cambridge Future Scholar', bold: true }, // REVIEW: センター名の正式表記
-      { text: '。' },
-      { text: '正統化', bold: true }, // REVIEW: legitimation
-      { text: '、' },
-      { text: 'デュアルユース・システム', bold: true },
-      { text: '、' },
-      { text: '権威構造', bold: true }, // REVIEW: authority architecture
-      { text: 'を軸に、' },
-      { text: '宇宙・核・先端技術ガバナンス', bold: true },
-      { text: 'を横断的に研究。' },
-      { text: '第77回International Astronautical Congress（国際宇宙会議）に単著論文3本採択', bold: true },
-      { text: '。' },
-      { text: 'JAXA International Space Education Board 2026選抜', bold: true },
-      { text: '。' },
-      { text: 'Next.js, React, TypeScript, D3.js, Leaflet', bold: true },
-      { text: 'などを用い、戦略インフラの公開データを分析・可視化する' },
-      { text: '公開リサーチ・プラットフォーム', bold: true },
-      { text: 'も開発・構築。' },
+      {
+        text:
+          '小柳璃紗。ケンブリッジ大学人文・社会・政治学（HSPS）専攻、ケンブリッジ国際研究センター Cambridge Future Scholar。正統化、デュアルユース・システム、権威構造を軸に、宇宙・核・先端技術ガバナンスを横断的に研究。第77回International Astronautical Congress（国際宇宙会議）に単著論文3本採択。JAXA International Space Education Board 2026選抜。Next.js, React, TypeScript, D3.js, Leafletなどを用い、戦略インフラの公開データを分析・可視化する公開リサーチ・プラットフォームも開発・構築。',
+      },
     ],
     ctaPlatforms: 'プラットフォーム',
     ctaResearch: '研究',
@@ -215,6 +199,13 @@ export const ja: Dictionary = {
         },
       ],
     },
+    certifications: {
+      heading: '資格・認定', // REVIEW
+      items: [
+        { name: 'Microsoft Generative AI for Data Analysis', type: 'Professional Certificate' },
+        { name: 'Google Cybersecurity Specialization', type: 'Certificate' },
+      ],
+    },
     skills: {
       heading: 'スキル',
       groups: [
@@ -233,11 +224,19 @@ export const ja: Dictionary = {
           ],
         },
         {
-          title: '技術・計算手法',
-          paragraphs: [
-            'プラットフォーム設計、公開リサーチツールの試作、AIワークフロー設計、プロンプトエンジニアリング、OpenAI APIを用いた機能設計、Supabaseによるデータ構造化、SQL、アナリティクス計装、イベントログ設計、ダッシュボード設計。',
-            '情報設計、ユーザーフロー設計、UI/UXディレクション、定性的コーディング、言説・ナラティブ分析のワークフロー、ステークホルダー・マッピング。',
-            '政策・インフラデータの整理、行動研究の設計、リサーチからインターフェースへの翻訳。',
+          title: '技術・エンジニアリング・データ', // REVIEW
+          bullets: [
+            'Next.js · React · TypeScript',
+            'D3.js（データ可視化）· Leaflet · GeoJSON（インタラクティブな地理空間マッピング）',
+            'フロントエンドUI・レスポンシブインターフェース開発',
+            'インタラクティブ・ダッシュボード／データプロダクト設計（政策グレードのインターフェース）',
+            'データのクリーニング・構造化・データセット構築（コーパス構築；IAEA / SIPRI の地理空間レイヤー）',
+            '地理空間データパイプライン（IAEA / SIPRI データセット）',
+            'Vercel（デプロイ）· Git / GitHub（rskyex）',
+            'SQL',
+            'Python（基礎；実務での常用はなし）', // 状態の注記はそのまま保持
+            'データ分析ワークフローのための生成AI（プロンプティング、分析タスクの構造化）',
+            'サイバーセキュリティの基礎（デジタルリスク、セキュリティを意識した思考）',
           ],
         },
       ],

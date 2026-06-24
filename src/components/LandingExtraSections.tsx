@@ -11,7 +11,29 @@ import type { ExtraSections } from '@/dictionaries/types';
  * headers use the shared landing SectionHeader for consistent rhythm.
  */
 export default function LandingExtraSections({ extra }: { extra: ExtraSections }) {
-  const { education, skills, languages, arts, interests, connect } = extra;
+  const { education, certifications, skills, languages, arts, interests, connect } = extra;
+
+  /* A skill group renders either a bulleted list or comma-style paragraphs. */
+  const skillBody = (group: (typeof skills.groups)[number]) =>
+    group.bullets ? (
+      <ul className="space-y-1.5">
+        {group.bullets.map((b, k) => (
+          <li
+            key={k}
+            className="relative pl-4 font-noto-sans text-xs text-kuro-soft/60 leading-relaxed"
+          >
+            <span className="absolute left-0 top-[0.5em] w-1 h-1 rounded-full bg-kin/50" />
+            {b}
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <div className="space-y-3">
+        {(group.paragraphs ?? []).map((p, j) => (
+          <p key={j} className="font-noto-sans text-xs text-kuro-soft/60 leading-relaxed">{p}</p>
+        ))}
+      </div>
+    );
 
   return (
     <>
@@ -38,6 +60,29 @@ export default function LandingExtraSections({ extra }: { extra: ExtraSections }
         </div>
       </section>
 
+      {/* ─── CERTIFICATIONS (optional) ─── */}
+      {certifications && (
+        <>
+          <SectionDivider />
+          <section className="max-w-6xl mx-auto px-6 pb-16 relative">
+            <div className="relative">
+              <SectionHeader english={certifications.heading} />
+              <div className="mt-8 space-y-4">
+                {certifications.items.map((cert, i) => (
+                  <div key={i} className="card-washi card-washi-about p-6 relative overflow-hidden">
+                    <div className="glow-bar absolute left-0 top-0 bottom-0" />
+                    <div className="pl-4">
+                      <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">{cert.name}</h4>
+                      {cert.type && <p className="font-noto-sans text-xs text-kuro-soft/45 mt-1">{cert.type}</p>}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        </>
+      )}
+
       {/* ─── SKILLS ─── */}
       <SectionDivider />
       <section className="max-w-6xl mx-auto px-6 pb-16 relative">
@@ -49,11 +94,7 @@ export default function LandingExtraSections({ extra }: { extra: ExtraSections }
                 <div className="glow-bar absolute left-0 top-0 bottom-0" />
                 <div className="pl-4">
                   <h4 className="font-noto-sans text-sm font-bold text-kuro-soft mb-4">{group.title}</h4>
-                  <div className="space-y-3">
-                    {group.paragraphs.map((p, j) => (
-                      <p key={j} className="font-noto-sans text-xs text-kuro-soft/60 leading-relaxed">{p}</p>
-                    ))}
-                  </div>
+                  {skillBody(group)}
                 </div>
               </div>
             ))}
@@ -63,11 +104,7 @@ export default function LandingExtraSections({ extra }: { extra: ExtraSections }
               <div className="glow-bar absolute left-0 top-0 bottom-0" />
               <div className="pl-4">
                 <h4 className="font-noto-sans text-sm font-bold text-kuro-soft mb-4">{skills.groups[2].title}</h4>
-                <div className="space-y-3">
-                  {skills.groups[2].paragraphs.map((p, j) => (
-                    <p key={j} className="font-noto-sans text-xs text-kuro-soft/60 leading-relaxed">{p}</p>
-                  ))}
-                </div>
+                {skillBody(skills.groups[2])}
               </div>
             </div>
           )}

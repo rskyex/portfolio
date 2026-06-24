@@ -144,7 +144,15 @@ export interface EducationItem {
 
 export interface SkillGroup {
   title: string;
-  paragraphs: string[];
+  /** Comma-style paragraphs (used by most groups). */
+  paragraphs?: string[];
+  /** Bulleted items (used by the technical group). Takes precedence over paragraphs. */
+  bullets?: string[];
+}
+
+export interface CertificationItem {
+  name: string;
+  type?: string;
 }
 
 export interface ArtsLink {
@@ -160,6 +168,8 @@ export interface InterestGroup {
 /** Profile sections ported from the About page, shown only on the JA landing page. */
 export interface ExtraSections {
   education: { heading: string; items: EducationItem[] };
+  /** Optional: omitted where the locale has no Certifications section. */
+  certifications?: { heading: string; items: CertificationItem[] };
   skills: { heading: string; groups: SkillGroup[] };
   languages: { heading: string; items: string[] };
   /** Optional: omitted where the locale has no Arts section. */
