@@ -246,6 +246,99 @@ export const en: Dictionary = {
       },
     ],
   },
+  extra: {
+    education: {
+      heading: 'Education',
+      items: [
+        {
+          institution: 'Hughes Hall, University of Cambridge',
+          period: 'October 2026',
+          degree: 'BA Human, Social, and Political Sciences (HSPS)',
+        },
+        {
+          institution: 'London School of Economics (University of London)',
+          period: '2025–2026',
+          degree: 'BSc Politics and International Relations',
+        },
+        {
+          institution: 'Saïd Business School, University of Oxford',
+          period: 'Nov 2025 – Jan 2026',
+          degree: 'AI and Digital Transformation in Government',
+          detail: 'Certificate',
+        },
+        {
+          institution: 'SOAS University of London',
+          period: '2024–2025',
+          degree: 'BSc Social Sciences (Foundation Year)',
+          detail: 'First Class',
+        },
+      ],
+    },
+    certifications: {
+      heading: 'Certifications',
+      items: [
+        { name: 'Microsoft Generative AI for Data Analysis', type: 'Professional Certificate' },
+        { name: 'Google Cybersecurity Specialization', type: 'Certificate' },
+      ],
+    },
+    skills: {
+      heading: 'Skills',
+      groups: [
+        {
+          title: 'Research',
+          paragraphs: [
+            'Legitimation, dual-use systems, authority architecture, strategic risk, space governance, nuclear governance, emerging technology governance, infrastructure politics.',
+            'Discourse and narrative analysis, qualitative coding, comparative political research, interpretive methods, policy framing, symbolic and mythic analysis, and research-to-interface translation.',
+          ],
+        },
+        {
+          title: 'Policy · communication',
+          paragraphs: [
+            'Policy analysis, strategic writing, briefing development, narrative framing, stakeholder engagement, cross-sector communication.',
+            'Public speaking, moderation, workshop and event design.',
+          ],
+        },
+        {
+          title: 'Technical · engineering · data',
+          bullets: [
+            'Next.js · React · TypeScript',
+            'D3.js (data visualization) · Leaflet · GeoJSON (interactive geospatial mapping)',
+            'Front-end UI & responsive interface development',
+            'Interactive dashboard & data-product design (policy-grade interfaces)',
+            'Data cleaning, structuring & dataset construction (corpus building; IAEA / SIPRI geospatial layers)',
+            'Geospatial data pipelines (IAEA / SIPRI datasets)',
+            'Vercel (deployment) · Git / GitHub (rskyex)',
+            'SQL',
+            'Python (foundational; not used regularly in practice)',
+            'Generative AI for data-analysis workflows (prompting, analytical task structuring)',
+            'Cybersecurity foundations (digital risk, security-aware thinking)',
+          ],
+        },
+      ],
+    },
+    languages: {
+      heading: 'Languages',
+      items: ['Japanese', 'English', 'Russian (learning)', 'Chinese (learning)'],
+    },
+    interests: {
+      heading: 'Interests',
+      groups: [
+        {
+          label: 'Music',
+          items: ['Violin', 'Bach', 'Sibelius', 'Puccini', 'Verdi', 'Tchaikovsky', 'Dvořák', 'Stravinsky'],
+        },
+        {
+          label: 'Literature',
+          items: ['Dostoevsky', 'Yukio Mishima', 'Radiguet', 'Rilke / Greek Mythology'],
+        },
+      ],
+    },
+    connect: {
+      heading: 'Connect',
+      galleryAlt: 'Gallery',
+      contactLabel: 'Contact',
+    },
+  },
 };
 
 export default en;
