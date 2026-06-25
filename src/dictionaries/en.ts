@@ -21,6 +21,7 @@ export const en: Dictionary = {
   },
   hero: {
     eyebrow: 'Space · Nuclear · Cyber · Emerging Technology Governance',
+    title: 'Researcher · Platform Builder',
     description: [
       {
         text:
@@ -32,7 +33,7 @@ export const en: Dictionary = {
     contact: 'Contact',
   },
   platformsSection: {
-    heading: 'Platforms',
+    heading: 'Platforms by Risa Koyanagi',
     flagship: 'Flagship',
     viewPlatform: 'View platform →',
     viewAll: 'View all platforms →',
