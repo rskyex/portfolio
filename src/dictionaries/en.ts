@@ -149,12 +149,15 @@ export const en: Dictionary = {
   conferenceSection: {
     heading: 'Selected Conference Presentations',
     subtitle: 'Forthcoming papers and panels at international research convenings',
+    defaultOpenPapers: true,
     card: {
       event: 'IAC 2026 — 3 Accepted Papers',
       location: 'Antalya, Türkiye',
       organizer:
         'International Astronautical Congress · Organized by the International Astronautical Federation (IAF)',
-      highlight: '3 Accepted Papers',
+      // Empty: the highlight chip and count row are suppressed (the count already
+      // appears in the event title above) to avoid repetition.
+      highlight: '',
       tags: ['Space Governance', 'Lunar Systems', 'Norms', 'Dual-Use'],
       focus:
         'lunar governance, dual-use systems, norm formation, and symbolic infrastructure in emerging space orders.',
@@ -179,7 +182,7 @@ export const en: Dictionary = {
       labels: {
         eyebrow: 'Forthcoming · 2026',
         papersCountPrefix: '',
-        papersCountSuffix: ' accepted papers',
+        papersCountSuffix: '',
         viewPapers: 'View papers',
         collapse: 'Collapse',
         researchFocus: 'Research focus',
