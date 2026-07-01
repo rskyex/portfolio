@@ -148,46 +148,88 @@ export const en: Dictionary = {
     heading: 'Selected Conference Presentations',
     subtitle: 'Forthcoming papers and panels at international research convenings',
     defaultOpenPapers: true,
-    card: {
-      event: 'IAC 2026 — 3 Accepted Papers',
-      location: 'Antalya, Türkiye',
-      organizer:
-        'International Astronautical Congress · Organized by the International Astronautical Federation (IAF)',
-      // Empty: the highlight chip and count row are suppressed (the count already
-      // appears in the event title above) to avoid repetition.
-      highlight: '',
-      tags: ['Space Governance', 'Lunar Systems', 'Norms', 'Dual-Use'],
-      focus:
-        'lunar governance, dual-use systems, norm formation, and symbolic infrastructure in emerging space orders.',
-      papers: [
-        {
-          title:
-            'Dual-Use Neutralisation and Responsible Behaviour Norms in Lunar Infrastructure Governance',
-          symposium: 'E9 — Space Security, Stability and Sustainability',
-          date: '8 October 2026',
-        },
-        {
-          title:
-            'Conditional Openness: How Universalist Language Produces Boundaries in Future Lunar Exploration Governance',
-          symposium: 'E3 — Space Policy, Regulations and Economics',
-        },
-        {
-          title:
-            'Mythic Naming as Soft Infrastructure in Competing Lunar Orders: Artemis and Chang’e',
-          symposium: 'E5 — Space and Society',
-        },
-      ],
-      labels: {
-        eyebrow: 'Forthcoming · 2026',
-        papersCountPrefix: '',
-        papersCountSuffix: '',
-        viewPapers: 'View papers',
-        collapse: 'Collapse',
-        researchFocus: 'Research focus',
-        paperTypes: {
-          oral: 'Oral Presentation',
-          interactive: 'Interactive Presentation',
-        },
+    cards: [
+      {
+        event: 'IAC 2026 — 3 Accepted Papers',
+        location: 'Antalya, Türkiye',
+        organizer:
+          'International Astronautical Congress · Organized by the International Astronautical Federation (IAF)',
+        // Empty: the highlight chip and count row are suppressed (the count already
+        // appears in the event title above) to avoid repetition.
+        highlight: '',
+        tags: ['Space Governance', 'Lunar Systems', 'Norms', 'Dual-Use'],
+        focus:
+          'lunar governance, dual-use systems, norm formation, and symbolic infrastructure in emerging space orders.',
+        papers: [
+          {
+            title:
+              'Dual-Use Neutralisation and Responsible Behaviour Norms in Lunar Infrastructure Governance',
+            symposium: 'E9 — Space Security, Stability and Sustainability',
+            date: '8 October 2026',
+            kind: 'oral',
+          },
+          {
+            title:
+              'Conditional Openness: How Universalist Language Produces Boundaries in Future Lunar Exploration Governance',
+            symposium: 'E3 — Space Policy, Regulations and Economics',
+            kind: 'interactive',
+          },
+          {
+            title:
+              'Mythic Naming as Soft Infrastructure in Competing Lunar Orders: Artemis and Chang’e',
+            symposium: 'E5 — Space and Society',
+            kind: 'interactive',
+          },
+        ],
+      },
+      {
+        event: 'Data for Policy 2026',
+        location: 'Universitat Pompeu Fabra · Barcelona, Spain',
+        organizer: 'Data for Policy 2026 (DfP’26) · 8–10 September 2026',
+        highlight: 'Accepted',
+        tags: ['AI Governance', 'Cyber Conflict', 'Attribution', 'Tech Sovereignty'],
+        focus:
+          'attribution as interpretive authority in cyber conflict, and what naming practices mean for the governance of and with AI.',
+        papers: [
+          {
+            title:
+              'Naming as Authority: Attribution as Interpretive Authority in Cyber Conflict, and Its Stakes for AI Governance',
+            symposium:
+              'Theme — Governance of/with AI: Implications for Data, Infrastructure, and Tech Sovereignty',
+            date: '8–10 September 2026',
+            kind: 'oral',
+          },
+        ],
+      },
+      {
+        event: '26th Space Science Symposium — Poster Exhibition',
+        location: 'Institute of Space and Astronautical Science (ISAS/JAXA), Sagamihara',
+        organizer: 'Institute of Space and Astronautical Science (ISAS), JAXA',
+        highlight: 'Program T25',
+        tags: ['Poster Presentation', 'Space Science'],
+        focus:
+          'poster presentation at the annual symposium of Japan’s space-science community.',
+        eyebrow: 'Poster · 2026',
+        papers: [
+          {
+            title: 'Poster presentation (title to be confirmed)', // REVIEW
+            symposium: 'Program No. T25 · Poster Exhibition',
+            kind: 'poster',
+          },
+        ],
+      },
+    ],
+    labels: {
+      eyebrow: 'Forthcoming · 2026',
+      papersCountPrefix: '',
+      papersCountSuffix: '',
+      viewPapers: 'View papers',
+      collapse: 'Collapse',
+      researchFocus: 'Research focus',
+      paperTypes: {
+        oral: 'Oral Presentation',
+        interactive: 'Interactive Presentation',
+        poster: 'Poster Presentation',
       },
     },
   },

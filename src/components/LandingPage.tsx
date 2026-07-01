@@ -44,12 +44,15 @@ const speakingAssets: Record<string, string> = {
   roundtable: '/images/speaking-roundtable.JPG',
 };
 
-/** Paper types are a styling discriminator (locale-independent), zipped by index. */
-const paperTypes: Array<'Oral Presentation' | 'Interactive Presentation'> = [
-  'Oral Presentation',
-  'Interactive Presentation',
-  'Interactive Presentation',
-];
+/** Map a locale-independent paper kind to the ConferenceCard styling discriminator. */
+const PAPER_TYPE_BY_KIND: Record<
+  'oral' | 'interactive' | 'poster',
+  'Oral Presentation' | 'Interactive Presentation' | 'Poster Presentation'
+> = {
+  oral: 'Oral Presentation',
+  interactive: 'Interactive Presentation',
+  poster: 'Poster Presentation',
+};
 
 export default function LandingPage({ dict }: { dict: Dictionary }) {
   const {
@@ -102,23 +105,30 @@ export default function LandingPage({ dict }: { dict: Dictionary }) {
           subtitle={conferenceSection.subtitle}
         />
 
-        <div className="mt-10">
-          <ConferenceCard
-            event={conferenceSection.card.event}
-            location={conferenceSection.card.location}
-            organizer={conferenceSection.card.organizer}
-            highlight={conferenceSection.card.highlight}
-            tags={conferenceSection.card.tags}
-            papers={conferenceSection.card.papers.map((p, i) => ({
-              title: p.title,
-              type: paperTypes[i],
-              symposium: p.symposium,
-              date: p.date,
-            }))}
-            focus={conferenceSection.card.focus}
-            labels={conferenceSection.card.labels}
-            defaultOpen={conferenceSection.defaultOpenPapers}
-          />
+        <div className="mt-10 space-y-8">
+          {conferenceSection.cards.map((card) => (
+            <ConferenceCard
+              key={card.event}
+              event={card.event}
+              location={card.location}
+              organizer={card.organizer}
+              highlight={card.highlight}
+              tags={card.tags}
+              papers={card.papers.map((p) => ({
+                title: p.title,
+                type: PAPER_TYPE_BY_KIND[p.kind ?? 'interactive'],
+                symposium: p.symposium,
+                date: p.date,
+              }))}
+              focus={card.focus}
+              labels={
+                card.eyebrow
+                  ? { ...conferenceSection.labels, eyebrow: card.eyebrow }
+                  : conferenceSection.labels
+              }
+              defaultOpen={conferenceSection.defaultOpenPapers}
+            />
+          ))}
         </div>
       </div>
     </section>

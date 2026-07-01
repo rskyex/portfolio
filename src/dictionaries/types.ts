@@ -27,10 +27,41 @@ export interface ResearchText {
   description: string;
 }
 
+/** Styling/label discriminator for a paper, poster, or panel entry. */
+export type PaperKind = 'oral' | 'interactive' | 'poster';
+
 export interface PaperText {
   title: string;
   symposium: string;
   date?: string;
+  /** Defaults to 'interactive' when omitted. */
+  kind?: PaperKind;
+}
+
+export interface ConferenceLabels {
+  eyebrow: string;
+  papersCountPrefix: string;
+  papersCountSuffix: string;
+  viewPapers: string;
+  collapse: string;
+  researchFocus: string;
+  paperTypes: {
+    oral: string;
+    interactive: string;
+    poster: string;
+  };
+}
+
+export interface ConferenceCardText {
+  event: string;
+  location: string;
+  organizer: string;
+  highlight: string;
+  tags: string[];
+  focus: string;
+  papers: PaperText[];
+  /** Per-card eyebrow override; falls back to the shared labels.eyebrow. */
+  eyebrow?: string;
 }
 
 export interface ProjectText {
@@ -96,27 +127,10 @@ export interface Dictionary {
     subtitle: string;
     /** When true, the accepted papers are expanded on load (JA layout). */
     defaultOpenPapers?: boolean;
-    card: {
-      event: string;
-      location: string;
-      organizer: string;
-      highlight: string;
-      tags: string[];
-      focus: string;
-      papers: PaperText[];
-      labels: {
-        eyebrow: string;
-        papersCountPrefix: string;
-        papersCountSuffix: string;
-        viewPapers: string;
-        collapse: string;
-        researchFocus: string;
-        paperTypes: {
-          oral: string;
-          interactive: string;
-        };
-      };
-    };
+    /** One card per accepted convening; rendered in order. */
+    cards: ConferenceCardText[];
+    /** Shared UI labels applied to every card in the locale. */
+    labels: ConferenceLabels;
   };
   /** Null in a locale that omits this section entirely (e.g. the JA page). */
   fieldworkSection: FieldworkSection | null;

@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 interface Paper {
   title: string;
-  type: 'Oral Presentation' | 'Interactive Presentation';
+  type: 'Oral Presentation' | 'Interactive Presentation' | 'Poster Presentation';
   symposium: string;
   date?: string;
 }
@@ -19,6 +19,7 @@ interface ConferenceCardLabels {
   paperTypes: {
     oral: string;
     interactive: string;
+    poster: string;
   };
 }
 
@@ -46,6 +47,7 @@ const DEFAULT_LABELS: ConferenceCardLabels = {
   paperTypes: {
     oral: 'Oral Presentation',
     interactive: 'Interactive Presentation',
+    poster: 'Poster Presentation',
   },
 };
 
@@ -185,12 +187,16 @@ export default function ConferenceCard({
                         className={`inline-flex items-center gap-1.5 font-inter text-[10px] tracking-[0.22em] uppercase font-medium px-2 py-0.5 rounded-sm border ${
                           paper.type === 'Oral Presentation'
                             ? 'border-tsubaki-rose/30 bg-tsubaki-rose/[0.08] text-tsubaki-blush'
-                            : 'border-kin/25 bg-kin/[0.06] text-kin/85'
+                            : paper.type === 'Poster Presentation'
+                              ? 'border-[rgba(100,149,237,0.35)] bg-[rgba(100,149,237,0.09)] text-[#9db6f0]'
+                              : 'border-kin/25 bg-kin/[0.06] text-kin/85'
                         }`}
                       >
                         {paper.type === 'Oral Presentation'
                           ? labels.paperTypes.oral
-                          : labels.paperTypes.interactive}
+                          : paper.type === 'Poster Presentation'
+                            ? labels.paperTypes.poster
+                            : labels.paperTypes.interactive}
                       </span>
                       <span className="font-inter text-[11.5px] text-shiro/60 tracking-wide">
                         {paper.symposium}
