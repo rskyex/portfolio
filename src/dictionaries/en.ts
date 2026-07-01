@@ -289,6 +289,8 @@ export const en: Dictionary = {
       },
     ],
   },
+  // Render the Conference section directly below Platforms (before Research).
+  conferenceFirst: true,
   extra: {
     education: {
       heading: 'Education',
