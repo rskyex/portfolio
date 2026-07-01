@@ -127,41 +127,79 @@ export const ja: Dictionary = {
     heading: '主な学会発表',
     subtitle: '国際的な研究の場での発表予定',
     defaultOpenPapers: true,
-    card: {
-      event: 'International Astronautical Congress 2026 — 採択論文3件',
-      location: 'トルコ・アンタルヤ',
-      organizer: '国際宇宙会議（IAC）／主催：国際宇宙航行連盟（IAF）',
-      // Empty: the "採択論文3件" highlight chip and count row are suppressed on JA
-      // (the count already appears in the event title above) to avoid repetition.
-      highlight: '',
-      tags: ['宇宙ガバナンス', '月面システム', '規範', 'デュアルユース'],
-      focus: '月面ガバナンス、デュアルユース・システム、規範形成、そして新たな宇宙秩序における象徴的インフラ。',
-      papers: [
-        {
-          title: '月面インフラ・ガバナンスにおけるデュアルユースの中立化と「責任ある行動」規範', // REVIEW
-          symposium: 'E9 — 宇宙の安全保障・安定・持続可能性',
-          date: '2026年10月8日',
-        },
-        {
-          title: '条件つきの開放性：普遍主義の言語が月探査ガバナンスに生む境界', // REVIEW
-          symposium: 'E3 — 宇宙政策・規制・経済',
-        },
-        {
-          title: '競合する月秩序のソフトインフラとしての神話的命名：アルテミスと嫦娥', // REVIEW
-          symposium: 'E5 — 宇宙と社会',
-        },
-      ],
-      labels: {
-        eyebrow: '2026年 · 発表予定',
-        papersCountPrefix: '',
-        papersCountSuffix: '',
-        viewPapers: '論文を見る',
-        collapse: '閉じる',
-        researchFocus: '研究テーマ',
-        paperTypes: {
-          oral: '口頭発表',
-          interactive: 'インタラクティブ発表', // REVIEW
-        },
+    cards: [
+      {
+        event: 'International Astronautical Congress 2026 — 採択論文3件',
+        location: 'トルコ・アンタルヤ',
+        organizer: '国際宇宙会議（IAC）／主催：国際宇宙航行連盟（IAF）',
+        // Empty: the "採択論文3件" highlight chip and count row are suppressed on JA
+        // (the count already appears in the event title above) to avoid repetition.
+        highlight: '',
+        tags: ['宇宙ガバナンス', '月面システム', '規範', 'デュアルユース'],
+        focus: '月面ガバナンス、デュアルユース・システム、規範形成、そして新たな宇宙秩序における象徴的インフラ。',
+        papers: [
+          {
+            title: '月面インフラ・ガバナンスにおけるデュアルユースの中立化と「責任ある行動」規範', // REVIEW
+            symposium: 'E9 — 宇宙の安全保障・安定・持続可能性',
+            date: '2026年10月8日',
+            kind: 'oral',
+          },
+          {
+            title: '条件つきの開放性：普遍主義の言語が月探査ガバナンスに生む境界', // REVIEW
+            symposium: 'E3 — 宇宙政策・規制・経済',
+            kind: 'interactive',
+          },
+          {
+            title: '競合する月秩序のソフトインフラとしての神話的命名：アルテミスと嫦娥', // REVIEW
+            symposium: 'E5 — 宇宙と社会',
+            kind: 'interactive',
+          },
+        ],
+      },
+      {
+        event: 'Data for Policy 2026',
+        location: 'ポンペウ・ファブラ大学 ・ スペイン・バルセロナ',
+        organizer: 'Data for Policy 2026（DfP’26）／2026年9月8〜10日',
+        highlight: '採択',
+        tags: ['AIガバナンス', 'サイバー紛争', '帰属', '技術主権'],
+        focus: 'サイバー紛争における帰属（アトリビューション）の解釈的権威と、AIの／AIを用いたガバナンスにとっての含意。',
+        papers: [
+          {
+            title: '名づけとしての権威：サイバー紛争における帰属の解釈的権威と、AIガバナンスへの含意', // REVIEW
+            symposium: 'テーマ — Governance of/with AI：データ・インフラ・技術主権への示唆',
+            date: '2026年9月8〜10日',
+            kind: 'oral',
+          },
+        ],
+      },
+      {
+        event: '第26回宇宙科学シンポジウム — ポスター展',
+        location: '宇宙科学研究所（ISAS／JAXA）・相模原',
+        organizer: '主催：宇宙科学研究所（ISAS）／JAXA',
+        highlight: 'プログラム番号 T25',
+        tags: ['ポスター発表', '宇宙科学'],
+        focus: '日本の宇宙科学コミュニティの年次シンポジウムでのポスター発表。',
+        eyebrow: 'ポスター展 · 2026',
+        papers: [
+          {
+            title: 'ポスター発表（タイトル調整中）', // REVIEW
+            symposium: 'プログラム番号 T25 ・ ポスター展',
+            kind: 'poster',
+          },
+        ],
+      },
+    ],
+    labels: {
+      eyebrow: '2026年 · 発表予定',
+      papersCountPrefix: '',
+      papersCountSuffix: '',
+      viewPapers: '論文を見る',
+      collapse: '閉じる',
+      researchFocus: '研究テーマ',
+      paperTypes: {
+        oral: '口頭発表',
+        interactive: 'インタラクティブ発表', // REVIEW
+        poster: 'ポスター発表',
       },
     },
   },
