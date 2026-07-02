@@ -36,6 +36,8 @@ export const en: Dictionary = {
       { text: 'Team Leader of SGAC’s 2026 Space Policy Project Team (Japan)', bold: true },
       { text: ' and sits on the ' },
       { text: 'JAXA International Space Education Board (2026)', bold: true },
+      { text: '. Her extended abstract on attribution and AI governance was accepted to ' },
+      { text: 'Data for Policy 2026 (Barcelona)', bold: true },
       { text: '. She also designs ' },
       { text: 'public-facing research platforms', bold: true },
       { text: ' on ' },
