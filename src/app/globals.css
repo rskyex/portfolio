@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background-color: var(--kuro);
+  background-color: #000000;
   color: var(--shiro);
 }
 
@@ -387,12 +387,13 @@ body {
    WAGARA — VERY SUBTLE BACKGROUND PATTERNS
    ═══════════════════════════════════════════════════════════════ */
 
+/* Wagara texture patterns removed — backgrounds are solid black, no imagery. */
 .seigaiha-bg {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='28' viewBox='0 0 56 28'%3E%3Cpath d='M0 28C7.73 28 14 21.73 14 14S7.73 0 0 0' fill='none' stroke='%23d4a017' stroke-width='0.3' opacity='0.06'/%3E%3Cpath d='M28 28c7.73 0 14-6.27 14-14S35.73 0 28 0' fill='none' stroke='%23d4a017' stroke-width='0.3' opacity='0.06'/%3E%3Cpath d='M56 28c7.73 0 14-6.27 14-14S63.73 0 56 0' fill='none' stroke='%23d4a017' stroke-width='0.3' opacity='0.06'/%3E%3C/svg%3E");
+  background-image: none;
 }
 
 .asanoha-bg {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='52' viewBox='0 0 60 52'%3E%3Cpath d='M30 0L60 26L30 52L0 26Z' fill='none' stroke='%23d4a017' stroke-width='0.25' opacity='0.05'/%3E%3Cpath d='M30 0L30 52M0 26L60 26' fill='none' stroke='%23e91e63' stroke-width='0.15' opacity='0.03'/%3E%3C/svg%3E");
+  background-image: none;
 }
 
 /* ═══════════════════════════════════════════════════════════════
