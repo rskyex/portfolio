@@ -15,7 +15,8 @@
   --tsubaki-blush: #f48fb1;
   /* Light theme: --shiro is now the dark ink text color, not cream. */
   --shiro: #1c1e26;
-  --page: #ffffff;
+  /* Warm ivory washi — the page backdrop (better fit than pure white). */
+  --page: #f7f2e9;
 }
 
 html {
