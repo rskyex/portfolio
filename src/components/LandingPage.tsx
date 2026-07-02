@@ -213,9 +213,9 @@ export default function LandingPage({ dict }: { dict: Dictionary }) {
                 </p>
               )}
 
-              {/* Description — with frosted backdrop for legibility */}
-              <div className="max-w-xl mb-8 rounded-lg bg-kuro/20 backdrop-blur-[2px] px-5 py-4">
-                <p className="font-inter text-sm text-shiro/75 leading-[1.9]">
+              {/* Description */}
+              <div className="max-w-xl mb-8 rounded-lg px-5 py-4">
+                <p className="font-inter text-sm text-shiro/80 leading-[1.9]">
                   {hero.description.map((seg, i) =>
                     seg.bold ? (
                       <strong key={i} className="font-semibold text-shiro/90">
@@ -366,7 +366,7 @@ export default function LandingPage({ dict }: { dict: Dictionary }) {
                 <div className="mt-3 space-y-2">
                   {platform.children.map((child) => (
                     <Link key={child.slug} href={`/platforms/${child.slug}`} className="block group/child">
-                      <div className="relative overflow-hidden rounded-md border border-shiro/[0.06] bg-gradient-to-br from-[#0e0f1a] to-[#0a0b12] transition-all duration-300 hover:border-kin/20 hover:from-[#111225] hover:to-[#0c0d16]">
+                      <div className="relative overflow-hidden rounded-md border border-kin/12 bg-gradient-to-br from-[#faf8f3] to-[#f1ede4] transition-all duration-300 hover:border-kin/30 hover:from-[#fffdf8] hover:to-[#f5f1e8]">
                         <div className="flex items-stretch">
                           {/* Child OG image */}
                           <div className="relative w-20 sm:w-28 shrink-0 aspect-[1200/630] overflow-hidden">

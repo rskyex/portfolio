@@ -73,7 +73,7 @@ export default function ConferenceCard({
         type="button"
         onClick={() => setIsOpen(o => !o)}
         aria-expanded={isOpen}
-        className="group relative block w-full text-left overflow-hidden rounded-[10px] border border-kin/15 bg-gradient-to-br from-[#0f1020] via-[#0a0b14] to-[#070710] transition-all duration-500 hover:border-kin/35 hover:shadow-[0_0_0_1px_rgba(212,160,23,0.18),0_20px_60px_rgba(0,0,0,0.55),0_0_50px_rgba(212,160,23,0.10)] hover:-translate-y-[2px] focus:outline-none focus-visible:ring-2 focus-visible:ring-kin/40"
+        className="group relative block w-full text-left overflow-hidden rounded-[10px] border border-kin/25 bg-gradient-to-br from-[#ffffff] via-[#faf8f3] to-[#f3efe6] transition-all duration-500 hover:border-kin/45 hover:shadow-[0_0_0_1px_rgba(212,160,23,0.22),0_20px_50px_rgba(0,0,0,0.12),0_0_40px_rgba(212,160,23,0.10)] hover:-translate-y-[2px] focus:outline-none focus-visible:ring-2 focus-visible:ring-kin/40"
       >
         {/* Top neon accent rule */}
         <div className="absolute top-0 left-6 right-6 h-px bg-gradient-to-r from-transparent via-kin/40 to-transparent shadow-[0_0_10px_rgba(212,160,23,0.18)]" />
@@ -171,7 +171,7 @@ export default function ConferenceCard({
             {papers.map((paper, idx) => (
               <li
                 key={paper.title}
-                className="relative overflow-hidden rounded-md border border-shiro/[0.08] bg-gradient-to-br from-[#0c0d18] to-[#08090f] px-6 py-5 transition-colors hover:border-kin/22"
+                className="relative overflow-hidden rounded-md border border-kin/15 bg-gradient-to-br from-[#faf8f3] to-[#f1ede4] px-6 py-5 transition-colors hover:border-kin/30"
               >
                 <div className="absolute left-0 top-4 bottom-4 w-px bg-gradient-to-b from-kin/40 via-kin/15 to-transparent" />
                 <div className="flex items-start gap-5">

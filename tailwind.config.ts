@@ -39,10 +39,13 @@ const config: Config = {
           deep: '#c2185b',
         },
         // Washi / porcelain whites
+        // Primary readable ink for the light theme (was the cream text color).
+        // Kept the token name `shiro` so the ~250 existing `text-shiro` call
+        // sites flip to a dark, legible ink on the white background at once.
         shiro: {
-          DEFAULT: '#f5f0e8',
-          warm: '#ede6d8',
-          cool: '#eceef2',
+          DEFAULT: '#1c1e26',
+          warm: '#2b2924',
+          cool: '#242730',
         },
         // Neon accents
         neon: {

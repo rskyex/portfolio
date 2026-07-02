@@ -13,7 +13,9 @@
   --shu: #e03c31;
   --tsubaki-rose: #e91e63;
   --tsubaki-blush: #f48fb1;
-  --shiro: #f5f0e8;
+  /* Light theme: --shiro is now the dark ink text color, not cream. */
+  --shiro: #1c1e26;
+  --page: #ffffff;
 }
 
 html {
@@ -21,7 +23,7 @@ html {
 }
 
 body {
-  background-color: #000000;
+  background-color: var(--page);
   color: var(--shiro);
 }
 
@@ -112,18 +114,18 @@ body {
 /* Primary panel — deep lacquer with layered 3D depth */
 .panel {
   background:
-    linear-gradient(165deg, rgba(20, 22, 40, 0.6) 0%, rgba(10, 11, 18, 0.8) 40%, rgba(5, 5, 8, 0.95) 100%);
-  border: 1px solid rgba(212, 160, 23, 0.08);
+    linear-gradient(165deg, #ffffff 0%, #faf8f3 55%, #f4f1ea 100%);
+  border: 1px solid rgba(212, 160, 23, 0.22);
   border-radius: 6px;
   box-shadow:
-    /* Outer deep shadow — lifts panel off page */
-    0 8px 32px rgba(0, 0, 0, 0.7),
-    0 2px 8px rgba(0, 0, 0, 0.5),
-    /* Inner top highlight — lacquer sheen */
-    inset 0 1px 0 rgba(212, 160, 23, 0.06),
+    /* Outer soft shadow — lifts panel off page */
+    0 8px 28px rgba(0, 0, 0, 0.08),
+    0 2px 6px rgba(0, 0, 0, 0.05),
+    /* Inner top highlight — paper sheen */
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
     /* Inner bottom shadow — concavity depth */
-    inset 0 -1px 0 rgba(0, 0, 0, 0.3),
-    /* Subtle tsubaki ambient glow */
+    inset 0 -1px 0 rgba(180, 160, 120, 0.12),
+    /* Subtle tsubaki ambient rim */
     0 0 0 1px rgba(233, 30, 99, 0.02);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
@@ -143,43 +145,43 @@ body {
 }
 
 .panel:hover {
-  border-color: rgba(212, 160, 23, 0.18);
+  border-color: rgba(212, 160, 23, 0.4);
   transform: translateY(-2px);
   box-shadow:
     /* Deeper outer shadow on hover — more lift */
-    0 16px 48px rgba(0, 0, 0, 0.8),
-    0 4px 12px rgba(0, 0, 0, 0.6),
+    0 16px 40px rgba(0, 0, 0, 0.12),
+    0 4px 12px rgba(0, 0, 0, 0.08),
     /* Stronger gold inset sheen */
-    inset 0 1px 0 rgba(212, 160, 23, 0.1),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85),
+    inset 0 -1px 0 rgba(180, 160, 120, 0.14),
     /* Ambient gold glow */
-    0 0 40px rgba(212, 160, 23, 0.04),
+    0 0 30px rgba(212, 160, 23, 0.08),
     /* Tsubaki rim glow */
-    0 0 0 1px rgba(233, 30, 99, 0.04);
+    0 0 0 1px rgba(233, 30, 99, 0.05);
 }
 
 /* Glass panel — frosted translucent with depth */
 .glass-panel {
-  background: rgba(14, 15, 26, 0.5);
-  border: 1px solid rgba(212, 160, 23, 0.06);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(212, 160, 23, 0.16);
   border-radius: 6px;
   backdrop-filter: blur(20px);
   box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.4),
-    0 1px 3px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.03),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+    0 8px 28px rgba(0, 0, 0, 0.08),
+    0 1px 3px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -1px 0 rgba(180, 160, 120, 0.1);
 }
 
 /* Content panel (for detail pages) */
 .content-panel {
-  background: linear-gradient(165deg, #0e0f1a 0%, #0a0b12 100%);
-  border: 1px solid rgba(212, 160, 23, 0.06);
+  background: linear-gradient(165deg, #ffffff 0%, #f6f3ec 100%);
+  border: 1px solid rgba(212, 160, 23, 0.16);
   border-radius: 6px;
   box-shadow:
-    0 4px 20px rgba(0, 0, 0, 0.5),
-    inset 0 1px 0 rgba(212, 160, 23, 0.03),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+    0 4px 18px rgba(0, 0, 0, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    inset 0 -1px 0 rgba(180, 160, 120, 0.1);
 }
 
 /* Elevated section wrapper — adds recessed depth behind sections */
@@ -371,7 +373,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #050508;
+  background: #ececec;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -423,9 +425,9 @@ body {
   opacity: 1;
 }
 
-/* Washi bg — now dark variant */
+/* Washi bg — light paper variant */
 .washi-bg {
-  background: linear-gradient(165deg, #0e0f1a 0%, #0a0b12 100%);
+  background: linear-gradient(165deg, #ffffff 0%, #f6f3ec 100%);
 }
 
 .gold-rule {

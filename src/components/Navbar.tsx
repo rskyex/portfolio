@@ -22,7 +22,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-kuro/90 backdrop-blur-xl border-b border-kin/[0.06]">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/85 backdrop-blur-xl border-b border-kin/20">
       {/* Neon top line */}
       <div className="glow-line-tsubaki" />
       <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
@@ -72,7 +72,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-kuro/95 backdrop-blur-xl border-t border-kin/[0.06]">
+        <div className="md:hidden bg-white/95 backdrop-blur-xl border-t border-kin/15">
           <div className="px-6 py-6 flex flex-col gap-5">
             {navLinks.map(link => (
               <Link

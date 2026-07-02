@@ -48,10 +48,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="font-inter antialiased bg-black text-shiro overflow-x-hidden">
+      <body className="font-inter antialiased bg-white text-shiro overflow-x-hidden">
         <LocaleHtmlLang />
-        {/* Global page background — solid black behind all pages */}
-        <div className="fixed inset-0 -z-10 bg-black" />
+        {/* Global page background — solid white behind all pages */}
+        <div className="fixed inset-0 -z-10 bg-white" />
         <Navbar />
         <main className="pt-14 min-h-screen">
           {children}

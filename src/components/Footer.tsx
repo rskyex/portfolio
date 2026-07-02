@@ -17,7 +17,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative bg-kuro border-t border-kin/[0.04]">
+    <footer className="relative bg-[#f6f3ec] border-t border-kin/20">
       <div className="glow-line-tsubaki" />
 
       {/* Subtle seigaiha */}
