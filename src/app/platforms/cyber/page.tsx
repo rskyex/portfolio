@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import PlatformDetailPlaceholders from '@/components/PlatformDetailPlaceholders';
 import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import Tag from '@/components/Tag';
@@ -73,6 +74,7 @@ export default function CyberPlatformPage() {
             ))}
           </div>
         </div>
+        <PlatformDetailPlaceholders />
       </div>
     </div>
   );

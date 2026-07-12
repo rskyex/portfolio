@@ -1,4 +1,5 @@
 import { pageMetadata } from '@/lib/metadata';
+import PlatformDetailPlaceholders from '@/components/PlatformDetailPlaceholders';
 import Link from 'next/link';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
@@ -91,6 +92,7 @@ export default function LunarMandateAtlasPage() {
             ))}
           </div>
         </div>
+        <PlatformDetailPlaceholders />
       </div>
     </div>
   );

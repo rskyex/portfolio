@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import PlatformDetailPlaceholders from '@/components/PlatformDetailPlaceholders';
 import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
@@ -129,6 +130,7 @@ export default function MytheraPlatformPage() {
             ))}
           </div>
         </div>
+        <PlatformDetailPlaceholders />
       </div>
     </div>
   );
