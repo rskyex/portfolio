@@ -1,6 +1,15 @@
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import Tag from '@/components/Tag';
+
+
+export const metadata = pageMetadata({
+  title: 'Ontological Governance',
+  description:
+    'How sustained AI interaction transforms the human subject that governance frameworks assume to be stable.',
+  path: '/research/ontological-governance',
+});
 
 export default function OntologicalGovernancePage() {
   return (

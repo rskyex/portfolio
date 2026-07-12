@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
@@ -37,6 +38,15 @@ const subProjects = [
     liveUrl: 'https://lunar-mandate-atlas.vercel.app',
   },
 ];
+
+
+export const metadata = pageMetadata({
+  title: 'Faultline',
+  description:
+    'A unified strategic infrastructure risk suite consolidating the Orbital Risk Tracker, Global Nuclear Infrastructure Atlas, Cyber Escalation Atlas, and Lunar Mandate Atlas.',
+  path: '/platforms/faultline',
+  image: '/images/faultline%20og.png',
+});
 
 export default function FaultlinePlatformPage() {
   return (

@@ -1,6 +1,15 @@
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
+
+
+export const metadata = pageMetadata({
+  title: 'Art Practice',
+  description:
+    'Interdisciplinary art practice spanning visual thinking, international exhibition, and conceptual work.',
+  path: '/projects/art',
+});
 
 export default function ArtProjectPage() {
   return (

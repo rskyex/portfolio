@@ -1,7 +1,16 @@
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
+
+
+export const metadata = pageMetadata({
+  title: 'Post-Disaster Governance and the Trust Gap',
+  description:
+    'Long-term fieldwork examining policy gaps, trust, and recovery governance in post-disaster Fukushima communities.',
+  path: '/research/fukushima',
+});
 
 export default function FukushimaResearchPage() {
   return (

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
@@ -28,6 +29,15 @@ const subProjects = [
     href: '/platforms/second-self',
   },
 ];
+
+
+export const metadata = pageMetadata({
+  title: 'MYTHERA',
+  description:
+    'An interpretive studio where selfhood, culture, performance, and aesthetic form become explorable worlds.',
+  path: '/platforms/mythera',
+  image: '/images/mythera%20og.png',
+});
 
 export default function MytheraPlatformPage() {
   return (

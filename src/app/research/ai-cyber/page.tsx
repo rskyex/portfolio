@@ -1,6 +1,15 @@
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import Tag from '@/components/Tag';
+
+
+export const metadata = pageMetadata({
+  title: 'Responsible Behaviour as an Unfinished Norm',
+  description:
+    'Investigating denial, displacement, and inoculation in AI governance discourse across space, AI, and cyber domains.',
+  path: '/research/ai-cyber',
+});
 
 export default function AICyberResearchPage() {
   return (

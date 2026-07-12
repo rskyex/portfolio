@@ -1,8 +1,17 @@
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import SectionDivider from '@/components/SectionDivider';
 import PhotoFrame from '@/components/PhotoFrame';
 
+
+
+export const metadata = pageMetadata({
+  title: 'About',
+  description:
+    'Risa Koyanagi — Cambridge Future Scholar and researcher working across space, nuclear, cyber, and emerging technology governance.',
+  path: '/about',
+});
 
 export default function AboutPage() {
   return (

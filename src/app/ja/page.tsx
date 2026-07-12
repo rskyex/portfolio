@@ -14,7 +14,15 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
+    title: ja.meta.title,
+    description: ja.meta.description,
+    url: '/ja',
     locale: ja.meta.ogLocale,
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: ja.meta.title,
+    description: ja.meta.description,
   },
 };
 

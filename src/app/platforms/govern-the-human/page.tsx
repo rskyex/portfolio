@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
@@ -23,6 +24,15 @@ const subProjects = [
     tags: ['AI Governance', 'Ontological Risk', 'Second-Order Governance', 'Epistemic Restructuring'],
   },
 ];
+
+
+export const metadata = pageMetadata({
+  title: 'Govern the Human',
+  description:
+    'A unified platform consolidating Narrative Drift, SelfTrace, and the Ontological Governance Observatory — examining how AI reshapes the human subject itself.',
+  path: '/platforms/govern-the-human',
+  image: '/images/govern%20the%20human%20og.png',
+});
 
 export default function GovernTheHumanPlatformPage() {
   return (

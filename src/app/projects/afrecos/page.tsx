@@ -1,7 +1,17 @@
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
+
+
+export const metadata = pageMetadata({
+  title: 'AFRECOS',
+  description:
+    'A 10+ country network for cultural and policy events bridging Africa and Japan.',
+  path: '/projects/afrecos',
+  image: '/images/afrecos.jpg',
+});
 
 export default function AfrecosProjectPage() {
   return (

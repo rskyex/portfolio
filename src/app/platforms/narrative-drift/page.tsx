@@ -1,7 +1,17 @@
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
+
+
+export const metadata = pageMetadata({
+  title: 'Narrative Drift',
+  description:
+    'AI influence on choice, memory, and self-understanding over time.',
+  path: '/platforms/narrative-drift',
+  image: '/images/narrative%20drift-og.png',
+});
 
 export default function NarrativeDriftPlatformPage() {
   return (

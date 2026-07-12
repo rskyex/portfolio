@@ -1,7 +1,17 @@
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
+
+
+export const metadata = pageMetadata({
+  title: 'Global Nuclear Infrastructure Atlas',
+  description:
+    'Civilian nuclear infrastructure, estimated arsenals, and policy and health context.',
+  path: '/platforms/nuclear',
+  image: '/images/nuclear-platform.jpg',
+});
 
 export default function NuclearPlatformPage() {
   return (

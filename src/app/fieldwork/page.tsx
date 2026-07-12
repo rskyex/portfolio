@@ -1,12 +1,15 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import SectionDivider from '@/components/SectionDivider';
 import ProjectCard from '@/components/ProjectCard';
 import SpeakingCard from '@/components/SpeakingCard';
 
-export const metadata: Metadata = {
-  title: 'Fieldwork & Public Engagement — Risa Koyanagi',
-};
+export const metadata = pageMetadata({
+  title: 'Fieldwork & Public Engagement',
+  description:
+    'Fieldwork, leadership, dialogue, and public-facing engagement across policy, research, and international exchange.',
+  path: '/fieldwork',
+});
 
 export default function FieldworkPage() {
   return (

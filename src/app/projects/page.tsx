@@ -1,10 +1,13 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import ProjectCard from '@/components/ProjectCard';
 
-export const metadata: Metadata = {
-  title: 'Background & Fieldwork — Risa Koyanagi',
-};
+export const metadata = pageMetadata({
+  title: 'Background & Fieldwork',
+  description:
+    'Fieldwork, leadership, and interdisciplinary engagement across policy, research, and international exchange.',
+  path: '/projects',
+});
 
 export default function ProjectsPage() {
   return (

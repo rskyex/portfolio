@@ -1,5 +1,14 @@
 import SectionHeader from '@/components/SectionHeader';
+import { pageMetadata } from '@/lib/metadata';
 import SpeakingCard from '@/components/SpeakingCard';
+
+
+export const metadata = pageMetadata({
+  title: 'Speaking & Policy Engagement',
+  description:
+    'Selected speaking and public engagement across policy, research, and international exchange.',
+  path: '/speaking',
+});
 
 export default function SpeakingPage() {
   return (

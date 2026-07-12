@@ -1,7 +1,16 @@
 import SectionHeader from '@/components/SectionHeader';
+import { pageMetadata } from '@/lib/metadata';
 import ResearchListItem from '@/components/ResearchListItem';
 import SectionDivider from '@/components/SectionDivider';
 import ConferenceCard from '@/components/ConferenceCard';
+
+
+export const metadata = pageMetadata({
+  title: 'Research',
+  description:
+    'Selected research across space, nuclear, cyber, and emerging technology governance.',
+  path: '/research',
+});
 
 export default function ResearchPage() {
   return (

@@ -1,7 +1,17 @@
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
+
+
+export const metadata = pageMetadata({
+  title: 'SelfTrace',
+  description:
+    'Algorithmic shaping of identity, self-presentation, and online selfhood.',
+  path: '/platforms/selftrace',
+  image: '/images/selftrace%20og.png',
+});
 
 export default function SelfTracePlatformPage() {
   return (

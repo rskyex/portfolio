@@ -1,7 +1,16 @@
 import SectionHeader from '@/components/SectionHeader';
+import { pageMetadata } from '@/lib/metadata';
 import FlagshipCard from '@/components/FlagshipCard';
 import PlatformCard from '@/components/PlatformCard';
 import SectionDivider from '@/components/SectionDivider';
+
+
+export const metadata = pageMetadata({
+  title: 'Platforms',
+  description:
+    'Independently designed research, policy, and strategic-risk platforms by Risa Koyanagi across space, nuclear, cyber, and emerging technology governance.',
+  path: '/platforms',
+});
 
 export default function PlatformsPage() {
   return (
