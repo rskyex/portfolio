@@ -93,6 +93,27 @@ export default function AboutPage() {
 
         <SectionDivider />
 
+        {/* Certifications */}
+        <div>
+          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Certifications</h3>
+          <div className="space-y-4">
+            {[
+              { name: 'Microsoft Generative AI for Data Analysis', type: 'Professional Certificate' },
+              { name: 'Google Cybersecurity Specialization', type: 'Certificate' },
+            ].map((cert, i) => (
+              <div key={i} className="card-washi card-washi-about p-6 relative overflow-hidden">
+                <div className="glow-bar absolute left-0 top-0 bottom-0" />
+                <div className="pl-4">
+                  <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">{cert.name}</h4>
+                  <p className="font-noto-sans text-xs text-kuro-soft/45 mt-1">{cert.type}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <SectionDivider />
+
 
         {/* Skills */}
         <div>

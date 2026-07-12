@@ -107,7 +107,7 @@ export default function LandingPage({ dict }: { dict: Dictionary }) {
         />
 
         <div className="mt-10 space-y-8">
-          {conferenceSection.cards.map((card) => (
+          {conferenceSection.cards.filter((card) => !card.hidden).map((card) => (
             <ConferenceCard
               key={card.event}
               event={card.event}
