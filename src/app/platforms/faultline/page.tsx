@@ -45,7 +45,7 @@ export const metadata = pageMetadata({
   description:
     'A unified strategic infrastructure risk suite consolidating the Orbital Risk Tracker, Global Nuclear Infrastructure Atlas, Cyber Escalation Atlas, and Lunar Mandate Atlas.',
   path: '/platforms/faultline',
-  image: '/images/faultline%20og.png',
+  image: '/images/faultline-og.png',
 });
 
 export default function FaultlinePlatformPage() {
@@ -73,7 +73,7 @@ export default function FaultlinePlatformPage() {
         </div>
 
         <PhotoFrame
-          src="/images/faultline og.png"
+          src="/images/faultline-og.png"
           alt="Faultline — Strategic Infrastructure Risk Suite"
           width={800}
           height={450}

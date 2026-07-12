@@ -31,7 +31,7 @@ export const metadata = pageMetadata({
   description:
     'A unified platform consolidating Narrative Drift, SelfTrace, and the Ontological Governance Observatory — examining how AI reshapes the human subject itself.',
   path: '/platforms/govern-the-human',
-  image: '/images/govern%20the%20human%20og.png',
+  image: '/images/govern-the-human-og.png',
 });
 
 export default function GovernTheHumanPlatformPage() {
@@ -59,7 +59,7 @@ export default function GovernTheHumanPlatformPage() {
         </div>
 
         <PhotoFrame
-          src="/images/govern the human og.png"
+          src="/images/govern-the-human-og.png"
           alt="Govern the Human"
           width={800}
           height={450}

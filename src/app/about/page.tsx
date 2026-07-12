@@ -273,7 +273,7 @@ export default function AboutPage() {
         <div>
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Connect</h3>
           <PhotoFrame
-            src="/images/about gallery-1.jpg"
+            src="/images/about-gallery-1.jpg"
             alt="Gallery"
             width={600}
             height={400}

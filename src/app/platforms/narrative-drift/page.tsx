@@ -10,7 +10,7 @@ export const metadata = pageMetadata({
   description:
     'AI influence on choice, memory, and self-understanding over time.',
   path: '/platforms/narrative-drift',
-  image: '/images/narrative%20drift-og.png',
+  image: '/images/narrative-drift-og.png',
 });
 
 export default function NarrativeDriftPlatformPage() {
@@ -38,7 +38,7 @@ export default function NarrativeDriftPlatformPage() {
         </div>
 
         <PhotoFrame
-          src="/images/narrative drift-og.png"
+          src="/images/narrative-drift-og.png"
           alt="Narrative Drift"
           width={800}
           height={450}

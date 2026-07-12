@@ -9,7 +9,7 @@ export const metadata = pageMetadata({
   description:
     'An experiential site that questions authenticity itself — visualising how far the motives behind our actions have been externalised.',
   path: '/platforms/theatre-of-authenticity',
-  image: '/images/Theatre%20of%20Authenticity.png',
+  image: '/images/theatre-of-authenticity.png',
 });
 
 export default function TheatreOfAuthenticityPage() {
@@ -29,7 +29,7 @@ export default function TheatreOfAuthenticityPage() {
         </div>
 
         <PhotoFrame
-          src="/images/Theatre of Authenticity.png"
+          src="/images/theatre-of-authenticity.png"
           alt="Theatre of Authenticity"
           width={800}
           height={450}

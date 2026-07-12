@@ -188,7 +188,7 @@ export default function LandingExtraSections({ extra }: { extra: ExtraSections }
           <SectionHeader english={connect.heading} />
           <div className="mt-8">
             <PhotoFrame
-              src="/images/about gallery-1.jpg"
+              src="/images/about-gallery-1.jpg"
               alt={connect.galleryAlt}
               width={600}
               height={400}

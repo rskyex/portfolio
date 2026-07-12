@@ -13,7 +13,7 @@ import type { Metadata } from 'next';
 export const SITE_NAME = 'Risa Koyanagi';
 
 /** Default social-share image (used where a page has no bespoke OG asset). */
-const DEFAULT_OG = '/images/risa%20koyanagi%20og.png';
+const DEFAULT_OG = '/images/risa-koyanagi-og.png';
 
 export interface PageMetaInput {
   /** Page-specific title, e.g. a platform name or research theme. */

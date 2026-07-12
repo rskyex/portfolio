@@ -22,7 +22,7 @@ export default function ArtProjectPage() {
 
       <div className="mt-8 space-y-8">
         <PhotoFrame
-          src="/images/art.JPG"
+          src="/images/art.jpg"
           alt="Art practice"
           width={800}
           height={500}
@@ -52,14 +52,14 @@ export default function ArtProjectPage() {
             <div className="border-l-2 border-kin/30 pl-5">
               <div className="grid grid-cols-2 gap-3 mb-4">
                 <PhotoFrame
-                  src="/images/art-1.JPG"
+                  src="/images/art-1.jpg"
                   alt="Monster Exhibition 2021 at Shibuya Hikarie"
                   width={400}
                   height={300}
                   className="w-full h-36 md:h-44"
                 />
                 <PhotoFrame
-                  src="/images/art.JPG"
+                  src="/images/art.jpg"
                   alt="Monster Exhibition 2021 artwork"
                   width={400}
                   height={300}
@@ -86,7 +86,7 @@ export default function ArtProjectPage() {
             {/* Boomer Gallery - London */}
             <div className="border-l-2 border-kin/30 pl-5">
               <div className="grid grid-cols-2 gap-3 mb-4">
-                {['boomer%20(1).jpg', 'boomer%20(2).jpg', 'boomer%20(3).jpg', 'boomer%20(4).jpg'].map((file, i) => (
+                {['boomer-1.jpg', 'boomer-2.jpg', 'boomer-3.jpg', 'boomer-4.jpg'].map((file, i) => (
                   <PhotoFrame
                     key={i}
                     src={`/images/${file}`}
@@ -107,7 +107,7 @@ export default function ArtProjectPage() {
             {/* Monster Exhibition - San Francisco */}
             <div className="border-l-2 border-kin/30 pl-5">
               <div className="grid grid-cols-2 gap-3 mb-4">
-                {['monster-sf%20(1).jpg', 'monster-sf%20(2).jpg', 'monster-sf%20(3).jpg', 'monster%20sf.jpg'].map((file, i) => (
+                {['monster-sf-1.jpg', 'monster-sf-2.jpg', 'monster-sf-3.jpg', 'monster-sf.jpg'].map((file, i) => (
                   <PhotoFrame
                     key={i}
                     src={`/images/${file}`}
@@ -132,14 +132,14 @@ export default function ArtProjectPage() {
             <div className="border-l-2 border-kin/30 pl-5">
               <div className="grid grid-cols-2 gap-3 mb-4">
                 <PhotoFrame
-                  src="/images/art%20on%20loop%20jan.jpeg"
+                  src="/images/art-on-loop-jan.jpeg"
                   alt="ART ON LOOP January 2024"
                   width={400}
                   height={300}
                   className="w-full h-36 md:h-44"
                 />
                 <PhotoFrame
-                  src="/images/art-2.PNG"
+                  src="/images/art-2.png"
                   alt="ART ON LOOP January 2024 artwork"
                   width={400}
                   height={300}
@@ -182,7 +182,7 @@ export default function ArtProjectPage() {
             {/* ART ON LOOP - London & Athens (Sep 2024) */}
             <div className="border-l-2 border-kin/30 pl-5">
               <PhotoFrame
-                src="/images/art%20on%20loop%20sep.jpeg"
+                src="/images/art-on-loop-sep.jpeg"
                 alt="ART ON LOOP Digital Exhibition September 2024"
                 width={800}
                 height={500}

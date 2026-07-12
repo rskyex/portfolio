@@ -90,7 +90,7 @@ export default function FukushimaResearchPage() {
             {[1, 2, 3, 4, 5].map((n) => (
               <div key={n} className="border border-shiro/[0.06] rounded-sm overflow-hidden">
                 <img
-                  src={`/images/fukushima%20DT%20slide%20(${n}).jpg`}
+                  src={`/images/fukushima-dt-slide-${n}.jpg`}
                   alt={`Fukushima research output slide ${n}`}
                   className="w-full h-auto"
                   loading="lazy"
@@ -106,7 +106,7 @@ export default function FukushimaResearchPage() {
             {[
               { n: 1, ext: 'jpg' },
               { n: 2, ext: 'jpg' },
-              { n: 3, ext: 'JPG' },
+              { n: 3, ext: 'jpg' },
               { n: 4, ext: 'jpg' },
               { n: 5, ext: 'jpg' },
               { n: 6, ext: 'jpg' },

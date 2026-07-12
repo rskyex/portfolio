@@ -10,7 +10,7 @@ export const metadata = pageMetadata({
   description:
     'Algorithmic shaping of identity, self-presentation, and online selfhood.',
   path: '/platforms/selftrace',
-  image: '/images/selftrace%20og.png',
+  image: '/images/selftrace-og.png',
 });
 
 export default function SelfTracePlatformPage() {
@@ -38,7 +38,7 @@ export default function SelfTracePlatformPage() {
         </div>
 
         <PhotoFrame
-          src="/images/selftrace og.png"
+          src="/images/selftrace-og.png"
           alt="SelfTrace"
           width={800}
           height={450}

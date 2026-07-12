@@ -55,7 +55,7 @@ export default function SpeakingPage() {
           context="Hosted by GPE and the World Bank at the Japanese House of Councillors."
           type="Roundtable Participation"
           description="Engagement in a high-level roundtable on education policy hosted by the Global Partnership for Education and the World Bank, convened at the Japanese House of Councillors."
-          image="/images/speaking-roundtable.JPG"
+          image="/images/speaking-roundtable.jpg"
         />
       </div>
     </div>

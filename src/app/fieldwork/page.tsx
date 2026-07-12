@@ -61,7 +61,7 @@ export default function FieldworkPage() {
           href="/projects/art"
           title="Art Practice"
           description="Interdisciplinary art practice spanning visual thinking, international exhibition, and conceptual work that intersects with broader research on governance, identity, and technology."
-          image="/images/art.JPG"
+          image="/images/art.jpg"
           imageAlt="Art practice"
         />
       </div>
@@ -106,7 +106,7 @@ export default function FieldworkPage() {
           context="Hosted by GPE and the World Bank at the Japanese House of Councillors."
           type="Roundtable Participation"
           description="High-level roundtable on education policy hosted by the Global Partnership for Education and the World Bank."
-          image="/images/speaking-roundtable.JPG"
+          image="/images/speaking-roundtable.jpg"
         />
       </div>
     </div>

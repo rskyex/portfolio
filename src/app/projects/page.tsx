@@ -58,7 +58,7 @@ export default function ProjectsPage() {
           href="/projects/art"
           title="Art Practice"
           description="Interdisciplinary art practice spanning visual thinking, international exhibition, and conceptual work that intersects with broader research on governance, identity, and technology."
-          image="/images/art.JPG"
+          image="/images/art.jpg"
           imageAlt="Art practice"
         />
       </div>
