@@ -8,6 +8,7 @@ import SpeakingCard from '@/components/SpeakingCard';
 import ConferenceCard from '@/components/ConferenceCard';
 import Tsubaki3D from '@/components/Tsubaki3D';
 import LandingExtraSections from '@/components/LandingExtraSections';
+import PersonJsonLd from '@/components/PersonJsonLd';
 import type { Dictionary } from '@/dictionaries/types';
 
 /* ─── Locale-independent assets (images, links, structural flags) ───
@@ -136,6 +137,7 @@ export default function LandingPage({ dict }: { dict: Dictionary }) {
 
   return (
     <div className="relative">
+      <PersonJsonLd />
       {/* ═══════════════════════════════════════════════════
           HERO — KINKAKU-JI × NEON FUTURE × 3D TSUBAKI
           ═══════════════════════════════════════════════════ */}
