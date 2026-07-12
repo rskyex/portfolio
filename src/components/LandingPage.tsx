@@ -8,6 +8,7 @@ import SpeakingCard from '@/components/SpeakingCard';
 import ConferenceCard from '@/components/ConferenceCard';
 import Tsubaki3D from '@/components/Tsubaki3D';
 import LandingExtraSections from '@/components/LandingExtraSections';
+import PersonJsonLd from '@/components/PersonJsonLd';
 import type { Dictionary } from '@/dictionaries/types';
 
 /* ─── Locale-independent assets (images, links, structural flags) ───
@@ -16,16 +17,16 @@ import type { Dictionary } from '@/dictionaries/types';
 
 const platformAssets: Record<string, { image: string; childImages?: Record<string, string> }> = {
   cyber: { image: '/images/cyber-platform.png' },
-  'narrative-drift': { image: '/images/narrative drift-og.png' },
-  selftrace: { image: '/images/selftrace og.png' },
+  'narrative-drift': { image: '/images/narrative-drift-og.png' },
+  selftrace: { image: '/images/selftrace-og.png' },
   'ontological-governance-observatory': { image: '/images/ogo-og.png' },
   orbital: { image: '/images/orbital-platform.jpg' },
   nuclear: { image: '/images/nuclear-platform.jpg' },
   'lunar-mandate-atlas': { image: '/images/LGAT-og.svg' },
   mythera: {
-    image: '/images/mythera og.png',
+    image: '/images/mythera-og.png',
     childImages: {
-      'theatre-of-authenticity': '/images/Theatre of Authenticity.png',
+      'theatre-of-authenticity': '/images/theatre-of-authenticity.png',
       'second-self': '/images/secondself_og.png',
     },
   },
@@ -34,14 +35,14 @@ const platformAssets: Record<string, { image: string; childImages?: Record<strin
 const projectAssets: Record<string, { image: string; period?: string }> = {
   fukushima: { image: '/images/fukushima.jpg', period: '2019–2024' },
   afrecos: { image: '/images/afrecos.jpg', period: '2024' },
-  art: { image: '/images/art.JPG' },
+  art: { image: '/images/art.jpg' },
 };
 
 const speakingAssets: Record<string, string> = {
   ticad: '/images/speaking-ticad.jpg',
   'peace-exchange': '/images/speaking-peace-exchange.jpg',
   'youth-drive': '/images/speaking-youth-drive.jpg',
-  roundtable: '/images/speaking-roundtable.JPG',
+  roundtable: '/images/speaking-roundtable.jpg',
 };
 
 /** Map a locale-independent paper kind to the ConferenceCard styling discriminator. */
@@ -106,7 +107,7 @@ export default function LandingPage({ dict }: { dict: Dictionary }) {
         />
 
         <div className="mt-10 space-y-8">
-          {conferenceSection.cards.map((card) => (
+          {conferenceSection.cards.filter((card) => !card.hidden).map((card) => (
             <ConferenceCard
               key={card.event}
               event={card.event}
@@ -136,6 +137,7 @@ export default function LandingPage({ dict }: { dict: Dictionary }) {
 
   return (
     <div className="relative">
+      <PersonJsonLd />
       {/* ═══════════════════════════════════════════════════
           HERO — KINKAKU-JI × NEON FUTURE × 3D TSUBAKI
           ═══════════════════════════════════════════════════ */}

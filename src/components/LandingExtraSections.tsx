@@ -2,7 +2,7 @@ import Link from 'next/link';
 import PhotoFrame from './PhotoFrame';
 import SectionHeader from './SectionHeader';
 import SectionDivider from './SectionDivider';
-import type { ExtraSections } from '@/dictionaries/types';
+import type { ExtraSections, SkillGroup } from '@/dictionaries/types';
 
 /**
  * Profile sections (Education, Skills, Languages, Arts, Interests, Connect)
@@ -14,7 +14,7 @@ export default function LandingExtraSections({ extra }: { extra: ExtraSections }
   const { education, certifications, skills, languages, arts, interests, connect } = extra;
 
   /* A skill group renders either a bulleted list or comma-style paragraphs. */
-  const skillBody = (group: (typeof skills.groups)[number]) =>
+  const skillBody = (group: SkillGroup) =>
     group.bullets ? (
       <ul className="space-y-1.5">
         {group.bullets.map((b, k) => (
@@ -83,49 +83,57 @@ export default function LandingExtraSections({ extra }: { extra: ExtraSections }
         </>
       )}
 
-      {/* ─── SKILLS ─── */}
-      <SectionDivider />
-      <section className="max-w-6xl mx-auto px-6 pb-16 relative">
-        <div className="relative">
-          <SectionHeader english={skills.heading} />
-          <div className="mt-8 grid md:grid-cols-2 gap-6 mb-6">
-            {skills.groups.slice(0, 2).map((group, i) => (
-              <div key={i} className="card-washi card-washi-about p-6 relative overflow-hidden">
-                <div className="glow-bar absolute left-0 top-0 bottom-0" />
-                <div className="pl-4">
-                  <h4 className="font-noto-sans text-sm font-bold text-kuro-soft mb-4">{group.title}</h4>
-                  {skillBody(group)}
-                </div>
+      {/* ─── SKILLS (optional) ─── */}
+      {skills && (
+        <>
+          <SectionDivider />
+          <section className="max-w-6xl mx-auto px-6 pb-16 relative">
+            <div className="relative">
+              <SectionHeader english={skills.heading} />
+              <div className="mt-8 grid md:grid-cols-2 gap-6 mb-6">
+                {skills.groups.slice(0, 2).map((group, i) => (
+                  <div key={i} className="card-washi card-washi-about p-6 relative overflow-hidden">
+                    <div className="glow-bar absolute left-0 top-0 bottom-0" />
+                    <div className="pl-4">
+                      <h4 className="font-noto-sans text-sm font-bold text-kuro-soft mb-4">{group.title}</h4>
+                      {skillBody(group)}
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-          {skills.groups[2] && (
-            <div className="card-washi card-washi-about p-6 relative overflow-hidden">
-              <div className="glow-bar absolute left-0 top-0 bottom-0" />
-              <div className="pl-4">
-                <h4 className="font-noto-sans text-sm font-bold text-kuro-soft mb-4">{skills.groups[2].title}</h4>
-                {skillBody(skills.groups[2])}
+              {skills.groups[2] && (
+                <div className="card-washi card-washi-about p-6 relative overflow-hidden">
+                  <div className="glow-bar absolute left-0 top-0 bottom-0" />
+                  <div className="pl-4">
+                    <h4 className="font-noto-sans text-sm font-bold text-kuro-soft mb-4">{skills.groups[2].title}</h4>
+                    {skillBody(skills.groups[2])}
+                  </div>
+                </div>
+              )}
+            </div>
+          </section>
+        </>
+      )}
+
+      {/* ─── LANGUAGES (optional) ─── */}
+      {languages && (
+        <>
+          <SectionDivider />
+          <section className="max-w-6xl mx-auto px-6 pb-16 relative">
+            <div className="relative">
+              <SectionHeader english={languages.heading} />
+              <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+                {languages.items.map((lang, i) => (
+                  <div key={i} className="card-washi card-washi-about p-4 text-center relative overflow-hidden">
+                    <div className="glow-bar absolute left-0 top-0 bottom-0" />
+                    <div className="font-noto-sans text-sm font-semibold text-kuro-soft">{lang}</div>
+                  </div>
+                ))}
               </div>
             </div>
-          )}
-        </div>
-      </section>
-
-      {/* ─── LANGUAGES ─── */}
-      <SectionDivider />
-      <section className="max-w-6xl mx-auto px-6 pb-16 relative">
-        <div className="relative">
-          <SectionHeader english={languages.heading} />
-          <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
-            {languages.items.map((lang, i) => (
-              <div key={i} className="card-washi card-washi-about p-4 text-center relative overflow-hidden">
-                <div className="glow-bar absolute left-0 top-0 bottom-0" />
-                <div className="font-noto-sans text-sm font-semibold text-kuro-soft">{lang}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+          </section>
+        </>
+      )}
 
       {/* ─── ARTS BACKGROUND (optional) ─── */}
       {arts && (
@@ -158,28 +166,32 @@ export default function LandingExtraSections({ extra }: { extra: ExtraSections }
         </>
       )}
 
-      {/* ─── INTERESTS (grouped by field for readability) ─── */}
-      <SectionDivider />
-      <section className="max-w-6xl mx-auto px-6 pb-16 relative">
-        <div className="relative">
-          <SectionHeader english={interests.heading} />
-          <div className="mt-8 card-washi card-washi-about p-6 relative overflow-hidden">
-            <div className="glow-bar absolute left-0 top-0 bottom-0" />
-            <div className="pl-4 grid sm:grid-cols-2 gap-x-8 gap-y-5">
-              {interests.groups.map((group, i) => (
-                <div key={i}>
-                  <h4 className="font-noto-sans text-[11px] text-kin tracking-[0.2em] uppercase mb-2 font-semibold">
-                    {group.label}
-                  </h4>
-                  <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                    {group.items.join(' · ')}
-                  </p>
+      {/* ─── INTERESTS (optional; grouped by field for readability) ─── */}
+      {interests && (
+        <>
+          <SectionDivider />
+          <section className="max-w-6xl mx-auto px-6 pb-16 relative">
+            <div className="relative">
+              <SectionHeader english={interests.heading} />
+              <div className="mt-8 card-washi card-washi-about p-6 relative overflow-hidden">
+                <div className="glow-bar absolute left-0 top-0 bottom-0" />
+                <div className="pl-4 grid sm:grid-cols-2 gap-x-8 gap-y-5">
+                  {interests.groups.map((group, i) => (
+                    <div key={i}>
+                      <h4 className="font-noto-sans text-[11px] text-kin tracking-[0.2em] uppercase mb-2 font-semibold">
+                        {group.label}
+                      </h4>
+                      <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
+                        {group.items.join(' · ')}
+                      </p>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
+        </>
+      )}
 
       {/* ─── CONNECT ─── */}
       <SectionDivider />
@@ -188,7 +200,7 @@ export default function LandingExtraSections({ extra }: { extra: ExtraSections }
           <SectionHeader english={connect.heading} />
           <div className="mt-8">
             <PhotoFrame
-              src="/images/about gallery-1.jpg"
+              src="/images/about-gallery-1.jpg"
               alt={connect.galleryAlt}
               width={600}
               height={400}

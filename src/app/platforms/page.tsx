@@ -1,7 +1,16 @@
 import SectionHeader from '@/components/SectionHeader';
+import { pageMetadata } from '@/lib/metadata';
 import FlagshipCard from '@/components/FlagshipCard';
 import PlatformCard from '@/components/PlatformCard';
 import SectionDivider from '@/components/SectionDivider';
+
+
+export const metadata = pageMetadata({
+  title: 'Platforms',
+  description:
+    'Independently designed research, policy, and strategic-risk platforms by Risa Koyanagi across space, nuclear, cyber, and emerging technology governance.',
+  path: '/platforms',
+});
 
 export default function PlatformsPage() {
   return (
@@ -45,7 +54,7 @@ export default function PlatformsPage() {
           status="Live"
           liveUrl="https://narrative-drift.vercel.app/"
           tags={['AI Influence', 'Choice Architecture', 'Epistemic Drift']}
-          image="/images/narrative drift-og.png"
+          image="/images/narrative-drift-og.png"
           coreQuestion="Core question: How do AI systems erode epistemic autonomy through the accumulation of small nudges over time?"
         />
 
@@ -56,7 +65,7 @@ export default function PlatformsPage() {
           status="Live"
           liveUrl="https://selftrace.vercel.app/"
           tags={['Algorithmic Identity', 'Self-Presentation', 'Digital Reflection']}
-          image="/images/selftrace og.png"
+          image="/images/selftrace-og.png"
           coreQuestion="Core question: How do social media algorithms shape self-presentation and identity construction?"
         />
 
@@ -120,7 +129,7 @@ export default function PlatformsPage() {
         description="An interpretive studio where selfhood, culture, performance, and aesthetic form become explorable worlds."
         includes="Includes linked projects on music analysis, authenticity, and philosophical game design."
         liveUrl="https://mythera.vercel.app/"
-        image="/images/mythera og.png"
+        image="/images/mythera-og.png"
         subProjects={[
           { name: 'Scoreless', href: '/platforms/scoreless' },
           { name: 'Theatre of Authenticity', href: '/platforms/theatre-of-authenticity' },
@@ -136,7 +145,7 @@ export default function PlatformsPage() {
           description="A music analysis platform making classical music's structure, logic, and meaning accessible without score literacy."
           status="In Progress"
           tags={['Classical Music', 'Structural Analysis', 'Motif Tracking', 'Music Theory']}
-          image="/images/mythera og.png"
+          image="/images/mythera-og.png"
           coreQuestion="Core question: How can musical structure be made visible and meaningful without requiring score literacy?"
         />
 
@@ -146,7 +155,7 @@ export default function PlatformsPage() {
           description="An experiential site that questions authenticity itself — visualising how far the motives behind our actions have been externalised. Spanning Mishima, Kierkegaard, Nietzsche, Sartre, and Bataille."
           status="In Progress"
           tags={['Authenticity', 'Performance', 'Selfhood', 'Existentialism']}
-          image="/images/Theatre of Authenticity.png"
+          image="/images/theatre-of-authenticity.png"
           coreQuestion="Core question: Are you truly acting from inner necessity, or constructing your self on the premise of being watched?"
         />
 

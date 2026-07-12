@@ -1,23 +1,17 @@
 import Link from 'next/link';
+import PlatformDetailPlaceholders from '@/components/PlatformDetailPlaceholders';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: 'Second Self',
-  description: 'An online philosophical card game exploring AI, memory, governance, and the formation of subjectivity — what happens when systems begin shaping how humans become selves',
-  openGraph: {
-    title: 'Second Self',
-    description: 'An online philosophical card game exploring AI, memory, governance, and the formation of subjectivity — what happens when systems begin shaping how humans become selves',
-    images: [{ url: '/images/secondself_og.png', width: 1200, height: 630, alt: 'Second Self' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Second Self',
-    description: 'An online philosophical card game exploring AI, memory, governance, and the formation of subjectivity — what happens when systems begin shaping how humans become selves',
-    images: ['/images/secondself_og.png'],
-  },
-};
+  description:
+    'An online philosophical card game exploring AI, memory, governance, and the formation of subjectivity — what happens when systems begin shaping how humans become selves.',
+  path: '/platforms/second-self',
+  image: '/images/secondself_og.png',
+});
 
 export default function SecondSelfPage() {
   return (
@@ -118,6 +112,7 @@ export default function SecondSelfPage() {
             ))}
           </div>
         </div>
+        <PlatformDetailPlaceholders />
       </div>
     </div>
   );

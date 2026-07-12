@@ -1,23 +1,17 @@
 import Link from 'next/link';
+import PlatformDetailPlaceholders from '@/components/PlatformDetailPlaceholders';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: 'Theatre of Authenticity',
-  description: 'An experiential site that questions authenticity itself — visualising how far the motives behind our actions have been externalised',
-  openGraph: {
-    title: 'Theatre of Authenticity',
-    description: 'An experiential site that questions authenticity itself — visualising how far the motives behind our actions have been externalised',
-    images: [{ url: '/images/Theatre%20of%20Authenticity.png', width: 1200, height: 630, alt: 'Theatre of Authenticity' }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Theatre of Authenticity',
-    description: 'An experiential site that questions authenticity itself — visualising how far the motives behind our actions have been externalised',
-    images: ['/images/Theatre%20of%20Authenticity.png'],
-  },
-};
+  description:
+    'An experiential site that questions authenticity itself — visualising how far the motives behind our actions have been externalised.',
+  path: '/platforms/theatre-of-authenticity',
+  image: '/images/theatre-of-authenticity.png',
+});
 
 export default function TheatreOfAuthenticityPage() {
   return (
@@ -36,7 +30,7 @@ export default function TheatreOfAuthenticityPage() {
         </div>
 
         <PhotoFrame
-          src="/images/Theatre of Authenticity.png"
+          src="/images/theatre-of-authenticity.png"
           alt="Theatre of Authenticity"
           width={800}
           height={450}
@@ -90,6 +84,7 @@ export default function TheatreOfAuthenticityPage() {
             ))}
           </div>
         </div>
+        <PlatformDetailPlaceholders />
       </div>
     </div>
   );

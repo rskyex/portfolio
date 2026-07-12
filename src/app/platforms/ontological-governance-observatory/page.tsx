@@ -1,7 +1,18 @@
 import Link from 'next/link';
+import PlatformDetailPlaceholders from '@/components/PlatformDetailPlaceholders';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
+
+
+export const metadata = pageMetadata({
+  title: 'Ontological Governance Observatory',
+  description:
+    'AI\'s transformation of the human subject across epistemic, ontological, and political layers.',
+  path: '/platforms/ontological-governance-observatory',
+  image: '/images/ogo-og.png',
+});
 
 export default function OntologicalGovernanceObservatoryPage() {
   return (
@@ -53,6 +64,7 @@ export default function OntologicalGovernanceObservatoryPage() {
             ))}
           </div>
         </div>
+        <PlatformDetailPlaceholders />
       </div>
     </div>
   );

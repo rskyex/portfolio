@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: 'Risa Koyanagi',
     images: [
       {
-        url: '/images/risa%20koyanagi%20og.png',
+        url: '/images/risa-koyanagi-og.png',
         width: 1200,
         height: 630,
         alt: 'Risa Koyanagi',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Risa Koyanagi — Cambridge Future Scholar & Researcher',
     description: 'Portfolio of Risa Koyanagi — Cambridge Future Scholar and researcher working across international security, space governance, nuclear governance, cyber governance, and emerging technology governance.',
-    images: ['/images/risa%20koyanagi%20og.png'],
+    images: ['/images/risa-koyanagi-og.png'],
   },
 };
 

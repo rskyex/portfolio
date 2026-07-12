@@ -1,6 +1,15 @@
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import Tag from '@/components/Tag';
+
+
+export const metadata = pageMetadata({
+  title: 'Who Speaks for Humanity on the Moon?',
+  description:
+    'Examining legitimation audiences, translation devices, and authority architecture in competing lunar governance frameworks.',
+  path: '/research/lunar',
+});
 
 export default function LunarResearchPage() {
   return (

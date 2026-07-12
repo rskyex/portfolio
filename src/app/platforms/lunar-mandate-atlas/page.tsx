@@ -1,31 +1,17 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/metadata';
+import PlatformDetailPlaceholders from '@/components/PlatformDetailPlaceholders';
 import Link from 'next/link';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
 
-export const metadata: Metadata = {
-  title: 'Lunar Mandate Atlas — Risa Koyanagi',
-  description: 'Interactive mapping of competing lunar governance frameworks, mandates, and authority architecture across the Artemis Accords and ILRS programme.',
-  openGraph: {
-    title: 'Lunar Mandate Atlas — Risa Koyanagi',
-    description: 'Interactive mapping of competing lunar governance frameworks, mandates, and authority architecture across the Artemis Accords and ILRS programme.',
-    images: [
-      {
-        url: '/images/LGAT-og.svg',
-        width: 1200,
-        height: 630,
-        alt: 'Lunar Mandate Atlas',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Lunar Mandate Atlas — Risa Koyanagi',
-    description: 'Interactive mapping of competing lunar governance frameworks, mandates, and authority architecture across the Artemis Accords and ILRS programme.',
-    images: ['/images/LGAT-og.svg'],
-  },
-};
+export const metadata = pageMetadata({
+  title: 'Lunar Mandate Atlas',
+  description:
+    'Interactive mapping of competing lunar governance frameworks, mandates, and authority architecture across the Artemis Accords and ILRS programme.',
+  path: '/platforms/lunar-mandate-atlas',
+  image: '/images/LGAT-og.svg',
+});
 
 export default function LunarMandateAtlasPage() {
   return (
@@ -106,6 +92,7 @@ export default function LunarMandateAtlasPage() {
             ))}
           </div>
         </div>
+        <PlatformDetailPlaceholders />
       </div>
     </div>
   );

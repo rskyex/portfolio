@@ -1,7 +1,17 @@
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
+
+
+export const metadata = pageMetadata({
+  title: 'Fukushima Field Research',
+  description:
+    'Multi-site fieldwork in Futaba and Namie districts examining post-disaster governance, trust, and recovery.',
+  path: '/projects/fukushima',
+  image: '/images/fukushima.jpg',
+});
 
 export default function FukushimaProjectPage() {
   return (
@@ -47,7 +57,7 @@ export default function FukushimaProjectPage() {
             ].map(({ n, title, description }) => (
               <div key={n} className="space-y-3">
                 <PhotoFrame
-                  src={`/images/fukushima%20DT%20slide%20(${n}).jpg`}
+                  src={`/images/fukushima-dt-slide-${n}.jpg`}
                   alt={title}
                   width={960}
                   height={540}
@@ -74,7 +84,7 @@ export default function FukushimaProjectPage() {
             {[
               { n: 1, ext: 'jpg' },
               { n: 2, ext: 'jpg' },
-              { n: 3, ext: 'JPG' },
+              { n: 3, ext: 'jpg' },
               { n: 4, ext: 'jpg' },
               { n: 5, ext: 'jpg' },
               { n: 6, ext: 'jpg' },

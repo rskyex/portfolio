@@ -1,8 +1,17 @@
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import SectionDivider from '@/components/SectionDivider';
 import PhotoFrame from '@/components/PhotoFrame';
 
+
+
+export const metadata = pageMetadata({
+  title: 'About',
+  description:
+    'Risa Koyanagi — Cambridge Future Scholar and researcher working across space, nuclear, cyber, and emerging technology governance.',
+  path: '/about',
+});
 
 export default function AboutPage() {
   return (
@@ -76,6 +85,27 @@ export default function AboutPage() {
                   </div>
                   {edu.degree && <p className="font-noto-sans text-sm text-kuro-soft/65">{edu.degree}</p>}
                   {edu.detail && <p className="font-noto-sans text-xs text-kuro-soft/45 mt-1">{edu.detail}</p>}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <SectionDivider />
+
+        {/* Certifications */}
+        <div>
+          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Certifications</h3>
+          <div className="space-y-4">
+            {[
+              { name: 'Microsoft Generative AI for Data Analysis', type: 'Professional Certificate' },
+              { name: 'Google Cybersecurity Specialization', type: 'Certificate' },
+            ].map((cert, i) => (
+              <div key={i} className="card-washi card-washi-about p-6 relative overflow-hidden">
+                <div className="glow-bar absolute left-0 top-0 bottom-0" />
+                <div className="pl-4">
+                  <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">{cert.name}</h4>
+                  <p className="font-noto-sans text-xs text-kuro-soft/45 mt-1">{cert.type}</p>
                 </div>
               </div>
             ))}
@@ -264,7 +294,7 @@ export default function AboutPage() {
         <div>
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Connect</h3>
           <PhotoFrame
-            src="/images/about gallery-1.jpg"
+            src="/images/about-gallery-1.jpg"
             alt="Gallery"
             width={600}
             height={400}

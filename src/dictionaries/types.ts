@@ -62,6 +62,9 @@ export interface ConferenceCardText {
   papers: PaperText[];
   /** Per-card eyebrow override; falls back to the shared labels.eyebrow. */
   eyebrow?: string;
+  /** When true, the card is hidden from the landing page (kept in data for
+   *  easy re-enabling — e.g. a poster whose title is not yet confirmed). */
+  hidden?: boolean;
 }
 
 export interface ProjectText {
@@ -184,10 +187,13 @@ export interface ExtraSections {
   education: { heading: string; items: EducationItem[] };
   /** Optional: omitted where the locale has no Certifications section. */
   certifications?: { heading: string; items: CertificationItem[] };
-  skills: { heading: string; groups: SkillGroup[] };
-  languages: { heading: string; items: string[] };
+  /** Optional: the landing page may omit these when they live on the About page. */
+  skills?: { heading: string; groups: SkillGroup[] };
+  /** Optional: the landing page may omit these when they live on the About page. */
+  languages?: { heading: string; items: string[] };
   /** Optional: omitted where the locale has no Arts section. */
   arts?: { heading: string; paragraphs: string[]; links: ArtsLink[] };
-  interests: { heading: string; groups: InterestGroup[] };
+  /** Optional: the landing page may omit these when they live on the About page. */
+  interests?: { heading: string; groups: InterestGroup[] };
   connect: { heading: string; galleryAlt: string; contactLabel: string };
 }

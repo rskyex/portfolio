@@ -1,6 +1,16 @@
 import Link from 'next/link';
+import PlatformDetailPlaceholders from '@/components/PlatformDetailPlaceholders';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import Tag from '@/components/Tag';
+
+
+export const metadata = pageMetadata({
+  title: 'Scoreless',
+  description:
+    'A music analysis platform making classical music\'s structure, logic, and meaning accessible without requiring score literacy.',
+  path: '/platforms/scoreless',
+});
 
 export default function ScorelessPlatformPage() {
   return (
@@ -44,6 +54,7 @@ export default function ScorelessPlatformPage() {
             ))}
           </div>
         </div>
+        <PlatformDetailPlaceholders />
       </div>
     </div>
   );

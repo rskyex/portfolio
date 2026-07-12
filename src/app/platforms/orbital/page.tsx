@@ -1,7 +1,18 @@
 import Link from 'next/link';
+import PlatformDetailPlaceholders from '@/components/PlatformDetailPlaceholders';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
+
+
+export const metadata = pageMetadata({
+  title: 'Orbital Risk Tracker',
+  description:
+    'ASAT events, proximity operations, and escalation analysis in orbital space.',
+  path: '/platforms/orbital',
+  image: '/images/orbital-platform.jpg',
+});
 
 export default function OrbitalPlatformPage() {
   return (
@@ -61,6 +72,7 @@ export default function OrbitalPlatformPage() {
             ))}
           </div>
         </div>
+        <PlatformDetailPlaceholders />
       </div>
     </div>
   );

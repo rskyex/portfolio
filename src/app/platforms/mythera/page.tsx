@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import PlatformDetailPlaceholders from '@/components/PlatformDetailPlaceholders';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
@@ -16,7 +18,7 @@ const subProjects = [
     description:
       'An experiential site that questions authenticity itself. Users make a series of choices, but partway through, the gaze of others, audiences, recording devices, praise, and backlash begin to intervene. Ultimately, the degree to which the motives behind one\'s actions have been externalised is made visible. Spanning Mishima, Kierkegaard, Nietzsche, Sartre, and Bataille, it explores the interplay of authenticity, performance, beauty, death, and transcendence.',
     tags: ['Authenticity', 'Performance', 'Selfhood', 'Existentialism', 'Mishima', 'Kierkegaard'],
-    image: '/images/Theatre of Authenticity.png',
+    image: '/images/theatre-of-authenticity.png',
     href: '/platforms/theatre-of-authenticity',
   },
   {
@@ -28,6 +30,15 @@ const subProjects = [
     href: '/platforms/second-self',
   },
 ];
+
+
+export const metadata = pageMetadata({
+  title: 'MYTHERA',
+  description:
+    'An interpretive studio where selfhood, culture, performance, and aesthetic form become explorable worlds.',
+  path: '/platforms/mythera',
+  image: '/images/mythera-og.png',
+});
 
 export default function MytheraPlatformPage() {
   return (
@@ -54,7 +65,7 @@ export default function MytheraPlatformPage() {
         </div>
 
         <PhotoFrame
-          src="/images/mythera og.png"
+          src="/images/mythera-og.png"
           alt="MYTHERA"
           width={800}
           height={450}
@@ -119,6 +130,7 @@ export default function MytheraPlatformPage() {
             ))}
           </div>
         </div>
+        <PlatformDetailPlaceholders />
       </div>
     </div>
   );

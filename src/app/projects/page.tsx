@@ -1,10 +1,13 @@
-import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import ProjectCard from '@/components/ProjectCard';
 
-export const metadata: Metadata = {
-  title: 'Background & Fieldwork — Risa Koyanagi',
-};
+export const metadata = pageMetadata({
+  title: 'Background & Fieldwork',
+  description:
+    'Fieldwork, leadership, and interdisciplinary engagement across policy, research, and international exchange.',
+  path: '/projects',
+});
 
 export default function ProjectsPage() {
   return (
@@ -55,7 +58,7 @@ export default function ProjectsPage() {
           href="/projects/art"
           title="Art Practice"
           description="Interdisciplinary art practice spanning visual thinking, international exhibition, and conceptual work that intersects with broader research on governance, identity, and technology."
-          image="/images/art.JPG"
+          image="/images/art.jpg"
           imageAlt="Art practice"
         />
       </div>

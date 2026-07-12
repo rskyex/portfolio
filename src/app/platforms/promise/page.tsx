@@ -1,7 +1,17 @@
 import Link from 'next/link';
+import PlatformDetailPlaceholders from '@/components/PlatformDetailPlaceholders';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
+
+
+export const metadata = pageMetadata({
+  title: 'Japan Promise Tracker',
+  description:
+    'Monitoring Japanese government policy commitments across governance domains, from announcement through implementation to fulfilment.',
+  path: '/platforms/promise',
+});
 
 export default function PromisePlatformPage() {
   return (
@@ -61,6 +71,7 @@ export default function PromisePlatformPage() {
             ))}
           </div>
         </div>
+        <PlatformDetailPlaceholders />
       </div>
     </div>
   );

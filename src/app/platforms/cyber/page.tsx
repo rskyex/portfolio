@@ -1,6 +1,17 @@
 import Link from 'next/link';
+import PlatformDetailPlaceholders from '@/components/PlatformDetailPlaceholders';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import Tag from '@/components/Tag';
+
+
+export const metadata = pageMetadata({
+  title: 'Cyber Escalation Atlas',
+  description:
+    'Mapping a 36-incident corpus of cyber events as strategic behaviour, attribution frameworks, and governance signals.',
+  path: '/platforms/cyber',
+  image: '/images/cyber-platform.png',
+});
 
 export default function CyberPlatformPage() {
   return (
@@ -63,6 +74,7 @@ export default function CyberPlatformPage() {
             ))}
           </div>
         </div>
+        <PlatformDetailPlaceholders />
       </div>
     </div>
   );

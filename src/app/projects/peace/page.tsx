@@ -1,7 +1,16 @@
 import Link from 'next/link';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
+
+
+export const metadata = pageMetadata({
+  title: 'Peacebuilding Laboratory',
+  description:
+    'Leading discussions on global conflict resolution and diplomacy at Sophia University\'s Peacebuilding and International Cooperation Laboratory.',
+  path: '/projects/peace',
+});
 
 export default function PeaceProjectPage() {
   return (

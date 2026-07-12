@@ -1,5 +1,14 @@
 import SectionHeader from '@/components/SectionHeader';
+import { pageMetadata } from '@/lib/metadata';
 import SpeakingCard from '@/components/SpeakingCard';
+
+
+export const metadata = pageMetadata({
+  title: 'Speaking & Policy Engagement',
+  description:
+    'Selected speaking and public engagement across policy, research, and international exchange.',
+  path: '/speaking',
+});
 
 export default function SpeakingPage() {
   return (
@@ -46,7 +55,7 @@ export default function SpeakingPage() {
           context="Hosted by GPE and the World Bank at the Japanese House of Councillors."
           type="Roundtable Participation"
           description="Engagement in a high-level roundtable on education policy hosted by the Global Partnership for Education and the World Bank, convened at the Japanese House of Councillors."
-          image="/images/speaking-roundtable.JPG"
+          image="/images/speaking-roundtable.jpg"
         />
       </div>
     </div>

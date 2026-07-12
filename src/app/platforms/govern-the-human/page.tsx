@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import PlatformDetailPlaceholders from '@/components/PlatformDetailPlaceholders';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
@@ -23,6 +25,15 @@ const subProjects = [
     tags: ['AI Governance', 'Ontological Risk', 'Second-Order Governance', 'Epistemic Restructuring'],
   },
 ];
+
+
+export const metadata = pageMetadata({
+  title: 'Govern the Human',
+  description:
+    'A unified platform consolidating Narrative Drift, SelfTrace, and the Ontological Governance Observatory — examining how AI reshapes the human subject itself.',
+  path: '/platforms/govern-the-human',
+  image: '/images/govern-the-human-og.png',
+});
 
 export default function GovernTheHumanPlatformPage() {
   return (
@@ -49,7 +60,7 @@ export default function GovernTheHumanPlatformPage() {
         </div>
 
         <PhotoFrame
-          src="/images/govern the human og.png"
+          src="/images/govern-the-human-og.png"
           alt="Govern the Human"
           width={800}
           height={450}
@@ -95,6 +106,7 @@ export default function GovernTheHumanPlatformPage() {
             ))}
           </div>
         </div>
+        <PlatformDetailPlaceholders />
       </div>
     </div>
   );

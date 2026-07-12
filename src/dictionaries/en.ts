@@ -21,32 +21,17 @@ export const en: Dictionary = {
   },
   hero: {
     eyebrow: 'Space · Nuclear · Cyber · Emerging Technology Governance',
+    // Emphasis is kept to two anchors (Cambridge + the governance domains) so the
+    // hero reads as prose rather than a wall of bold.
     description: [
-      { text: 'Risa Koyanagi is a ' },
-      { text: 'researcher / student at the University of Cambridge', bold: true },
+      { text: 'Risa Koyanagi is a researcher / student at the ' },
+      { text: 'University of Cambridge', bold: true },
       { text: ' working across ' },
       { text: 'space, nuclear, and emerging technology governance', bold: true },
-      { text: '. Her work focuses on ' },
-      { text: 'legitimation', bold: true },
-      { text: ', ' },
-      { text: 'dual-use systems', bold: true },
-      { text: ', and ' },
-      { text: 'authority architecture', bold: true },
-      { text: '. She is ' },
-      { text: 'Team Leader of SGAC’s 2026 Space Policy Project Team (Japan)', bold: true },
-      { text: ' and sits on the ' },
-      { text: 'JAXA International Space Education Board (2026)', bold: true },
-      { text: '. Her extended abstract on attribution and AI governance was accepted to ' },
-      { text: 'Data for Policy 2026 (Barcelona)', bold: true },
-      { text: '. She also designs ' },
-      { text: 'public-facing research platforms', bold: true },
-      { text: ' on ' },
-      { text: 'AI governance', bold: true },
-      { text: ', ' },
-      { text: 'strategic infrastructure risk', bold: true },
-      { text: ', and ' },
-      { text: 'interpretive systems', bold: true },
-      { text: '.' },
+      {
+        text:
+          '. Her work focuses on legitimation, dual-use systems, and authority architecture. She is Team Leader of SGAC’s 2026 Space Policy Project Team (Japan) and sits on the JAXA International Space Education Board (2026). Her extended abstract on attribution and AI governance was accepted to Data for Policy 2026 (Barcelona). She also designs public-facing research platforms on AI governance, strategic infrastructure risk, and interpretive systems.',
+      },
     ],
     ctaPlatforms: 'View Platforms',
     ctaResearch: 'View Research',
@@ -212,6 +197,9 @@ export const en: Dictionary = {
         focus:
           'poster presentation at the annual symposium of Japan’s space-science community.',
         eyebrow: 'Poster · 2026',
+        // Temporarily hidden until the poster title is confirmed. Remove `hidden`
+        // (and update the placeholder title below) to publish this card again.
+        hidden: true,
         papers: [
           {
             title: 'Poster presentation (title to be confirmed)', // REVIEW
@@ -293,6 +281,10 @@ export const en: Dictionary = {
   },
   // Render the Conference section directly below Platforms (before Research).
   conferenceFirst: true,
+  // On the EN landing page the profile block is intentionally trimmed to
+  // Education → Connect. Skills, Certifications, Interests (and Languages / Arts)
+  // now live on the dedicated /about page, keeping the landing flow tight:
+  // Hero → Platforms → Conference → Research → Fieldwork → Education → Connect.
   extra: {
     education: {
       heading: 'Education',
@@ -318,65 +310,6 @@ export const en: Dictionary = {
           period: '2024–2025',
           degree: 'BSc Social Sciences (Foundation Year)',
           detail: 'First Class',
-        },
-      ],
-    },
-    certifications: {
-      heading: 'Certifications',
-      items: [
-        { name: 'Microsoft Generative AI for Data Analysis', type: 'Professional Certificate' },
-        { name: 'Google Cybersecurity Specialization', type: 'Certificate' },
-      ],
-    },
-    skills: {
-      heading: 'Skills',
-      groups: [
-        {
-          title: 'Research',
-          paragraphs: [
-            'Legitimation, dual-use systems, authority architecture, strategic risk, space governance, nuclear governance, emerging technology governance, infrastructure politics.',
-            'Discourse and narrative analysis, qualitative coding, comparative political research, interpretive methods, policy framing, symbolic and mythic analysis, and research-to-interface translation.',
-          ],
-        },
-        {
-          title: 'Policy · communication',
-          paragraphs: [
-            'Policy analysis, strategic writing, briefing development, narrative framing, stakeholder engagement, cross-sector communication.',
-            'Public speaking, moderation, workshop and event design.',
-          ],
-        },
-        {
-          title: 'Technical · engineering · data',
-          bullets: [
-            'Next.js · React · TypeScript',
-            'D3.js (data visualization) · Leaflet · GeoJSON (interactive geospatial mapping)',
-            'Front-end UI & responsive interface development',
-            'Interactive dashboard & data-product design (policy-grade interfaces)',
-            'Data cleaning, structuring & dataset construction (corpus building; IAEA / SIPRI geospatial layers)',
-            'Geospatial data pipelines (IAEA / SIPRI datasets)',
-            'Vercel (deployment) · Git / GitHub (rskyex)',
-            'SQL',
-            'Python (foundational; not used regularly in practice)',
-            'Generative AI for data-analysis workflows (prompting, analytical task structuring)',
-            'Cybersecurity foundations (digital risk, security-aware thinking)',
-          ],
-        },
-      ],
-    },
-    languages: {
-      heading: 'Languages',
-      items: ['Japanese', 'English', 'Russian (learning)', 'Chinese (learning)'],
-    },
-    interests: {
-      heading: 'Interests',
-      groups: [
-        {
-          label: 'Music',
-          items: ['Violin', 'Bach', 'Sibelius', 'Puccini', 'Verdi', 'Tchaikovsky', 'Dvořák', 'Stravinsky'],
-        },
-        {
-          label: 'Literature',
-          items: ['Dostoevsky', 'Yukio Mishima', 'Radiguet', 'Rilke / Greek Mythology'],
         },
       ],
     },

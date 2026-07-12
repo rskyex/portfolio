@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import PlatformDetailPlaceholders from '@/components/PlatformDetailPlaceholders';
+import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import PhotoFrame from '@/components/PhotoFrame';
 import Tag from '@/components/Tag';
@@ -38,6 +40,15 @@ const subProjects = [
   },
 ];
 
+
+export const metadata = pageMetadata({
+  title: 'Faultline',
+  description:
+    'A unified strategic infrastructure risk suite consolidating the Orbital Risk Tracker, Global Nuclear Infrastructure Atlas, Cyber Escalation Atlas, and Lunar Mandate Atlas.',
+  path: '/platforms/faultline',
+  image: '/images/faultline-og.png',
+});
+
 export default function FaultlinePlatformPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-12 md:py-20">
@@ -63,7 +74,7 @@ export default function FaultlinePlatformPage() {
         </div>
 
         <PhotoFrame
-          src="/images/faultline og.png"
+          src="/images/faultline-og.png"
           alt="Faultline — Strategic Infrastructure Risk Suite"
           width={800}
           height={450}
@@ -126,6 +137,7 @@ export default function FaultlinePlatformPage() {
             ))}
           </div>
         </div>
+        <PlatformDetailPlaceholders />
       </div>
     </div>
   );
