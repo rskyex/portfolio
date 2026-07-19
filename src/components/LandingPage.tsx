@@ -120,6 +120,7 @@ export default function LandingPage({ dict }: { dict: Dictionary }) {
                 type: PAPER_TYPE_BY_KIND[p.kind ?? 'interactive'],
                 symposium: p.symposium,
                 date: p.date,
+                status: p.status,
               }))}
               focus={card.focus}
               labels={
@@ -244,6 +245,14 @@ export default function LandingPage({ dict }: { dict: Dictionary }) {
                 >
                   {hero.ctaResearch}
                 </Link>
+                <a
+                  href="/Risa_Koyanagi_CV.pdf"
+                  download
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm border border-kin/25 bg-kin/[0.06] font-inter text-xs text-kin tracking-widest uppercase font-medium hover:bg-kin/[0.12] hover:border-kin/40 transition-all duration-300"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  {dict.nav.cv}
+                </a>
                 <a
                   href="https://linkedin.com/in/rskyex"
                   target="_blank"

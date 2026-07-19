@@ -13,6 +13,7 @@ export const en: Dictionary = {
     research: 'Research',
     fieldwork: 'Fieldwork & Engagement',
     about: 'About',
+    cv: 'Download CV',
   },
   langToggle: {
     groupLabel: 'Language',
@@ -26,11 +27,11 @@ export const en: Dictionary = {
     description: [
       { text: 'Risa Koyanagi is a researcher / student at the ' },
       { text: 'University of Cambridge', bold: true },
-      { text: ' working across ' },
-      { text: 'space, nuclear, and emerging technology governance', bold: true },
+      { text: ' (Hughes Hall) working across ' },
+      { text: 'space, nuclear, and cyber & AI governance', bold: true },
       {
         text:
-          '. Her work focuses on legitimation, dual-use systems, and authority architecture. She is Team Leader of SGAC’s 2026 Space Policy Project Team (Japan) and sits on the JAXA International Space Education Board (2026). Her extended abstract on attribution and AI governance was accepted to Data for Policy 2026 (Barcelona). She also designs public-facing research platforms on AI governance, strategic infrastructure risk, and interpretive systems.',
+          '. Her work examines interpretive and categorical authority — how norms are named, legitimated, and contested — and is converging on the governance of nuclear energy on the lunar surface. She is a Young Research Fellow at TIES (Geopolitics of Narrative Building), Team Leader of SGAC’s 2026 Space Policy Project Team (Japan), and a delegate to the JAXA International Space Education Board (2026). She has three accepted papers at the International Astronautical Congress 2026 (Antalya) and passed the first-round selection for its NextGen Plenary, with an extended abstract accepted to Data for Policy 2026 (Barcelona). She also designs public-facing research platforms on strategic infrastructure risk, nuclear systems, and AI governance.',
       },
     ],
     ctaPlatforms: 'View Platforms',
@@ -185,6 +186,35 @@ export const en: Dictionary = {
               'Theme — Governance of/with AI: Implications for Data, Infrastructure, and Tech Sovereignty',
             date: '8–10 September 2026',
             kind: 'oral',
+          },
+        ],
+      },
+      {
+        event: 'Under Review — 2026',
+        location: 'International selection & peer review',
+        organizer: 'IAC NextGen Plenary · International Studies Association · International Political Anthropology',
+        highlight: '',
+        eyebrow: 'Under Review · 2026',
+        tags: ['Lunar Governance', 'Nuclear Governance', 'Narrative & Authority'],
+        focus:
+          'work advancing through selection and peer review across space, nuclear, and interpretive-authority venues.',
+        papers: [
+          {
+            title: 'Next Generation Space Infrastructure',
+            symposium:
+              'IAC 2026 NextGen Plenary — first-round selection passed; final round under review',
+            status: 'Shortlisted',
+            kind: 'oral',
+          },
+          {
+            title: 'Who Speaks for Humanity on the Moon?',
+            symposium: 'International Political Anthropology',
+            status: 'Under Review',
+          },
+          {
+            title: 'Fukushima nuclear-governance paper',
+            symposium: 'International Studies Association (ISA)',
+            status: 'Under Review',
           },
         ],
       },

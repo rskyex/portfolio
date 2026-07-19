@@ -44,6 +44,14 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+          <a
+            href="/Risa_Koyanagi_CV.pdf"
+            download
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-sm border border-kin/25 bg-kin/[0.06] font-inter text-[11px] text-kin tracking-wider uppercase font-medium hover:bg-kin/[0.12] hover:border-kin/40 transition-all"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            {dict.nav.cv}
+          </a>
           <LangToggle
             groupLabel={dict.langToggle.groupLabel}
             englishLabel={dict.langToggle.english}
@@ -84,6 +92,15 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <a
+              href="/Risa_Koyanagi_CV.pdf"
+              download
+              onClick={() => setIsOpen(false)}
+              className="inline-flex items-center gap-2 w-fit px-4 py-2 rounded-sm border border-kin/25 bg-kin/[0.06] font-inter text-xs text-kin tracking-wider uppercase font-medium hover:bg-kin/[0.12] hover:border-kin/40 transition-all"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              {dict.nav.cv}
+            </a>
           </div>
         </div>
       )}

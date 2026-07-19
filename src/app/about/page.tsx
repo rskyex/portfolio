@@ -37,16 +37,16 @@ export default function AboutPage() {
               <h3 className="font-noto-sans text-base font-bold text-kuro-soft mb-4">Profile</h3>
               <div className="space-y-4">
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                  Koyanagi is a researcher at the <strong className="font-semibold text-kuro-soft">University of Cambridge</strong>, working on the governance of space, nuclear, and cyber systems — with a particular focus on how authority is constructed, how norms break down, and what it takes to rebuild legitimacy after they do.
+                  Koyanagi is a researcher at the <strong className="font-semibold text-kuro-soft">University of Cambridge</strong> (Hughes Hall), working on interpretive and categorical authority across cyber &amp; AI, nuclear, and space governance — how authority is constructed, how norms break down, and what it takes to rebuild legitimacy after they do. Her current work is converging on the <strong className="font-semibold text-kuro-soft">governance of nuclear energy on the lunar surface</strong>.
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                  As a Cambridge Future Scholar, she conducts supervised research under Prof. Harald Wydra on competing lunar governance frameworks: how universalist language is translated into standards, participation conditions, and interpretive discretion. Her broader research spans dual-use space infrastructure, cross-domain escalation risk, and structural gaps in responsible behaviour norms across AI, space, and cyber governance.
+                  As a Cambridge Future Scholar (Cambridge Future Scholar Programme, CCIR), she conducts supervised research under Prof. Harald Wydra on competing lunar governance frameworks: how universalist language is translated into standards, participation conditions, and interpretive discretion. She is also a Young Research Fellow at TIES, working on the Geopolitics of Narrative Building. Her broader research spans dual-use space infrastructure, cross-domain escalation risk, and structural gaps in responsible behaviour norms across AI, space, and cyber governance.
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
                   This work is grounded in six years of field research in post-disaster Fukushima, where she examined how governance failures at the state–operator interface erode public trust and policy legitimacy, conducting semi-structured interviews with evacuees, municipal officials, and TEPCO and METI representatives.
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                  Her work is forthcoming at the <strong className="font-semibold text-kuro-soft">International Astronautical Congress 2026</strong> (Antalya, Türkiye), with <strong className="font-semibold text-kuro-soft">three accepted papers</strong> across symposia on space security and sustainability, space policy and economics, and space and society — addressing dual-use neutralisation, conditional openness in lunar governance, and mythic naming as soft infrastructure in competing lunar orders.
+                  Her work is forthcoming at the <strong className="font-semibold text-kuro-soft">International Astronautical Congress 2026</strong> (Antalya, Türkiye), with <strong className="font-semibold text-kuro-soft">three accepted papers</strong> across symposia on space security and sustainability, space policy and economics, and space and society — addressing dual-use neutralisation, conditional openness in lunar governance, and mythic naming as soft infrastructure in competing lunar orders. She passed the first-round selection for the IAC NextGen Plenary (&ldquo;Next Generation Space Infrastructure&rdquo;), with the final round under review, and has further papers under review in 2026 at the International Studies Association (nuclear governance after Fukushima) and International Political Anthropology (&ldquo;Who Speaks for Humanity on the Moon?&rdquo;).
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
                   Alongside her research at Cambridge, she builds two open research platforms. Faultline operationalises escalation theory and attribution frameworks for researchers and policy professionals, through tools including the Orbital Risk Tracker, Global Nuclear Infrastructure Atlas, and Cyber Escalation Atlas. Govern the Human examines a second-order problem: how sustained AI interaction transforms the human subject meant to govern, consent, and deliberate.
@@ -59,6 +59,10 @@ export default function AboutPage() {
                 <Link href="/platforms" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm bg-kuro-soft/80 border border-kin/40 font-noto-sans text-xs text-kin tracking-widest uppercase font-medium hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/60 hover:text-tsubaki-blush transition-all">
                   View Platforms
                 </Link>
+                <a href="/Risa_Koyanagi_CV.pdf" download className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm bg-kuro-soft/80 border border-kin/40 font-noto-sans text-xs text-kin tracking-widest uppercase font-medium hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/60 hover:text-tsubaki-blush transition-all">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  Download CV
+                </a>
               </div>
             </div>
           </div>
@@ -189,17 +193,45 @@ export default function AboutPage() {
         {/* Roles & Leadership */}
         <div>
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Roles &amp; Leadership</h3>
-          <div className="card-washi card-washi-about p-6 relative overflow-hidden">
-            <div className="glow-bar absolute left-0 top-0 bottom-0" />
-            <div className="pl-4">
-              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 mb-1">
-                <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">Space Generation Advisory Council</h4>
-                <span className="font-noto-sans text-xs text-kuro-soft/50 shrink-0 font-medium">Japan</span>
+          <div className="space-y-4">
+            <div className="card-washi card-washi-about p-6 relative overflow-hidden">
+              <div className="glow-bar absolute left-0 top-0 bottom-0" />
+              <div className="pl-4">
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 mb-1">
+                  <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">Space Generation Advisory Council</h4>
+                  <span className="font-noto-sans text-xs text-kuro-soft/50 shrink-0 font-medium">Japan · 2026</span>
+                </div>
+                <p className="font-noto-sans text-sm text-kuro-soft/65">Space Policy Project Team Leader</p>
+                <p className="font-noto-sans text-xs text-kuro-soft/60 mt-1 leading-relaxed">
+                  Leading the Japan team within SGAC&apos;s Space Policy project — convening early-career researchers and policy contributors around space governance, dual-use systems, and norm formation in emerging space orders.
+                </p>
               </div>
-              <p className="font-noto-sans text-sm text-kuro-soft/65">Space Policy Project Team Leader</p>
-              <p className="font-noto-sans text-xs text-kuro-soft/60 mt-1 leading-relaxed">
-                Leading the Japan team within SGAC&apos;s Space Policy project — convening early-career researchers and policy contributors around space governance, dual-use systems, and norm formation in emerging space orders.
-              </p>
+            </div>
+            <div className="card-washi card-washi-about p-6 relative overflow-hidden">
+              <div className="glow-bar absolute left-0 top-0 bottom-0" />
+              <div className="pl-4">
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 mb-1">
+                  <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">TIES</h4>
+                  <span className="font-noto-sans text-xs text-kuro-soft/50 shrink-0 font-medium">Apr 2026 – Present</span>
+                </div>
+                <p className="font-noto-sans text-sm text-kuro-soft/65">Young Research Fellow — Geopolitics of Narrative Building</p>
+                <p className="font-noto-sans text-xs text-kuro-soft/60 mt-1 leading-relaxed">
+                  Researching the geopolitics of narrative formation in strategic competition, translating cross-domain findings into briefings for academic and policy audiences.
+                </p>
+              </div>
+            </div>
+            <div className="card-washi card-washi-about p-6 relative overflow-hidden">
+              <div className="glow-bar absolute left-0 top-0 bottom-0" />
+              <div className="pl-4">
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 mb-1">
+                  <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">Cambridge Future Scholar Programme (CCIR)</h4>
+                  <span className="font-noto-sans text-xs text-kuro-soft/50 shrink-0 font-medium">Sep 2025 – Present</span>
+                </div>
+                <p className="font-noto-sans text-sm text-kuro-soft/65">Researcher — supervised by Prof. Harald Wydra</p>
+                <p className="font-noto-sans text-xs text-kuro-soft/60 mt-1 leading-relaxed">
+                  Supervised research on legitimation and interpretive authority in competing lunar governance frameworks.
+                </p>
+              </div>
             </div>
           </div>
         </div>
