@@ -36,6 +36,9 @@ export interface PaperText {
   date?: string;
   /** Defaults to 'interactive' when omitted. */
   kind?: PaperKind;
+  /** When set, the badge shows this status (e.g. 'Under Review', 'Shortlisted')
+   *  instead of the presentation-type label — used for not-yet-accepted work. */
+  status?: string;
 }
 
 export interface ConferenceLabels {
@@ -93,6 +96,8 @@ export interface Dictionary {
     research: string;
     fieldwork: string;
     about: string;
+    /** Label for the "Download CV" link (serves /Risa_Koyanagi_CV.pdf). */
+    cv: string;
   };
   langToggle: {
     /** aria-label for the toggle group as a whole */

@@ -19,6 +19,7 @@ export const ja: Dictionary = {
     research: '研究',
     fieldwork: 'フィールドワーク', // REVIEW: shortened from "Fieldwork & Engagement"
     about: 'プロフィール',
+    cv: 'CVをダウンロード',
   },
   langToggle: {
     groupLabel: '言語',
@@ -32,7 +33,7 @@ export const ja: Dictionary = {
     description: [
       {
         text:
-          '小柳璃紗。ケンブリッジ大学人文・社会・政治学（HSPS）専攻、ケンブリッジ国際研究センター Cambridge Future Scholar。正統化、デュアルユース・システム、権威構造を軸に、宇宙・核・先端技術ガバナンスを横断的に研究。第77回International Astronautical Congress（国際宇宙会議）に単著論文3本採択。JAXA International Space Education Board 2026選抜。Data for Policy 2026（バルセロナ）に単著の拡張要旨採択。Next.js, React, TypeScript, D3.js, Leafletなどを用い、戦略インフラの公開データを分析・可視化する公開リサーチ・プラットフォームも開発・構築。',
+          '小柳璃紗。ケンブリッジ大学（ヒューズ・ホール）人文・社会・政治学（HSPS）専攻、ケンブリッジ国際研究センターの Cambridge Future Scholar。宇宙・核・サイバー／AIガバナンスを横断し、規範がいかに名づけられ、正統化され、争われるかという解釈的・分類的権威を研究。近年は月面における原子力エネルギーのガバナンスへと関心を収斂させている。TIES（Geopolitics of Narrative Building）Young Research Fellow、SGAC 2026 宇宙政策プロジェクトチーム［日本］リーダー、JAXA International Space Education Board 2026 選抜。International Astronautical Congress 2026（アンタルヤ）に単著論文3本採択、同 NextGen Plenary は一次選考通過（最終選考は審査中）。Data for Policy 2026（バルセロナ）に拡張要旨採択。戦略インフラのリスクや核システム、AIガバナンスに関する公開リサーチ・プラットフォームも制作。',
       },
     ],
     ctaPlatforms: 'プラットフォーム',
@@ -169,6 +170,33 @@ export const ja: Dictionary = {
             symposium: 'テーマ — Governance of/with AI：データ・インフラ・技術主権への示唆',
             date: '2026年9月8〜10日',
             kind: 'oral',
+          },
+        ],
+      },
+      {
+        event: '審査中 — 2026',
+        location: '国際選考・査読プロセス',
+        organizer: 'IAC NextGen Plenary ・ International Studies Association ・ International Political Anthropology',
+        highlight: '',
+        eyebrow: '審査中 · 2026',
+        tags: ['月面ガバナンス', '核ガバナンス', 'ナラティブと権威'],
+        focus: '宇宙・核・解釈的権威をめぐる各分野で、選考および査読を通過中の研究。',
+        papers: [
+          {
+            title: 'Next Generation Space Infrastructure（次世代宇宙インフラ）',
+            symposium: 'IAC 2026 NextGen Plenary — 一次選考通過／最終選考は審査中',
+            status: '一次選考通過',
+            kind: 'oral',
+          },
+          {
+            title: '月において、誰が人類を代表するのか',
+            symposium: 'International Political Anthropology',
+            status: '審査中',
+          },
+          {
+            title: '福島の核ガバナンスに関する論文',
+            symposium: 'International Studies Association（ISA）',
+            status: '審査中',
           },
         ],
       },

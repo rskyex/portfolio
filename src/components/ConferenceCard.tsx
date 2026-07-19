@@ -7,6 +7,8 @@ interface Paper {
   type: 'Oral Presentation' | 'Interactive Presentation' | 'Poster Presentation';
   symposium: string;
   date?: string;
+  /** When set, the badge shows this status instead of the presentation type. */
+  status?: string;
 }
 
 interface ConferenceCardLabels {
@@ -185,18 +187,22 @@ export default function ConferenceCard({
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
                       <span
                         className={`inline-flex items-center gap-1.5 font-inter text-[10px] tracking-[0.22em] uppercase font-medium px-2 py-0.5 rounded-sm border ${
-                          paper.type === 'Oral Presentation'
-                            ? 'border-tsubaki-rose/30 bg-tsubaki-rose/[0.08] text-tsubaki-blush'
-                            : paper.type === 'Poster Presentation'
-                              ? 'border-[rgba(100,149,237,0.35)] bg-[rgba(100,149,237,0.09)] text-[#9db6f0]'
-                              : 'border-kin/25 bg-kin/[0.06] text-kin/85'
+                          paper.status
+                            ? 'border-shiro/25 bg-shiro/[0.04] text-shiro/70'
+                            : paper.type === 'Oral Presentation'
+                              ? 'border-tsubaki-rose/30 bg-tsubaki-rose/[0.08] text-tsubaki-blush'
+                              : paper.type === 'Poster Presentation'
+                                ? 'border-[rgba(100,149,237,0.35)] bg-[rgba(100,149,237,0.09)] text-[#9db6f0]'
+                                : 'border-kin/25 bg-kin/[0.06] text-kin/85'
                         }`}
                       >
-                        {paper.type === 'Oral Presentation'
-                          ? labels.paperTypes.oral
-                          : paper.type === 'Poster Presentation'
-                            ? labels.paperTypes.poster
-                            : labels.paperTypes.interactive}
+                        {paper.status
+                          ? paper.status
+                          : paper.type === 'Oral Presentation'
+                            ? labels.paperTypes.oral
+                            : paper.type === 'Poster Presentation'
+                              ? labels.paperTypes.poster
+                              : labels.paperTypes.interactive}
                       </span>
                       <span className="font-inter text-[11.5px] text-shiro/60 tracking-wide">
                         {paper.symposium}
