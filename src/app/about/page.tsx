@@ -37,22 +37,16 @@ export default function AboutPage() {
               <h3 className="font-noto-sans text-base font-bold text-kuro-soft mb-4">Profile</h3>
               <div className="space-y-4">
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                  Koyanagi is a researcher at the <strong className="font-semibold text-kuro-soft">University of Cambridge</strong>, working on the governance of space, nuclear, and cyber systems — with a particular focus on how authority is constructed, how norms break down, and what it takes to rebuild legitimacy after they do.
+                  Koyanagi is a researcher at the <strong className="font-semibold text-kuro-soft">University of Cambridge</strong>, working on the governance of space, nuclear, and cyber systems — how authority is constructed, how norms break down, and what it takes to rebuild legitimacy. She is Team Leader of SGAC&apos;s 2026 Space Policy Project Team (Japan), a delegate to the <strong className="font-semibold text-kuro-soft">JAXA International Space Education Board (2026)</strong>, and a mentee in the <strong className="font-semibold text-kuro-soft">VCDNP 2026–2027 Young Women in Non-Proliferation and Disarmament Programme</strong> — one of twenty selected worldwide.
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                  As a Cambridge Future Scholar, she conducts supervised research under Prof. Harald Wydra on competing lunar governance frameworks: how universalist language is translated into standards, participation conditions, and interpretive discretion. Her broader research spans dual-use space infrastructure, cross-domain escalation risk, and structural gaps in responsible behaviour norms across AI, space, and cyber governance.
+                  As a Cambridge Future Scholar, she conducts supervised research under Prof. Harald Wydra on competing lunar governance frameworks. Her broader work spans dual-use space infrastructure, cross-domain escalation risk, and gaps in responsible-behaviour norms across AI, space, and cyber governance — grounded in six years of field research in post-disaster Fukushima.
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                  This work is grounded in six years of field research in post-disaster Fukushima, where she examined how governance failures at the state–operator interface erode public trust and policy legitimacy, conducting semi-structured interviews with evacuees, municipal officials, and TEPCO and METI representatives.
+                  Her work is forthcoming at the <strong className="font-semibold text-kuro-soft">International Astronautical Congress 2026</strong> (Antalya, Türkiye), with <strong className="font-semibold text-kuro-soft">three accepted papers</strong> on dual-use neutralisation, conditional openness in lunar governance, and mythic naming in competing lunar orders.
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                  Her work is forthcoming at the <strong className="font-semibold text-kuro-soft">International Astronautical Congress 2026</strong> (Antalya, Türkiye), with <strong className="font-semibold text-kuro-soft">three accepted papers</strong> across symposia on space security and sustainability, space policy and economics, and space and society — addressing dual-use neutralisation, conditional openness in lunar governance, and mythic naming as soft infrastructure in competing lunar orders.
-                </p>
-                <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                  She has been selected as one of twenty mentees worldwide for the <strong className="font-semibold text-kuro-soft">2026–2027 Young Women in Non-Proliferation and Disarmament Mentorship Programme</strong>, run by the Vienna Center for Disarmament and Non-Proliferation (VCDNP) within the framework of the EU Non-Proliferation and Disarmament Consortium (EUNPDC).
-                </p>
-                <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                  Alongside her research at Cambridge, she builds two open research platforms. Faultline operationalises escalation theory and attribution frameworks for researchers and policy professionals, through tools including the Orbital Risk Tracker, Global Nuclear Infrastructure Atlas, and Cyber Escalation Atlas. Govern the Human examines a second-order problem: how sustained AI interaction transforms the human subject meant to govern, consent, and deliberate. Both platforms advanced to the prototyping phase of the <strong className="font-semibold text-kuro-soft">Global Challenge to Build Trust in the Age of Generative AI</strong> — a G7-originated initiative led by the IEEE Standards Association, the OECD, and AI Commons, with UNESCO as a founding partner — among only six East Asian teams of eighty selected worldwide.
+                  Alongside her research, she builds two open research platforms — Faultline (strategic infrastructure risk) and Govern the Human (how AI reshapes the human subject). Both advanced to the prototyping phase of the <strong className="font-semibold text-kuro-soft">Global Challenge to Build Trust in the Age of Generative AI</strong> — a G7-originated initiative led by the IEEE Standards Association, the OECD, and AI Commons, with UNESCO as a founding partner — among only six East Asian teams of eighty selected worldwide.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 mt-6">
@@ -286,15 +280,9 @@ export default function AboutPage() {
             <div className="glow-bar absolute left-0 top-0 bottom-0" />
             <div className="pl-4 space-y-4">
               <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                Her artistic practice — spanning music performance, visual art, and poetry — is documented through MYTHERA, her interpretive research studio.
-              </p>
-              <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
                 Koyanagi trained in piano with Noriko Amano, Shadow Box with Ineke de Bruijn, and oil painting under Yukiko Hamano. She received an Excellence Award for poetry in 2011 and appeared as a child actor in Maribor National Opera&apos;s &ldquo;Carmen.&rdquo; As a teenager, she won the Excellence Award in the JYOJI-ROCK U-16 contest. Her art studies with Nobuhiko Utsumi led to a group exhibition. She has been selected for the Monster Exhibition and featured in Al-Tiba9 Contemporary Art Magazine.
               </p>
               <div className="flex flex-wrap gap-2 mt-2">
-                <Link href="/platforms/mythera" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm bg-kuro-soft/80 border border-kin/40 font-noto-sans text-xs text-kin tracking-widest uppercase font-medium hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/60 hover:text-tsubaki-blush transition-all">
-                  MYTHERA
-                </Link>
                 <Link href="/projects/art" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-sm bg-kuro-soft/80 border border-kin/40 font-noto-sans text-xs text-kin tracking-widest uppercase font-medium hover:bg-tsubaki-rose/20 hover:border-tsubaki-rose/60 hover:text-tsubaki-blush transition-all">
                   Art Practice
                 </Link>

@@ -18,13 +18,9 @@ const ROUTES: string[] = [
   '/platforms/orbital',
   '/platforms/nuclear',
   '/platforms/lunar-mandate-atlas',
-  '/platforms/mythera',
-  '/platforms/theatre-of-authenticity',
-  '/platforms/second-self',
   '/platforms/faultline',
   '/platforms/govern-the-human',
   '/platforms/promise',
-  '/platforms/scoreless',
   // Research
   '/research',
   '/research/lunar',

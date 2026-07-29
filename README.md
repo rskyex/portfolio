@@ -25,12 +25,6 @@ Strategic risk suite mapping escalation, infrastructure, and geopolitical fragil
 - [Cyber Escalation Atlas](https://cyber-escalation-atlas-5yp5.vercel.app) — Cyber incidents as strategic behaviour and governance signals
 - [Lunar Mandate Atlas](https://lunar-mandate-atlas.vercel.app/) — Competing lunar governance frameworks, mandates, and authority architecture across the Artemis Accords and ILRS
 
-### [MYTHERA](https://mythera.vercel.app/)
-An interpretive studio where selfhood, culture, performance, and aesthetic form become explorable worlds.
-- Scoreless — Making classical music's structure, logic, and meaning accessible without score literacy *(in progress)*
-- Theatre of Authenticity — Questioning authenticity through experiential design *(in progress)*
-- Second Self — A philosophical card game exploring AI, memory, governance, and subjectivity *(in progress)*
-
 ## Independent Projects
 - [Japan Promise Tracker](https://jp-ver-japan-promise-tracker.vercel.app) — Tracking Japanese government policy commitments and fulfilment status
 
@@ -52,7 +46,7 @@ An interpretive studio where selfhood, culture, performance, and aesthetic form 
 | `/` | Hero, platform ecosystem, research, and speaking overview |
 | `/about` | Profile, education, skills, languages, affiliations, awards |
 | `/platforms` | All platform systems and child tools |
-| `/platforms/[slug]` | Individual platform detail pages (e.g. `narrative-drift`, `orbital`, `scoreless`) |
+| `/platforms/[slug]` | Individual platform detail pages (e.g. `narrative-drift`, `orbital`, `lunar-mandate-atlas`) |
 | `/research` | Research papers and projects |
 | `/projects` | Background, fieldwork, and interdisciplinary engagement |
 | `/speaking` | Conferences, talks, and forthcoming presentations |

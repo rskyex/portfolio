@@ -84,26 +84,6 @@ export const en: Dictionary = {
         description:
           'Competing governance claims, mandates, and authority architecture on the Moon.',
       },
-      {
-        slug: 'mythera',
-        title: 'MYTHERA',
-        description:
-          'An interpretive studio where selfhood, culture, performance, and aesthetic form become explorable worlds.',
-        children: [
-          {
-            slug: 'theatre-of-authenticity',
-            name: 'Theatre of Authenticity',
-            description:
-              'Questioning authenticity through experiential design — performance, gaze, and the limits of the "true self"',
-          },
-          {
-            slug: 'second-self',
-            name: 'Second Self',
-            description:
-              'A philosophical card game exploring AI, memory, governance, and the formation of subjectivity',
-          },
-        ],
-      },
     ],
   },
   researchSection: {

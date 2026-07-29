@@ -82,23 +82,6 @@ export const ja: Dictionary = {
         title: 'Lunar Mandate Atlas',
         description: '月をめぐる統治主張と権限の構造を整理。',
       },
-      {
-        slug: 'mythera',
-        title: 'MYTHERA',
-        description: '自己・文化・パフォーマンス・美的形式を、探索可能な世界にする解釈的スタジオ。', // REVIEW
-        children: [
-          {
-            slug: 'theatre-of-authenticity',
-            name: 'Theatre of Authenticity',
-            description: '体験デザインを通じて「本当の自己」の限界を問う。',
-          },
-          {
-            slug: 'second-self',
-            name: 'Second Self',
-            description: 'AI・記憶・統治と主体性の形成を探る哲学的カードゲーム。',
-          },
-        ],
-      },
     ],
   },
   researchSection: {
