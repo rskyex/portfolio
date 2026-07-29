@@ -23,13 +23,6 @@ const platformAssets: Record<string, { image: string; childImages?: Record<strin
   orbital: { image: '/images/orbital-platform.jpg' },
   nuclear: { image: '/images/nuclear-platform.jpg' },
   'lunar-mandate-atlas': { image: '/images/LGAT-og.svg' },
-  mythera: {
-    image: '/images/mythera-og.png',
-    childImages: {
-      'theatre-of-authenticity': '/images/theatre-of-authenticity.png',
-      'second-self': '/images/secondself_og.png',
-    },
-  },
 };
 
 const projectAssets: Record<string, { image: string; period?: string }> = {

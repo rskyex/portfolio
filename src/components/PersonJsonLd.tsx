@@ -12,10 +12,20 @@ export default function PersonJsonLd() {
     url: 'https://risakoyanagi.com',
     image: 'https://risakoyanagi.com/images/risa-koyanagi-og.png',
     jobTitle: 'Researcher',
-    affiliation: {
-      '@type': 'CollegeOrUniversity',
-      name: 'University of Cambridge',
-    },
+    affiliation: [
+      {
+        '@type': 'CollegeOrUniversity',
+        name: 'University of Cambridge',
+      },
+      {
+        '@type': 'Organization',
+        name: 'Vienna Center for Disarmament and Non-Proliferation (VCDNP)',
+      },
+    ],
+    award: [
+      'Mentee, VCDNP Young Women in Non-Proliferation and Disarmament Mentorship Programme 2026–2027',
+      'JAXA International Space Education Board 2026',
+    ],
     sameAs: [
       'https://linkedin.com/in/rskyex',
       'https://github.com/rskyex',

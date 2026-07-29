@@ -1,6 +1,5 @@
 import SectionHeader from '@/components/SectionHeader';
 import { pageMetadata } from '@/lib/metadata';
-import FlagshipCard from '@/components/FlagshipCard';
 import PlatformCard from '@/components/PlatformCard';
 import SectionDivider from '@/components/SectionDivider';
 
@@ -110,63 +109,6 @@ export default function PlatformsPage() {
           tags={['Lunar Governance', 'Artemis Accords', 'ILRS', 'Authority Architecture']}
           image="/images/LGAT-og.svg"
           coreQuestion="Core question: How do competing governance frameworks construct authority and claim legitimacy on behalf of humanity on the Moon?"
-        />
-      </div>
-
-      <SectionDivider />
-
-      {/* ═══════════════════════════════════════════════════
-          FLAGSHIP PROJECT SYSTEM
-          ═══════════════════════════════════════════════════ */}
-      <div className="mt-10 mb-10">
-        <h2 className="font-kaisei text-xl text-kin/80 tracking-wide">Flagship Project System</h2>
-        <p className="font-noto-sans text-xs text-shiro/70 tracking-wider mt-1">A parent platform containing linked sub-projects</p>
-      </div>
-
-      <FlagshipCard
-        href="/platforms/mythera"
-        title="MYTHERA"
-        description="An interpretive studio where selfhood, culture, performance, and aesthetic form become explorable worlds."
-        includes="Includes linked projects on music analysis, authenticity, and philosophical game design."
-        liveUrl="https://mythera.vercel.app/"
-        image="/images/mythera-og.png"
-        subProjects={[
-          { name: 'Scoreless', href: '/platforms/scoreless' },
-          { name: 'Theatre of Authenticity', href: '/platforms/theatre-of-authenticity' },
-          { name: 'Second Self', href: '/platforms/second-self' },
-        ]}
-      />
-
-      <div className="ml-4 md:ml-8 mt-6 mb-14 border-l-2 border-kin/10 pl-6 md:pl-8 space-y-6">
-        <p className="font-noto-sans text-[10px] text-shiro/90 tracking-[0.2em] uppercase font-semibold -ml-1">Sub-projects</p>
-        <PlatformCard
-          href="/platforms/scoreless"
-          title="Scoreless"
-          description="A music analysis platform making classical music's structure, logic, and meaning accessible without score literacy."
-          status="In Progress"
-          tags={['Classical Music', 'Structural Analysis', 'Motif Tracking', 'Music Theory']}
-          image="/images/mythera-og.png"
-          coreQuestion="Core question: How can musical structure be made visible and meaningful without requiring score literacy?"
-        />
-
-        <PlatformCard
-          href="/platforms/theatre-of-authenticity"
-          title="Theatre of Authenticity"
-          description="An experiential site that questions authenticity itself — visualising how far the motives behind our actions have been externalised. Spanning Mishima, Kierkegaard, Nietzsche, Sartre, and Bataille."
-          status="In Progress"
-          tags={['Authenticity', 'Performance', 'Selfhood', 'Existentialism']}
-          image="/images/theatre-of-authenticity.png"
-          coreQuestion="Core question: Are you truly acting from inner necessity, or constructing your self on the premise of being watched?"
-        />
-
-        <PlatformCard
-          href="/platforms/second-self"
-          title="Second Self"
-          description="An online philosophical card game exploring AI, memory, governance, and the formation of subjectivity. Players design a society and determine what kind of human subjects emerge."
-          status="In Progress"
-          tags={['Philosophy', 'Card Game', 'AI Governance', 'Subjectivity', 'Social Design']}
-          image="/images/secondself_og.png"
-          coreQuestion="Core question: What happens when systems begin participating in the very process by which humans become selves?"
         />
       </div>
 

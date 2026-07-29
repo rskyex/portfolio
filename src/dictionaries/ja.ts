@@ -32,7 +32,7 @@ export const ja: Dictionary = {
     description: [
       {
         text:
-          '小柳璃紗。ケンブリッジ大学人文・社会・政治学（HSPS）専攻、ケンブリッジ国際研究センター Cambridge Future Scholar。正統化、デュアルユース・システム、権威構造を軸に、宇宙・核・先端技術ガバナンスを横断的に研究。第77回International Astronautical Congress（国際宇宙会議）に単著論文3本採択。JAXA International Space Education Board 2026選抜。Data for Policy 2026（バルセロナ）に単著の拡張要旨採択。Next.js, React, TypeScript, D3.js, Leafletなどを用い、戦略インフラの公開データを分析・可視化する公開リサーチ・プラットフォームも開発・構築。',
+          '小柳璃紗。ケンブリッジ大学人文・社会・政治学（HSPS）専攻、ケンブリッジ国際研究センター Cambridge Future Scholar。正統化、デュアルユース・システム、権威構造を軸に、宇宙・核・先端技術ガバナンスを横断的に研究。第77回International Astronautical Congress（国際宇宙会議）に単著論文3本採択。JAXA International Space Education Board 2026選抜。VCDNP「Young Women in Non-Proliferation and Disarmament」メンターシップ・プログラム2026–2027に、世界20名のメンティーの一人として選出。Data for Policy 2026（バルセロナ）に単著の拡張要旨採択。Next.js, React, TypeScript, D3.js, Leafletなどを用い、戦略インフラの公開データを分析・可視化する公開リサーチ・プラットフォームも開発・構築。',
       },
     ],
     ctaPlatforms: 'プラットフォーム',
@@ -81,23 +81,6 @@ export const ja: Dictionary = {
         slug: 'lunar-mandate-atlas',
         title: 'Lunar Mandate Atlas',
         description: '月をめぐる統治主張と権限の構造を整理。',
-      },
-      {
-        slug: 'mythera',
-        title: 'MYTHERA',
-        description: '自己・文化・パフォーマンス・美的形式を、探索可能な世界にする解釈的スタジオ。', // REVIEW
-        children: [
-          {
-            slug: 'theatre-of-authenticity',
-            name: 'Theatre of Authenticity',
-            description: '体験デザインを通じて「本当の自己」の限界を問う。',
-          },
-          {
-            slug: 'second-self',
-            name: 'Second Self',
-            description: 'AI・記憶・統治と主体性の形成を探る哲学的カードゲーム。',
-          },
-        ],
       },
     ],
   },

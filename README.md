@@ -8,7 +8,7 @@ Personal portfolio and research platform hub for **Risa Koyanagi**, a researcher
 
 As a Cambridge Future Scholar, Koyanagi conducts supervised research under Prof. Harald Wydra on competing lunar governance frameworks. Her broader research spans dual-use space infrastructure, cross-domain escalation risk, and structural gaps in responsible behaviour norms across AI, space, and cyber governance. This work is grounded in six years of field research in post-disaster Fukushima.
 
-Her work is forthcoming at the **International Astronautical Congress 2026** (Antalya, Türkiye), with **three accepted papers** across symposia on space security and sustainability, space policy and economics, and space and society.
+Her work is forthcoming at the **International Astronautical Congress 2026** (Antalya, Türkiye), with **three accepted papers** across symposia on space security and sustainability, space policy and economics, and space and society. She has been selected as one of twenty mentees worldwide for the **2026–2027 Young Women in Non-Proliferation and Disarmament Mentorship Programme** (VCDNP, within the EU Non-Proliferation and Disarmament Consortium). Her platforms **Faultline** and **Govern the Human** both advanced to the prototyping phase of the **Global Challenge to Build Trust in the Age of Generative AI** — a G7-originated initiative led by the IEEE Standards Association, the OECD, and AI Commons, with UNESCO as a founding partner — among only six East Asian teams of eighty selected worldwide.
 
 ## Flagship Platform Systems
 
@@ -24,12 +24,6 @@ Strategic risk suite mapping escalation, infrastructure, and geopolitical fragil
 - [Global Nuclear Infrastructure Atlas](https://globalnuclearinfrastructureatlas.vercel.app) — Civilian nuclear infrastructure, arsenals, and policy context
 - [Cyber Escalation Atlas](https://cyber-escalation-atlas-5yp5.vercel.app) — Cyber incidents as strategic behaviour and governance signals
 - [Lunar Mandate Atlas](https://lunar-mandate-atlas.vercel.app/) — Competing lunar governance frameworks, mandates, and authority architecture across the Artemis Accords and ILRS
-
-### [MYTHERA](https://mythera.vercel.app/)
-An interpretive studio where selfhood, culture, performance, and aesthetic form become explorable worlds.
-- Scoreless — Making classical music's structure, logic, and meaning accessible without score literacy *(in progress)*
-- Theatre of Authenticity — Questioning authenticity through experiential design *(in progress)*
-- Second Self — A philosophical card game exploring AI, memory, governance, and subjectivity *(in progress)*
 
 ## Independent Projects
 - [Japan Promise Tracker](https://jp-ver-japan-promise-tracker.vercel.app) — Tracking Japanese government policy commitments and fulfilment status
@@ -52,7 +46,7 @@ An interpretive studio where selfhood, culture, performance, and aesthetic form 
 | `/` | Hero, platform ecosystem, research, and speaking overview |
 | `/about` | Profile, education, skills, languages, affiliations, awards |
 | `/platforms` | All platform systems and child tools |
-| `/platforms/[slug]` | Individual platform detail pages (e.g. `narrative-drift`, `orbital`, `scoreless`) |
+| `/platforms/[slug]` | Individual platform detail pages (e.g. `narrative-drift`, `orbital`, `lunar-mandate-atlas`) |
 | `/research` | Research papers and projects |
 | `/projects` | Background, fieldwork, and interdisciplinary engagement |
 | `/speaking` | Conferences, talks, and forthcoming presentations |
