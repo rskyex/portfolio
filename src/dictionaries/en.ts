@@ -30,7 +30,7 @@ export const en: Dictionary = {
       { text: 'space, nuclear, and emerging technology governance', bold: true },
       {
         text:
-          '. Her work focuses on legitimation, dual-use systems, and authority architecture. She is Team Leader of SGAC’s 2026 Space Policy Project Team (Japan) and sits on the JAXA International Space Education Board (2026). Her extended abstract on attribution and AI governance was accepted to Data for Policy 2026 (Barcelona). She also designs public-facing research platforms on AI governance, strategic infrastructure risk, and interpretive systems.',
+          '. Her work focuses on legitimation, dual-use systems, and authority architecture. She is Team Leader of SGAC’s 2026 Space Policy Project Team (Japan), sits on the JAXA International Space Education Board (2026), and is a mentee in the VCDNP 2026–2027 Young Women in Non-Proliferation and Disarmament Programme. Her extended abstract on attribution and AI governance was accepted to Data for Policy 2026 (Barcelona). She also designs public-facing research platforms on AI governance, strategic infrastructure risk, and interpretive systems.',
       },
     ],
     ctaPlatforms: 'View Platforms',

@@ -91,6 +91,13 @@ export default function FaultlinePlatformPage() {
           </p>
         </div>
 
+        <div className="panel rounded-sm p-8">
+          <h3 className="font-noto-sans text-base font-medium text-shiro/90 mb-4">Recognition</h3>
+          <p className="font-noto-sans text-sm text-shiro/90 leading-relaxed">
+            Faultline advanced to the prototyping phase of the Global Challenge to Build Trust in the Age of Generative AI &mdash; a G7-originated initiative led by the IEEE Standards Association, the OECD, and AI Commons, with UNESCO as a founding partner &mdash; among only six East Asian teams of eighty selected worldwide.
+          </p>
+        </div>
+
         <div className="flex flex-wrap gap-2">
           {['Space Security', 'Nuclear Governance', 'Cyber Governance', 'Escalation Analysis', 'Strategic Risk', 'Dual-Use Governance', 'Weaponised Interdependence'].map(tag => (
             <Tag key={tag} label={tag} />

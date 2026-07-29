@@ -8,7 +8,7 @@ Personal portfolio and research platform hub for **Risa Koyanagi**, a researcher
 
 As a Cambridge Future Scholar, Koyanagi conducts supervised research under Prof. Harald Wydra on competing lunar governance frameworks. Her broader research spans dual-use space infrastructure, cross-domain escalation risk, and structural gaps in responsible behaviour norms across AI, space, and cyber governance. This work is grounded in six years of field research in post-disaster Fukushima.
 
-Her work is forthcoming at the **International Astronautical Congress 2026** (Antalya, Türkiye), with **three accepted papers** across symposia on space security and sustainability, space policy and economics, and space and society.
+Her work is forthcoming at the **International Astronautical Congress 2026** (Antalya, Türkiye), with **three accepted papers** across symposia on space security and sustainability, space policy and economics, and space and society. She has been selected as one of twenty mentees worldwide for the **2026–2027 Young Women in Non-Proliferation and Disarmament Mentorship Programme** (VCDNP, within the EU Non-Proliferation and Disarmament Consortium). Her platforms **Faultline** and **Govern the Human** both advanced to the prototyping phase of the **Global Challenge to Build Trust in the Age of Generative AI** — a G7-originated initiative led by the IEEE Standards Association, the OECD, and AI Commons, with UNESCO as a founding partner — among only six East Asian teams of eighty selected worldwide.
 
 ## Flagship Platform Systems
 

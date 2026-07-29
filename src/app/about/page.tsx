@@ -49,7 +49,10 @@ export default function AboutPage() {
                   Her work is forthcoming at the <strong className="font-semibold text-kuro-soft">International Astronautical Congress 2026</strong> (Antalya, Türkiye), with <strong className="font-semibold text-kuro-soft">three accepted papers</strong> across symposia on space security and sustainability, space policy and economics, and space and society — addressing dual-use neutralisation, conditional openness in lunar governance, and mythic naming as soft infrastructure in competing lunar orders.
                 </p>
                 <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                  Alongside her research at Cambridge, she builds two open research platforms. Faultline operationalises escalation theory and attribution frameworks for researchers and policy professionals, through tools including the Orbital Risk Tracker, Global Nuclear Infrastructure Atlas, and Cyber Escalation Atlas. Govern the Human examines a second-order problem: how sustained AI interaction transforms the human subject meant to govern, consent, and deliberate.
+                  She has been selected as one of twenty mentees worldwide for the <strong className="font-semibold text-kuro-soft">2026–2027 Young Women in Non-Proliferation and Disarmament Mentorship Programme</strong>, run by the Vienna Center for Disarmament and Non-Proliferation (VCDNP) within the framework of the EU Non-Proliferation and Disarmament Consortium (EUNPDC).
+                </p>
+                <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
+                  Alongside her research at Cambridge, she builds two open research platforms. Faultline operationalises escalation theory and attribution frameworks for researchers and policy professionals, through tools including the Orbital Risk Tracker, Global Nuclear Infrastructure Atlas, and Cyber Escalation Atlas. Govern the Human examines a second-order problem: how sustained AI interaction transforms the human subject meant to govern, consent, and deliberate. Both platforms advanced to the prototyping phase of the <strong className="font-semibold text-kuro-soft">Global Challenge to Build Trust in the Age of Generative AI</strong> — a G7-originated initiative led by the IEEE Standards Association, the OECD, and AI Commons, with UNESCO as a founding partner — among only six East Asian teams of eighty selected worldwide.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 mt-6">
@@ -106,6 +109,32 @@ export default function AboutPage() {
                 <div className="pl-4">
                   <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">{cert.name}</h4>
                   <p className="font-noto-sans text-xs text-kuro-soft/45 mt-1">{cert.type}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <SectionDivider />
+
+        {/* Experience */}
+        <div>
+          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Experience</h3>
+          <div className="space-y-4">
+            {[
+              { organisation: 'Morgan Stanley', role: 'Intern', period: '2026' },
+              { organisation: 'Ministry of Economy, Trade and Industry (METI), Japan', role: 'Intern', period: '2026' },
+              { organisation: 'Financial Services Agency (FSA), Japan', role: 'Intern', period: '2026' },
+              { organisation: 'Mitsubishi UFJ Research and Consulting', role: 'Internship Programme — Tokyo', period: 'September 2026' },
+            ].map((exp, i) => (
+              <div key={i} className="card-washi card-washi-about p-6 relative overflow-hidden">
+                <div className="glow-bar absolute left-0 top-0 bottom-0" />
+                <div className="pl-4">
+                  <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 mb-1">
+                    <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">{exp.organisation}</h4>
+                    <span className="font-noto-sans text-xs text-kuro-soft/50 shrink-0 font-medium">{exp.period}</span>
+                  </div>
+                  <p className="font-noto-sans text-sm text-kuro-soft/65">{exp.role}</p>
                 </div>
               </div>
             ))}
@@ -233,7 +262,8 @@ export default function AboutPage() {
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Awards</h3>
           <div className="space-y-3">
             {[
-              { title: 'Selected, JAXA International Space Education Board 2026', detail: 'Chosen to serve on the Japan Aerospace Exploration Agency\'s International Space Education Board for 2026' },
+              { title: 'Mentee, VCDNP Young Women in Non-Proliferation and Disarmament Mentorship Programme 2026–2027', detail: 'Selected as one of twenty mentees worldwide by the Vienna Center for Disarmament and Non-Proliferation (VCDNP), within the framework of the EU Non-Proliferation and Disarmament Consortium (EUNPDC)' },
+              { title: 'Selected, JAXA International Space Education Board 2026', detail: 'Delegate to the Japan Aerospace Exploration Agency\'s International Space Education Board at the International Astronautical Congress 2026' },
               { title: '2nd Prize, GEIL Policy Contest — Tokyo Earthquake Response', detail: 'Led a team of four in crafting a policy to boost Tokyo\'s earthquake resilience, proposing "Transferable Development Rights Plus" to incentivise redevelopment, reduce wooden structures, and widen streets' },
             ].map((award, i) => (
               <div key={i} className="card-washi card-washi-about p-5 relative overflow-hidden">
