@@ -49,7 +49,22 @@ export default function LandingExtraSections({
 
   return (
     <>
-      {/* ─── CV — Education / Experience / Awards (JA landing) ─── */}
+      {/* ─── RECOMMENDATIONS (optional; kept above the CV) ─── */}
+      {recommendations && (
+        <>
+          <SectionDivider />
+          <section className="max-w-6xl mx-auto px-6 pb-16 relative">
+            <div className="relative">
+              <SectionHeader english={recommendations.heading} />
+              <div className="mt-8">
+                <Recommendations locale={locale} variant="landing" />
+              </div>
+            </div>
+          </section>
+        </>
+      )}
+
+      {/* ─── CV — Education / Experience (JA landing) ─── */}
       {cv && (
         <>
           <SectionDivider />
@@ -86,21 +101,6 @@ export default function LandingExtraSections({
                     </div>
                   </div>
                 ))}
-              </div>
-            </div>
-          </section>
-        </>
-      )}
-
-      {/* ─── RECOMMENDATIONS (optional) ─── */}
-      {recommendations && (
-        <>
-          <SectionDivider />
-          <section className="max-w-6xl mx-auto px-6 pb-16 relative">
-            <div className="relative">
-              <SectionHeader english={recommendations.heading} />
-              <div className="mt-8">
-                <Recommendations locale={locale} variant="landing" />
               </div>
             </div>
           </section>
