@@ -74,9 +74,12 @@
       "period": { "en": "Aug 2026", "ja": "2026年8月" }
     },
     {
-      "_todo": "TODO(Risa): 「Effective Fellow 2026 Summer」を主催団体名=Effective Fellow / 役職=Fellow として登録しています。正式な団体名・役職名・開始終了月が分かれば修正してください。",
-      "organisation": { "en": "Effective Fellow", "ja": "Effective Fellow" },
-      "role": { "en": "Fellow", "ja": "フェロー" },
+      "_todo": "TODO(Risa): 開始・終了月が分かれば period を「Jun 2026 – Aug 2026」形式に差し替えてください。日本語の役職名は研究テーマ部分のみ訳しています（TIESの表記に合わせています）。",
+      "organisation": { "en": "Effective Thesis", "ja": "Effective Thesis" },
+      "role": {
+        "en": "Effective Fellow (Verification and Enforcement in AI Governance)",
+        "ja": "Effective Fellow(AIガバナンスにおける検証と執行)"
+      },
       "period": { "en": "Summer 2026", "ja": "2026年夏" }
     },
     {
@@ -103,8 +106,8 @@
     {
       "organisation": { "en": "JAXA", "ja": "宇宙航空研究開発機構(JAXA)" },
       "role": {
-        "en": "International Space Education Board (ISEB) Delegate",
-        "ja": "国際宇宙教育会議(ISEB)派遣代表"
+        "en": "International Space Education Board (ISEB) Student Delegate",
+        "ja": "国際宇宙教育会議(ISEB)派遣学生"
       },
       "period": { "en": "May 2026 – Present", "ja": "2026年5月 – 現在" }
     },

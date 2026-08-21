@@ -65,13 +65,13 @@ export default function AboutPage() {
 
         <SectionDivider />
 
-        {/* CV — Education / Experience (data: src/data/cv.json) */}
-        <CvSection locale="en" />
+        {/* Referee comments (data: src/data/recommendations.json) */}
+        <Recommendations locale="en" />
 
         <SectionDivider />
 
-        {/* Referee comments (data: src/data/recommendations.json) */}
-        <Recommendations locale="en" />
+        {/* CV — Education / Experience (data: src/data/cv.json) */}
+        <CvSection locale="en" />
 
         <SectionDivider />
 
