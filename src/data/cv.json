@@ -1,5 +1,5 @@
 {
-  "_readme": "CV data rendered by src/components/CvSection.tsx on /about (EN) and on the /ja landing page (JA). To add an entry, insert an object into the relevant array — newest first (the arrays are rendered in order, not re-sorted). Every visible string has an `en` and a `ja` variant.",
+  "_readme": "CV data rendered by src/components/CvSection.tsx on /about (EN) and on the /ja landing page (JA). To add an entry, insert an object into the relevant array — newest first (the arrays are rendered in order, not re-sorted). Every visible string has an `en` and a `ja` variant; an empty `period` is simply not rendered.",
   "education": [
     {
       "_todo": "TODO(Risa): Cambridge の在籍期間が未提供のため空欄にしています。確定したら period.en / period.ja を埋めてください。",
@@ -74,6 +74,21 @@
       "period": { "en": "Aug 2026", "ja": "2026年8月" }
     },
     {
+      "_todo": "TODO(Risa): 「Effective Fellow 2026 Summer」を主催団体名=Effective Fellow / 役職=Fellow として登録しています。正式な団体名・役職名・開始終了月が分かれば修正してください。",
+      "organisation": { "en": "Effective Fellow", "ja": "Effective Fellow" },
+      "role": { "en": "Fellow", "ja": "フェロー" },
+      "period": { "en": "Summer 2026", "ja": "2026年夏" }
+    },
+    {
+      "_todo": "TODO(Risa): AI Safety Camp の参加期間が未提供のため空欄です。分かり次第 period を埋めてください。",
+      "organisation": { "en": "AI Safety Camp", "ja": "AI Safety Camp" },
+      "role": {
+        "en": "Selected, AI Research Incubator",
+        "ja": "AIリサーチ・インキュベーター 採択"
+      },
+      "period": { "en": "", "ja": "" }
+    },
+    {
       "organisation": {
         "en": "Vienna Center for Disarmament and Non-Proliferation (VCDNP)",
         "ja": "ウィーン軍縮不拡散センター(VCDNP)"
@@ -140,17 +155,8 @@
         "en": "AFRECOS (Association of African Economy & Development Student Committee)",
         "ja": "AFRECOS(アフリカ経済開発学生委員会)"
       },
-      "role": { "en": "Co-Founder and President", "ja": "共同創設者・代表" },
+      "role": { "en": "President", "ja": "代表" },
       "period": { "en": "Jan 2024 – Dec 2024", "ja": "2024年1月 – 2024年12月" },
-      "location": { "en": "Tokyo", "ja": "東京" }
-    },
-    {
-      "organisation": { "en": "Ministry of Foreign Affairs of Japan", "ja": "外務省" },
-      "role": {
-        "en": "Youth Representative, TICAD Ministerial Meeting",
-        "ja": "TICAD閣僚会合ユース代表"
-      },
-      "period": { "en": "Jun 2024 – Aug 2024", "ja": "2024年6月 – 2024年8月" },
       "location": { "en": "Tokyo", "ja": "東京" }
     },
     {
@@ -163,14 +169,6 @@
       "location": { "en": "Tokyo", "ja": "東京" }
     },
     {
-      "organisation": { "en": "Ministry of Foreign Affairs of Japan", "ja": "外務省" },
-      "role": {
-        "en": "Speaker, Japan–Netherlands Peace Exchange Program",
-        "ja": "日蘭平和交流事業 スピーカー"
-      },
-      "period": { "en": "Oct 2023", "ja": "2023年10月" }
-    },
-    {
       "organisation": { "en": "Independent", "ja": "独立研究" },
       "role": {
         "en": "Field Researcher, Fukushima Post-Disaster Governance (six years of multi-site fieldwork)",
@@ -178,35 +176,6 @@
       },
       "period": { "en": "Jul 2019 – Aug 2024", "ja": "2019年7月 – 2024年8月" },
       "location": { "en": "Fukushima", "ja": "福島" }
-    }
-  ],
-  "awards": [
-    {
-      "title": {
-        "en": "Think Big Undergraduate International Scholarship",
-        "ja": "Think Big 学部国際奨学金"
-      }
-    },
-    {
-      "title": { "en": "CCIR Social Science Scholarship", "ja": "CCIR 社会科学奨学金" }
-    },
-    {
-      "title": {
-        "en": "Best Award, METI policy proposal on digital trade (2026)",
-        "ja": "経済産業省 デジタル貿易政策提案 最優秀賞(2026年)"
-      }
-    },
-    {
-      "title": {
-        "en": "2nd Prize, Tokyo Natural Disaster Policy Proposal, 2days GEIL",
-        "ja": "2days GEIL 東京自然災害政策提案 第2位"
-      }
-    },
-    {
-      "title": { "en": "Academist Prize, 6th Cohort", "ja": "アカデミスト賞 第6期" }
-    },
-    {
-      "title": { "en": "Selected, Monster Exhibition 2021", "ja": "Monster Exhibition 2021 選出" }
     }
   ]
 }

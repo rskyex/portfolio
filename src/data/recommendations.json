@@ -1,0 +1,17 @@
+{
+  "_readme": "Referee comments rendered by src/components/Recommendations.tsx on /about (EN) and on the /ja landing page (JA). To add one, append an object to `items` with `name`, `title`, and `quote`, each carrying an `en` and a `ja` string. Quotes are other people's words — transcribe them, do not paraphrase.",
+  "items": [
+    {
+      "_todo": "TODO(Risa): 日本語は頂いた推薦文のままです。英語は日本語からの再訳のため、Wydra教授の英語原文をお持ちでしたら quote.en を差し替えてください。また、お写真を掲載する場合は public/images/ に追加のうえ `image` を指定してください（掲載許諾の確認をお願いします）。",
+      "name": { "en": "Harald Wydra", "ja": "ハラルド・ヴィドラ" },
+      "title": {
+        "en": "Professor of Politics, St Catharine's College, University of Cambridge",
+        "ja": "ケンブリッジ大学 政治学教授 セント・キャサリンズ・カレッジ"
+      },
+      "quote": {
+        "en": "Risa is a brilliant young researcher, an intellectually flexible thinker, and a sophisticated writer. In twenty-two years of supervising undergraduate and graduate students at Cambridge, I have rarely encountered a student who approaches academic inquiry with such thoughtfulness, motivation, and sincerity. Most impressive of all is that she launched an exceptionally ambitious research project on her own initiative and from a critical perspective. The project addresses the future of lunar governance, and in particular the strategies and objectives of the American and Chinese lunar exploration programmes. She has already coded and analysed an enormous volume of published documents on those programmes. Her theoretical ambition covers a broad range of related concepts of legitimacy, and it is firmly underpinned by careful, comprehensive evidence-based investigation. Her very high aspirations are accompanied by quiet confidence and a modest manner. Her sociability is also extremely well developed, and she will be a wonderful presence. I recommend her with the greatest enthusiasm and without the slightest hesitation.",
+        "ja": "小柳さんは輝かしい若手研究者であり、知的に柔軟な思考の持ち主であり、洗練された書き手でもあります。ケンブリッジで22年間にわたり学部生や大学院生を指導してきた中で、学術的探求に対してこれほど思慮深く、モチベーションが高く、真摯に向き合う学生には滅多に出会ったことがありません。何よりも素晴らしいのは、彼女が自発的かつ批判的な視点から、極めて野心的な研究プロジェクトを立ち上げた点にあります。本プロジェクトは月面ガバナンスの将来、とりわけ米中の月探査計画における戦略と目標に着目したものです。彼女はすでに米中の月探査計画に関する公表文書を膨大な量にわたってコーディング・分析しています。その理論的野心は正当性に関する広範な関連概念をカバーしており、入念かつ包括的な証拠に基づく調査によってしっかりと裏付けられています。彼女の非常に高い志は、静かな自信と謙虚な態度を伴っています。社交性も極めて高く発展しており、素晴らしい存在となってくれるでしょう。私は極めて熱意を持って、何一つためらうことなく彼女を推薦いたします。"
+      }
+    }
+  ]
+}

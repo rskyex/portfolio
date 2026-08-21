@@ -61,8 +61,9 @@ export default function LandingPage({ dict, locale }: { dict: Dictionary; locale
     extra,
   } = dict;
 
-  /* Research and Conference swap order between locales (conferenceFirst). */
-  const researchNode = (
+  /* Research and Conference swap order between locales (conferenceFirst);
+     Research is null while the section is withheld (researchSection.hidden). */
+  const researchNode = researchSection.hidden ? null : (
     <section className="max-w-6xl mx-auto px-6 pb-16 relative">
       <div className="relative">
         <SectionHeader kanji="論" english={researchSection.heading} subtitle={researchSection.subtitle} />
@@ -416,17 +417,27 @@ export default function LandingPage({ dict, locale }: { dict: Dictionary; locale
       {/* ═══════════════════════════════════════════════════
           RESEARCH + CONFERENCE — order swaps per locale
           ═══════════════════════════════════════════════════ */}
+      {/* Each section brings its own divider so a withheld Research section
+          never leaves two dividers stacked together. */}
       {conferenceFirst ? (
         <>
           <SectionDivider />
           {conferenceNode}
-          <SectionDivider />
-          {researchNode}
+          {researchNode && (
+            <>
+              <SectionDivider />
+              {researchNode}
+            </>
+          )}
         </>
       ) : (
         <>
-          <SectionDivider />
-          {researchNode}
+          {researchNode && (
+            <>
+              <SectionDivider />
+              {researchNode}
+            </>
+          )}
           <SectionDivider />
           {conferenceNode}
         </>

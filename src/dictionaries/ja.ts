@@ -89,6 +89,9 @@ export const ja: Dictionary = {
     heading: '研究',
     subtitle: 'ガバナンス領域における主な研究',
     viewAll: 'すべて見る →',
+    // トップページからは一旦非表示（依頼による）。このフラグを外せば再表示される。
+    // /research ページ自体は公開されたまま。
+    hidden: true,
     items: [
       {
         slug: 'lunar',
@@ -205,9 +208,13 @@ export const ja: Dictionary = {
   conferenceFirst: true,
   // Profile sections ported from the About page — JA landing page only.
   extra: {
-    // CV（学歴・職歴・受賞）の中身は src/data/cv.json から描画される。
+    // CV（学歴・職歴）の中身は src/data/cv.json から描画される。
     cv: {
       heading: '経歴',
+    },
+    // 推薦者コメントの中身は src/data/recommendations.json から描画される。
+    recommendations: {
+      heading: '推薦者コメント',
     },
     certifications: {
       heading: '資格・認定', // REVIEW

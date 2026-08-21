@@ -91,6 +91,9 @@ export const en: Dictionary = {
     heading: 'Research',
     subtitle: 'Selected research across governance domains',
     viewAll: 'View all research →',
+    // Temporarily withheld from the landing page (per request). Remove this
+    // flag to show the section again; /research itself stays published.
+    hidden: true,
     items: [
       {
         slug: 'lunar',
