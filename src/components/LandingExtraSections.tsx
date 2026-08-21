@@ -3,6 +3,7 @@ import PhotoFrame from './PhotoFrame';
 import SectionHeader from './SectionHeader';
 import SectionDivider from './SectionDivider';
 import CvSection from './CvSection';
+import Recommendations from './Recommendations';
 import type { ExtraSections, SkillGroup } from '@/dictionaries/types';
 import type { Locale } from '@/lib/locale';
 import { getCv } from '@/lib/content';
@@ -21,7 +22,8 @@ export default function LandingExtraSections({
   extra: ExtraSections;
   locale: Locale;
 }) {
-  const { education, cv, certifications, skills, languages, arts, interests, connect } = extra;
+  const { education, cv, recommendations, certifications, skills, languages, arts, interests, connect } =
+    extra;
 
   /* A skill group renders either a bulleted list or comma-style paragraphs. */
   const skillBody = (group: SkillGroup) =>
@@ -84,6 +86,21 @@ export default function LandingExtraSections({
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+          </section>
+        </>
+      )}
+
+      {/* ─── RECOMMENDATIONS (optional) ─── */}
+      {recommendations && (
+        <>
+          <SectionDivider />
+          <section className="max-w-6xl mx-auto px-6 pb-16 relative">
+            <div className="relative">
+              <SectionHeader english={recommendations.heading} />
+              <div className="mt-8">
+                <Recommendations locale={locale} variant="landing" />
               </div>
             </div>
           </section>

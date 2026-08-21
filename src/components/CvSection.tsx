@@ -2,13 +2,13 @@ import SectionDivider from '@/components/SectionDivider';
 import type { Locale } from '@/lib/locale';
 import { getCv } from '@/lib/content';
 
-/* CV timeline (Education / Experience / Awards & Honours) driven by
-   src/data/cv.json. Rendered on /about (EN) and on the JA landing page;
-   entries in the data file are kept newest-first. */
+/* CV timeline (Education / Experience) driven by src/data/cv.json. Rendered
+   on /about (EN) and on the JA landing page; entries in the data file are
+   kept newest-first. */
 
-const LABELS: Record<Locale, { education: string; experience: string; awards: string }> = {
-  en: { education: 'Education', experience: 'Experience', awards: 'Awards & Honours' },
-  ja: { education: '学歴', experience: '職歴・所属', awards: '受賞・選抜' },
+const LABELS: Record<Locale, { education: string; experience: string }> = {
+  en: { education: 'Education', experience: 'Experience' },
+  ja: { education: '学歴', experience: '職歴・所属' },
 };
 
 interface CvSectionProps {
@@ -72,11 +72,15 @@ export default function CvSection({ locale, variant = 'about' }: CvSectionProps)
                   <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">
                     {exp.organisation[locale]}
                   </h4>
-                  <span className="font-noto-sans text-xs text-kuro-soft/50 shrink-0 font-medium">
-                    {exp.location
-                      ? `${exp.period[locale]} · ${exp.location[locale]}`
-                      : exp.period[locale]}
-                  </span>
+                  {/* Period may be blank while unconfirmed — fall back to the
+                      location alone rather than rendering a stray separator. */}
+                  {(exp.period[locale] || exp.location) && (
+                    <span className="font-noto-sans text-xs text-kuro-soft/50 shrink-0 font-medium">
+                      {[exp.period[locale], exp.location?.[locale]]
+                        .filter(Boolean)
+                        .join(' · ')}
+                    </span>
+                  )}
                 </div>
                 <p className="font-noto-sans text-sm text-kuro-soft/65">{exp.role[locale]}</p>
                 {exp.note && (
@@ -84,25 +88,6 @@ export default function CvSection({ locale, variant = 'about' }: CvSectionProps)
                     {exp.note[locale]}
                   </p>
                 )}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {separator}
-
-      {/* Awards & Honours */}
-      <div>
-        <SubsectionHeading>{labels.awards}</SubsectionHeading>
-        <div className="space-y-3">
-          {cv.awards.map((award, i) => (
-            <div key={i} className="card-washi card-washi-about p-5 relative overflow-hidden">
-              <div className="glow-bar absolute left-0 top-0 bottom-0" />
-              <div className="pl-4">
-                <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">
-                  {award.title[locale]}
-                </h4>
               </div>
             </div>
           ))}

@@ -1,6 +1,7 @@
 import type { Locale } from '@/lib/locale';
 import newsData from '@/data/news.json';
 import cvData from '@/data/cv.json';
+import recommendationsData from '@/data/recommendations.json';
 
 /* ─── Bilingual content loaded from src/data/*.json ───
    The JSON files are the single source of truth for News and CV entries;
@@ -40,19 +41,15 @@ export interface EducationEntry {
 export interface ExperienceEntry {
   organisation: Bilingual;
   role: Bilingual;
+  /** May be empty while a period is unconfirmed (see _todo notes in cv.json). */
   period: Bilingual;
   location?: Bilingual;
   note?: Bilingual;
 }
 
-export interface AwardEntry {
-  title: Bilingual;
-}
-
 export interface CvData {
   education: EducationEntry[];
   experience: ExperienceEntry[];
-  awards: AwardEntry[];
 }
 
 /** Category badge labels — kept in English in both locales, as is conventional
@@ -92,6 +89,20 @@ export function getNewsByYear(): { year: string; items: NewsItem[] }[] {
 
 export function getCv(): CvData {
   return cvData as CvData;
+}
+
+/** A referee comment, quoted verbatim in both languages. */
+export interface Recommendation {
+  name: Bilingual;
+  /** Role and affiliation of the referee. */
+  title: Bilingual;
+  quote: Bilingual;
+  /** Optional portrait under /public/images. */
+  image?: string;
+}
+
+export function getRecommendations(): Recommendation[] {
+  return recommendationsData.items as Recommendation[];
 }
 
 const MONTHS_EN = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];

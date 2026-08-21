@@ -4,6 +4,7 @@ import SectionHeader from '@/components/SectionHeader';
 import SectionDivider from '@/components/SectionDivider';
 import PhotoFrame from '@/components/PhotoFrame';
 import CvSection from '@/components/CvSection';
+import Recommendations from '@/components/Recommendations';
 
 
 
@@ -64,8 +65,13 @@ export default function AboutPage() {
 
         <SectionDivider />
 
-        {/* CV — Education / Experience / Awards & Honours (data: src/data/cv.json) */}
+        {/* CV — Education / Experience (data: src/data/cv.json) */}
         <CvSection locale="en" />
+
+        <SectionDivider />
+
+        {/* Referee comments (data: src/data/recommendations.json) */}
+        <Recommendations locale="en" />
 
         <SectionDivider />
 

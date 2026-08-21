@@ -124,6 +124,10 @@ export interface Dictionary {
     heading: string;
     subtitle: string;
     viewAll: string;
+    /** When true, the section is skipped on the landing page. The copy is kept
+     *  in the dictionary so it can be published again by removing the flag;
+     *  the /research pages are unaffected either way. */
+    hidden?: boolean;
     items: ResearchText[];
   };
   conferenceSection: {
@@ -195,8 +199,10 @@ export interface InterestGroup {
 export interface ExtraSections {
   /** Education-only cards (EN landing). Omitted where `cv` is present. */
   education?: { heading: string };
-  /** Full CV — Education / Experience / Awards & Honours (JA landing). */
+  /** Full CV — Education / Experience (JA landing). */
   cv?: { heading: string };
+  /** Referee comments; entries live in src/data/recommendations.json. */
+  recommendations?: { heading: string };
   /** Optional: omitted where the locale has no Certifications section. */
   certifications?: { heading: string; items: CertificationItem[] };
   /** Optional: the landing page may omit these when they live on the About page. */
