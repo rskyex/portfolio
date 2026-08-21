@@ -21,7 +21,7 @@ export const en: Dictionary = {
     japanese: 'View this page in Japanese',
   },
   hero: {
-    eyebrow: 'Space · Nuclear · Cyber · Emerging Technology Governance',
+    eyebrow: 'Space · Nuclear · Emerging Technology Governance',
     // Emphasis is kept to two anchors (Cambridge + the governance domains) so the
     // hero reads as prose rather than a wall of bold.
     description: [
@@ -31,7 +31,7 @@ export const en: Dictionary = {
       { text: 'space, nuclear, and emerging technology governance', bold: true },
       {
         text:
-          '. Her work focuses on legitimation, dual-use systems, and authority architecture. She is Team Leader of SGAC’s 2026 Space Policy Project Team (Japan), sits on the JAXA International Space Education Board (2026), and is a mentee in the VCDNP 2026–2027 Young Women in Non-Proliferation and Disarmament Programme. Her extended abstract on attribution and AI governance was accepted to Data for Policy 2026 (Barcelona). She also designs public-facing research platforms on AI governance, strategic infrastructure risk, and interpretive systems.',
+          '. Her work focuses on legitimation, dual-use systems, and authority architecture. She is Team Leader of SGAC’s 2026 Space Policy Project Team (Japan), sits on the JAXA International Space Education Board (2026), and is a mentee in the VCDNP 2026–2027 Young Women in Non-Proliferation and Disarmament Programme. Her extended abstract on attribution and AI governance was accepted to Data for Policy 2026 (Barcelona). Both of her entries to the Global Trust Challenge reached the prototyping phase — two of the six East Asian teams among eighty selected worldwide. She is an Effective Fellow at Effective Thesis (Summer 2026), was selected for AI Safety Camp’s AI Research Incubator, and is an IBM Qiskit Advocate. She also designs public-facing research platforms on AI governance, strategic infrastructure risk, and interpretive systems.',
       },
     ],
     ctaPlatforms: 'View Platforms',
@@ -214,6 +214,9 @@ export const en: Dictionary = {
     pageSubtitle: 'Publications, talks, awards, and appointments',
     pageDescription:
       'News and updates from Risa Koyanagi — publications, talks, awards, appointments, and other activities.',
+  },
+  recommendationsSection: {
+    heading: 'Recommendation',
   },
   fieldworkSection: {
     heading: 'Fieldwork & Public Engagement',

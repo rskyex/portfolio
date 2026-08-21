@@ -153,6 +153,9 @@ export interface Dictionary {
     /** /news page meta description. */
     pageDescription: string;
   };
+  /** Heading for the referee-comment section shown below News on the landing
+   *  page; the comments themselves live in src/data/recommendations.json. */
+  recommendationsSection: { heading: string };
   /** Null in a locale that omits this section entirely (e.g. the JA page). */
   fieldworkSection: FieldworkSection | null;
   /** When true, render the Conference section before Research (JA layout). */
@@ -201,8 +204,6 @@ export interface ExtraSections {
   education?: { heading: string };
   /** Full CV — Education / Experience (JA landing). */
   cv?: { heading: string };
-  /** Referee comments; entries live in src/data/recommendations.json. */
-  recommendations?: { heading: string };
   /** Optional: omitted where the locale has no Certifications section. */
   certifications?: { heading: string; items: CertificationItem[] };
   /** Optional: the landing page may omit these when they live on the About page. */
