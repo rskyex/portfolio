@@ -1,5 +1,5 @@
 {
-  "_readme": "Referee comments rendered by src/components/Recommendations.tsx on /about (EN) and on the /ja landing page (JA). To add one, append an object to `items` with `name`, `title`, and `quote`, each carrying an `en` and a `ja` string. Quotes are other people's words — transcribe them, do not paraphrase.",
+  "_readme": "Referee comments rendered as washi cards by src/components/Recommendations.tsx on /about (EN), and as a pull quote above the News section on both landing pages by src/components/RecommendationQuote.tsx. To add one, append an object to `items` with `name`, `title`, and `quote`, each carrying an `en` and a `ja` string. Quotes are other people's words — transcribe them, do not paraphrase.",
   "items": [
     {
       "_todo": "TODO(Risa): 日本語は頂いた推薦文のままです。英語は日本語からの再訳のため、Wydra教授の英語原文をお持ちでしたら quote.en を差し替えてください。また、お写真を掲載する場合は public/images/ に追加のうえ `image` を指定してください（掲載許諾の確認をお願いします）。",

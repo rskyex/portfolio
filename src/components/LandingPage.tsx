@@ -9,7 +9,7 @@ import ConferenceCard from '@/components/ConferenceCard';
 import Tsubaki3D from '@/components/Tsubaki3D';
 import LandingExtraSections from '@/components/LandingExtraSections';
 import NewsSection from '@/components/NewsSection';
-import RecommendationsSection from '@/components/RecommendationsSection';
+import RecommendationQuote from '@/components/RecommendationQuote';
 import PersonJsonLd from '@/components/PersonJsonLd';
 import type { Dictionary } from '@/dictionaries/types';
 import type { Locale } from '@/lib/locale';
@@ -308,16 +308,14 @@ export default function LandingPage({ dict, locale }: { dict: Dictionary; locale
       <SectionDivider />
 
       {/* ═══════════════════════════════════════════════════
+          REFEREE COMMENT — pull quote leading into News
+          ═══════════════════════════════════════════════════ */}
+      <RecommendationQuote dict={dict} locale={locale} />
+
+      {/* ═══════════════════════════════════════════════════
           NEWS — latest three items (all items on /news)
           ═══════════════════════════════════════════════════ */}
       <NewsSection dict={dict} locale={locale} />
-
-      <SectionDivider />
-
-      {/* ═══════════════════════════════════════════════════
-          REFEREE COMMENTS
-          ═══════════════════════════════════════════════════ */}
-      <RecommendationsSection dict={dict} locale={locale} />
 
       <SectionDivider />
 

@@ -2,33 +2,24 @@ import Image from 'next/image';
 import type { Locale } from '@/lib/locale';
 import { getRecommendations } from '@/lib/content';
 
-/* Referee comments from src/data/recommendations.json, shown on /about (EN)
-   and on the JA landing page. Card styling follows the About page; the quote
-   itself is set in Cormorant italic so it reads as someone else's voice. */
+/* Referee comments from src/data/recommendations.json, shown as washi cards on
+   /about (EN). The landing pages set the same comments as a pull quote above
+   News instead — see src/components/RecommendationQuote.tsx. */
 
 export const RECOMMENDATIONS_HEADING: Record<Locale, string> = {
   en: 'Recommendation',
   ja: '推薦者コメント',
 };
 
-interface RecommendationsProps {
-  locale: Locale;
-  /** 'about' prints the small gold subsection heading; 'landing' omits it
-   *  because the landing page already shows a SectionHeader above. */
-  variant?: 'about' | 'landing';
-}
-
-export default function Recommendations({ locale, variant = 'about' }: RecommendationsProps) {
+export default function Recommendations({ locale }: { locale: Locale }) {
   const items = getRecommendations();
   if (items.length === 0) return null;
 
   return (
     <div>
-      {variant === 'about' && (
-        <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">
-          {RECOMMENDATIONS_HEADING[locale]}
-        </h3>
-      )}
+      <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">
+        {RECOMMENDATIONS_HEADING[locale]}
+      </h3>
       <div className="space-y-4">
         {items.map((item, i) => (
           <figure key={i} className="card-washi card-washi-about p-6 md:p-8 relative overflow-hidden">
