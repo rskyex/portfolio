@@ -19,5 +19,5 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <LandingPage dict={en} />;
+  return <LandingPage dict={en} locale="en" />;
 }

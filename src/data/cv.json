@@ -1,0 +1,212 @@
+{
+  "_readme": "CV data rendered by src/components/CvSection.tsx on /about (EN) and on the /ja landing page (JA). To add an entry, insert an object into the relevant array — newest first (the arrays are rendered in order, not re-sorted). Every visible string has an `en` and a `ja` variant.",
+  "education": [
+    {
+      "_todo": "TODO(Risa): Cambridge の在籍期間が未提供のため空欄にしています。確定したら period.en / period.ja を埋めてください。",
+      "institution": { "en": "University of Cambridge", "ja": "ケンブリッジ大学" },
+      "degree": {
+        "en": "BA, Human, Social and Political Sciences (HSPS)",
+        "ja": "学士課程(Human, Social and Political Sciences / HSPS)"
+      },
+      "period": { "en": "", "ja": "" }
+    },
+    {
+      "institution": {
+        "en": "The London School of Economics and Political Science (LSE)",
+        "ja": "ロンドン・スクール・オブ・エコノミクス(LSE)"
+      },
+      "degree": {
+        "en": "BSc, Politics and International Relations",
+        "ja": "理学士課程(政治学・国際関係論)"
+      },
+      "period": { "en": "Sep 2025 – Jun 2026", "ja": "2025年9月 – 2026年6月" }
+    },
+    {
+      "institution": { "en": "SOAS University of London", "ja": "ロンドン大学SOAS" },
+      "degree": { "en": "Foundation Degree, Social Sciences", "ja": "ファウンデーション課程(社会科学)" },
+      "period": { "en": "Sep 2024 – Jun 2025", "ja": "2024年9月 – 2025年6月" }
+    },
+    {
+      "_todo": "TODO(Risa): 既存サイトでは Oxford の期間が Nov 2025 – Jan 2026 と表記されていましたが、指定データ(Dec 2022 – Jan 2023)の方を登録しています。どちらが正しいかご確認ください。",
+      "institution": {
+        "en": "Saïd Business School, University of Oxford",
+        "ja": "オックスフォード大学サイード・ビジネス・スクール"
+      },
+      "degree": {
+        "en": "Certificate, AI and Digital Transformation in Government",
+        "ja": "修了証(政府におけるAIとデジタルトランスフォーメーション)"
+      },
+      "period": { "en": "Dec 2022 – Jan 2023", "ja": "2022年12月 – 2023年1月" }
+    }
+  ],
+  "experience": [
+    {
+      "organisation": { "en": "Morgan Stanley", "ja": "モルガン・スタンレー" },
+      "role": { "en": "Summer Intern (FID & Finance Sector)", "ja": "サマーインターン(FID・Finance部門)" },
+      "period": { "en": "Aug 2026 – Present", "ja": "2026年8月 – 現在" },
+      "location": { "en": "Tokyo", "ja": "東京" }
+    },
+    {
+      "organisation": {
+        "en": "Mitsubishi UFJ Research & Consulting",
+        "ja": "三菱UFJリサーチ&コンサルティング"
+      },
+      "role": { "en": "Research Intern", "ja": "リサーチインターン" },
+      "period": { "en": "Aug 2026 – Present", "ja": "2026年8月 – 現在" },
+      "location": { "en": "Tokyo", "ja": "東京" }
+    },
+    {
+      "organisation": {
+        "en": "Ministry of Economy, Trade and Industry (METI)",
+        "ja": "経済産業省"
+      },
+      "role": { "en": "Policy Analysis Intern", "ja": "政策分析インターン" },
+      "period": { "en": "Aug 2026", "ja": "2026年8月" },
+      "location": { "en": "Tokyo", "ja": "東京" },
+      "note": {
+        "en": "Best award for the microeconomics policy proposal on digital trade; special award for the macroeconomics policy proposal",
+        "ja": "デジタル貿易に関するミクロ経済政策提案で最優秀賞、マクロ経済政策提案で特別賞を受賞"
+      }
+    },
+    {
+      "organisation": { "en": "IBM", "ja": "IBM" },
+      "role": { "en": "Qiskit Advocate", "ja": "Qiskitアドボケイト" },
+      "period": { "en": "Aug 2026", "ja": "2026年8月" }
+    },
+    {
+      "organisation": {
+        "en": "Vienna Center for Disarmament and Non-Proliferation (VCDNP)",
+        "ja": "ウィーン軍縮不拡散センター(VCDNP)"
+      },
+      "role": {
+        "en": "Young Women in Non-Proliferation and Disarmament Mentee",
+        "ja": "Young Women in Non-Proliferation and Disarmament メンティー"
+      },
+      "period": { "en": "Jul 2026 – Present", "ja": "2026年7月 – 現在" },
+      "location": { "en": "Brussels/Vienna", "ja": "ブリュッセル/ウィーン" }
+    },
+    {
+      "organisation": { "en": "JAXA", "ja": "宇宙航空研究開発機構(JAXA)" },
+      "role": {
+        "en": "International Space Education Board (ISEB) Delegate",
+        "ja": "国際宇宙教育会議(ISEB)派遣代表"
+      },
+      "period": { "en": "May 2026 – Present", "ja": "2026年5月 – 現在" }
+    },
+    {
+      "organisation": {
+        "en": "Space Generation Advisory Council (SGAC)",
+        "ja": "Space Generation Advisory Council (SGAC)"
+      },
+      "role": {
+        "en": "Space Policy Programme Chief, SG[Japan]",
+        "ja": "SG[Japan] Space Policy Programme Chief"
+      },
+      "period": { "en": "Apr 2026 – Aug 2026", "ja": "2026年4月 – 2026年8月" },
+      "location": { "en": "Tokyo", "ja": "東京" }
+    },
+    {
+      "organisation": { "en": "TIES", "ja": "TIES" },
+      "role": {
+        "en": "Young Research Fellow, Geopolitics of Narrative Building",
+        "ja": "ヤング・リサーチ・フェロー(戦略的競争におけるナラティブ形成の地政学)"
+      },
+      "period": { "en": "Apr 2026 – May 2026", "ja": "2026年4月 – 2026年5月" },
+      "location": { "en": "New Delhi", "ja": "ニューデリー" }
+    },
+    {
+      "organisation": {
+        "en": "Cambridge Centre for International Research (CCIR)",
+        "ja": "Cambridge Centre for International Research (CCIR)"
+      },
+      "role": {
+        "en": "Researcher, Legitimation in Lunar Governance (supervised by Prof. Harald Wydra)",
+        "ja": "リサーチャー(月ガバナンスにおける正統化、Harald Wydra教授指導)"
+      },
+      "period": { "en": "Sep 2025 – Jun 2026", "ja": "2025年9月 – 2026年6月" },
+      "location": { "en": "Cambridge", "ja": "ケンブリッジ" }
+    },
+    {
+      "organisation": {
+        "en": "UN Women, Asia and the Pacific Regional Office",
+        "ja": "UN Women アジア太平洋地域事務所"
+      },
+      "role": { "en": "AI Programme", "ja": "AIプログラム" },
+      "period": { "en": "May 2025 – Aug 2025", "ja": "2025年5月 – 2025年8月" },
+      "location": { "en": "Bangkok", "ja": "バンコク" }
+    },
+    {
+      "organisation": {
+        "en": "AFRECOS (Association of African Economy & Development Student Committee)",
+        "ja": "AFRECOS(アフリカ経済開発学生委員会)"
+      },
+      "role": { "en": "Co-Founder and President", "ja": "共同創設者・代表" },
+      "period": { "en": "Jan 2024 – Dec 2024", "ja": "2024年1月 – 2024年12月" },
+      "location": { "en": "Tokyo", "ja": "東京" }
+    },
+    {
+      "organisation": { "en": "Ministry of Foreign Affairs of Japan", "ja": "外務省" },
+      "role": {
+        "en": "Youth Representative, TICAD Ministerial Meeting",
+        "ja": "TICAD閣僚会合ユース代表"
+      },
+      "period": { "en": "Jun 2024 – Aug 2024", "ja": "2024年6月 – 2024年8月" },
+      "location": { "en": "Tokyo", "ja": "東京" }
+    },
+    {
+      "organisation": { "en": "Sophia University", "ja": "上智大学" },
+      "role": {
+        "en": "Chair, Peacebuilding Research Lab (under Prof. Daisaku Higashi); now alumni head",
+        "ja": "平和構築研究会 代表(東大作教授指導、現在はアラムナイ代表)"
+      },
+      "period": { "en": "Apr 2023 – Aug 2024", "ja": "2023年4月 – 2024年8月" },
+      "location": { "en": "Tokyo", "ja": "東京" }
+    },
+    {
+      "organisation": { "en": "Ministry of Foreign Affairs of Japan", "ja": "外務省" },
+      "role": {
+        "en": "Speaker, Japan–Netherlands Peace Exchange Program",
+        "ja": "日蘭平和交流事業 スピーカー"
+      },
+      "period": { "en": "Oct 2023", "ja": "2023年10月" }
+    },
+    {
+      "organisation": { "en": "Independent", "ja": "独立研究" },
+      "role": {
+        "en": "Field Researcher, Fukushima Post-Disaster Governance (six years of multi-site fieldwork)",
+        "ja": "福島の災害後ガバナンスに関するフィールドリサーチャー(6年間・複数地点でのフィールドワーク)"
+      },
+      "period": { "en": "Jul 2019 – Aug 2024", "ja": "2019年7月 – 2024年8月" },
+      "location": { "en": "Fukushima", "ja": "福島" }
+    }
+  ],
+  "awards": [
+    {
+      "title": {
+        "en": "Think Big Undergraduate International Scholarship",
+        "ja": "Think Big 学部国際奨学金"
+      }
+    },
+    {
+      "title": { "en": "CCIR Social Science Scholarship", "ja": "CCIR 社会科学奨学金" }
+    },
+    {
+      "title": {
+        "en": "Best Award, METI policy proposal on digital trade (2026)",
+        "ja": "経済産業省 デジタル貿易政策提案 最優秀賞(2026年)"
+      }
+    },
+    {
+      "title": {
+        "en": "2nd Prize, Tokyo Natural Disaster Policy Proposal, 2days GEIL",
+        "ja": "2days GEIL 東京自然災害政策提案 第2位"
+      }
+    },
+    {
+      "title": { "en": "Academist Prize, 6th Cohort", "ja": "アカデミスト賞 第6期" }
+    },
+    {
+      "title": { "en": "Selected, Monster Exhibition 2021", "ja": "Monster Exhibition 2021 選出" }
+    }
+  ]
+}

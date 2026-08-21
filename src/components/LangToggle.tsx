@@ -1,11 +1,13 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useLocale, type Locale } from '@/lib/locale';
+import { pathnameForLocale } from '@/lib/paths';
 
-const SEGMENTS: { locale: Locale; label: string; href: string }[] = [
-  { locale: 'en', label: 'EN', href: '/' },
-  { locale: 'ja', label: '日本語', href: '/ja' },
+const SEGMENTS: { locale: Locale; label: string }[] = [
+  { locale: 'en', label: 'EN' },
+  { locale: 'ja', label: '日本語' },
 ];
 
 interface LangToggleProps {
@@ -19,8 +21,10 @@ interface LangToggleProps {
 /**
  * Segmented EN / 日本語 language switcher. Both languages are always shown so
  * the control is self-explanatory; the active locale is highlighted and the
- * other is a link. The URL is the source of truth — we only PERSIST the choice
- * in localStorage and never auto-redirect based on it.
+ * other is a link. Pages that exist in both languages (e.g. /news) toggle in
+ * place; everything else falls back to the locale's home page. The URL is the
+ * source of truth — we only PERSIST the choice in localStorage and never
+ * auto-redirect based on it.
  */
 export default function LangToggle({
   groupLabel,
@@ -30,6 +34,7 @@ export default function LangToggle({
   onNavigate,
 }: LangToggleProps) {
   const locale = useLocale();
+  const pathname = usePathname() ?? '/';
 
   const persist = (target: Locale) => {
     try {
@@ -87,7 +92,7 @@ export default function LangToggle({
         return (
           <Link
             key={seg.locale}
-            href={seg.href}
+            href={pathnameForLocale(pathname, seg.locale)}
             hrefLang={seg.locale}
             scroll={false}
             onClick={() => persist(seg.locale)}

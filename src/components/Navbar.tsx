@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Tsubaki3D from './Tsubaki3D';
 import LangToggle from './LangToggle';
 import { useLocale, localeHomePath } from '@/lib/locale';
+import { newsPath } from '@/lib/paths';
 import { getDictionary } from '@/dictionaries';
 
 export default function Navbar() {
@@ -15,6 +16,7 @@ export default function Navbar() {
 
   const navLinks = [
     { href: home, label: dict.nav.home },
+    { href: newsPath(locale), label: dict.nav.news },
     { href: '/platforms', label: dict.nav.platforms },
     { href: '/research', label: dict.nav.research },
     { href: '/fieldwork', label: dict.nav.fieldwork },

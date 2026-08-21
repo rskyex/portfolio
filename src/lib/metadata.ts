@@ -25,6 +25,9 @@ export interface PageMetaInput {
   image?: string;
   /** OG locale; defaults to English. Pass 'ja_JP' for Japanese pages. */
   ogLocale?: string;
+  /** hreflang alternates for pages that exist in both languages,
+   *  e.g. { en: '/news', ja: '/ja/news', 'x-default': '/news' }. */
+  languages?: Record<string, string>;
 }
 
 export function pageMetadata({
@@ -33,6 +36,7 @@ export function pageMetadata({
   path,
   image = DEFAULT_OG,
   ogLocale = 'en_US',
+  languages,
 }: PageMetaInput): Metadata {
   const fullTitle = `${title} — ${SITE_NAME}`;
   return {
@@ -40,6 +44,7 @@ export function pageMetadata({
     description,
     alternates: {
       canonical: path,
+      ...(languages ? { languages } : {}),
     },
     openGraph: {
       title: fullTitle,

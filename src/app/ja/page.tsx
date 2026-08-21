@@ -27,5 +27,5 @@ export const metadata: Metadata = {
 };
 
 export default function HomeJa() {
-  return <LandingPage dict={ja} />;
+  return <LandingPage dict={ja} locale="ja" />;
 }

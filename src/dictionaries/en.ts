@@ -9,6 +9,7 @@ export const en: Dictionary = {
   },
   nav: {
     home: 'Home',
+    news: 'News',
     platforms: 'Platforms',
     research: 'Research',
     fieldwork: 'Fieldwork & Engagement',
@@ -203,6 +204,14 @@ export const en: Dictionary = {
       },
     },
   },
+  newsSection: {
+    heading: 'News',
+    viewAll: 'View all →',
+    pageTitle: 'News',
+    pageSubtitle: 'Publications, talks, awards, and appointments',
+    pageDescription:
+      'News and updates from Risa Koyanagi — publications, talks, awards, appointments, and other activities.',
+  },
   fieldworkSection: {
     heading: 'Fieldwork & Public Engagement',
     subtitle:
@@ -266,32 +275,9 @@ export const en: Dictionary = {
   // now live on the dedicated /about page, keeping the landing flow tight:
   // Hero → Platforms → Conference → Research → Fieldwork → Education → Connect.
   extra: {
+    // Items come from src/data/cv.json (single source of truth with /about).
     education: {
       heading: 'Education',
-      items: [
-        {
-          institution: 'Hughes Hall, University of Cambridge',
-          period: 'October 2026',
-          degree: 'BA Human, Social, and Political Sciences (HSPS)',
-        },
-        {
-          institution: 'London School of Economics (University of London)',
-          period: '2025–2026',
-          degree: 'BSc Politics and International Relations',
-        },
-        {
-          institution: 'Saïd Business School, University of Oxford',
-          period: 'Nov 2025 – Jan 2026',
-          degree: 'AI and Digital Transformation in Government',
-          detail: 'Certificate',
-        },
-        {
-          institution: 'SOAS University of London',
-          period: '2024–2025',
-          degree: 'BSc Social Sciences (Foundation Year)',
-          detail: 'First Class',
-        },
-      ],
     },
     connect: {
       heading: 'Connect',
