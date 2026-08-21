@@ -10,7 +10,7 @@ export const ja: Dictionary = {
   meta: {
     title: '小柳璃紗 — 研究者 / プラットフォーム制作', // REVIEW: tagline wording
     description:
-      '小柳璃紗のポートフォリオ。宇宙・核・サイバー・先端技術ガバナンスを横断する研究と、公開リサーチ・プラットフォームの制作。',
+      '小柳璃紗のポートフォリオ。宇宙・原子力・先端技術ガバナンスを横断する研究と、公開リサーチ・プラットフォームの制作。',
     ogLocale: 'ja_JP',
   },
   nav: {
@@ -27,13 +27,13 @@ export const ja: Dictionary = {
     japanese: '日本語で表示する',
   },
   hero: {
-    eyebrow: '宇宙・核・サイバー・先端技術ガバナンス',
+    eyebrow: '宇宙・原子力・先端技術ガバナンス',
     // title intentionally omitted on the JA page (per request)
     // REVIEW: HSPS / 「ケンブリッジ国際研究センター」の正式表記
     description: [
       {
         text:
-          '小柳璃紗。ケンブリッジ大学人文・社会・政治学（HSPS）専攻、ケンブリッジ国際研究センター Cambridge Future Scholar。正統化、デュアルユース・システム、権威構造を軸に、宇宙・核・先端技術ガバナンスを横断的に研究。第77回International Astronautical Congress（国際宇宙会議）に単著論文3本採択。JAXA International Space Education Board 2026選抜。VCDNP「Young Women in Non-Proliferation and Disarmament」メンターシップ・プログラム2026–2027に、世界20名のメンティーの一人として選出。Data for Policy 2026（バルセロナ）に単著の拡張要旨採択。Next.js, React, TypeScript, D3.js, Leafletなどを用い、戦略インフラの公開データを分析・可視化する公開リサーチ・プラットフォームも開発・構築。',
+          '小柳璃紗。ケンブリッジ大学人文・社会・政治学（HSPS）専攻、ケンブリッジ国際研究センター Cambridge Future Scholar。正統化、デュアルユース・システム、権威構造を軸に、宇宙・原子力・先端技術ガバナンスを横断的に研究。第77回International Astronautical Congress（国際宇宙会議）に単著論文3本採択。JAXA International Space Education Board 2026選抜。VCDNP「Young Women in Non-Proliferation and Disarmament」メンターシップ・プログラム2026–2027に、世界20名のメンティーの一人として選出。Data for Policy 2026（バルセロナ）に単著の拡張要旨採択。Global Trust Challengeでは、応募した2件がいずれもプロトタイピング段階に進出（世界80チーム、うち東アジア6チームのうち2件が本人のプロジェクト）。Effective Thesis「Effective Fellow」2026年夏期。AI Safety CampのAI Research Incubatorに採択。IBM Qiskit Advocate。Next.js, React, TypeScript, D3.js, Leafletなどを用い、戦略インフラの公開データを分析・可視化する公開リサーチ・プラットフォームも開発・構築。',
       },
     ],
     ctaPlatforms: 'プラットフォーム',
@@ -76,7 +76,7 @@ export const ja: Dictionary = {
       {
         slug: 'nuclear',
         title: 'Global Nuclear Infrastructure Atlas',
-        description: '民生用核インフラ・推定保有数・政策と健康影響を地図化。',
+        description: '民生用原子力インフラ・推定保有数・政策と健康影響を地図化。',
       },
       {
         slug: 'lunar-mandate-atlas',
@@ -201,6 +201,9 @@ export const ja: Dictionary = {
     pageDescription:
       '小柳璃紗のニュース — 出版、講演、受賞、活動などの最新情報。',
   },
+  recommendationsSection: {
+    heading: '推薦者コメント',
+  },
   // Fieldwork & Public Engagement section (フィールドワークと社会的活動 /
   // 登壇・政策活動) is intentionally omitted from the Japanese page.
   fieldworkSection: null,
@@ -211,10 +214,6 @@ export const ja: Dictionary = {
     // CV（学歴・職歴）の中身は src/data/cv.json から描画される。
     cv: {
       heading: '経歴',
-    },
-    // 推薦者コメントの中身は src/data/recommendations.json から描画される。
-    recommendations: {
-      heading: '推薦者コメント',
     },
     certifications: {
       heading: '資格・認定', // REVIEW
@@ -229,7 +228,7 @@ export const ja: Dictionary = {
         {
           title: '研究',
           paragraphs: [
-            '正統化、デュアルユース・システム、権威構造、戦略リスク、宇宙ガバナンス、核ガバナンス、先端技術ガバナンス、インフラの政治。',
+            '正統化、デュアルユース・システム、権威構造、戦略リスク、宇宙ガバナンス、原子力ガバナンス、先端技術ガバナンス、インフラの政治。',
             '言説・ナラティブ分析、定性的コーディング、比較政治研究、解釈的手法、政策フレーミング、象徴・神話分析、リサーチからインターフェースへの翻訳。',
           ],
         },
