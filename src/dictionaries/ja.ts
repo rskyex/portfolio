@@ -33,7 +33,7 @@ export const ja: Dictionary = {
     description: [
       {
         text:
-          '小柳璃紗。ケンブリッジ大学人文・社会・政治学（HSPS）専攻、ケンブリッジ国際研究センター Cambridge Future Scholar。正統化、デュアルユース・システム、権威構造を軸に、宇宙・原子力・先端技術ガバナンスを横断的に研究。第77回International Astronautical Congress（国際宇宙会議）に単著論文3本採択。JAXA International Space Education Board 2026選抜。VCDNP「Young Women in Non-Proliferation and Disarmament」メンターシップ・プログラム2026–2027に、世界20名のメンティーの一人として選出。Data for Policy 2026（バルセロナ）に単著の拡張要旨採択。Global Trust Challengeでは、応募した2件がいずれもプロトタイピング段階に進出（世界80チーム、うち東アジア6チームのうち2件が本人のプロジェクト）。Effective Thesis「Effective Fellow」2026年夏期。AI Safety CampのAI Research Incubatorに採択。IBM Qiskit Advocate。Next.js, React, TypeScript, D3.js, Leafletなどを用い、戦略インフラの公開データを分析・可視化する公開リサーチ・プラットフォームも開発・構築。',
+          '小柳璃紗。ケンブリッジ大学人文・社会・政治学（HSPS）専攻、ケンブリッジ国際研究センター Cambridge Future Scholar。正統化、デュアルユース・システム、権威構造を軸に、宇宙・原子力・先端技術ガバナンスを横断的に研究。第77回International Astronautical Congress（国際宇宙会議）に単著論文3本採択。JAXA International Space Education Board 2026選抜。ウィーン軍縮不拡散センター「Young Women in Non-Proliferation and Disarmament」メンターシップ・プログラム2026–2027に、世界20名のメンティーの一人として選出。Data for Policy 2026（バルセロナ）に単著の拡張要旨採択。Global Trust Challengeでは、応募した2件がいずれもプロトタイピング段階に進出（世界80チーム、うち東アジア6チームのうち2件が本人のプロジェクト）。Effective Thesis「Effective Fellow」2026年夏期。AI Safety CampのAI Research Incubatorに採択。IBM Qiskit Advocate。Next.js, React, TypeScript, D3.js, Leafletなどを用い、戦略インフラの公開データを分析・可視化する公開リサーチ・プラットフォームも開発・構築。',
       },
     ],
     ctaPlatforms: 'プラットフォーム',
