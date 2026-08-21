@@ -15,6 +15,7 @@ export const ja: Dictionary = {
   },
   nav: {
     home: 'ホーム',
+    news: 'ニュース',
     platforms: 'プラットフォーム',
     research: '研究',
     fieldwork: 'フィールドワーク', // REVIEW: shortened from "Fieldwork & Engagement"
@@ -189,6 +190,14 @@ export const ja: Dictionary = {
       },
     },
   },
+  newsSection: {
+    heading: 'ニュース',
+    viewAll: 'すべて見る →',
+    pageTitle: 'ニュース',
+    pageSubtitle: '出版・講演・受賞・活動のお知らせ',
+    pageDescription:
+      '小柳璃紗のニュース — 出版、講演、受賞、活動などの最新情報。',
+  },
   // Fieldwork & Public Engagement section (フィールドワークと社会的活動 /
   // 登壇・政策活動) is intentionally omitted from the Japanese page.
   fieldworkSection: null,
@@ -196,32 +205,9 @@ export const ja: Dictionary = {
   conferenceFirst: true,
   // Profile sections ported from the About page — JA landing page only.
   extra: {
-    education: {
-      heading: '教育',
-      items: [
-        {
-          institution: 'ケンブリッジ大学 ヒューズ・ホール', // REVIEW
-          period: '2026年10月',
-          degree: 'BA 人文・社会・政治学（HSPS）', // REVIEW
-        },
-        {
-          institution: 'ロンドン大学（ロンドン・スクール・オブ・エコノミクス指導）', // REVIEW
-          period: '2025–2026',
-          degree: 'BSc 政治学・国際関係論',
-        },
-        {
-          institution: 'オックスフォード大学 サイード・ビジネススクール',
-          period: '2025年11月–2026年1月',
-          degree: '行政におけるAIとデジタル変革', // REVIEW
-          detail: '修了証（Certificate）',
-        },
-        {
-          institution: 'ロンドン大学SOAS',
-          period: '2024–2025',
-          degree: 'BSc 社会科学（ファウンデーション・イヤー）',
-          detail: 'First Class（最優等）', // REVIEW
-        },
-      ],
+    // CV（学歴・職歴・受賞）の中身は src/data/cv.json から描画される。
+    cv: {
+      heading: '経歴',
     },
     certifications: {
       heading: '資格・認定', // REVIEW

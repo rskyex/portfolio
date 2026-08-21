@@ -3,6 +3,7 @@ import { pageMetadata } from '@/lib/metadata';
 import SectionHeader from '@/components/SectionHeader';
 import SectionDivider from '@/components/SectionDivider';
 import PhotoFrame from '@/components/PhotoFrame';
+import CvSection from '@/components/CvSection';
 
 
 
@@ -63,30 +64,8 @@ export default function AboutPage() {
 
         <SectionDivider />
 
-        {/* Education */}
-        <div>
-          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Education</h3>
-          <div className="space-y-4">
-            {[
-              { institution: 'Hughes Hall, University of Cambridge', degree: 'BA Human, Social, and Political Sciences', period: 'October 2026' },
-              { institution: 'London School of Economics (University of London)', degree: 'BSc Politics and International Relations', period: '2025–2026' },
-              { institution: 'Saïd Business School, University of Oxford', degree: 'AI and Digital Transformation in Government', period: 'Nov 2025 – Jan 2026', detail: 'Certificate' },
-              { institution: 'SOAS University of London', degree: 'BSc Social Sciences (Foundation Year)', period: '2024–2025', detail: 'First Class' },
-            ].map((edu, i) => (
-              <div key={i} className="card-washi card-washi-about p-6 relative overflow-hidden">
-                <div className="glow-bar absolute left-0 top-0 bottom-0" />
-                <div className="pl-4">
-                  <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 mb-1">
-                    <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">{edu.institution}</h4>
-                    <span className="font-noto-sans text-xs text-kuro-soft/50 shrink-0 font-medium">{edu.period}</span>
-                  </div>
-                  {edu.degree && <p className="font-noto-sans text-sm text-kuro-soft/65">{edu.degree}</p>}
-                  {edu.detail && <p className="font-noto-sans text-xs text-kuro-soft/45 mt-1">{edu.detail}</p>}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        {/* CV — Education / Experience / Awards & Honours (data: src/data/cv.json) */}
+        <CvSection locale="en" />
 
         <SectionDivider />
 
@@ -110,33 +89,6 @@ export default function AboutPage() {
         </div>
 
         <SectionDivider />
-
-        {/* Experience */}
-        <div>
-          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Experience</h3>
-          <div className="space-y-4">
-            {[
-              { organisation: 'Morgan Stanley', role: 'Intern', period: '2026' },
-              { organisation: 'Ministry of Economy, Trade and Industry (METI), Japan', role: 'Intern', period: '2026' },
-              { organisation: 'Financial Services Agency (FSA), Japan', role: 'Intern', period: '2026' },
-              { organisation: 'Mitsubishi UFJ Research and Consulting', role: 'Internship Programme — Tokyo', period: 'September 2026' },
-            ].map((exp, i) => (
-              <div key={i} className="card-washi card-washi-about p-6 relative overflow-hidden">
-                <div className="glow-bar absolute left-0 top-0 bottom-0" />
-                <div className="pl-4">
-                  <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 mb-1">
-                    <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">{exp.organisation}</h4>
-                    <span className="font-noto-sans text-xs text-kuro-soft/50 shrink-0 font-medium">{exp.period}</span>
-                  </div>
-                  <p className="font-noto-sans text-sm text-kuro-soft/65">{exp.role}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <SectionDivider />
-
 
         {/* Skills */}
         <div>
@@ -209,26 +161,6 @@ export default function AboutPage() {
 
         <SectionDivider />
 
-        {/* Roles & Leadership */}
-        <div>
-          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Roles &amp; Leadership</h3>
-          <div className="card-washi card-washi-about p-6 relative overflow-hidden">
-            <div className="glow-bar absolute left-0 top-0 bottom-0" />
-            <div className="pl-4">
-              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 mb-1">
-                <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">Space Generation Advisory Council</h4>
-                <span className="font-noto-sans text-xs text-kuro-soft/50 shrink-0 font-medium">Japan</span>
-              </div>
-              <p className="font-noto-sans text-sm text-kuro-soft/65">Space Policy Project Team Leader</p>
-              <p className="font-noto-sans text-xs text-kuro-soft/60 mt-1 leading-relaxed">
-                Leading the Japan team within SGAC&apos;s Space Policy project — convening early-career researchers and policy contributors around space governance, dual-use systems, and norm formation in emerging space orders.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <SectionDivider />
-
         {/* Affiliations */}
         <div>
           <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Affiliations</h3>
@@ -243,28 +175,6 @@ export default function AboutPage() {
                   <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">{aff.institution}</h4>
                   <p className="font-noto-sans text-xs text-kuro-soft/60 mt-1">{aff.detail}</p>
                   {aff.role && <p className="font-noto-sans text-xs text-kuro-soft/45 mt-0.5 italic">{aff.role}</p>}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <SectionDivider />
-
-        {/* Awards */}
-        <div>
-          <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-6 font-semibold">Awards</h3>
-          <div className="space-y-3">
-            {[
-              { title: 'Mentee, VCDNP Young Women in Non-Proliferation and Disarmament Mentorship Programme 2026–2027', detail: 'Selected as one of twenty mentees worldwide by the Vienna Center for Disarmament and Non-Proliferation (VCDNP), within the framework of the EU Non-Proliferation and Disarmament Consortium (EUNPDC)' },
-              { title: 'Selected, JAXA International Space Education Board 2026', detail: 'Delegate to the Japan Aerospace Exploration Agency\'s International Space Education Board at the International Astronautical Congress 2026' },
-              { title: '2nd Prize, GEIL Policy Contest — Tokyo Earthquake Response', detail: 'Led a team of four in crafting a policy to boost Tokyo\'s earthquake resilience, proposing "Transferable Development Rights Plus" to incentivise redevelopment, reduce wooden structures, and widen streets' },
-            ].map((award, i) => (
-              <div key={i} className="card-washi card-washi-about p-5 relative overflow-hidden">
-                <div className="glow-bar absolute left-0 top-0 bottom-0" />
-                <div className="pl-4">
-                  <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">{award.title}</h4>
-                  <p className="font-noto-sans text-xs text-kuro-soft/60 mt-1">{award.detail}</p>
                 </div>
               </div>
             ))}

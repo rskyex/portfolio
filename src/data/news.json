@@ -1,0 +1,97 @@
+{
+  "_readme": "News items shown on the landing page (latest 3) and on /news (all, grouped by year). To add an item, append an object to `items` — the site picks it up on the next build. `date` is ISO (YYYY-MM-DD) and drives sorting + display formatting. `approx` marks dates that are estimates (not rendered; kept so Risa can spot entries whose exact date still needs confirming). `category` is one of: publication | talk | award | appointment | media | misc. `links` is optional.",
+  "items": [
+    {
+      "date": "2026-07-31",
+      "approx": true,
+      "category": "talk",
+      "text": {
+        "en": "Presented research at the 26th JAXA Space Science Symposium. Afterwards discussed planetary defence governance with Dr. Makoto Yoshikawa, Hayabusa2 mission manager and head of the JAXA Planetary Defence Team, at the JAXA Space Science Centre.",
+        "ja": "第26回JAXA宇宙科学シンポジウムにて研究発表を行いました。発表後、「はやぶさ2」ミッションマネージャでJAXAプラネタリーディフェンスチーム長の吉川真博士と、JAXA宇宙科学センターにてプラネタリーディフェンスのガバナンスについて意見交換をしました。"
+      }
+    },
+    {
+      "date": "2026-07-30",
+      "category": "talk",
+      "text": {
+        "en": "Presented \"Who Speaks for Humanity on the Moon?\" at the CCIR Research Symposium 2026, University of Cambridge (30–31 July).",
+        "ja": "ケンブリッジ大学で開催されたCCIR Research Symposium 2026(7月30–31日)にて、\"Who Speaks for Humanity on the Moon?\" を発表しました。"
+      }
+    },
+    {
+      "date": "2026-07-24",
+      "approx": true,
+      "category": "appointment",
+      "text": {
+        "en": "Selected as one of 20 mentees worldwide for the 2026–27 Young Women in Non-Proliferation and Disarmament Mentorship Programme, run by the Vienna Center for Disarmament and Non-Proliferation (VCDNP) under the EU Non-Proliferation and Disarmament Consortium. Will attend the EUNPDC Annual Conference in Brussels in November 2026.",
+        "ja": "ウィーン軍縮不拡散センター(VCDNP)がEU不拡散・軍縮コンソーシアム(EUNPDC)の下で運営する「Young Women in Non-Proliferation and Disarmament メンターシップ・プログラム 2026–27」に、世界20名のメンティーの一人として選出されました。2026年11月にはブリュッセルで開催されるEUNPDC年次会合に参加予定です。"
+      }
+    },
+    {
+      "date": "2026-07-20",
+      "approx": true,
+      "category": "award",
+      "text": {
+        "en": "Both entries to the Global Trust Challenge — Govern the Human and Faultline — advanced to the Prototyping phase (80 teams worldwide; 6 from East Asia, two of which are these projects). The Challenge originates from a G7 call to action and is led by the IEEE Standards Association, the OECD, and AI Commons, with UNESCO as a founding partner.",
+        "ja": "Global Trust Challengeに応募した2つのプロジェクト Govern the Human と Faultline が、いずれもプロトタイピング段階に進出しました(世界80チーム、うち東アジアから6チーム中2つが本プロジェクト)。同チャレンジはG7の呼びかけを起点とし、IEEE Standards Association、OECD、AI Commonsが主導、UNESCOが創設パートナーを務める国際イニシアティブです。"
+      },
+      "links": [
+        "https://govern-the-human.vercel.app/",
+        "https://faultline-nqmm.vercel.app/"
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "approx": true,
+      "category": "publication",
+      "text": {
+        "en": "Paper \"Naming as Authority: Attribution as Interpretive Authority in Cyber Conflict, and Its Stakes for AI Governance\" accepted at Data for Policy 2026 (8–10 September, Universitat Pompeu Fabra, Barcelona, in partnership with Cambridge University Press & Assessment).",
+        "ja": "論文 \"Naming as Authority: Attribution as Interpretive Authority in Cyber Conflict, and Its Stakes for AI Governance\" が Data for Policy 2026(9月8–10日、バルセロナ・ポンペウ・ファブラ大学、Cambridge University Press & Assessment協力)に採択されました。"
+      }
+    },
+    {
+      "date": "2026-07-10",
+      "approx": true,
+      "category": "misc",
+      "text": {
+        "en": "Served as staff at SPACETIDE 2026, the largest space conference in Asia-Pacific.",
+        "ja": "アジア太平洋最大の宇宙カンファレンス SPACETIDE 2026 にスタッフとして参加しました。"
+      }
+    },
+    {
+      "date": "2026-07-05",
+      "category": "talk",
+      "text": {
+        "en": "SG[Japan] 2026 (Space Generation Advisory Council) held in Tokyo, 4–5 July. As Space Policy Programme Chief, designed the Space Policy Day and its workshops — including a six-actor negotiation on removing non-cooperative debris — and moderated the day.",
+        "ja": "Space Generation Advisory Council (SGAC) の SG[Japan] 2026 が7月4–5日に東京で開催されました。Space Policy Programme Chiefとして、非協力デブリ除去をめぐる6者交渉ワークショップを含むSpace Policy Dayを設計し、当日のモデレーターを務めました。"
+      }
+    },
+    {
+      "date": "2026-05-20",
+      "approx": true,
+      "category": "appointment",
+      "text": {
+        "en": "Selected by JAXA as a delegate to the International Space Education Board (ISEB) at the International Astronautical Congress 2026.",
+        "ja": "国際宇宙会議(IAC)2026において、国際宇宙教育会議(ISEB)へのJAXA派遣代表に選出されました。"
+      }
+    },
+    {
+      "date": "2026-05-15",
+      "approx": true,
+      "category": "talk",
+      "text": {
+        "en": "Invited talk at the Global Innovation Gathering (GIG) in Berlin, a community of innovation hubs, makerspaces and grassroots technologists rooted in the Global South.",
+        "ja": "ベルリンで開催された Global Innovation Gathering (GIG) に招かれ、講演を行いました。GIGはグローバルサウスに根ざしたイノベーションハブ、メイカースペース、草の根の技術者たちのコミュニティです。"
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "approx": true,
+      "category": "publication",
+      "text": {
+        "en": "Three abstracts accepted for the 77th International Astronautical Congress (Antalya, October 2026): \"Conditional Openness: How Universalist Language Produces Boundaries in Future Lunar Exploration Governance\" (E3); \"Mythic Naming as Soft Infrastructure in Competing Lunar Orders: Artemis and Chang'e\" (E5); \"Dual-Use Neutralisation and Responsible Behaviour Norms in Lunar Infrastructure Governance\" (E9).",
+        "ja": "第77回国際宇宙会議(IAC 2026、10月・アンタルヤ)に3本のアブストラクトが採択されました。\"Conditional Openness: How Universalist Language Produces Boundaries in Future Lunar Exploration Governance\"(E3)、\"Mythic Naming as Soft Infrastructure in Competing Lunar Orders: Artemis and Chang'e\"(E5)、\"Dual-Use Neutralisation and Responsible Behaviour Norms in Lunar Infrastructure Governance\"(E9)。"
+      }
+    }
+  ]
+}

@@ -8,8 +8,10 @@ import SpeakingCard from '@/components/SpeakingCard';
 import ConferenceCard from '@/components/ConferenceCard';
 import Tsubaki3D from '@/components/Tsubaki3D';
 import LandingExtraSections from '@/components/LandingExtraSections';
+import NewsSection from '@/components/NewsSection';
 import PersonJsonLd from '@/components/PersonJsonLd';
 import type { Dictionary } from '@/dictionaries/types';
+import type { Locale } from '@/lib/locale';
 
 /* ─── Locale-independent assets (images, links, structural flags) ───
    Keyed by the same slugs used in the dictionaries; only TEXT lives in
@@ -48,7 +50,7 @@ const PAPER_TYPE_BY_KIND: Record<
   poster: 'Poster Presentation',
 };
 
-export default function LandingPage({ dict }: { dict: Dictionary }) {
+export default function LandingPage({ dict, locale }: { dict: Dictionary; locale: Locale }) {
   const {
     hero,
     platformsSection,
@@ -304,6 +306,13 @@ export default function LandingPage({ dict }: { dict: Dictionary }) {
       <SectionDivider />
 
       {/* ═══════════════════════════════════════════════════
+          NEWS — latest three items (all items on /news)
+          ═══════════════════════════════════════════════════ */}
+      <NewsSection dict={dict} locale={locale} />
+
+      <SectionDivider />
+
+      {/* ═══════════════════════════════════════════════════
           PLATFORM ECOSYSTEM
           ═══════════════════════════════════════════════════ */}
       <section className="max-w-6xl mx-auto px-6 pb-16 relative">
@@ -481,8 +490,8 @@ export default function LandingPage({ dict }: { dict: Dictionary }) {
       </>
       )}
 
-      {/* Locale-specific profile sections (JA only) */}
-      {extra && <LandingExtraSections extra={extra} />}
+      {/* Locale-specific profile sections */}
+      {extra && <LandingExtraSections extra={extra} locale={locale} />}
 
     </div>
   );

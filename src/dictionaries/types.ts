@@ -89,6 +89,7 @@ export interface Dictionary {
   };
   nav: {
     home: string;
+    news: string;
     platforms: string;
     research: string;
     fieldwork: string;
@@ -135,6 +136,19 @@ export interface Dictionary {
     /** Shared UI labels applied to every card in the locale. */
     labels: ConferenceLabels;
   };
+  /** Labels for the News section (items live in src/data/news.json). */
+  newsSection: {
+    /** Landing-page section heading. */
+    heading: string;
+    /** Landing-page "View all →" link to the news index. */
+    viewAll: string;
+    /** /news page heading + <title>. */
+    pageTitle: string;
+    /** /news page subtitle line. */
+    pageSubtitle: string;
+    /** /news page meta description. */
+    pageDescription: string;
+  };
   /** Null in a locale that omits this section entirely (e.g. the JA page). */
   fieldworkSection: FieldworkSection | null;
   /** When true, render the Conference section before Research (JA layout). */
@@ -150,13 +164,6 @@ export interface FieldworkSection {
   viewAll: string;
   projects: ProjectText[];
   speaking: SpeakingText[];
-}
-
-export interface EducationItem {
-  institution: string;
-  period: string;
-  degree?: string;
-  detail?: string;
 }
 
 export interface SkillGroup {
@@ -182,9 +189,14 @@ export interface InterestGroup {
   items: string[];
 }
 
-/** Profile sections ported from the About page, shown only on the JA landing page. */
+/** Profile sections ported from the About page, shown on the landing pages.
+ *  Education / CV entries themselves live in src/data/cv.json — only the
+ *  section headings are locale copy here. */
 export interface ExtraSections {
-  education: { heading: string; items: EducationItem[] };
+  /** Education-only cards (EN landing). Omitted where `cv` is present. */
+  education?: { heading: string };
+  /** Full CV — Education / Experience / Awards & Honours (JA landing). */
+  cv?: { heading: string };
   /** Optional: omitted where the locale has no Certifications section. */
   certifications?: { heading: string; items: CertificationItem[] };
   /** Optional: the landing page may omit these when they live on the About page. */

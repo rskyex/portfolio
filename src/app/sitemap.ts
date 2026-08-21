@@ -6,6 +6,8 @@ const BASE_URL = 'https://risakoyanagi.com';
 const ROUTES: string[] = [
   '/',
   '/ja',
+  '/news',
+  '/ja/news',
   '/about',
   '/speaking',
   '/fieldwork',
@@ -52,6 +54,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
           en: BASE_URL,
           ja: `${BASE_URL}/ja`,
+        },
+      };
+    }
+
+    // ... and for the two news pages.
+    if (route === '/news' || route === '/ja/news') {
+      entry.alternates = {
+        languages: {
+          en: `${BASE_URL}/news`,
+          ja: `${BASE_URL}/ja/news`,
         },
       };
     }

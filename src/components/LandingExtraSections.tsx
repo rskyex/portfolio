@@ -2,16 +2,26 @@ import Link from 'next/link';
 import PhotoFrame from './PhotoFrame';
 import SectionHeader from './SectionHeader';
 import SectionDivider from './SectionDivider';
+import CvSection from './CvSection';
 import type { ExtraSections, SkillGroup } from '@/dictionaries/types';
+import type { Locale } from '@/lib/locale';
+import { getCv } from '@/lib/content';
 
 /**
- * Profile sections (Education, Skills, Languages, Arts, Interests, Connect)
- * ported from the About page and shown only where dict.extra is present
- * (the JA landing page). Card styling matches the About page exactly; section
- * headers use the shared landing SectionHeader for consistent rhythm.
+ * Profile sections (Education/CV, Skills, Languages, Arts, Interests, Connect)
+ * ported from the About page and shown where dict.extra is present. Education
+ * and CV entries come from src/data/cv.json (shared with /about). Card styling
+ * matches the About page exactly; section headers use the shared landing
+ * SectionHeader for consistent rhythm.
  */
-export default function LandingExtraSections({ extra }: { extra: ExtraSections }) {
-  const { education, certifications, skills, languages, arts, interests, connect } = extra;
+export default function LandingExtraSections({
+  extra,
+  locale,
+}: {
+  extra: ExtraSections;
+  locale: Locale;
+}) {
+  const { education, cv, certifications, skills, languages, arts, interests, connect } = extra;
 
   /* A skill group renders either a bulleted list or comma-style paragraphs. */
   const skillBody = (group: SkillGroup) =>
@@ -37,28 +47,48 @@ export default function LandingExtraSections({ extra }: { extra: ExtraSections }
 
   return (
     <>
-      {/* ─── EDUCATION ─── */}
-      <SectionDivider />
-      <section className="max-w-6xl mx-auto px-6 pb-16 relative">
-        <div className="relative">
-          <SectionHeader english={education.heading} />
-          <div className="mt-8 space-y-4">
-            {education.items.map((edu, i) => (
-              <div key={i} className="card-washi card-washi-about p-6 relative overflow-hidden">
-                <div className="glow-bar absolute left-0 top-0 bottom-0" />
-                <div className="pl-4">
-                  <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 mb-1">
-                    <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">{edu.institution}</h4>
-                    <span className="font-noto-sans text-xs text-kuro-soft/50 shrink-0 font-medium">{edu.period}</span>
-                  </div>
-                  {edu.degree && <p className="font-noto-sans text-sm text-kuro-soft/65">{edu.degree}</p>}
-                  {edu.detail && <p className="font-noto-sans text-xs text-kuro-soft/45 mt-1">{edu.detail}</p>}
-                </div>
+      {/* ─── CV — Education / Experience / Awards (JA landing) ─── */}
+      {cv && (
+        <>
+          <SectionDivider />
+          <section className="max-w-6xl mx-auto px-6 pb-16 relative">
+            <div className="relative">
+              <SectionHeader english={cv.heading} />
+              <div className="mt-8">
+                <CvSection locale={locale} variant="landing" />
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
+            </div>
+          </section>
+        </>
+      )}
+
+      {/* ─── EDUCATION only (EN landing) ─── */}
+      {!cv && education && (
+        <>
+          <SectionDivider />
+          <section className="max-w-6xl mx-auto px-6 pb-16 relative">
+            <div className="relative">
+              <SectionHeader english={education.heading} />
+              <div className="mt-8 space-y-4">
+                {getCv().education.map((edu, i) => (
+                  <div key={i} className="card-washi card-washi-about p-6 relative overflow-hidden">
+                    <div className="glow-bar absolute left-0 top-0 bottom-0" />
+                    <div className="pl-4">
+                      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 mb-1">
+                        <h4 className="font-noto-sans text-sm font-semibold text-kuro-soft">{edu.institution[locale]}</h4>
+                        {edu.period[locale] && (
+                          <span className="font-noto-sans text-xs text-kuro-soft/50 shrink-0 font-medium">{edu.period[locale]}</span>
+                        )}
+                      </div>
+                      <p className="font-noto-sans text-sm text-kuro-soft/65">{edu.degree[locale]}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        </>
+      )}
 
       {/* ─── CERTIFICATIONS (optional) ─── */}
       {certifications && (
