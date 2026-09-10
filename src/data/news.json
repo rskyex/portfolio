@@ -2,6 +2,14 @@
   "_readme": "News items shown on the landing page (latest 3) and on /news (all, grouped by year). To add an item, append an object to `items` — the site picks it up on the next build. `date` is ISO (YYYY-MM-DD) and drives sorting + display formatting. `approx` marks dates that are estimates (not rendered; kept so Risa can spot entries whose exact date still needs confirming). `category` is one of: publication | talk | award | appointment | media | misc. `links` is optional.",
   "items": [
     {
+      "date": "2026-09-01",
+      "category": "award",
+      "text": {
+        "en": "Selected as an adopted researcher for the 6th academist Prize, Humanities & Social Sciences edition (supported by Infomart). The cohort was unveiled at a launch event on 1 September at Inspired.Lab and online, marking the start of the research crowdfunding campaign.",
+        "ja": "academist Prize 第6期 人文・社会科学編(supported by インフォマート)の採択研究者に選出されました。9月1日にInspired.Labおよびオンラインで開催されたお披露目イベントで採択研究者が発表され、研究クラウドファンディングを開始しました。"
+      }
+    },
+    {
       "date": "2026-07-31",
       "approx": true,
       "category": "talk",
@@ -25,6 +33,14 @@
       "text": {
         "en": "Selected as one of 20 mentees worldwide for the 2026–27 Young Women in Non-Proliferation and Disarmament Mentorship Programme, run by the Vienna Center for Disarmament and Non-Proliferation (VCDNP) under the EU Non-Proliferation and Disarmament Consortium. Will attend the EUNPDC Annual Conference in Brussels in November 2026.",
         "ja": "ウィーン軍縮不拡散センター(VCDNP)がEU不拡散・軍縮コンソーシアム(EUNPDC)の下で運営する「Young Women in Non-Proliferation and Disarmament メンターシップ・プログラム 2026–27」に、世界20名のメンティーの一人として選出されました。2026年11月にはブリュッセルで開催されるEUNPDC年次会合に参加予定です。"
+      }
+    },
+    {
+      "date": "2026-07-22",
+      "category": "award",
+      "text": {
+        "en": "Selected as one of thirty innovators for the Innovation Cup, a Recruit Holdings hackathon supported by Google Cloud, OpenAI and Indeed, with $70,000 in prizes and accelerations. To be held in Silicon Valley, 25–27 September 2026.",
+        "ja": "リクルートホールディングス主催のハッカソン「Innovation Cup」(Google Cloud、OpenAI、Indeed協賛)に、30名のイノベーターの一人として選出されました。2026年9月25–27日にシリコンバレーで開催され、賞金・アクセラレーションの総額は7万ドルです。"
       }
     },
     {
