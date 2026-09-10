@@ -29,6 +29,11 @@ export interface NewsItem {
   category: NewsCategory;
   text: Bilingual;
   links?: string[];
+  /** Optional photo shown alongside the entry (path under /public). */
+  image?: {
+    src: string;
+    alt: Bilingual;
+  };
 }
 
 export interface EducationEntry {

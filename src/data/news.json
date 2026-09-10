@@ -1,5 +1,5 @@
 {
-  "_readme": "News items shown on the landing page (latest 3) and on /news (all, grouped by year). To add an item, append an object to `items` — the site picks it up on the next build. `date` is ISO (YYYY-MM-DD) and drives sorting + display formatting. `approx` marks dates that are estimates (not rendered; kept so Risa can spot entries whose exact date still needs confirming). `category` is one of: publication | talk | award | appointment | media | misc. `links` is optional.",
+  "_readme": "News items shown on the landing page (latest 3) and on /news (all, grouped by year). To add an item, append an object to `items` — the site picks it up on the next build. `date` is ISO (YYYY-MM-DD) and drives sorting + display formatting. `approx` marks dates that are estimates (not rendered; kept so Risa can spot entries whose exact date still needs confirming). `category` is one of: publication | talk | award | appointment | media | misc. `links` is optional. `image` is optional — `{ \"src\": \"/images/news/…\", \"alt\": { \"en\": …, \"ja\": … } }` with the file placed under public/images/news/.",
   "items": [
     {
       "date": "2026-09-01",
@@ -8,7 +8,14 @@
         "en": "Selected as an adopted researcher for the 6th academist Prize, Humanities & Social Sciences edition (supported by Infomart). The cohort was unveiled at a launch event on 1 September at Inspired.Lab and online, marking the start of the research crowdfunding campaign.",
         "ja": "academist Prize 第6期 人文・社会科学編(supported by インフォマート)の採択研究者に選出されました。9月1日にInspired.Labおよびオンラインで開催されたお披露目イベントで採択研究者が発表され、研究クラウドファンディングを開始しました。"
       },
-      "links": ["https://academist-cf.com/projects/426?lang=ja"]
+      "links": ["https://academist-cf.com/projects/426?lang=ja"],
+      "image": {
+        "src": "/images/news/academist-prize-6.png",
+        "alt": {
+          "en": "academist Prize 6th cohort (Humanities & Social Sciences) launch event banner — 1 September, Inspired.Lab & online",
+          "ja": "academist Prize 第6期 人文・社会科学編 採択研究者お披露目&クラウドファンディング開始イベント(9月1日、Inspired.Lab&オンライン)のバナー"
+        }
+      }
     },
     {
       "date": "2026-07-31",
@@ -42,6 +49,13 @@
       "text": {
         "en": "Selected as one of thirty innovators for the Innovation Cup, a Recruit Holdings hackathon supported by Google Cloud, OpenAI and Indeed, with $70,000 in prizes and accelerations. To be held in Silicon Valley, 25–27 September 2026.",
         "ja": "リクルートホールディングス主催のハッカソン「Innovation Cup」(Google Cloud、OpenAI、Indeed協賛)に、30名のイノベーターの一人として選出されました。2026年9月25–27日にシリコンバレーで開催され、賞金・アクセラレーションの総額は7万ドルです。"
+      },
+      "image": {
+        "src": "/images/news/innovation-cup-selection.jpg",
+        "alt": {
+          "en": "Recruit Holdings Hackathon Innovation Cup — selected participant announcement for Risa Koyanagi, one of thirty innovators",
+          "ja": "Recruit Holdings Hackathon「Innovation Cup」— 小柳璃紗が30名のイノベーターの一人として選出された告知画像"
+        }
       }
     },
     {
