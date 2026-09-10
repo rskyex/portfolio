@@ -58,6 +58,13 @@
             "en": "Presenting \"Who Speaks for Humanity on the Moon?\" at the CCIR Research Symposium 2026, University of Cambridge",
             "ja": "ケンブリッジ大学CCIR Research Symposium 2026にて \"Who Speaks for Humanity on the Moon?\" を発表する様子"
           }
+        },
+        {
+          "src": "/images/news/ccir-symposium-barish.jpg",
+          "alt": {
+            "en": "2026 CCIR Symposium speaker card — Dr Barry C. Barish (Caltech), 2017 Nobel Laureate in Physics, speaking in person at King's College, Cambridge on 31 July",
+            "ja": "CCIR Symposium 2026スピーカーカード — 2017年ノーベル物理学賞受賞者のBarry C. Barish博士(カリフォルニア工科大学)が7月31日にケンブリッジ大学キングス・カレッジで登壇"
+          }
         }
       ]
     },
@@ -133,7 +140,16 @@
       "text": {
         "en": "SG[Japan] 2026 (Space Generation Advisory Council) held in Tokyo, 4–5 July. As Space Policy Programme Chief, designed the Space Policy Day and its workshops — including a six-actor negotiation on removing non-cooperative debris — and moderated the day.",
         "ja": "Space Generation Advisory Council (SGAC) の SG[Japan] 2026 が7月4–5日に東京で開催されました。Space Policy Programme Chiefとして、非協力デブリ除去をめぐる6者交渉ワークショップを含むSpace Policy Dayを設計し、当日のモデレーターを務めました。"
-      }
+      },
+      "images": [
+        {
+          "src": "/images/news/sg-japan-2026.jpg",
+          "alt": {
+            "en": "SG[Japan] 2026 event banner — SGAC official local event and SPACETIDE 2026 official side event, 4–5 July at X-NIHONBASHI TOWER and UNU Headquarters",
+            "ja": "SG[Japan] 2026のイベントバナー — SGAC公式ローカルイベント・SPACETIDE 2026公式サイドイベント(7月4–5日、X-NIHONBASHI TOWERおよび国連大学本部)"
+          }
+        }
+      ]
     },
     {
       "date": "2026-05-20",
