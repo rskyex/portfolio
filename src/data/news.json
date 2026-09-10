@@ -1,5 +1,5 @@
 {
-  "_readme": "News items shown on the landing page (latest 3) and on /news (all, grouped by year). To add an item, append an object to `items` — the site picks it up on the next build. `date` is ISO (YYYY-MM-DD) and drives sorting + display formatting. `approx` marks dates that are estimates (not rendered; kept so Risa can spot entries whose exact date still needs confirming). `category` is one of: publication | talk | award | appointment | media | misc. `links` is optional. `image` is optional — `{ \"src\": \"/images/news/…\", \"alt\": { \"en\": …, \"ja\": … } }` with the file placed under public/images/news/.",
+  "_readme": "News items shown on the landing page (latest 3) and on /news (all, grouped by year). To add an item, append an object to `items` — the site picks it up on the next build. `date` is ISO (YYYY-MM-DD) and drives sorting + display formatting. `approx` marks dates that are estimates (not rendered; kept so Risa can spot entries whose exact date still needs confirming). `category` is one of: publication | talk | award | appointment | media | misc. `links` is optional. `images` is optional — an array of `{ \"src\": \"/images/news/…\", \"alt\": { \"en\": …, \"ja\": … } }` with the files placed under public/images/news/.",
   "items": [
     {
       "date": "2026-09-01",
@@ -9,13 +9,15 @@
         "ja": "academist Prize 第6期 人文・社会科学編(supported by インフォマート)の採択研究者に選出されました。9月1日にInspired.Labおよびオンラインで開催されたお披露目イベントで採択研究者が発表され、研究クラウドファンディングを開始しました。"
       },
       "links": ["https://academist-cf.com/projects/426?lang=ja"],
-      "image": {
-        "src": "/images/news/academist-prize-6.png",
-        "alt": {
-          "en": "academist Prize 6th cohort (Humanities & Social Sciences) launch event banner — 1 September, Inspired.Lab & online",
-          "ja": "academist Prize 第6期 人文・社会科学編 採択研究者お披露目&クラウドファンディング開始イベント(9月1日、Inspired.Lab&オンライン)のバナー"
+      "images": [
+        {
+          "src": "/images/news/academist-prize-6.png",
+          "alt": {
+            "en": "academist Prize 6th cohort (Humanities & Social Sciences) launch event banner — 1 September, Inspired.Lab & online",
+            "ja": "academist Prize 第6期 人文・社会科学編 採択研究者お披露目&クラウドファンディング開始イベント(9月1日、Inspired.Lab&オンライン)のバナー"
+          }
         }
-      }
+      ]
     },
     {
       "date": "2026-07-31",
@@ -24,7 +26,23 @@
       "text": {
         "en": "Presented research at the 26th JAXA Space Science Symposium. Afterwards discussed planetary defence governance with Dr. Makoto Yoshikawa, Hayabusa2 mission manager and head of the JAXA Planetary Defence Team, at the JAXA Space Science Centre.",
         "ja": "第26回JAXA宇宙科学シンポジウムにて研究発表を行いました。発表後、「はやぶさ2」ミッションマネージャでJAXAプラネタリーディフェンスチーム長の吉川真博士と、JAXA宇宙科学センターにてプラネタリーディフェンスのガバナンスについて意見交換をしました。"
-      }
+      },
+      "images": [
+        {
+          "src": "/images/news/jaxa-symposium-poster.jpg",
+          "alt": {
+            "en": "Poster presentation \"Dual-Use Neutralisation in Lunar Infrastructure Discourse\" at the 26th Space Science Symposium, with Dr. Makoto Yoshikawa",
+            "ja": "第26回宇宙科学シンポジウムでのポスター発表「語られないデュアルユース:月面インフラをめぐる米中公式言説の『中和』戦略」にて、吉川真博士と"
+          }
+        },
+        {
+          "src": "/images/news/jaxa-yoshikawa.jpg",
+          "alt": {
+            "en": "With Dr. Makoto Yoshikawa at the JAXA Space Science Centre",
+            "ja": "JAXA宇宙科学センターにて吉川真博士と"
+          }
+        }
+      ]
     },
     {
       "date": "2026-07-30",
@@ -32,7 +50,16 @@
       "text": {
         "en": "Presented \"Who Speaks for Humanity on the Moon?\" at the CCIR Research Symposium 2026, University of Cambridge (30–31 July).",
         "ja": "ケンブリッジ大学で開催されたCCIR Research Symposium 2026(7月30–31日)にて、\"Who Speaks for Humanity on the Moon?\" を発表しました。"
-      }
+      },
+      "images": [
+        {
+          "src": "/images/news/ccir-symposium-talk.jpg",
+          "alt": {
+            "en": "Presenting \"Who Speaks for Humanity on the Moon?\" at the CCIR Research Symposium 2026, University of Cambridge",
+            "ja": "ケンブリッジ大学CCIR Research Symposium 2026にて \"Who Speaks for Humanity on the Moon?\" を発表する様子"
+          }
+        }
+      ]
     },
     {
       "date": "2026-07-24",
@@ -50,13 +77,15 @@
         "en": "Selected as one of thirty innovators for the Innovation Cup, a Recruit Holdings hackathon supported by Google Cloud, OpenAI and Indeed, with $70,000 in prizes and accelerations. To be held in Silicon Valley, 25–27 September 2026.",
         "ja": "リクルートホールディングス主催のハッカソン「Innovation Cup」(Google Cloud、OpenAI、Indeed協賛)に、30名のイノベーターの一人として選出されました。2026年9月25–27日にシリコンバレーで開催され、賞金・アクセラレーションの総額は7万ドルです。"
       },
-      "image": {
-        "src": "/images/news/innovation-cup-selection.jpg",
-        "alt": {
-          "en": "Recruit Holdings Hackathon Innovation Cup — selected participant announcement for Risa Koyanagi, one of thirty innovators",
-          "ja": "Recruit Holdings Hackathon「Innovation Cup」— 小柳璃紗が30名のイノベーターの一人として選出された告知画像"
+      "images": [
+        {
+          "src": "/images/news/innovation-cup-selection.jpg",
+          "alt": {
+            "en": "Recruit Holdings Hackathon Innovation Cup — selected participant announcement for Risa Koyanagi, one of thirty innovators",
+            "ja": "Recruit Holdings Hackathon「Innovation Cup」— 小柳璃紗が30名のイノベーターの一人として選出された告知画像"
+          }
         }
-      }
+      ]
     },
     {
       "date": "2026-07-20",
@@ -69,6 +98,15 @@
       "links": [
         "https://govern-the-human.vercel.app/",
         "https://faultline-nqmm.vercel.app/"
+      ],
+      "images": [
+        {
+          "src": "/images/news/global-trust-challenge.png",
+          "alt": {
+            "en": "Global Challenge to Build Trust in the Age of Generative AI — banner with OECD.AI, GPAI, AI Commons, IDB, IEEE SA, UNESCO and VDE logos",
+            "ja": "Global Challenge to Build Trust in the Age of Generative AI のバナー(OECD.AI、GPAI、AI Commons、IDB、IEEE SA、UNESCO、VDEのロゴ入り)"
+          }
+        }
       ]
     },
     {

@@ -43,13 +43,18 @@ export default function NewsCard({ item, locale }: { item: NewsItem; locale: Loc
             </div>
           )}
         </div>
-        {item.image && (
-          <img
-            src={item.image.src}
-            alt={item.image.alt[locale]}
-            loading="lazy"
-            className="w-full sm:w-44 max-h-44 object-cover rounded border border-kin/20 self-start shrink-0"
-          />
+        {item.images && item.images.length > 0 && (
+          <div className="flex sm:flex-col gap-3 shrink-0 self-start sm:w-44">
+            {item.images.map((image) => (
+              <img
+                key={image.src}
+                src={image.src}
+                alt={image.alt[locale]}
+                loading="lazy"
+                className="min-w-0 flex-1 sm:flex-none w-full max-h-44 object-cover rounded border border-kin/20"
+              />
+            ))}
+          </div>
         )}
       </div>
     </div>
