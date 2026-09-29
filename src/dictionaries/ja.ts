@@ -144,6 +144,30 @@ export const ja: Dictionary = {
         ],
       },
       {
+        event: 'ISA Annual Convention 2027 — 採択論文2件',
+        location: 'アメリカ・アトランタ',
+        organizer: '世界国際関係学会（ISA）第68回年次大会「Amnesia and Reckoning」／2027年3月21〜24日',
+        // Empty: the count already appears in the event title above (same as IAC).
+        highlight: '',
+        tags: ['原子力ガバナンス', '月面ガバナンス', '定義的権威', '正統化'],
+        focus: '原子力災害における定義的権威と監督の空洞化、そして競合する月面ガバナンスにおける正統化の聴衆と権威構造。',
+        eyebrow: '2027年 · 発表予定',
+        papers: [
+          {
+            title: '「アンダーコントロール」の意味は誰が決めるのか：原子力災害における定義的権威と監督の空洞化', // REVIEW
+            symposium: 'パネル MA24 — 惑星・破局・危機のガバナンス', // REVIEW
+            date: '2027年3月22日',
+            kind: 'oral',
+          },
+          {
+            title: '月において、誰が人類を代表するのか：月面ガバナンスにおける正統化の聴衆・翻訳装置・権威構造', // REVIEW
+            symposium: 'パネル MC29 — ルールが固まる前に：新たな宇宙秩序の統治をめぐる攻防', // REVIEW
+            date: '2027年3月22日',
+            kind: 'oral',
+          },
+        ],
+      },
+      {
         event: 'Data for Policy 2026',
         location: 'ポンペウ・ファブラ大学 ・ スペイン・バルセロナ',
         organizer: 'Data for Policy 2026（DfP’26）／2026年9月8〜10日',
