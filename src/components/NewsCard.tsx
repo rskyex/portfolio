@@ -1,4 +1,5 @@
 import type { Locale } from '@/lib/locale';
+import NewsImages from '@/components/NewsImages';
 import {
   NEWS_CATEGORY_LABELS,
   formatNewsDate,
@@ -44,17 +45,7 @@ export default function NewsCard({ item, locale }: { item: NewsItem; locale: Loc
           )}
         </div>
         {item.images && item.images.length > 0 && (
-          <div className="flex sm:flex-col gap-3 shrink-0 self-start sm:w-44">
-            {item.images.map((image) => (
-              <img
-                key={image.src}
-                src={image.src}
-                alt={image.alt[locale]}
-                loading="lazy"
-                className="min-w-0 flex-1 sm:flex-none w-full max-h-44 object-cover rounded border border-kin/20"
-              />
-            ))}
-          </div>
+          <NewsImages images={item.images} locale={locale} />
         )}
       </div>
     </div>
