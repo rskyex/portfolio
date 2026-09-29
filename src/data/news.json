@@ -2,8 +2,7 @@
   "_readme": "News items shown on the landing page (latest 3) and on /news (all, grouped by year). To add an item, append an object to `items` — the site picks it up on the next build. `date` is ISO (YYYY-MM-DD) and drives sorting + display formatting. `approx` marks dates that are estimates (not rendered; kept so Risa can spot entries whose exact date still needs confirming). `category` is one of: publication | talk | award | appointment | media | misc. `links` is optional. `images` is optional — an array of `{ \"src\": \"/images/news/…\", \"alt\": { \"en\": …, \"ja\": … } }` with the files placed under public/images/news/.",
   "items": [
     {
-      "date": "2026-09-28",
-      "approx": true,
+      "date": "2026-09-25",
       "category": "publication",
       "text": {
         "en": "Two papers accepted for the 68th Annual Convention of the International Studies Association (ISA), \"Amnesia and Reckoning\" (Atlanta, 21–24 March 2027): \"Who Decides What 'Under Control' Means? Definitional Authority and the Hollowing of Oversight in a Nuclear Disaster\" (panel: Planetary, Catastrophic, and Crisis Governance) and \"Who Speaks for Humanity on the Moon? Legitimation Audiences, Translation Devices, and Authority Architecture in Lunar Governance\" (panel: Before the Rules Harden: The Struggle to Govern the New Space Order).",
@@ -18,6 +17,15 @@
           }
         }
       ]
+    },
+    {
+      "date": "2026-09-22",
+      "category": "publication",
+      "text": {
+        "en": "Article \"Who Speaks for Humanity on the Moon?\" accepted for publication in the peer-reviewed journal International Political Anthropology (IPA).",
+        "ja": "論文 \"Who Speaks for Humanity on the Moon?\" が査読を経て、学術誌 International Political Anthropology(IPA)に採択されました。"
+      },
+      "links": ["https://www.politicalanthropology.org/"]
     },
     {
       "date": "2026-09-01",
