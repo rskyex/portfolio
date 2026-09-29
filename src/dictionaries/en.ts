@@ -154,6 +154,34 @@ export const en: Dictionary = {
         ],
       },
       {
+        event: 'ISA 2027 — 2 Accepted Papers',
+        location: 'Atlanta, Georgia, USA',
+        organizer:
+          '68th Annual Convention of the International Studies Association (ISA) · “Amnesia and Reckoning” · 21–24 March 2027',
+        // Empty: the count already appears in the event title above (same as IAC).
+        highlight: '',
+        tags: ['Nuclear Governance', 'Lunar Governance', 'Definitional Authority', 'Legitimation'],
+        focus:
+          'definitional authority and the hollowing of oversight in a nuclear disaster, and legitimation audiences and authority architecture in competing lunar governance frameworks.',
+        eyebrow: 'Forthcoming · 2027',
+        papers: [
+          {
+            title:
+              'Who Decides What “Under Control” Means? Definitional Authority and the Hollowing of Oversight in a Nuclear Disaster',
+            symposium: 'Panel MA24 — Planetary, Catastrophic, and Crisis Governance',
+            date: '22 March 2027',
+            kind: 'oral',
+          },
+          {
+            title:
+              'Who Speaks for Humanity on the Moon? Legitimation Audiences, Translation Devices, and Authority Architecture in Lunar Governance',
+            symposium: 'Panel MC29 — Before the Rules Harden: The Struggle to Govern the New Space Order',
+            date: '22 March 2027',
+            kind: 'oral',
+          },
+        ],
+      },
+      {
         event: 'Data for Policy 2026',
         location: 'Universitat Pompeu Fabra · Barcelona, Spain',
         organizer: 'Data for Policy 2026 (DfP’26) · 8–10 September 2026',

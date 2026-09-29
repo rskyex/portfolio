@@ -27,15 +27,15 @@ export default function ResearchPage() {
         </p>
       </div>
 
-      {/* Working Paper */}
+      {/* Forthcoming */}
       <div className="mb-10">
-        <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-4 font-semibold">Working Paper</h3>
+        <h3 className="font-noto-sans text-xs text-kin tracking-[0.25em] uppercase mb-4 font-semibold">Forthcoming</h3>
         <ResearchListItem
           href="/research/lunar"
           title="Who Speaks for Humanity on the Moon?"
-          status="Working Paper"
+          status="Forthcoming"
           themes={['Legitimation audiences', 'Translation devices', 'Authority architecture', 'Artemis vs ILRS', 'Universalist language', 'Participation conditions', 'Boundary-making']}
-          description="The conceptual flagship. Examining how competing lunar governance frameworks — the Artemis Accords and the International Lunar Research Station programme — construct legitimation audiences, deploy translation devices, and build authority architecture under universalist language while establishing divergent participation conditions and boundary-making practices."
+          description="The conceptual flagship, accepted for publication in International Political Anthropology. Examining how competing lunar governance frameworks — the Artemis Accords and the International Lunar Research Station programme — construct legitimation audiences, deploy translation devices, and build authority architecture under universalist language while establishing divergent participation conditions and boundary-making practices."
         />
       </div>
 

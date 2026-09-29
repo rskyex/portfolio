@@ -22,7 +22,7 @@ export default function LunarResearchPage() {
 
       <div className="mt-4 mb-8">
         <span className="px-2 py-0.5 text-xs font-noto-sans rounded-sm border bg-tsubaki-rose/6 text-tsubaki-blush/70 border-tsubaki-rose/12">
-          Working Paper
+          Forthcoming · International Political Anthropology
         </span>
       </div>
 
