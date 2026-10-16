@@ -243,6 +243,9 @@ export const en: Dictionary = {
     pageDescription:
       'News and updates from Risa Koyanagi — publications, talks, awards, appointments, and other activities.',
   },
+  recommendationsSection: {
+    heading: 'Recommendation',
+  },
   fieldworkSection: {
     heading: 'Fieldwork & Public Engagement',
     subtitle:
