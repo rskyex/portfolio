@@ -225,9 +225,6 @@ export const ja: Dictionary = {
     pageDescription:
       '小柳璃紗のニュース — 出版、講演、受賞、活動などの最新情報。',
   },
-  recommendationsSection: {
-    heading: '推薦者コメント',
-  },
   // Fieldwork & Public Engagement section (フィールドワークと社会的活動 /
   // 登壇・政策活動) is intentionally omitted from the Japanese page.
   fieldworkSection: null,
