@@ -5,8 +5,8 @@ import type { Dictionary } from '@/dictionaries/types';
 
 /* Landing-page referee comment, set as a pull quote directly above the News
    section — no washi card and no SectionHeader, so it reads as someone else's
-   voice introducing the page rather than as another content block. The card
-   version still lives in src/components/Recommendations.tsx for /about. */
+   voice introducing the page rather than as another content block. Shown on
+   the Japanese landing page only; the English site carries no referee comment. */
 
 /** Opening quotation mark per locale — the Latin “ looks wrong beside kana. */
 const QUOTE_MARK: Record<Locale, string> = { en: '“', ja: '「' };
