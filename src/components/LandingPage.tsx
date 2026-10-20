@@ -308,9 +308,9 @@ export default function LandingPage({ dict, locale }: { dict: Dictionary; locale
       <SectionDivider />
 
       {/* ═══════════════════════════════════════════════════
-          REFEREE COMMENT — pull quote leading into News
+          REFEREE COMMENT — pull quote leading into News (JA page only)
           ═══════════════════════════════════════════════════ */}
-      <RecommendationQuote dict={dict} locale={locale} />
+      {locale === 'ja' && <RecommendationQuote dict={dict} locale={locale} />}
 
       {/* ═══════════════════════════════════════════════════
           NEWS — latest three items (all items on /news)
