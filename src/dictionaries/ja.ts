@@ -307,6 +307,10 @@ export const ja: Dictionary = {
           label: '文学',
           items: ['ドストエフスキー', '三島由紀夫', 'ラディゲ', 'リルケ・ギリシャ神話'], // REVIEW: ギリシャ神話の分類
         },
+        {
+          label: 'スポーツ',
+          items: ['ライフル射撃（Cambridge Rifle Association）'],
+        },
       ],
     },
     connect: {
