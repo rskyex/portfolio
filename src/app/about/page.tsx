@@ -210,7 +210,7 @@ export default function AboutPage() {
             <div className="glow-bar absolute left-0 top-0 bottom-0" />
             <div className="pl-4">
               <p className="font-noto-sans text-sm text-kuro-soft/70 leading-relaxed">
-                {['Violin', 'Johann Sebastian Bach', 'Jean Sibelius', 'Giacomo Puccini', 'Giuseppe Verdi', 'Pyotr Ilyich Tchaikovsky', 'Anton\u00edn Dvo\u0159\u00e1k', 'Igor Stravinsky', 'Fyodor Dostoevsky', 'Kabuki', 'Yukio Mishima', 'Greek Mythology', 'Raymond Radiguet', 'Rainer Maria Rilke', 'Rifle Shooting (Cambridge Rifle Association)'].join(' \u00b7 ')}
+                {['Violin', 'Johann Sebastian Bach', 'Jean Sibelius', 'Giacomo Puccini', 'Giuseppe Verdi', 'Pyotr Ilyich Tchaikovsky', 'Anton\u00edn Dvo\u0159\u00e1k', 'Igor Stravinsky', 'Fyodor Dostoevsky', 'Kabuki', 'Yukio Mishima', 'Greek Mythology', 'Raymond Radiguet', 'Rainer Maria Rilke'].join(' \u00b7 ')}
               </p>
             </div>
           </div>
